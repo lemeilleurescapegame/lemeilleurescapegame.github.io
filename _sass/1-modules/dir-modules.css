@@ -1,0 +1,116 @@
+.nav-wrap {
+  height: 40px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-items a {
+  text-decoration: none;
+  margin-left: 32px;
+  margin-top: 27px;
+  font-size: 20px;
+  margin-right: 30px;
+  /*font-weight: bold;*/
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  justify-content: space-between;
+}
+.nav-items a:hover {
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  /*transition: 0.4s ease-in-out;*/
+}
+
+.logo {
+  color: white;
+  font-size: 1.5 rem;
+  padding: 0 2 rem;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.social-media {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Space between icons */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+/* Specific colors and hover effects for each platform */
+.spotify {
+  background-color: #1DB954; /* Spotify Green */
+}
+
+.apple-podcast {
+  background-color: #F2F2F2; /* Apple Podcast Light Gray */
+  color: #333;
+}
+
+.deezer {
+  background-color: rgba(242, 242, 242, 0.6666666667); /* Deezer white */
+}
+
+.podcast-addict {
+  background-color: rgba(242, 242, 242, 0.6666666667); /* Podcast Addict white */
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+.social-icon img {
+  margin-top: 5px;
+  width: 55px; /* Adjust the width as needed */
+  height: 55px; /* Adjust the height as needed */
+}
+
+.iframe-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  gap: 1px 20px; /*padding vertical and horizontal*/
+  justify-items: center; /* Centers iframes in their grid cells */
+  padding: 10px; /* Reduce overall padding */
+}
+
+/* Ensure iframes fit properly */
+.iframe-container iframe {
+  width: 100%; /* Full width within grid cell */
+  height: 400px; /* Set a uniform height for all iframes */
+  max-width: 500px; /* Adjust max width for better responsiveness */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Ensure no extra padding */
+}
+
+/* Responsive Design: Change to single column on smaller screens */
+@media (max-width: 768px) {
+  .iframe-container {
+    grid-template-columns: 1fr; /* One column layout on small screens */
+  }
+}/*# sourceMappingURL=dir-modules.css.map */

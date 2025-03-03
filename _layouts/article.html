@@ -16,13 +16,10 @@ layout: default
 
 <head>
     <title>{{ page.title }}</title>
+    <!-- Ensure the viewport is responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .content-wrapper {
-            margin-left: 100px;
-            margin-right: 100px;
-            padding: 10px;
-        }
-
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
         }
@@ -30,24 +27,27 @@ layout: default
             color: rgb(237, 115, 1);
             font-family: 'Arial', sans-serif;
         }
+        .content-wrapper {
+            margin: 0 auto;
+            padding: 10px;
+            max-width: 90%; /* Responsive wrapper */
+        }
+
         .content {
             padding: 20px;
-            margin: 20px; /* Add margin to the content */
+            margin: 20px;
         }
-        
+
         .header-image-container {
             position: relative;
             width: 100%;
-            height: 300px; /* Adjust the height as needed */
+            height: 300px; /* Adjust the height */
             overflow: hidden;
         }
         .header-image {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* This ensures the image covers the container and is cropped if necessary */
-        }
-        .content {
-            padding: 20px;
+            object-fit: cover;
         }
 
         .banner {
@@ -59,21 +59,18 @@ layout: default
             max-width: 100%;
             height: auto;
         }
+
         .info-box {
             display: flex;
-            /* justify-content: center; */
             justify-content: space-around;
             margin-top: 20px;
-            margin-left: 20%;
-            margin-right: 20%;
-
-            /* Box Styling */
-            border: 2px solid #ccc; /* Adds a border around the box */
-            padding: 10px; /* Adds inner spacing */
-            background-color: #f9f9f9; /* Light background for better visibility */
-            border-radius: 8px; /* Softens corners */
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
-            
+            width: 90%;
+            margin: 0 auto;
+            border: 2px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
         .info-box div {
             text-align: center;
@@ -88,14 +85,13 @@ layout: default
             display: flex;
             justify-content: space-around;
             margin-top: 20px;
-            margin-left: 10%;
-            margin-right: 10%;
-            /* Box Styling */
-            border: 2px solid #cccccc; /* Adds a border around the box */
-            padding: 10px; /* Adds inner spacing */
-            background-color: #f9f9f9; /* Light background for better visibility */
-            border-radius: 8px; /* Softens corners */
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
+            width: 90%;
+            margin: 0 auto;
+            border: 2px solid #cccccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
         .enseigne-box div {
             text-align: center;
@@ -105,42 +101,42 @@ layout: default
             font-size: 24px;
             margin-bottom: 2px;
         }
+
         .enseigne-name {
             text-align: center;
             font-size: 28px;
             font-weight: bold;
-            color: var(--default-blue); /* Adjust the color as needed */
-            margin-bottom: 5px; /* Space between name and the rest of the content */
+            color: var(--default-blue);
+            margin-bottom: 5px;
         }
-        
+
         .enseigne-container {
             display: flex;
             flex-direction: column;
-            margin-top: 20px; /* Adjust this to control spacing above the name */
+            margin-top: 20px;
         }
-        
+
         .title-container {
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 20px;
             position: relative;
-            gap :10px;
+            gap: 10px;
         }
         .title-container h1 {
-            font-size: 2.5em; /* Increase the font size */
+            font-size: 2.5em;
             margin: 0;
             color: rgb(18, 18, 18);
             text-align: center;
         }
         .grade-container {
-            /* position: absolute; */
             right: 20px;
             display: flex;
             align-items: center;
             background-color: rgba(237, 115, 1, 0.1);
             border-radius: 10px;
-            border: 2px solid #ccc; /* Adds a border around the box */
+            border: 2px solid #ccc;
             padding: 5px 10px;
         }
         .grade-container i {
@@ -153,29 +149,27 @@ layout: default
             color: rgb(237, 115, 1);
         }
 
-        /*Scneatio*/
         .scenario-container {
-            background-color: #f7f8fc; /* Light background */
+            background-color: #f7f8fc;
             color: #333;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 1 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            box-shadow: 1 4px 6px rgba(0, 0, 0, 0.1);
             margin-top: 30px;
-            margin-bottom: 30px; 
-            border-left: 5px solid var(--default-blue); /* Left border with a color */
+            margin-bottom: 30px;
+            border-left: 5px solid var(--default-blue);
             font-family: 'Arial', sans-serif;
         }
-
         .scenario-title {
             font-size: 24px;
             font-weight: bold;
-            color: var(--default-blue); /* Blue color for the title */
+            color: var(--default-blue);
             margin-bottom: 10px;
         }
         .scenario-description {
             font-size: 16px;
             line-height: 1.5;
-            color: #555; /* Lighter text for the description */
+            color: #555;
         }
 
         .grid-container {
@@ -183,12 +177,12 @@ layout: default
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             padding: 20px;
-            margin-left: 10%;
-            margin-right: 10%;
+            width: 90%;
+            margin: 0 auto;
         }
         .grid-item {
             display: flex;
-            flex-direction: column; /* Ensures the name stays below the image */
+            flex-direction: column;
             align-items: center;
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -196,8 +190,8 @@ layout: default
             transition: transform 0.2s, box-shadow 0.2s;
             text-decoration: none;
             color: inherit;
-            width: 100%;  
-            height: auto; /* Adjusts to content */
+            width: 100%;
+            height: auto;
         }
         .grid-item:hover {
             transform: translateY(-5px);
@@ -205,8 +199,8 @@ layout: default
         }
         .grid-item img {
             width: 100%;
-            height: 150px; /* Set a fixed height to prevent taking over the whole container */
-            object-fit: cover; /* Ensures cropping */
+            height: 150px;
+            object-fit: cover;
             transition: transform 0.3s, opacity 0.3s;
         }
         .grid-item:hover img {
@@ -220,6 +214,39 @@ layout: default
             padding: 10px;
             text-align: center;
         }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                max-width: 100%;
+                padding: 10px;
+            }
+
+            .title-container h1 {
+                font-size: 1.8em;
+            }
+
+            .info-box, .enseigne-box {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+
+            .header-image-container {
+                height: 150px; /* Reduce header image height */
+            }
+
+            .grid-item img {
+                height: 200px; /* Set a fixed height */
+            }
+        }
+        
 
     </style>
 </head>
