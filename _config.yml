@@ -22,8 +22,10 @@ title: Le meilleur escape game
 email: paulod38@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Escape game reviews
-baseurl: "/lemeilleurescape" # the subpath of your site, e.g. /blog
-url: "https://lemeilleurescapegame.fr" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "/lemeilleurescape" # the subpath of your site, e.g. /blog
+# url: "https://lemeilleurescapegame.fr" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://lemeilleurescapegame.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl : ''
 
 
 # Build settings
