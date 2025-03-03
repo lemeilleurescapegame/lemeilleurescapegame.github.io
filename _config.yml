@@ -39,7 +39,7 @@ exclude:
   - Gemfile.lock
 
 sass : 
-  sassdir : _sass
+  sass_dir : _sass
 
 collections:
   articles:
