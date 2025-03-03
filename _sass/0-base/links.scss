@@ -1,0 +1,11 @@
+.styled-link {
+    text-decoration: none; /* No underline by default */
+    color: #007bff; /* Default blue color */
+    font-weight: bold;
+    transition: text-decoration 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.styled-link:hover {
+    text-decoration: underline; /* Underline appears on hover */
+    color: #0056b3; /* Darker blue on hover */
+}

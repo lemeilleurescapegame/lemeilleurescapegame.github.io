@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf8">
+<meta content="IE-edge,chrome=1" http-equiv="X-UA-Compatable">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Escape game reviews">
+<title>Le meilleur escape game</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- <header class="bg-light"> -->
+<nav class="nav-wrap">
+    <div class="logo">
+        <a href ="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="">
+        </a>
+    </div>
+    <div class="nav-items">
+        <a href="/top-france">Top France</a>
+        <a href="/top-world">Top World</a>
+        <a href="/podcast">Podcast</a>
+        <a href="/experience-immersive">Expérience immersive</a>
+    </div>
+</nav>
+<!-- </header> -->
+    <body>
+    <section class="header">
+        <div class="head">
+            IMMERSION : Le Podcast des Loisirs Immersifs 
+        </div>
+        <div class="description-head">
+            Escape game, théâtre immersif, expériences immersives sans oublier les parcs d'attractions : 
+            Disney, Universal et les autres géants du secteur. Autour d'invités, Alexis et Valentin, 
+            co-fondateurs du site lemeilleurescapegame.fr analysent, débattent et livrent leur retour à 
+            chaud sur les tendances de l'immersif.
+        </div>
+    </section>
+    <section class="social-network">
+        <div class="smaller-head">
+            Abonnez-vous sur votre plateforme de podcast préférée : 
+        </div>
+        <div class="social-media">
+            <a href="https://open.spotify.com/show/0j285HyDZGNuTRNYqsp5J9" target="_blank" class="social-icon spotify">
+                <i class="fab fa-spotify"></i> 
+            </a>
+            <a href="https://podcasts.apple.com/us/podcast/immersion-les-loisirs-immersifs/id1729456813" target="_blank" class="social-icon apple-podcast">
+                <i class="fab fa-apple"></i> 
+            </a>
+            <a href="https://www.deezer.com/fr/show/1000653942" target="_blank" class="social-icon deezer">
+                <!-- <i class="fab fa-deezer"></i>  -->
+                <img src="/assets/img/icons/deezer-logo.svg" alt="Deezer">
+            </a>
+            <a href="https://podcastaddict.com/podcast/immersion-les-loisirs-immersifs/4856456" target="_blank" class="social-icon podcast-addict">
+                <!-- <i class="fas fa-podcast"></i>  Generic podcast icon -->
+                <img src="/assets/img/icons/podcast-addict.png" alt="Deezer">
+            </a>
+        </div>
+    </section>
+    
+    <div class="iframe-container" id="iframeContainer"></div>
+    <script>
+        // Array of Spotify episode/show links
+        const episodes = [
+            "https://open.spotify.com/embed/show/0j285HyDZGNuTRNYqsp5J9?utm_source=generator",
+            "https://open.spotify.com/embed/episode/4REldYdwoGxDgFwqjlDjrt?utm_source=generator",
+            "https://open.spotify.com/embed/episode/0usAkwYQ2b4PbBk5saGHgU?si=105d8bc73e1e496e",
+            "https://open.spotify.com/embed/episode/3A92JdZjtjFaFj1zAx7mWW?si=be4c880e4fda4bea",
+            "https://open.spotify.com/embed/episode/4UTGuwiBvn1ub9BSA1mgin?si=ffff1250bca9484a",
+            "https://open.spotify.com/embed/episode/5UTBeq7rNAUHyfG2JOxqfo?si=7098889a81e4407d",
+            "https://open.spotify.com/embed/episode/0nNJPaPOw0AO155oGP7hHG?si=81fbf783e19f411d",
+            "https://open.spotify.com/embed/episode/7DXyWX3k9dcMHbupjBEZDL?si=d6e06e097fd74956",
+            "https://open.spotify.com/embed/episode/12S0IHTWvi2mLJPspoN8mx?si=c102885a9082401e"
+        ];
+
+        // Get the container
+        const container = document.getElementById("iframeContainer");
+
+        // Loop through the episodes array and create iframes dynamically
+        for (let i = 0; i < episodes.length; i++) {
+            const iframe = document.createElement("iframe");
+            iframe.style.borderRadius = "12px";
+            iframe.src = episodes[i];
+            iframe.height = i === 0 ? "600" : "352";
+            iframe.frameBorder = "0";
+            iframe.allowFullscreen = true;
+            iframe.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
+            iframe.loading = "lazy";
+            container.appendChild(iframe);
+        }
+    </script>
+</body>
+
+
+
+    <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
+<script type="text/javascript" src="/assets/js/functions.js"></script>
+</body>
+</html>

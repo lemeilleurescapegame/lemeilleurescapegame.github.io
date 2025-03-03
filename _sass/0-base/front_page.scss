@@ -1,0 +1,80 @@
+.hero-container{
+    grid-template-columns: 1fr 2fr;
+}
+.hero > div {
+    margin-bottom: 5px; /* Reduce space between divs inside .hero */
+}
+.head {
+    font-size: 36px; /* Make the head larger */
+    font-weight: bold; /* Make the head text bold */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add some space above and below */
+}
+/* Style for the description head */
+.description-head {
+    font-size: 18px; /* Make the description head smaller */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add space above and below */
+    line-height: 1.5; /* Improve readability by spacing lines a little more */
+    margin-left: 80px ; 
+    margin-right: 80px ;
+}
+.smaller-head{
+    font-size: 26px; /* Make the head larger */
+    font-weight: bold; /* Make the head text bold */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add some space above and below */
+}
+
+.icon-image {
+    width: 23px; /* Adjust size */
+    height: 20px;
+    vertical-align: middle; /* Align with text */
+    margin-right: 6px; /* Add spacing */
+}
+
+.front-page-head {
+    /* background-color: #dc7633; */
+    color: black;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    width: fit-content; /* Makes background wrap around text */
+    padding-right: 40px; /* Extends background to the right */
+    margin-left: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* three columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px; /* Space between sections */
+    // height: 100vh; /* Full viewport height */
+    height: auto;
+    // border-left: 10px ; /* Left border */
+    // border-right: 10px ; /* Right border */
+    border-left: 10px solid transparent; /* Left border */
+    border-right: 10px solid transparent;
+    padding: 0px; /* Optional: Adds spacing inside the container */
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px; 
+}
+.part {
+    background: lightblue;
+    padding: 10px;
+    text-align: bottom;
+    border: 5px solid #000;
+    display: flex;
+    justify-content: center; /* Centers text horizontally */
+    align-items: flex-end; /* Moves text to the bottom */
+    text-align: center; /* Ensures text is centered if multiline */
+}
+
+/* Ensure no extra margins from child elements */
+.container > * {
+    margin-bottom: 0;
+}

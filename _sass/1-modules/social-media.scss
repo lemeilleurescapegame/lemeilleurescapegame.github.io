@@ -1,0 +1,70 @@
+.social-media {
+    font-size:50px;
+    display: flex;
+    justify-content: center;
+    gap:40px; /* Space between icons */
+    margin-top: 30px;
+    margin-bottom:30px;
+}
+.social-icon {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+/* Specific colors and hover effects for each platform */
+.spotify {
+    background-color: #1DB954; /* Spotify Green */
+}
+.apple-podcast {
+    background-color: #F2F2F2; /* Apple Podcast Light Gray */
+    color: #333;
+}
+.deezer {
+    // background-color: #FF4F00; /* Deezer Orange */
+    background-color: #f2f2f2aa; /* Deezer white */
+}
+.podcast-addict {
+    // background-color: #0E6DF1; /* Podcast Addict Blue */
+    background-color: #f2f2f2aa;/* Podcast Addict white */
+}
+.social-icon:hover {
+    opacity: 0.8;
+}
+.social-icon img {
+    margin-top: 5px;
+    width: 55px; /* Adjust the width as needed */
+    height: 55px; /* Adjust the height as needed */
+}
+
+.iframe-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 1px 20px; /*padding vertical and horizontal*/
+    justify-items: center; /* Centers iframes in their grid cells */
+    padding: 10px; /* Reduce overall padding */
+}
+
+/* Ensure iframes fit properly */
+.iframe-container iframe {
+    width: 100%; /* Full width within grid cell */
+    height: 400px; /* Set a uniform height for all iframes */
+    max-width: 500px; /* Adjust max width for better responsiveness */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Ensure no extra padding */
+
+}
+
+/* Responsive Design: Change to single column on smaller screens */
+@media (max-width: 768px) {
+    .iframe-container {
+        grid-template-columns: 1fr; /* One column layout on small screens */
+    }
+}

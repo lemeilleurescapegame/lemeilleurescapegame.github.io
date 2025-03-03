@@ -1,0 +1,61 @@
+---
+layout: default
+---
+<header class="head-main">
+    <section class="hero">
+        <div class="hero-container">
+            <div class="head">
+                Quel est le meilleur escape game en France? La meilleure escape room à l'étranger ?
+            </div>
+            <div class="description-head">
+                Découvrez nos Tops, tests, avis, et classement des escape game à Amsterdam (Pays-Bas), 
+                    à Annecy,  à Athènes (Grèce), à Avignon, à Barcelone et en Espagne, à Bayonne, à Bordeaux, 
+                    à Bruxelles et en Belgique, à Chambéry, à Berlin et en Allemagne, à Dijon, à Genève (Suisse), 
+                    à Grenoble, à Lille, à Lyon, à Montélimar, à Montpellier, à Nantes, à Nice, à Nîmes,  à Paris, à Pau, 
+                    à Prague (République Tchèque), à Perpignan, à Tokyo (Japon), à Toulouse, à Tours, à Valence…
+            </div>            
+        </div>
+    </section>
+    <section class="hero">
+        <div>
+            <h2 class="front-page-head">
+                <i class="fas fa-light fa-pen"></i> Nos derniers tests
+            </h2>
+        </div>
+        <div class="container" id="container"></div>
+
+        <script>
+            let container = document.getElementById("container");
+            for (let i = 1; i <= 6; i++) {
+                let div = document.createElement("div");
+                div.className = "part";
+                div.innerText = "Part " + i;
+                container.appendChild(div);
+            }
+        </script>
+
+        <div>
+            <h2 class="front-page-head">
+                <img src="{{ site.baseurl }}/assets/img/icons/fra.svg" alt="icon" class="icon-image">
+                Les tops en France
+            </h2>
+        </div>
+        <ul>
+            {% for article in site.articles %}
+              <li>
+                <a href="{{ article.url }}">{{ article.url }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+
+        <div>
+            <h2 class="front-page-head">
+                <!-- <img src="icons/fra.svg" alt="icon" class="icon-image"> -->
+                <i class="fa fa-globe" style="font-size:28px"></i>
+                Les tops à l'étranger
+            </h2>
+        </div>
+
+        
+    </section>
+</header>

@@ -1,0 +1,24 @@
+enigma_city:
+  name : "Enigma City "
+  location: "201 Route de Launaguet 31200, TOULOUSE"
+  website: "https://www.enigmacity.fr/"
+  phone : '05 32 32 52 91'
+  email : 'contact@enigmacity.fr'
+  maps_location : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.222369402701!2d1.4363362759157166!3d43.643541653055905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aea52ee64d773d%3A0x6693dff0d6fde74f!2sEnigma%20City!5e0!3m2!1sfr!2snl!4v1740865125020!5m2!1sfr!2snl" 
+trapgame_charrat:
+  name: 'Trapgame Charrat'
+  location: 'Route de la Sarvaz 5 1906 Charrat'
+  website: "https://www.trapgame.ch/fr"
+  phone : "+41 27 519 00 26"
+  email: "info@trapgame.ch"
+  maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.088846447869!2d7.124771876242255!3d46.129060071092596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ec88fc66f9085%3A0xaa0eca7aae080b6b!2sTrapgame!5e0!3m2!1sfr!2snl!4v1740869260643!5m2!1sfr!2snl"
+too_late_escape_game_bayonne:
+  name: 'Too late escape game'
+  location: "5 rue de Chalibardon 64100 Bayonne"
+  website: "https://toolate.fr/bayonne/" 
+  phone: "06 64 33 82 84"
+  email: "bayonne@toolate.fr"
+  maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.5686400356517!2d-1.4539183240736993!3d43.49047176294075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5140b711138fe3%3A0x9f65bc202ff4a058!2sTOO%20LATE%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1740945756904!5m2!1sfr!2snl"
+EscapeRoom2:
+  location: "456 Another Street, Lyon"
+  website: "https://escaperoom2.com"
