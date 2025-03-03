@@ -94,9 +94,10 @@
 .iframe-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
-  gap: 1px 20px; /*padding vertical and horizontal*/
+  gap: 1px 20px; /* padding vertical and horizontal */
   justify-items: center; /* Centers iframes in their grid cells */
   padding: 10px; /* Reduce overall padding */
+  margin-top: 20px; /* Add some space above */
 }
 
 /* Ensure iframes fit properly */
@@ -106,11 +107,28 @@
   max-width: 500px; /* Adjust max width for better responsiveness */
   margin: 0; /* Remove default margins */
   padding: 0; /* Ensure no extra padding */
+  border-radius: 12px;
 }
 
 /* Responsive Design: Change to single column on smaller screens */
 @media (max-width: 768px) {
+  .social-media {
+    flex-direction: column; /* Stack the social media icons vertically */
+    gap: 20px; /* Adjust the gap between icons on smaller screens */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .iframe-container {
     grid-template-columns: 1fr; /* One column layout on small screens */
+  }
+  .social-icon {
+    font-size: 40px; /* Reduce icon size for mobile screens */
+  }
+  .social-icon img {
+    width: 45px; /* Adjust size of the images */
+    height: 45px;
+  }
+  .iframe-container iframe {
+    height: 250px; /* Adjust iframe height for smaller screens */
   }
 }/*# sourceMappingURL=dir-modules.css.map */
