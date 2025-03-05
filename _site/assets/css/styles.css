@@ -93,6 +93,20 @@
   color: #0056b3; /* Darker blue on hover */
 }
 
+.logo {
+  color: white;
+  font-size: 1.5 rem;
+  padding: 0 2 rem;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo img {
+  width: 60px;
+}
+
 .nav-wrap {
   height: 40px;
   background: black;
@@ -122,18 +136,40 @@
   /*transition: 0.4s ease-in-out;*/
 }
 
-.logo {
-  color: white;
-  font-size: 1.5 rem;
-  padding: 0 2 rem;
+.nav-toggle {
+  display: none; /* Hidden by default */
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-.logo img {
-  width: 50px;
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .nav-items a {
+    display: block;
+    padding: 10px;
+  }
+  /* Show the button only on small screens */
+  .nav-toggle {
+    display: block;
+  }
 }
-
-.logo img {
-  width: 60px;
+/* Show menu when active */
+.nav-items.active {
+  display: flex;
 }
 
 .social-media {
@@ -189,9 +225,10 @@
 .iframe-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
-  gap: 1px 20px; /*padding vertical and horizontal*/
+  gap: 1px 20px; /* padding vertical and horizontal */
   justify-items: center; /* Centers iframes in their grid cells */
   padding: 10px; /* Reduce overall padding */
+  margin-top: 20px; /* Add some space above */
 }
 
 /* Ensure iframes fit properly */
@@ -201,12 +238,29 @@
   max-width: 500px; /* Adjust max width for better responsiveness */
   margin: 0; /* Remove default margins */
   padding: 0; /* Ensure no extra padding */
+  border-radius: 12px;
 }
 
 /* Responsive Design: Change to single column on smaller screens */
 @media (max-width: 768px) {
+  .social-media {
+    flex-direction: column; /* Stack the social media icons vertically */
+    gap: 20px; /* Adjust the gap between icons on smaller screens */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .iframe-container {
     grid-template-columns: 1fr; /* One column layout on small screens */
+  }
+  .social-icon {
+    font-size: 40px; /* Reduce icon size for mobile screens */
+  }
+  .social-icon img {
+    width: 45px; /* Adjust size of the images */
+    height: 45px;
+  }
+  .iframe-container iframe {
+    height: 250px; /* Adjust iframe height for smaller screens */
   }
 }
 .blue-icon {

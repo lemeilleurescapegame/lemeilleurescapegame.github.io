@@ -1,3 +1,16 @@
+.logo {
+    color: white;
+    font-size: 1.5 rem;
+    padding: 0 2 rem;
+}
+.logo img{
+    width: 50px;
+}
+
+.logo img{
+    width: 60px;
+}
+
 .nav-wrap{
     height: 40px;
     background: black;
@@ -29,15 +42,41 @@
     }
 }
 
-.logo {
-    color: white;
-    font-size: 1.5 rem;
-    padding: 0 2 rem;
-}
-.logo img{
-    width: 50px;
+.nav-toggle {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.logo img{
-    width: 60px;
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 15px;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-items a {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Show the button only on small screens */
+    .nav-toggle {
+        display: block;
+    }
+}
+
+/* Show menu when active */
+.nav-items.active {
+    display: flex;
 }

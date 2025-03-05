@@ -12,7 +12,8 @@
 </head>
 <body>
     <!-- <header class="bg-light"> -->
-<nav class="nav-wrap">
+
+<!-- <nav class="nav-wrap">
     <div class="logo">
         <a href ="/" class="nav-logo">
             <img src="/assets/img/logo_lemeg_.png" alt="">
@@ -24,8 +25,90 @@
         <a href="/podcast">Podcast</a>
         <a href="/experience-immersive">Expérience immersive</a>
     </div>
-</nav>
+</nav> -->
 <!-- </header> -->
+
+<!---->
+
+<!-- Navigation Header -->
+<!-- <header class="bg-light"> -->
+    <nav class="nav-wrap">
+        <div class="logo">
+            <a href="/" class="nav-logo">
+                <img src="/assets/img/logo_lemeg_.png" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Hamburger Menu Button -->
+        <button class="nav-toggle" aria-label="Toggle Navigation">
+            ☰
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="nav-items">
+            <a href="/top-france">Top France</a>
+            <a href="/top-world">Top World</a>
+            <a href="/podcast">Podcast</a>
+            <a href="/experience-immersive">Expérience immersive</a>
+        </div>
+    </nav>
+<!-- </header> -->
+
+<!-- CSS Styles -->
+<!-- <style>
+    .nav-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background: #f8f9fa;
+    }
+
+    .nav-items {
+        display: flex;
+        gap: 15px;
+    }
+
+    .nav-toggle {
+        display: none; /* Hidden by default */
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Responsive Design for Mobile */
+    @media (max-width: 768px) {
+        .nav-items {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 15px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .nav-items a {
+            display: block;
+            padding: 10px;
+        }
+
+        .nav-toggle {
+            display: block; /* Show button on small screens */
+        }
+    }
+</style> -->
+
+<!-- JavaScript for Menu Toggle -->
+<script>
+    document.querySelector(".nav-toggle").addEventListener("click", function () {
+        document.querySelector(".nav-items").classList.toggle("active");
+    });
+</script>
     
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
