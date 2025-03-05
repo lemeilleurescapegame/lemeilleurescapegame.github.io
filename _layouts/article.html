@@ -361,8 +361,9 @@ layout: default
         {% assign current_name = page.name %}
         <div class="grid-container">
             {% for article in site.articles %}
-                <p>{article.name}</p>
               {% if article.enseigne == current_enseigne and article.name != current_name %}
+                <p>{{article.name}}</p>
+                <p>"{{base_url}}/assets/img/escape/{{ article.image_name }}"</p>
                     <a href="{{ article.url }}" class="grid-item">
                     <img src="{{base_url}}/assets/img/escape/{{ article.image_name }}" alt="{{ article.name }}">
                     <div class="name">{{ article.title }}</div>
