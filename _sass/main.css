@@ -140,27 +140,34 @@
 }
 
 .nav-toggle {
-  display: none; /* Hidden by default */
+  display: none; /* Hidden on large screens */
   font-size: 24px;
   background: none;
   border: none;
   cursor: pointer;
-  color: white;
+  color: white; /* White button */
 }
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .nav-items {
-    display: flex !important; /* Always show the menu */
+    display: none; /* Initially hidden */
     flex-direction: column;
-    position: static; /* Remove absolute positioning */
-    background: none;
-    box-shadow: none;
-    width: auto;
-    padding: 0;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .nav-items a {
+    display: block;
+    padding: 10px;
   }
   .nav-toggle {
-    display: none; /* Hide the button since it's not needed */
+    display: block; /* Show button only on small screens */
   }
 }
 /* Show menu when active */
