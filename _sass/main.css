@@ -151,24 +151,16 @@
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .nav-items {
-    display: none;
+    display: flex !important; /* Always show the menu */
     flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 15px;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    padding: 10px;
-    border-radius: 5px;
+    position: static; /* Remove absolute positioning */
+    background: none;
+    box-shadow: none;
+    width: auto;
+    padding: 0;
   }
-  .nav-items a {
-    display: block;
-    padding: 10px;
-  }
-  /* Show the button only on small screens */
   .nav-toggle {
-    display: block;
+    display: none; /* Hide the button since it's not needed */
   }
 }
 /* Show menu when active */
