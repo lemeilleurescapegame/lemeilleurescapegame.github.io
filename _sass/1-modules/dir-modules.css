@@ -50,7 +50,6 @@
   color: white; /* White button */
 }
 
-/* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .nav-toggle {
     display: block; /* Show button only on small screens */
