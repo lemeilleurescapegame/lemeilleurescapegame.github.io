@@ -7,7 +7,7 @@
     margin: 0 auto;
 }
 
-.grid-article-container3 {
+.grid-article-container-3{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -57,11 +57,11 @@
         /* grid-template-columns: 1fr; */
         padding: 10px;
     }
-    .grid-article-container3 {
+    .grid-article-container-3{
         /* grid-template-columns: 1fr; */
         padding: 10px;
     }
-    
+
     .grid-article-item img {
         height: 200px; /* Set a fixed height */
     }
