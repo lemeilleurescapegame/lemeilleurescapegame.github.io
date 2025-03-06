@@ -312,6 +312,7 @@
   .grid-article-container-3 {
     /* grid-template-columns: 1fr; */
     padding: 10px;
+    gap: 20px;
   }
   .grid-article-item img {
     height: 200px; /* Set a fixed height */
