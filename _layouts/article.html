@@ -309,10 +309,18 @@ layout: default
 
         {% assign current_enseigne = page.enseigne %}
         {% assign current_title = page.title %}
+        
+        {% set has_matching_article = false %} <!--Find a matching enseigne-->
+        {% for article in site.articles %}
+            {% if article.enseigne == current_enseigne and article.title != current_title %}
+                {% set has_matching_article = true %}
+            {% endif %}
+        {% endfor %}
+
         <div class="enseigne-container">
-            {% if enseigne_data.name %}
-                    <h2 class="enseigne-name">Nos autres tests chez {{ enseigne_data.name }}</h2> <!-- Display the enseigne's name at the top -->
-            {% endif%}
+            {% if has_matching_article %}
+                <h2 class="enseigne-name">Nos autres tests chez {{ enseigne_data.name }}</h2>
+            {% endif %}
         </div>        
         <div class="grid-article-container">
             {% for article in site.articles %}
