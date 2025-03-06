@@ -19,6 +19,17 @@ too_late_escape_game_bayonne:
   phone: "06 64 33 82 84"
   email: "bayonne@toolate.fr"
   maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.5686400356517!2d-1.4539183240736993!3d43.49047176294075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5140b711138fe3%3A0x9f65bc202ff4a058!2sTOO%20LATE%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1740945756904!5m2!1sfr!2snl"
+la_crypte:
+  name: 'Le Donjon'
+  location: "Place de la République 75011 Paris"
+  website: "https://ledonjon.fr/"
+  phone: "01 71 20 51 14"
+  email: "contact@ledonjonparis.fr"
+  maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.965473904828!2d2.3628203761978206!3d48.86807330002546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f79e6a9c5df%3A0xd48db3d7dffe12f5!2sLe%20Donjon%20%7C%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1741291852480!5m2!1sfr!2snl"
 EscapeRoom2:
-  location: "456 Another Street, Lyon"
-  website: "https://escaperoom2.com"
+  name: ""
+  location: ""
+  website: ""
+  phone: ""
+  email: ""
+  maps_location: ""
