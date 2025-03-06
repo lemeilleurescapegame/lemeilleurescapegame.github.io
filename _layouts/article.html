@@ -172,49 +172,6 @@ layout: default
             color: #555;
         }
 
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            padding: 20px;
-            width: 90%;
-            margin: 0 auto;
-        }
-        .grid-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.2s, box-shadow 0.2s;
-            text-decoration: none;
-            color: inherit;
-            width: 100%;
-            height: auto;
-        }
-        .grid-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .grid-item img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            transition: transform 0.3s, opacity 0.3s;
-        }
-        .grid-item:hover img {
-            transform: scale(1.05);
-            opacity: 0.8;
-        }
-        .grid-item .name {
-            margin-top: 10px;
-            font-size: 1.2em;
-            color: #333;
-            padding: 10px;
-            text-align: center;
-        }
-
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
             .content-wrapper {
@@ -233,18 +190,11 @@ layout: default
                 margin: 0 auto;
             }
 
-            .grid-container {
-                /* grid-template-columns: 1fr; */
-                padding: 10px;
-            }
-
             .header-image-container {
                 height: 150px; /* Reduce header image height */
             }
 
-            .grid-item img {
-                height: 200px; /* Set a fixed height */
-            }
+            
         }
         
 
@@ -364,10 +314,10 @@ layout: default
                     <h2 class="enseigne-name">Nos autres tests chez {{ enseigne_data.name }}</h2> <!-- Display the enseigne's name at the top -->
             {% endif%}
         </div>        
-        <div class="grid-container">
+        <div class="grid-article-container">
             {% for article in site.articles %}
               {% if article.enseigne == current_enseigne and article.title != current_title %}
-                    <a href="{{ article.url }}" class="grid-item">
+                    <a href="{{ article.url }}" class="grid-article-item">
                     <img src="{{base_url}}/assets/img/escape/{{ article.image_name }}" alt="{{ article.name }}">
                     <div class="name">{{ article.title }}</div>
                     </a>

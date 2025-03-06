@@ -24,7 +24,17 @@ layout: default
         </div>
         <div class="container" id="container"></div>
 
-        <script>
+        <!---->
+        <div class="grid-article-container3">
+            {% for article in site.articles %}
+                    <a href="{{ article.url }}" class="grid-article-item">
+                    <img src="{{base_url}}/assets/img/escape/{{ article.image_name }}" alt="{{ article.name }}">
+                    <div class="name">{{ article.title }}</div>
+                    </a>
+            {% endfor %}
+          </div>
+        <!---->
+        <!-- <script>
             let container = document.getElementById("container");
             for (let i = 1; i <= 6; i++) {
                 let div = document.createElement("div");
@@ -32,7 +42,7 @@ layout: default
                 div.innerText = "Part " + i;
                 container.appendChild(div);
             }
-        </script>
+        </script> -->
 
         <div>
             <h2 class="front-page-head">
