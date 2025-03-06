@@ -234,7 +234,7 @@ layout: default
             }
 
             .grid-container {
-                grid-template-columns: 1fr;
+                /* grid-template-columns: 1fr; */
                 padding: 10px;
             }
 
@@ -359,13 +359,14 @@ layout: default
 
         {% assign current_enseigne = page.enseigne %}
         {% assign current_title = page.title %}
+        <div class="enseigne-container">
+            {% if enseigne_data.name %}
+                    <h2 class="enseigne-name">Nos autres tests chez {{ enseigne_data.name }}</h2> <!-- Display the enseigne's name at the top -->
+            {% endif%}
+        </div>        
         <div class="grid-container">
             {% for article in site.articles %}
-                <!-- <p>Enseigne : {{current_enseigne}},{{article.enseigne}}</p>
-                <p>Name = {{current_title}},{{article.title}}</p> -->
               {% if article.enseigne == current_enseigne and article.title != current_title %}
-                <!-- <p>{{article.name}}</p> -->
-                <!-- <p>"{{base_url}}/assets/img/escape/{{ article.image_name }}"</p> -->
                     <a href="{{ article.url }}" class="grid-item">
                     <img src="{{base_url}}/assets/img/escape/{{ article.image_name }}" alt="{{ article.name }}">
                     <div class="name">{{ article.title }}</div>
