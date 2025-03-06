@@ -310,10 +310,10 @@ layout: default
         {% assign current_enseigne = page.enseigne %}
         {% assign current_title = page.title %}
         
-        {% set has_matching_article = false %} <!--Find a matching enseigne-->
+        {% assign has_matching_article = false %} <!--Find a matching enseigne-->
         {% for article in site.articles %}
             {% if article.enseigne == current_enseigne and article.title != current_title %}
-                {% set has_matching_article = true %}
+                {% assign has_matching_article = true %}
             {% endif %}
         {% endfor %}
 
