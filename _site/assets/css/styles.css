@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .hero-container {
   grid-template-columns: 1fr 2fr;
 }
@@ -318,6 +319,28 @@
     height: 200px; /* Set a fixed height */
   }
 }
+.top-articles-container {
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  padding: 0 15px; /* Adds padding for better spacing on small screens */
+}
+
+.top-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.top-articles-placeholder {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Default styling for larger screens */
 .top-article {
   display: flex;
   align-items: center;
@@ -378,9 +401,40 @@
   padding: 5px 10px;
   border-radius: 8px;
   text-align: center;
-  margin-left: 10px; /* Moves it slightly to the right of the image */
+  margin-left: 10px;
 }
 
+/* 🔹 Mobile Optimization (Screen width < 600px) */
+@media (max-width: 600px) {
+  .top-article {
+    flex-direction: column; /* Stack elements */
+    align-items: center; /* Center everything */
+    text-align: center;
+    padding: 10px;
+  }
+  .top-article img {
+    width: 100px; /* Slightly bigger for better visibility */
+    height: 100px;
+  }
+  .top-article .rank {
+    font-size: 20px; /* Slightly smaller on mobile */
+  }
+  .top-article .text {
+    align-items: center; /* Center text */
+  }
+  .top-article .title {
+    font-size: 16px;
+  }
+  .top-article .link {
+    font-size: 12px;
+  }
+  .top-article .note {
+    font-size: 14px;
+    margin-left: 0; /* Centers the note below */
+    margin-top: 5px;
+    padding: 3px 8px;
+  }
+}
 .blue-icon {
   color: rgba(73, 126, 205, 0.797);
 }
