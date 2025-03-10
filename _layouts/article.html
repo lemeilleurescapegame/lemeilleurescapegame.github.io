@@ -259,7 +259,7 @@ layout: default
         </div>
         
         {%if page.enseigne%}
-            {% assign enseigne_data = site.data.enseignes[page.enseigne] %}
+            {% assign enseigne_data = site.data.enseignes.enseignes[page.enseigne] %}
         {% endif %}
 
         {% if enseigne_data %}

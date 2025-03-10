@@ -1,0 +1,68 @@
+<!-- {% assign articles_list = include.list | split: "," %}
+
+
+<div class="top-articles-placeholder"
+     data-title="{{ include.title }}"
+     data-articles='[
+        {% for article in site.articles %}
+            {% assign article_url = article.url | split: "/" | last %}    
+            {% for e in articles_list %}
+                {% if article_url == e %}
+                    {"title" : "{{ article.title }}", "link" : "{{ article.url }}"}{% unless forloop.last %},{% endunless %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+     ]'>
+</div>
+
+
+<script src="{{base_url}}/assets/js/top-articles.js"></script> -->
+
+<!-- {% assign articles_list = include.list | split: "," %}
+
+<div class="top-articles-placeholder"
+     data-title="{{ include.title }}"
+     data-articles='[
+        {% for article in site.articles %}
+            {% assign article_url = article.url | split: "/" | last %}    
+            {% for e in articles_list %}
+                {% if article_url == e %}
+                    {"rank": "{{ forloop.index }}", 
+                     "title" : "{{ article.title }}", 
+                     "link" : "{{ article.url }}", 
+                     "image" : "{{site.baseurl}}/assets/img/escape/{{ article.image_name }}"}
+                    {% unless forloop.last %},{% endunless %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+     ]'>
+</div>
+
+
+<script src="{{ base_url }}/assets/js/top-articles.js"></script> -->
+
+{% assign articles_list = include.list | split: "," %}
+
+<div class="top-articles-container">
+    <h2 class="top-title">{{ include.title }}</h2>
+    <div class="top-articles-placeholder"
+         data-title="{{ include.title }}"
+         data-articles='[
+            {% for article in site.articles %}
+                {% assign article_url = article.url | split: "/" | last %}    
+                {% for e in articles_list %}
+                    {% if article_url == e %}
+                        {"rank": "{{ forloop.index }}", 
+                         "title" : "{{ article.title }}", 
+                         "link" : "{{ article.url }}", 
+                         "image" : "{{site.baseurl}}/assets/img/escape/{{ article.image_name }}",
+                         "note" : "{{article.note}}"}
+                        {% unless forloop.last %},{% endunless %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+         ]'>
+    </div>
+</div>
+
+<script src="{{ base_url }}/assets/js/top-articles.js"></script>

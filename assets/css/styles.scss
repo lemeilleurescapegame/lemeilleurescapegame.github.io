@@ -1,11 +1,12 @@
 ---
 ---
 
-@import "0-base/front_page";
-@import "0-base/links";
+@forward "0-base/front_page";
+@forward "0-base/links";
 
-@import "1-modules/nav";
-@import "1-modules/social-media";
-@import "1-modules/grid-article";
+@forward "1-modules/nav";
+@forward "1-modules/social-media";
+@forward "1-modules/grid-article";
+@forward "1-modules/top_articles";
 
-@import "2-layouts/articles";
+@forward "2-layouts/articles";

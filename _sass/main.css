@@ -249,6 +249,70 @@
     height: 250px; /* Adjust iframe height for smaller screens */
   }
 }
+.top-article {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.top-article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.top-article img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.top-article .rank {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6600;
+  min-width: 30px;
+}
+
+.top-article .text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.top-article .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.top-article .link {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Grade (note) positioned slightly right of the image */
+.top-article .note {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff6600; /* Same color as rank */
+  background: rgba(255, 102, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 10px; /* Moves it slightly to the right of the image */
+}
+
 .blue-icon {
   color: rgba(73, 126, 205, 0.797);
 }

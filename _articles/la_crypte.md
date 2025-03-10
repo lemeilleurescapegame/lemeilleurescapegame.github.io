@@ -1,10 +1,10 @@
 ---
 layout: article
-url: "le-donjon"
-title: 'Le Donjon'
+url: "la-crypte"
+title: 'La Crypte'
 date: 2025-03-06
 note: 20
-enseigne: "la_crypte"
+enseigne: "le_donjon"
 theme : 'Spiritisme/Horreur'
 duree : '60 min'
 nb-joueur : '2 à 6'
