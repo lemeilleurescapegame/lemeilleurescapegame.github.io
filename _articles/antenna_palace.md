@@ -1,8 +1,9 @@
 ---
 layout: article
-url: 'prison_west_city'
-title: 'Antena Palace'
-date: 2024-12-24
+url: "antenna_palace"
+top_name: "antenna_palace"
+title: "Antena Palace"
+date: 24-12-2024
 note: 20
 enseigne: "trapgame_charrat"
 theme : 'Science-fiction'

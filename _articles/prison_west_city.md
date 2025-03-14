@@ -1,8 +1,9 @@
 ---
 layout: article
 url: "antenna-palace"
+top_name : "antenna-palace"
 title: 'La prison de West City'
-date: 2024-12-24
+date: 24-12-2024
 note: 18
 enseigne: "trapgame_charrat"
 theme : 'Western'

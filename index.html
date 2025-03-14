@@ -25,23 +25,14 @@ layout: default
         <div class="container" id="container"></div>
 
         <div class="grid-article-container-3">
-            {% for article in site.articles | sort(attribute="date", reverse=True)[:6] %}
+            {% assign sorted_articles = site.articles | sort: "date" | reverse %}
+            {% for article in sorted_articles limit:6 %}
                     <a href="{{ article.url }}" class="grid-article-item">
                     <img src="{{base_url}}/assets/img/escape/{{ article.image_name }}" alt="{{ article.name }}">
                     <div class="name">{{ article.title }}</div>
                     </a>
             {% endfor %}
         </div>
-        <!---->
-        <!-- <script>
-            let container = document.getElementById("container");
-            for (let i = 1; i <= 6; i++) {
-                let div = document.createElement("div");
-                div.className = "part";
-                div.innerText = "Part " + i;
-                container.appendChild(div);
-            }
-        </script> -->
 
         <div>
             <h2 class="front-page-head">

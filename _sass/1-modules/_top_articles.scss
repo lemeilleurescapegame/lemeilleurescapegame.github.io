@@ -1,127 +1,3 @@
-// .top-articles-container {
-//     max-width: 600px;
-//     margin: 30px auto;
-//     font-family: Arial, sans-serif;
-//     padding: 0 15px; /* Adds padding for better spacing on small screens */
-// }
-
-// .top-title {
-//     font-size: 22px;
-//     font-weight: bold;
-//     color: #333;
-//     margin-bottom: 10px;
-//     text-align: center;
-// }
-
-// .top-articles-placeholder {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 15px;
-// }
-
-// /* Default styling for larger screens */
-// .top-article {
-//     display: flex;
-//     align-items: center;
-//     gap: 15px;
-//     padding: 15px;
-//     background: #f9f9f9;
-//     border-radius: 12px;
-//     transition: transform 0.3s ease, box-shadow 0.3s ease;
-//     cursor: pointer;
-//     text-decoration: none;
-//     color: inherit;
-//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-//     position: relative;
-// }
-
-// .top-article:hover {
-//     transform: translateY(-3px);
-//     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-// }
-
-// .top-article img {
-//     width: 80px;
-//     height: 80px;
-//     border-radius: 8px;
-//     object-fit: cover;
-// }
-
-// .top-article .rank {
-//     font-size: 22px;
-//     font-weight: bold;
-//     color: #ff6600;
-//     min-width: 30px;
-// }
-
-// .top-article .text {
-//     display: flex;
-//     flex-direction: column;
-//     flex-grow: 1;
-// }
-
-// .top-article .title {
-//     font-size: 18px;
-//     font-weight: bold;
-//     margin-bottom: 5px;
-// }
-
-// .top-article .link {
-//     font-size: 14px;
-//     color: #666;
-// }
-
-// /* Grade (note) positioned slightly right of the image */
-// .top-article .note {
-//     font-size: 16px;
-//     font-weight: bold;
-//     color: #ff6600; /* Same color as rank */
-//     background: rgba(255, 102, 0, 0.1);
-//     padding: 5px 10px;
-//     border-radius: 8px;
-//     text-align: center;
-//     margin-left: 10px;
-// }
-
-// /* 🔹 Mobile Optimization (Screen width < 600px) */
-// @media (max-width: 600px) {
-//     .top-article {
-//         flex-direction: column; /* Stack elements */
-//         align-items: center; /* Center everything */
-//         text-align: center;
-//         padding: 10px;
-//     }
-
-//     .top-article img {
-//         width: 100px; /* Slightly bigger for better visibility */
-//         height: 100px;
-//     }
-
-//     .top-article .rank {
-//         font-size: 20px; /* Slightly smaller on mobile */
-//     }
-
-//     .top-article .text {
-//         align-items: center; /* Center text */
-//     }
-
-//     .top-article .title {
-//         font-size: 16px;
-//     }
-
-//     .top-article .link {
-//         font-size: 12px;
-//     }
-
-//     .top-article .note {
-//         font-size: 14px;
-//         margin-left: 0; /* Centers the note below */
-//         margin-top: 5px;
-//         padding: 3px 8px;
-//     }
-// }
-
-/* Default styling */
 .top-articles-container {
     max-width: 600px;
     margin: 30px auto;
@@ -129,13 +5,34 @@
     padding: 0 15px;
 }
 
-.top-title {
-    font-size: 22px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
+.top-title-container {
+    display: flex;
+    align-items: center;
+    background-color: #ff6600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: fit-content;
 }
+
+.top-title-container svg {
+    fill: white; 
+    width: 28px; 
+    height: 28px;
+    margin-right: 12px; 
+}
+
+.prize-icon {
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+    margin-right: 10px;
+}
+
+.top-title {
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+}
+
 
 .top-articles-placeholder {
     display: flex;

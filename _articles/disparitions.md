@@ -1,8 +1,9 @@
 ---
 layout: article
-url: 'disparitions'
+url: "disparitions"
+top_name: "disparitions"
 title: 'Disparitions'
-date: 2022-08-14
+date: 14-08-2022
 note: 20
 enseigne: "enigma_city"
 theme : 'Enquête'

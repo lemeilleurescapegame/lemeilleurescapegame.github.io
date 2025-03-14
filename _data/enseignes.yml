@@ -37,6 +37,63 @@ enseignes:
     phone: "01 71 20 51 14"
     email: "contact@ledonjonparis.fr"
     maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.965473904828!2d2.3628203761978206!3d48.86807330002546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f79e6a9c5df%3A0xd48db3d7dffe12f5!2sLe%20Donjon%20%7C%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1741291852480!5m2!1sfr!2snl"
+  majestic:
+    name: "Majestic Escape Game"
+    location: "2 rue Française 75001 Paris"
+    website: "https://majestic-escapegame.paris/"
+    phone : ''
+    email: "contact@majestic-escapegame.paris"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5249.40840378897!2d2.3450375761975697!3d48.863850700322594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1856095103%3A0x55002d5a9cde2986!2sMajestic%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1741800141120!5m2!1sfr!2snl"
+  batman_escape:
+    name: "Batman Escape"
+    location: "30 avenue Corentin Cariou, 75019 Paris"
+    website: "https://batman-escape.com/"
+    phone: "01 82 28 92 68"
+    email: "contact@batman-escape.com"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.9893306887784!2d2.386166976199375!3d48.89654049802144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dd4d15cc797%3A0x7dd4c2e076927570!2sBatman%20Escape%20Game%20Paris!5e0!3m2!1sfr!2snl!4v1741800365118!5m2!1sfr!2snl"
+  the_game:
+    name: "The Game"
+    location: "6 rue de la Harpe, 75005 Paris"
+    website: "https://www.thegame-france.com/"
+    phone: "01 43 29 26 21"
+    email: "contact@thegame-france.com"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d656.3187479716303!2d2.344073569639588!3d48.85296638064671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671e733f8673b%3A0x1ef0bde2813276b6!2sThe%20Game%20(Saint-Michel)%20-%20Escape%20Game%20Paris!5e0!3m2!1sfr!2snl!4v1741800503791!5m2!1sfr!2sn"
+  escape_lab:
+    name: "Escape Lab"
+    location: "21 rue du Sentier 75002 Paris"
+    website: "https://www.escapelab.fr/"
+    phone: "01 84 25 82 18"
+    email: ""
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.4375149391567!2d2.343002876197851!3d48.868935499964735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f9203b0384b%3A0x31fa1b8e4d980d8e!2sEscape%20LAB%20Paris!5e0!3m2!1sfr!2snl!4v1741800685508!5m2!1sfr!2snl"
+  pandore_et_associe:
+    name: "PANDORE & ASSOCIÉS"
+    location: "102 Boulevard Voltaire 75011 Paris"
+    website: "https://pandore-escape.com/"
+    phone: "09 80 76 45 29"
+    email: "contact@pandore-escape.com"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.929003652604!2d2.3742497761973103!3d48.859564200624234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5b461d37eb%3A0xc6cd15ee8b0a88d6!2sEscape%20Game%20Paris%20%7C%20Pandore%20%26%20Associ%C3%A9s!5e0!3m2!1sfr!2snl!4v1741800774669!5m2!1sfr!2snl"
+  secret_hunters:
+    name: "Secret Hunters"
+    location: "17 place de la Nation 75011 Paris"
+    website: "https://secretshunters.fr/"
+    phone: "07 81 88 29 79"
+    email: "contact@secretshunters.fr"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d867.7126684236566!2d2.397651991510794!3d48.84900879713057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673a6413c6277%3A0x92c39e98fa31161b!2sSecrets%20Hunters%20-%20Escape%20Game%20Paris!5e0!3m2!1sfr!2snl!4v1741800873937!5m2!1sfr!2snl"
+  one_hour_voltaire:
+    name: "One Hour (VOLTAIRE)"
+    location: "23 rue Servan 75011 Paris"
+    website: "https://www.one-hour.fr/"
+    phone: "09 72 54 50 43"
+    email: "contact@one-hour.fr"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1138.6043227099574!2d2.3819739999119096!3d48.86000420980988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dcfc5e159ad%3A0x65ebe42f7fd7b270!2sOne%20Hour%20-%20Voltaire!5e0!3m2!1sfr!2snl!4v1741801029526!5m2!1sfr!2snl"
+  escape_rush :
+    name: "Escape Rush"
+    location: "30 rue de l'automne - 1050 Ixelles"
+    website: "https://escaperush.com/"
+    phone: "+32(0)2 219 34 20"
+    email: ""
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.62288733527!2d4.3863195763100045!3d50.81962536071427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c4c5cc3e6bcd%3A0x62688279069acc3!2sEscape%20Rush%20-%20Escape%20Game%20Bruxelles!5e0!3m2!1sfr!2snl!4v1741803818343!5m2!1sfr!2snl"
+
   EscapeRoom2:
     name: ""
     location: ""

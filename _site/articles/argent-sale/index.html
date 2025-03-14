@@ -11,127 +11,92 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- <header class="bg-light"> -->
-
-<!-- <nav class="nav-wrap">
+    <nav class="nav-wrap">
     <div class="logo">
-        <a href ="/" class="nav-logo">
-            <img src="/assets/img/logo_lemeg_.png" alt="">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo">
         </a>
     </div>
-    <div class="nav-items">
-        <a href="/top-france">Top France</a>
-        <a href="/top-world">Top World</a>
-        <a href="/podcast">Podcast</a>
-        <a href="/experience-immersive">Expérience immersive</a>
-    </div>
-</nav> -->
-<!-- </header> -->
 
-<!---->
+    <ul class ="sidebar">
+        <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li> <a href="/top-france">Top France</a> </li>
+        <!-- <li> <a href="/top-world">Top World</a> </li> -->
+        <li> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li> <a href="/experience-immersive">Expérience immersive</a> </li>
+        <li> <a href="/horreur">Horreur</a> </li>
+        <li> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
 
-<!-- Navigation Header -->
-<!-- <header class="bg-light"> -->
-    <nav class="nav-wrap">
-        <div class="logo">
-            <a href="/" class="nav-logo">
-                <img src="/assets/img/logo_lemeg_.png" alt="Logo">
-            </a>
-        </div>
+    </ul>
+    <ul>
+        <li class="hideOnMobile"> <a href="/top-france">Top France</a> </li>
+        <!-- <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li> -->
+        <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li>
+        <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
+        <li class="search-icon">
+            <input type="search" id="search-input" placeholder="Search">
+            <button id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </li>
+        <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+</nav>
 
-        <!-- Hamburger Menu Button -->
-        <button class="nav-toggle" aria-label="Toggle Navigation">
-            ☰
-        </button>
-
-        <!-- Navigation Links -->
-        <div class="nav-items">
-            <a href="/top-france">Top France</a>
-            <a href="/top-world">Top World</a>
-            <a href="/podcast">Podcast</a>
-            <a href="/experience-immersive">Expérience immersive</a>
-        </div>
-    </nav>
-<!-- </header> -->
-
-<!-- CSS Styles -->
-<!-- <style>
-    .nav-wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px;
-        background: #f8f9fa;
-    }
-
-    .nav-items {
-        display: flex;
-        gap: 15px;
-    }
-
-    .nav-toggle {
-        display: none; /* Hidden by default */
-        font-size: 24px;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-
-    /* Responsive Design for Mobile */
-    @media (max-width: 768px) {
-        .nav-items {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 15px;
-            background: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 200px;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .nav-items a {
-            display: block;
-            padding: 10px;
-        }
-
-        .nav-toggle {
-            display: block; /* Show button on small screens */
-        }
-    }
-</style> -->
-
-<!-- JavaScript for Menu Toggle -->
 <script>
-    document.querySelector(".nav-toggle").addEventListener("click", function () {
-        document.querySelector(".nav-items").classList.toggle("active");
-    });
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'none'
+    }
 </script>
-    <!-- 
-<meta charset="utf8">
-<meta content="IE-edge,chrome=1" http-equiv="X-UA-Compatable">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Escape game reviews">
-<title>Le meilleur escape game</title>
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+    
+    function performSearch() {
+        const query = searchInput.value.trim();
+        
+        if (query) {
+            // Perform search within existing content, e.g., filtering a list of posts
+            const posts = document.querySelectorAll('.post'); // Change this selector to your content
+            posts.forEach(post => {
+                const postTitle = post.querySelector('.title').textContent.toLowerCase();
+                if (postTitle.includes(query.toLowerCase())) {
+                    post.style.display = 'block';  // Show matching posts
+                } else {
+                    post.style.display = 'none';   // Hide non-matching posts
+                }
+            });
+        }
+    }
 
+    // Trigger search when clicking the button
+    searchButton.addEventListener("click", performSearch);
 
-
- -->
-
-<head>
+    // Trigger search when pressing "Enter"
+    searchInput.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            performSearch();
+        }
+    });
+});
+</script>
+    <head>
     <title>Argent sale</title>
-    <!-- Ensure the viewport is responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* General Styles */
-        body {
+        /* body {
             font-family: Arial, sans-serif;
-        }
+        } */
         h1, h2 {
             color: rgb(237, 115, 1);
             font-family: 'Arial', sans-serif;
@@ -447,10 +412,34 @@
         <div class="grid-article-container">
             
               
-                    <a href="/articles/dispatitions/" class="grid-article-item">
-                    <img src="/assets/img/escape/disparitions-enigma-city-escape-game-toulouse.webp" alt="dispatitions.md">
+            
+              
+                    <a href="/articles/disparitions/" class="grid-article-item">
+                    <img src="/assets/img/escape/disparitions-enigma-city-escape-game-toulouse.webp" alt="disparitions.md">
                     <div class="name">Disparitions</div>
                     </a>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
               
             
               

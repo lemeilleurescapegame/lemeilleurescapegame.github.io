@@ -1,8 +1,9 @@
 ---
 layout: article
 url: "la-crypte"
+top_name : "la-crypte"
 title: 'La Crypte'
-date: 2025-03-06
+date: 06-03-2025
 note: 20
 enseigne: "le_donjon"
 theme : 'Spiritisme/Horreur'

@@ -11,845 +11,193 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- <header class="bg-light"> -->
-
-<!-- <nav class="nav-wrap">
+    <nav class="nav-wrap">
     <div class="logo">
-        <a href ="/" class="nav-logo">
-            <img src="/assets/img/logo_lemeg_.png" alt="">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo">
         </a>
     </div>
-    <div class="nav-items">
-        <a href="/top-france">Top France</a>
-        <a href="/top-world">Top World</a>
-        <a href="/podcast">Podcast</a>
-        <a href="/experience-immersive">Expérience immersive</a>
-    </div>
-</nav> -->
-<!-- </header> -->
 
-<!---->
+    <ul class ="sidebar">
+        <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li> <a href="/top-france">Top France</a> </li>
+        <!-- <li> <a href="/top-world">Top World</a> </li> -->
+        <li> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li> <a href="/experience-immersive">Expérience immersive</a> </li>
+        <li> <a href="/horreur">Horreur</a> </li>
+        <li> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
 
-<!-- Navigation Header -->
-<!-- <header class="bg-light"> -->
-    <nav class="nav-wrap">
-        <div class="logo">
-            <a href="/" class="nav-logo">
-                <img src="/assets/img/logo_lemeg_.png" alt="Logo">
-            </a>
-        </div>
+    </ul>
+    <ul>
+        <li class="hideOnMobile"> <a href="/top-france">Top France</a> </li>
+        <!-- <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li> -->
+        <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li>
+        <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
+        <li class="search-icon">
+            <input type="search" id="search-input" placeholder="Search">
+            <button id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </li>
+        <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+</nav>
 
-        <!-- Hamburger Menu Button -->
-        <button class="nav-toggle" aria-label="Toggle Navigation">
-            ☰
-        </button>
-
-        <!-- Navigation Links -->
-        <div class="nav-items">
-            <a href="/top-france">Top France</a>
-            <a href="/top-world">Top World</a>
-            <a href="/podcast">Podcast</a>
-            <a href="/experience-immersive">Expérience immersive</a>
-        </div>
-    </nav>
-<!-- </header> -->
-
-<!-- CSS Styles -->
-<!-- <style>
-    .nav-wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px;
-        background: #f8f9fa;
-    }
-
-    .nav-items {
-        display: flex;
-        gap: 15px;
-    }
-
-    .nav-toggle {
-        display: none; /* Hidden by default */
-        font-size: 24px;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-
-    /* Responsive Design for Mobile */
-    @media (max-width: 768px) {
-        .nav-items {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 15px;
-            background: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 200px;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .nav-items a {
-            display: block;
-            padding: 10px;
-        }
-
-        .nav-toggle {
-            display: block; /* Show button on small screens */
-        }
-    }
-</style> -->
-
-<!-- JavaScript for Menu Toggle -->
 <script>
-    document.querySelector(".nav-toggle").addEventListener("click", function () {
-        document.querySelector(".nav-items").classList.toggle("active");
-    });
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'none'
+    }
 </script>
-    <!-- 
-
-
-<div class="top-articles-placeholder"
-     data-title="Premier top"
-     data-articles='[
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-                    {"title" : "Antena Palace", "link" : "/articles/antenna_palace/"},
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-                    {"title" : "Argent sale", "link" : "/articles/argent-sale/"},
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-                    {"title" : "La Crypte", "link" : "/articles/la_crypte/"}
-                
-            
-        
-     ]'>
-</div>
-
-
-<script src="/assets/js/top-articles.js"></script> -->
-
-<!-- 
-
-<div class="top-articles-placeholder"
-     data-title="Premier top"
-     data-articles='[
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-                    {"rank": "1", 
-                     "title" : "Antena Palace", 
-                     "link" : "/articles/antenna_palace/", 
-                     "image" : "/assets/img/escape/antenna-palace-trap-game.webp"}
-                    ,
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-                    {"rank": "2", 
-                     "title" : "Argent sale", 
-                     "link" : "/articles/argent-sale/", 
-                     "image" : "/assets/img/escape/argent-sale-enigma-city-escape-game-toulouse.webp"}
-                    ,
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-                    {"rank": "3", 
-                     "title" : "La Crypte", 
-                     "link" : "/articles/la_crypte/", 
-                     "image" : "/assets/img/escape/paris-donjon-crypte.jpg"}
-                    
-                
-            
-        
-     ]'>
-</div>
-
-
-<script src="/assets/js/top-articles.js"></script> -->
-
-
-
-<div class="top-articles-container">
-    <h2 class="top-title">Premier top</h2>
-    <div class="top-articles-placeholder"
-         data-title="Premier top"
-         data-articles='[
-            
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                    
-                
-                    
-                        {"rank": "1", 
-                         "title" : "Antena Palace", 
-                         "link" : "/articles/antenna_palace/", 
-                         "image" : "/assets/img/escape/antenna-palace-trap-game.webp",
-                         "note" : "20"}
-                        ,
-                    
-                
-                    
-                
-                    
-                
-            
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                    
-                
-                    
-                
-                    
-                        {"rank": "2", 
-                         "title" : "Argent sale", 
-                         "link" : "/articles/argent-sale/", 
-                         "image" : "/assets/img/escape/argent-sale-enigma-city-escape-game-toulouse.webp",
-                         "note" : "20"}
-                        ,
-                    
-                
-                    
-                
-            
-                    
-                
-                    
-                
-                    
-                
-                    
-                        {"rank": "3", 
-                         "title" : "La Crypte", 
-                         "link" : "/articles/la_crypte/", 
-                         "image" : "/assets/img/escape/paris-donjon-crypte.jpg",
-                         "note" : "20"}
-                        
-                    
-                
-            
-         ]'>
-    </div>
-</div>
-
-<script src="/assets/js/top-articles.js"></script>
-
-
-<!-- 
-
-
-<div class="top-articles-placeholder"
-     data-title="Premier top"
-     data-articles='[
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-                    {"title" : "Antena Palace", "link" : "/articles/antenna_palace/"},
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-                    {"title" : "Argent sale", "link" : "/articles/argent-sale/"},
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-                    {"title" : "La Crypte", "link" : "/articles/la_crypte/"}
-                
-            
-        
-     ]'>
-</div>
-
-
-<script src="/assets/js/top-articles.js"></script> -->
-
-<!-- 
-
-<div class="top-articles-placeholder"
-     data-title="Premier top"
-     data-articles='[
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-                    {"rank": "1", 
-                     "title" : "Antena Palace", 
-                     "link" : "/articles/antenna_palace/", 
-                     "image" : "/assets/img/escape/antenna-palace-trap-game.webp"}
-                    ,
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-                    {"rank": "2", 
-                     "title" : "Argent sale", 
-                     "link" : "/articles/argent-sale/", 
-                     "image" : "/assets/img/escape/argent-sale-enigma-city-escape-game-toulouse.webp"}
-                    ,
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-                    {"rank": "3", 
-                     "title" : "La Crypte", 
-                     "link" : "/articles/la_crypte/", 
-                     "image" : "/assets/img/escape/paris-donjon-crypte.jpg"}
-                    
-                
-            
-        
-     ]'>
-</div>
-
-
-<script src="/assets/js/top-articles.js"></script> -->
-
-
-
-<div class="top-articles-container">
-    <h2 class="top-title">Premier top</h2>
-    <div class="top-articles-placeholder"
-         data-title="Premier top"
-         data-articles='[
-            
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                    
-                
-                    
-                        {"rank": "1", 
-                         "title" : "Antena Palace", 
-                         "link" : "/articles/antenna_palace/", 
-                         "image" : "/assets/img/escape/antenna-palace-trap-game.webp",
-                         "note" : "20"}
-                        ,
-                    
-                
-                    
-                
-                    
-                
-            
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                    
-                
-                    
-                
-                    
-                        {"rank": "2", 
-                         "title" : "Argent sale", 
-                         "link" : "/articles/argent-sale/", 
-                         "image" : "/assets/img/escape/argent-sale-enigma-city-escape-game-toulouse.webp",
-                         "note" : "20"}
-                        ,
-                    
-                
-                    
-                
-            
-                    
-                
-                    
-                
-                    
-                
-                    
-                        {"rank": "3", 
-                         "title" : "La Crypte", 
-                         "link" : "/articles/la_crypte/", 
-                         "image" : "/assets/img/escape/paris-donjon-crypte.jpg",
-                         "note" : "20"}
-                        
-                    
-                
-            
-         ]'>
-    </div>
-</div>
-
-<script src="/assets/js/top-articles.js"></script>
-
-
-<!-- 
-
-
-<div class="top-articles-placeholder"
-     data-title="Deux"
-     data-articles='[
-        
-                
-            
-                
-                    {"title" : "Disparitions", "link" : "/articles/dispatitions/"},
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-                    {"title" : "Argent sale", "link" : "/articles/argent-sale/"},
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-                    {"title" : "La Crypte", "link" : "/articles/la_crypte/"}
-                
-            
-        
-     ]'>
-</div>
-
-
-<script src="/assets/js/top-articles.js"></script> -->
-
-<!-- 
-
-<div class="top-articles-placeholder"
-     data-title="Deux"
-     data-articles='[
-        
-                
-            
-                
-                    {"rank": "1", 
-                     "title" : "Disparitions", 
-                     "link" : "/articles/dispatitions/", 
-                     "image" : "/assets/img/escape/disparitions-enigma-city-escape-game-toulouse.webp"}
-                    ,
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-                    {"rank": "2", 
-                     "title" : "Argent sale", 
-                     "link" : "/articles/argent-sale/", 
-                     "image" : "/assets/img/escape/argent-sale-enigma-city-escape-game-toulouse.webp"}
-                    ,
-                
-            
-                
-            
-        
-                
-            
-                
-            
-                
-            
-                
-                    {"rank": "3", 
-                     "title" : "La Crypte", 
-                     "link" : "/articles/la_crypte/", 
-                     "image" : "/assets/img/escape/paris-donjon-crypte.jpg"}
-                    
-                
-            
-        
-     ]'>
-</div>
-
-
-<script src="/assets/js/top-articles.js"></script> -->
-
-
-
-<div class="top-articles-container">
-    <h2 class="top-title">Deux</h2>
-    <div class="top-articles-placeholder"
-         data-title="Deux"
-         data-articles='[
-            
-                    
-                
-                    
-                        {"rank": "1", 
-                         "title" : "Disparitions", 
-                         "link" : "/articles/dispatitions/", 
-                         "image" : "/assets/img/escape/disparitions-enigma-city-escape-game-toulouse.webp",
-                         "note" : "20"}
-                        ,
-                    
-                
-                    
-                
-                    
-                
-            
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                    
-                
-                    
-                
-                    
-                        {"rank": "2", 
-                         "title" : "Argent sale", 
-                         "link" : "/articles/argent-sale/", 
-                         "image" : "/assets/img/escape/argent-sale-enigma-city-escape-game-toulouse.webp",
-                         "note" : "20"}
-                        ,
-                    
-                
-                    
-                
-            
-                    
-                
-                    
-                
-                    
-                
-                    
-                        {"rank": "3", 
-                         "title" : "La Crypte", 
-                         "link" : "/articles/la_crypte/", 
-                         "image" : "/assets/img/escape/paris-donjon-crypte.jpg",
-                         "note" : "20"}
-                        
-                    
-                
-            
-         ]'>
-    </div>
-</div>
-
-<script src="/assets/js/top-articles.js"></script>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
     
+    function performSearch() {
+        const query = searchInput.value.trim();
+        
+        if (query) {
+            // Perform search within existing content, e.g., filtering a list of posts
+            const posts = document.querySelectorAll('.post'); // Change this selector to your content
+            posts.forEach(post => {
+                const postTitle = post.querySelector('.title').textContent.toLowerCase();
+                if (postTitle.includes(query.toLowerCase())) {
+                    post.style.display = 'block';  // Show matching posts
+                } else {
+                    post.style.display = 'none';   // Hide non-matching posts
+                }
+            });
+        }
+    }
+
+    // Trigger search when clicking the button
+    searchButton.addEventListener("click", performSearch);
+
+    // Trigger search when pressing "Enter"
+    searchInput.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            performSearch();
+        }
+    });
+});
+</script>
+    
+
+
+
+<div class="top-articles-container">
+    <div class="top-title-container">
+        <!-- <img src="/assets/icons/prize.svg" alt="Prize Icon" class="prize-icon"> -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+        <h2 class="top-title">Meilleur Escape Game 2024</h2>
+    </div>
+    <!-- <h2 class="top-title">Meilleur Escape Game 2024</h2> -->
+    <div class="top-articles-placeholder"
+         data-title="Meilleur Escape Game 2024"
+         data-articles='[{
+                         "rank": "1", 
+                         "title": "La Crypte", 
+                         "link": "/articles/la-crypte/", 
+                         "image": "/assets/img/escape/paris-donjon-crypte.jpg",
+                         "note": "20"
+                        },{
+                         "rank": "2", 
+                         "title": "Mission Galactique", 
+                         "link": "/articles/mission-galactique/", 
+                         "image": "/assets/img/escape/paris-majestic-mission-galactique.jpg",
+                         "note": "19"
+                        },{
+                         "rank": "3", 
+                         "title": "The Riddler: the final test", 
+                         "link": "/articles/the-riddler-final-test/", 
+                         "image": "/assets/img/escape/paris-batman-escape-riddler-final-test.jpg",
+                         "note": "18.5"
+                        }
+         ]'>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="/assets/js/top-articles.js"></script>
+
+
+
+
+
+
+
+<div class="top-articles-container">
+    <div class="top-title-container">
+        <!-- <img src="/assets/icons/prize.svg" alt="Prize Icon" class="prize-icon"> -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+        <h2 class="top-title">Meilleur Escape Game 2023</h2>
+    </div>
+    <!-- <h2 class="top-title">Meilleur Escape Game 2023</h2> -->
+    <div class="top-articles-placeholder"
+         data-title="Meilleur Escape Game 2023"
+         data-articles='[{
+                         "rank": "1", 
+                         "title": "La Mission secrète", 
+                         "link": "/articles/la-mission-secrete/", 
+                         "image": "/assets/img/escape/paris-the_game-mission-secrete.jpg",
+                         "note": "20"
+                        },{
+                         "rank": "2", 
+                         "title": "The Joker : Joke&#39;s on you !", 
+                         "link": "/articles/the-joker-jokes-on-you/", 
+                         "image": "/assets/img/escape/batman-escape-joker-jokes-on-you.jpg",
+                         "note": "19"
+                        },{
+                         "rank": "3", 
+                         "title": "Raptor Project", 
+                         "link": "/articles/raptor_project/", 
+                         "image": "/assets/img/escape/escape-lab-raptor-project.jpg",
+                         "note": "19"
+                        },{
+                         "rank": "4", 
+                         "title": "L&#39;Entrepôt fantastique", 
+                         "link": "/articles/entrepot-fantastique/", 
+                         "image": "/assets/img/escape/paris-pandore-associes-entrepot-fantastique.jpg",
+                         "note": "18"
+                        },{
+                         "rank": "5", 
+                         "title": "Le Trésor perdu de Fabergé", 
+                         "link": "/articles/tresor-perdu-de-faberge/", 
+                         "image": "/assets/img/escape/paris-secrets-hunters-tresor-perdu-faberge.jpg",
+                         "note": "18"
+                        },{
+                         "rank": "6", 
+                         "title": "The Batcave: Secret Missions", 
+                         "link": "/articles/the-batcave-secret-missions/", 
+                         "image": "/assets/img/escape/batman-escape-batcave-secret-missions.jpg",
+                         "note": "17"
+                        }
+         ]'>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="/assets/js/top-articles.js"></script>
+
+
+
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
 </body>

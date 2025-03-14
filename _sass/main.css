@@ -101,10 +101,8 @@
   color: white;
   font-size: 1.5 rem;
   padding: 0 2 rem;
-}
-
-.logo img {
-  width: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
@@ -112,53 +110,101 @@
 }
 
 .nav-wrap {
-  height: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
   background: black;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+.nav-wrap ul {
+  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
 }
-
-.nav-items a {
+.nav-wrap ul li {
+  height: 50px;
+}
+.nav-wrap ul li a {
+  height: 100%;
+  padding: 0 30px;
   text-decoration: none;
-  margin-left: 32px;
-  margin-top: 27px;
-  font-size: 20px;
-  margin-right: 30px;
-  /*font-weight: bold;*/
-  padding: 10px 15px;
-  border-radius: 5px;
+  display: flex;
+  align-items: center;
   color: white;
+  font-size: 20px;
+  border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  justify-content: space-between;
 }
-.nav-items a:hover {
+.nav-wrap ul li a:hover {
   background-color: orange;
   color: black;
   font-weight: bold;
   /*transition: 0.4s ease-in-out;*/
 }
-
-.nav-toggle {
-  display: none; /* Hidden on large screens */
-  font-size: 24px;
+.nav-wrap ul .search-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-wrap ul .search-icon input {
+  background: black;
+  border: 1px solid #e3e3e3;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+}
+.nav-wrap ul .search-icon input::-moz-placeholder {
+  color: #aaa;
+}
+.nav-wrap ul .search-icon input::placeholder {
+  color: #aaa;
+}
+.nav-wrap ul .search-icon button {
   background: none;
   border: none;
   cursor: pointer;
-  color: white; /* White button */
+}
+.nav-wrap ul .search-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+.nav-wrap .sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  z-index: 999;
+  background-color: rgba(6, 6, 6, 0.79);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.nav-wrap .sidebar li {
+  width: 100%;
+}
+.nav-wrap .sidebar a {
+  width: 100%;
+}
+.nav-wrap .menu-button {
+  display: none;
 }
 
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: block; /* Show button only on small screens */
+@media (max-width: 900px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .nav-wrap .menu-button {
+    display: block;
   }
 }
-/* Show menu when active */
-.nav-items.active {
-  display: flex;
-}
-
 .social-media {
   font-size: 50px;
   display: flex;
@@ -250,7 +296,6 @@
     height: 250px; /* Adjust iframe height for smaller screens */
   }
 }
-/* Default styling */
 .top-articles-container {
   max-width: 600px;
   margin: 30px auto;
@@ -258,12 +303,33 @@
   padding: 0 15px;
 }
 
+.top-title-container {
+  display: flex;
+  align-items: center;
+  background-color: #ff6600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.top-title-container svg {
+  fill: white;
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+}
+
+.prize-icon {
+  width: 24px; /* Adjust size as needed */
+  height: 24px;
+  margin-right: 10px;
+}
+
 .top-title {
-  font-size: 22px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  margin: 0;
 }
 
 .top-articles-placeholder {

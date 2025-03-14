@@ -1,8 +1,10 @@
 ---
 layout: article
-url: 'argent_sale'
+url: "argent-sale"
+top_name: "argent-sale"
+slug : "argent-sale"
 title: 'Argent sale'
-date: 2025-02-28
+date: 28-02-2025
 note: 20
 enseigne: "enigma_city"
 theme : 'Enquête'

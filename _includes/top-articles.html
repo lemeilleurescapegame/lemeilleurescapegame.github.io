@@ -1,68 +1,47 @@
-<!-- {% assign articles_list = include.list | split: "," %}
-
-
-<div class="top-articles-placeholder"
-     data-title="{{ include.title }}"
-     data-articles='[
-        {% for article in site.articles %}
-            {% assign article_url = article.url | split: "/" | last %}    
-            {% for e in articles_list %}
-                {% if article_url == e %}
-                    {"title" : "{{ article.title }}", "link" : "{{ article.url }}"}{% unless forloop.last %},{% endunless %}
-                {% endif %}
-            {% endfor %}
-        {% endfor %}
-     ]'>
-</div>
-
-
-<script src="{{base_url}}/assets/js/top-articles.js"></script> -->
-
-<!-- {% assign articles_list = include.list | split: "," %}
-
-<div class="top-articles-placeholder"
-     data-title="{{ include.title }}"
-     data-articles='[
-        {% for article in site.articles %}
-            {% assign article_url = article.url | split: "/" | last %}    
-            {% for e in articles_list %}
-                {% if article_url == e %}
-                    {"rank": "{{ forloop.index }}", 
-                     "title" : "{{ article.title }}", 
-                     "link" : "{{ article.url }}", 
-                     "image" : "{{site.baseurl}}/assets/img/escape/{{ article.image_name }}"}
-                    {% unless forloop.last %},{% endunless %}
-                {% endif %}
-            {% endfor %}
-        {% endfor %}
-     ]'>
-</div>
-
-
-<script src="{{ base_url }}/assets/js/top-articles.js"></script> -->
-
 {% assign articles_list = include.list | split: "," %}
+{% assign rank = 0 %}
+{% assign matching_articles = "" %}
 
 <div class="top-articles-container">
-    <h2 class="top-title">{{ include.title }}</h2>
+    <div class="top-title-container">
+        <!-- <img src="/assets/icons/prize.svg" alt="Prize Icon" class="prize-icon"> -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+        <h2 class="top-title">{{ include.title }}</h2>
+    </div>
+    <!-- <h2 class="top-title">{{ include.title }}</h2> -->
     <div class="top-articles-placeholder"
          data-title="{{ include.title }}"
          data-articles='[
-            {% for article in site.articles %}
-                {% assign article_url = article.url | split: "/" | last %}    
-                {% for e in articles_list %}
-                    {% if article_url == e %}
-                        {"rank": "{{ forloop.index }}", 
-                         "title" : "{{ article.title }}", 
-                         "link" : "{{ article.url }}", 
-                         "image" : "{{site.baseurl}}/assets/img/escape/{{ article.image_name }}",
-                         "note" : "{{article.note}}"}
-                        {% unless forloop.last %},{% endunless %}
-                    {% endif %}
-                {% endfor %}
-            {% endfor %}
+            {%- for article_slug_input in articles_list -%}
+                {%- assign e = article_slug_input | strip -%}
+                {%- for article in site.articles -%}
+                    {%- if article.top_name == e -%}
+                        {%- assign rank = rank | plus: 1 -%}
+                        {%- capture article_json -%}
+                        {
+                         "rank": "{{ rank }}", 
+                         "title": "{{ article.title | escape }}", 
+                         "link": "{{ article.url }}", 
+                         "image": "{{ site.baseurl }}/assets/img/escape/{{ article.image_name }}",
+                         "note": "{{ article.note }}"
+                        }
+                        {%- endcapture -%}
+                        {%- if matching_articles != "" -%}
+                            {% assign matching_articles = matching_articles | append: "," %}
+                        {%- endif -%}
+                        {% assign matching_articles = matching_articles | append: article_json %}
+                    {%- endif -%}
+                {%- endfor -%}
+            {%- endfor -%}
+            {{ matching_articles }}
          ]'>
     </div>
 </div>
 
+
+
+
+
+
 <script src="{{ base_url }}/assets/js/top-articles.js"></script>
+

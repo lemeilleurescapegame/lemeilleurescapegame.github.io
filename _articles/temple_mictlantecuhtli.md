@@ -1,8 +1,9 @@
 ---
 layout: article
 url: "temple-mictlantecuhtli"
+top_name : "temple-mictlantecuhtli"
 title: 'Le Temple de Mictlantecuhtli'
-date: 2024-12-24
+date: 24-12-2024
 note: "20"
 enseigne: "too_late_escape_game_bayonne"
 theme : 'Aventure'
