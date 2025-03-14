@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <img src="${article.image}" alt="${article.title}">
                     <div class="text">
                         <div class="title">${article.title}</div>
-                        <div class="link">${article.link}</div>
+                        <div class="link">${article.enseigne}</div>
                     </div>
                     <div class="note">${article.note || "N/A"}/20</div>
                 </a>
