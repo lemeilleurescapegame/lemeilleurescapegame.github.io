@@ -197,6 +197,23 @@
   .nav-wrap .menu-button {
     display: block;
   }
+  .search-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adjust the gap */
+  }
+  .search-icon input {
+    width: 80px; /* Adjust width of the input */
+    padding: 5px 8px;
+    font-size: 14px; /* Smaller font */
+  }
+  .search-icon button {
+    padding: 5px; /* Smaller button size */
+  }
+  .search-icon svg {
+    width: 20px; /* Make the icon smaller */
+    height: 20px;
+  }
 }
 .social-media {
   font-size: 50px;
