@@ -1,3 +1,90 @@
 ---
 layout: default
 ---
+
+<style>
+    /* Grid layout with 3 columns */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .grid-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 180px; /* Slightly bigger */
+        margin: auto;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: 180px; /* Bigger image */
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .grid-item:hover img {
+        transform: scale(1.05);
+    }
+
+    .grid-item .overlay {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+        font-size: 1em; /* Slightly bigger title */
+        font-weight: bold;
+        padding: 8px;
+        opacity: 1;
+    }
+
+    .grid-item a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* Keep 3 columns on mobile */
+    @media (max-width: 768px) {
+        .grid-container {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .grid-item {
+            max-width: 150px; /* Slightly smaller for mobile */
+        }
+
+        .grid-item img {
+            height: 150px;
+        }
+
+        .grid-item .overlay {
+            font-size: 0.9em; /* Slightly bigger than before */
+            padding: 6px;
+        }
+    }
+</style>
+
+<div class="grid-container">
+    {% for article in site.horreur %}
+        <div class="grid-item">
+            <a href="{{ article.url }}">
+                <img src="{{ base_url }}/assets/img/top-horreur/{{ article.image_name }}" alt="{{ article.title }}">
+                <div class="overlay">{{ article.title }}</div>
+            </a>
+        </div>
+    {% endfor %}
+</div>
+
+
+

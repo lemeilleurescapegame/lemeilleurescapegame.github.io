@@ -45,6 +45,12 @@ collections:
   articles:
     output: true
     permalink: /:collection/:path/
+  horreur:
+    output: true
+    permalink: /:collection/:path/
+  top-world:
+    output: true
+    permalink: /:collection/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -238,7 +238,10 @@ layout: default
         {{ page.content }}
         <div>
             {% if page.resenti_global %}
-                <h1>Ressenti global</h1>
+                <div class="top-title-container">
+                    <h2 class="top-title">Ressenti Global</h2>
+                </div>
+                <!-- <h1>Ressenti global</h1> -->
                 <p>{{ page.resenti_global }}</p>
             {% endif %}
         </div>
