@@ -39,14 +39,10 @@ layout: default
                 <img src="{{ site.baseurl }}/assets/img/icons/fra.svg" alt="icon" class="icon-image">
                 Les tops en France
             </h2>
+
+            {% include france-map.html %}
         </div>
-        <ul>
-            {% for article in site.articles %}
-              <li>
-                <a href="{{ article.url }}">{{ article.url }}</a>
-              </li>
-            {% endfor %}
-          </ul>
+
 
         <div>
             <h2 class="front-page-head">
@@ -55,6 +51,16 @@ layout: default
                 Les tops à l'étranger
             </h2>
         </div>
+        <div>
+            <ul>
+                {% for article in site.articles %}
+                  <li>
+                    <a href="{{ article.url }}">{{ article.url }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+        </div>
+        
 
         
     </section>
