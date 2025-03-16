@@ -10,7 +10,7 @@ theme : 'Fantastique'
 duree : '90 min'
 nb-joueur : '3 à 5'
 redacteur : 'Alexis'
-image_name : 'paris-pandore-associes-entrepot-fantastique.webp'
+image_name : 'paris-pandore-associes-entrepot-fantastique-optimized.webp'
 scenario : "Pandore & Associés vous convie à une visite exclusive de son entrepôt extraordinaire. Une occasion unique de découvrir l’intégralité de ses objets et créatures magiques. Merci toutefois de vérifier auprès de votre assurance que vous êtes bien couverts contre tous types de risques. La maison décline toutes responsabilités en cas d’incident avec un de ses objets ou créatures lors de votre passage."
 resenti_global : "L’Entrepôt fantastique mérite une visite ne serait ce que pour sa séquence vidéo-ludique innovante et son role play amusant. Pandore&Associés propose une nouvelle salle familiale avec un scénario décalé dont seule l’enseigne du 11e arrondissement a le secret."
 ---
