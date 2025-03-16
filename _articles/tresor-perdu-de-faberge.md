@@ -10,7 +10,7 @@ theme : 'Manoir'
 duree : '60 min'
 nb-joueur : '2 à 5'
 redacteur : 'Alexis'
-image_name : 'paris-secrets-hunters-tresor-perdu-faberge.jpg'
+image_name : 'paris-secrets-hunters-tresor-perdu-faberge-optimized.webp'
 scenario : "D’après une mystérieuse lettre, un trésor d’une valeur inestimable aurait été dissimulé depuis des années : un œuf du célèbre joaillier Fabergé. L’agence Secrets Hunters vous envoie en 1993 explorer le manoir d’un riche collectionneur anglais pour mener l’enquête. Parviendrez-vous à retrouver la trace de ce trésor perdu ?"
 resenti_global : "Avec Le Trésor perdu de Fabergé, Secrets Hunters revient aux bases de l’escape game tout en apportant la modernité de 2024 : décors et mise en scène très qualitatives, absence de cadenas, mécanismes à gogo… L’enseigne prouve une nouvelle fois qu’elle incarne une valeur sûre de la place parisienne."
 ---

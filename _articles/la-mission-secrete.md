@@ -10,7 +10,7 @@ theme : 'Mystère'
 duree : '60 min'
 nb-joueur : '3 à 5'
 redacteur : 'Alexis'
-image_name : 'paris-the_game-mission-secrete.jpg'
+image_name : 'paris-the_game-mission-secrete-optimized.webp'
 scenario : "Pour en savoir plus, il faudra venir jouer cette mission !"
 resenti_global : "Pour ce qui sera sans doute sa dernière création avant plusieurs années, The Game frappe fort. En sortant de ce qu’il avait l’habitude de faire, le géant de l’escape game parisien a gagné son pari : la Mission secrète est certainement la meilleure salle qu’il ait jamais créée."
 ---

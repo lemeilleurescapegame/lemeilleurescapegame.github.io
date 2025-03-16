@@ -10,7 +10,7 @@ theme : 'cannibale/ aventure'
 duree : "75 min"
 nb-joueur : '3 à 5'
 redacteur : 'Alexis'
-image_name : 'paris-quest-factory-cannibal-island.jpg'
+image_name : 'paris-quest-factory-cannibal-island-optimized.webp'
 scenario : "Une légende vieille de plusieurs siècles raconte l’histoire d’un Sorcier Cannibale. Il aurait caché un fabuleux trésor au coeur d’un sanctuaire sur une île perdue du Pacifique. Après des années de recherche, le célèbre archéologue Marc Haulabois l’a enfin localisée. Au lieu de ruines, il y trouve un sanctuaire préservé où la magie noire est omniprésente. Et s’il y avait encore des adeptes du Sorcier ? Marc Haulabois réalise que des rituels protègent l’accès au trésor. Il décide de recruter une équipe d’aventuriers résolus à courir tous les risques pour l’aider à s’en emparer."
 resenti_global : "Que de chemin parcouru pour The Quest Factory depuis Opération Balkans. Thème, immersion et énigmes changent du tout au tout avec cette aventure rythmée par des effets de surprise récurrents. "
 ---

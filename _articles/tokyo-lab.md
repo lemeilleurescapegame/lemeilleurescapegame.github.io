@@ -10,7 +10,7 @@ theme : 'Pandémie'
 duree : '70 min'
 nb-joueur : '3 à 6'
 redacteur : 'Alexis'
-image_name : 'tokyo-lab.jpg'
+image_name : 'tokyo-lab-optimized.webp'
 scenario : "Votre mission « Tokyo Lab » vous transportera au cœur de la capitale japonaise. En 70 minutes, au départ d’une ruelle de Shibuya, vous devrez infiltrer un centre de recherche abandonné dans les années 80, gagner l’accès à un labo clandestin et neutraliser un virus mortel créé par la mystérieuse société « Crawford Industries »."
 resenti_global : "Lors de notre test à l’automne 2021, Tokyo Lab était selon nous la meilleure salle de Belgique. Décors magnifiques, énigmes variées, sens de la narration, final détonnant… On est sans conteste sur une salle de classe mondiale."
 ---

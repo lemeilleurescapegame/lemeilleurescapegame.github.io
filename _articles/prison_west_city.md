@@ -10,7 +10,7 @@ theme : 'Western'
 duree : '90 min'
 nb-joueur : '2 à 8'
 redacteur : 'Alexis'
-image_name : 'prison-west-city.jpg'
+image_name : 'prison-west-city-optimized.webp'
 scenario : "Vos coéquipiers et vous-même, de redoutables hors-la-loi du Far West, êtes bien décidés à cambrioler la banque de West City. Un plan soigneusement élaboré, une diligence avec un cocher soudoyé pour assurer une fuite rapide avec le butin, tout est vraiment parfait ! C’est malheureusement sans compter sur le shérif de West City qui a eu vent de vos plans et vous attend à votre arrivée en ville. Il vous enferme dans la prison de West City, bien décidé à vous faire exécuter rapidement !"
 resenti_global : "Une salle plus axée western qu’évasion de prison. Elle est conforme à ce que vous pouvez imaginer d’un tel thème sur le plan des décors ou des énigmes. Le contenu proposé est dense et permet à l’ensemble de l’équipe d’être mobilisé par les énigmes."
 ---
