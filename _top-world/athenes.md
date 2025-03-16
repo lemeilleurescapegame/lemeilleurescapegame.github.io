@@ -2,5 +2,5 @@
 layout : top-world
 title: "Athènes"
 url : "athenes"  
-image_name : "top-athenes.jpeg"
+image_name : "top-athenes-optimized.webp"
 ---
