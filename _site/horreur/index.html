@@ -91,31 +91,32 @@
 });
 </script>
     <style>
-    /* Grid layout with 3 columns */
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
         gap: 15px;
         text-align: center;
         padding: 10px;
     }
-    
+
     .grid-item {
         position: relative;
         overflow: hidden;
         border-radius: 10px;
         width: 100%;
-        max-width: 180px; /* Slightly bigger */
+        max-width: 180px;
         margin: auto;
     }
 
     .grid-item img {
         width: 100%;
-        height: 180px; /* Bigger image */
+        height: 180px;
         object-fit: cover;
         transition: transform 0.3s ease-in-out;
         border-radius: 10px;
         display: block;
+        will-change: transform;
+        loading: lazy;
     }
 
     .grid-item:hover img {
@@ -129,7 +130,7 @@
         background: rgba(0, 0, 0, 0.7);
         color: white;
         text-align: center;
-        font-size: 1em; /* Slightly bigger title */
+        font-size: 1em;
         font-weight: bold;
         padding: 8px;
         opacity: 1;
@@ -141,7 +142,6 @@
         color: inherit;
     }
 
-    /* Keep 3 columns on mobile */
     @media (max-width: 768px) {
         .grid-container {
             grid-template-columns: repeat(3, 1fr);
@@ -149,7 +149,7 @@
         }
 
         .grid-item {
-            max-width: 150px; /* Slightly smaller for mobile */
+            max-width: 150px;
         }
 
         .grid-item img {
@@ -157,7 +157,7 @@
         }
 
         .grid-item .overlay {
-            font-size: 0.9em; /* Slightly bigger than before */
+            font-size: 0.9em;
             padding: 6px;
         }
     }
@@ -167,50 +167,47 @@
     
         <div class="grid-item">
             <a href="/horreur/Toulouse/">
-                <img src="/assets/img/top-horreur/escape-game-horreur-toulouse.png" alt="Toulouse">
+                <img src="/assets/img/top-horreur/escape-game-horreur-toulouse.png" alt="Toulouse" loading="lazy">
                 <div class="overlay">Toulouse</div>
             </a>
         </div>
     
         <div class="grid-item">
             <a href="/horreur/bordeaux/">
-                <img src="/assets/img/top-horreur/escape-game-horreur-bordeaux.jpg" alt="Bordeaux">
+                <img src="/assets/img/top-horreur/escape-game-horreur-bordeaux.jpg" alt="Bordeaux" loading="lazy">
                 <div class="overlay">Bordeaux</div>
             </a>
         </div>
     
         <div class="grid-item">
             <a href="/horreur/lyon/">
-                <img src="/assets/img/top-horreur/escape-game-horreur-lyon.jpg" alt="Lyon">
+                <img src="/assets/img/top-horreur/escape-game-horreur-lyon.jpg" alt="Lyon" loading="lazy">
                 <div class="overlay">Lyon</div>
             </a>
         </div>
     
         <div class="grid-item">
             <a href="/horreur/monde/">
-                <img src="/assets/img/top-horreur/escape-game-horreur-monde.jpg" alt="Monde">
+                <img src="/assets/img/top-horreur/escape-game-horreur-monde.jpg" alt="Monde" loading="lazy">
                 <div class="overlay">Monde</div>
             </a>
         </div>
     
         <div class="grid-item">
             <a href="/horreur/montpellier/">
-                <img src="/assets/img/top-horreur/escape-game-horreur-montpellier.jpeg" alt="Montpellier">
+                <img src="/assets/img/top-horreur/escape-game-horreur-montpellier.jpeg" alt="Montpellier" loading="lazy">
                 <div class="overlay">Montpellier</div>
             </a>
         </div>
     
         <div class="grid-item">
             <a href="/horreur/paris/">
-                <img src="/assets/img/top-horreur/escape-game-horreur-paris.jpg" alt="Paris">
+                <img src="/assets/img/top-horreur/escape-game-horreur-paris.jpg" alt="Paris" loading="lazy">
                 <div class="overlay">Paris</div>
             </a>
         </div>
     
 </div>
-
-
-
 
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
