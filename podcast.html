@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <body>
     <section class="header">
         <div class="head">
@@ -14,6 +13,7 @@ layout: default
             chaud sur les tendances de l'immersif.
         </div>
     </section>
+
     <section class="social-network">
         <div class="smaller-head">
             Abonnez-vous sur votre plateforme de podcast préférée : 
@@ -26,17 +26,16 @@ layout: default
                 <i class="fab fa-apple"></i> 
             </a>
             <a href="https://www.deezer.com/fr/show/1000653942" target="_blank" class="social-icon deezer">
-                <!-- <i class="fab fa-deezer"></i>  -->
                 <img src="{{ site.baseurl }}/assets/img/icons/deezer-logo.svg" alt="Deezer">
             </a>
             <a href="https://podcastaddict.com/podcast/immersion-les-loisirs-immersifs/4856456" target="_blank" class="social-icon podcast-addict">
-                <!-- <i class="fas fa-podcast"></i>  Generic podcast icon -->
-                <img src="{{ site.baseurl }}/assets/img/icons/podcast-addict.png" alt="Deezer">
+                <img src="{{ site.baseurl }}/assets/img/icons/podcast-addict.png" alt="Podcast Addict">
             </a>
         </div>
     </section>
     
     <div class="iframe-container" id="iframeContainer"></div>
+
     <script>
         // Array of Spotify episode/show links
         const episodes = [
@@ -59,14 +58,37 @@ layout: default
             const iframe = document.createElement("iframe");
             iframe.style.borderRadius = "12px";
             iframe.src = episodes[i];
-            iframe.height = i === 0 ? "600" : "352";
             iframe.frameBorder = "0";
             iframe.allowFullscreen = true;
             iframe.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
-            iframe.loading = "lazy";
+            iframe.loading = "lazy";  // Ensuring lazy loading for iframes
+            iframe.width = "100%";  // Making the iframe responsive
+            iframe.height = "300"; // Default height for mobile-friendly size
             container.appendChild(iframe);
         }
     </script>
+
+    <style>
+        /* Basic styling for the iframes container */
+        .iframe-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .iframe-container iframe {
+            width: 100%;
+            max-width: 600px; /* Maximum width of the iframe */
+            height: 300px;  /* Default height of the iframe */
+            border-radius: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .iframe-container iframe {
+                height: 250px;  /* Reduce height for mobile screens */
+            }
+        }
+    </style>
 </body>
-
-
