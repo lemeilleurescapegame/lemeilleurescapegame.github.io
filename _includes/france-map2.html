@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France Map with Clickable Cities</title>
+    <style>
+        body {
+            text-align: center;
+            /* font-family: Arial, sans-serif; */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #france-map-unique {
+            width: 100%;
+            max-width: 800px; /* Increased max-width */
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .city {
+            fill: orange;
+            cursor: pointer;
+            transition: fill 0.3s;
+        }
+
+        .city-label-box {
+            fill: orange; /* Background for label */
+            opacity: 0.8;
+            rx: 5; /* Rounded corners */
+            ry: 5;
+        }
+
+        .city-label {
+            font-size: 16px;
+            font-weight: bold;
+            fill: white; /* Text color */
+            text-anchor: middle;
+            alignment-baseline: middle;
+        }
+
+        .label-line {
+            stroke: orange;
+            stroke-width: 2;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        a:hover .city-label-box {
+            fill: black;
+        }
+
+        a:hover .city-label {
+            fill: orange;
+        }
+
+        a:hover .city {
+            fill: black;
+        }
+
+        a:hover .label-line {
+            opacity: 1;
+        }
+
+        /* Media query for responsive design */
+        @media screen and (max-width: 600px) {
+            #france-map-unique {
+                width: 90%; /* Shrink map size on smaller screens */
+            }
+
+            .city-label {
+                font-size: 12px; /* Smaller text on mobile */
+            }
+        }
+
+    </style>
+    <script>
+        function convertToSVGCoords(lon, lat, svgWidth, svgHeight) {
+            const minLon = -5.1, maxLon = 9.6;
+            const minLat = 41.3, maxLat = 51.1;
+            let x = ((lon - minLon) / (maxLon - minLon)) * svgWidth;
+            let y = (1 - (lat - minLat) / (maxLat - minLat)) * svgHeight;
+            return { x, y };
+        }
+    </script>
+</head>
+<body>
+
+<svg id="france-map-unique" viewBox="-50 0 800 500"> <!-- Adjusted the viewBox -->
+    <image href="{{base_url}}/assets/img/icons/france.svg" width="500" height="500" />
+</svg>
+
+<div class="top-articles-placeholder"
+     data-title="{{ include.title }}"
+     cities='[
+        {%- for article in site.top-france -%}
+            {%- if article.lon and article.lat %} 
+                {
+                    "title": "{{ article.title }}", 
+                    "lon": {{ article.lon }},
+                    "lat": {{ article.lat }},
+                    "url": "{{ article.url }}"
+                }
+                {%- if forloop.last == false %}, {% endif %} 
+            {%- endif -%}
+        {%- endfor -%}
+     ]'>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const svg = document.getElementById("france-map-unique");
+        const citiesData = document.querySelector(".top-articles-placeholder").getAttribute('cities');
+        
+        if (!citiesData) {
+            console.error("Cities data not found!");
+            return;
+        }
+        
+        const cities = JSON.parse(citiesData);
+        const totalCities = cities.length;
+        const halfCities = Math.ceil(totalCities / 2);
+
+        let leftXPosition = -50;  // Push left labels further to the left
+        let rightXPosition = 550;
+        let initialYPosition = 50;
+        let ySpacing = 40;
+
+        cities.forEach((city, index) => {
+            let { x, y } = convertToSVGCoords(city.lon, city.lat, 500, 500);
+
+            let isLeftColumn = index < halfCities;
+            let labelX = isLeftColumn ? leftXPosition : rightXPosition;
+            let labelY = initialYPosition + (index % halfCities) * ySpacing;
+
+            let link = document.createElementNS("http://www.w3.org/2000/svg", "a");
+            link.setAttribute("href", city.url);
+
+            let circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            circle.setAttribute("class", "city");
+            circle.setAttribute("cx", x);
+            circle.setAttribute("cy", y);
+            circle.setAttribute("r", 6);
+
+            // Create a text element to measure text width
+            let tempText = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            tempText.setAttribute("font-size", "16");
+            tempText.textContent = city.title;
+            svg.appendChild(tempText);
+            let textWidth = tempText.getBBox().width;
+            svg.removeChild(tempText); // Remove temporary text
+
+            // Background box for text
+            let textBox = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+            textBox.setAttribute("class", "city-label-box");
+            textBox.setAttribute("x", labelX - (textWidth / 2) - 5);
+            textBox.setAttribute("y", labelY - 15);
+            textBox.setAttribute("width", textWidth + 10);
+            textBox.setAttribute("height", 20);
+
+            // Text label
+            let text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            text.setAttribute("class", "city-label");
+            text.setAttribute("x", labelX);
+            text.setAttribute("y", labelY);
+            text.textContent = city.title;
+
+            let line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            line.setAttribute("class", "label-line");
+
+            if (isLeftColumn) {
+                // Move left column labels further away and connect line from the right of text box
+                line.setAttribute("x1", labelX + textWidth / 2 + 5);
+            } else {
+                // Connect right column labels normally
+                line.setAttribute("x1", labelX - textWidth / 2 - 5);
+            }
+
+            line.setAttribute("y1", labelY);
+            line.setAttribute("x2", x);
+            line.setAttribute("y2", y);
+
+            link.appendChild(circle);
+            link.appendChild(line);
+            link.appendChild(textBox);
+            link.appendChild(text);
+            svg.appendChild(link);
+        });
+    });
+</script>
+
+</body>
+</html>

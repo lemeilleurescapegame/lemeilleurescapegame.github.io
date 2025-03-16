@@ -1,8 +1,8 @@
 ---
 layout : default
 title : "Montpelier"
-lon : -72.57
-lat : 44.26
+lon : 3.87
+lat : 43.61
 url : "montpelier"
 image_name : ""
 ---
