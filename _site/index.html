@@ -190,7 +190,7 @@
         }
 
         .city-label {
-            font-size: 18px;
+            font-size: 22px;
             font-weight: bold;
             fill: white;
             text-anchor: middle;
@@ -232,7 +232,7 @@
             }
 
             .city-label {
-                font-size: 20px;
+                font-size: 25px;
             }
         }
     </style>
@@ -429,9 +429,9 @@
 
             let textBox = document.createElementNS("http://www.w3.org/2000/svg", "rect");
             textBox.setAttribute("class", "city-label-box");
-            textBox.setAttribute("x", labelX - (textWidth / 2) - 10);
+            textBox.setAttribute("x", labelX - (textWidth / 2) - 16);
             textBox.setAttribute("y", labelY - 18);
-            textBox.setAttribute("width", textWidth + 20);
+            textBox.setAttribute("width", textWidth + 34);
             textBox.setAttribute("height", 30);
 
             let text = document.createElementNS("http://www.w3.org/2000/svg", "text");
