@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,8 +25,14 @@
             transition: fill 0.3s;
         }
 
-        .city-label-box {
+        /* .city-label-box {
             fill: orange;
+            opacity: 0.8;
+            rx: 5;
+            ry: 5;
+        } */
+        .city-label-box {
+            fill: black;
             opacity: 0.8;
             rx: 5;
             ry: 5;
@@ -48,15 +54,15 @@
         }
 
         a:hover .city-label-box {
-            fill: black;
-        }
-
-        a:hover .city-label {
             fill: orange;
         }
 
+        a:hover .city-label {
+            fill: white;
+        }
+
         a:hover .city {
-            fill: black;
+            fill: white;
         }
 
         a:hover .label-line {
@@ -86,7 +92,7 @@
 </head>
 <body>
 
-<svg id="france-map-unique" viewBox="-50 0 800 500">
+<svg id="france-map-unique" viewBox="-100 0 800 500">
     <image href="{{base_url}}/assets/img/icons/france.svg" width="500" height="500" loading="lazy" />
 </svg>
 
@@ -192,6 +198,206 @@
         });
 
         // Append the entire fragment to the SVG once
+        svg.appendChild(fragment);
+    });
+</script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France Map with Clickable Cities</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #france-map-unique {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .city {
+            fill: orange;
+            cursor: pointer;
+            transition: fill 0.3s ease-in-out;
+        }
+
+        .city-label-box {
+            fill: black;
+            opacity: 0.7;
+            rx: 8;
+            ry: 8;
+            transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+        }
+
+        .city-label {
+            font-size: 18px;
+            font-weight: bold;
+            fill: white;
+            text-anchor: middle;
+            alignment-baseline: middle;
+            transition: fill 0.3s ease-in-out;
+        }
+
+        .label-line {
+            stroke: orange;
+            stroke-width: 5;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        a:hover .city-label-box {
+            filter: drop-shadow(0px 0px 8px orange);
+            opacity: 1;
+        }
+
+        a:hover .city-label {
+            fill: white;
+        }
+
+        a:hover .city {
+            fill: rgba(33, 153, 234, 0.859);
+        }
+
+        a:hover .label-line {
+            opacity: 1;
+        }
+
+        @media screen and (max-width: 600px) {
+            #france-map-unique {
+                width: 90%;
+            }
+
+            .city-label {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <script>
+        function convertToSVGCoords(lon, lat, svgWidth, svgHeight) {
+            const minLon = -5.1, maxLon = 9.6;
+            const minLat = 41.3, maxLat = 51.1;
+            let x = ((lon - minLon) / (maxLon - minLon)) * svgWidth;
+            let y = (1 - (lat - minLat) / (maxLat - minLat)) * svgHeight;
+            return { x, y };
+        }
+    </script>
+</head>
+<body>
+
+<svg id="france-map-unique" viewBox="-150 5 800 550">
+    <image href="{{base_url}}/assets/img/icons/france.svg" width="500" height="500" loading="lazy" />
+</svg>
+
+<div class="top-articles-placeholder"
+     data-title="{{ include.title }}"
+     cities='[
+        {%- for article in site.top-france -%}
+            {%- if article.lon and article.lat %} 
+                {
+                    "title": "{{ article.title }}", 
+                    "lon": {{ article.lon }},
+                    "lat": {{ article.lat }},
+                    "url": "{{ article.url }}"
+                }
+                {%- if forloop.last == false %}, {% endif %} 
+            {%- endif -%}
+        {%- endfor -%}
+     ]'>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const svg = document.getElementById("france-map-unique");
+        const citiesData = document.querySelector(".top-articles-placeholder").getAttribute('cities');
+        
+        if (!citiesData) {
+            console.error("Cities data not found!");
+            return;
+        }
+        
+        const cities = JSON.parse(citiesData);
+        const totalCities = cities.length;
+        const halfCities = Math.ceil(totalCities / 2);
+
+        let leftXPosition = -70; 
+        let rightXPosition = 550;
+        let initialYPosition = 50;
+        let ySpacing = 45;
+
+        const fragment = document.createDocumentFragment();
+
+        cities.forEach((city, index) => {
+            let { x, y } = convertToSVGCoords(city.lon, city.lat, 500, 500);
+
+            let isLeftColumn = index < halfCities;
+            let labelX = isLeftColumn ? leftXPosition : rightXPosition;
+            let labelY = initialYPosition + (index % halfCities) * ySpacing;
+
+            let link = document.createElementNS("http://www.w3.org/2000/svg", "a");
+            link.setAttribute("href", city.url);
+
+            let circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            circle.setAttribute("class", "city");
+            circle.setAttribute("cx", x);
+            circle.setAttribute("cy", y);
+            circle.setAttribute("r", 8);
+
+            let tempText = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            tempText.setAttribute("font-size", "18");
+            tempText.textContent = city.title;
+            svg.appendChild(tempText);
+            let textWidth = tempText.getBBox().width;
+            svg.removeChild(tempText);
+
+            let textBox = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+            textBox.setAttribute("class", "city-label-box");
+            textBox.setAttribute("x", labelX - (textWidth / 2) - 10);
+            textBox.setAttribute("y", labelY - 18);
+            textBox.setAttribute("width", textWidth + 20);
+            textBox.setAttribute("height", 30);
+
+            let text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            text.setAttribute("class", "city-label");
+            text.setAttribute("x", labelX);
+            text.setAttribute("y", labelY);
+            text.textContent = city.title;
+
+            let line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            line.setAttribute("class", "label-line");
+
+            if (isLeftColumn) {
+                line.setAttribute("x1", labelX + textWidth / 2 + 10);
+            } else {
+                line.setAttribute("x1", labelX - textWidth / 2 - 10);
+            }
+
+            line.setAttribute("y1", labelY);
+            line.setAttribute("x2", x);
+            line.setAttribute("y2", y);
+
+            link.appendChild(line);
+            link.appendChild(circle);
+            link.appendChild(textBox);
+            link.appendChild(text);
+
+            fragment.appendChild(link);
+        });
+
         svg.appendChild(fragment);
     });
 </script>

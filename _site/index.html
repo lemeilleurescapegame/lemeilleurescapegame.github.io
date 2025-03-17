@@ -154,7 +154,7 @@
                 Les tops en France
             </h2>
 
-            <!DOCTYPE html>
+            <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -181,8 +181,14 @@
             transition: fill 0.3s;
         }
 
-        .city-label-box {
+        /* .city-label-box {
             fill: orange;
+            opacity: 0.8;
+            rx: 5;
+            ry: 5;
+        } */
+        .city-label-box {
+            fill: black;
             opacity: 0.8;
             rx: 5;
             ry: 5;
@@ -204,15 +210,15 @@
         }
 
         a:hover .city-label-box {
-            fill: black;
-        }
-
-        a:hover .city-label {
             fill: orange;
         }
 
+        a:hover .city-label {
+            fill: white;
+        }
+
         a:hover .city {
-            fill: black;
+            fill: white;
         }
 
         a:hover .label-line {
@@ -242,7 +248,7 @@
 </head>
 <body>
 
-<svg id="france-map-unique" viewBox="-50 0 800 500">
+<svg id="france-map-unique" viewBox="-100 0 800 500">
     <image href="/assets/img/icons/france.svg" width="500" height="500" loading="lazy" />
 </svg>
 
@@ -462,6 +468,320 @@
         });
 
         // Append the entire fragment to the SVG once
+        svg.appendChild(fragment);
+    });
+</script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France Map with Clickable Cities</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #france-map-unique {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .city {
+            fill: orange;
+            cursor: pointer;
+            transition: fill 0.3s ease-in-out;
+        }
+
+        .city-label-box {
+            fill: black;
+            opacity: 0.7;
+            rx: 8;
+            ry: 8;
+            transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+        }
+
+        .city-label {
+            font-size: 18px;
+            font-weight: bold;
+            fill: white;
+            text-anchor: middle;
+            alignment-baseline: middle;
+            transition: fill 0.3s ease-in-out;
+        }
+
+        .label-line {
+            stroke: orange;
+            stroke-width: 5;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        a:hover .city-label-box {
+            filter: drop-shadow(0px 0px 8px orange);
+            opacity: 1;
+        }
+
+        a:hover .city-label {
+            fill: white;
+        }
+
+        a:hover .city {
+            fill: rgba(33, 153, 234, 0.859);
+        }
+
+        a:hover .label-line {
+            opacity: 1;
+        }
+
+        @media screen and (max-width: 600px) {
+            #france-map-unique {
+                width: 90%;
+            }
+
+            .city-label {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <script>
+        function convertToSVGCoords(lon, lat, svgWidth, svgHeight) {
+            const minLon = -5.1, maxLon = 9.6;
+            const minLat = 41.3, maxLat = 51.1;
+            let x = ((lon - minLon) / (maxLon - minLon)) * svgWidth;
+            let y = (1 - (lat - minLat) / (maxLat - minLat)) * svgHeight;
+            return { x, y };
+        }
+    </script>
+</head>
+<body>
+
+<svg id="france-map-unique" viewBox="-150 5 800 550">
+    <image href="/assets/img/icons/france.svg" width="500" height="500" loading="lazy" />
+</svg>
+
+<div class="top-articles-placeholder"
+     data-title=""
+     cities='[ 
+                {
+                    "title": "Annecy", 
+                    "lon": 6.1294,
+                    "lat": 45.8992,
+                    "url": "/top-france/annecy/"
+                },  
+                {
+                    "title": "Annemasse", 
+                    "lon": 6.23,
+                    "lat": 46.19,
+                    "url": "/top-france/annemase/"
+                },  
+                {
+                    "title": "Avignon", 
+                    "lon": 4.8,
+                    "lat": 43.95,
+                    "url": "/top-france/avignon/"
+                },  
+                {
+                    "title": "Bayonne", 
+                    "lon": -1.47,
+                    "lat": 43.49,
+                    "url": "/top-france/bayonne/"
+                },  
+                {
+                    "title": "Bordeaux", 
+                    "lon": -0.58,
+                    "lat": 44.84,
+                    "url": "/top-france/bordeaux/"
+                },  
+                {
+                    "title": "Chambéry", 
+                    "lon": 5.92,
+                    "lat": 45.57,
+                    "url": "/top-france/chambery/"
+                },  
+                {
+                    "title": "Dijon", 
+                    "lon": 5.04,
+                    "lat": 47.32,
+                    "url": "/top-france/dijon/"
+                },  
+                {
+                    "title": "Grenoble", 
+                    "lon": 5.74,
+                    "lat": 45.18,
+                    "url": "/top-france/grenoble/"
+                },  
+                {
+                    "title": "Lille", 
+                    "lon": 3.06,
+                    "lat": 50.64,
+                    "url": "/top-france/lille/"
+                },  
+                {
+                    "title": "Lyon", 
+                    "lon": 4.83,
+                    "lat": 45.76,
+                    "url": "/top-france/lyon/"
+                },  
+                {
+                    "title": "Montélimar", 
+                    "lon": 4.75,
+                    "lat": 44.56,
+                    "url": "/top-france/montelimar/"
+                },  
+                {
+                    "title": "Montpelier", 
+                    "lon": 3.87,
+                    "lat": 43.61,
+                    "url": "/top-france/montpelier/"
+                },  
+                {
+                    "title": "Nantes", 
+                    "lon": -1.55,
+                    "lat": 47.21,
+                    "url": "/top-france/nantes/"
+                },  
+                {
+                    "title": "Nice", 
+                    "lon": 7.27,
+                    "lat": 43.7,
+                    "url": "/top-france/nice/"
+                },  
+                {
+                    "title": "Nimes", 
+                    "lon": 4.36,
+                    "lat": 43.84,
+                    "url": "/top-france/nimes/"
+                },  
+                {
+                    "title": "Paris", 
+                    "lon": 2.35,
+                    "lat": 48.85,
+                    "url": "/top-france/paris/"
+                },  
+                {
+                    "title": "Pau", 
+                    "lon": -0.37,
+                    "lat": 43.3,
+                    "url": "/top-france/pau/"
+                },  
+                {
+                    "title": "Perpignan", 
+                    "lon": 2.9,
+                    "lat": 42.7,
+                    "url": "/top-france/perpignan/"
+                },  
+                {
+                    "title": "Toulouse", 
+                    "lon": 1.44,
+                    "lat": 43.6,
+                    "url": "/top-france/toulouse/"
+                },  
+                {
+                    "title": "Tours", 
+                    "lon": 0.69,
+                    "lat": 47.39,
+                    "url": "/top-france/tours/"
+                },  
+                {
+                    "title": "Valence", 
+                    "lon": 4.89,
+                    "lat": 44.93,
+                    "url": "/top-france/valence/"
+                }]'>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const svg = document.getElementById("france-map-unique");
+        const citiesData = document.querySelector(".top-articles-placeholder").getAttribute('cities');
+        
+        if (!citiesData) {
+            console.error("Cities data not found!");
+            return;
+        }
+        
+        const cities = JSON.parse(citiesData);
+        const totalCities = cities.length;
+        const halfCities = Math.ceil(totalCities / 2);
+
+        let leftXPosition = -70; 
+        let rightXPosition = 550;
+        let initialYPosition = 50;
+        let ySpacing = 45;
+
+        const fragment = document.createDocumentFragment();
+
+        cities.forEach((city, index) => {
+            let { x, y } = convertToSVGCoords(city.lon, city.lat, 500, 500);
+
+            let isLeftColumn = index < halfCities;
+            let labelX = isLeftColumn ? leftXPosition : rightXPosition;
+            let labelY = initialYPosition + (index % halfCities) * ySpacing;
+
+            let link = document.createElementNS("http://www.w3.org/2000/svg", "a");
+            link.setAttribute("href", city.url);
+
+            let circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            circle.setAttribute("class", "city");
+            circle.setAttribute("cx", x);
+            circle.setAttribute("cy", y);
+            circle.setAttribute("r", 8);
+
+            let tempText = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            tempText.setAttribute("font-size", "18");
+            tempText.textContent = city.title;
+            svg.appendChild(tempText);
+            let textWidth = tempText.getBBox().width;
+            svg.removeChild(tempText);
+
+            let textBox = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+            textBox.setAttribute("class", "city-label-box");
+            textBox.setAttribute("x", labelX - (textWidth / 2) - 10);
+            textBox.setAttribute("y", labelY - 18);
+            textBox.setAttribute("width", textWidth + 20);
+            textBox.setAttribute("height", 30);
+
+            let text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            text.setAttribute("class", "city-label");
+            text.setAttribute("x", labelX);
+            text.setAttribute("y", labelY);
+            text.textContent = city.title;
+
+            let line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            line.setAttribute("class", "label-line");
+
+            if (isLeftColumn) {
+                line.setAttribute("x1", labelX + textWidth / 2 + 10);
+            } else {
+                line.setAttribute("x1", labelX - textWidth / 2 - 10);
+            }
+
+            line.setAttribute("y1", labelY);
+            line.setAttribute("x2", x);
+            line.setAttribute("y2", y);
+
+            link.appendChild(line);
+            link.appendChild(circle);
+            link.appendChild(textBox);
+            link.appendChild(text);
+
+            fragment.appendChild(link);
+        });
+
         svg.appendChild(fragment);
     });
 </script>

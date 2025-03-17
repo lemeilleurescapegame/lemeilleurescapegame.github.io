@@ -32,7 +32,6 @@ baseurl : ''
 permalink : pretty
 plugins:
   - jekyll-feed
-  - jekyll-minifier #minify your CSS and JavaScript files at build time.
 gems:
   - jekyll-autoprefixer
 exclude:
