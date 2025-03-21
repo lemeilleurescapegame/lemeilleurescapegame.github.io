@@ -10,7 +10,7 @@ theme : "Train"
 duree : "70 minutes"
 nb-joueur : "4 à 6"
 redacteur : "Alexis"
-image_name : "paris-the-one-crime-orient-express.jpg"
+image_name : "paris-the-one-crime-orient-express-optimized.webp"
 scenario : "Hiver 1934. 23h42. Le mythique Orient-Express poursuit son voyage en direction d’Istanbul dans le luxe et le calme. Chaque passager est là pour une raison bien précise. Ils ne se connaissent pas et n’échangent que de rapides regards lorsqu’ils se croisent dans les couloirs du train. Cette nuit-là est une soirée comme les autres, pourtant, une étrange atmosphère semble régner à bord. Certains trinquent dans le wagon-bar enfumé par le cigare, quand d’autres s’isolent dans leur cabine.  Tout d’un coup, un cri, suivi d’un bruit sourd en provenance de la cabine de Samuel Lioretti viennent briser le silence de la nuit. Il est mort ! Assassiné… Mais comment est-ce possible ? Sa cabine est fermée de l’intérieur. Vous êtes les seuls passagers de ce train, le meurtrier ne peut être que parmi vous ! Le Chef de Cabine semble connaître la vérité. Il vous convoque tous, mais vous êtes pris par le temps ! Vous devez prouver votre innocence et découvrir qui se cache derrière le meurtrier avant que la police ne prenne le relais lors de votre prochaine halte. Dans cette enquête unique mêlant Escape Game et Murder Party, vous incarnerez les suspects et tous les soupçons pèseront sur vous. Préparez-vous à vivre un huis clos éprouvant et … prenez garde, les apparences sont parfois trompeuses…"
 resenti_global : "On vous recommande chaudement de jouer le Crime de l’Orient Express. Cette expérience très différente d’un escape game mélange habilement coopération et mission secrète. Amusement et souvenirs impérissables en perspective !"
 ---

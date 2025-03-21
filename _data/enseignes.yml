@@ -131,6 +131,20 @@ enseignes:
     phone: "09 75 90 83 68 / 06 47 88 89"
     email: "19 hello@theoneescape.com"
     maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.5388691631974!2d2.349727611929973!3d48.867003071213766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f4a4951c9b3%3A0xdc688be66aeec327!2sTHE%20ONE%20Escape%20-%20Escape%20Game%20Paris!5e0!3m2!1sfr!2snl!4v1742578294698!5m2!1sfr!2snl"
+  crack_the_egg :
+    name: "Crack The Egg"
+    location: "46 Avenue Daumesnil 75012 PARIS"
+    website: "https://crack-the-egg.com/"
+    phone: "01 88 32 14 30"
+    email: "contact@crack-the-egg.com"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.6534995408797!2d2.3755751763654516!3d48.845747671330486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6720fe3847bc5%3A0xbec23b5d4f1f8028!2sCrack%20The%20Egg%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1742591282394!5m2!1sfr!2snl"
+  masterio:
+    name: "Masterio"
+    location: "11 rue Desprez 75014 Paris"
+    website: "https://www.masterio.fr/"
+    phone: "01 55 76 92 17"
+    email: "contact@masterio.fr"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.236371587119!2d2.313319776364775!3d48.83462987132896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671753b63456d%3A0x54babaccec387704!2sMasterio!5e0!3m2!1sfr!2snl!4v1742592251773!5m2!1sfr!2snl"
   EscapeRoom2:
     name: ""
     location: ""

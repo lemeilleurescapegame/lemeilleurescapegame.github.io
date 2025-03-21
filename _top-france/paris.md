@@ -22,6 +22,6 @@ image_name : ""
 
 {% include top-articles.html 
     title = "Meilleur Escape Game 2021"
-    list = "le_magicien_de_paris,le_palais_de_lhorreur,crime_orient_express,mission_yakuza"
+    list = "le_magicien_de_paris,le_palais_de_lhorreur,crime_orient_express,mission_yakuza,hallucinations_chimiques,le_far_west,cinema_hante,oeuf_noir,la_pierre_de_lumiere,l_immortel"
     %}
     

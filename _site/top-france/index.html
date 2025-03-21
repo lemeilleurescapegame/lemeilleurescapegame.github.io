@@ -106,173 +106,319 @@
 
 
 </script>
-    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France Map with Clickable Cities</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
+        #france-map-unique {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin-top: 20px;
+        }
 
+        .city {
+            fill: orange;
+            cursor: pointer;
+            transition: fill 0.3s ease-in-out;
+        }
 
-<div class="top-articles-container">
-    <div class="top-title-container">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
-            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/>
-        </svg>
-        <h2 class="top-title">Meilleur Escape Game 2024</h2>
-    </div>
-    <div class="top-articles-placeholder" data-articles='[{
-                     "rank": "1", 
-                     "title": "La Crypte", 
-                     "link": "/articles/la-crypte/", 
-                     "image": "/assets/img/escape/paris-donjon-crypte.jpg",
-                     "note": "20",
-                     "enseigne" : "Le Donjon"
-                    },{
-                     "rank": "2", 
-                     "title": "Mission Galactique", 
-                     "link": "/articles/mission-galactique/", 
-                     "image": "/assets/img/escape/paris-majestic-mission-galactique.jpg",
-                     "note": "19",
-                     "enseigne" : "Majestic Escape Game"
-                    },{
-                     "rank": "3", 
-                     "title": "The Riddler: the final test", 
-                     "link": "/articles/the-riddler-final-test/", 
-                     "image": "/assets/img/escape/paris-batman-escape-riddler-final-test.jpg",
-                     "note": "18.5",
-                     "enseigne" : "Batman Escape"
-                    }
-    ]'>
-    </div>
+        .city-label-box {
+            fill: black;
+            opacity: 0.7;
+            rx: 8;
+            ry: 8;
+            transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+        }
+
+        .city-label {
+            font-size: 22px;
+            font-weight: bold;
+            fill: white;
+            text-anchor: middle;
+            alignment-baseline: middle;
+            transition: fill 0.3s ease-in-out;
+        }
+
+        .label-line {
+            stroke: orange;
+            stroke-width: 5;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        a:hover .city-label-box {
+            filter: drop-shadow(0px 0px 8px orange);
+            opacity: 1;
+        }
+
+        a:hover .city-label {
+            fill: white;
+        }
+
+        a:hover .city {
+            fill: rgba(33, 153, 234, 0.859);
+        }
+
+        a:hover .label-line {
+            opacity: 1;
+        }
+
+        @media screen and (max-width: 600px) {
+            #france-map-unique {
+                width: 90%;
+            }
+
+            .city-label {
+                font-size: 22px;
+            }
+        }
+    </style>
+    <script>
+        function convertToSVGCoords(lon, lat, svgWidth, svgHeight) {
+            const minLon = -5.1, maxLon = 9.6;
+            const minLat = 41.3, maxLat = 51.1;
+            let x = ((lon - minLon) / (maxLon - minLon)) * svgWidth;
+            let y = (1 - (lat - minLat) / (maxLat - minLat)) * svgHeight;
+            return { x, y };
+        }
+    </script>
+</head>
+<body>
+
+<svg id="france-map-unique" viewBox="-150 5 800 550">
+    <image href="/assets/img/icons/france.svg" width="500" height="500" loading="lazy" />
+</svg>
+
+<div class="top-articles-placeholder"
+     data-title=""
+     cities='[ 
+                {
+                    "title": "Annecy", 
+                    "lon": 6.1294,
+                    "lat": 45.8992,
+                    "url": "/top-france/annecy/"
+                },  
+                {
+                    "title": "Annemasse", 
+                    "lon": 6.23,
+                    "lat": 46.19,
+                    "url": "/top-france/annemase/"
+                },  
+                {
+                    "title": "Avignon", 
+                    "lon": 4.8,
+                    "lat": 43.95,
+                    "url": "/top-france/avignon/"
+                },  
+                {
+                    "title": "Bayonne", 
+                    "lon": -1.47,
+                    "lat": 43.49,
+                    "url": "/top-france/bayonne/"
+                },  
+                {
+                    "title": "Bordeaux", 
+                    "lon": -0.58,
+                    "lat": 44.84,
+                    "url": "/top-france/bordeaux/"
+                },  
+                {
+                    "title": "Chambéry", 
+                    "lon": 5.92,
+                    "lat": 45.57,
+                    "url": "/top-france/chambery/"
+                },  
+                {
+                    "title": "Dijon", 
+                    "lon": 5.04,
+                    "lat": 47.32,
+                    "url": "/top-france/dijon/"
+                },  
+                {
+                    "title": "Grenoble", 
+                    "lon": 5.74,
+                    "lat": 45.18,
+                    "url": "/top-france/grenoble/"
+                },  
+                {
+                    "title": "Lille", 
+                    "lon": 3.06,
+                    "lat": 50.64,
+                    "url": "/top-france/lille/"
+                },  
+                {
+                    "title": "Lyon", 
+                    "lon": 4.83,
+                    "lat": 45.76,
+                    "url": "/top-france/lyon/"
+                },  
+                {
+                    "title": "Montélimar", 
+                    "lon": 4.75,
+                    "lat": 44.56,
+                    "url": "/top-france/montelimar/"
+                },  
+                {
+                    "title": "Montpelier", 
+                    "lon": 3.87,
+                    "lat": 43.61,
+                    "url": "/top-france/montpelier/"
+                },  
+                {
+                    "title": "Nantes", 
+                    "lon": -1.55,
+                    "lat": 47.21,
+                    "url": "/top-france/nantes/"
+                },  
+                {
+                    "title": "Nice", 
+                    "lon": 7.27,
+                    "lat": 43.7,
+                    "url": "/top-france/nice/"
+                },  
+                {
+                    "title": "Nimes", 
+                    "lon": 4.36,
+                    "lat": 43.84,
+                    "url": "/top-france/nimes/"
+                },  
+                {
+                    "title": "Paris", 
+                    "lon": 2.35,
+                    "lat": 48.85,
+                    "url": "/top-france/paris/"
+                },  
+                {
+                    "title": "Pau", 
+                    "lon": -0.37,
+                    "lat": 43.3,
+                    "url": "/top-france/pau/"
+                },  
+                {
+                    "title": "Perpignan", 
+                    "lon": 2.9,
+                    "lat": 42.7,
+                    "url": "/top-france/perpignan/"
+                },  
+                {
+                    "title": "Toulouse", 
+                    "lon": 1.44,
+                    "lat": 43.6,
+                    "url": "/top-france/toulouse/"
+                },  
+                {
+                    "title": "Tours", 
+                    "lon": 0.69,
+                    "lat": 47.39,
+                    "url": "/top-france/tours/"
+                },  
+                {
+                    "title": "Valence", 
+                    "lon": 4.89,
+                    "lat": 44.93,
+                    "url": "/top-france/valence/"
+                }]'>
 </div>
 
-<script src="/assets/js/top-articles.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const svg = document.getElementById("france-map-unique");
+        const citiesData = document.querySelector(".top-articles-placeholder").getAttribute('cities');
+        
+        if (!citiesData) {
+            console.error("Cities data not found!");
+            return;
+        }
+        
+        const cities = JSON.parse(citiesData);
+        const totalCities = cities.length;
+        const halfCities = Math.ceil(totalCities / 2);
 
+        let leftXPosition = -70; 
+        let rightXPosition = 550;
+        let initialYPosition = 50;
+        let ySpacing = 45;
 
+        const fragment = document.createDocumentFragment();
 
+        cities.forEach((city, index) => {
+            let { x, y } = convertToSVGCoords(city.lon, city.lat, 500, 500);
 
+            let isLeftColumn = index < halfCities;
+            let labelX = isLeftColumn ? leftXPosition : rightXPosition;
+            let labelY = initialYPosition + (index % halfCities) * ySpacing;
 
+            let link = document.createElementNS("http://www.w3.org/2000/svg", "a");
+            link.setAttribute("href", city.url);
 
+            let circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            circle.setAttribute("class", "city");
+            circle.setAttribute("cx", x);
+            circle.setAttribute("cy", y);
+            circle.setAttribute("r", 8);
 
+            let tempText = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            tempText.setAttribute("font-size", "18");
+            tempText.textContent = city.title;
+            svg.appendChild(tempText);
+            let textWidth = tempText.getBBox().width;
+            svg.removeChild(tempText);
 
-<div class="top-articles-container">
-    <div class="top-title-container">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
-            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/>
-        </svg>
-        <h2 class="top-title">Meilleur Escape Game 2023</h2>
-    </div>
-    <div class="top-articles-placeholder" data-articles='[{
-                     "rank": "1", 
-                     "title": "La Mission secrète", 
-                     "link": "/articles/la-mission-secrete/", 
-                     "image": "/assets/img/escape/paris-the_game-mission-secrete-optimized.webp",
-                     "note": "20",
-                     "enseigne" : "The Game"
-                    },{
-                     "rank": "2", 
-                     "title": "The Joker : Joke&#39;s on you !", 
-                     "link": "/articles/the-joker-jokes-on-you/", 
-                     "image": "/assets/img/escape/batman-escape-joker-jokes-on-you.jpg",
-                     "note": "19",
-                     "enseigne" : "Batman Escape"
-                    },{
-                     "rank": "3", 
-                     "title": "Raptor Project", 
-                     "link": "/articles/raptor_project/", 
-                     "image": "/assets/img/escape/escape-lab-raptor-project.jpg",
-                     "note": "19",
-                     "enseigne" : "Escape Lab"
-                    },{
-                     "rank": "4", 
-                     "title": "L&#39;Entrepôt fantastique", 
-                     "link": "/articles/entrepot-fantastique/", 
-                     "image": "/assets/img/escape/paris-pandore-associes-entrepot-fantastique-optimized.webp",
-                     "note": "18",
-                     "enseigne" : "PANDORE & ASSOCIÉS"
-                    },{
-                     "rank": "5", 
-                     "title": "Le Trésor perdu de Fabergé", 
-                     "link": "/articles/tresor-perdu-de-faberge/", 
-                     "image": "/assets/img/escape/paris-secrets-hunters-tresor-perdu-faberge-optimized.webp",
-                     "note": "18",
-                     "enseigne" : "Secret Hunters"
-                    },{
-                     "rank": "6", 
-                     "title": "The Batcave: Secret Missions", 
-                     "link": "/articles/the-batcave-secret-missions/", 
-                     "image": "/assets/img/escape/batman-escape-batcave-secret-missions.jpg",
-                     "note": "17",
-                     "enseigne" : "Batman Escape"
-                    }
-    ]'>
-    </div>
-</div>
+            let textBox = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+            textBox.setAttribute("class", "city-label-box");
+            textBox.setAttribute("x", labelX - (textWidth / 2) - 16);
+            textBox.setAttribute("y", labelY - 18);
+            textBox.setAttribute("width", textWidth + 34);
+            textBox.setAttribute("height", 30);
 
-<script src="/assets/js/top-articles.js"></script>
+            let text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            text.setAttribute("class", "city-label");
+            text.setAttribute("x", labelX);
+            text.setAttribute("y", labelY);
+            text.textContent = city.title;
 
+            let line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            line.setAttribute("class", "label-line");
 
+            if (isLeftColumn) {
+                line.setAttribute("x1", labelX + textWidth / 2 + 10);
+            } else {
+                line.setAttribute("x1", labelX - textWidth / 2 - 10);
+            }
 
+            line.setAttribute("y1", labelY);
+            line.setAttribute("x2", x);
+            line.setAttribute("y2", y);
 
+            link.appendChild(line);
+            link.appendChild(circle);
+            link.appendChild(textBox);
+            link.appendChild(text);
 
+            fragment.appendChild(link);
+        });
 
+        svg.appendChild(fragment);
+    });
+</script>
 
-
-<div class="top-articles-container">
-    <div class="top-title-container">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
-            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/>
-        </svg>
-        <h2 class="top-title">Meilleur Escape Game 2022</h2>
-    </div>
-    <div class="top-articles-placeholder" data-articles='[{
-                     "rank": "1", 
-                     "title": "L&#39;Expédition maudite", 
-                     "link": "/articles/expedition-maudite/", 
-                     "image": "/assets/img/escape/paris-expedition-maudite.jpg",
-                     "note": "19.5",
-                     "enseigne" : "One Hour (VOLTAIRE)"
-                    },{
-                     "rank": "2", 
-                     "title": "Le Fléau du Druide", 
-                     "link": "/articles/le-fleau-du-druide/", 
-                     "image": "/assets/img/escape/le-fleau-du-druide.jpg",
-                     "note": "19",
-                     "enseigne" : "Quest Factory"
-                    },{
-                     "rank": "3", 
-                     "title": "La disparition du train Zanetti", 
-                     "link": "/articles/la-disparition-du-train-zanetti/", 
-                     "image": "/assets/img/escape/paris-disparition-train-zanetti.jpg",
-                     "note": "19",
-                     "enseigne" : "Secret Hunters"
-                    },{
-                     "rank": "4", 
-                     "title": "La fête foraine Tivoli", 
-                     "link": "/articles/fete-foraine-tivoli/", 
-                     "image": "/assets/img/escape/paris-fete-foraine-tivoli.jpg",
-                     "note": "18",
-                     "enseigne" : "Secret Hunters"
-                    },{
-                     "rank": "5", 
-                     "title": "Le Proto-TAJ", 
-                     "link": "/articles/proto-taj/", 
-                     "image": "/assets/img/escape/paris-gentlemen-du-jeu-proto-taj.jpg",
-                     "note": "15",
-                     "enseigne" : "Les Gentlemen du jeu"
-                    },{
-                     "rank": "6", 
-                     "title": "Les Derniers Templiers", 
-                     "link": "/articles/les-derniers-templier/", 
-                     "image": "/assets/img/escape/les-derniers-templiers.jpg",
-                     "note": "13",
-                     "enseigne" : "Le Donjon"
-                    }
-    ]'>
-    </div>
-</div>
-
-<script src="/assets/js/top-articles.js"></script>
-
-
-
+</body>
+</html>
 
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>

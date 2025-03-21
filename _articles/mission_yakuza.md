@@ -4,13 +4,13 @@ url: "mission_yakuza"
 top_name : "mission_yakuza"
 title: "Mission Yakuza"
 date: 20/10/2023
-note: 20
+note: 18.5
 enseigne: "one_hour_voltaire"
 theme : "Enquête"
 duree : "60 min"
 nb-joueur : "2 à 5"
 redacteur : "Alexis"
-image_name : "paris-mission-yakuza.jpg"
+image_name : "paris-mission-yakuza-optimized.webp"
 scenario : "Kinechi Shonida, célèbre parrain de la mafia japonaise à la tête d’un réseau mêlant trafic d’armes et de drogue est introuvable. L’inspecteur principal chargé de l’arrêter a été retrouvé mort dans une planque sordide. Le ministre de l’intérieur a besoin des meilleures recrues pour trouver Shonida avant qu’il ne s’enfuit au Japon. Incarnez une équipe de la police scientifique à la recherche d’indices au coeur d’un casse tête en milieu hostile."
 resenti_global : "Bravo à One hour pour cette prise de risque. Mission Yakuza se démarque du block-buster qu’est L’Abattoir en proposant une immersion soignée et plus que cohérente dans la peau d’enquêteurs."
 ---

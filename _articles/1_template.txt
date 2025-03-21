@@ -1,0 +1,16 @@
+---
+layout: article
+url: ""
+top_name : ""
+title: ""
+date: 07-06-2024
+note: 20
+enseigne: ""
+theme : ""
+duree : ""
+nb-joueur : ""
+redacteur : ""
+image_name : ""
+scenario : ""
+resenti_global : ""
+---

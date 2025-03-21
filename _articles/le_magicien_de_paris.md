@@ -10,7 +10,7 @@ theme : "Magie"
 duree : "70 min"
 nb-joueur : "2 à 6"
 redacteur : "Alexis"
-image_name : "paris-magicien-de-paris.jpg"
+image_name : "paris-magicien-de-paris-optimized.webp"
 scenario : "Les magiciens ont pour mission de nous surprendre par leurs grandes illusions spectaculaires, c’est le cas du très reconnu Magicien de Paris. Le jour il pratique des tours exceptionnels mais lorsqu’il retourne dans son atelier de création, il pratique une magie bien plus expérimentale… Sa dernière création est plutôt inquiétante tellement elle s’avère puissante. Si personne ne tente de la lui voler, il risquerait de causer de nombreux dégâts. Il va falloir être aussi créatif que lui pour réussir à lever le voile sur ce secret trop bien gardé."
 resenti_global : "Deep Inside frappe très fort en proposant deux salles ultra-immersives et complémentaires. La patte de passionnés de loisir immersif se sent clairement. On vous recommande chaudement de jouer Le Magicien de Paris et le Palais de l’horreur."
 ---
