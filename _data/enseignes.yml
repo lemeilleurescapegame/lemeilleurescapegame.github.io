@@ -117,7 +117,20 @@ enseignes:
     phone: "06 59 06 81 60"
     email: "contact@lesgentlemendujeu.com"
     maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d944.381457771897!2d2.396804249177823!3d48.86420070283901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d131d8adccb%3A0xe41ce3385642d335!2sLes%20Gentlemen%20du%20Jeu%20-%20Gambetta!5e0!3m2!1sfr!2snl!4v1741983634500!5m2!1sfr!2snl"  
-
+  deep_inside:
+    name: "Deep Inside"
+    location: "7 Quai de la Seine, 75019 Paris, France"
+    website: "https://deepinsideparis.fr/"
+    phone: "07.80.91.43.70"
+    email: "contact@deepinsideparis.fr"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.616808277504!2d2.36751911193107!3d48.884581071216054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66df98be8b56f%3A0x229b24e13001e4b2!2sDeep%20Inside%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1742578195554!5m2!1sfr!2snl"
+  the_one_escape:
+    name: "The One Escape"
+    location: "39 Rue de Palestro 75002 Paris"
+    website: "https://theoneescape.com/"
+    phone: "09 75 90 83 68 / 06 47 88 89"
+    email: "19 hello@theoneescape.com"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.5388691631974!2d2.349727611929973!3d48.867003071213766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f4a4951c9b3%3A0xdc688be66aeec327!2sTHE%20ONE%20Escape%20-%20Escape%20Game%20Paris!5e0!3m2!1sfr!2snl!4v1742578294698!5m2!1sfr!2snl"
   EscapeRoom2:
     name: ""
     location: ""

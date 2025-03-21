@@ -19,4 +19,9 @@ image_name : ""
     title = "Meilleur Escape Game 2022"
     list = "expedition-maudite,le-fleau-du-druide,la-disparition-du-train-zanetti,fete-foraine-tivoli,proto-taj,les-derniers-templier"
     %}
+
+{% include top-articles.html 
+    title = "Meilleur Escape Game 2021"
+    list = "le_magicien_de_paris,le_palais_de_lhorreur,crime_orient_express,mission_yakuza"
+    %}
     

@@ -2,97 +2,106 @@
 layout: default
 ---
 <style>
-    /* Grid layout with responsive design */
-    .grid-container {
+    /* Centering the grid and limiting width to 2/3 of the screen */
+    .grid-wrapper_main {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .grid-container_main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 2px;
+        gap: 10px;
         text-align: center;
-        padding: 0;
+        padding: 10px;
+        width: 66%; /* 2/3 of the screen width */
+        max-width: 1000px;
     }
 
-    .grid-item {
+    .grid-item_main {
         position: relative;
         overflow: hidden;
         border-radius: 5px;
         width: 100%;
+        height: 200px; /* Ensuring uniform image height */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .grid-item img {
+    .grid-item_main img {
         width: 100%;
-        height: auto;
-        max-width: 100%;
+        height: 100%; /* Ensuring all images have the same height */
         object-fit: cover;
         transition: transform 0.3s ease-in-out;
         border-radius: 5px;
         display: block;
-        will-change: transform;
     }
 
-    .grid-item:hover img {
+    .grid-item_main:hover img {
         transform: scale(1.05);
     }
 
-    .grid-item .overlay {
+    .grid-item_main .overlay_main {
         position: absolute;
         bottom: 0;
+        left: 0;
         width: 100%;
-        background: rgba(0, 0, 0, 0.7);
+        height: 60px; /* Set fixed height for text overlay */
+        background: rgba(0, 0, 0, 0.6);
         color: white;
         text-align: center;
-        font-size: calc(1vw + 1em); /* Scales with viewport width */
+        font-size: 1em;
         font-weight: bold;
-        padding: calc(0.5vw + 6px); /* Scales with viewport width */
-        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .grid-item a {
-        display: block;
+    .grid-item_main a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-decoration: none;
         color: inherit;
+        position: relative;
+        width: 100%;
+        height: 100%;
     }
 
     /* Mobile and tablet view adjustments */
     @media (max-width: 768px) {
-        .grid-container {
+        .grid-container_main {
             grid-template-columns: repeat(2, 1fr);
-            gap: 1px;
+            gap: 8px;
+            width: 90%;
         }
-
-        .grid-item img {
-            height: 140px;
-        }
-
-        .grid-item .overlay {
-            font-size: 1em;
-            padding: 5px;
+        .grid-item_main {
+            height: 200px; /* Adjust height for smaller screens */
         }
     }
 
     @media (max-width: 480px) {
-        .grid-container {
+        .grid-container_main {
             grid-template-columns: 1fr;
-            gap: 1px;
+            gap: 6px;
+            width: 100%;
         }
-
-        .grid-item img {
-            height: 120px;
-        }
-
-        .grid-item .overlay {
-            font-size: 0.9em;
-            padding: 4px;
+        .grid-item_main {
+            height: 180px; /* Adjust height for mobile */
         }
     }
 </style>
 
-<div class="grid-container">
-    {% for article in site.top-world %}
-        <div class="grid-item">
-            <a href="{{ article.url }}">
-                <img src="{{ base_url }}/assets/img/top-world/{{ article.image_name }}" alt="{{ article.title }}" loading="lazy">
-                <div class="overlay">{{ article.title }}</div>
-            </a>
-        </div>
-    {% endfor %}
+<div class="grid-wrapper_main">
+    <div class="grid-container_main">
+        {% for article in site.top-world %}
+            <div class="grid-item_main">
+                <a href="{{ article.url }}">
+                    <img src="{{ base_url }}/assets/img/top-world/{{ article.image_name }}" alt="{{ article.title }}" loading="lazy">
+                    <div class="overlay_main">{{ article.title }}</div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
 </div>

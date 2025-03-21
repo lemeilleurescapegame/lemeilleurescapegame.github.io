@@ -59,36 +59,52 @@
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("search-input");
-    const searchButton = document.getElementById("search-button");
-    
-    function performSearch() {
-        const query = searchInput.value.trim();
-        
-        if (query) {
-            // Perform search within existing content, e.g., filtering a list of posts
-            const posts = document.querySelectorAll('.post'); // Change this selector to your content
-            posts.forEach(post => {
-                const postTitle = post.querySelector('.title').textContent.toLowerCase();
-                if (postTitle.includes(query.toLowerCase())) {
-                    post.style.display = 'block';  // Show matching posts
-                } else {
-                    post.style.display = 'none';   // Hide non-matching posts
-                }
-            });
-        }
-    }
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.getElementById("search-button");
 
-    // Trigger search when clicking the button
-    searchButton.addEventListener("click", performSearch);
-
-    // Trigger search when pressing "Enter"
-    searchInput.addEventListener("keypress", function (event) {
-        if (event.key === "Enter") {
-            performSearch();
+        function performSearch() {
+            const query = searchInput.value.trim();
+            console.log("Searching for:", query);  // Log to check the search term
+            
+            if (query) {
+                // Select all article elements (ensure the class '.article' exists)
+                const articles = document.querySelectorAll('.article'); // Make sure each article has the '.article' class
+                
+                console.log("Articles found:", articles.length); // Log how many articles are found
+                
+                articles.forEach(article => {
+                    const title = article.querySelector('.title') ? article.querySelector('.title').textContent.toLowerCase() : '';
+                    const content = article.querySelector('.content') ? article.querySelector('.content').textContent.toLowerCase() : '';
+                    
+                    console.log("Title:", title); // Log title for each article
+                    console.log("Content:", content); // Log content for each article
+                    
+                    if (title.includes(query.toLowerCase()) || content.includes(query.toLowerCase())) {
+                        article.style.display = 'block';  // Show matching article
+                        console.log("Showing article:", title); // Log which article is being shown
+                    } else {
+                        article.style.display = 'none';   // Hide non-matching article
+                        console.log("Hiding article:", title); // Log which article is being hidden
+                    }
+                });
+            }
         }
+
+        // Trigger search when clicking the button
+        searchButton.addEventListener("click", performSearch);
+
+        // Trigger search when pressing "Enter" key in the input field
+        searchInput.addEventListener("keydown", function (event) {
+            console.log("Key pressed:", event.key);  // Log the pressed key
+            if (event.key === "Enter") {
+                event.preventDefault(); // Prevent default form submission or page reload on Enter key press
+                performSearch();
+            }
+        });
     });
-});
+
+
+
 </script>
     <head>
     <title>The Riddler: the final test</title>
@@ -411,6 +427,14 @@
             
         </div>        
         <div class="grid-article-container">
+            
+              
+            
+              
+            
+              
+            
+              
             
               
             
