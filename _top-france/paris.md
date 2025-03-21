@@ -4,7 +4,7 @@ title : "Paris"
 lon : 2.35
 lat : 48.85
 url : "paris"
-image_name : ""
+image_name : "paris.webp"
 ---
 
 {% include top-articles.html 

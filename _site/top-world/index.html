@@ -106,165 +106,100 @@
 
 
 </script>
-    <style>
-    /* Centering the grid and limiting width to 2/3 of the screen */
-    .grid-wrapper_main {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .grid-container_main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        text-align: center;
-        padding: 10px;
-        width: 66%; /* 2/3 of the screen width */
-        max-width: 1000px;
-    }
-
-    .grid-item_main {
-        position: relative;
-        overflow: hidden;
-        border-radius: 5px;
-        width: 100%;
-        height: 200px; /* Ensuring uniform image height */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .grid-item_main img {
-        width: 100%;
-        height: 100%; /* Ensuring all images have the same height */
-        object-fit: cover;
-        transition: transform 0.3s ease-in-out;
-        border-radius: 5px;
-        display: block;
-    }
-
-    .grid-item_main:hover img {
-        transform: scale(1.05);
-    }
-
-    .grid-item_main .overlay_main {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 60px; /* Set fixed height for text overlay */
-        background: rgba(0, 0, 0, 0.6);
-        color: white;
-        text-align: center;
-        font-size: 1em;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .grid-item_main a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-decoration: none;
-        color: inherit;
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-
-    /* Mobile and tablet view adjustments */
-    @media (max-width: 768px) {
-        .grid-container_main {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 8px;
-            width: 90%;
-        }
-        .grid-item_main {
-            height: 200px; /* Adjust height for smaller screens */
-        }
-    }
-
-    @media (max-width: 480px) {
-        .grid-container_main {
-            grid-template-columns: 1fr;
-            gap: 6px;
-            width: 100%;
-        }
-        .grid-item_main {
-            height: 180px; /* Adjust height for mobile */
-        }
-    }
-</style>
-
-<div class="grid-wrapper_main">
+    <div class="grid-wrapper_main">
     <div class="grid-container_main">
         
             <div class="grid-item_main">
                 <a href="/top-world/athenes/">
                     <img src="/assets/img/top-world/top-athenes-optimized.webp" alt="Athènes" loading="lazy">
-                    <div class="overlay_main">Athènes</div>
+                    <div class="overlay_main">
+                        <img src="/assets/img/flags/grece-optimized.webp" alt="Flag" class="flag-icon">
+                        Athènes
+                    </div>
                 </a>
             </div>
         
             <div class="grid-item_main">
                 <a href="/top-world/barcelone/">
                     <img src="/assets/img/top-world/top-barcelone-optimized.webp" alt="Barcelone" loading="lazy">
-                    <div class="overlay_main">Barcelone</div>
+                    <div class="overlay_main">
+                        <img src="/assets/img/flags/espagne-optimized.webp" alt="Flag" class="flag-icon">
+                        Barcelone
+                    </div>
                 </a>
             </div>
         
             <div class="grid-item_main">
                 <a href="/top-world/belgique/">
                     <img src="/assets/img/top-world/top-belgique-optimized.webp" alt="Belgique" loading="lazy">
-                    <div class="overlay_main">Belgique</div>
+                    <div class="overlay_main">
+                        <img src="/assets/img/flags/belgique.webp" alt="Flag" class="flag-icon">
+                        Belgique
+                    </div>
                 </a>
             </div>
         
             <div class="grid-item_main">
                 <a href="/top-world/espagne/">
                     <img src="/assets/img/top-world/top-espagne-optimized.webp" alt="Espagne" loading="lazy">
-                    <div class="overlay_main">Espagne</div>
+                    <div class="overlay_main">
+                        <img src="/assets/img/flags/espagne-optimized.webp" alt="Flag" class="flag-icon">
+                        Espagne
+                    </div>
                 </a>
             </div>
         
             <div class="grid-item_main">
                 <a href="/top-world/geneve/">
                     <img src="/assets/img/top-world/top-geneve-optimized.webp" alt="Genève" loading="lazy">
-                    <div class="overlay_main">Genève</div>
+                    <div class="overlay_main">
+                        <img src="/assets/img/flags/suisse-optimized.webp" alt="Flag" class="flag-icon">
+                        Genève
+                    </div>
                 </a>
             </div>
         
             <div class="grid-item_main">
                 <a href="/top-world/monde/">
                     <img src="/assets/img/top-world/top-world-optimized.webp" alt="Top Monde" loading="lazy">
-                    <div class="overlay_main">Top Monde</div>
+                    <div class="overlay_main">
+                        <img src="/assets/img/flags/world.webp" alt="Flag" class="flag-icon">
+                        Top Monde
+                    </div>
                 </a>
             </div>
         
             <div class="grid-item_main">
                 <a href="/top-world/pays-bas/">
                     <img src="/assets/img/top-world/top-pays-bas-optimized.webp" alt="Pays-bas" loading="lazy">
-                    <div class="overlay_main">Pays-bas</div>
+                    <div class="overlay_main">
+                        <img src="/assets/img/flags/pays-bas-optimized.webp" alt="Flag" class="flag-icon">
+                        Pays-bas
+                    </div>
                 </a>
             </div>
         
             <div class="grid-item_main">
                 <a href="/top-world/prague/">
                     <img src="/assets/img/top-world/top-prague-optimized.webp" alt="Prague" loading="lazy">
-                    <div class="overlay_main">Prague</div>
+                    <div class="overlay_main">
+                        <img src="/assets/img/flags/republique-tcheque-optimized.webp" alt="Flag" class="flag-icon">
+                        Prague
+                    </div>
                 </a>
             </div>
         
             <div class="grid-item_main">
                 <a href="/top-world/tokyo/">
                     <img src="/assets/img/top-world/top-tokyo-optimized.jpg" alt="Tokyo" loading="lazy">
-                    <div class="overlay_main">Tokyo</div>
+                    <div class="overlay_main">
+                        <img src="/assets/img/flags/japon-optimized.webp" alt="Flag" class="flag-icon">
+                        Tokyo
+                    </div>
                 </a>
             </div>
         
-    </div>
+    </div> 
 </div>
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>

@@ -1,0 +1,12 @@
+<div class="grid-wrapper_main">
+    <div class="grid-container_main">
+        {% for article in site.top-world %}
+            <div class="grid-item_main">
+                <a href="{{ article.url }}">
+                    <img src="{{ base_url }}/assets/img/top-world/{{ article.image_name }}" alt="{{ article.title }}" loading="lazy">
+                    <div class="overlay_main">{{ article.title }}</div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
