@@ -261,6 +261,61 @@
             line-height: 1.5;
             color: #555;
         }
+        /* .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .reservation-button {
+            background-color: #28a745; 
+            color: white;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .reservation-button:hover {
+            background-color: #218838; 
+        } */
+        .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .reservation-button {
+            background: linear-gradient(135deg, #28a745, #218838); /* Gradient green */
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid #1e7e34;
+            box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .reservation-button:hover {
+            background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient */
+            box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+            transform: scale(1.05);
+        }
+
+        .reservation-button:active {
+            transform: scale(0.98);
+            box-shadow: 0px 3px 10px rgba(40, 167, 69, 0.3);
+        }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
@@ -334,7 +389,8 @@
         <div class="scenario-container">
                 
                 <h3 class="scenario-title">Scenario</h3>
-                <p class="scenario-description"> L’ancien Donjon, siège des grands maîtres français, a peu à peu disparu sous les constructions successives. Mais l’ordre du Temple a subsisté à travers les siècles. Aujourd’hui, dans un repaire mêlant vestiges médiévaux et rénovations voulues par les successeurs de l’ordre, il se dit qu’un trésor est toujours gardé. L’ordre est menacé de disparition et cherche des nouveaux membres pour perpétuer son noble objectif. Vous avez la chance de pouvoir prouver votre valeur et d’intégrer leurs rangs… Mais attention, vos choix ne demeureront pas sans conséquences.</p>
+                <p class="scenario-description"><p>L’ancien Donjon, siège des grands maîtres français, a peu à peu disparu sous les constructions successives. Mais l’ordre du Temple a subsisté à travers les siècles. Aujourd’hui, dans un repaire mêlant vestiges médiévaux et rénovations voulues par les successeurs de l’ordre, il se dit qu’un trésor est toujours gardé. L’ordre est menacé de disparition et cherche des nouveaux membres pour perpétuer son noble objectif. Vous avez la chance de pouvoir prouver votre valeur et d’intégrer leurs rangs… Mais attention, vos choix ne demeureront pas sans conséquences.</p>
+</p>
                 
         </div>
     </div>
@@ -367,6 +423,14 @@ Plusieurs choix vous sont proposés avec la promesse que ceux-ci auront des cons
             
         </div>
         
+        
+
+        
+            <div class="reservation-button-container">
+                <a href="https://ledonjon.fr/" class="reservation-button" target="_blank">
+                    🏷️ Réserver ici
+                </a>
+            </div>
         
 
         
@@ -438,6 +502,8 @@ Plusieurs choix vous sont proposés avec la promesse que ceux-ci auront des cons
                     <img src="/assets/img/escape/limmortel.webp" alt="l_immortel.md">
                     <div class="name">L'Immortel</div>
                     </a>
+              
+            
               
             
               

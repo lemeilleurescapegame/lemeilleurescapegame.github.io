@@ -1,0 +1,135 @@
+.top-articles-container {
+    max-width: 700px;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+    padding: 0 15px;
+}
+
+/* Individual Article Container */
+.top-article-description {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 600px;
+    margin: auto;
+}
+
+.top-article-description:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Container */
+.top-article-description-image {
+    position: relative;
+    width: 100%;
+    height: 180px; /* Adjusted for better fit */
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.top-article-description-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 🏆 Stylish Rank Badge */
+.article-rank {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: linear-gradient(135deg, #ff7e5f, #ff6600); /* Gradient for style */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    font-family: "Arial Black", sans-serif;
+    border: 2px solid white;
+}
+
+/* 🔥 Overlay for Title & Enseigne */
+.overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.75);
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.article-description-title {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.article-description-enseigne {
+    color: #f9b233;
+    font-size: 14px;
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+/* 📜 Description Box */
+.top-article-description-info {
+    padding: 18px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    background: #f9f9f9;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* 🛠 Responsive Design for Mobile */
+@media (max-width: 600px) {
+    .top-article-description {
+        width: 95%;
+    }
+
+    .top-article-description-image {
+        height: 140px; /* Smaller on mobile */
+    }
+
+    .overlay {
+        bottom: 5px;
+        padding: 6px 10px;
+    }
+
+    .article-description-title {
+        font-size: 16px;
+    }
+
+    .article-description-enseigne {
+        font-size: 12px;
+    }
+
+    .top-article-description-info {
+        font-size: 13px;
+        padding: 14px;
+    }
+
+    .article-rank {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+}

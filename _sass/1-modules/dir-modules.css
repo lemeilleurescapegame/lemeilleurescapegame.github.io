@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .logo {
   color: white;
   font-size: 1.5 rem;
@@ -239,12 +238,6 @@
   margin-right: 12px;
 }
 
-.prize-icon {
-  width: 24px; /* Adjust size as needed */
-  height: 24px;
-  margin-right: 10px;
-}
-
 .top-title {
   color: white;
   font-size: 1.5em;
@@ -255,12 +248,14 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  padding: 15px;
+  /* Lazy load if needed */
 }
 
 .top-article {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ensures the grade stays on the right */
+  justify-content: space-between;
   gap: 15px;
   padding: 15px;
   background: #f9f9f9;
@@ -271,6 +266,7 @@
   color: inherit;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
+  overflow: hidden;
 }
 
 .top-article:hover {
@@ -284,6 +280,7 @@
   border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.3s ease-in-out;
 }
 
 .top-article .rank {
@@ -310,7 +307,6 @@
   color: #666;
 }
 
-/* Grade (note) styling */
 .top-article .note {
   font-size: 16px;
   font-weight: bold;
@@ -319,26 +315,26 @@
   padding: 5px 10px;
   border-radius: 8px;
   text-align: center;
-  min-width: 60px; /* Smaller size */
+  min-width: 60px;
   text-align: right;
 }
 
-/* 🔹 Mobile Optimization (Screen width < 600px) */
+/* Mobile Optimization (Screen width < 600px) */
 @media (max-width: 600px) {
   .top-article {
-    flex-direction: row; /* Keeps elements in a row */
+    flex-direction: row; /* Keep in a row for mobile */
     align-items: center;
     padding: 10px;
   }
   .top-article img {
-    width: 60px; /* Smaller image */
+    width: 60px;
     height: 60px;
   }
   .top-article .rank {
     font-size: 18px;
   }
   .top-article .text {
-    flex-grow: 1; /* Allows text to expand */
+    flex-grow: 1;
     text-align: left;
   }
   .top-article .title {
@@ -350,7 +346,31 @@
   .top-article .note {
     font-size: 14px;
     padding: 3px 6px;
-    min-width: 50px; /* Smaller container */
-    text-align: right; /* Keeps it aligned to the right */
+    min-width: 50px;
+    text-align: right;
   }
+}
+.language-toggle {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  z-index: 100;
+}
+
+.language-button {
+  background: #ff6600;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.language-button:hover {
+  background: #e65c00;
+  transform: scale(1.05);
 }/*# sourceMappingURL=dir-modules.css.map */

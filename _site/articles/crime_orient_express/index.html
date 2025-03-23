@@ -261,6 +261,61 @@
             line-height: 1.5;
             color: #555;
         }
+        /* .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .reservation-button {
+            background-color: #28a745; 
+            color: white;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .reservation-button:hover {
+            background-color: #218838; 
+        } */
+        .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .reservation-button {
+            background: linear-gradient(135deg, #28a745, #218838); /* Gradient green */
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid #1e7e34;
+            box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .reservation-button:hover {
+            background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient */
+            box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+            transform: scale(1.05);
+        }
+
+        .reservation-button:active {
+            transform: scale(0.98);
+            box-shadow: 0px 3px 10px rgba(40, 167, 69, 0.3);
+        }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
@@ -334,7 +389,8 @@
         <div class="scenario-container">
                 
                 <h3 class="scenario-title">Scenario</h3>
-                <p class="scenario-description">Hiver 1934. 23h42. Le mythique Orient-Express poursuit son voyage en direction d’Istanbul dans le luxe et le calme. Chaque passager est là pour une raison bien précise. Ils ne se connaissent pas et n’échangent que de rapides regards lorsqu’ils se croisent dans les couloirs du train. Cette nuit-là est une soirée comme les autres, pourtant, une étrange atmosphère semble régner à bord. Certains trinquent dans le wagon-bar enfumé par le cigare, quand d’autres s’isolent dans leur cabine.  Tout d’un coup, un cri, suivi d’un bruit sourd en provenance de la cabine de Samuel Lioretti viennent briser le silence de la nuit. Il est mort ! Assassiné… Mais comment est-ce possible ? Sa cabine est fermée de l’intérieur. Vous êtes les seuls passagers de ce train, le meurtrier ne peut être que parmi vous ! Le Chef de Cabine semble connaître la vérité. Il vous convoque tous, mais vous êtes pris par le temps ! Vous devez prouver votre innocence et découvrir qui se cache derrière le meurtrier avant que la police ne prenne le relais lors de votre prochaine halte. Dans cette enquête unique mêlant Escape Game et Murder Party, vous incarnerez les suspects et tous les soupçons pèseront sur vous. Préparez-vous à vivre un huis clos éprouvant et … prenez garde, les apparences sont parfois trompeuses…</p>
+                <p class="scenario-description"><p>Hiver 1934. 23h42. Le mythique Orient-Express poursuit son voyage en direction d’Istanbul dans le luxe et le calme. Chaque passager est là pour une raison bien précise. Ils ne se connaissent pas et n’échangent que de rapides regards lorsqu’ils se croisent dans les couloirs du train. Cette nuit-là est une soirée comme les autres, pourtant, une étrange atmosphère semble régner à bord. Certains trinquent dans le wagon-bar enfumé par le cigare, quand d’autres s’isolent dans leur cabine.  Tout d’un coup, un cri, suivi d’un bruit sourd en provenance de la cabine de Samuel Lioretti viennent briser le silence de la nuit. Il est mort ! Assassiné… Mais comment est-ce possible ? Sa cabine est fermée de l’intérieur. Vous êtes les seuls passagers de ce train, le meurtrier ne peut être que parmi vous ! Le Chef de Cabine semble connaître la vérité. Il vous convoque tous, mais vous êtes pris par le temps ! Vous devez prouver votre innocence et découvrir qui se cache derrière le meurtrier avant que la police ne prenne le relais lors de votre prochaine halte. Dans cette enquête unique mêlant Escape Game et Murder Party, vous incarnerez les suspects et tous les soupçons pèseront sur vous. Préparez-vous à vivre un huis clos éprouvant et … prenez garde, les apparences sont parfois trompeuses…</p>
+</p>
                 
         </div>
     </div>
@@ -374,6 +430,14 @@
             
         </div>
         
+        
+
+        
+            <div class="reservation-button-container">
+                <a href="https://theoneescape.com/" class="reservation-button" target="_blank">
+                    🏷️ Réserver ici
+                </a>
+            </div>
         
 
         
@@ -483,6 +547,8 @@
                     <img src="/assets/img/escape/hallucinations-chimiques-dr-grant.webp" alt="hallucinations_chimiques.md">
                     <div class="name">Hallucinations chimiques chez le Dr Grant</div>
                     </a>
+              
+            
               
             
               

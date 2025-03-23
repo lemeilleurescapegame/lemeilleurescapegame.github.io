@@ -156,61 +156,6 @@ layout: default
             line-height: 1.5;
             color: #555;
         }
-        /* .reservation-button-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
-            margin-bottom: 20px;
-        }
-
-        .reservation-button {
-            background-color: #28a745; 
-            color: white;
-            padding: 12px 24px;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 8px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease;
-        }
-
-        .reservation-button:hover {
-            background-color: #218838; 
-        } */
-        .reservation-button-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 40px;
-            margin-bottom: 30px;
-        }
-
-        .reservation-button {
-            background: linear-gradient(135deg, #28a745, #218838); /* Gradient green */
-            color: white;
-            padding: 15px 30px;
-            font-size: 20px;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-decoration: none;
-            border-radius: 10px;
-            display: inline-block;
-            transition: all 0.3s ease;
-            border: 2px solid #1e7e34;
-            box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
-            letter-spacing: 1px;
-        }
-
-        .reservation-button:hover {
-            background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient */
-            box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
-            transform: scale(1.05);
-        }
-
-        .reservation-button:active {
-            transform: scale(0.98);
-            box-shadow: 0px 3px 10px rgba(40, 167, 69, 0.3);
-        }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
@@ -280,37 +225,10 @@ layout: default
                 {% endif %}
             </div>
         </div>
-        
-        <div class="scenario-container">
-            {% if page.scenario %}    
-                <h3 class="scenario-title">Scenario</h3>
-                <p class="scenario-description">{{page.scenario | markdownify}}</p>
-            {%endif%}    
-        </div>
-    </div>
 
-    <div class="content-wrapper">
-        {{ page.content }}
-        <div>
-            {% if page.resenti_global %}
-                <div class="top-title-container">
-                    <h2 class="top-title">Ressenti Global</h2>
-                </div>
-                <!-- <h1>Ressenti global</h1> -->
-                <p>{{ page.resenti_global }}</p>
-            {% endif %}
-        </div>
-        
+        <p>{{page.info_top}}</p>
         {%if page.enseigne%}
             {% assign enseigne_data = site.data.enseignes.enseignes[page.enseigne] %}
-        {% endif %}
-
-        {% if enseigne_data.website %}
-            <div class="reservation-button-container">
-                <a href="{{ enseigne_data.website }}" class="reservation-button" target="_blank">
-                    🏷️ Réserver ici
-                </a>
-            </div>
         {% endif %}
 
         {% if enseigne_data %}
@@ -385,5 +303,5 @@ layout: default
           </div>
         
     </div>
-
-</body>
+    
+</body>>

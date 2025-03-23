@@ -145,6 +145,11 @@ enseignes:
     phone: "01 55 76 92 17"
     email: "contact@masterio.fr"
     maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.236371587119!2d2.313319776364775!3d48.83462987132896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671753b63456d%3A0x54babaccec387704!2sMasterio!5e0!3m2!1sfr!2snl!4v1742592251773!5m2!1sfr!2snl"
+  escape_world_greece:
+    name : "Escape World"
+    location : "Spetson 57, Korydallos, Attica, 18120, Greece"
+    website : "https://www.escapeall.gr/en/EscapeRooms/attica/korydallos/escape-world"
+    maps_location : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196.55529514771223!2d23.652623899052408!3d37.979819495788604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bbc351d09119%3A0x86a30538904b19f!2sEscape%20World!5e0!3m2!1sfr!2snl!4v1742639521324!5m2!1sfr!2snl"
   EscapeRoom2:
     name: ""
     location: ""

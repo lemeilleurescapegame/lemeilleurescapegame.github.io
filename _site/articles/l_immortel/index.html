@@ -261,6 +261,61 @@
             line-height: 1.5;
             color: #555;
         }
+        /* .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .reservation-button {
+            background-color: #28a745; 
+            color: white;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .reservation-button:hover {
+            background-color: #218838; 
+        } */
+        .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .reservation-button {
+            background: linear-gradient(135deg, #28a745, #218838); /* Gradient green */
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid #1e7e34;
+            box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .reservation-button:hover {
+            background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient */
+            box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+            transform: scale(1.05);
+        }
+
+        .reservation-button:active {
+            transform: scale(0.98);
+            box-shadow: 0px 3px 10px rgba(40, 167, 69, 0.3);
+        }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
@@ -334,7 +389,8 @@
         <div class="scenario-container">
                 
                 <h3 class="scenario-title">Scenario</h3>
-                <p class="scenario-description">Un inconnu vous invite afin de discuter avec vous de disponibilités immobilières existantes autour de chez vous. Vous êtes conviés à un diner dans un manoir où le temps semble s’être arrêté à la fin du XIXe siècle. Il ne reste plus aujourd’hui que des vestiges de sa splendeur. Le maître des lieux se révèle spécial, ce qui motive votre fuite. Sur les traces d’un de vos camarades d’évasion, vous découvrez des passages secrets qui vous font évoluer de pièce en pièce jusqu’aux caves où se jouera votre destin.</p>
+                <p class="scenario-description"><p>Un inconnu vous invite afin de discuter avec vous de disponibilités immobilières existantes autour de chez vous. Vous êtes conviés à un diner dans un manoir où le temps semble s’être arrêté à la fin du XIXe siècle. Il ne reste plus aujourd’hui que des vestiges de sa splendeur. Le maître des lieux se révèle spécial, ce qui motive votre fuite. Sur les traces d’un de vos camarades d’évasion, vous découvrez des passages secrets qui vous font évoluer de pièce en pièce jusqu’aux caves où se jouera votre destin.</p>
+</p>
                 
         </div>
     </div>
@@ -365,6 +421,14 @@ Une fois à l’intérieur les indices sont malheureusement donnés par une voix
             
         </div>
         
+        
+
+        
+            <div class="reservation-button-container">
+                <a href="https://ledonjon.fr/" class="reservation-button" target="_blank">
+                    🏷️ Réserver ici
+                </a>
+            </div>
         
 
         
@@ -432,6 +496,8 @@ Une fois à l’intérieur les indices sont malheureusement donnés par une voix
                     <img src="/assets/img/escape/les-derniers-templiers.jpg" alt="les-derniers-templier.md">
                     <div class="name">Les Derniers Templiers</div>
                     </a>
+              
+            
               
             
               

@@ -138,3 +138,28 @@
         text-align: right;
     }
 }
+
+.language-toggle {
+    position: absolute;
+    top: 100px;  // Increased from 20px to 60px for better spacing
+    right: 20px;
+    z-index: 100;
+}
+
+.language-button {
+    background: #ff6600; // Matches the theme
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.language-button:hover {
+    background: #e65c00; // Slightly darker shade on hover
+    transform: scale(1.05);
+}
