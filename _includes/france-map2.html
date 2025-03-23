@@ -172,6 +172,7 @@
 
             let line = document.createElementNS("http://www.w3.org/2000/svg", "line");
             line.setAttribute("class", "label-line");
+            line.setAttribute("pointer-events", "none"); //Make the line not clickable
 
             if (isLeftColumn) {
                 line.setAttribute("x1", labelX + textWidth / 2 + 10);
