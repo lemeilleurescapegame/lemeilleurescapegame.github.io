@@ -2,13 +2,23 @@
 {% assign rank = 0 %}
 {% assign matching_articles = "" %}
 
+<!-- <div class="language-switch-container">
+    <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button>
+</div> -->
+<div class="language-switch-container">
+    <button id="languageSwitchButton" onclick="toggleLanguage()">
+        <img id="languageFlag" src="{{ site.baseurl }}/assets/img/flags/en-optimized.webp" alt="Flag">
+        <span>Switch to English</span>
+    </button>
+</div>
+
 <div class="top-articles-container">
     <div class="top-title-container">
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
             <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/>
         </svg>
         <h2 class="top-title">{{ include.title }}</h2>
-        <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button>
+        <!-- <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button> -->
     </div>
     <div class="top-articles-placeholder" data-articles='[
         {%- for article_slug_input in articles_list -%}
@@ -41,24 +51,28 @@
 </div>
 
 <script>
-    let isEnglish = false; // Track language state
-    // Function to toggle between English and French content
+    let isEnglish = false; 
+
     function toggleLanguage() {
         isEnglish = !isEnglish;
         const articles = document.querySelectorAll('.top-article-description');
+        const languageButton = document.getElementById('languageSwitchButton');
+        const languageFlag = document.getElementById('languageFlag');
 
         articles.forEach((article) => {
+            const articleData = JSON.parse(article.getAttribute("data-article")); 
             const infoTop = article.querySelector('.top-article-description-info');
-            const articleData = article.getAttribute('data-article');
 
-            if (isEnglish) {
-                // Switch to English
-                infoTop.innerHTML = articleData.info_top_en;
-                document.getElementById('languageSwitchButton').textContent = 'Switch to French';
-            } else {
-                // Switch back to French
-                infoTop.innerHTML = articleData.info_top;
-                document.getElementById('languageSwitchButton').textContent = 'Switch to English';
+            if (articleData) {
+                if (isEnglish) {
+                    infoTop.innerHTML = articleData.info_top_en;
+                    languageButton.querySelector("span").textContent = 'En Français'; // Update only text
+                    languageFlag.src = "{{ site.baseurl }}/assets/img/flags/france-optimized.webp"; // Switch to English flag
+                } else {
+                    infoTop.innerHTML = articleData.info_top;
+                    languageButton.querySelector("span").textContent = 'Switch to English'; // Update only text
+                    languageFlag.src = "{{ site.baseurl }}/assets/img/flags/en-optimized.webp"; // Switch to French flag
+                }
             }
         });
     }

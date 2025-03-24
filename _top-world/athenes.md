@@ -8,5 +8,5 @@ flag_name : "grece-optimized.webp"
 
 
 {% include top-articles-description.html 
-    title="Top escape room Athènes_" 
-    list="houdini,houdini" %}
+    title="Les Incontournables" 
+    list="houdini,chapels_and_catacombs,dont_take_a_breath" %}

@@ -107,13 +107,23 @@
 
 </script>
     
+<!-- <div class="language-switch-container">
+    <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button>
+</div> -->
+<div class="language-switch-container">
+    <button id="languageSwitchButton" onclick="toggleLanguage()">
+        <img id="languageFlag" src="/assets/img/flags/en-optimized.webp" alt="Flag" />
+        <span>Switch to English</span>
+    </button>
+</div>
+
 <div class="top-articles-container">
     <div class="top-title-container">
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
             <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
         </svg>
-        <h2 class="top-title">Top escape room Athènes_</h2>
-        <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button>
+        <h2 class="top-title">Les Incontournables</h2>
+        <!-- <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button> -->
     </div>
     <div class="top-articles-placeholder" data-articles="[{
                         &quot;rank&quot;: &quot;1&quot;,
@@ -125,36 +135,48 @@
                         &quot;info_top_en&quot;: &quot;A revival in horrific escape games. Combining magic with horror: what a great idea. The goal of this escape room is not really to frighten you but to amaze you. The story-telling is captivating from the begining to the end.  Escape World was inspired by the life of Houdini to create an original story that perfectly pays tribute to the famous magician. The transitions between the rooms are remarkable. We particularly appreciated the contemplative scenes, some of them include uniques and memorable special effects. Magic is concrete, palpable… Is Houdini a magician or does he have real super powers?&quot;
                     },{
                         &quot;rank&quot;: &quot;2&quot;,
-                        &quot;title&quot;: &quot;Houdini&quot;,
-                        &quot;link&quot;: &quot;/articles/houdini/&quot;,
-                        &quot;image&quot;: &quot;/assets/img/escape/houdini_greece.webp&quot;,
-                        &quot;enseigne&quot;: &quot;Escape World&quot;,
-                        &quot;info_top&quot;: &quot;Un renouveau dans les escape game horrifiques. Associer la magie à l’horreur : quelle bonne idée. Le but cet escape game n’est pas tant de vous faire peur mais bien de vous émerveiller. L’histoire racontée est maîtrisée de bout en bout.  Escape World s’est inspiré de la vie d’Houdini pour créer un récit original qui rend parfaitement hommage au célèbre magicien. Les transitions entre les pièces sont remarquables. On apprécie particulièrement les scènes contemplatives, parfois dotées d’effets spéciaux uniques. La magie est concrète, palpable… Houdini est-il un magicien ou un être doté de réels pouvoirs ?&quot;,
-                        &quot;info_top_en&quot;: &quot;A revival in horrific escape games. Combining magic with horror: what a great idea. The goal of this escape room is not really to frighten you but to amaze you. The story-telling is captivating from the begining to the end.  Escape World was inspired by the life of Houdini to create an original story that perfectly pays tribute to the famous magician. The transitions between the rooms are remarkable. We particularly appreciated the contemplative scenes, some of them include uniques and memorable special effects. Magic is concrete, palpable… Is Houdini a magician or does he have real super powers?&quot;
+                        &quot;title&quot;: &quot;Chapel &amp; Catacombs&quot;,
+                        &quot;link&quot;: &quot;/articles/chapels_and_catacombs/&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/athenes-chapel-catacombs.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Lockhill Nea Ionia&quot;,
+                        &quot;info_top&quot;: &quot;Nous sommes sans mots pour résumer le chef-d’oeuvre de Lockhill… Chapel and catacombs appartient à la 3ème génération d’escape game, celle des salles avec des séquences de théâtre immersif. Ici, tous les curseurs sont poussés au maximum. L’espace de jeu est démesuré et pourrait facilement contenir l’équivalent de 3 ou 4 escape game traditionnels. Les décors et l’ambiance sont renversants… depuis l’accueil jusqu’au grandiose final. Comptez sur des apparitions et des cascades parfaitement orchestrées, à l’image de ce que propose la capitale. Mais l’effroi provoqué par les acteurs laisse aussi la place au jeu, au roleplay et à l’excitation. L’histoire de Chapels and Catacombs vient parfaitement compléter la trilogie qui la précède. Il pourrait s’avérer judicieux de jouer les premières salles de l’enseigne avant de s’aventurer ici.&quot;,
+                        &quot;info_top_en&quot;: &quot;We have no words to describe the masterpiece of Lockhill… Is this the 3rd generation of escape room? The space is huge and could easily contain 3 or 4 traditional escape rooms. The set and atmosphere are stunning… Count on perfectly orchestrated appearances and stunts, just like the rest of the rooms of Athens. Actors also give some amazing roleplay and thrilling moments. The story of Chapels and Catacombs perfectly completes the trilogy that precedes it. It might be wise to play the first episodes of Lockhill before playing this room.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;3&quot;,
+                        &quot;title&quot;: &quot;Dont take a breath&quot;,
+                        &quot;link&quot;: &quot;/articles/dont_take_a_breath/&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/athenes-dont-take-breath.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Verone Live Action Escape Rooms&quot;,
+                        &quot;info_top&quot;: &quot;Ici, on est proche d’une aventure immersive comme le Secret Cinema ou le Live Thriller. Et vous savez peut-être qu’on adore ça. Il est plus que conseillé de regarder le film “Don’t breath” avant de jouer cette salle. En effet la fidélité au long-métrage est proche de la perfection. Oubliez les énigmes et laissez-vous porter par l’action.&quot;,
+                        &quot;info_top_en&quot;: &quot;Here, we are close to an immersive adventure like the Secret Cinema or the Live Thriller. And you may know that we love it. It is more than advisable to watch the movie “Don’t breath” before playing this room. Indeed, fidelity to the feature film is close to perfection. Forget the puzzles and let yourself be carried by the action.&quot;
                     }
     ]">
     </div>
 </div>
 
 <script>
-    let isEnglish = false; // Track language state
-    // Function to toggle between English and French content
+    let isEnglish = false; 
+
     function toggleLanguage() {
         isEnglish = !isEnglish;
         const articles = document.querySelectorAll('.top-article-description');
+        const languageButton = document.getElementById('languageSwitchButton');
+        const languageFlag = document.getElementById('languageFlag');
 
         articles.forEach((article) => {
+            const articleData = JSON.parse(article.getAttribute("data-article")); 
             const infoTop = article.querySelector('.top-article-description-info');
-            const articleData = article.getAttribute('data-article');
 
-            if (isEnglish) {
-                // Switch to English
-                infoTop.innerHTML = articleData.info_top_en;
-                document.getElementById('languageSwitchButton').textContent = 'Switch to French';
-            } else {
-                // Switch back to French
-                infoTop.innerHTML = articleData.info_top;
-                document.getElementById('languageSwitchButton').textContent = 'Switch to English';
+            if (articleData) {
+                if (isEnglish) {
+                    infoTop.innerHTML = articleData.info_top_en;
+                    languageButton.querySelector("span").textContent = 'En Français'; // Update only text
+                    languageFlag.src = "/assets/img/flags/france-optimized.webp"; // Switch to English flag
+                } else {
+                    infoTop.innerHTML = articleData.info_top;
+                    languageButton.querySelector("span").textContent = 'Switch to English'; // Update only text
+                    languageFlag.src = "/assets/img/flags/en-optimized.webp"; // Switch to French flag
+                }
             }
         });
     }
