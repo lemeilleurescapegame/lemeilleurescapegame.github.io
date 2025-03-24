@@ -231,6 +231,14 @@ layout: default
             {% assign enseigne_data = site.data.enseignes.enseignes[page.enseigne] %}
         {% endif %}
 
+        {% if enseigne_data.website %}
+            <div class="reservation-button-container">
+                <a href="{{ enseigne_data.website }}" class="reservation-button" target="_blank">
+                    🏷️ Réserver ici
+                </a>
+            </div>
+        {% endif %}
+
         {% if enseigne_data %}
             <div class="enseigne-container">
                 {% if enseigne_data.name %}
