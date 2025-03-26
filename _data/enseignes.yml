@@ -178,6 +178,26 @@ enseignes:
     phone: ""
     email: ""
     maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d688.3721288095127!2d23.728668626085536!3d38.04833829396159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a36685045313%3A0x64186878436fb441!2sAmen%20escape%20room%20Neverland!5e0!3m2!1sfr!2snl!4v1742847490698!5m2!1sfr!2snl"
+  station_33_escape_room:
+    name: "Station 33 Escape Room"
+    location: "Chomatianou 33, Athina 104 39, Grèce"
+    website: "https://www.station33.net/"
+    phone: "+30 21 1402 4783"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.381268459215!2d23.71944627577595!3d37.99156647193152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd5fdb02ad01%3A0x727dd6f670fb52cf!2sStation%2033%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743018276572!5m2!1sfr!2snl"
+  supense_gr:
+    name: "Suspense"
+    location: "Thivon 424, Ilion, Attica, 13121, Greece"
+    website: "https://www.escapeall.gr/el/EscapeRooms/attica/ilion/suspense"
+    phone: ""
+    email: ""
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255.81146793764745!2d23.69583162872873!3d38.02507298119703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a3928922f57f%3A0x4517455ca46f8cd8!2sSuspense%20escape%20room!5e0!3m2!1sfr!2snl!4v1743020322593!5m2!1sfr!2snl"
+  1way_escape_room:
+    name: "1 Way Escape Room"
+    location: "Thivon & Amaliados 1, Peristeri"
+    website: "https://1wayescape.gr/en/english-home/"
+    phone: "(0030) 699 51 44444"
+    email: "gm @ 1wayescape.gr"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d764.301080812346!2d23.692801248704033!3d38.020203869482806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a3e4d9cbab21%3A0x64aa9052d5827e35!2s1Way%20Escape%20Room!5e0!3m2!1sfr!2snl!4v1743020481553!5m2!1sfr!2snl"
   EscapeRoom2:
     name: ""
     location: ""

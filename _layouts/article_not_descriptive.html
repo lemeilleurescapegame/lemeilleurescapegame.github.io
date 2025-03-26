@@ -226,7 +226,14 @@ layout: default
             </div>
         </div>
 
-        <p>{{page.info_top}}</p>
+        <!-- <div class="info-top-box">
+            <p>{{page.info_top}}</p>
+        </div> -->
+        <div class="info-top-box">
+            <i class="fas fa-info-circle"></i>
+            <p>{{page.info_top}}</p>
+        </div>
+        
         {%if page.enseigne%}
             {% assign enseigne_data = site.data.enseignes.enseignes[page.enseigne] %}
         {% endif %}
@@ -312,4 +319,4 @@ layout: default
         
     </div>
     
-</body>>
+</body>

@@ -1,0 +1,60 @@
+.intro-text {
+    max-width: 80%;
+    margin: 40px auto 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    padding: 0 15px; /* Ensures text doesn’t touch the screen edges on small screens */
+}
+
+.intro-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.intro-text h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.specifics-list {
+    list-style-type: none;
+    padding: 10px 20px;
+    margin: 15px 0;
+}
+
+.specifics-list li {
+    margin: 8px 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* 🔹 Mobile Optimization */
+@media (max-width: 768px) {
+    .intro-text {
+        max-width: 95%;  /* Uses almost full width on smaller screens */
+        font-size: 14px;  /* Slightly smaller text for readability */
+        padding: 0 10px;
+    }
+
+    .intro-text h2 {
+        font-size: 20px;  /* Reduce heading size for mobile */
+    }
+
+    .intro-text h3 {
+        font-size: 18px;
+    }
+
+    .specifics-list {
+        padding: 10px 15px;  /* Adjust padding for better alignment */
+    }
+
+    .specifics-list li {
+        font-size: 14px;  /* Make list items a bit smaller for better fit */
+    }
+}

@@ -30,12 +30,12 @@
                     {%- capture article_json -%}
                     {
                         "rank": "{{ rank }}",
-                        "title": {{ article.title | jsonify }},
+                        "title": "{{ article.title | escape}}",
                         "link": {{ article.url | jsonify }},
                         "image": "{{ site.baseurl }}/assets/img/escape/{{ article.image_name }}",
                         "enseigne": {{ enseigne_data.name | jsonify }},
-                        "info_top": {{ article.info_top | strip_newlines | jsonify }},
-                        "info_top_en": {{ article.info_top_en | strip_newlines | jsonify }}
+                        "info_top": {{ article.info_top | strip_newlines | jsonify | escape}},
+                        "info_top_en": {{ article.info_top_en | strip_newlines | jsonify | escape}}
                     }
                     {%- endcapture -%}
                     {%- if matching_articles != "" -%}

@@ -828,12 +828,122 @@
     height: 180px; /* Adjust height for mobile */
   }
 }
+.reservation-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.reservation-button {
+  background: linear-gradient(135deg, #28a745, #218838); /* Gradient green */
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: 2px solid #1e7e34;
+  box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+  letter-spacing: 1px;
+}
+
+.reservation-button:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient */
+  box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+  transform: scale(1.05);
+}
+
+.reservation-button:active {
+  transform: scale(0.98);
+  box-shadow: 0px 3px 10px rgba(40, 167, 69, 0.3);
+}
+
+.info-top-box {
+  background-color: #f7f8fc;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  border-left: 5px solid rgb(237, 115, 1);
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.info-top-box i {
+  font-size: 20px;
+  color: rgb(237, 115, 1);
+  margin-right: 8px;
+}
+
 .blue-icon {
   color: rgba(73, 126, 205, 0.797);
 }
 
 :root {
   --default-blue: #007bff;
+}
+
+.intro-text {
+  max-width: 80%;
+  margin: 40px auto 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  padding: 0 15px; /* Ensures text doesn’t touch the screen edges on small screens */
+}
+
+.intro-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.intro-text h3 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+.specifics-list {
+  list-style-type: none;
+  padding: 10px 20px;
+  margin: 15px 0;
+}
+
+.specifics-list li {
+  margin: 8px 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* 🔹 Mobile Optimization */
+@media (max-width: 768px) {
+  .intro-text {
+    max-width: 95%; /* Uses almost full width on smaller screens */
+    font-size: 14px; /* Slightly smaller text for readability */
+    padding: 0 10px;
+  }
+  .intro-text h2 {
+    font-size: 20px; /* Reduce heading size for mobile */
+  }
+  .intro-text h3 {
+    font-size: 18px;
+  }
+  .specifics-list {
+    padding: 10px 15px; /* Adjust padding for better alignment */
+  }
+  .specifics-list li {
+    font-size: 14px; /* Make list items a bit smaller for better fit */
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
