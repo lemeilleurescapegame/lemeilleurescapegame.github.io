@@ -24,4 +24,13 @@ image_name : "paris.webp"
     title = "Meilleur Escape Game 2021"
     list = "le_magicien_de_paris,le_palais_de_lhorreur,crime_orient_express,mission_yakuza,hallucinations_chimiques,le_far_west,cinema_hante,oeuf_noir,la_pierre_de_lumiere,l_immortel"
     %}
-    
+
+{% include top-articles.html 
+    title = "Meilleur Escape Game 2020"
+    list = "paris-pandore-associes-reglement-de-contes,hotel-sedaine,paris-hinthunt-experience-interdite,paris-hinthunt-dracula"
+    %}
+
+{% include top-articles.html 
+    title = "Meilleur Escape Game 2019"
+    list = "paris-unleash-nautilus-expedition-aronnax,paris-koezio-hors-controle,saison-1-episode-1-jungle,cannibale-island,paris-phobia-escape-game-alice,paris-escape-agency-menace-sovietique,the-green-house,gg-escape-game-musee"
+    %}

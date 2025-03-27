@@ -145,6 +145,71 @@ enseignes:
     phone: "01 55 76 92 17"
     email: "contact@masterio.fr"
     maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.236371587119!2d2.313319776364775!3d48.83462987132896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671753b63456d%3A0x54babaccec387704!2sMasterio!5e0!3m2!1sfr!2snl!4v1742592251773!5m2!1sfr!2snl"
+  hint_hunt:
+    name: "HintHunt"
+    location: "62 Rue Beaubourg, 75003 Paris"
+    website: "https://hinthunt.fr/"
+    phone: "+33 1 44 61 45 48"
+    email: "contact@hinthunt.fr"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d260.6694015281783!2d2.35218061105575!3d48.863561938570186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1b1f420bdd%3A0x4117fac2cbf7fa8b!2sHintHunt%20Paris!5e0!3m2!1sfr!2snl!4v1743110170875!5m2!1sfr!2snl"
+  unleash_escape:
+    name: "Unleash Escape"
+    location: "5 rue Henri Desgrange 75012 Paris"
+    website: "https://unleashescape.com/"
+    phone: "01 43 44 25 89"
+    email: "contact@unleashescape.com"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.985709614177!2d2.378455376365031!3d48.83941127132957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673f44a3015ff%3A0x5134b3ba1704806c!2sUNLEASH%20Escape!5e0!3m2!1sfr!2snl!4v1743110734604!5m2!1sfr!2snl"
+  koezio_senart:
+    name: "KOEZIO SÉNART"
+    location: "7 Allée du trait d'union 77127 Lieusaint"
+    website: "https://koezio.co/"
+    phone: "(0)1 64 13 13 02"
+    email: "senart@koezio.co"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2637.3758516584303!2d2.5401572763521054!3d48.62178937130106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5e3f185c50c49%3A0x21280e9362d51ec4!2sKoezio%20S%C3%A9nart!5e0!3m2!1sfr!2snl!4v1743110961243!5m2!1sfr!2snl"
+  gg_escape_game:
+    name: "GG ESCAPE GAME"
+    location: "72 Boulevard de Charonne 75020 PARIS"
+    website: "https://ggescapegame.fr/"
+    phone: "01 42 72 18 01"
+    email: "contact@ggescapegame.fr"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5250.562443803827!2d2.395126576365846!3d48.85284757133143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673dcdcf5f87d%3A0x830128fec1a10e84!2sGG%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1743111178498!5m2!1sfr!2snl"
+  #PHOBIA ESCAPE GAME
+  phobia_escape_game:
+    name: "PHOBIA ESCAPE GAME"
+    location: "127 rue Jeanne d'Arc 75013 Paris"
+    website: "http://phobiaescapegame.fr/"
+    phone: "01 44 24 85 28"
+    email: "contact@escapephobia.com"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.2031198494105!2d2.3581964763648013!3d48.83526417132909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6718b48c55555%3A0xfe31a0028c8a5e2f!2sPhobia%20Escape%20Game%20Paris!5e0!3m2!1sfr!2snl!4v1743111460440!5m2!1sfr!2snl"
+  the_escape_agency:
+    name: "The escape Agency"
+    location: "36 rue du Faubourg Saint-Martin 75010 Paris"
+    website: "https://www.the-escape-agency.fr/"
+    phone: "09 53 37 00 47"
+    email: "contact@the-escape-agency.fr"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.73367891899!2d2.353878076366865!3d48.87028297133373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e0e1dfe44f5%3A0x57ddf8acac0c2e84!2sThe%20Escape%20Agency!5e0!3m2!1sfr!2snl!4v1743111654938!5m2!1sfr!2snl"
+  escape_hunt_paris:
+    name: "ESCAPE HUNT"
+    location: 5 rue de Hanovre 75002 Paris""
+    website: "https://escapehunt.com/fr/paris/"
+    phone: "+33 (0)1.75.50.62.60"
+    email: "paris.manager@escapehunt.com"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.754743203774!2d2.332751776366879!3d48.87008217133379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e3a6c60af2f%3A0x4a22fac857a0a3f6!2sEscape%20Hunt%20Paris%20-%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1743111930035!5m2!1sfr!2snl"
+  EscapeRoom2:
+    name: ""
+    location: ""
+    website: ""
+    phone: ""
+    email: ""
+    maps_location: ""
+  EscapeRoom2:
+    name: ""
+    location: ""
+    website: ""
+    phone: ""
+    email: ""
+    maps_location: ""
+  #Greece
   escape_world_greece:
     name : "Escape World"
     location : "Spetson 57, Korydallos, Attica, 18120, Greece"
@@ -198,6 +263,20 @@ enseignes:
     phone: "(0030) 699 51 44444"
     email: "gm @ 1wayescape.gr"
     maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d764.301080812346!2d23.692801248704033!3d38.020203869482806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a3e4d9cbab21%3A0x64aa9052d5827e35!2s1Way%20Escape%20Room!5e0!3m2!1sfr!2snl!4v1743020481553!5m2!1sfr!2snl"
+  hell_out:
+    name: "Hell Out"
+    location: "34 rue Sedaine 75011 Paris"
+    website: "https://hell-out.fr/"
+    phone: "06 60 02 77 75"
+    email: "contact@hell-out.fr"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.0820130304846!2d2.37151687636606!3d48.85664647133198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d177fc7ba49%3A0xf6c776c8bb0be957!2sHell%20Out%20-%20L&#39;h%C3%B4tel%20Sedaine%20%7C%20Escape%20Game%20Horreur!5e0!3m2!1sfr!2snl!4v1743109188445!5m2!1sfr!2snl"
+  EscapeRoom2:
+    name: ""
+    location: ""
+    website: ""
+    phone: ""
+    email: ""
+    maps_location: ""
   #Espagne
   escape_barcelona:
     name: "Escape Barcelona Santa Coloma"
