@@ -34,3 +34,8 @@ image_name : "paris.webp"
     title = "Meilleur Escape Game 2019"
     list = "paris-unleash-nautilus-expedition-aronnax,paris-koezio-hors-controle,saison-1-episode-1-jungle,cannibale-island,paris-phobia-escape-game-alice,paris-escape-agency-menace-sovietique,the-green-house,gg-escape-game-musee"
     %}
+
+{% include top-articles.html 
+    title = "Meilleur Escape Game 2018"
+    list = "revolte-a-la-lock,labattoir,lexamen,l-a-confidential,les-disparus,le-secret-du-pirate,magie-noire-senart-locked-up"
+    %}

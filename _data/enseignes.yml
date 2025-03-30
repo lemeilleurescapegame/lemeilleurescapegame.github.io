@@ -195,6 +195,20 @@ enseignes:
     phone: "+33 (0)1.75.50.62.60"
     email: "paris.manager@escapehunt.com"
     maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.754743203774!2d2.332751776366879!3d48.87008217133379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e3a6c60af2f%3A0x4a22fac857a0a3f6!2sEscape%20Hunt%20Paris%20-%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1743111930035!5m2!1sfr!2snl"
+  lock_academy_sebastopol:
+    name: "Lock Academy (Sébastopol)"
+    location: "131 boulevard de Sébastopol 75002 Paris"
+    website: "https://lockacademy.com/"
+    phone: "09 83 86 86 96"
+    email: "paris@lockacademy.com"
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.4771054062207!2d2.35075727636679!3d48.86818067133356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f22acfc1c43%3A0x51c50ec560f85a80!2sLock%20Academy%20Paris%20-%20Escape%20Game%20S%C3%A9bastopol!5e0!3m2!1sfr!2snl!4v1743366868238!5m2!1sfr!2snl"
+  locked_up:
+    name: "Locked Up"
+    location: "Immeuble Croix du Sud ZAC du Carré Sénart, 2 Allée de la Mixité, 77127 Lieusaint"
+    website: "https://www.lockedup-escapegame.com/"
+    phone: "01 74 59 62 11"
+    email: ""
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5275.326394324664!2d2.5380130881625482!3d48.61628989730042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5e3f3fb8b755f%3A0x1fe9c081c5b0858!2sLockedUp%20Escape%20Game%20Carr%C3%A9%20S%C3%A9nart!5e0!3m2!1sfr!2snl!4v1743368270267!5m2!1sfr!2snl"
   EscapeRoom2:
     name: ""
     location: ""

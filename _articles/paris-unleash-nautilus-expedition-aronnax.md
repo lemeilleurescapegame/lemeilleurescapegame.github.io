@@ -4,7 +4,7 @@ url: "paris-unleash-nautilus-expedition-aronnax"
 top_name : "paris-unleash-nautilus-expedition-aronnax"
 title: "Nautilus, l'expédition Aronnax"
 date: 07-06-2024
-note: "19"
+note: "19.5"
 enseigne: "unleash_escape"
 theme : "sous-marin"
 duree : "75 min"

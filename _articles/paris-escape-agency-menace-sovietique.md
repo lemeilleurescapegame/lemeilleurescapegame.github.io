@@ -4,7 +4,7 @@ url: "paris-escape-agency-menace-sovietique"
 top_name : "paris-escape-agency-menace-sovietique"
 title: "Menace soviétique"
 date: 07-06-2024
-note: "17"
+note: "17.5"
 enseigne: "the_escape_agency"
 theme : "URSS"
 duree : "70 min"

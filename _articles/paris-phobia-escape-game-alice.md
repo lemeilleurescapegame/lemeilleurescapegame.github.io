@@ -4,7 +4,7 @@ url: "paris-phobia-escape-game-alice"
 top_name : "paris-phobia-escape-game-alice"
 title: "Alice"
 date: 07-06-2024
-note: "18"
+note: "18.5"
 enseigne: "phobia_escape_game"
 theme : "fantastique"
 duree : "60 min"
