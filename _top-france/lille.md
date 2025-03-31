@@ -6,3 +6,9 @@ lat : 50.64
 url : "lille"
 image_name : "lille.webp"
 ---
+
+
+{% include top-articles.html 
+    title = "Tous les escapes"
+    list = "le-cube,mission-hantee,merlin,arsene,la-malediction-dhorus,laffaire-cunningham,le-discoclub"
+    %}
