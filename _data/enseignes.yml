@@ -5,6 +5,7 @@ allowed_cities:
   - "Paris"
   - "Geneve"
   - "Bruxelles"
+  - "Lille"
 enseignes:
   enigma_city:
     name : "Enigma City "
@@ -232,13 +233,28 @@ enseignes:
     email: ""
     maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.9697761618827!2d3.06728647647298!3d50.62767827162658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d5cdcd9d9529%3A0x2225c466f45fc5f1!2sOne%20Brain%20-%20Live%20Escape%20Game%202.0!5e0!3m2!1sfr!2snl!4v1743453283417!5m2!1sfr!2snl"
   get_out_lille:
-    name: "Get Out Lille"
+    name: "Get Out - Lille"
     location: "128 rue Solférino, 59000 Lille"
     website: "https://lille.getout.fr"
     phone: "+33 3 62 65 40 56"
+    city : "Lille"
     email: ""
     maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5061.475547011588!2d3.050573076473288!3d50.631987971627446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d5825473df1d%3A0x7c9b63ad90e8d36b!2sGet%20Out%20-%20Escape%20Game%20Lille!5e0!3m2!1sfr!2snl!4v1743453586857!5m2!1sfr!2snl"
-    EscapeRoom2:
+  just_escape_lille:
+    name: "Just Escape - Lille"
+    location: "26 rue d'Arras, 59000 Lille"
+    website: "https://just-escape.fr/"
+    phone: "+33 7 89 05 37 90"
+    email: ""
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.1914457167427!2d3.065179576472732!3d50.62356027162573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d5c7d6770a87%3A0xe09f4aa8ce0a56cc!2sJust%20Escape%20%E2%80%93%20Escape%20Game%20Lille!5e0!3m2!1sfr!2snl!4v1743454655414!5m2!1sfr!2snl"
+  john_doe_lille:
+    name: "John Doe - Lille"
+    location: "8 rue des jardins, 59000 Lille"
+    website: "https://www.john-doe.fr/"
+    phone: "+33 3 62 27 63 99"
+    email: ""
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5060.731315161437!2d3.065947976473695!3d50.63889987162878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d589e324f581%3A0x687564639f5a1494!2sJohn%20Doe%20Escape%20Game%20Lille!5e0!3m2!1sfr!2snl!4v1743454929607!5m2!1sfr!2snl"
+  EscapeRoom2:
     name: ""
     location: ""
     website: ""
@@ -252,7 +268,6 @@ enseignes:
     phone: ""
     email: ""
     maps_location: ""
-
   #Greece
   escape_world_greece:
     name : "Escape World"
