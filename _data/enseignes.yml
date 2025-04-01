@@ -14,6 +14,27 @@ enseignes:
     name: 1 Way Escape Room
     phone: (0030) 699 51 44444
     website: https://1wayescape.gr/en/english-home/
+  Break_Out_Annecy:
+    email: ''
+    location: 25 route des Saintiers,74320 Sévrier
+    maps_location: ''
+    name: Break Out - Annecy
+    phone: +33 4 50 05 49 63
+    website: https://www.enigmus.fr
+  By_Pentagone_VétrazMonthoux:
+    email: ''
+    location: 2 allée des Chênes,74100 Vétraz-Monthoux
+    maps_location: ''
+    name: By Pentagone - Vétraz-Monthoux
+    phone: +33 9 86 32 95 51
+    website: https://softlimitlessadventure.web.app
+  CorteXscape_Annemasse:
+    email: ''
+    location: 10 rue de l'industrie,74100 Annemasse
+    maps_location: ''
+    name: CorteXscape - Annemasse
+    phone: +33 4 50 83 01 69
+    website: https://cortexscape.com
   EscapeRoom2:
     email: ''
     location: ''
@@ -21,6 +42,13 @@ enseignes:
     name: ''
     phone: ''
     website: ''
+  Escape_Chô_SaintMartinBellevue:
+    email: ''
+    location: 440 route de la Touffière,74370 Saint-Martin-Bellevue
+    maps_location: ''
+    name: Escape Chô - Saint-Martin-Bellevue
+    phone: +33 7 69 62 81 16
+    website: https://www.escapecho.fr
   Escape_Time_Lille:
     email: ''
     location: 500 rue des Bourreliers,59320 Hallennes-lez-Haubourdin
@@ -28,6 +56,13 @@ enseignes:
     name: Escape Time - Lille
     phone: +33 6 84 41 13 68
     website: https://escapetime-lille.fr
+  Eskap_AixlesBains:
+    email: ''
+    location: Théâtre de Verdure,73100 Aix-les-Bains
+    maps_location: ''
+    name: Eskap - Aix-les-Bains
+    phone: +33 7 67 21 20 31
+    website: https://www.eskap.fr
   Follow_Park_Lille:
     email: ''
     location: 15 Rue du Sec Arembault — Centre commercial les Tanneurs,59800 Lille
@@ -42,6 +77,13 @@ enseignes:
     name: Fun at Comines - Comines-Warneton
     phone: +32 478 65 50 14
     website: http://www.funatcomines.be
+  Games_Evasion_SaintJulienenGenevois:
+    email: ''
+    location: 13 route d’Annemasse,74160 Saint-Julien-en-Genevois
+    maps_location: ''
+    name: Games Evasion - Saint-Julien-en-Genevois
+    phone: +33 6 72 48 22 06
+    website: https://www.gamesevasion.com
   Get_Out_Lille:
     email: ''
     location: 128 rue Solférino,59000 Lille
@@ -49,6 +91,20 @@ enseignes:
     name: Get Out - Lille
     phone: +33 3 62 65 40 56
     website: https://lille.getout.fr
+  Hidden_Scape_Sillingy:
+    email: ''
+    location: 70 impasse de la Prairie,74330 Sillingy
+    maps_location: ''
+    name: Hidden Scape - Sillingy
+    phone: +33 4 50 24 57 37
+    website: https://hidden-scape.fr
+  Hypnotik_Room_Fillinges:
+    email: ''
+    location: 479 route de la vallée du giffre,74250 Fillinges
+    maps_location: ''
+    name: Hypnotik Room - Fillinges
+    phone: +33 9 51 57 29 95
+    website: https://hypnotikroom.4escape.io
   John_Doe_Lille:
     email: ''
     location: 8 rue des jardins,59000 Lille
@@ -70,6 +126,41 @@ enseignes:
     name: Koezio - Lille
     phone: +33 3 20 05 80 00
     website: https://koezio.co
+  L'Atelier_des_Énigmes_Annecy:
+    email: ''
+    location: 8 bis route des creuses,74960 Annecy
+    maps_location: ''
+    name: L'Atelier des Énigmes - Annecy
+    phone: +33 9 72 80 17 19
+    website: https://www.latelierdesenigmes.fr
+  L'Intrigue_Annecy:
+    email: ''
+    location: 800 Route des Burnets,74000 Annecy
+    maps_location: ''
+    name: L'Intrigue - Annecy
+    phone: +33 4 50 22 04 00
+    website: http://aubergelafermedeferrieres.com
+  La_Fabuleuse_Histoire_VillelaGrand:
+    email: ''
+    location: 16 rue de Deux Montagnes,74100 Ville-la-Grand
+    maps_location: ''
+    name: La Fabuleuse Histoire - Ville-la-Grand
+    phone: +33 4 50 49 22 27
+    website: https://lafabuleusehistoire.fr
+  La_Grande_Évasion_Annecy:
+    email: ''
+    location: 89 rue du Val Vert,74600 Annecy
+    maps_location: ''
+    name: La Grande Évasion - Annecy
+    phone: +33 4 50 05 16 96
+    website: https://www.la-grande-evasion.com
+  Mystères_du_Lac_Annecy:
+    email: ''
+    location: 23 rue Sommeiller,74000 Annecy
+    maps_location: ''
+    name: Mystères du Lac - Annecy
+    phone: +33 4 50 32 86 15
+    website: https://www.mysteresdulac.com
   One_Brain_Lille:
     email: ''
     location: 11B boulevard Jean-Baptiste Lebas,59000 Lille
@@ -91,6 +182,13 @@ enseignes:
     name: Qwest - Lille
     phone: +33 3 74 09 67 78
     website: https://www.qwest.fr
+  Sensas_Annecy:
+    email: ''
+    location: 225 route des prés Rollier,74330 Sillingy
+    maps_location: ''
+    name: Sensas - Annecy
+    phone: +33 4 56 67 88 48
+    website: https://annecy.sensas.top
   Team_Break_Lille:
     email: ''
     location: 7 Rue du Palais Rihour,59000 Lille
