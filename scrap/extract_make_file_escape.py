@@ -86,12 +86,6 @@ info_top : |{info_top_formatted}
 ---
 """
     
-    # # Write to .md file
-    # filename = f"{url_suffix}.md"
-    # with open(filename, 'w', encoding='utf-8') as file:
-    #     file.write(md_content)
-    
-    # print(f"Markdown file '{filename}' created successfully.")
     # Define the save directory for articles
     articles_dir = "../_articles/"
     os.makedirs(articles_dir, exist_ok=True)  # Ensure directory exists
