@@ -2,9 +2,22 @@ import os
 import requests
 from bs4 import BeautifulSoup
 import re
+import yaml
+from urllib.parse import urlparse
 
 def format_multiline_text(text):
         return "\n    " + "\n    ".join(text.split("\n")) if text else ""
+def clean_enseigne_name(name):
+    # Remove line breaks, extra spaces, and replace hyphens if needed
+    name = name.replace("\n", " ").strip()  # Remove newlines and trim
+    name = re.sub(r'\s+', ' ', name)  # Replace multiple spaces with a single space
+    return name
+
+def get_base_url(url):
+    # Parse the URL and return just the domain
+    parsed_url = urlparse(url)
+    base_url = f"{parsed_url.scheme}://{parsed_url.netloc}"
+    return base_url
 
 def extract_data_and_create_md():
     url = input("Enter the URL: ")
@@ -53,8 +66,8 @@ def extract_data_and_create_md():
         image_url_match = re.search(r'background-image:\s*url\(\"(.*?)\"\)', style_attr)
         if image_url_match:
             image_url = image_url_match.group(1)
-            image_name = os.path.basename(image_url)
-            
+            #image_name = os.path.basename(image_url)
+            image_name = f"{url_suffix}.webp"
             # Download and save the image
             save_dir = "../assets/img/escape/"
             os.makedirs(save_dir, exist_ok=True)  # Ensure directory exists
@@ -67,7 +80,61 @@ def extract_data_and_create_md():
                 with open(image_path, 'wb') as img_file:
                     for chunk in img_response.iter_content(1024):
                         img_file.write(chunk)
+        
+    enseigne_tag = soup.find('a', class_='company-title nuxt-link-active')
+    enseigne = ""
+    if enseigne_tag:
+        enseigne = enseigne_tag.get_text(strip=True)
+        # Replace spaces with underscores
+        enseigne = enseigne.replace(" ", "_")
+        # Remove hyphens
+        enseigne = enseigne.replace("-", "")
+        # Replace multiple underscores with a single underscore
+        enseigne = re.sub(r'_+', '_', enseigne)  # Replace multiple underscores with a single underscore
+        # Remove newlines
+        enseigne = enseigne.replace("\n", "")
+        # Remove leading/trailing underscores, if any
+        enseigne = enseigne.strip('_')
+    # Extract maps_location (address)
+    maps_location = ""
+    maps_tag = soup.find('p', class_='has-text-grey is-size-7 company-address')
+    if maps_tag:
+        maps_location = maps_tag.get_text(strip=True)
 
+    # Extract phone number
+    phone = ""
+    phone_tag = soup.find('p', class_='has-text-grey is-size-7 company-phone-number')
+    if phone_tag:
+        phone = phone_tag.get_text(strip=True)
+
+    # Extract website
+    website = ""
+    website_tag = soup.find('div', class_='buttons booking-block is-centered m-b-none')
+    if website_tag:
+        a_tag = website_tag.find('a', href=True)
+        if a_tag:
+            website = a_tag['href']
+            # Get the base URL (domain) from the full URL
+            website = get_base_url(website)
+    
+    enseigne_file = "../_data/enseignes.yml"
+    if os.path.exists(enseigne_file):
+        with open(enseigne_file, 'r', encoding='utf-8') as f:
+            enseigne_data = yaml.safe_load(f) or {}
+        # Check if the enseigne already exists as a key inside the 'enseignes' section
+        if enseigne not in enseigne_data.get('enseignes', {}):
+            # If not, append a new entry for this enseigne inside 'enseignes'
+            enseigne_data.setdefault('enseignes', {})[enseigne] = {
+                'name': clean_enseigne_name(enseigne_tag.get_text(strip=True)),
+                'location': maps_location or 'Unknown',
+                'website': website or "",
+                'phone': phone or "",
+                'email': "",  # Email not found
+                'maps_location': ""
+            }
+        # Write the updated data back to the YAML file
+        with open(enseigne_file, 'w', encoding='utf-8') as f:
+            yaml.dump(enseigne_data, f, allow_unicode=True)
     
     
     # Markdown content
@@ -77,7 +144,7 @@ url: "{url_suffix}"
 top_name : "{url_suffix}"
 title: {title}
 date: 07-06-2024
-enseigne: ""
+enseigne: "{enseigne}"
 theme : "{theme}"
 duree : "{duree}"
 nb-joueur : "{nb_joueur}"
