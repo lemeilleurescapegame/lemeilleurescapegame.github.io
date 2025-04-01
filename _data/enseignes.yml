@@ -21,6 +21,55 @@ enseignes:
     name: ''
     phone: ''
     website: ''
+  Escape_Time_Lille:
+    email: ''
+    location: 500 rue des Bourreliers,59320 Hallennes-lez-Haubourdin
+    maps_location: ''
+    name: Escape Time - Lille
+    phone: +33 6 84 41 13 68
+    website: https://escapetime-lille.fr
+  Follow_Park_Lille:
+    email: ''
+    location: 15 Rue du Sec Arembault — Centre commercial les Tanneurs,59800 Lille
+    maps_location: ''
+    name: Follow Park - Lille
+    phone: +33 3 20 19 01 78
+    website: https://www.follow-park.com
+  Fun_at_Comines_CominesWarneton:
+    email: ''
+    location: Grand Chemin de Messines 47,7780 Comines-Warneton
+    maps_location: ''
+    name: Fun at Comines - Comines-Warneton
+    phone: +32 478 65 50 14
+    website: http://www.funatcomines.be
+  Get_Out_Lille:
+    email: ''
+    location: 128 rue Solférino,59000 Lille
+    maps_location: ''
+    name: Get Out - Lille
+    phone: +33 3 62 65 40 56
+    website: https://lille.getout.fr
+  John_Doe_Lille:
+    email: ''
+    location: 8 rue des jardins,59000 Lille
+    maps_location: ''
+    name: John Doe - Lille
+    phone: +33 3 62 27 63 99
+    website: https://www.john-doe.fr
+  Just_Escape_Lille:
+    email: ''
+    location: 26 rue d'Arras,59000 Lille
+    maps_location: ''
+    name: Just Escape - Lille
+    phone: +33 7 89 05 37 90
+    website: https://just-escape.fr
+  Koezio_Lille:
+    email: ''
+    location: 31 rue Alfred de Musset,59491 Villeneuve-d'Ascq
+    maps_location: ''
+    name: Koezio - Lille
+    phone: +33 3 20 05 80 00
+    website: https://koezio.co
   One_Brain_Lille:
     email: ''
     location: 11B boulevard Jean-Baptiste Lebas,59000 Lille
@@ -28,6 +77,27 @@ enseignes:
     name: One Brain - Lille
     phone: +33 3 59 54 40 93
     website: https://onebrainlille.com
+  Prison_Island_Lille:
+    email: ''
+    location: 790 rue Maurice Herzog,59810 Lesquin
+    maps_location: ''
+    name: Prison Island - Lille
+    phone: +33 3 20 92 78 53
+    website: https://prisonisland-lille.fr
+  Qwest_Lille:
+    email: ''
+    location: 51 rue de la Cimaise,59491 Villeneuve-d'Ascq
+    maps_location: ''
+    name: Qwest - Lille
+    phone: +33 3 74 09 67 78
+    website: https://www.qwest.fr
+  Team_Break_Lille:
+    email: ''
+    location: 7 Rue du Palais Rihour,59000 Lille
+    maps_location: ''
+    name: Team Break - Lille
+    phone: +33 6 61 87 70 37
+    website: https://www.team-break.fr
   arcanum:
     email: ''
     location: Passeig Can Ferrer Del Mas, 24-26, 08770 Sant Sadurní d'Anoia
