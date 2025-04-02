@@ -14,6 +14,13 @@ enseignes:
     name: 1 Way Escape Room
     phone: (0030) 699 51 44444
     website: https://1wayescape.gr/en/english-home/
+  Alive_Room_Bayonne:
+    email: ''
+    location: 38 rue de la cale,64100 Bayonne
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.613497517541!2d-1.4558203239401895!3d43.48953577111044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5140b9fd3aa40f%3A0x2a1c7e2ba1262c44!2sAlive%20Room%20-%20Escape%20Game%20-%20Bayonne!5e0!3m2!1sfr!2snl!4v1743620965396!5m2!1sfr!2snl
+    name: Alive Room - Bayonne
+    phone: +33 6 99 56 45 53
+    website: https://aliveroom.4escape.io
   Break_Out_Annecy:
     email: ''
     location: 25 route des Saintiers,74320 Sévrier
@@ -38,7 +45,7 @@ enseignes:
   Défiez_le_Cube_Avignon:
     email: ''
     location: 240 Rue Rudolph Serkin,84000 Avignon
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2872.47049856915!2d4.8527500760850035!3d43.949630971089604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5ed6b88239dd5%3A0x2ab708590e5bc19d!2sD%C3%A9fiez%20le%20Cube%20%7C%20Escape%20Game%20%7C%20Avignon!5e0!3m2!1sfr!2snl!4v1743619030788!5m2!1sfr!2snl
     name: Défiez le Cube - Avignon
     phone: +33 9 84 31 39 61
     website: https://defiezlecube.fr
@@ -59,7 +66,7 @@ enseignes:
   Escape_Hostel_Mazan:
     email: ''
     location: Place du 8 mai 1944,84380 Mazan
-    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.314957680655!2d5.128145676090861!3d44.05620457108588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ca75f1d12d70bf%3A0xeaab369402551074!2sEscape%20hostel!5e0!3m2!1sfr!2snl!4v1743618598649!5m2!1sfr!2snl"
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.314957680655!2d5.128145676090861!3d44.05620457108588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ca75f1d12d70bf%3A0xeaab369402551074!2sEscape%20hostel!5e0!3m2!1sfr!2snl!4v1743618598649!5m2!1sfr!2snl
     name: Escape Hostel - Mazan
     phone: +33 7 83 69 17 47
     website: https://escape-game-hostel-vaucluse.com
@@ -70,6 +77,27 @@ enseignes:
     name: Escape Time - Lille
     phone: +33 6 84 41 13 68
     website: https://escapetime-lille.fr
+  Escape_You_Anglet:
+    email: ''
+    location: 96 Avenue de l'Adour,64600 Anglet
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.108842192146!2d-1.503845823938464!3d43.52092297110866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5141c83be70a61%3A0x6c6aab542525d5fa!2sESCAPE%20YOU-Anglet-Escape%20Game%26KARAOKE!5e0!3m2!1sfr!2snl!4v1743620932646!5m2!1sfr!2snl
+    name: Escape You - Anglet
+    phone: +33 7 87 78 03 24
+    website: https://bookeo.com
+  Escape_from_the_Chateau_Urrugne:
+    email: ''
+    location: Château d'Urtubie,64122 Urrugne
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.5203915820125!2d-1.690774423946888!3d43.366141871117186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd510e3a8d8c94af%3A0x180dc49691a8fcb0!2sEscape%20From%20The%20Ch%C3%A2teau!5e0!3m2!1sfr!2snl!4v1743620914104!5m2!1sfr!2snl
+    name: Escape from the Chateau - Urrugne
+    phone: +33 5 59 54 31 15
+    website: http://bookeo.com
+  Escape_the_City_Biarritz:
+    email: ''
+    location: La Grande Plage,64200 Biarritz
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.9578038968366!2d-1.566231623940543!3d43.48235097111075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd516adb9d8132df%3A0xd609ef82551e3ad5!2sLa%20Grande%20Plage%2C%20Biarritz%2C%20France!5e0!3m2!1sfr!2snl!4v1743620897941!5m2!1sfr!2snl
+    name: Escape the City - Biarritz
+    phone: +33 9 82 35 17 55
+    website: https://escapethecity.fr
   Eskap_AixlesBains:
     email: ''
     location: Théâtre de Verdure,73100 Aix-les-Bains
@@ -108,10 +136,17 @@ enseignes:
   Ghostbusters_PerneslesFontaines:
     email: ''
     location: 105 rue Porte Notre-Dame,84210 Pernes-les-Fontaines
-    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d930.490347792797!2d5.057973194800862!3d44.0002362609924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b58aa0ed3824e3%3A0x92d683bf0b7cab8e!2sGhostbusters!5e0!3m2!1sfr!2snl!4v1743618635045!5m2!1sfr!2snl"
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d930.490347792797!2d5.057973194800862!3d44.0002362609924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b58aa0ed3824e3%3A0x92d683bf0b7cab8e!2sGhostbusters!5e0!3m2!1sfr!2snl!4v1743618635045!5m2!1sfr!2snl
     name: Ghostbusters - Pernes-les-Fontaines
     phone: +33 7 83 69 17 47
     website: http://ghostbusters-live-escape-game-84.com
+  Hendaye_Tourisme_Hendaye:
+    email: ''
+    location: 26 rue de l'Église,64700 Hendaye
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1035.7985568070294!2d-1.774987147290037!3d43.35731852841558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51091f7280a767%3A0xecfb604fee5440a8!2s26%20Rue%20de%20l&#39;%C3%89glise!5e0!3m2!1sfr!2snl!4v1743620776439!5m2!1sfr!2snl
+    name: Hendaye Tourisme - Hendaye
+    phone: +33 5 59 20 00 34
+    website: https://tinyurl.com
   Hidden_Scape_Sillingy:
     email: ''
     location: 70 impasse de la Prairie,74330 Sillingy
@@ -126,6 +161,13 @@ enseignes:
     name: Hypnotik Room - Fillinges
     phone: +33 9 51 57 29 95
     website: https://hypnotikroom.4escape.io
+  Ilusiom_Anglet:
+    email: ''
+    location: 10 rue de l’Industrie,64600 Anglet
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.329130577953!2d-1.4991399239398417!3d43.49546907111013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5141016395ab55%3A0xd16fbee434d25343!2silusiom%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1743620721879!5m2!1sfr!2snl 
+    name: Ilusiom - Anglet
+    phone: +33 6 49 61 68 97
+    website: https://ilusiom.4escape.io
   John_Doe_Lille:
     email: ''
     location: 8 rue des jardins,59000 Lille
@@ -143,7 +185,7 @@ enseignes:
   Koezio_Lille:
     email: ''
     location: 31 rue Alfred de Musset,59491 Villeneuve-d'Ascq
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.8650715783688!2d3.1380140764742337!3d50.64819697163057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c329ce324f8d43%3A0xdd9ba63cf7c4b0a4!2sKoezio%20Lille!5e0!3m2!1sfr!2snl!4v1743620701849!5m2!1sfr!2snl
     name: Koezio - Lille
     phone: +33 3 20 05 80 00
     website: https://koezio.co
@@ -175,17 +217,24 @@ enseignes:
     name: La Grande Évasion - Annecy
     phone: +33 4 50 05 16 96
     website: https://www.la-grande-evasion.com
+  La_Maison_de_lÉvasion_Tarnos:
+    email: ''
+    location: 18 Bd Jacques Duclos,40220 Tarnos
+    maps_location: ''
+    name: La Maison de l'Évasion - Tarnos
+    phone: +33 6 24 36 96 90
+    website: https://lamaisondelevasion.4escape.io
   Last_Adventures_Taillades:
     email: ''
     location: ZAC Bel-Air,84300 Taillades
-    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1035.1749865985835!2d5.079230004543487!3d43.843051912101615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ca0917a0799249%3A0xf6ec7da06a756c90!2sLast%20Adventures!5e0!3m2!1sfr!2snl!4v1743618674682!5m2!1sfr!2snl"
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1035.1749865985835!2d5.079230004543487!3d43.843051912101615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ca0917a0799249%3A0xf6ec7da06a756c90!2sLast%20Adventures!5e0!3m2!1sfr!2snl!4v1743618674682!5m2!1sfr!2snl
     name: Last Adventures - Taillades
     phone: ''
     website: https://www.last-adventures.fr
   Les_Secrets_du_Phoenix_Avignon:
     email: ''
     location: 365 Rue du Bon Vent,84000 Avignon
-    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2873.654977610721!2d4.851138676083629!3d43.92511677109047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5ed9be792c9d1%3A0xb73f201941bdac9f!2sLes%20Secrets%20Du%20Phoenix%20%7C%20Escape%20Game%20Avignon!5e0!3m2!1sfr!2snl!4v1743618701121!5m2!1sfr!2snl"
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2873.654977610721!2d4.851138676083629!3d43.92511677109047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5ed9be792c9d1%3A0xb73f201941bdac9f!2sLes%20Secrets%20Du%20Phoenix%20%7C%20Escape%20Game%20Avignon!5e0!3m2!1sfr!2snl!4v1743618701121!5m2!1sfr!2snl
     name: Les Secrets du Phoenix - Avignon
     phone: +33 4 32 75 01 70
     website: https://www.lessecretsduphoenix.com
@@ -203,10 +252,17 @@ enseignes:
     name: One Brain - Lille
     phone: +33 3 59 54 40 93
     website: https://onebrainlille.com
+  Opération_Escape_Bayonne:
+    email: ''
+    location: 11 rue de la Tillole,64100 Bayonne
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.604842308521!2d-1.457995223940129!3d43.48971637111042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5140b99dab49e7%3A0xb0e5d0fba93e7630!2sOPERATION%20ESCAPE!5e0!3m2!1sfr!2snl!4v1743621027135!5m2!1sfr!2snl
+    name: Opération Escape - Bayonne
+    phone: +33 5 59 15 74 42
+    website: https://bookeo.com
   Prison_Island_Avignon:
     email: ''
     location: 182 Av. du Maréchal Leclerc,84130 Le Pontet
-    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2871.3767048886!2d4.860832976086201!3d43.972258671088746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5ed4d135a0437%3A0x19f61fa5df72d2dc!2sPrison%20Island%20Avignon!5e0!3m2!1sfr!2snl!4v1743618724657!5m2!1sfr!2snl"
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2871.3767048886!2d4.860832976086201!3d43.972258671088746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5ed4d135a0437%3A0x19f61fa5df72d2dc!2sPrison%20Island%20Avignon!5e0!3m2!1sfr!2snl!4v1743618724657!5m2!1sfr!2snl
     name: Prison Island - Avignon
     phone: +33 6 69 95 55 52
     website: https://prisonisland-avignon.fr
@@ -238,38 +294,60 @@ enseignes:
     name: Team Break - Lille
     phone: +33 6 61 87 70 37
     website: https://www.team-break.fr
+  Tempus_Escape_Bayonne:
+    email: ''
+    location: 15 rue des Pontots,64100 Bayonne
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.501341800231!2d-1.4948497239400413!3d43.4918759711103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd514068089dd473%3A0x15164a7a3eb2e305!2sTempus%20Escape!5e0!3m2!1sfr!2snl!4v1743621097944!5m2!1sfr!2snl
+    name: Tempus Escape - Bayonne
+    phone: +33 9 83 73 53 46
+    website: https://www.tempusescape.com
   The_Great_Escape_Les_Angles:
     email: ''
     location: 206 Avenue de Grand Angles,30133 Les Angles
-    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2871.771210016428!2d4.740763476085771!3d43.96409847108917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5ea8bfd99646f%3A0xfe3ca2e9c61099a0!2sThe%20Great%20Escape%20-%20Escape%20Game%20Avignon%20Les%20Angles!5e0!3m2!1sfr!2snl!4v1743618748881!5m2!1sfr!2snl"
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2871.771210016428!2d4.740763476085771!3d43.96409847108917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5ea8bfd99646f%3A0xfe3ca2e9c61099a0!2sThe%20Great%20Escape%20-%20Escape%20Game%20Avignon%20Les%20Angles!5e0!3m2!1sfr!2snl!4v1743618748881!5m2!1sfr!2snl
     name: The Great Escape - Les Angles
     phone: +33 9 75 25 07 68
     website: https://thegreatescapeconcept.com
   The_Last_Mystery_Robion:
     email: ''
     location: 160 avenue de provence,84440 Robion
-    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.4197514792622!2d5.1019588760793475!3d43.847127871093534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ca09945d845111%3A0xa1c3f2098681109e!2sLast%20Mystery%20Escape%20Game%20Robion%20%2F%20Proche%20d&#39;Avignon!5e0!3m2!1sfr!2snl!4v1743618773403!5m2!1sfr!2snl"
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.4197514792622!2d5.1019588760793475!3d43.847127871093534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ca09945d845111%3A0xa1c3f2098681109e!2sLast%20Mystery%20Escape%20Game%20Robion%20%2F%20Proche%20d&#39;Avignon!5e0!3m2!1sfr!2snl!4v1743618773403!5m2!1sfr!2snl
     name: The Last Mystery - Robion
     phone: +33 4 90 75 00 42
     website: https://www.last-mystery.com
   TimeXperience_Avignon:
     email: ''
     location: 10 rue du 12e régiment de zouaves,84000 Avignon
-    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2873.445571514385!2d4.772813476083904!3d43.92945147109037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5ebdde2c32917%3A0x5b3b4b7f0304747a!2sTimeXperience%20-%20Escape%20Game%20Avignon!5e0!3m2!1sfr!2snl!4v1743618799237!5m2!1sfr!2snl"
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2873.445571514385!2d4.772813476083904!3d43.92945147109037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5ebdde2c32917%3A0x5b3b4b7f0304747a!2sTimeXperience%20-%20Escape%20Game%20Avignon!5e0!3m2!1sfr!2snl!4v1743618799237!5m2!1sfr!2snl
     name: TimeXperience - Avignon
     phone: +33 4 90 32 35 57
     website: https://timexperience-avignon.4escape.io
+  Time_Lapse_SoortsHossegor:
+    email: ''
+    location: 312 avenue des Forgerons,40150 Soorts-Hossegor
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.8896023777793!2d-1.3863943239302325!3d43.67126577110123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd515a60c1ed54eb%3A0x4b303c2afa7f3e6!2sTIME%20LAPSE%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1743621060019!5m2!1sfr!2snl
+    name: Time Lapse - Soorts-Hossegor
+    phone: +33 5 58 35 30 24
+    website: https://bookeo.com
+  Too_Late_Bayonne:
+    city: Bayonne
+    email: bayonne@toolate.fr
+    location: 5 rue de Chalibardon 64100 Bayonne
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.5686400356517!2d-1.4539183240736993!3d43.49047176294075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5140b711138fe3%3A0x9f65bc202ff4a058!2sTOO%20LATE%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1740945756904!5m2!1sfr!2snl
+    name: Too late escape game
+    phone: 06 64 33 82 84
+    website: https://toolate.fr/bayonne/
   Ultime_Evasion_Jonquières:
     email: ''
     location: Chemin du Moulin,84150 Jonquières
-    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864.502498835233!2d4.888524576094065!3d44.11425647108407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b59135bcb73b35%3A0x487f6e5d448f170f!2sUltime%20%C3%89vasion%20-%20Escape%20Game%20Jonqui%C3%A8res!5e0!3m2!1sfr!2snl!4v1743618820986!5m2!1sfr!2snl"
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864.502498835233!2d4.888524576094065!3d44.11425647108407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b59135bcb73b35%3A0x487f6e5d448f170f!2sUltime%20%C3%89vasion%20-%20Escape%20Game%20Jonqui%C3%A8res!5e0!3m2!1sfr!2snl!4v1743618820986!5m2!1sfr!2snl
     name: Ultime Evasion - Jonquières
     phone: +33 7 72 16 61 32
     website: https://ultime-evasion.fr
   Ultime_Evasion_Orange:
     email: ''
     location: Chemin de Veysonne,84100 Orange
-    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.8261129962693!2d4.755862376095949!3d44.14882987108285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b599c43d12fb99%3A0x6fe879ccf20964d!2sUltime%20%C3%89vasion%20-%20Escape%20Game%20Orange!5e0!3m2!1sfr!2snl!4v1743618838345!5m2!1sfr!2snl"
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.8261129962693!2d4.755862376095949!3d44.14882987108285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b599c43d12fb99%3A0x6fe879ccf20964d!2sUltime%20%C3%89vasion%20-%20Escape%20Game%20Orange!5e0!3m2!1sfr!2snl!4v1743618838345!5m2!1sfr!2snl
     name: Ultime Evasion - Orange
     phone: +33 7 72 16 61 32
     website: https://ultime-evasion.fr
@@ -563,14 +641,6 @@ enseignes:
     name: The One Escape
     phone: 09 75 90 83 68 / 06 47 88 89
     website: https://theoneescape.com/
-  too_late_escape_game_bayonne:
-    city: Bayonne
-    email: bayonne@toolate.fr
-    location: 5 rue de Chalibardon 64100 Bayonne
-    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.5686400356517!2d-1.4539183240736993!3d43.49047176294075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5140b711138fe3%3A0x9f65bc202ff4a058!2sTOO%20LATE%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1740945756904!5m2!1sfr!2snl
-    name: Too late escape game
-    phone: 06 64 33 82 84
-    website: https://toolate.fr/bayonne/
   trapgame_charrat:
     city: Geneve
     email: info@trapgame.ch

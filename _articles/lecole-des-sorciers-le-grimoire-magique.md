@@ -2,7 +2,7 @@
 layout: article_not_descriptive
 url: "lecole-des-sorciers-le-grimoire-magique"
 top_name : "lecole-des-sorciers-le-grimoire-magique"
-title: L'École des Sorciers : le Grimoire Magique
+title: "L'École des Sorciers : le Grimoire Magique"
 date: 07-06-2024
 enseigne: "The_Last_Mystery_Robion"
 theme : "Fantastique, Série / Film / Roman"

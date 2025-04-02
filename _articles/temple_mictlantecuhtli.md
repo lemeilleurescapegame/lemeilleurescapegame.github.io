@@ -5,7 +5,7 @@ top_name : "temple-mictlantecuhtli"
 title: 'Le Temple de Mictlantecuhtli'
 date: 24-12-2024
 note: "20"
-enseigne: "too_late_escape_game_bayonne"
+enseigne: "Too_Late_Bayonne"
 theme : 'Aventure'
 duree : '2 heures'
 nb-joueur : '3 à 6'

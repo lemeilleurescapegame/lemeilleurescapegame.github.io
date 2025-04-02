@@ -143,7 +143,7 @@ def extract_data_and_create_md():
 layout: article_not_descriptive
 url: "{url_suffix}"
 top_name : "{url_suffix}"
-title: {title}
+title: "{title}"
 date: 07-06-2024
 enseigne: "{enseigne}"
 theme : "{theme}"
@@ -169,8 +169,8 @@ info_top : |{info_top_formatted}
 
     ## Append the top_name at the end of top_file
     # Check if the top_name is already in the file to avoid duplicates
-    top_file = "../_top-france/avignon.md"
-    top_name_entry = f"- {url_suffix}\n"
+    top_file = "../_top-france/bayonne.md"
+    top_name_entry = f"{url_suffix},\n"
     if os.path.exists(top_file):
         with open(top_file, "r", encoding="utf-8") as f:
             content = f.readlines()

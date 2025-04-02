@@ -2,7 +2,7 @@
 layout: article_not_descriptive
 url: "lecole-des-sorciers-lheritage-du-dragon"
 top_name : "lecole-des-sorciers-lheritage-du-dragon"
-title: L'École des Sorciers : l'Héritage du Dragon
+title: "L'École des Sorciers : l'Héritage du Dragon"
 date: 07-06-2024
 enseigne: "The_Last_Mystery_Robion"
 theme : "Série / Film / Roman"
