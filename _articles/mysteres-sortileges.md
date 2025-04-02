@@ -2,18 +2,15 @@
 layout: article_not_descriptive
 url: "mysteres-sortileges"
 top_name : "mysteres-sortileges"
-title: Mystères & sortilèges
+title: "Mystères & Sortilèges"
 date: 07-06-2024
-enseigne: "The_Last_Mystery_Robion"
-theme : "Série / Film / Roman"
+enseigne: "221B_Baker_Street_Dijon"
+theme : "Fantastique"
 duree : "60 minutes"
-nb-joueur : "3 - 8"
+nb-joueur : "2 - 6"
 image_name : "mysteres-sortileges.webp"
 info_top : |
-    Apprentis sorciers et sorcières, c'est la fin des cours de votre première année dans l'école de magie. Le directeur de l'école vous a convoqué pour les épreuves de fin d'année. Vous avez 1 heure pour résoudre les énigmes qu'il a disséminé dans la salle commune du château et trouver le moyen de vous échapper. Si vous y arrivez, vous recevrez votre diplôme et pourrez passer dans la classe supérieure...
-    
-    
-    
+    Bienvenue à Dragastel ! Vous voilà enfin élève de la plus prestigieuse école de magie. Malheureusement le directeur de l'école a disparu. Apprenez de nouveaux sortilèges et utilisez judicieusement votre baguette pour résoudre ce mystère qui vous mènera dans les endroits les plus secrets de Dragastel.
     
     
 ---

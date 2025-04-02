@@ -14,6 +14,13 @@ enseignes:
     name: 1 Way Escape Room
     phone: (0030) 699 51 44444
     website: https://1wayescape.gr/en/english-home/
+  221B_Baker_Street_Dijon:
+    email: ''
+    location: 20 rue Monge,21000 Dijon
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2704.302925988319!2d5.024557076276085!3d47.32795497116571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f29dea7b349d8b%3A0x92bd9c30fac9b3fc!2s221B%20Baker%20Street%20Escape%20Game%20Dijon!5e0!3m2!1sfr!2snl!4v1743624640353!5m2!1sfr!2snl
+    name: 221B Baker Street - Dijon
+    phone: +33 6 19 68 92 37
+    website: https://221b-dijon.com
   Alive_Room_Bayonne:
     email: ''
     location: 38 rue de la cale,64100 Bayonne
@@ -21,6 +28,13 @@ enseignes:
     name: Alive Room - Bayonne
     phone: +33 6 99 56 45 53
     website: https://aliveroom.4escape.io
+  Arcanium_Dijon:
+    email: ''
+    location: 52 avenue de Stalingrad,21000 Dijon
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2703.2206017854987!2d5.058364576277293!3d47.3490908711673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ed61f7c53a685d%3A0x4224cb044a8c8bc7!2sArcanium!5e0!3m2!1sfr!2snl!4v1743624517735!5m2!1sfr!2snl
+    name: Arcanium - Dijon
+    phone: +33 3 80 23 57 31
+    website: https://www.arcanium-dijon.fr
   Break_Out_Annecy:
     email: ''
     location: 25 route des Saintiers,74320 Sévrier
@@ -28,6 +42,13 @@ enseignes:
     name: Break Out - Annecy
     phone: +33 4 50 05 49 63
     website: https://www.enigmus.fr
+  Break_Out_Chambéry:
+    email: ''
+    location: 715 rue de belle eau,73000 Chambéry
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.0927844105995!2d5.886552576177448!3d45.608779371076785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ba70081f55abd%3A0x14385de7eb3ffcfa!2sBreak%20Out%20-%20Escape%20Game%20-%20Bar%20jeux%20de%20soci%C3%A9t%C3%A9%20-%20Chamb%C3%A9ry!5e0!3m2!1sfr!2snl!4v1743623874375!5m2!1sfr!2snl
+    name: Break Out - Chambéry
+    phone: +33 9 84 34 23 03
+    website: https://break-out-game.fr
   By_Pentagone_VétrazMonthoux:
     email: ''
     location: 2 allée des Chênes,74100 Vétraz-Monthoux
@@ -35,6 +56,14 @@ enseignes:
     name: By Pentagone - Vétraz-Monthoux
     phone: +33 9 86 32 95 51
     website: https://softlimitlessadventure.web.app
+  Chronos_Le_PontdeBeauvoisin:
+    email: ''
+    location: 456 avenue Jean Jaurès — Agora Guiers, Zone de la Baronnie,73330 Le
+      Pont-de-Beauvoisin
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.978594801466!2d5.681812186952589!3d45.53063629649448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b1ca8e634d11d%3A0x57121080a3388145!2sAGORA%20Guiers!5e0!3m2!1sfr!2snl!4v1743624062249!5m2!1sfr!2snl
+    name: Chronos - Le Pont-de-Beauvoisin
+    phone: +33 7 44 93 19 64
+    website: https://chronos-escapegame.fr
   Château_de_Lisennes_Tresses:
     email: ''
     location: Domaine Lisennes,33370 Tresses
@@ -133,6 +162,13 @@ enseignes:
     name: Escape the City - Biarritz
     phone: +33 9 82 35 17 55
     website: https://escapethecity.fr
+  Escape_the_City_Chambéry:
+    email: ''
+    location: 2 place du Palais de Justice,73000 Chambéry
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d323.91551701927045!2d5.918544611129552!3d45.56841672892447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ba8f87ed46131%3A0x3ef0d8364e17a485!2s2%20Pl.%20du%20Palais%20de%20Justice%2C%2073000%20Chamb%C3%A9ry%2C%20France!5e0!3m2!1sfr!2snl!4v1743624145344!5m2!1sfr!2snl
+    name: Escape the City - Chambéry
+    phone: +33 6 11 18 24 30
+    website: https://escapethecity.fr
   Eskap_AixlesBains:
     email: ''
     location: Théâtre de Verdure,73100 Aix-les-Bains
@@ -140,6 +176,13 @@ enseignes:
     name: Eskap - Aix-les-Bains
     phone: +33 7 67 21 20 31
     website: https://www.eskap.fr
+  Espace2Game_Charancieu:
+    email: ''
+    location: 195 Route nationale 75,38490 Charancieu
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.017555599794!2d5.587624076173009!3d45.52985227107508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b1fda87e25561%3A0x4c892b52daf0d72a!2sEspace2Game%20Charancieu!5e0!3m2!1sfr!2snl!4v1743623957858!5m2!1sfr!2snl
+    name: Espace2Game - Charancieu
+    phone: +33 6 52 41 20 61
+    website: https://www.espace2game.com
   Follow_Park_Lille:
     email: ''
     location: 15 Rue du Sec Arembault — Centre commercial les Tanneurs,59800 Lille
@@ -161,6 +204,13 @@ enseignes:
     name: Games Evasion - Saint-Julien-en-Genevois
     phone: +33 6 72 48 22 06
     website: https://www.gamesevasion.com
+  Games_Factory_Dijon:
+    email: ''
+    location: 806 Rue de la Pièce Cornue,21160 Marsannay-la-Côte
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d313.9703850512219!2d5.007120381050804!3d47.27848127801049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f29c61280db883%3A0x7c07a18301d1a6ca!2s806%20Rue%20de%20la%20Pi%C3%A8ce%20Cornue!5e0!3m2!1sfr!2snl!4v1743624771251!5m2!1sfr!2snl
+    name: Games Factory - Dijon
+    phone: +33 3 73 27 54 81
+    website: https://gamesfactory.fr
   Get_Out_Lille:
     email: ''
     location: 128 rue Solférino,59000 Lille
@@ -273,6 +323,13 @@ enseignes:
     name: L'Intrigue - Annecy
     phone: +33 4 50 22 04 00
     website: http://aubergelafermedeferrieres.com
+  La_Douzième_Heure_Dijon:
+    email: ''
+    location: 43 avenue Victor Hugo,21000 Dijon
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2704.302925988319!2d5.024557076276085!3d47.32795497116571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f29dd91539f479%3A0x9045085343d1cd2!2sLa%20Douzi%C3%A8me%20Heure!5e0!3m2!1sfr!2snl!4v1743624588685!5m2!1sfr!2snl
+    name: La Douzième Heure - Dijon
+    phone: ''
+    website: https://ladouziemeheure.com
   La_Fabuleuse_Histoire_VillelaGrand:
     email: ''
     location: 16 rue de Deux Montagnes,74100 Ville-la-Grand
@@ -280,6 +337,13 @@ enseignes:
     name: La Fabuleuse Histoire - Ville-la-Grand
     phone: +33 4 50 49 22 27
     website: https://lafabuleusehistoire.fr
+  La_Grande_Evasion_Chambéry:
+    email: ''
+    location: 32 montée de la Boisserette,73190 Saint-Jeoire-Prieuré
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.58851965921!2d5.988376276173492!3d45.53848537107523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478baef2ea0830db%3A0xf100f7d4892b6c9b!2sLa%20Grande%20%C3%89vasion%20-%20Escape%20game%20Chamb%C3%A9ry!5e0!3m2!1sfr!2snl!4v1743623849436!5m2!1sfr!2snl
+    name: La Grande Evasion - Chambéry
+    phone: +33 4 79 44 77 17
+    website: https://www.la-grande-evasion.com
   La_Grande_Évasion_Annecy:
     email: ''
     location: 89 rue du Val Vert,74600 Annecy
@@ -294,6 +358,13 @@ enseignes:
     name: La Maison de l'Évasion - Tarnos
     phone: +33 6 24 36 96 90
     website: https://lamaisondelevasion.4escape.io
+  La_Onzième_Heure_Dijon:
+    email: ''
+    location: 19 rue du colonel Victor Marchand,21000 Dijon
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2704.357816129252!2d5.033650376276013!3d47.326882871165616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f29ded07dde991%3A0x6eec1ffd8cb6d041!2sLa%20Onzi%C3%A8me%20Heure%20-%20Escape%20game%20Dijon!5e0!3m2!1sfr!2snl!4v1743624491951!5m2!1sfr!2snl
+    name: La Onzième Heure - Dijon
+    phone: +33 9 72 42 24 22
+    website: https://www.la-onzieme-heure.com
   Last_Adventures_Taillades:
     email: ''
     location: ZAC Bel-Air,84300 Taillades
@@ -301,6 +372,13 @@ enseignes:
     name: Last Adventures - Taillades
     phone: ''
     website: https://www.last-adventures.fr
+  Le_Défi_des_Ducs_Dijon:
+    email: ''
+    location: 5 rue Lamonnoye — Hôtel des Ducs,21000 Dijon
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2704.6215582160366!2d5.041091776275704!3d47.32173127116516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f29da5de849853%3A0xa4420d8e375171a2!2sLe%20d%C3%A9fi%20des%20ducs!5e0!3m2!1sfr!2snl!4v1743624551489!5m2!1sfr!2snl
+    name: Le Défi des Ducs - Dijon
+    phone: +33 7 68 52 97 41
+    website: https://www.ledefidesducs.com
   Le_Passage_Bordeaux:
     email: ''
     location: 37 rue des Menuts,33000 Bordeaux
@@ -392,6 +470,13 @@ enseignes:
     name: Sensas - Bordeaux
     phone: +33 6 35 62 46 28
     website: https://bordeaux.sensas.top
+  Smart_Escape_Game_ChalleslesEaux:
+    email: ''
+    location: 62 Avenue de la Breisse,73190 Challes-les-Eaux
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.739424879878!2d5.974582576174451!3d45.5555671710756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478baededbffb1d5%3A0x442d3750e9f5f0d1!2sSmart%20Escape%20Game%20-%20Chamb%C3%A9ry!5e0!3m2!1sfr!2snl!4v1743623916212!5m2!1sfr!2snl
+    name: Smart Escape Game - Challes-les-Eaux
+    phone: +33 4 79 62 23 84
+    website: https://www.smartescapegame.fr
   Team_Break_Lille:
     email: ''
     location: 7 Rue du Palais Rihour,59000 Lille
@@ -416,7 +501,7 @@ enseignes:
   The_Hostel_Bordeaux:
     email: ''
     location: 9 rue Dumont d'Urville,33000 Bordeaux
-    maps_location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22617.24115339862!2d-0.596885425683593!3d44.879491599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5529d697f52315%3A0xb5a2e9c522cffbcb!2sTHE%20HOSTEL%20Escape%20Game%20-%20Bordeaux!5e0!3m2!1sfr!2snl!4v1743622268051!5m2!1sfr!2snl'
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22617.24115339862!2d-0.596885425683593!3d44.879491599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5529d697f52315%3A0xb5a2e9c522cffbcb!2sTHE%20HOSTEL%20Escape%20Game%20-%20Bordeaux!5e0!3m2!1sfr!2snl!4v1743622268051!5m2!1sfr!2snl
     name: The Hostel - Bordeaux
     phone: +33 5 56 29 10 17
     website: https://thehostel.fr

@@ -2,9 +2,9 @@
 layout: article_not_descriptive
 url: "cambriolage-chez-le-professeur-jones"
 top_name : "cambriolage-chez-le-professeur-jones"
-title: "Cambriolage chez le Professeur Jones"
+title: "Cambriolage chez le professeur Jones"
 date: 07-06-2024
-enseigne: "La_Grande_Évasion_Annecy"
+enseigne: "La_Grande_Evasion_Chambéry"
 theme : "Cambriolage"
 duree : "60 minutes"
 nb-joueur : "3 - 6"
