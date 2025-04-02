@@ -35,6 +35,27 @@ enseignes:
     name: By Pentagone - Vétraz-Monthoux
     phone: +33 9 86 32 95 51
     website: https://softlimitlessadventure.web.app
+  Château_de_Lisennes_Tresses:
+    email: ''
+    location: Domaine Lisennes,33370 Tresses
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.0399938268215!2d-0.45745532386564675!3d44.84111887107057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd552558d6e85691%3A0xedcfee6f949334d0!2sCh%C3%A2teau%20de%20Lisennes!5e0!3m2!1sfr!2snl!4v1743622892910!5m2!1sfr!2snl
+    name: Château de Lisennes - Tresses
+    phone: +33 5 57 34 13 03
+    website: https://lisennes.fr
+  Clock_Escape_Bordeaux:
+    email: ''
+    location: 36 rue du Pont de la Mousque,33000 Bordeaux
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.004924259011!2d-0.5760113238656215!3d44.841833071070496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527da841eaae7%3A0x63ec438d633494f0!2sCLOCK%20ESCAPE!5e0!3m2!1sfr!2snl!4v1743622552360!5m2!1sfr!2snl
+    name: Clock Escape - Bordeaux
+    phone: +33 5 35 54 28 29
+    website: https://clockescape.com
+  Closed_Escape_Game_Bordeaux:
+    email: ''
+    location: 53 avenue du Docteur Schinazi,33300 Bordeaux
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.8487656652387!2d-0.5445326238631785!3d44.8857265710704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5529cf2e6f15e3%3A0xebde196a01cbe2e1!2sCLOSED%20ESCAPE%20GAME%20BORDEAUX!5e0!3m2!1sfr!2snl!4v1743622294090!5m2!1sfr!2snl
+    name: Closed Escape Game - Bordeaux
+    phone: +33 6 33 16 99 26
+    website: https://closed-escapegame.com
   CorteXscape_Annemasse:
     email: ''
     location: 10 rue de l'industrie,74100 Annemasse
@@ -70,6 +91,20 @@ enseignes:
     name: Escape Hostel - Mazan
     phone: +33 7 83 69 17 47
     website: https://escape-game-hostel-vaucluse.com
+  Escape_Hunt_Bordeaux:
+    email: ''
+    location: 68 rue Lafaurie de Monbadon,33000 Bordeaux
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11315.24111695395!2d-0.5990451128418087!3d44.8457969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55277acb53f031%3A0xcdc3ac9a02904ac7!2sEscape%20Hunt%20Bordeaux%20(Tourny)!5e0!3m2!1sfr!2snl!4v1743622505362!5m2!1sfr!2snl
+    name: Escape Hunt - Bordeaux
+    phone: +33 5 56 33 60 01
+    website: https://escapehunt.com
+  Escape_Quest_Bordeaux:
+    email: ''
+    location: 36 rue de la Faïencerie,33000 Bordeaux
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.7376271843336!2d-0.5515702238641856!3d44.86763587107044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55288eff75ee2d%3A0x1c082217d8ddcdc6!2sESCAPE%20QUEST!5e0!3m2!1sfr!2snl!4v1743622809861!5m2!1sfr!2snl
+    name: Escape Quest - Bordeaux
+    phone: +33 5 56 36 72 05
+    website: https://www.escapequest.fr
   Escape_Time_Lille:
     email: ''
     location: 500 rue des Bourreliers,59320 Hallennes-lez-Haubourdin
@@ -140,6 +175,20 @@ enseignes:
     name: Ghostbusters - Pernes-les-Fontaines
     phone: +33 7 83 69 17 47
     website: http://ghostbusters-live-escape-game-84.com
+  Goodlock_Bordeaux:
+    email: ''
+    location: 81 cours Anatole France,33000 Bordeaux
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.382736179016!2d-0.5873532238660477!3d44.834138371070715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527ea3483aca3%3A0xe186903865c91cfe!2sGoodlock%20%7C%20Escape%20Game%20Bordeaux!5e0!3m2!1sfr!2snl!4v1743622235018!5m2!1sfr!2snl
+    name: Goodlock - Bordeaux
+    phone: +33 7 82 69 67 13
+    website: https://www.goodlock-escape.fr
+  Gru_Bordeaux:
+    email: ''
+    location: 58 rue du Mirail,33000 Bordeaux
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.4541909870422!2d-0.5733489238661225!3d44.83268297107059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527333c837691%3A0xf49e3491d7a244fe!2sGru%20-%20Bar%20%26%20Live%20Escape%20Game%20-%20Bordeaux!5e0!3m2!1sfr!2snl!4v1743622150795!5m2!1sfr!2snl
+    name: Gru - Bordeaux
+    phone: +33 5 54 54 74 43
+    website: https://www.gru-escape.com
   Hendaye_Tourisme_Hendaye:
     email: ''
     location: 26 rue de l'Église,64700 Hendaye
@@ -154,6 +203,13 @@ enseignes:
     name: Hidden Scape - Sillingy
     phone: +33 4 50 24 57 37
     website: https://hidden-scape.fr
+  How_Many_Doors_?_Bordeaux:
+    email: ''
+    location: 180 boulevard Albert 1er,33800 Bordeaux
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.419471804488!2d-0.5634861238672338!3d44.813018371070754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527d8937de20b%3A0xee32cc41655aec1a!2sHow%20Many%20Doors%20%3F%20-%20L&#39;Escape%20Game%20des%20Boulevards!5e0!3m2!1sfr!2snl!4v1743622209482!5m2!1sfr!2snl
+    name: How Many Doors ? - Bordeaux
+    phone: +33 6 04 71 06 77
+    website: https://www.howmanydoors.fr
   Hypnotik_Room_Fillinges:
     email: ''
     location: 479 route de la vallée du giffre,74250 Fillinges
@@ -164,10 +220,24 @@ enseignes:
   Ilusiom_Anglet:
     email: ''
     location: 10 rue de l’Industrie,64600 Anglet
-    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.329130577953!2d-1.4991399239398417!3d43.49546907111013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5141016395ab55%3A0xd16fbee434d25343!2silusiom%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1743620721879!5m2!1sfr!2snl 
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.329130577953!2d-1.4991399239398417!3d43.49546907111013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5141016395ab55%3A0xd16fbee434d25343!2silusiom%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1743620721879!5m2!1sfr!2snl
     name: Ilusiom - Anglet
     phone: +33 6 49 61 68 97
     website: https://ilusiom.4escape.io
+  Ivazio_Bordeaux:
+    email: ''
+    location: 10 Promenade du Lac,33000 Bordeaux
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.1510771294816!2d-0.5713309238635143!3d44.87957437107045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd552937e6eea413%3A0xf8bd1a3c9dd48da6!2sIvazio%20Island!5e0!3m2!1sfr!2snl!4v1743622856073!5m2!1sfr!2snl
+    name: Ivazio - Bordeaux
+    phone: +33 5 56 37 96 82
+    website: https://www.ivazio.com
+  John_Doe_Bordeaux:
+    email: ''
+    location: 7 rue d'Alembert,33000 Bordeaux
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.450724827821!2d-0.5761541238661331!3d44.83275357107065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527c62d35b045%3A0x3ece3f4309992a66!2sJohn%20Doe%20Escape%20Game%20Bordeaux!5e0!3m2!1sfr!2snl!4v1743622597687!5m2!1sfr!2snl
+    name: John Doe - Bordeaux
+    phone: +33 5 57 91 94 01
+    website: https://www.john-doe.fr
   John_Doe_Lille:
     email: ''
     location: 8 rue des jardins,59000 Lille
@@ -231,6 +301,13 @@ enseignes:
     name: Last Adventures - Taillades
     phone: ''
     website: https://www.last-adventures.fr
+  Le_Passage_Bordeaux:
+    email: ''
+    location: 37 rue des Menuts,33000 Bordeaux
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.4541909870422!2d-0.5733489238661225!3d44.83268297107059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527cbc4bbffff%3A0x78d50ca2c85f7852!2sEscape%20Game%20Le%20Passage!5e0!3m2!1sfr!2snl!4v1743622182021!5m2!1sfr!2snl
+    name: Le Passage - Bordeaux
+    phone: +33 9 52 81 45 54
+    website: https://lepassage.4escape.io
   Les_Secrets_du_Phoenix_Avignon:
     email: ''
     location: 365 Rue du Bon Vent,84000 Avignon
@@ -259,6 +336,13 @@ enseignes:
     name: Opération Escape - Bayonne
     phone: +33 5 59 15 74 42
     website: https://bookeo.com
+  Otopia_Bordeaux:
+    email: ''
+    location: 93 boulevard Albert Brandenburg,33000 Bordeaux
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d176.70810212118477!2d-0.5482065475584876!3d44.8759403328532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5529e228acb35f%3A0xb0009ebcb28f3f1e!2sOTOPIA%20%2F%20Escape%20Yourself%20Bordeaux%20-%20Escape%20game%20%26%20Quiz%20game%20Bordeaux!5e0!3m2!1sfr!2snl!4v1743622417154!5m2!1sfr!2snl
+    name: Otopia - Bordeaux
+    phone: +33 5 35 54 38 73
+    website: https://escapeyourselfbordeaux.4escape.io
   Prison_Island_Avignon:
     email: ''
     location: 182 Av. du Maréchal Leclerc,84130 Le Pontet
@@ -280,6 +364,20 @@ enseignes:
     name: Qwest - Lille
     phone: +33 3 74 09 67 78
     website: https://www.qwest.fr
+  Real_Escape_Room_Bordeaux:
+    email: ''
+    location: Rue Albert Einstein,33700 Mérignac
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d657.4579827919778!2d-0.6697852123373496!3d44.830343452721856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54d9f2b80216c3%3A0x9388d36ad5c98cce!2sReal%20Escape%20Room%20Merignac!5e0!3m2!1sfr!2snl!4v1743622707022!5m2!1sfr!2snl
+    name: Real Escape Room - Bordeaux
+    phone: +33 7 78 79 08 36
+    website: https://real-escape-room-merignac.com
+  Rush_Action_Game_Bordeaux:
+    email: ''
+    location: 41 Rue des Epoux Lesgourgues,33400 Talence
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.2367259827556!2d-0.5928055238669993!3d44.816741771070724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527dcc84b53e1%3A0x51be3e53c8122e08!2sRush%20Action%20Game%20Bordeaux!5e0!3m2!1sfr!2snl!4v1743622360012!5m2!1sfr!2snl
+    name: Rush Action Game - Bordeaux
+    phone: +33 6 28 48 10 08
+    website: https://rushactiongame.fr
   Sensas_Annecy:
     email: ''
     location: 225 route des prés Rollier,74330 Sillingy
@@ -287,6 +385,13 @@ enseignes:
     name: Sensas - Annecy
     phone: +33 4 56 67 88 48
     website: https://annecy.sensas.top
+  Sensas_Bordeaux:
+    email: ''
+    location: 10 rue Pourmann,33000 Bordeaux
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.7376271843336!2d-0.5515702238641856!3d44.86763587107044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5529173085a7f5%3A0xd56fc8e8a022c565!2sSENSAS%20Bordeaux!5e0!3m2!1sfr!2snl!4v1743622757017!5m2!1sfr!2snl
+    name: Sensas - Bordeaux
+    phone: +33 6 35 62 46 28
+    website: https://bordeaux.sensas.top
   Team_Break_Lille:
     email: ''
     location: 7 Rue du Palais Rihour,59000 Lille
@@ -308,6 +413,20 @@ enseignes:
     name: The Great Escape - Les Angles
     phone: +33 9 75 25 07 68
     website: https://thegreatescapeconcept.com
+  The_Hostel_Bordeaux:
+    email: ''
+    location: 9 rue Dumont d'Urville,33000 Bordeaux
+    maps_location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22617.24115339862!2d-0.596885425683593!3d44.879491599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5529d697f52315%3A0xb5a2e9c522cffbcb!2sTHE%20HOSTEL%20Escape%20Game%20-%20Bordeaux!5e0!3m2!1sfr!2snl!4v1743622268051!5m2!1sfr!2snl'
+    name: The Hostel - Bordeaux
+    phone: +33 5 56 29 10 17
+    website: https://thehostel.fr
+  The_Hostel_Talence:
+    email: ''
+    location: 31 rue Pacaris,33400 Talence
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45266.037921577416!2d-0.6120999009976495!3d44.83933939379804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55276ccdbccb21%3A0x1c4f4d5ad844c2a!2sThe%20Hostel%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1743622463557!5m2!1sfr!2snl
+    name: The Hostel - Talence
+    phone: +33 5 56 29 10 17
+    website: https://thehostel.fr
   The_Last_Mystery_Robion:
     email: ''
     location: 160 avenue de provence,84440 Robion
@@ -337,6 +456,13 @@ enseignes:
     name: Too late escape game
     phone: 06 64 33 82 84
     website: https://toolate.fr/bayonne/
+  Tête_Chercheuse_Mérignac:
+    email: ''
+    location: 3 rue Alessandro Volta,33700 Mérignac
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.420009857802!2d-0.673045723864947!3d44.85374367107057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54ad6e8a1994b1%3A0xe0496368dc377c89!2sEscape%20game%20T%C3%AAte%20Chercheuse%20M%C3%A9rignac!5e0!3m2!1sfr!2snl!4v1743622333129!5m2!1sfr!2snl
+    name: Tête Chercheuse - Mérignac
+    phone: +33 6 49 76 57 93
+    website: https://escapegamebordeaux.fr
   Ultime_Evasion_Jonquières:
     email: ''
     location: Chemin du Moulin,84150 Jonquières

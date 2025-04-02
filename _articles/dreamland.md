@@ -2,14 +2,13 @@
 layout: article_not_descriptive
 url: "dreamland"
 top_name : "dreamland"
-title: Dreamland
+title: "Dreamland"
 date: 07-06-2024
-enseigne: "John_Doe_Lille"
+enseigne: "John_Doe_Bordeaux"
 theme : "Enquête / Mystère"
 duree : "60 minutes"
 nb-joueur : "2 - 6"
 image_name : "dreamland.webp"
 info_top : |
-    Plongez au cœur d'une fête foraine mystérieuse où le divertissement cache un sinistre secret. Vous êtes envoyé sur place pour enquêter sur des disparitions mystérieuses. Au fil de votre exploration, vous vous rendez compte que quelqu'un cherche à vous hypnotiser. Vous devez remonter le fil de cette histoire, lutter contre votre esprit, et tenter de retrouver les personnes disparues avant qu'il ne soit trop tard. Oserez-vous affronter les mystères de cette fête foraine et échapper à son pouvoir hypnotique ?
-    
+    Plongez dans l'ambiance envoûtante d'une fête foraine mystérieuse. Enquêtant sur d'inquiétantes disparitions, vous comprenez peu à peu qu'une force sinistre tente de vous manipuler. Pour retrouver les disparus, il vous faudra suivre les indices, éviter les pièges et faire vite. Serez-vous prêt à affronter les énigmes de ce lieu étrange et à échapper à son emprise hypnotique ?
 ---
