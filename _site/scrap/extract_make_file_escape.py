@@ -89,6 +89,7 @@ def extract_data_and_create_md():
         enseigne = enseigne.replace(" ", "_")
         # Remove hyphens
         enseigne = enseigne.replace("-", "")
+        enseigne = enseigne.replace("'", "")
         # Replace multiple underscores with a single underscore
         enseigne = re.sub(r'_+', '_', enseigne)  # Replace multiple underscores with a single underscore
         # Remove newlines

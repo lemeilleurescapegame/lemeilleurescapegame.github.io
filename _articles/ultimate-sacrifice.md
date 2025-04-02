@@ -2,7 +2,7 @@
 layout: article_not_descriptive
 url: "ultimate-sacrifice"
 top_name : "ultimate-sacrifice"
-title: Ultimate Sacrifice
+title: "Ultimate Sacrifice"
 date: 07-06-2024
 enseigne: "Escape_Chô_SaintMartinBellevue"
 theme : "Évasion"

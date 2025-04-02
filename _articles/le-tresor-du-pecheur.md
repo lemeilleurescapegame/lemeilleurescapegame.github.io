@@ -4,7 +4,7 @@ url: "le-tresor-du-pecheur"
 top_name : "le-tresor-du-pecheur"
 title: "Le Trésor du Pêcheur"
 date: 07-06-2024
-enseigne: "L'Atelier_des_Énigmes_Annecy"
+enseigne: "LAtelier_des_Énigmes_Annecy"
 theme : "Enquête / Mystère"
 duree : "60 minutes"
 nb-joueur : "2 - 6"

@@ -2,7 +2,7 @@
 layout: article_not_descriptive
 url: "the-mystery-shop"
 top_name : "the-mystery-shop"
-title: The Mystery Shop
+title: "The Mystery Shop"
 date: 07-06-2024
 enseigne: "CorteXscape_Annemasse"
 theme : "Évasion"

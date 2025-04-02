@@ -2,10 +2,9 @@
 layout: article_not_descriptive
 url: "celestia-la-cite-oubliee"
 top_name : "celestia-la-cite-oubliee"
-title: | 
-    Celestia : la Cité Oubliée
+title: "Celestia : la Cité Oubliée"
 date: 07-06-2024
-enseigne: "L'Atelier_des_Énigmes_Annecy"
+enseigne: "LAtelier_des_Énigmes_Annecy"
 theme : "Fantastique, Aventure"
 duree : "60 minutes"
 nb-joueur : "2 - 6"

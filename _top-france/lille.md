@@ -9,7 +9,7 @@ image_name : "lille.webp"
 
 
 {% include top-articles.html 
-    title = "Tous les escapes"
+    title = "Tous les escapes de Lille"
     list = "le-cube,
     merlin,
     cybercity,
@@ -47,3 +47,4 @@ image_name : "lille.webp"
     jurassik-room
     "
     %}
+

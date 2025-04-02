@@ -4,7 +4,7 @@ url: "charl-e-et-sa-drole-de-mission"
 top_name : "charl-e-et-sa-drole-de-mission"
 title: "Charl-E et sa Drôle de Mission"
 date: 07-06-2024
-enseigne: "L'Atelier_des_Énigmes_Annecy"
+enseigne: "LAtelier_des_Énigmes_Annecy"
 theme : "Logique"
 duree : "60 minutes"
 nb-joueur : "2 - 6"

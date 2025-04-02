@@ -23,7 +23,7 @@
                      "link": "{{ article.url }}", 
                      "image": "{{ site.baseurl }}/assets/img/escape/{{ article.image_name }}",
                      "note": "{{ article.note }}",
-                     "enseigne" : "{{enseigne_data.name}}"
+                     "enseigne" : "{{ enseigne_data.name | replace: "'", "&#39;" }}"
                     }
                     {%- endcapture -%}
                     {%- if matching_articles != "" -%}
