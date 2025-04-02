@@ -21,6 +21,13 @@ enseignes:
     name: 221B Baker Street - Dijon
     phone: +33 6 19 68 92 37
     website: https://221b-dijon.com
+  Alcatraz_Adventure_SaintEgrève:
+    email: ''
+    location: 29 Rue des Glairaux,38120 Saint-Egrève
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2810.1915543033037!2d5.670184276155741!3d45.22369267107109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af307c145e62b%3A0xced176b5ef85fab9!2sAlcatraz%20Adventure%20Grenoble!5e0!3m2!1sfr!2snl!4v1743625604321!5m2!1sfr!2snl
+    name: Alcatraz Adventure - Saint-Egrève
+    phone: +33 7 82 58 90 62
+    website: https://alcatrazadventure-grenoble.fr
   Alive_Room_Bayonne:
     email: ''
     location: 38 rue de la cale,64100 Bayonne
@@ -35,6 +42,13 @@ enseignes:
     name: Arcanium - Dijon
     phone: +33 3 80 23 57 31
     website: https://www.arcanium-dijon.fr
+  Au_Fil_du_Dédale_Grenoble:
+    email: ''
+    location: 2 cours Jean Jaurès,38000 Grenoble
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2811.775154459898!2d5.717306476153955!3d45.19164757107082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478a8c1cf19cbfff%3A0x68c6b8ac427f9c0e!2sAu%20fil%20du%20d%C3%A9dale%20-%20Escape%20Game%20Grenoble!5e0!3m2!1sfr!2snl!4v1743625280871!5m2!1sfr!2snl
+    name: Au Fil du Dédale - Grenoble
+    phone: +33 4 58 00 38 66
+    website: https://aufildudedale.fr
   Break_Out_Annecy:
     email: ''
     location: 25 route des Saintiers,74320 Sévrier
@@ -56,6 +70,13 @@ enseignes:
     name: By Pentagone - Vétraz-Monthoux
     phone: +33 9 86 32 95 51
     website: https://softlimitlessadventure.web.app
+  Challenge_The_Room_Grenoble:
+    email: ''
+    location: 10 rue Servan,38000 Grenoble
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2811.7970453483094!2d5.729457176153945!3d45.191204471070726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af4f54d32a647%3A0x1cba21942d2b4dae!2sChallenge%20The%20Room%20Escape%20game!5e0!3m2!1sfr!2snl!4v1743625430040!5m2!1sfr!2snl
+    name: Challenge The Room - Grenoble
+    phone: +33 9 51 37 20 90
+    website: https://www.challengetheroom.fr
   Chronos_Le_PontdeBeauvoisin:
     email: ''
     location: 456 avenue Jean Jaurès — Agora Guiers, Zone de la Baronnie,73330 Le
@@ -99,6 +120,13 @@ enseignes:
     name: Défiez le Cube - Avignon
     phone: +33 9 84 31 39 61
     website: https://defiezlecube.fr
+  Défis_Pirate_Grenoble:
+    email: ''
+    location: 6 Rue des Montagnes de Lans,38130 Echirolles
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.6506686558546!2d5.694896376151814!3d45.15367237107052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478a8dd11fcbcb25%3A0xcbab1dc5820f3394!2sD%C3%A9fis%20Pirate%20Grenoble!5e0!3m2!1sfr!2snl!4v1743625714963!5m2!1sfr!2snl
+    name: Défis Pirate - Grenoble
+    phone: +33 4 58 00 57 20
+    website: https://www.defis-pirate.com
   EscapeRoom2:
     email: ''
     location: ''
@@ -113,6 +141,27 @@ enseignes:
     name: Escape Chô - Saint-Martin-Bellevue
     phone: +33 7 69 62 81 16
     website: https://www.escapecho.fr
+  Escape_Game_Bastille_Grenoble:
+    email: ''
+    location: 22 quai de France,38000 Grenoble
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2811.678488688688!2d5.719089776154044!3d45.19360417107078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af487f5c67a6d%3A0x4161a2393b639616!2sEscape%20Game%20Bastille%20-%20Escape%20Game%20Grenoble!5e0!3m2!1sfr!2snl!4v1743625258926!5m2!1sfr!2snl
+    name: Escape Game Bastille - Grenoble
+    phone: +33 9 54 50 26 55
+    website: https://escapegamebastille.4escape.io
+  Escape_Game_Crolles_Crolles:
+    email: ''
+    location: 127 avenue Ambroise Croizat,38190 Crolles
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.6739728601724!2d5.880092076158616!3d45.27460087107144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478a5953410d6071%3A0xfdee672bac1be51e!2sEscape%20Game%20Crolles!5e0!3m2!1sfr!2snl!4v1743625460348!5m2!1sfr!2snl
+    name: Escape Game Crolles - Crolles
+    phone: +33 4 76 72 29 96
+    website: https://www.escapegamecrolles.fr
+  Escape_Games_United_Huez:
+    email: ''
+    location: 70 avenue de Brandes,38750 Huez
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2816.8089612931403!2d6.067371276148239!3d45.089666971070365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478a6bea9dd58b81%3A0xea0583ca04774527!2sEscape%20Games%20United%2C%20Alpe%20d&#39;Huez!5e0!3m2!1sfr!2snl!4v1743625568076!5m2!1sfr!2snl
+    name: Escape Games United - Huez
+    phone: ''
+    website: https://www.escapegamesunited.com
   Escape_Hostel_Mazan:
     email: ''
     location: Place du 8 mai 1944,84380 Mazan
@@ -190,6 +239,13 @@ enseignes:
     name: Follow Park - Lille
     phone: +33 3 20 19 01 78
     website: https://www.follow-park.com
+  Fort_Boyard_Aventures_Grenoble:
+    email: ''
+    location: 9 Av. Benoît Frachon,38400 Saint-Martin-d'Hères
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.1003336858853!2d5.7527059761536234!3d45.1850651710708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af50b0ab70ccb%3A0x324c526d2be8f4ba!2sFort%20Boyard%20Aventures%20Grenoble!5e0!3m2!1sfr!2snl!4v1743625670584!5m2!1sfr!2snl
+    name: Fort Boyard Aventures - Grenoble
+    phone: +33 1 89 71 55 83
+    website: https://www.fortboyardaventures.fr
   Fun_at_Comines_CominesWarneton:
     email: ''
     location: Grand Chemin de Messines 47,7780 Comines-Warneton
@@ -393,6 +449,13 @@ enseignes:
     name: Les Secrets du Phoenix - Avignon
     phone: +33 4 32 75 01 70
     website: https://www.lessecretsduphoenix.com
+  Live_Escape_Grenoble:
+    email: ''
+    location: 1 rue de la Paix,38000 Grenoble
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2811.7970453483094!2d5.729457176153945!3d45.191204471070726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af48adebd5dd1%3A0xc2f21715b6eec7d!2sLive%20Escape%20%2F%20game%20%2F%20room%20N%C2%B01%20%C3%A0%20Grenoble!5e0!3m2!1sfr!2snl!4v1743625388761!5m2!1sfr!2snl
+    name: Live Escape - Grenoble
+    phone: +33 9 80 49 44 90
+    website: https://www.live-escape.net
   Mystères_du_Lac_Annecy:
     email: ''
     location: 23 rue Sommeiller,74000 Annecy
@@ -407,6 +470,13 @@ enseignes:
     name: One Brain - Lille
     phone: +33 3 59 54 40 93
     website: https://onebrainlille.com
+  Only_The_Brain_Eybens:
+    email: ''
+    location: 1 rue Lazare Carnot,38320 Eybens
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.780532743169!2d5.738124876151688!3d45.1510419710705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478a8b2c03f96247%3A0x1ecec307100a153f!2sOnly%20The%20Brain!5e0!3m2!1sfr!2snl!4v1743625303295!5m2!1sfr!2snl
+    name: Only The Brain - Eybens
+    phone: +33 4 76 14 94 34
+    website: https://bookeo.com
   Opération_Escape_Bayonne:
     email: ''
     location: 11 rue de la Tillole,64100 Bayonne
@@ -435,6 +505,20 @@ enseignes:
     name: Prison Island - Lille
     phone: +33 3 20 92 78 53
     website: https://prisonisland-lille.fr
+  Prizoners_Grenoble:
+    email: ''
+    location: 13 rue de la Condamine,38610 Gières
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.0699583879177!2d5.776843576153649!3d45.185680071070784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af573ee286a79%3A0xc98be9ed46d6c2a1!2sEscape%20Game%20Prizoners%20Grenoble%20%26%20Resto%2FBar!5e0!3m2!1sfr!2snl!4v1743625333728!5m2!1sfr!2snl
+    name: Prizoners - Grenoble
+    phone: +33 4 76 18 07 13
+    website: https://www.prizoners.com
+  Puzzle_Animations_Grenoble:
+    email: ''
+    location: 20 rue Chenoise,38000 Grenoble
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2811.6793088250406!2d5.727866976154075!3d45.193587571070765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af461d6900001%3A0x63170c0a5a4e003c!2sPuzzle%20Animations%20-%20Escape%20Game%20Grenoble!5e0!3m2!1sfr!2snl!4v1743625631846!5m2!1sfr!2snl
+    name: Puzzle Animations - Grenoble
+    phone: +33 4 56 00 28 51
+    website: https://puzzleanimations.fr
   Qwest_Lille:
     email: ''
     location: 51 rue de la Cimaise,59491 Villeneuve-d'Ascq
@@ -477,6 +561,20 @@ enseignes:
     name: Smart Escape Game - Challes-les-Eaux
     phone: +33 4 79 62 23 84
     website: https://www.smartescapegame.fr
+  Studios_PopCorn_Voreppe:
+    email: ''
+    location: 495 rue du Pommarin,38340 Voreppe
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2805.7002789973494!2d5.593783776160846!3d45.31447977107191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ae50303e0ac0d%3A0xfd6d79ff0160ba62!2sStudios%20PopCorn%20-%20Escape%20Game%20Grenoble%20-%20Team%20building%20Grenoble%20-%20Voiron%20-%20Voreppe%20-%20Moirans!5e0!3m2!1sfr!2snl!4v1743625502380!5m2!1sfr!2snl
+    name: Studios PopCorn - Voreppe
+    phone: +33 4 58 17 39 96
+    website: https://www.studios-popcorn.fr
+  Team_Break_Grenoble:
+    email: ''
+    location: 9 av. Benoît Frachon — ZAC Neyrpic,38400 Saint-Martin-d'Hères
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.1238867920547!2d5.753012976153559!3d45.18458837107079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af55553ea5cb1%3A0xc4cbe96accc89505!2sTEAM%20BREAK%20GRENOBLE!5e0!3m2!1sfr!2snl!4v1743625527819!5m2!1sfr!2snl
+    name: Team Break - Grenoble
+    phone: ''
+    website: https://team-break.fr
   Team_Break_Lille:
     email: ''
     location: 7 Rue du Palais Rihour,59000 Lille
