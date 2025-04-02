@@ -8,7 +8,7 @@ image_name : "annemasse.webp"
 ---
 
 {% include top-articles.html 
-    title = "Tous les escapes"
+    title = "Tous les escapes d'Annnemasse"
     list = "the-mystery-shop,
     le-penitencier,
     excalibur,

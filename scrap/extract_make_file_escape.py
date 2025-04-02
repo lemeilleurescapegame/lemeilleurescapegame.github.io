@@ -167,5 +167,26 @@ info_top : |{info_top_formatted}
     if image_name:
         print(f"Image '{image_name}' downloaded successfully.")
 
+    ## Append the top_name at the end of top_file
+    # Check if the top_name is already in the file to avoid duplicates
+    top_file = "../_top-france/avignon.md"
+    top_name_entry = f"- {url_suffix}\n"
+    if os.path.exists(top_file):
+        with open(top_file, "r", encoding="utf-8") as f:
+            content = f.readlines()
+        
+        if top_name_entry not in content:
+            with open(top_file, "a", encoding="utf-8") as f:
+                f.write(top_name_entry)
+            print(f"Appended '{url_suffix}' to '{top_file}'")
+        else:
+            print(f"'{url_suffix}' is already present in '{top_file}'")
+    # else:
+    #     # If the file does not exist, create it and add the entry
+    #     with open(top_file, "w", encoding="utf-8") as f:
+    #         f.write(top_name_entry)
+    #     print(f"Created '{top_file}' and added '{url_suffix}'")
+
 # Run function
 extract_data_and_create_md()
+

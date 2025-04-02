@@ -4,11 +4,13 @@ url: "prison-island"
 top_name : "prison-island"
 title: Prison Island
 date: 07-06-2024
-enseigne: "Prison_Island_Lille"
+enseigne: "Prison_Island_Avignon"
 theme : "Aventure"
 duree : "60 minutes"
-nb-joueur : "2 - 6"
+nb-joueur : "3 - 8"
 image_name : "prison-island.webp"
 info_top : |
-    Le but de Prison Island est de collaborer en équipe pour réussir un maximum d'épreuves. Les défis sont soit physiques, soit intellectuels. L'aventure Prison Island est coopérative et vous entrez tous ensemble dans les cellules pour réussir l'épreuve. Chaque épreuve vous rapporte des points selon votre performance.
+    Il vous faudra allier réflexion, équilibre, physique et adresse pour venir à bout des épreuves de chacune des cellules et en sortir vainqueur ! Coopérez, accumulez des points et éclatez-vous de 5 à 77 ans dans ce concept unique qui vient mixer Fort Boyard et Prison Break de la plus intense des manières !
+    
+    
 ---
