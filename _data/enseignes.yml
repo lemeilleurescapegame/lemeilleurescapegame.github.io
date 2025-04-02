@@ -17,21 +17,21 @@ enseignes:
   Break_Out_Annecy:
     email: ''
     location: 25 route des Saintiers,74320 Sévrier
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.3056124414693!2d6.1499354761908505!3d45.84518257108271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b91bcda2770b3%3A0xc90140292c7a0c24!2sBreak%20Out%20Annecy%20-%20Escape%20Game%20-%20Lancer%20de%20hache%20-%20Bar%20%C3%A0%20jeux%20de%20soci%C3%A9t%C3%A9%20-%20Salle%20de%20Quiz!5e0!3m2!1sfr!2snl!4v1743617126030!5m2!1sfr!2snl"
     name: Break Out - Annecy
     phone: +33 4 50 05 49 63
     website: https://www.enigmus.fr
   By_Pentagone_VétrazMonthoux:
     email: ''
     location: 2 allée des Chênes,74100 Vétraz-Monthoux
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.29126767107!2d6.271310776210178!3d46.18476227109489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c7300a88fb9ef%3A0xf4eaa6bdd3d6cb3d!2sBy%20Pentagone!5e0!3m2!1sfr!2snl!4v1743617107662!5m2!1sfr!2snl"
     name: By Pentagone - Vétraz-Monthoux
     phone: +33 9 86 32 95 51
     website: https://softlimitlessadventure.web.app
   CorteXscape_Annemasse:
     email: ''
     location: 10 rue de l'industrie,74100 Annemasse
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d177111.88406112496!2d6.034006633957365!3d46.08353821991389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6e1bae15f289%3A0x7d452a53dfae8d13!2sCorteXscape!5e0!3m2!1sfr!2snl!4v1743617089303!5m2!1sfr!2snl"
     name: CorteXscape - Annemasse
     phone: +33 4 50 83 01 69
     website: https://cortexscape.com
@@ -45,77 +45,77 @@ enseignes:
   Escape_Chô_SaintMartinBellevue:
     email: ''
     location: 440 route de la Touffière,74370 Saint-Martin-Bellevue
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.1065734073013!2d6.126553976197904!3d45.9691308710867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b857aa5216efb%3A0xb7e5ef299fb9fccc!2sEscape%20CH%C3%94!5e0!3m2!1sfr!2snl!4v1743617060217!5m2!1sfr!2snl"
     name: Escape Chô - Saint-Martin-Bellevue
     phone: +33 7 69 62 81 16
     website: https://www.escapecho.fr
   Escape_Time_Lille:
     email: ''
     location: 500 rue des Bourreliers,59320 Hallennes-lez-Haubourdin
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2532.160286367034!2d2.9586288764716637!3d50.60555907162219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd2b280de485b7%3A0xdc1acfe99ded6180!2sESCAPETIME%20LILLE%20%C3%A0%20Hallennes%20lez%20Haubourdin!5e0!3m2!1sfr!2snl!4v1743617039257!5m2!1sfr!2snl"
     name: Escape Time - Lille
     phone: +33 6 84 41 13 68
     website: https://escapetime-lille.fr
   Eskap_AixlesBains:
     email: ''
     location: Théâtre de Verdure,73100 Aix-les-Bains
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.21933487068!2d5.912403476181859!3d45.68657017107847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ba1070a686609%3A0xc92023edb9844fb9!2sEskap%20Aix-les-Bains%20%3A%20escape%20game%20en%20ext%C3%A9rieur!5e0!3m2!1sfr!2snl!4v1743617019356!5m2!1sfr!2snl"
     name: Eskap - Aix-les-Bains
     phone: +33 7 67 21 20 31
     website: https://www.eskap.fr
   Follow_Park_Lille:
     email: ''
     location: 15 Rue du Sec Arembault — Centre commercial les Tanneurs,59800 Lille
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.55016694899!2d3.0632502764734566!3d50.63547277162812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d5382e26ff6d%3A0xbb17a787e81e59a0!2sFollow%20Park%20Lille!5e0!3m2!1sfr!2snl!4v1743616999261!5m2!1sfr!2snl"
     name: Follow Park - Lille
     phone: +33 3 20 19 01 78
     website: https://www.follow-park.com
   Fun_at_Comines_CominesWarneton:
     email: ''
     location: Grand Chemin de Messines 47,7780 Comines-Warneton
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2523.0605580917572!2d2.9749560764819813!3d50.77445097165593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dcd2fa5710fcdf%3A0xe91f53b9f2736c3!2sEscapegames%20Comines%20-%20Zaal%2FSalle%20Alcatraz!5e0!3m2!1sfr!2snl!4v1743616979869!5m2!1sfr!2snl"
     name: Fun at Comines - Comines-Warneton
     phone: +32 478 65 50 14
     website: http://www.funatcomines.be
   Games_Evasion_SaintJulienenGenevois:
     email: ''
     location: 13 route d’Annemasse,74160 Saint-Julien-en-Genevois
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d559.4115911271665!2d6.093207991796988!3d46.14221181278031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c7b40a89dde7d%3A0xe523790a2b6a7327!2sGames%20%C3%A9vasion!5e0!3m2!1sfr!2snl!4v1743616855557!5m2!1sfr!2snl"
     name: Games Evasion - Saint-Julien-en-Genevois
     phone: +33 6 72 48 22 06
     website: https://www.gamesevasion.com
   Get_Out_Lille:
     email: ''
     location: 128 rue Solférino,59000 Lille
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.737773505794!2d3.050573076473288!3d50.631987971627446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d5825473df1d%3A0x7c9b63ad90e8d36b!2sGet%20Out%20-%20Escape%20Game%20Lille!5e0!3m2!1sfr!2snl!4v1743616814655!5m2!1sfr!2snl"
     name: Get Out - Lille
     phone: +33 3 62 65 40 56
     website: https://lille.getout.fr
   Hidden_Scape_Sillingy:
     email: ''
     location: 70 impasse de la Prairie,74330 Sillingy
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d674.6359061975255!2d6.070664229586951!3d45.94310224312485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b85705df2181b%3A0xa31239dc0d37fde6!2sHidden%20Scape!5e0!3m2!1sfr!2snl!4v1743616774616!5m2!1sfr!2snl"
     name: Hidden Scape - Sillingy
     phone: +33 4 50 24 57 37
     website: https://hidden-scape.fr
   Hypnotik_Room_Fillinges:
     email: ''
     location: 479 route de la vallée du giffre,74250 Fillinges
-    maps_location: ''
+    maps_location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d567.2687789064103!2d6.349153878004133!3d46.16379442920672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c73b92e57eb77%3A0x3b6e794fb1b6c485!2sHypnotik%20Room!5e0!3m2!1sfr!2snl!4v1743616743587!5m2!1sfr!2snl'
     name: Hypnotik Room - Fillinges
     phone: +33 9 51 57 29 95
     website: https://hypnotikroom.4escape.io
   John_Doe_Lille:
     email: ''
     location: 8 rue des jardins,59000 Lille
-    maps_location: ''
+    maps_location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.3656575807186!2d3.065947976473695!3d50.63889987162878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d589e324f581%3A0x687564639f5a1494!2sJohn%20Doe%20Escape%20Game%20Lille!5e0!3m2!1sfr!2snl!4v1743616715041!5m2!1sfr!2snl'
     name: John Doe - Lille
     phone: +33 3 62 27 63 99
     website: https://www.john-doe.fr
   Just_Escape_Lille:
     email: ''
     location: 26 rue d'Arras,59000 Lille
-    maps_location: ''
+    maps_location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.1914457167427!2d3.065179576472732!3d50.62356027162573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d5c7d6770a87%3A0xe09f4aa8ce0a56cc!2sJust%20Escape%20%E2%80%93%20Escape%20Game%20Lille!5e0!3m2!1sfr!2snl!4v1743616698142!5m2!1sfr!2snl'
     name: Just Escape - Lille
     phone: +33 7 89 05 37 90
     website: https://just-escape.fr
@@ -129,70 +129,70 @@ enseignes:
   LAtelier_des_Énigmes_Annecy:
     email: ''
     location: 8 bis route des creuses,74960 Annecy
-    maps_location: ''
+    maps_location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2776.7697484215387!2d6.107368376193735!3d45.89591797108435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b85525c06a313%3A0x10072336c6504ffe!2sL&#39;Atelier%20des%20%C3%89nigmes!5e0!3m2!1sfr!2snl!4v1743616661286!5m2!1sfr!2snl'
     name: "L'Atelier des Énigmes - Annecy"
     phone: +33 9 72 80 17 19
     website: https://www.latelierdesenigmes.fr
   LIntrigue_Annecy:
     email: ''
     location: 800 Route des Burnets,74000 Annecy
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88746.32485655684!2d5.928793197265633!3d45.9648148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b85b688bd231f%3A0xdcaff470ebeae2ba!2sL&#39;Intrigue!5e0!3m2!1sfr!2snl!4v1743617166853!5m2!1sfr!2snl"
     name: L'Intrigue - Annecy
     phone: +33 4 50 22 04 00
     website: http://aubergelafermedeferrieres.com
   La_Fabuleuse_Histoire_VillelaGrand:
-    email: ''
+    email: ""
     location: 16 rue de Deux Montagnes,74100 Ville-la-Grand
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.1953048638475!2d6.277723676211425!3d46.20656967109581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6df1acd8f1fb%3A0xc0a8169bb81b9be0!2sLa%20Fabuleuse%20Histoire!5e0!3m2!1sfr!2snl!4v1743617194222!5m2!1sfr!2snl"
     name: La Fabuleuse Histoire - Ville-la-Grand
     phone: +33 4 50 49 22 27
     website: https://lafabuleusehistoire.fr
   La_Grande_Évasion_Annecy:
     email: ''
     location: 89 rue du Val Vert,74600 Annecy
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2776.993521092789!2d6.107913876193488!3d45.891442671084164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b9bfdf0901c15%3A0x717e399ea5e10b07!2sLA%20GRANDE%20%C3%89VASION%20Escape%20Game%20Annecy!5e0!3m2!1sfr!2snl!4v1743617234655!5m2!1sfr!2snl"
     name: La Grande Évasion - Annecy
     phone: +33 4 50 05 16 96
     website: https://www.la-grande-evasion.com
   Mystères_du_Lac_Annecy:
     email: ''
     location: 23 rue Sommeiller,74000 Annecy
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2776.44808772228!2d6.1228020761940805!3d45.902350371084445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b8ff75a8eec19%3A0x9da94383cb3c748a!2sMyst%C3%A8res%20du%20Lac!5e0!3m2!1sfr!2snl!4v1743617253521!5m2!1sfr!2snl"
     name: Mystères du Lac - Annecy
     phone: +33 4 50 32 86 15
     website: https://www.mysteresdulac.com
   One_Brain_Lille:
     email: ''
     location: 11B boulevard Jean-Baptiste Lebas,59000 Lille
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.9697761618827!2d3.06728647647298!3d50.62767827162658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d5cdcd9d9529%3A0x2225c466f45fc5f1!2sOne%20Brain%20-%20Live%20Escape%20Game%202.0!5e0!3m2!1sfr!2snl!4v1743617271789!5m2!1sfr!2snl"
     name: One Brain - Lille
     phone: +33 3 59 54 40 93
     website: https://onebrainlille.com
   Prison_Island_Lille:
     email: ''
     location: 790 rue Maurice Herzog,59810 Lesquin
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2533.3428822358533!2d3.092712076470324!3d50.58357997161791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d77abe6cdf63%3A0x25cd2aa4b02e5783!2sPRISON%20ISLAND%20-%20Lille%20Lesquin!5e0!3m2!1sfr!2snl!4v1743617291280!5m2!1sfr!2snl"
     name: Prison Island - Lille
     phone: +33 3 20 92 78 53
     website: https://prisonisland-lille.fr
   Qwest_Lille:
     email: ''
     location: 51 rue de la Cimaise,59491 Villeneuve-d'Ascq
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.1104597077433!2d3.144410176473985!3d50.643639671629735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c329f90817e92d%3A0x841896ca78c7bbd2!2sQWEST%20Lille!5e0!3m2!1sfr!2snl!4v1743617315876!5m2!1sfr!2snl"
     name: Qwest - Lille
     phone: +33 3 74 09 67 78
     website: https://www.qwest.fr
   Sensas_Annecy:
     email: ''
     location: 225 route des prés Rollier,74330 Sillingy
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2774.3374034365747!2d6.068871276196505!3d45.94454137108588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b857a77e58aad%3A0xfaf1c8b5c0d0b7a1!2sSENSAS%20Annecy!5e0!3m2!1sfr!2snl!4v1743617333219!5m2!1sfr!2snl"
     name: Sensas - Annecy
     phone: +33 4 56 67 88 48
     website: https://annecy.sensas.top
   Team_Break_Lille:
     email: ''
     location: 7 Rue du Palais Rihour,59000 Lille
-    maps_location: ''
+    maps_location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.622437066291!2d3.0615519764733943!3d50.63413037162785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d58616a8d355%3A0x805743c87d92afed!2sTeam%20Break!5e0!3m2!1sfr!2snl!4v1743617351935!5m2!1sfr!2snl"
     name: Team Break - Lille
     phone: +33 6 61 87 70 37
     website: https://www.team-break.fr
