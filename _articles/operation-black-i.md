@@ -2,7 +2,7 @@
 layout: article_not_descriptive
 url: "operation-black-i"
 top_name : "operation-black-i"
-title: "Operation Black "I""
+title: "Operation Black I"
 date: 07-06-2024
 enseigne: "C9_H13_NO3_Donors_Peristeri"
 theme : "Frisson / Horreur"
