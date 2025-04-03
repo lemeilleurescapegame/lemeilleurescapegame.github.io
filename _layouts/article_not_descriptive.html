@@ -231,7 +231,8 @@ layout: default
         </div> -->
         <div class="info-top-box">
             <i class="fas fa-info-circle"></i>
-            <p>{{page.info_top}}</p>
+            <!-- <p>{{page.info_top}}</p> -->
+            <p>{{ page.info_top | newline_to_br }}</p>
         </div>
         
         {%if page.enseigne%}
