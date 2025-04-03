@@ -4,11 +4,13 @@ url: "prison-island"
 top_name : "prison-island"
 title: "Prison Island"
 date: 07-06-2024
-enseigne: "Alcatraz_Adventure_SaintEgrève"
+enseigne: "Exalto_DécinesCharpieu"
 theme : "Aventure"
 duree : "60 minutes"
-nb-joueur : "3 - 6"
+nb-joueur : "3 - 5"
 image_name : "prison-island.webp"
 info_top : |
-    Un jeu d'aventure en équipe dans lequel il faudra résoudre de nombreuses énigmes intellectuelles, techniques et physiques afin de marquer un maximum de points.
+    Rassemblez vos amis, formez une équipe et relevez un maximum de défis dans la prison. Trente cellules pour mettre votre logique, votre condition physique et votre adresse à l'épreuve. Pensez-vous en être capable comme les joueurs de ce célèbre jeu télévisé ?
+    
+    
 ---
