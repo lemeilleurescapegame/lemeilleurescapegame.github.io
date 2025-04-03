@@ -30,8 +30,9 @@
 //     });
 // });
 
+
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".top-articles-placeholder").forEach(placeholder => {
+    document.querySelectorAll(".top-articles-placeholder-description").forEach(placeholder => {
         // Safely parse JSON
         let articles = [];
         try {
