@@ -9,7 +9,26 @@ flag_name : "grece-optimized.webp"
 
 {% include top-articles-description.html 
     title="Les Incontournables" 
-    list="chapels_and_catacombs,dont_take_a_breath,houdini,el_exorcista,amen,wanted_dead_or_alive,the_grudge,wake_up,mama" %}
+    list="
+    chapels_and_catacombs,
+    dont_take_a_breath,
+    houdini,
+    el_exorcista,
+    amen,
+    wanted_dead_or_alive,
+    the_grudge,
+    wake_up,
+    mama,
+    the-sacrifice,
+    woman-in-black,
+    h-ice-t-tiki,
+    manifesto,
+    stigmata,
+    the-litchver-woodland,
+    metanoia,
+    the-sanatorium
+    " 
+%}
 
 
 {% include top-articles.html 
@@ -109,9 +128,20 @@ flag_name : "grece-optimized.webp"
     dark,
     conjuring-ii,
     godslayer,
-    death-row
+    death-row,
+    monikas-diary,
+    the-litchver-woodland
     "
 %}
+
+{% include top-articles-description.html 
+    title="We didn't like" 
+    list="
+    paradox-project-2-the-bookstore,
+    paradox-project-3-the-music-academy
+    " 
+%}
+
 
 <div class="intro-text">
     <h2>Quel est le meilleur escape game d’Athènes ?</h2>
@@ -142,4 +172,3 @@ flag_name : "grece-optimized.webp"
 </div>
 
 <!-- Make the same div as above with the english version-->
-

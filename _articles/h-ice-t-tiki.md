@@ -10,9 +10,7 @@ duree : "2 heures"
 nb-joueur : "2 - 6"
 image_name : "h-ice-t-tiki.webp"
 info_top : |
-    Nouvelle version (rénovée) nommée « H-Ice-T Tiki » disponible. Nouvelles énigmes et rejouable selon le gérant. The story starts after a huge explosion in one of the islands of Hawai, and places the player on a sinking ship near the Arctic. Ice Tiki is an exploration ship that has searched for valuable treasures, such as the Hawaiian Tiki. Tiki are wooden statuettes of great value that are rumored to have various elemental powers. Also they are the protectors and saviors of Hawaii. So, your mission is to find them and return them to the right hands.
-    
-    
-    
-    
+    Du fun à l’état pur. Ice Tiki dénote vraiment dans un panel d’escape game athéniens centrés sur l’horreur. Ne vous attendez pas à des chorégraphies d’acteurs ou de grands effets whaou. Ici, le but est de vous faire rire et chanter pendant plus d’une heure ! Une bouffée d’oxygène qui vous sera bien utile pour décompresser.
+info_top_en : |
+    Pure fun. Ice Tiki really denotes in an Athenian escape room market focused on horror. Don’t expect choreography by actors or whaou effects. Here, the goal is to make you laugh and sing for more than an hour ! A breath of oxygen that will be very useful to relax.
 ---

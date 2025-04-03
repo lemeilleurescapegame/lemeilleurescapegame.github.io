@@ -10,8 +10,7 @@ duree : "1 heure 45 minutes"
 nb-joueur : "2 - 6"
 image_name : "manifesto.webp"
 info_top : |
-    Past, present and future, jumpled memories through time. An unexpected journey among a glittering world of aspiring and eager dancers of an artistic troupe in the golden age of their career, will be ultimately fatal ? Who will be able to condemn your soul to live the same nightmare again and again? Will the horrible truth of the most gloomy personality in ages seep into the darkness of your soul, condemning you to an eternal punishment? Or is it time to bring down the curtain on the sickest show of your life?
-    
-    
-    
+    Quel pari fou de fusionner le Tango et l’horreur. C’est une véritable plongée dans le milieu des artistes qui se démarque de toutes les autres salles d’Athènes. Les jumpscares sont différents des autres salles, sans cris et avec une recherche de posture originale. Mais il y a aussi des passages contemplatifs purement artistiques et non horrifiques. On adore ça ! La fin de l’histoire nous a complètement scotché. Il manque juste à cet escape game un effet waouh détonnant pour faire partie des plus grands. 
+info_top_en : |
+    What a crazy bet to merge Tango and horror. It’s a real dive into the world of artists that stands out from all the other rooms in Athens. Jump scares are different from other rooms, without screams and with an original way of moving. But there are also contemplative passages that are purely artistic and not horrifying. We love it! The end of the story completely stunned us. This escape game just lacks an explosive wow effect to be one of the greatest.
 ---
