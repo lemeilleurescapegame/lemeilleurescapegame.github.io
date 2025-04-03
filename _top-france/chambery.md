@@ -12,7 +12,7 @@ image_name : "chambery.webp"
     list = "
     les-fabuleuses-inventions-du-docteur-apfelgluck,
     la-boite-de-pandore,
-    labattoir,
+    labattoir_chambery,
     cambriolage-chez-le-professeur-jones,
     la-bataille-des-rois,
     enquete-a-bord-de-lorient-express,

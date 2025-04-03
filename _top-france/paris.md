@@ -37,5 +37,5 @@ image_name : "paris.webp"
 
 {% include top-articles.html 
     title = "Meilleur Escape Game 2018"
-    list = "revolte-a-la-lock,labattoir,lexamen,l-a-confidential,les-disparus,le-secret-du-pirate,magie-noire-senart-locked-up"
+    list = "revolte-a-la-lock,labattoir_paris,lexamen,l-a-confidential,les-disparus,le-secret-du-pirate,magie-noire-senart-locked-up"
     %}

@@ -110,9 +110,6 @@
     <title>La Crypte</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* body {
-            font-family: Arial, sans-serif;
-        } */
         h1, h2 {
             color: rgb(237, 115, 1);
             font-family: 'Arial', sans-serif;
@@ -261,6 +258,40 @@
             line-height: 1.5;
             color: #555;
         }
+        
+        .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .reservation-button {
+            background: linear-gradient(135deg, #28a745, #218838); /* Gradient green */
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid #1e7e34;
+            box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .reservation-button:hover {
+            background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient */
+            box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+            transform: scale(1.05);
+        }
+
+        .reservation-button:active {
+            transform: scale(0.98);
+            box-shadow: 0px 3px 10px rgba(40, 167, 69, 0.3);
+        }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
@@ -301,13 +332,18 @@
         <div class="title-container">
             <h1>La Crypte</h1>
             
+                <div class="grade-container">
+                    <i class="fas fa-star"></i>
+                    <span>20/20</span>
+                </div>
+            
         </div>
         <div class="info-box">
             <div>
                 
                     <i class="fas fa-film"></i>
                     <h4>Thème</h4>
-                    <p>Frisson / Horreur</p>
+                    <p>Spiritisme / Horreur</p>
                 
             </div>
             <div>
@@ -321,26 +357,54 @@
                 
                     <i class="fas fa-users"></i>
                     <h4>Nombre de joueurs</h4>
-                    <p>2 - 12</p>
+                    <p>2 - 6</p>
                 
             </div>
         </div>
+        
+        <div class="scenario-container">
+                
+                <h3 class="scenario-title">Scenario</h3>
+                <p class="scenario-description"><p>Vous êtes invités à participer à l’une des séances de spiritisme du Comte de Molay, très en vogue dans Paris. En effet, depuis la mort de sa bien-aimée Léa, Monsieur le Comte se passionne pour cet art occulte. Il se plaît à invoquer les esprits dans son manoir bâti sur la crypte de ses ancêtres, entouré de sa collection d’objets macabres. Mais faites attention, il est dangereux de communiquer avec les morts car nul ne sait qui pourrait se manifester…</p>
+</p>
+                
+        </div>
+    </div>
 
-        <!-- <div class="info-top-box">
-            <p>Passionné par l'exploration de lieux abandonnés, vous décidez de suivre les rumeurs du net à la recherche d'une vieille chapelle qui abriterait une crypte secrète. Après des heures de recherche dans les bois, vous l'apercevez enfin, mais la joie fût de courte durée, cette crypte cache un rituel macabre dont vous êtes les sacrifiés. Arriverez-vous à vous échapper avant de rendre votre dernier souffle ?
-</p>
-        </div> -->
-        <div class="info-top-box">
-            <i class="fas fa-info-circle"></i>
-            <p>Passionné par l'exploration de lieux abandonnés, vous décidez de suivre les rumeurs du net à la recherche d'une vieille chapelle qui abriterait une crypte secrète. Après des heures de recherche dans les bois, vous l'apercevez enfin, mais la joie fût de courte durée, cette crypte cache un rituel macabre dont vous êtes les sacrifiés. Arriverez-vous à vous échapper avant de rendre votre dernier souffle ?
-</p>
+    <div class="content-wrapper">
+        <p>Le Donjon a développé une histoire, des personnages et une ambiance que l’on retrouve dans ses quatre premières salles. Ses thèmes de prédilection : le Moyen-Âge, les templiers, la passion amoureuse et le surnaturel. Personnellement, nous sommes friands de ce type d’enseignes qui bâtissent un lore complètement original. C’est malheureusement trop rare dans le milieu de l’escape game alors que le principe est bien souvent gage d’immersion et de cohérence globale.</p>
+
+<p>Ce nouvel épisode, baptisé La Crypte, explore toute la noirceur du Comte déjà au centre des précédentes salles. On en apprend plus sur son passé, sa personnalité et la folie dans laquelle il sombre à la suite d’un évènement tragique. Comme toujours, la narration est assurée par le charismatique et talentueux Frédéric Souterelle, voix française du héros de la saga God of War.</p>
+
+<h1 id="une-thématisation-poussée">Une thématisation poussée</h1>
+<p>Vous serez conduits dans le nouveau local de l’enseigne, toujours situé dans le quartier République. Anecdote étonnante : il appartenait autrefois à Clue&amp;Co, qui a fermé ses portes en mars 2023 et dont l’une des salles se prénommait… La Crypte ! L’espace d’accueil est resplendissant : il bénéficie d’une thématisation poussée et adopte le style ancien et plein de cachet auquel le Donjon nous a habitué. Vous n’aurez sûrement pas le temps d’y prêter attention mais cette partie mérite déjà le coup d’œil tant elle fourmille d’éléments à observer.</p>
+
+<p>Ce haut niveau de détail caractérise l’ensemble de l’aventure. Rien ne paraît acheté au bazar du coin. La crédibilité des décors tient en partie à leur solidité et leurs finitions impeccables. On est sur une qualité de dingue, un standing de plateau de cinéma ou de parc à thème à gros budget comme Disney et Universal studios. Les environnements recréés procurent vraiment une immersion totale. L’important espace de jeu donne l’impression de s’enfoncer toujours plus loin dans la crypte et de vivre une aventure d’exploration palpitante.</p>
+
+<p>Comme souvent, le Donjon excelle en terme de chinage de meubles, de tapisseries  d’époque et d’objets anciens. Pour cette salle, l’enseigne est allé encore plus loin dans son entreprise de reconstitution méticuleuse. Antiquités exotiques variées, accessoires religieux et parures de bijoux sublimes de réalisme témoignent de l’expertise et du goût des créateurs en la matière.</p>
+
+<h1 id="une-cinématique-dhorreur-de-toute-beauté">Une cinématique d’horreur de toute beauté</h1>
+<p>Pour notre plus grand plaisir, la Crypte a su éviter les écueils du genre horreur. Elle mise sur des apparitions subtiles et de la suggestion plutôt que des cris. Les acteurs agissent comme des esprits. Quand aux jump scare, ils sont aussi efficaces que surprenants et pas uniquement basés sur de l’acting ou des effets jours nuits. Les costumes et masques sont d’excellente facture et paraissent sortir des ateliers de couture d’une grande compagnie de théâtre. L’acting énergique de la deuxième partie s’effectue toujours dans le respect des joueurs. Les contacts physiques sont maîtrisés et le final offre une cinématique d’horreur à classer parmi les plus belles de Paris.</p>
+
+<p>L’histoire de cet épisode s’inscrit dans la continuité des précédents même si la tonalité est cette fois plus lugubre et moins moyenâgeuse. Le récit est servi par des énigmes qui prennent toutes la forme de manipulations intégrées au thème surnaturel. Elles sont assez intuitives. Ne traînez pas car leur nombre est assez élevé  pour une salle horreur.</p>
+
+<p>À l’image des Amants Maudits, la scénographie est majestueuse. La synchronisation des lumières, bruitages et partition musicale y participent grandement. Les nombreuses machines à fumée installent une atmosphère surnaturelle. Chaque arrivée dans une nouvelle pièce ou énigme résolue déclenche une séquence contemplative. Preuve de l’ambition sans limite du Donjon, une sixième salle est déjà en construction, dans le même local que celui de la Crypte.</p>
+
+        <div>
+            
+                <div class="top-title-container">
+                    <h2 class="top-title">Ressenti Global</h2>
+                </div>
+                <!-- <h1>Ressenti global</h1> -->
+                <p>Après les Amants maudits, le Donjon prouve une nouvelle fois sa capacité à créer des salles d’exception. La Crypte est une aventure aussi effrayante que palpitante. Son immersion parfaite la place dans les salles incontournables de la capitale.</p>
+            
         </div>
         
         
 
         
             <div class="reservation-button-container">
-                <a href="https://www.escapegamecrolles.fr" class="reservation-button" target="_blank">
+                <a href="https://ledonjon.fr/" class="reservation-button" target="_blank">
                     🏷️ Réserver ici
                 </a>
             </div>
@@ -349,17 +413,17 @@
         
             <div class="enseigne-container">
                 
-                        <h2 class="enseigne-name">Escape Game Crolles - Crolles</h2> <!-- Display the enseigne's name at the top -->
+                        <h2 class="enseigne-name">Le Donjon - Paris</h2> <!-- Display the enseigne's name at the top -->
                 
                 <div class="enseigne-box">
                     <div>
                         
                             <i class="fas fa-location-arrow"></i>
                             <h4>Location</h4>
-                            <p>127 avenue Ambroise Croizat,38190 Crolles</p>
+                            <p>Place de la République 75011 Paris</p>
                             
                             
-                            <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.6739728601724!2d5.880092076158616!3d45.27460087107144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478a5953410d6071%3A0xfdee672bac1be51e!2sEscape%20Game%20Crolles!5e0!3m2!1sfr!2snl!4v1743625460348!5m2!1sfr!2snl"
+                            <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.965473904828!2d2.3628203761978206!3d48.86807330002546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f79e6a9c5df%3A0xd48db3d7dffe12f5!2sLe%20Donjon%20%7C%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1741291852480!5m2!1sfr!2snl"
                                 width="100%" 
                                 height="50%" 
                                 style="border:0;" 
@@ -374,15 +438,15 @@
                         
                             <i class="fas fa-envelope"></i>
                             <h4>Contact</h4>
-                            <p>+33 4 76 72 29 96</p>
-                            <p></p>
+                            <p>01 71 20 51 14</p>
+                            <p>contact@ledonjonparis.fr</p>
                         
                     </div>
                     <div>
                         
                             <i class="fas fa-link"></i>
                             <h4>Site Web</h4>
-                            <a href="https://www.escapegamecrolles.fr" target="_blank">https://www.escapegamecrolles.fr</a></p>
+                            <a href="https://ledonjon.fr/" target="_blank">https://ledonjon.fr/</a></p>
                         
                     </div>
                 </div>
@@ -397,7 +461,7 @@
 
         <div class="enseigne-container">
             
-                <h2 class="enseigne-name">Autres expériences chez Escape Game Crolles - Crolles</h2>
+                <h2 class="enseigne-name">Nos autres tests chez Le Donjon - Paris</h2>
             
         </div>        
         <div class="grid-article-container">
@@ -407,243 +471,18 @@
               
             
               
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
+                    <a href="/articles/les-derniers-templier/" class="grid-article-item">
+                    <img src="/assets/img/escape/les-derniers-templiers.jpg" alt="les-derniers-templier.md">
+                    <div class="name">Les Derniers Templiers</div>
+                    </a>
               
             
               
             
               
-                    <a href="/articles/la-cabane-sous-la-dent-de-crolles/" class="grid-article-item">
-                    <img src="/assets/img/escape/la-cabane-sous-la-dent-de-crolles.webp" alt="la-cabane-sous-la-dent-de-crolles.md">
-                    <div class="name">La Cabane sous la dent de Crolles</div>
+                    <a href="/articles/l_immortel/" class="grid-article-item">
+                    <img src="/assets/img/escape/limmortel.webp" alt="l_immortel.md">
+                    <div class="name">L'Immortel</div>
                     </a>
               
             
@@ -936,10 +775,315 @@
               
             
               
-                    <a href="/articles/les-disparus-de-louisiane/" class="grid-article-item">
-                    <img src="/assets/img/escape/les-disparus-de-louisiane.webp" alt="les-disparus-de-louisiane.md">
-                    <div class="name">Les Disparus de Louisiane</div>
-                    </a>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
               
             
               
@@ -1013,10 +1157,97 @@
               
             
               
-                    <a href="/articles/mib-mission-is-back/" class="grid-article-item">
-                    <img src="/assets/img/escape/mib-mission-is-back.webp" alt="mib-mission-is-back.md">
-                    <div class="name">MIB - Mission Is Back</div>
-                    </a>
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
               
             
               
@@ -1060,19 +1291,23 @@
               
             
               
-                    <a href="/articles/obsession/" class="grid-article-item">
-                    <img src="/assets/img/escape/obsession.webp" alt="obsession.md">
-                    <div class="name">Obsession</div>
-                    </a>
+            
+              
+            
+              
+            
+              
+            
+              
+            
               
             
               
             
               
-                    <a href="/articles/once-upon-a-time/" class="grid-article-item">
-                    <img src="/assets/img/escape/once-upon-a-time.webp" alt="once-upon-a-time.md">
-                    <div class="name">Once Upon A Time</div>
-                    </a>
+            
+              
+            
               
             
               
@@ -1152,10 +1387,7 @@
               
             
               
-                    <a href="/articles/seven/" class="grid-article-item">
-                    <img src="/assets/img/escape/seven.webp" alt="seven.md">
-                    <div class="name">Seven</div>
-                    </a>
+            
               
             
               
@@ -1233,8 +1465,9 @@
           </div>
         
     </div>
-    
+
 </body>
+
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
 </body>

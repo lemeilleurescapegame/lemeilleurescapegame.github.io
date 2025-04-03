@@ -6,9 +6,112 @@ image_name : "top-athenes-optimized.webp"
 flag_name : "grece-optimized.webp"
 ---
 
+
 {% include top-articles-description.html 
     title="Les Incontournables" 
     list="chapels_and_catacombs,dont_take_a_breath,houdini,el_exorcista,amen,wanted_dead_or_alive,the_grudge,wake_up,mama" %}
+
+
+{% include top-articles.html 
+    title = "All the escapes"
+    list = "
+    the-school-of-burning-souls,
+    death-row,
+    amnesia,
+    amen,
+    metanoia,
+    hide-n-seek,
+    the-sacrifice,
+    the-nun,
+    zoe,
+    the-curse-of-la-llorona,
+    manifesto,
+    the-ghost-writer,
+    evil-inside,
+    stigmata,
+    03-15,
+    mystic-project,
+    woman-in-black,
+    der-solist,
+    the-possession,
+    mystic-investigation,
+    anneliese,
+    paradox-project-1-the-mansion,
+    paradox-project-2-the-bookstore,
+    obsessed,
+    omerta,
+    orfanato-angry-souls,
+    whispershhh,
+    operation-black-i,
+    paradox-project-3-the-music-academy,
+    otherside,
+    mea-culpa,
+    the-sanatorium-day-night-mode,
+    lethal-decision-2-hell-awaits,
+    the-sculptor,
+    outcast,
+    sherlock-maze-2,
+    red-riding-hood-2-the-wolff,
+    the-mine-box,
+    panoramix-the-secret-of-the-magic-potion,
+    paranormal,
+    pandemonium,
+    the-order-of-light,
+    the-witch,
+    sociopath,
+    jumanji,
+    immortal,
+    experimentum-x,
+    prometheus,
+    cosmos-05,
+    firefighters,
+    agnes,
+    truth-or-dare,
+    dark-mirror,
+    rebellion,
+    deadlock-redemption,
+    rwd,
+    bloody-mary,
+    the-dark-side-of-the-elements,
+    lilipout,
+    the-witchouse,
+    the-axe-murders-of-villisca,
+    secret-novel,
+    supernatural,
+    marys-dolls,
+    thomas-crown,
+    sinister,
+    elizabeth-bathory,
+    scooby-who,
+    creepy-store,
+    avissos,
+    middlearth-tales,
+    the-sanatorium,
+    phantom-of-the-opera,
+    elixir-of-life,
+    the-illusionist,
+    boogeyman,
+    the-prison,
+    the-shelter,
+    emperors-masterchef-is-dead,
+    gustave-eiffel,
+    docklands,
+    archons-bar,
+    h-ice-t-tiki,
+    20000-leagues-under-the-sea,
+    lethal-decision,
+    the-granny,
+    the-lockwood-manor,
+    secret-of-the-asylum,
+    the-bride-in-black,
+    hellevator,
+    erics-will,
+    dark,
+    conjuring-ii,
+    godslayer,
+    death-row
+    "
+%}
 
 <div class="intro-text">
     <h2>Quel est le meilleur escape game d’Athènes ?</h2>
@@ -37,3 +140,6 @@ flag_name : "grece-optimized.webp"
         Après quelques salles avec des acouphènes, nous avons fini par jouer avec des boules Quies !
     </p>
 </div>
+
+<!-- Make the same div as above with the english version-->
+

@@ -5,7 +5,7 @@ top_name : "el_exorcista"
 title: "El Exorcista"
 date: 07-06-2024
 note: 20
-enseigne: "no_exit_escape_romms_gr"
+enseigne: "No_Exit_Ilioupoli"
 theme : "Horreur"
 duree : "90 min"
 nb-joueur : "3 à 5"

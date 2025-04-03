@@ -28,6 +28,20 @@ enseignes:
     name: A Maze In Game - Lyon
     phone: +33 6 81 14 20 32
     website: https://amazeingame.fr
+  Adrenaline_Athènes:
+    email: ''
+    location: Evripidou 31-33,10554 Athènes
+    maps_location: ''
+    name: Adrenaline - Athènes
+    phone: +30 694 602 2032
+    website: https://pay.vivawallet.com
+  Adventure_Arena_Athènes:
+    email: ''
+    location: Agamemnonos 72,176 75 Athènes
+    maps_location: ''
+    name: Adventure Arena - Athènes
+    phone: ''
+    website: http://adventure-arena.com
   Alcatraz_Adventure_SaintEgrève:
     email: ''
     location: 29 Rue des Glairaux,38120 Saint-Egrève
@@ -49,6 +63,20 @@ enseignes:
     name: Arcanium - Dijon
     phone: +33 3 80 23 57 31
     website: https://www.arcanium-dijon.fr
+  Arkham_Escape_Athènes:
+    email: ''
+    location: Ifigenias 87,176 76 Athènes
+    maps_location: ''
+    name: Arkham Escape - Athènes
+    phone: ''
+    website: https://www.arkhamescape.gr
+  Art_of_Escape_Athènes:
+    email: ''
+    location: Irakleous 88,176 72 Athènes
+    maps_location: ''
+    name: Art of Escape - Athènes
+    phone: ''
+    website: https://artofescape.gr
   Au_Fil_du_Dédale_Grenoble:
     email: ''
     location: 2 cours Jean Jaurès,38000 Grenoble
@@ -56,6 +84,41 @@ enseignes:
     name: Au Fil du Dédale - Grenoble
     phone: +33 4 58 00 38 66
     website: https://aufildudedale.fr
+  Blind_Alley_Athènes:
+    email: ''
+    location: Viktoros Ougko 32,10438 Athènes
+    maps_location: ''
+    name: Blind Alley - Athènes
+    phone: +30 698 071 7659
+    website: https://blindalley.gr
+  Bloodlines_Escape_Room_Ágios_Dimítrios:
+    email: ''
+    location: Leof. Agiou Dimitriou 112,17341 Ágios Dimítrios
+    maps_location: ''
+    name: Bloodlines Escape Room - Ágios Dimítrios
+    phone: ''
+    website: https://www.escapeall.gr
+  Brain_On_Kallithea:
+    email: ''
+    location: Sofokleous 57,17671 Kallithea
+    maps_location: ''
+    name: Brain On - Kallithea
+    phone: +30 21 1119 1532
+    website: https://www.brainon.gr
+  Braincells_Le_Pirée:
+    email: ''
+    location: Kolokotroni 50,18531 Le Pirée
+    maps_location: ''
+    name: Braincells - Le Pirée
+    phone: +30 21 3044 4906
+    website: https://www.braincells.gr
+  Brainiac_Escape_Rooms_Petroúpoli:
+    email: ''
+    location: 25is Martiou 132,13231 Petroúpoli
+    maps_location: ''
+    name: Brainiac Escape Rooms - Petroúpoli
+    phone: +30 21 1115 3834
+    website: https://www.escapeall.gr
   Break_Out_Annecy:
     email: ''
     location: 25 route des Saintiers,74320 Sévrier
@@ -77,6 +140,13 @@ enseignes:
     name: By Pentagone - Vétraz-Monthoux
     phone: +33 9 86 32 95 51
     website: https://softlimitlessadventure.web.app
+  C9_H13_NO3_Donors_Peristeri:
+    email: ''
+    location: Kriton 4,12132 Peristeri
+    maps_location: ''
+    name: C9 H13 NO3 Donors - Peristeri
+    phone: +30 698 171 0955
+    website: https://www.escapeall.gr
   Challenge_The_Room_Grenoble:
     email: ''
     location: 10 rue Servan,38000 Grenoble
@@ -113,6 +183,13 @@ enseignes:
     name: Clock Escape - Bordeaux
     phone: +33 5 35 54 28 29
     website: https://clockescape.com
+  Clock_Escape_Rooms_Agia_Paraskevi:
+    email: ''
+    location: Dorieon 7,15343 Agia Paraskevi
+    maps_location: ''
+    name: Clock Escape Rooms - Agia Paraskevi
+    phone: +30 21 0600 1363
+    website: https://www.clockescaperooms.gr
   Closed_Escape_Game_Bordeaux:
     email: ''
     location: 53 avenue du Docteur Schinazi,33300 Bordeaux
@@ -127,6 +204,13 @@ enseignes:
     name: Closed Escape Game - Lyon
     phone: +33 9 82 31 46 66
     website: https://closed-escapegame.com
+  Clueso_Chalandri:
+    email: ''
+    location: Aristotelous 65,15232 Chalandri
+    maps_location: ''
+    name: Clueso - Chalandri
+    phone: +30 21 0685 3365
+    website: https://www.escapeall.gr
   CorteXscape_Annemasse:
     email: ''
     location: 10 rue de l'industrie,74100 Annemasse
@@ -134,6 +218,13 @@ enseignes:
     name: CorteXscape - Annemasse
     phone: +33 4 50 83 01 69
     website: https://cortexscape.com
+  Coven_Escape_Rooms_Kallithea:
+    email: ''
+    location: Sapfous 143,17675 Kallithea
+    maps_location: ''
+    name: Coven Escape Rooms - Kallithea
+    phone: ''
+    website: https://covenescaperooms.gr
   Dark_Experience_Lyon:
     email: ''
     location: 4 rue Constantine,69001 Lyon
@@ -141,6 +232,34 @@ enseignes:
     name: Dark Experience - Lyon
     phone: +33 9 82 31 46 66
     website: https://dark-experience.com
+  Dark_Maze_Egaleo:
+    email: ''
+    location: Palaias Kavalas 17,12242 Egaleo
+    maps_location: ''
+    name: Dark Maze - Egaleo
+    phone: ''
+    website: https://www.darkmaze.gr
+  Dark_Riddles_Dafni:
+    email: ''
+    location: Gimnastiriou 17, 104,17235 Dafni
+    maps_location: ''
+    name: Dark Riddles - Dafni
+    phone: +30 698 657 0238
+    website: https://www.escapeall.gr
+  Dark_Vision_Project_Moschato:
+    email: ''
+    location: Kapodistriou 150,18345 Moschato
+    maps_location: ''
+    name: Dark Vision Project - Moschato
+    phone: +30 693 680 6103
+    website: https://www.escapeall.gr
+  Disappear_Moschato:
+    email: ''
+    location: Thessalonikis 93,18346 Moschato
+    maps_location: ''
+    name: Disappear - Moschato
+    phone: ''
+    website: https://www.facebook.com
   Défiez_le_Cube_Avignon:
     email: ''
     location: 240 Rue Rudolph Serkin,84000 Avignon
@@ -162,6 +281,13 @@ enseignes:
     name: Défis Pirate - Lyon
     phone: +33 4 28 29 04 75
     website: https://defis-pirate.com
+  Elude_Adventure_Rooms_Peristeri:
+    email: ''
+    location: Ravine 14,12134 Peristeri
+    maps_location: ''
+    name: Elude Adventure Rooms - Peristeri
+    phone: +30 697 221 1462
+    website: https://elude.gr
   Enigmatic_Escape_Game_Lyon:
     email: ''
     location: 11 Rue de la Part-Dieu,69003 Lyon
@@ -183,6 +309,13 @@ enseignes:
     name: Escape Chô - Saint-Martin-Bellevue
     phone: +33 7 69 62 81 16
     website: https://www.escapecho.fr
+  Escape_Clue_Peristeri:
+    email: ''
+    location: Agriniou 2,12135 Peristeri
+    maps_location: ''
+    name: Escape Clue - Peristeri
+    phone: ''
+    website: https://www.escapeall.gr
   Escape_Game_Bastille_Grenoble:
     email: ''
     location: 22 quai de France,38000 Grenoble
@@ -225,6 +358,13 @@ enseignes:
     name: Escape Quest - Bordeaux
     phone: +33 5 56 36 72 05
     website: https://www.escapequest.fr
+  Escape_Theory_Egaleo:
+    email: ''
+    location: Konstantinoupoleos 65,12242 Egaleo
+    maps_location: ''
+    name: Escape Theory - Egaleo
+    phone: ''
+    website: https://www.escapeall.gr
   Escape_Time_Lille:
     email: ''
     location: 500 rue des Bourreliers,59320 Hallennes-lez-Haubourdin
@@ -260,6 +400,20 @@ enseignes:
     name: Escape the City - Chambéry
     phone: +33 6 11 18 24 30
     website: https://escapethecity.fr
+  Escapepolis_Athènes:
+    email: ''
+    location: Pelagonias 6,104 31 Athènes
+    maps_location: ''
+    name: Escapepolis - Athènes
+    phone: ''
+    website: https://www.escaperoomathens.gr
+  Escapepolis_Galatsi:
+    email: ''
+    location: 105 Veikou Avenue,111 46 Galatsi
+    maps_location: ''
+    name: Escapepolis - Galatsi
+    phone: ''
+    website: https://www.escaperoomathens.gr
   Eskap_AixlesBains:
     email: ''
     location: Théâtre de Verdure,73100 Aix-les-Bains
@@ -288,6 +442,20 @@ enseignes:
     name: Exalto - Décines-Charpieu
     phone: +33 4 28 29 03 80
     website: https://exalto-park.com
+  Exit_Plan_Ágios_Dimítrios:
+    email: ''
+    location: Aidiniou 5,17343 Ágios Dimítrios
+    maps_location: ''
+    name: Exit Plan - Ágios Dimítrios
+    phone: ''
+    website: http://www.exitplan.gr
+  Fear_Factor_Le_Pirée:
+    email: ''
+    location: Omiridou Skilitsi 14,18532 Le Pirée
+    maps_location: ''
+    name: Fear Factor - Le Pirée
+    phone: ''
+    website: https://www.escapeall.gr
   Follow_Park_Lille:
     email: ''
     location: 15 Rue du Sec Arembault — Centre commercial les Tanneurs,59800 Lille
@@ -302,6 +470,20 @@ enseignes:
     name: Fort Boyard Aventures - Grenoble
     phone: +33 1 89 71 55 83
     website: https://www.fortboyardaventures.fr
+  Fortress_of_Secrets_Corfou:
+    email: ''
+    location: Eth. Antistaseos 36,491 00 Corfou
+    maps_location: ''
+    name: Fortress of Secrets - Corfou
+    phone: ''
+    website: https://www.foscorfu.gr
+  Freaky_Minds_Athènes:
+    email: ''
+    location: Triteas 2,10441 Athènes
+    maps_location: ''
+    name: Freaky Minds - Athènes
+    phone: ''
+    website: https://www.escapeall.gr
   Fun_at_Comines_CominesWarneton:
     email: ''
     location: Grand Chemin de Messines 47,7780 Comines-Warneton
@@ -372,6 +554,34 @@ enseignes:
     name: Hidden Scape - Sillingy
     phone: +33 4 50 24 57 37
     website: https://hidden-scape.fr
+  High_Intensity_Athènes:
+    email: ''
+    location: Riou 3-5,11363 Athènes
+    maps_location: ''
+    name: High Intensity - Athènes
+    phone: ''
+    website: https://www.escapeall.gr
+  Horror_Productions_Galatsi:
+    email: ''
+    location: Athineon 12,111 47 Galatsi
+    maps_location: ''
+    name: Horror Productions - Galatsi
+    phone: ''
+    website: https://www.horrorproductions.gr
+  Horrorville_Egaleo:
+    email: ''
+    location: Thivon 266,12241 Egaleo
+    maps_location: ''
+    name: Horrorville - Egaleo
+    phone: +30 21 6800 9607
+    website: https://horrorville.gr
+  Horrorwood_Nea_Ionia:
+    email: ''
+    location: Sinopis 49,14233 Nea Ionia
+    maps_location: ''
+    name: Horrorwood - Nea Ionia
+    phone: ''
+    website: https://www.escapeall.gr
   How_Many_Doors_?_Bordeaux:
     email: ''
     location: 180 boulevard Albert 1er,33800 Bordeaux
@@ -393,6 +603,13 @@ enseignes:
     name: I-Way - Lyon
     phone: +33 4 37 50 28 70
     website: https://resa.i-way-world.com
+  Illusion_Escape_Rooms_Athènes:
+    email: ''
+    location: Evrou 94-96,11527 Athènes
+    maps_location: ''
+    name: Illusion Escape Rooms - Athènes
+    phone: +30 21 0771 3660
+    website: https://www.escapeall.gr
   Ilusiom_Anglet:
     email: ''
     location: 10 rue de l’Industrie,64600 Anglet
@@ -407,6 +624,13 @@ enseignes:
     name: Imaginarium Game - Lyon
     phone: +33 9 72 59 09 48
     website: https://www.imaginariumgame.fr
+  Insanity_Peristeri:
+    email: ''
+    location: Gennadiou 2,12131 Peristeri
+    maps_location: ''
+    name: Insanity - Peristeri
+    phone: ''
+    website: https://www.escapeall.gr
   Intervalle_Lyon:
     email: ''
     location: 235 Rue Vendôme,69003 Lyon
@@ -533,6 +757,13 @@ enseignes:
     name: Last Adventures - Taillades
     phone: ''
     website: https://www.last-adventures.fr
+  Last_Wish_Athènes:
+    email: ''
+    location: Machis Analatou 87,104 31 Athènes
+    maps_location: ''
+    name: Last Wish - Athènes
+    phone: ''
+    website: https://www.lastwish.gr
   Le_CasseTête_Delaunay_Lyon:
     email: ''
     location: 11 place Croix-Paquet,69001 Lyon
@@ -540,6 +771,14 @@ enseignes:
     name: Le Casse-Tête Delaunay - Lyon
     phone: +33 7 56 90 69 16
     website: https://www.cassetetedelaunay.fr
+  Le_Donjon_Paris:
+    city: Paris
+    email: contact@ledonjonparis.fr
+    location: Place de la République 75011 Paris
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.965473904828!2d2.3628203761978206!3d48.86807330002546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f79e6a9c5df%3A0xd48db3d7dffe12f5!2sLe%20Donjon%20%7C%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1741291852480!5m2!1sfr!2snl
+    name: Le Donjon - Paris
+    phone: 01 71 20 51 14
+    website: https://ledonjon.fr/
   Le_Défi_des_Ducs_Dijon:
     email: ''
     location: 5 rue Lamonnoye — Hôtel des Ducs,21000 Dijon
@@ -575,6 +814,27 @@ enseignes:
     name: Live Escape - Grenoble
     phone: +33 9 80 49 44 90
     website: https://www.live-escape.net
+  LockDown_Nea_Ionia:
+    email: ''
+    location: Paleon Patron Germanou 12,142 32 Nea Ionia
+    maps_location: ''
+    name: LockDown - Nea Ionia
+    phone: ''
+    website: https://lockdownescaperooms.eu
+  Lockbusters_Athènes:
+    email: ''
+    location: Kolokotroni & Leocharous 2,105 62 Athènes
+    maps_location: ''
+    name: Lockbusters - Athènes
+    phone: +30 21 3099 4753
+    website: https://www.escapeall.gr
+  Lockhill_Athènes:
+    email: ''
+    location: Deligiorgi 55-59,104 37 Athènes
+    maps_location: ''
+    name: Lockhill - Athènes
+    phone: ''
+    website: https://www.lockhill.gr
   Lyon_Escape_Game_Lyon:
     email: ''
     location: 5 rue Pizay,69001 Lyon
@@ -582,6 +842,20 @@ enseignes:
     name: Lyon Escape Game - Lyon
     phone: +33 9 86 76 05 05
     website: http://lyonescapegame.fr
+  Mastermind_Athènes:
+    email: ''
+    location: Karori 6A,10551 Athènes
+    maps_location: ''
+    name: Mastermind - Athènes
+    phone: +30 21 3034 4996
+    website: https://themastermind.gr
+  Mastermind_Peristeri:
+    email: ''
+    location: Ethnarchou Makariou 28,12132 Peristeri
+    maps_location: ''
+    name: Mastermind - Peristeri
+    phone: +30 21 3034 4996
+    website: https://themastermind.gr
   Metropolis_Lyon:
     email: ''
     location: 332 avenue Général de Gaulle,69500 Bron
@@ -603,6 +877,20 @@ enseignes:
     name: Mission Evasion - Lyon
     phone: +33 6 15 45 25 93
     website: https://www.missionevasion.fr
+  My_Escape_Rhodes:
+    email: ''
+    location: Steliou Kotiadi 50,851 00 Rhodes
+    maps_location: ''
+    name: My Escape - Rhodes
+    phone: ''
+    website: https://www.myescaperhodes.gr
+  Mystic_Corporation_Moschato:
+    email: ''
+    location: Chrisostomou Smirnis & Labrou Katsoni 85,18345 Moschato
+    maps_location: ''
+    name: Mystic Corporation - Moschato
+    phone: ''
+    website: https://mystic-corporation.gr
   Mystères_du_Lac_Annecy:
     email: ''
     location: 23 rue Sommeiller,74000 Annecy
@@ -610,6 +898,41 @@ enseignes:
     name: Mystères du Lac - Annecy
     phone: +33 4 50 32 86 15
     website: https://www.mysteresdulac.com
+  Neverland_Agii_Anargiri:
+    email: ''
+    location: Thrakis 4,13562 Agii Anargiri
+    maps_location: ''
+    name: Neverland - Agii Anargiri
+    phone: ''
+    website: https://www.escapeall.gr
+  Neverland_Athènes:
+    email: ''
+    location: Leoforos Dimokratias 329,13675 Athènes
+    maps_location: ''
+    name: Neverland - Athènes
+    phone: ''
+    website: https://www.escapeall.gr
+  No_Exit_Ilioupoli:
+    email: info@noexit.gr
+    location: EF. DEDOUSI 13, ILIOUPOLI, 16346
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d293.04829475366154!2d23.741942933383363!3d37.938777184221166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd230f1068c1%3A0x6db7ca7353b888cd!2sNo%20Exit%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1742847266921!5m2!1sfr!2snl
+    name: No Exit
+    phone: (+30) 210 97 37 624
+    website: https://noexit.gr
+  No_Hope_Petroúpoli:
+    email: ''
+    location: Voutsali 45,13231 Petroúpoli
+    maps_location: ''
+    name: No Hope - Petroúpoli
+    phone: ''
+    website: https://www.escapeall.gr
+  Nocturne_Kallithea:
+    email: ''
+    location: Sofokleous 250,17675 Kallithea
+    maps_location: ''
+    name: Nocturne - Kallithea
+    phone: +30 694 911 9264
+    website: https://www.escapeall.gr
   Odysseus_Lyon:
     email: ''
     location: 10 rue Sully,69006 Lyon
@@ -645,6 +968,34 @@ enseignes:
     name: Otopia - Bordeaux
     phone: +33 5 35 54 38 73
     website: https://escapeyourselfbordeaux.4escape.io
+  Panic_Button_Iraklio:
+    email: ''
+    location: Isminis 8,14122 Iraklio
+    maps_location: ''
+    name: Panic Button - Iraklio
+    phone: ''
+    website: https://www.facebook.com
+  Paradox_Project_Athènes:
+    email: ''
+    location: Agion Panton 92,176 76 Athènes
+    maps_location: ''
+    name: Paradox Project - Athènes
+    phone: +30 695 727 2369
+    website: http://paradoxproject.gr
+  Paradox_Project_Kallithea:
+    email: ''
+    location: Charokopou 93,17676 Kallithea
+    maps_location: ''
+    name: Paradox Project - Kallithea
+    phone: +30 695 727 2369
+    website: http://paradoxproject.gr
+  Paranoid_Guys_Petroúpoli:
+    email: ''
+    location: Archipelagous 63,13231 Petroúpoli
+    maps_location: ''
+    name: Paranoid Guys - Petroúpoli
+    phone: ''
+    website: https://www.escapeall.gr
   Play_In_Park_Villeurbanne:
     email: ''
     location: 117 Bd de Stalingrad,69100 Villeurbanne
@@ -694,6 +1045,20 @@ enseignes:
     name: Real Escape Room - Bordeaux
     phone: +33 7 78 79 08 36
     website: https://real-escape-room-merignac.com
+  Reality_Ripples_Athènes:
+    email: ''
+    location: Tsaldari 8,104 31 Athènes
+    maps_location: ''
+    name: Reality Ripples - Athènes
+    phone: +30 21 0520 5413
+    website: https://www.escapeall.gr
+  Room_54_Athènes:
+    email: ''
+    location: Ioannou Filimovoz 6,11521 Athènes
+    maps_location: ''
+    name: Room 54 - Athènes
+    phone: +30 21 0980 2320
+    website: https://www.escapeall.gr
   Rush_Action_Game_Bordeaux:
     email: ''
     location: 41 Rue des Epoux Lesgourgues,33400 Talence
@@ -701,6 +1066,13 @@ enseignes:
     name: Rush Action Game - Bordeaux
     phone: +33 6 28 48 10 08
     website: https://rushactiongame.fr
+  S.A.F.E._Nikea:
+    email: ''
+    location: Sοlomou 11,18450 Nikea
+    maps_location: ''
+    name: S.A.F.E. - Nikea
+    phone: +30 21 1008 1350
+    website: https://safeescaperooms.gr
   Sensas_Annecy:
     email: ''
     location: 225 route des prés Rollier,74330 Sillingy
@@ -722,6 +1094,20 @@ enseignes:
     name: Sensas - Lyon
     phone: +33 6 84 79 70 66
     website: https://lyon.sensas.top
+  Serial_Grifers_Illion:
+    email: ''
+    location: Achileos 81,13122 Illion
+    maps_location: ''
+    name: Serial Grifers - Illion
+    phone: ''
+    website: https://www.escapeall.gr
+  Sherlocked_Holmes_Peristeri:
+    email: ''
+    location: El. Venizelou 106,12132 Peristeri
+    maps_location: ''
+    name: Sherlocked Holmes - Peristeri
+    phone: ''
+    website: https://sherlockedhomes.gr
   Smart_Escape_Game_ChalleslesEaux:
     email: ''
     location: 62 Avenue de la Breisse,73190 Challes-les-Eaux
@@ -729,6 +1115,20 @@ enseignes:
     name: Smart Escape Game - Challes-les-Eaux
     phone: +33 4 79 62 23 84
     website: https://www.smartescapegame.fr
+  Spookey_Escape_Moschato:
+    email: ''
+    location: Grigoriou Lambraki 8,18345 Moschato
+    maps_location: ''
+    name: Spookey Escape - Moschato
+    phone: +30 694 826 5892
+    website: https://www.spookeyescape.gr
+  Stay_Alive_Nea_Ionia:
+    email: ''
+    location: El. Venizelou 111,142 31 Nea Ionia
+    maps_location: ''
+    name: Stay Alive - Nea Ionia
+    phone: ''
+    website: https://www.escapeall.gr
   Studios_PopCorn_Voreppe:
     email: ''
     location: 495 rue du Pommarin,38340 Voreppe
@@ -757,6 +1157,20 @@ enseignes:
     name: Tempus Escape - Bayonne
     phone: +33 9 83 73 53 46
     website: https://www.tempusescape.com
+  The_Box_Athènes:
+    email: ''
+    location: Leoforos Irakleiou 197,142 32 Nea Ionia
+    maps_location: ''
+    name: The Box - Athènes
+    phone: ''
+    website: https://escapethebox.gr
+  The_Darkwood_Village_Moschato:
+    email: ''
+    location: Pireos 17,18346 Moschato
+    maps_location: ''
+    name: The Darkwood Village - Moschato
+    phone: ''
+    website: https://thedarkwoodvillage.gr
   The_Great_Escape_Les_Angles:
     email: ''
     location: 206 Avenue de Grand Angles,30133 Les Angles
@@ -785,6 +1199,20 @@ enseignes:
     name: The Last Mystery - Robion
     phone: +33 4 90 75 00 42
     website: https://www.last-mystery.com
+  The_Mind_Hunters_Petroúpoli:
+    email: ''
+    location: Eptanisou 83,13231 Petroúpoli
+    maps_location: ''
+    name: The Mind Hunters - Petroúpoli
+    phone: +30 21 0505 3231
+    website: https://www.escapeall.gr
+  The_Rubicon_Galatsi:
+    email: ''
+    location: Orfeos 10-12,111 46 Galatsi
+    maps_location: ''
+    name: The Rubicon - Galatsi
+    phone: ''
+    website: https://therubicon.gr
   TimeXperience_Avignon:
     email: ''
     location: 10 rue du 12e régiment de zouaves,84000 Avignon
@@ -807,6 +1235,13 @@ enseignes:
     name: Too late escape game
     phone: 06 64 33 82 84
     website: https://toolate.fr/bayonne/
+  Trapped_Chalandri:
+    email: ''
+    location: 25is Martiou 34,15232 Chalandri
+    maps_location: ''
+    name: Trapped - Chalandri
+    phone: +30 21 1216 7075
+    website: https://trapped.gr
   Tête_Chercheuse_Mérignac:
     email: ''
     location: 3 rue Alessandro Volta,33700 Mérignac
@@ -835,6 +1270,20 @@ enseignes:
     name: VanciAventure - Rillieux-la-Pape
     phone: +33 6 58 93 48 76
     website: https://www.vanciaventure.com
+  Vansa_Peristeri:
+    email: ''
+    location: 38 Pelopida,12134 Peristeri
+    maps_location: ''
+    name: Vansa - Peristeri
+    phone: +30 694 329 8152
+    website: https://vansa-escape.gr
+  Vansa_Ágios_Dimítrios:
+    email: ''
+    location: 28 Koritsas,17342 Ágios Dimítrios
+    maps_location: ''
+    name: Vansa - Ágios Dimítrios
+    phone: +30 694 329 8152
+    website: https://vansa-escape.gr
   Wake_Up_Lyon:
     email: ''
     location: 78 rue Delandine,69002 Lyon
@@ -849,6 +1298,20 @@ enseignes:
     name: Way Out - Lyon
     phone: +33 9 80 61 50 42
     website: https://wayout.fr
+  Way_Out_Vrilissia:
+    email: ''
+    location: Troias 61,152 35 Vrilissia
+    maps_location: ''
+    name: Way Out - Vrilissia
+    phone: ''
+    website: https://www.wayoutescaperooms.gr
+  XII_Divisions_Egaleo:
+    email: ''
+    location: Smirnis 7,12243 Egaleo
+    maps_location: ''
+    name: XII Divisions - Egaleo
+    phone: ''
+    website: https://xiidivisions.gr
   Zupple_Lyon:
     email: ''
     location: 143 grande rue,69600 Lyon
@@ -1058,13 +1521,6 @@ enseignes:
     name: Neverland
     phone: ''
     website: https://www.escapeall.gr/en/EscapeRooms/attica/agioi-anargyroi/fear-of-the-dark-amen
-  no_exit_escape_romms_gr:
-    email: info@noexit.gr
-    location: EF. DEDOUSI 13, ILIOUPOLI, 16346
-    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d293.04829475366154!2d23.741942933383363!3d37.938777184221166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd230f1068c1%3A0x6db7ca7353b888cd!2sNo%20Exit%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1742847266921!5m2!1sfr!2snl
-    name: No Exit
-    phone: (+30) 210 97 37 624
-    website: https://noexit.gr
   one_brain_lille:
     email: ''
     location: 11B boulevard Jean-Baptiste Lebas, 59000 Lille

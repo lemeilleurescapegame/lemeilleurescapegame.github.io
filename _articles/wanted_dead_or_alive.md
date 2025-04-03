@@ -4,7 +4,7 @@ url: "wanted_dead_or_alive"
 top_name : "wanted_dead_or_alive"
 title: "Wanted Dead or Alive"
 date: 07-06-2024
-enseigne: "no_exit_escape_romms_gr"
+enseigne: "No_Exit_Ilioupoli"
 theme : "Aventure"
 duree : "90 min"
 nb-joueur : "3 - 5"

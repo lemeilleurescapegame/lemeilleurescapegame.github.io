@@ -572,7 +572,7 @@
   background-color: #ff7e5f;
 }
 
-.top-articles-container {
+.top-articles-container-description {
   max-width: 700px;
   margin: 30px auto;
   font-family: Arial, sans-serif;
@@ -688,6 +688,14 @@
 /* Remove default focus outline for better aesthetics */
 .top-article-description-link:focus {
   outline: none;
+}
+
+.top-articles-placeholder-description {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  /* Lazy load if needed */
 }
 
 /* 🛠 Responsive Design for Mobile */

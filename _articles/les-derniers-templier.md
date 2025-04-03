@@ -5,7 +5,7 @@ top_name : "les-derniers-templier"
 title: "Les Derniers Templiers"
 date: 14/03/2021 
 note: 13
-enseigne: "le_donjon"
+enseigne: "Le_Donjon_Paris"
 theme : 'Médiéval'
 duree : "60 min"
 nb-joueur : '2 à 6'

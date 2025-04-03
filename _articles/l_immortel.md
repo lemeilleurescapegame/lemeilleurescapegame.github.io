@@ -5,7 +5,7 @@ top_name : "l_immortel"
 title: "L'Immortel"
 date: 07-06-2021
 note: 14
-enseigne: "le_donjon"
+enseigne: "Le_Donjon_Paris"
 theme : "Mystère"
 duree : "60 min"
 nb-joueur : "2 à 6"

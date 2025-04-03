@@ -3,7 +3,7 @@ layout: article_not_descriptive
 url: "wild-wild-quest"
 top_name : "wild-wild-quest"
 title: Wild Wild Quest
-date: 07-06-2024
+date: 07-06-2023
 enseigne: "get_out_lille"
 theme : "Aventure"
 duree : "60 minutes"
