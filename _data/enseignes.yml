@@ -8,7 +8,7 @@ allowed_cities:
 - Lille
 enseignes:
   1way_escape_room:
-    email: gm @ 1wayescape.gr
+    email: gm@1wayescape.gr
     location: Thivon & Amaliados 1, Peristeri
     maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d764.301080812346!2d23.692801248704033!3d38.020203869482806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a3e4d9cbab21%3A0x64aa9052d5827e35!2s1Way%20Escape%20Room!5e0!3m2!1sfr!2snl!4v1743020481553!5m2!1sfr!2snl
     name: 1 Way Escape Room
@@ -66,14 +66,14 @@ enseignes:
   Arkham_Escape_Athènes:
     email: ''
     location: Ifigenias 87,176 76 Athènes
-    maps_location: ''
+    maps_location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.8154645222094!2d23.7003869757744!3d37.95809457193972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bc5810b6dbfd%3A0x60279670a5c1e859!2sArkham%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872159004!5m2!1sfr!2snl'
     name: Arkham Escape - Athènes
     phone: ''
     website: https://www.arkhamescape.gr
   Art_of_Escape_Athènes:
     email: ''
     location: Irakleous 88,176 72 Athènes
-    maps_location: ''
+    maps_location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.8154645222094!2d23.7003869757744!3d37.95809457193972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bda21954e9cf%3A0x4f1921ec28d7b07e!2sArt%20of%20Escape%20-%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872190218!5m2!1sfr!2snl'
     name: Art of Escape - Athènes
     phone: ''
     website: https://artofescape.gr
@@ -94,42 +94,42 @@ enseignes:
   Ban_Bang_Theory_Ágios_Dimítrios:
     email: ''
     location: Evritanias 51 & Velestinou,17341 Ágios Dimítrios
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.8891719204726!2d23.721819784245906!3d37.93301949961042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd8061781c3d%3A0x7f64971062dc7b5e!2sThe%20Litchver%20Woodland%2C%20Ban%20Bang%20Theory%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872260532!5m2!1sfr!2snl
     name: Ban Bang Theory - Ágios Dimítrios
     phone: ''
     website: https://bbtheory-escape.gr
   Blind_Alley_Athènes:
     email: ''
     location: Viktoros Ougko 32,10438 Athènes
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12576.687395987768!2d23.724244210277007!3d37.99645190088187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd0836f23e6f%3A0xe48f5da6fd60433f!2zQmxpbmQgQWxsZXkgLSBMaXZlIEFjdGluZyBIb3Jyb3IgUm9vbSAtIM6czrXPhM6xzr7Ov8-Fz4HOs861zq_Ovw!5e0!3m2!1sfr!2snl!4v1743872295166!5m2!1sfr!2snl
     name: Blind Alley - Athènes
     phone: +30 698 071 7659
     website: https://blindalley.gr
   Bloodlines_Escape_Room_Ágios_Dimítrios:
     email: ''
     location: Leof. Agiou Dimitriou 112,17341 Ágios Dimítrios
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.6215549075528!2d23.728570875773514!3d37.93927067194429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd9e6b00e239%3A0x314a81540c6630ca!2sBloodlines%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872323862!5m2!1sfr!2snl
     name: Bloodlines Escape Room - Ágios Dimítrios
     phone: ''
     website: https://www.escapeall.gr
   Brain_On_Kallithea:
     email: ''
     location: Sofokleous 57,17671 Kallithea
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50345.94981791352!2d23.689946155333853!3d37.93926346135156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bdb467f8d163%3A0x9d11aa0140dc3748!2sBrain%20On%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872350529!5m2!1sfr!2snl
     name: Brain On - Kallithea
     phone: +30 21 1119 1532
     website: https://www.brainon.gr
   Braincells_Le_Pirée:
     email: ''
     location: Kolokotroni 50,18531 Le Pirée
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.3873240038133!2d23.644575975773773!3d37.944741271943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bbe9a1c22e5f%3A0xb08a68fb2f6b8a40!2sBrainCells%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872372445!5m2!1sfr!2snl
     name: Braincells - Le Pirée
     phone: +30 21 3044 4906
     website: https://www.braincells.gr
   Brainiac_Escape_Rooms_Petroúpoli:
     email: ''
     location: 25is Martiou 132,13231 Petroúpoli
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100554.71916781373!2d23.537941697265634!3d38.03928050000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a3feead3060d%3A0x12f4ad2a698ba7e8!2sBrainiac%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872399571!5m2!1sfr!2snl
     name: Brainiac Escape Rooms - Petroúpoli
     phone: +30 21 1115 3834
     website: https://www.escapeall.gr
@@ -157,7 +157,7 @@ enseignes:
   C9_H13_NO3_Donors_Peristeri:
     email: ''
     location: Kriton 4,12132 Peristeri
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.553788794605!2d23.69867107577706!3d38.01086717192689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a3f33fccaf6b%3A0x41f75c421687ce2c!2sC9H13NO3%20Donors!5e0!3m2!1sfr!2snl!4v1743872427758!5m2!1sfr!2snl
     name: C9 H13 NO3 Donors - Peristeri
     phone: +30 698 171 0955
     website: https://www.escapeall.gr
@@ -200,7 +200,7 @@ enseignes:
   Clock_Escape_Rooms_Agia_Paraskevi:
     email: ''
     location: Dorieon 7,15343 Agia Paraskevi
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.251093228233!2d23.828722075777318!3d38.01792537192525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a199c7e2618da5%3A0x3657f4271db36abe!2sClock%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872448078!5m2!1sfr!2snl
     name: Clock Escape Rooms - Agia Paraskevi
     phone: +30 21 0600 1363
     website: https://www.clockescaperooms.gr
@@ -221,7 +221,7 @@ enseignes:
   Clueso_Chalandri:
     email: ''
     location: Aristotelous 65,15232 Chalandri
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.2401736477946!2d23.798643175777404!3d38.01817997192508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a199928cf4fe1b%3A0xa4017b8698f0cbe8!2sCLUESO%20ESCAPE%20ROOMS!5e0!3m2!1sfr!2snl!4v1743872478118!5m2!1sfr!2snl
     name: Clueso - Chalandri
     phone: +30 21 0685 3365
     website: https://www.escapeall.gr
@@ -235,7 +235,7 @@ enseignes:
   Coven_Escape_Rooms_Kallithea:
     email: ''
     location: Sapfous 143,17675 Kallithea
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.9619776925792!2d23.69495527577422!3d37.95467377194049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd0e62300ab1%3A0x490c88468f636d98!2sCoven%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872502349!5m2!1sfr!2snl
     name: Coven Escape Rooms - Kallithea
     phone: ''
     website: https://covenescaperooms.gr
@@ -249,21 +249,21 @@ enseignes:
   Dark_Maze_Egaleo:
     email: ''
     location: Palaias Kavalas 17,12242 Egaleo
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.194266033037!2d23.688633575776144!3d37.99592897193048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1bf6f2e5bb%3A0xe307044891837bd5!2sDark%20Maze%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872526132!5m2!1sfr!2snl
     name: Dark Maze - Egaleo
     phone: ''
     website: https://www.darkmaze.gr
   Dark_Riddles_Dafni:
     email: ''
     location: Gimnastiriou 17, 104,17235 Dafni
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.0413414487307!2d23.7337282757742!3d37.952820671941154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd00795a1045%3A0x84db43c20ab2524b!2sDark%20Riddles!5e0!3m2!1sfr!2snl!4v1743872562749!5m2!1sfr!2snl
     name: Dark Riddles - Dafni
     phone: +30 698 657 0238
     website: https://www.escapeall.gr
   Dark_Vision_Project_Moschato:
     email: ''
     location: Kapodistriou 150,18345 Moschato
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50336.666404657975!2d23.695103555505074!3d37.95281346049128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bdeacbd87569%3A0x1e380677c0fd0f32!2sDark%20Vision%20Project!5e0!3m2!1sfr!2snl!4v1743872589881!5m2!1sfr!2snl
     name: Dark Vision Project - Moschato
     phone: +30 693 680 6103
     website: https://www.escapeall.gr
@@ -298,7 +298,7 @@ enseignes:
   Elude_Adventure_Rooms_Peristeri:
     email: ''
     location: Ravine 14,12134 Peristeri
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12574.59992328883!2d23.683989610286538!3d38.008623950834306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a33f28919907%3A0xc1b4f9a3f30c9065!2sELUDE%20Adventure%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872622325!5m2!1sfr!2snl
     name: Elude Adventure Rooms - Peristeri
     phone: +30 697 221 1462
     website: https://elude.gr
@@ -326,7 +326,7 @@ enseignes:
   Escape_Clue_Peristeri:
     email: ''
     location: Agriniou 2,12135 Peristeri
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12574.600077371048!2d23.683989607216386!3d38.00862305250315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a33f9399d56b%3A0x2fb8788f47d01ded!2sEscape%20Clue%20Athens%20-%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872647578!5m2!1sfr!2snl
     name: Escape Clue - Peristeri
     phone: ''
     website: https://www.escapeall.gr
@@ -375,7 +375,7 @@ enseignes:
   Escape_Theory_Egaleo:
     email: ''
     location: Konstantinoupoleos 65,12242 Egaleo
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.342412034216!2d23.683138875776084!3d37.99247297193121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bcba010ccb51%3A0x67aca1b242963caa!2sEscape%20Theory!5e0!3m2!1sfr!2snl!4v1743872669537!5m2!1sfr!2snl
     name: Escape Theory - Egaleo
     phone: ''
     website: https://www.escapeall.gr
@@ -417,14 +417,14 @@ enseignes:
   Escapepolis_Athènes:
     email: ''
     location: Pelagonias 6,104 31 Athènes
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.7653324806215!2d23.709675075775596!3d37.98260547193383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bcd92f76ecf9%3A0xe1f3cd0effb8626b!2zRXNjYXBlcG9saXMgzpHOuM6uzr3OsQ!5e0!3m2!1sfr!2snl!4v1743872685089!5m2!1sfr!2snl
     name: Escapepolis - Athènes
     phone: ''
     website: https://www.escaperoomathens.gr
   Escapepolis_Galatsi:
     email: ''
     location: 105 Veikou Avenue,111 46 Galatsi
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50316.25026574903!2d23.67105035588138!3d37.982598258605556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a3a47e6e5fdd%3A0xc860636cb618cad6!2zRXNjYXBlcG9saXMgzpPOsc67zqzPhM-Dzrk!5e0!3m2!1sfr!2snl!4v1743872742841!5m2!1sfr!2snl
     name: Escapepolis - Galatsi
     phone: ''
     website: https://www.escaperoomathens.gr
@@ -459,14 +459,14 @@ enseignes:
   Exit_Plan_Ágios_Dimítrios:
     email: ''
     location: Aidiniou 5,17343 Ágios Dimítrios
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50316.26011936362!2d23.6710503067385!3d37.98258388809904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd97e3935d1f%3A0xb353b9e6b3ba43b4!2sExit%20Plan%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872764358!5m2!1sfr!2snl
     name: Exit Plan - Ágios Dimítrios
     phone: ''
     website: http://www.exitplan.gr
   Fear_Factor_Le_Pirée:
     email: ''
     location: Omiridou Skilitsi 14,18532 Le Pirée
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.229345597729!2d23.648647975773947!3d37.94843057194203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bb4546c8d6b3%3A0x3154c671080f9c0d!2sFear%20Factor%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872794639!5m2!1sfr!2snl
     name: Fear Factor - Le Pirée
     phone: ''
     website: https://www.escapeall.gr
@@ -487,14 +487,14 @@ enseignes:
   Fortress_of_Secrets_Corfou:
     email: ''
     location: Eth. Antistaseos 36,491 00 Corfou
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3072.878814988873!2d19.892771775857284!3d39.62993237157689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b5d8a4cb6a123%3A0x33373b35c6720e92!2sFortress%20of%20Secrets%20Escape%20Rooms%20Corfu!5e0!3m2!1sfr!2snl!4v1743872812260!5m2!1sfr!2snl
     name: Fortress of Secrets - Corfou
     phone: ''
     website: https://www.foscorfu.gr
   Freaky_Minds_Athènes:
     email: ''
     location: Triteas 2,10441 Athènes
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.461396366585!2d23.708789675775968!3d37.98969707193201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd006b20c14f%3A0x941d2c9eede87619!2sFreaky%20Minds%20Horror%20Live%20Games!5e0!3m2!1sfr!2snl!4v1743872831514!5m2!1sfr!2snl
     name: Freaky Minds - Athènes
     phone: ''
     website: https://www.escapeall.gr
@@ -571,28 +571,28 @@ enseignes:
   High_Intensity_Athènes:
     email: ''
     location: Riou 3-5,11363 Athènes
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25155.691796530948!2d23.690765006232795!3d37.98969524747738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a309c833539f%3A0xae98faac4fc9431a!2sHigh%20Intensity%20Escape%20Room!5e0!3m2!1sfr!2snl!4v1743872860639!5m2!1sfr!2snl
     name: High Intensity - Athènes
     phone: ''
     website: https://www.escapeall.gr
   Horror_Productions_Galatsi:
     email: ''
     location: Athineon 12,111 47 Galatsi
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50317.125420876706!2d23.704642705981474!3d37.98132191481797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a3cf7d8bc5a5%3A0xa01058d9758c4c3f!2sHorror%20Productions%20-%20Immersive%20Live%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872878961!5m2!1sfr!2snl
     name: Horror Productions - Galatsi
     phone: ''
     website: https://www.horrorproductions.gr
   Horrorville_Egaleo:
     email: ''
     location: Thivon 266,12241 Egaleo
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.7930638882285!2d23.669449675775542!3d37.98195837193384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bddb2e2a5e41%3A0xbc8f924ae32a8370!2sHorrorville%20Entertainment!5e0!3m2!1sfr!2snl!4v1743872909122!5m2!1sfr!2snl
     name: Horrorville - Egaleo
     phone: +30 21 6800 9607
     website: https://horrorville.gr
   Horrorwood_Nea_Ionia:
     email: ''
     location: Sinopis 49,14233 Nea Ionia
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50279.77814198653!2d23.679345048632804!3d38.035757600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a30013078e9f%3A0x7ab430cc08a898c3!2sHorrorwood%20Escaperooms%20-%20The%20Axe%20Murders%20Of%20Villisca!5e0!3m2!1sfr!2snl!4v1743872935966!5m2!1sfr!2snl
     name: Horrorwood - Nea Ionia
     phone: ''
     website: https://www.escapeall.gr
@@ -620,7 +620,7 @@ enseignes:
   Illusion_Escape_Rooms_Athènes:
     email: ''
     location: Evrou 94-96,11527 Athènes
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.699685741851!2d23.759933375775706!3d37.984137271933434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd5577532149%3A0xa222a907588dfd43!2sIllusion%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872955369!5m2!1sfr!2snl
     name: Illusion Escape Rooms - Athènes
     phone: +30 21 0771 3660
     website: https://www.escapeall.gr
@@ -641,7 +641,7 @@ enseignes:
   Insanity_Peristeri:
     email: ''
     location: Gennadiou 2,12131 Peristeri
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.9826751908518!2d23.691491075776515!3d38.000864571929334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd007b70a6bd%3A0xf22628f28e6533cd!2sInsanity%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872979157!5m2!1sfr!2snl
     name: Insanity - Peristeri
     phone: ''
     website: https://www.escapeall.gr
@@ -774,7 +774,7 @@ enseignes:
   Last_Wish_Athènes:
     email: ''
     location: Machis Analatou 87,104 31 Athènes
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.0746089204317!2d23.718883475774117!3d37.95204387194121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bdc8f303460f%3A0x83a67fc124fd64be!2sLAST%20WISH!5e0!3m2!1sfr!2snl!4v1743872996874!5m2!1sfr!2snl
     name: Last Wish - Athènes
     phone: ''
     website: https://www.lastwish.gr
@@ -838,14 +838,14 @@ enseignes:
   Lockbusters_Athènes:
     email: ''
     location: Kolokotroni & Leocharous 2,105 62 Athènes
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.9700023360656!2d23.72732427577539!3d37.9778293719349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd9830258ed5%3A0x9704ea6f2313d65a!2sLockbusters%20%7C%20Escape%20rooms!5e0!3m2!1sfr!2snl!4v1743873024154!5m2!1sfr!2snl
     name: Lockbusters - Athènes
     phone: +30 21 3099 4753
     website: https://www.escapeall.gr
   Lockhill_Athènes:
     email: ''
     location: Deligiorgi 55-59,104 37 Athènes
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.6708858365214!2d23.719573575775676!3d37.98480927193324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd25f8ed5119%3A0x5a86171f15e985df!2sLockhill%20(Metaxourgio)!5e0!3m2!1sfr!2snl!4v1743873054770!5m2!1sfr!2snl
     name: Lockhill - Athènes
     phone: ''
     website: https://www.lockhill.gr
@@ -859,14 +859,14 @@ enseignes:
   Mastermind_Athènes:
     email: ''
     location: Karori 6A,10551 Athènes
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12578.683625141768!2d23.711848760151508!3d37.98480879479378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd2334f6438b%3A0x40b14f782067f29d!2sMastermind%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743873080363!5m2!1sfr!2snl
     name: Mastermind - Athènes
     phone: +30 21 3034 4996
     website: https://themastermind.gr
   Mastermind_Peristeri:
     email: ''
     location: Ethnarchou Makariou 28,12132 Peristeri
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50301.89079575059!2d23.626980948632823!3d38.0035352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a3bde6f57349%3A0x458af6dbe4f107c3!2zTWFzdGVybWluZCBFc2NhcGUgUm9vbXMsIM6gzrXPgc65z4PPhM6tz4HOuQ!5e0!3m2!1sfr!2snl!4v1743873105636!5m2!1sfr!2snl
     name: Mastermind - Peristeri
     phone: +30 21 3034 4996
     website: https://themastermind.gr
@@ -894,14 +894,14 @@ enseignes:
   My_Escape_Rhodes:
     email: ''
     location: Steliou Kotiadi 50,851 00 Rhodes
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3210.1204662834575!2d28.216661775701382!3d36.430469672354924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149561906c38a63b%3A0xfa1fd56dcfc7a6e!2sMy%20Escape!5e0!3m2!1sfr!2snl!4v1743873121939!5m2!1sfr!2snl
     name: My Escape - Rhodes
     phone: ''
     website: https://www.myescaperhodes.gr
   Mystic_Corporation_Moschato:
     email: ''
     location: Chrisostomou Smirnis & Labrou Katsoni 85,18345 Moschato
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.222321515954!2d23.67488158425091!3d37.94859459959686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bde46eb36d23%3A0xd0bfd11c890657d8!2sEscape%20Room%20%2F%20Mystic%20Corporation!5e0!3m2!1sfr!2snl!4v1743873146187!5m2!1sfr!2snl
     name: Mystic Corporation - Moschato
     phone: ''
     website: https://mystic-corporation.gr
@@ -915,14 +915,14 @@ enseignes:
   Neverland_Agii_Anargiri:
     email: ''
     location: Thrakis 4,13562 Agii Anargiri
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100535.46085156183!2d23.57802529726562!3d38.053303700000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a36685045313%3A0x64186878436fb441!2sAmen%20escape%20room%20Neverland!5e0!3m2!1sfr!2snl!4v1743873182053!5m2!1sfr!2snl
     name: Neverland - Agii Anargiri
     phone: ''
     website: https://www.escapeall.gr
   Neverland_Athènes:
     email: ''
     location: Leoforos Dimokratias 329,13675 Athènes
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100535.61886198657!2d23.578024904465412!3d38.05318866044127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a366e0addaa9%3A0x6525ce5cca745bb0!2sNeverland%20escape%20rooms!5e0!3m2!1sfr!2snl!4v1743873212224!5m2!1sfr!2snl
     name: Neverland - Athènes
     phone: ''
     website: https://www.escapeall.gr
@@ -943,7 +943,7 @@ enseignes:
   Nocturne_Kallithea:
     email: ''
     location: Sofokleous 250,17675 Kallithea
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.3535973751987!2d23.687572225773756!3d37.94552892194286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd4ba40252ad%3A0x53af90697073e3c7!2sAGNES!5e0!3m2!1sfr!2snl!4v1743873257617!5m2!1sfr!2snl
     name: Nocturne - Kallithea
     phone: +30 694 911 9264
     website: https://www.escapeall.gr
@@ -992,21 +992,21 @@ enseignes:
   Paradox_Project_Athènes:
     email: ''
     location: Agion Panton 92,176 76 Athènes
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223.43676181133765!2d23.705338134108576!3d37.96072920894747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd6b768c6bb5%3A0x5b22ae52234da2fe!2zUGFyYWRveCBQcm9qZWN0OiDOpM6_IM6pzrTOtc6vzr_OvSAvIFRoZSBNdXNpYyBBY2FkZW15!5e0!3m2!1sfr!2snl!4v1743873318593!5m2!1sfr!2snl
     name: Paradox Project - Athènes
     phone: +30 695 727 2369
     website: http://paradoxproject.gr
   Paradox_Project_Kallithea:
     email: ''
     location: Charokopou 93,17676 Kallithea
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.714916540623!2d23.70399362577453!3d37.96044202193921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bcf8e3a8f505%3A0xd72de356a1596eff!2sParadox%20Project!5e0!3m2!1sfr!2snl!4v1743873343056!5m2!1sfr!2snl
     name: Paradox Project - Kallithea
     phone: +30 695 727 2369
     website: http://paradoxproject.gr
   Paranoid_Guys_Petroúpoli:
     email: ''
     location: Archipelagous 63,13231 Petroúpoli
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.5594859680286!2d23.67708977577819!3d38.034047971921176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a3003f6b50d9%3A0xf2b916eb4ab7cdf3!2sParanoid%20Guys!5e0!3m2!1sfr!2snl!4v1743873365547!5m2!1sfr!2snl
     name: Paranoid Guys - Petroúpoli
     phone: ''
     website: https://www.escapeall.gr
@@ -1062,14 +1062,14 @@ enseignes:
   Reality_Ripples_Athènes:
     email: ''
     location: Tsaldari 8,104 31 Athènes
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.719181146538!2d23.724308475775565!3d37.98368237193346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bdb5df02d681%3A0xdf64dd2bffecf9b8!2sReality%20Ripples!5e0!3m2!1sfr!2snl!4v1743873392526!5m2!1sfr!2snl
     name: Reality Ripples - Athènes
     phone: +30 21 0520 5413
     website: https://www.escapeall.gr
   Room_54_Athènes:
     email: ''
     location: Ioannou Filimovoz 6,11521 Athènes
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.715374324035!2d23.748606784262606!3d37.98377119956592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd5225cd0ff1%3A0x951b1cf3059a6e35!2sRoom%2054!5e0!3m2!1sfr!2snl!4v1743873415328!5m2!1sfr!2snl
     name: Room 54 - Athènes
     phone: +30 21 0980 2320
     website: https://www.escapeall.gr
@@ -1083,7 +1083,7 @@ enseignes:
   S.A.F.E._Nikea:
     email: ''
     location: Sοlomou 11,18450 Nikea
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d682.7387078632071!2d23.652945873375636!3d37.9694189026237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bb5b189a683f%3A0x51e328d531331ae7!2sSAFE%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743873459121!5m2!1sfr!2snl
     name: S.A.F.E. - Nikea
     phone: +30 21 1008 1350
     website: https://safeescaperooms.gr
@@ -1111,14 +1111,14 @@ enseignes:
   Serial_Grifers_Illion:
     email: ''
     location: Achileos 81,13122 Illion
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.5344853680226!2d23.703160575778096!3d38.03463067192112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a3e0bc63c23f%3A0xf04b0d8dcfb6eda3!2sSERIAL%20GRIFERS!5e0!3m2!1sfr!2snl!4v1743873475024!5m2!1sfr!2snl
     name: Serial Grifers - Illion
     phone: ''
     website: https://www.escapeall.gr
   Sherlocked_Holmes_Peristeri:
     email: ''
     location: El. Venizelou 106,12132 Peristeri
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.3686141789885!2d23.69769977577719!3d38.015185171925836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd289883c8df%3A0x65e85ddfcc2fd774!2sSherlockedHomes-escape%20rooms!5e0!3m2!1sfr!2snl!4v1743873491606!5m2!1sfr!2snl 
     name: Sherlocked Holmes - Peristeri
     phone: ''
     website: https://sherlockedhomes.gr
@@ -1132,14 +1132,14 @@ enseignes:
   Spookey_Escape_Moschato:
     email: ''
     location: Grigoriou Lambraki 8,18345 Moschato
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.1078415536886!2d23.683382775774128!3d37.95126787194149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd8031ab9d61%3A0xa1dba502f99f3695!2sSpookey%20Escape%20Rooms%202!5e0!3m2!1sfr!2snl!4v1743873515721!5m2!1sfr!2snl
     name: Spookey Escape - Moschato
     phone: +30 694 826 5892
     website: https://www.spookeyescape.gr
   Stay_Alive_Nea_Ionia:
     email: ''
     location: El. Venizelou 111,142 31 Nea Ionia
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.0418596422846!2d23.74841917577861!3d38.046110971918225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a300030b7915%3A0xe1632fac2ebf4661!2sStay%20Alive%20Escaperooms!5e0!3m2!1sfr!2snl!4v1743873542627!5m2!1sfr!2snl
     name: Stay Alive - Nea Ionia
     phone: ''
     website: https://www.escapeall.gr
@@ -1174,14 +1174,14 @@ enseignes:
   The_Box_Athènes:
     email: ''
     location: Leoforos Irakleiou 197,142 32 Nea Ionia
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50272.67471008613!2d23.709794456684445!3d38.04610375461073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a26fd641aa47%3A0x5f6ef73cca31c957!2sThe%20BOX%20-%20escape%20rooms!5e0!3m2!1sfr!2snl!4v1743873566135!5m2!1sfr!2snl
     name: The Box - Athènes
     phone: ''
     website: https://escapethebox.gr
   The_Darkwood_Village_Moschato:
     email: ''
     location: Pireos 17,18346 Moschato
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.8915835569514!2d23.674721675774258!3d37.956317371940294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bc7af75df209%3A0xbb289f22ff5c05c7!2sThe%20Darkwood%20Village!5e0!3m2!1sfr!2snl!4v1743873582837!5m2!1sfr!2snl 
     name: The Darkwood Village - Moschato
     phone: ''
     website: https://thedarkwoodvillage.gr
@@ -1216,14 +1216,14 @@ enseignes:
   The_Mind_Hunters_Petroúpoli:
     email: ''
     location: Eptanisou 83,13231 Petroúpoli
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50281.030013875774!2d23.60531644863282!3d38.03393400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a37a611348dd%3A0xfb3794cadfffa715!2sThe%20Mind%20Hunters%20-%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743873616383!5m2!1sfr!2snl
     name: The Mind Hunters - Petroúpoli
     phone: +30 21 0505 3231
     website: https://www.escapeall.gr
   The_Rubicon_Galatsi:
     email: ''
     location: Orfeos 10-12,111 46 Galatsi
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.0970467791017!2d23.74960177577754!3d38.0215169719243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a28584b9e64f%3A0xd8909c48d12b02f1!2sTHE%20RUBICON%20escape%20rooms!5e0!3m2!1sfr!2snl!4v1743873637285!5m2!1sfr!2snl
     name: The Rubicon - Galatsi
     phone: ''
     website: https://therubicon.gr
@@ -1252,7 +1252,7 @@ enseignes:
   Trapped_Chalandri:
     email: ''
     location: 25is Martiou 34,15232 Chalandri
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.2181670305986!2d23.793301875777335!3d38.018693071924964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1985887647f33%3A0xa8fd1812e58e012f!2sTrapped%20Chalandri!5e0!3m2!1sfr!2snl!4v1743873651132!5m2!1sfr!2snl
     name: Trapped - Chalandri
     phone: +30 21 1216 7075
     website: https://trapped.gr
@@ -1287,14 +1287,14 @@ enseignes:
   Vansa_Peristeri:
     email: ''
     location: 38 Pelopida,12134 Peristeri
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12573.840796082324!2d23.668501887158204!3d38.01304960000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a335ebc6d461%3A0xf574b6cc1d8dae5e!2sVANSA%20Escape%20Room%203!5e0!3m2!1sfr!2snl!4v1743873683713!5m2!1sfr!2snl
     name: Vansa - Peristeri
     phone: +30 694 329 8152
     website: https://vansa-escape.gr
   Vansa_Ágios_Dimítrios:
     email: ''
     location: 28 Koritsas,17342 Ágios Dimítrios
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100590.76643860344!2d23.59640051236214!3d38.013020400873025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd836f88c2d9%3A0x5b3a91d93c87b9fe!2sVANSA%20Escape%20Room%202!5e0!3m2!1sfr!2snl!4v1743873705487!5m2!1sfr!2snl
     name: Vansa - Ágios Dimítrios
     phone: +30 694 329 8152
     website: https://vansa-escape.gr
@@ -1315,14 +1315,14 @@ enseignes:
   Way_Out_Vrilissia:
     email: ''
     location: Troias 61,152 35 Vrilissia
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100590.8453453772!2d23.596400315854062!3d38.01296290113977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a2cc48a89fc9%3A0x65ad8ecc7798df9c!2sWay%20Out%20-%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743873739675!5m2!1sfr!2snl
     name: Way Out - Vrilissia
     phone: ''
     website: https://www.wayoutescaperooms.gr
   XII_Divisions_Egaleo:
     email: ''
     location: Smirnis 7,12243 Egaleo
-    maps_location: ''
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12577.674147394897!2d23.66130475720162!3d37.990697002713354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd002314d8c5%3A0xadb4636e7d3b93d8!2sXII%20DIVISIONS%20ESCAPE%20ROOMS!5e0!3m2!1sfr!2snl!4v1743873769159!5m2!1sfr!2snl
     name: XII Divisions - Egaleo
     phone: ''
     website: https://xiidivisions.gr
