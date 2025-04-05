@@ -141,39 +141,33 @@
   justify-content: center;
 }
 
-@media (max-width: 900px) {
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
   .hideOnMobile {
     display: none;
   }
   .nav-wrap .menu-button {
     display: block;
   }
-  .search-icon {
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Adjust the gap */
-  }
-  .search-icon input {
-    width: 100px; /* Adjust width of the input */
-    padding: 5px 8px;
-    font-size: 14px; /* Smaller font */
-  }
-  .search-icon button {
-    padding: 5px; /* Smaller button size */
-  }
-  .search-icon svg {
-    width: 20px; /* Make the icon smaller */
-    height: 20px;
-  }
   .search-form {
     justify-content: center;
-    max-width: 160px;
+    max-width: 70%; /* Limit width on mobile */
     margin-top: 0.5rem;
     margin-right: auto;
     margin-left: auto;
     padding: 0.3rem 0.6rem; /* Slightly less padding */
     border-radius: 6px;
     font-size: 0.9rem; /* Slightly smaller text */
+  }
+  .search-form input[type=text] {
+    font-size: 0.9rem;
+  }
+  .search-form button {
+    padding: 5px; /* Smaller button size */
+  }
+  .search-form svg {
+    width: 20px; /* Smaller icon */
+    height: 20px;
   }
 }
 .social-media {

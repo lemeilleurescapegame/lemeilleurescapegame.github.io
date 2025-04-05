@@ -117,15 +117,8 @@
     border: 1.5px solid #ffffff; /* White border */
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Optional glow */
 }
-// .search-form {
-//     flex-shrink: 1;
-//     flex-grow: 0;
-//     width: auto;
-//     max-width: 200px; /* 🔧 Limit it on all screens */
-//     margin-right: 0.5rem;
-//   }
   
-  .search-form input[type="text"] {
+.search-form input[type="text"] {
     flex-grow: 1;
     background: transparent;
     border: none;
@@ -133,13 +126,13 @@
     color: white;
     font-size: 1rem;
     padding: 0.4rem 0.2rem;
-  }
+}
   
-  .search-form input[type="text"]::placeholder {
+.search-form input[type="text"]::placeholder {
     color: #bbb;
-  }
+}
   
-  .search-form button {
+.search-form button {
     background: none;
     border: none;
     cursor: pointer;
@@ -147,52 +140,39 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-
-@media (max-width: 900px) {
-    .hideOnMobile{
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+    .hideOnMobile {
         display: none;
     }
-    .nav-wrap{
-        .menu-button{
-            display: block;
-        }
-    }
-    .search-icon {
-        display: flex;
-        align-items: center;
-        gap: 8px; /* Adjust the gap */
+
+    .nav-wrap .menu-button {
+        display: block;
     }
 
-    .search-icon input {
-        width: 100px; /* Adjust width of the input */
-        padding: 5px 8px;
-        font-size: 14px; /* Smaller font */
-    }
-
-    .search-icon button {
-        padding: 5px; /* Smaller button size */
-    }
-
-    .search-icon svg {
-        width: 20px; /* Make the icon smaller */
-        height: 20px;
-    }
-    // .search-form {
-    //     justify-content: center;
-    //     max-width: 70%;
-    //     margin-top: 0.5rem;
-    //   }
     .search-form {
         justify-content: center;
-        max-width: 160px;
+        max-width: 70%; /* Limit width on mobile */
         margin-top: 0.5rem;
         margin-right: auto;
         margin-left: auto;
         padding: 0.3rem 0.6rem; /* Slightly less padding */
         border-radius: 6px;
         font-size: 0.9rem; /* Slightly smaller text */
-      }
-}
+    }
 
+    .search-form input[type="text"] {
+        font-size: 0.9rem;
+    }
+
+    .search-form button {
+        padding: 5px; /* Smaller button size */
+    }
+
+    .search-form svg {
+        width: 20px; /* Smaller icon */
+        height: 20px;
+    }
+}
