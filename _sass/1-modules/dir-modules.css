@@ -151,7 +151,7 @@
   }
   .search-form {
     justify-content: center;
-    max-width: 70%; /* Limit width on mobile */
+    max-width: 50%; /* Limit width on mobile */
     margin-top: 0.5rem;
     margin-right: auto;
     margin-left: auto;
