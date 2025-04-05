@@ -255,7 +255,7 @@
   }
   .search-form {
     justify-content: center;
-    max-width: 90%;
+    max-width: 60%;
     margin-top: 0.5rem;
   }
 }
