@@ -265,8 +265,13 @@
   }
   .search-form {
     justify-content: center;
-    max-width: 60%;
+    max-width: 90%;
     margin-top: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0.3rem 0.6rem; /* Slightly less padding */
+    border-radius: 6px;
+    font-size: 0.9rem; /* Slightly smaller text */
   }
 }
 .social-media {
