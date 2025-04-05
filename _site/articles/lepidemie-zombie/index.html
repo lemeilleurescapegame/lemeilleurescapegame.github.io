@@ -140,9 +140,6 @@
     <title>L'Épidémie Zombie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* body {
-            font-family: Arial, sans-serif;
-        } */
         h1, h2 {
             color: rgb(237, 115, 1);
             font-family: 'Arial', sans-serif;
@@ -291,6 +288,40 @@
             line-height: 1.5;
             color: #555;
         }
+        
+        .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .reservation-button {
+            background: linear-gradient(135deg, #28a745, #218838); /* Gradient green */
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid #1e7e34;
+            box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .reservation-button:hover {
+            background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient */
+            box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+            transform: scale(1.05);
+        }
+
+        .reservation-button:active {
+            transform: scale(0.98);
+            box-shadow: 0px 3px 10px rgba(40, 167, 69, 0.3);
+        }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
@@ -331,6 +362,11 @@
         <div class="title-container">
             <h1>L'Épidémie Zombie</h1>
             
+                <div class="grade-container">
+                    <i class="fas fa-star"></i>
+                    <span>16/20</span>
+                </div>
+            
         </div>
         <div class="info-box">
             <div>
@@ -355,17 +391,40 @@
                 
             </div>
         </div>
+        
+        <div class="scenario-container">
+                
+                <h3 class="scenario-title">Scenario</h3>
+                <p class="scenario-description"><p>En 2064, l’humanité a été frappée par une terrible épidémie. Il y a quelques jours, un microbiologiste talentueux, Anton Radkevich, a annoncé sur une fréquence radio commune, une percée dans la création d’un vaccin. Depuis les communications ont été coupées. Votre équipe a été envoyée pour enquêter et retrouver le vaccin.</p>
+</p>
+                
+        </div>
+    </div>
 
-        <!-- <div class="info-top-box">
-            <p>Le virus Ebola ayant muté transforme désormais la victime en un zombie sanguinaire. Des foules de morts-vivants se dispersent dans le quartier à la recherche de nourriture. De petits groupes de personnes se cachent dans des abris. Il y a quelques jours, un microbiologiste talentueux, Anton Radkevich, a annoncé une percée dans la création d'un vaccin. Depuis les communications ont été coupées. Votre équipe a été envoyée pour enquêter et retrouver le vaccin.
+    <div class="content-wrapper">
+        <h1 id="immersion">Immersion</h1>
+<p>Quelle froideur en rentrant dans ce bunker très austère, principalement composé de béton.  La peur s’empare de votre corps et vos jambes tremblent crescendo. L’habillage sonore et vos découvertes successives ne devraient en rien vous rassurer. Attention à l’endroit où vous mettez vos mains lors de vos fouilles, on vous aura prévenu !</p>
+
+<h1 id="cohérence">Cohérence</h1>
+<p>L’aventure ne souffre d’aucune incohérence majeure. On mesure bien les conséquences désastreuses de l’épidémie zombie et la tension est accrue par la recherche d’un remède.</p>
+
+<h1 id="game-master">Game-Master</h1>
+<p>Un choix notoire  a été fait par l’enseigne : ne pas distribuer d’indices trop souvent mais les donner au compte-goutte, selon le bon vouloir du game master, et par voie orale.</p>
+
+<h1 id="enigmes">Enigmes</h1>
+<p>Les énigmes sont globalement difficiles à résoudre. On apprécie la variété des types proposés : observation, réflexion et manipulation.</p>
+
+        <div>
+            
+                <div class="top-title-container">
+                    <h2 class="top-title">Ressenti Global</h2>
+                </div>
+                <!-- <h1>Ressenti global</h1> -->
+                <p><p>Un rythme haletant tout le long de l’aventure. Plus que des frissons, ce sont de belles frayeurs qui vous attendent dans ce bunker.</p>
+
+<p>Test initialement réalisé à Team Time, escape game à Paris.</p>
 </p>
-        </div> -->
-        <div class="info-top-box">
-            <i class="fas fa-info-circle"></i>
-            <!-- <p>Le virus Ebola ayant muté transforme désormais la victime en un zombie sanguinaire. Des foules de morts-vivants se dispersent dans le quartier à la recherche de nourriture. De petits groupes de personnes se cachent dans des abris. Il y a quelques jours, un microbiologiste talentueux, Anton Radkevich, a annoncé une percée dans la création d'un vaccin. Depuis les communications ont été coupées. Votre équipe a été envoyée pour enquêter et retrouver le vaccin.
-</p> -->
-            <p>Le virus Ebola ayant muté transforme désormais la victime en un zombie sanguinaire. Des foules de morts-vivants se dispersent dans le quartier à la recherche de nourriture. De petits groupes de personnes se cachent dans des abris. Il y a quelques jours, un microbiologiste talentueux, Anton Radkevich, a annoncé une percée dans la création d'un vaccin. Depuis les communications ont été coupées. Votre équipe a été envoyée pour enquêter et retrouver le vaccin.<br />
-</p>
+            
         </div>
         
         
@@ -429,7 +488,7 @@
 
         <div class="enseigne-container">
             
-                <h2 class="enseigne-name">Autres expériences chez The Last Mystery - Robion</h2>
+                <h2 class="enseigne-name">Nos autres tests chez The Last Mystery - Robion</h2>
             
         </div>        
         <div class="grid-article-container">
@@ -803,6 +862,8 @@
                     <img src="/assets/img/escape/la-malediction-de-millie.webp" alt="la-malediction-de-millie.md">
                     <div class="name">La Malédiction de Millie</div>
                     </a>
+              
+            
               
             
               
@@ -1464,8 +1525,9 @@
           </div>
         
     </div>
-    
+
 </body>
+
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
 </body>

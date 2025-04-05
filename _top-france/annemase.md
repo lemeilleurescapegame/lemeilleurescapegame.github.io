@@ -7,6 +7,13 @@ url : "annemasse"
 image_name : "annemasse.webp"
 ---
 
+
+{% include top-articles.html 
+    title = "Top du meilleur escape d'Annemasse "
+    list = "le-manoir-de-gabrielle
+    "
+%}
+
 {% include top-articles.html 
     title = "Tous les escapes d'Annnemasse"
     list = "the-mystery-shop,
@@ -22,5 +29,6 @@ image_name : "annemasse.webp"
     resident-evil,
     le-parrain,
     le-tresor-dedgar,
-    lauberge"
+    lauberge,
+    le-manoir-de-gabrielle"
 %}

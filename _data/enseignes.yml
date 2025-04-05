@@ -856,6 +856,13 @@ enseignes:
     name: Lyon Escape Game - Lyon
     phone: +33 9 86 76 05 05
     website: http://lyonescapegame.fr
+  MadnesScape_Annemasse:
+    email: ''
+    location: Unknown
+    maps_location: ''
+    name: MadnesScape - Annemasse
+    phone: ''
+    website: ''
   Mastermind_Athènes:
     email: ''
     location: Karori 6A,10551 Athènes

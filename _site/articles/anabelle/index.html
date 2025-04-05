@@ -140,9 +140,6 @@
     <title>Anabelle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* body {
-            font-family: Arial, sans-serif;
-        } */
         h1, h2 {
             color: rgb(237, 115, 1);
             font-family: 'Arial', sans-serif;
@@ -291,6 +288,40 @@
             line-height: 1.5;
             color: #555;
         }
+        
+        .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .reservation-button {
+            background: linear-gradient(135deg, #28a745, #218838); /* Gradient green */
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid #1e7e34;
+            box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .reservation-button:hover {
+            background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient */
+            box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+            transform: scale(1.05);
+        }
+
+        .reservation-button:active {
+            transform: scale(0.98);
+            box-shadow: 0px 3px 10px rgba(40, 167, 69, 0.3);
+        }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
@@ -331,13 +362,18 @@
         <div class="title-container">
             <h1>Anabelle</h1>
             
+                <div class="grade-container">
+                    <i class="fas fa-star"></i>
+                    <span>17.5/20</span>
+                </div>
+            
         </div>
         <div class="info-box">
             <div>
                 
                     <i class="fas fa-film"></i>
                     <h4>Thème</h4>
-                    <p>Frisson / Horreur</p>
+                    <p>Horreur</p>
                 
             </div>
             <div>
@@ -355,17 +391,53 @@
                 
             </div>
         </div>
+        
+        <div class="scenario-container">
+                
+                <h3 class="scenario-title">Scenario</h3>
+                <p class="scenario-description"><p>Découvrez l’histoire d’Annabelle, la poupée la plus effrayante au monde</p>
 
-        <!-- <div class="info-top-box">
-            <p>D'après d'anciens témoignages, cette poupée serait possédée et sèmerait le mal autour d'elle. Elle transformerait la vie de ses propriétaires en un véritable cauchemar. Après plusieurs changements de familles et d'adresses, Annabelle aurait mystérieusement disparu... C'est ce que l'on croyait jusqu'à aujourd'hui. Un curieux visiteur a volontairement déposé la poupée dans l'une des chambres de notre Hostel. Depuis ce jour, des phénomènes étranges se produisent au sein de notre établissement... Seriez-vous capable de la maitriser et de l'enfermer pour toujours ? Ou bien est-ce qu'Annabelle aura raison de vous ?
+<p>D’après d’anciens témoignages, cette poupée serait possédée et sèmerait le mal autour d’elle. Elle transformerait la vie de ses propriétaires en un véritable cauchemar.
+Après plusieurs changements de familles et d’adresses, Annabelle aurait mystérieusement disparu… C’est ce que l’on croyait jusqu’à aujourd’hui.
+Un curieux visiteur a volontairement déposé la poupée dans l’une des chambres de notre Hostel.
+Depuis ce jour, des phénomènes étranges se produisent au sein de notre établissement…</p>
 </p>
-        </div> -->
-        <div class="info-top-box">
-            <i class="fas fa-info-circle"></i>
-            <!-- <p>D'après d'anciens témoignages, cette poupée serait possédée et sèmerait le mal autour d'elle. Elle transformerait la vie de ses propriétaires en un véritable cauchemar. Après plusieurs changements de familles et d'adresses, Annabelle aurait mystérieusement disparu... C'est ce que l'on croyait jusqu'à aujourd'hui. Un curieux visiteur a volontairement déposé la poupée dans l'une des chambres de notre Hostel. Depuis ce jour, des phénomènes étranges se produisent au sein de notre établissement... Seriez-vous capable de la maitriser et de l'enfermer pour toujours ? Ou bien est-ce qu'Annabelle aura raison de vous ?
-</p> -->
-            <p>D'après d'anciens témoignages, cette poupée serait possédée et sèmerait le mal autour d'elle. Elle transformerait la vie de ses propriétaires en un véritable cauchemar. Après plusieurs changements de familles et d'adresses, Annabelle aurait mystérieusement disparu... C'est ce que l'on croyait jusqu'à aujourd'hui. Un curieux visiteur a volontairement déposé la poupée dans l'une des chambres de notre Hostel. Depuis ce jour, des phénomènes étranges se produisent au sein de notre établissement... Seriez-vous capable de la maitriser et de l'enfermer pour toujours ? Ou bien est-ce qu'Annabelle aura raison de vous ?<br />
+                
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <h1 id="une-adaptation-dun-grand-classique-du-cinéma-dhorreur">Une adaptation d’un grand classique du cinéma d’horreur</h1>
+<p>Annabelle, la célèbre poupée n’a pas fini d’occuper les cauchemars de ceux qui ont osé regarder ce film. Vous ne l’avez peut-être pas vue mais vous avez sûrement déjà croisé le regard de cette poupée maléfique, devenue une icône du cinéma horrifique. On ne peut s’empêcher de penser qu’Escape Hostel cache une passion pour les célèbres enquêteurs Warren, chasseurs de fantômes dont la vie a inspiré de nombreux récits. C’est d’ailleurs le nom d’une autre salle de l’enseigne, Mysterium – L’Étrange Manoir Warren, sur laquelle vous pouvez lire notre enthousiasme ici.</p>
+
+<p>Dans cette adaptation du film presque éponyme, la poupée Anabelle a été déposée dans l’une des chambres de l’Escape Hostel. Et bien évidemment, cela va déclencher tout un tas d’événements aussi étranges qu’effrayants.</p>
+
+<h1 id="un-accueil-plus-que-réussi">Un accueil plus que réussi</h1>
+<p>Pour cet escape game horrifique, Escape Hostel a mis le paquet sur l’accueil. Et on sait que c’est l’un des points les plus importants pour réussir une immersion. Si vous jouez le soir, vous ne manquerez pas d’observer des phénomènes surnaturels, avant même d’avoir franchi la porte de l’Hostel. Et une fois à l’intérieur, il est difficile de croire que nous sommes dans le même espace d’accueil que celui qui dessert les autres escape games de l’enseigne. Par des jeux de lumières et des bruits stridents, tout ce qui nous entoure devient peu à peu source d’inquiétude et d’appréhension.</p>
+
+<p>L’acteur chargé du briefing d’Anabelle est excellent. Adieu les règles et conseils redondants de l’escape game traditionnel. L’intégralité du discours d’accueil est intégré à la narration. Et ce sur un ton aussi sarcastique que déstabilisant.</p>
+
+<h1 id="une-décoration-de-qualité-et-en-mouvement">Une décoration de qualité et en mouvement.</h1>
+<p>L’escape game Anabelle jouit d’un cadre parfaitement adapté à ce qu’il raconte. Située au dernier étage d’une vieille bâtisse provençale, Anabelle profite pleinement des lieux qu’elle occupe. Le plancher craque sous nos pas, les murs semblent avoir réellement vécu. L’espace sous-pente de ce dernier étage donne l’illusion d’être dans un véritable grenier abandonné.</p>
+
+<p>Ce que nous avons aussi beaucoup apprécié, c’est la crédibilité des phénomènes paranormaux. Nos actions déclenchent parfois de superbes animations ou font encore apparaître une partie du décor jusque là caché. Vous savez peut-être que l’on raffole des animatroniques. Leur présence est plus que justifiée dans Anabelle et témoigne d’une certaine maîtrise de ses concepteurs.</p>
+
+<p>Un système de son puissant accroît fortement l’immersion. Surtout lorsque de puissantes basses font trembler les murs… et les joueurs par la même occasion. Ce sont peut-être les moments qui nous ont le plus effrayés dans Anabelle. Une belle initiative qui nous rappelle l’intensité sonore d’escape game horrifiques d’autres pays. On pourrait juste demander aux vocaux narratifs d’être un peu mieux ajustés pour mieux saisir le déroulé du récit.</p>
+
+<h1 id="que-serait-une-une-expérience-dhorreur-sans-ses-acteurs-">Que serait une une expérience d’horreur sans ses acteurs ?</h1>
+<p>Bien évidemment, vous ne serez pas seuls dans Anabelle et une présence pourrait ralentir votre quête. Si cette dernière pourrait effrayer les plus craintifs d’entre vous, sachez qu’il n’y aucun contact physique. Les interactions sont réalisées dans un respect absolu des joueurs. Les interventions de l’acteur sont parfois même tellement prolongées que l’on finit par s’habituer à sa présence, et naturellement cela fait descendre la peur. Une salle excellente pour ceux qui veulent s’exposer au style horrifique.</p>
+
+<p>Les énigmes respectent bien la thématique du monde enfantin et ludique. Nous n’avons pas rencontré de difficulté particulière hormis sur l’une des toutes dernières où plusieurs interprétations possibles nous ont parfois mené sur de fausses pistes.</p>
+
+        <div>
+            
+                <div class="top-title-container">
+                    <h2 class="top-title">Ressenti Global</h2>
+                </div>
+                <!-- <h1>Ressenti global</h1> -->
+                <p><p>Anabelle est un excellent escape game qui s’inspire d’un classique du cinéma d’horreur. La décoration est splendide et les animations mécaniques subliment l’ambiance générale. Encore une fois, c’est une réussite pour Escape Hostel qui montre qu’il est capable de maîtriser tous les styles d’escape games.</p>
 </p>
+            
         </div>
         
         
@@ -429,7 +501,7 @@
 
         <div class="enseigne-container">
             
-                <h2 class="enseigne-name">Autres expériences chez Escape Hostel - Mazan</h2>
+                <h2 class="enseigne-name">Nos autres tests chez Escape Hostel - Mazan</h2>
             
         </div>        
         <div class="grid-article-container">
@@ -787,6 +859,8 @@
                     <img src="/assets/img/escape/la-legende-du-dragon.webp" alt="la-legende-du-dragon.md">
                     <div class="name">La Légende du Dragon</div>
                     </a>
+              
+            
               
             
               
@@ -1439,8 +1513,9 @@
           </div>
         
     </div>
-    
+
 </body>
+
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
 </body>

@@ -140,9 +140,6 @@
     <title>Bienvenue en Enfer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* body {
-            font-family: Arial, sans-serif;
-        } */
         h1, h2 {
             color: rgb(237, 115, 1);
             font-family: 'Arial', sans-serif;
@@ -291,6 +288,40 @@
             line-height: 1.5;
             color: #555;
         }
+        
+        .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .reservation-button {
+            background: linear-gradient(135deg, #28a745, #218838); /* Gradient green */
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid #1e7e34;
+            box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .reservation-button:hover {
+            background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient */
+            box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+            transform: scale(1.05);
+        }
+
+        .reservation-button:active {
+            transform: scale(0.98);
+            box-shadow: 0px 3px 10px rgba(40, 167, 69, 0.3);
+        }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
@@ -331,6 +362,11 @@
         <div class="title-container">
             <h1>Bienvenue en Enfer</h1>
             
+                <div class="grade-container">
+                    <i class="fas fa-star"></i>
+                    <span>18/20</span>
+                </div>
+            
         </div>
         <div class="info-box">
             <div>
@@ -355,17 +391,40 @@
                 
             </div>
         </div>
+        
+        <div class="scenario-container">
+                
+                <h3 class="scenario-title">Scenario</h3>
+                <p class="scenario-description"><p>On ne plaisante pas avec la Mafia. Qui s’y frotte s’y pique. Avez-vous vraiment envie de savoir ce qu’il s’y passe ? A vos risques et périls. C’est notre unique avertissement.</p>
+</p>
+                
+        </div>
+    </div>
 
-        <!-- <div class="info-top-box">
-            <p>On ne plaisante pas avec la Mafia. Avez-vous vraiment envie de savoir ce qu'il s'y passe ?À vos risques et périls. C'est notre unique avertissement.
+    <div class="content-wrapper">
+        <h1 id="immersion">Immersion</h1>
+<p>Cette plongée dans l’atmosphère de la mafia colombienne est réussie. Dès les premiers pas dans l’aventure, on a le sentiment d’avoir été véritablement capturé par un cartel mafieux obscur, maitre incontesté des trafics en tout genre. Le jeu avance et vous en apprenez davantage sur les activités du cartel.</p>
+
+<h1 id="cohérence">Cohérence</h1>
+<p>Les enigmes s’insèrent en grande majorité dans le thème et l’histoire de Bienvenue en Enfer. Vous avez vite identifié votre but : essayer d’échapper aux griffes de ces bandits.</p>
+
+<h1 id="game-master">Game-Master</h1>
+<p>Avant même de pénêtrer les lieux, le Game Master vous immerge déjà dans l’aventure. Au cours de la partie, les indices sont donnés au bon moment avec un système d’indices plutôt classique.</p>
+
+<h1 id="enigmes">Enigmes</h1>
+<p>Des énigmes recherchées et nombreuses. Assez peu de fouille dans l’ensemble. Pensez à bien vous coordonner entre membres d’équipe lors de périlleuses  manipulations à effectuer.</p>
+
+        <div>
+            
+                <div class="top-title-container">
+                    <h2 class="top-title">Ressenti Global</h2>
+                </div>
+                <!-- <h1>Ressenti global</h1> -->
+                <p><p>Une aventure très immersive. Chapeau bas à Time Out pour la qualité de son storytelling et de ses énigmes.</p>
+
+<p>Test initialement réalisé à Team Time, escape game à Paris.</p>
 </p>
-        </div> -->
-        <div class="info-top-box">
-            <i class="fas fa-info-circle"></i>
-            <!-- <p>On ne plaisante pas avec la Mafia. Avez-vous vraiment envie de savoir ce qu'il s'y passe ?À vos risques et périls. C'est notre unique avertissement.
-</p> -->
-            <p>On ne plaisante pas avec la Mafia. Avez-vous vraiment envie de savoir ce qu'il s'y passe ?À vos risques et périls. C'est notre unique avertissement.<br />
-</p>
+            
         </div>
         
         
@@ -429,7 +488,7 @@
 
         <div class="enseigne-container">
             
-                <h2 class="enseigne-name">Autres expériences chez The Last Mystery - Robion</h2>
+                <h2 class="enseigne-name">Nos autres tests chez The Last Mystery - Robion</h2>
             
         </div>        
         <div class="grid-article-container">
@@ -798,6 +857,8 @@
                     <img src="/assets/img/escape/la-malediction-de-millie.webp" alt="la-malediction-de-millie.md">
                     <div class="name">La Malédiction de Millie</div>
                     </a>
+              
+            
               
             
               
@@ -1464,8 +1525,9 @@
           </div>
         
     </div>
-    
+
 </body>
+
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
 </body>
