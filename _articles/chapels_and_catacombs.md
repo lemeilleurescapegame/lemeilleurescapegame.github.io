@@ -5,7 +5,7 @@ top_name : "chapels_and_catacombs"
 title: "Chapel & Catacombs"
 date: 07-06-2024
 note: 20
-enseigne: "LockDown_Nea_Ionia"
+enseigne: "Lockhill_Athènes"
 theme : "Horreur/Fantastique"
 duree : "2 heures"
 nb-joueur : "2 à 8"
