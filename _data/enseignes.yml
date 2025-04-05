@@ -66,14 +66,14 @@ enseignes:
   Arkham_Escape_Athènes:
     email: ''
     location: Ifigenias 87,176 76 Athènes
-    maps_location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.8154645222094!2d23.7003869757744!3d37.95809457193972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bc5810b6dbfd%3A0x60279670a5c1e859!2sArkham%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872159004!5m2!1sfr!2snl'
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.8154645222094!2d23.7003869757744!3d37.95809457193972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bc5810b6dbfd%3A0x60279670a5c1e859!2sArkham%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872159004!5m2!1sfr!2snl
     name: Arkham Escape - Athènes
     phone: ''
     website: https://www.arkhamescape.gr
   Art_of_Escape_Athènes:
     email: ''
     location: Irakleous 88,176 72 Athènes
-    maps_location: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.8154645222094!2d23.7003869757744!3d37.95809457193972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bda21954e9cf%3A0x4f1921ec28d7b07e!2sArt%20of%20Escape%20-%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872190218!5m2!1sfr!2snl'
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.8154645222094!2d23.7003869757744!3d37.95809457193972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bda21954e9cf%3A0x4f1921ec28d7b07e!2sArt%20of%20Escape%20-%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1743872190218!5m2!1sfr!2snl
     name: Art of Escape - Athènes
     phone: ''
     website: https://artofescape.gr
@@ -1118,7 +1118,7 @@ enseignes:
   Sherlocked_Holmes_Peristeri:
     email: ''
     location: El. Venizelou 106,12132 Peristeri
-    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.3686141789885!2d23.69769977577719!3d38.015185171925836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd289883c8df%3A0x65e85ddfcc2fd774!2sSherlockedHomes-escape%20rooms!5e0!3m2!1sfr!2snl!4v1743873491606!5m2!1sfr!2snl 
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.3686141789885!2d23.69769977577719!3d38.015185171925836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd289883c8df%3A0x65e85ddfcc2fd774!2sSherlockedHomes-escape%20rooms!5e0!3m2!1sfr!2snl!4v1743873491606!5m2!1sfr!2snl
     name: Sherlocked Holmes - Peristeri
     phone: ''
     website: https://sherlockedhomes.gr
@@ -1181,7 +1181,7 @@ enseignes:
   The_Darkwood_Village_Moschato:
     email: ''
     location: Pireos 17,18346 Moschato
-    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.8915835569514!2d23.674721675774258!3d37.956317371940294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bc7af75df209%3A0xbb289f22ff5c05c7!2sThe%20Darkwood%20Village!5e0!3m2!1sfr!2snl!4v1743873582837!5m2!1sfr!2snl 
+    maps_location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.8915835569514!2d23.674721675774258!3d37.956317371940294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bc7af75df209%3A0xbb289f22ff5c05c7!2sThe%20Darkwood%20Village!5e0!3m2!1sfr!2snl!4v1743873582837!5m2!1sfr!2snl
     name: The Darkwood Village - Moschato
     phone: ''
     website: https://thedarkwoodvillage.gr

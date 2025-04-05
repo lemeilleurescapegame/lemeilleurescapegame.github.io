@@ -140,9 +140,6 @@
     <title>Le Trésor du Pêcheur</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* body {
-            font-family: Arial, sans-serif;
-        } */
         h1, h2 {
             color: rgb(237, 115, 1);
             font-family: 'Arial', sans-serif;
@@ -291,6 +288,40 @@
             line-height: 1.5;
             color: #555;
         }
+        
+        .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .reservation-button {
+            background: linear-gradient(135deg, #28a745, #218838); /* Gradient green */
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid #1e7e34;
+            box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .reservation-button:hover {
+            background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient */
+            box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+            transform: scale(1.05);
+        }
+
+        .reservation-button:active {
+            transform: scale(0.98);
+            box-shadow: 0px 3px 10px rgba(40, 167, 69, 0.3);
+        }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
@@ -331,6 +362,11 @@
         <div class="title-container">
             <h1>Le Trésor du Pêcheur</h1>
             
+                <div class="grade-container">
+                    <i class="fas fa-star"></i>
+                    <span>17/20</span>
+                </div>
+            
         </div>
         <div class="info-box">
             <div>
@@ -355,17 +391,50 @@
                 
             </div>
         </div>
+        
+        <div class="scenario-container">
+                
+                <h3 class="scenario-title">Scenario</h3>
+                <p class="scenario-description"><p>Dans le village, il se murmure depuis bien longtemps qu’Armand, le vieux pêcheur, cachait dans sa cabane du bord du lac, un trésor inestimable. La nouvelle base nautique du lac doit bientôt remplacer ce vestige du passé. Exceptionnellement, vous, la famille éloignée, êtes autorisée à pénétrer une dernière fois dans ce lieu chargé de souvenirs.</p>
 
-        <!-- <div class="info-top-box">
-            <p>Dans le village, il se murmure depuis bien longtemps qu'Armand, le vieux pêcheur, cachait dans sa cabane du bord du lac, un trésor inestimable. Depuis sa disparition, aucun de ses héritiers ne s'était encore préoccupé de sa succession. Tout aurait pu rester ainsi de nombreuses années, si un vaste projet d’aménagement n’avait pas vu le jour et poussé ses descendants à se manifester. La nouvelle base nautique du lac doit bientôt remplacer ce vestige du passé. Exceptionnellement, vous, la famille éloignée, êtes autorisée à pénétrer une dernière fois dans ce lieu chargé de souvenirs. Saurez-vous trouver à temps ce trésor avant que la cabane ne soit déconstruite par les pelleteuses ?
+<p>Saurez-vous trouver à temps ce trésor avant que la cabane ne soit déconstruite par les pelleteuses ?</p>
 </p>
-        </div> -->
-        <div class="info-top-box">
-            <i class="fas fa-info-circle"></i>
-            <!-- <p>Dans le village, il se murmure depuis bien longtemps qu'Armand, le vieux pêcheur, cachait dans sa cabane du bord du lac, un trésor inestimable. Depuis sa disparition, aucun de ses héritiers ne s'était encore préoccupé de sa succession. Tout aurait pu rester ainsi de nombreuses années, si un vaste projet d’aménagement n’avait pas vu le jour et poussé ses descendants à se manifester. La nouvelle base nautique du lac doit bientôt remplacer ce vestige du passé. Exceptionnellement, vous, la famille éloignée, êtes autorisée à pénétrer une dernière fois dans ce lieu chargé de souvenirs. Saurez-vous trouver à temps ce trésor avant que la cabane ne soit déconstruite par les pelleteuses ?
-</p> -->
-            <p>Dans le village, il se murmure depuis bien longtemps qu'Armand, le vieux pêcheur, cachait dans sa cabane du bord du lac, un trésor inestimable. Depuis sa disparition, aucun de ses héritiers ne s'était encore préoccupé de sa succession. Tout aurait pu rester ainsi de nombreuses années, si un vaste projet d’aménagement n’avait pas vu le jour et poussé ses descendants à se manifester. La nouvelle base nautique du lac doit bientôt remplacer ce vestige du passé. Exceptionnellement, vous, la famille éloignée, êtes autorisée à pénétrer une dernière fois dans ce lieu chargé de souvenirs. Saurez-vous trouver à temps ce trésor avant que la cabane ne soit déconstruite par les pelleteuses ?<br />
+                
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <h1 id="immersion">Immersion</h1>
+<p>C’est par un beau dimanche ensoleillé que l’on ouvre la porte de cette petite cabane rustique. A l’intérieur, tout semble indiquer la présence encore très récente d’Armand le pêcheur. Comme si ce dernier était parti brusquement, laissant ses affaires personnelles en l’état.</p>
+
+<p>Telle est la clé de la réussite de l’Atelier des Enigmes dans cette salle. L’impression est là de fouiller clandestinement un lieu qui a réellement été habité. Dans la Trésor du Pêcheur, vous ne manipulerez pas des objets en plastique achetés au GIFI du coin. Ce sont de réelles antiquités, la plupart ayant servi, auxquelles vous allez redonner une vie le temps d’une heure.</p>
+
+<p>On aurait presque la larme à l’oeil dans cette ambiance nostalgique et poétique à souhait…</p>
+
+<h1 id="cohérence">Cohérence</h1>
+<p>La Cabane du Pêcheur est sur le point d’être détruite. Laisserez-vous un tel héritage crouler sous des pelleteuses affamées ? Les bruits courent à propos d’un trésor inestimable qu’Armand y cachait. Une raison de plus pour se jeter à l’assaut de cette cabane aux milles et unes surprises.</p>
+
+<p>Un scénario enthousiasmant qui sort des sentiers battus. On ne peut résister à l’envie d’explorer cette cabane et de faire revivre les mémoires d’un pêcheur oublié.</p>
+
+<h1 id="game-master">Game-Master</h1>
+<p>Le briefing d’introduction est excellent. Passé les règles du jeu, notre game-master se métamorphose. Paré de son plus beau gilet jaune, il nous somme d’entrer le plus rapidement dans cette cabane avant que ses ouvriers ne fassent le boulot.</p>
+
+<p>Une fois dedans, les indices vous sont communiqués par un moyen astucieux et parfaitement ancré dans l’esprit du jeu. Armand a bel et bien trouvé un moyen de vous guider sur les traces de son trésor malgré sa disparition.</p>
+
+<h1 id="enigmes">Enigmes</h1>
+<p>Contrairement à Charl-E et sa drôle de mission et Super Game Colors, les énigmes ici ressemblent plus à un escape game traditionnel. Vous y trouverez des clés, des codes mais pas que !</p>
+
+<p>De belles manipulations permettent d’accéder à des recoins insoupçonnés de la cabane. Comprendre comment Armand utilisait sa cabane vous permettra sans doute d’avancer le plus vite possible dans l’histoire.</p>
+
+        <div>
+            
+                <div class="top-title-container">
+                    <h2 class="top-title">Ressenti Global</h2>
+                </div>
+                <!-- <h1>Ressenti global</h1> -->
+                <p><p>Le Trésor du Pêcheur est une véritable invitation au voyage et à la nostalgie. Il séduira tous les types de public, les débutants comme les expérimentés, les familles comme les groupes d’amis. Cet escape game est pour nous le produit phare de L’atelier des Énigmes. Il est la synthèse à lui seul des talents multiples et complémentaires de tout l’atelier.</p>
 </p>
+            
         </div>
         
         
@@ -429,7 +498,7 @@
 
         <div class="enseigne-container">
             
-                <h2 class="enseigne-name">Autres expériences chez L'Atelier des Énigmes - Annecy</h2>
+                <h2 class="enseigne-name">Nos autres tests chez L'Atelier des Énigmes - Annecy</h2>
             
         </div>        
         <div class="grid-article-container">
@@ -890,6 +959,13 @@
             
               
             
+              
+            
+              
+                    <a href="/articles/le-coffre-des-nigm/" class="grid-article-item">
+                    <img src="/assets/img/escape/le-coffre-des-nigm.webp" alt="le-coffre-des-nigm.md">
+                    <div class="name">Le coffre des Nigm</div>
+                    </a>
               
             
               
@@ -1442,8 +1518,9 @@
           </div>
         
     </div>
-    
+
 </body>
+
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
 </body>
