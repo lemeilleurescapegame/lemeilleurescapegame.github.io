@@ -8,13 +8,13 @@ image_name : "montpellier.webp"
 ---
 
 {% include top-articles.html 
-    title="Tous les escapes de Bayonne"
+    title="Top Montepellier"
     list="
     "
 %}
 
 {% include top-all-articles.html 
-    title="Tous les escapes de Bayonne"
+    title="Tous les escapes de Montepellier"
     list="
     "
 %}

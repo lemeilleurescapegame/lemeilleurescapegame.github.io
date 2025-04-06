@@ -8,13 +8,13 @@ image_name : "perpignan.webp"
 ---
 
 {% include top-articles.html 
-    title="Tous les escapes de Bayonne"
+    title="Top Perpignan"
     list="
     "
 %}
 
 {% include top-all-articles.html 
-    title="Tous les escapes de Bayonne"
+    title="Tous les escapes de Perpignan"
     list="
     "
 %}

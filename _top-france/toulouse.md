@@ -8,13 +8,13 @@ image_name : "toulouse.webp"
 ---
 
 {% include top-articles.html 
-    title="Tous les escapes de Bayonne"
+    title="Tops Toulouse"
     list="
     "
 %}
 
 {% include top-articles.html 
-    title="Tous les escapes de Bayonne"
+    title="Tous les escapes de Toulouse"
     list="
     "
 %}

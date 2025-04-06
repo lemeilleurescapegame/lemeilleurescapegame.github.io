@@ -8,13 +8,13 @@ image_name : "pau.webp"
 ---
 
 {% include top-articles.html 
-    title="Tous les escapes de Bayonne"
+    title="Tops Pau"
     list="
     "
 %}
 
 {% include top-all-articles.html 
-    title="Tous les escapes de Bayonne"
+    title="Tous les escapes de Pau"
     list="
     "
 %}

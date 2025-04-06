@@ -8,13 +8,13 @@ image_name : "valence.webp"
 ---
 
 {% include top-articles.html 
-    title="Tous les escapes de Bayonne"
+    title="Top Valence"
     list="
     "
 %}
 
 {% include top-all-articles.html 
-    title="Tous les escapes de Bayonne"
+    title="Tous les escapes de Valence"
     list="
     "
 %}

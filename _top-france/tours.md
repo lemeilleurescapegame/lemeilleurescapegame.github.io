@@ -9,13 +9,13 @@ image_name : "tours.webp"
 
 
 {% include top-articles.html 
-    title="Tous les escapes de Bayonne"
+    title="Tops Tours"
     list="
     "
 %}
 
 {% include top-all-articles.html 
-    title="Tous les escapes de Bayonne"
+    title="Tous les escapes de Tours"
     list="
     "
 %}
