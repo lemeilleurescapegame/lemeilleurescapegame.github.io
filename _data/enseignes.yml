@@ -42,6 +42,13 @@ enseignes:
     name: Adventure Arena - Athènes
     phone: ''
     website: http://adventure-arena.com
+  Agence_Escape_Valréas:
+    email: ''
+    location: 8 place Henri Fabre,84600 Valréas
+    maps_location: ''
+    name: Agence Escape - Valréas
+    phone: +33 7 66 11 14 58
+    website: https://www.agence-escape.com
   Alcatraz_Adventure_SaintEgrève:
     email: ''
     location: 29 Rue des Glairaux,38120 Saint-Egrève
@@ -63,6 +70,13 @@ enseignes:
     name: Arcanium - Dijon
     phone: +33 3 80 23 57 31
     website: https://www.arcanium-dijon.fr
+  ArdEscape_Aubenas:
+    email: ''
+    location: 14 chemin de St Pierre,07200 Aubenas
+    maps_location: ''
+    name: Ard'Escape - Aubenas
+    phone: +33 7 66 67 62 26
+    website: https://www.escape-game-aubenas.com
   Arkham_Escape_Athènes:
     email: ''
     location: Ifigenias 87,176 76 Athènes
@@ -295,6 +309,13 @@ enseignes:
     name: Défis Pirate - Lyon
     phone: +33 4 28 29 04 75
     website: https://defis-pirate.com
+  ESCAPEGAME.LOL_Montpellier:
+    email: ''
+    location: 12 rue Farges,34000 Montpellier
+    maps_location: ''
+    name: ESCAPEGAME.LOL - Montpellier
+    phone: +33 4 99 13 90 88
+    website: https://escapegame.lol
   Elude_Adventure_Rooms_Peristeri:
     email: ''
     location: Ravine 14,12134 Peristeri
@@ -330,6 +351,13 @@ enseignes:
     name: Escape Clue - Peristeri
     phone: ''
     website: https://www.escapeall.gr
+  Escape_Game_Baba_Yaga_Fabrègues:
+    email: ''
+    location: 6 rue Calmette   34110 Fabrègues,34690 Fabrègues
+    maps_location: ''
+    name: Escape Game Baba Yaga - Fabrègues
+    phone: +33 6 34 41 58 01
+    website: https://www.escapegamebabayaga.com
   Escape_Game_Bastille_Grenoble:
     email: ''
     location: 22 quai de France,38000 Grenoble
@@ -442,6 +470,13 @@ enseignes:
     name: Espace2Game - Charancieu
     phone: +33 6 52 41 20 61
     website: https://www.espace2game.com
+  Espace_Escape_Lattes:
+    email: ''
+    location: 909 avenue des Platanes,34970 Lattes
+    maps_location: ''
+    name: Espace Escape - Lattes
+    phone: +33 4 67 27 86 30
+    website: http://bookeo.com
   Exalto_Dardilly:
     email: ''
     location: 41 Chemin du Moulin Carron,69570 Dardilly
@@ -512,6 +547,13 @@ enseignes:
     name: Game Over - Lyon
     phone: +33 9 81 00 69 00
     website: https://escape-game-over-lyon.4escape.io
+  Game_Over_Montpellier:
+    email: ''
+    location: 3650 Boulevard Paul Valéry,34070 Montpellier
+    maps_location: ''
+    name: Game Over - Montpellier
+    phone: +33 4 13 96 15 58
+    website: https://gameover.resasoft.fr
   Games_Evasion_SaintJulienenGenevois:
     email: ''
     location: 13 route d’Annemasse,74160 Saint-Julien-en-Genevois
@@ -645,6 +687,13 @@ enseignes:
     name: Insanity - Peristeri
     phone: ''
     website: https://www.escapeall.gr
+  Instinct_Escape_Juvignac:
+    email: ''
+    location: 9 rue des terres du sud,34990 Juvignac
+    maps_location: ''
+    name: Instinct Escape - Juvignac
+    phone: +33 4 99 78 30 21
+    website: https://bookeo.com
   Intervalle_Lyon:
     email: ''
     location: 235 Rue Vendôme,69003 Lyon
@@ -715,6 +764,13 @@ enseignes:
     name: L'Atelier des Énigmes - Annecy
     phone: +33 9 72 80 17 19
     website: https://www.latelierdesenigmes.fr
+  LExit_Pierrelatte:
+    email: ''
+    location: 25 Avenue de la Gare,26700 Pierrelatte
+    maps_location: ''
+    name: L'Exit - Pierrelatte
+    phone: +33 6 24 79 43 65
+    website: https://www.facebook.com
   LIntrigue_Annecy:
     email: ''
     location: 800 Route des Burnets,74000 Annecy
@@ -821,6 +877,13 @@ enseignes:
     name: Les Secrets du Phoenix - Avignon
     phone: +33 4 32 75 01 70
     website: https://www.lessecretsduphoenix.com
+  Live_Corp_Montpellier:
+    email: ''
+    location: 4 rue Jeanne d'Arc,34000 Montpellier
+    maps_location: ''
+    name: Live Corp - Montpellier
+    phone: +33 9 86 11 98 13
+    website: https://livecorp.fr
   Live_Escape_Grenoble:
     email: ''
     location: 1 rue de la Paix,38000 Grenoble
@@ -863,6 +926,13 @@ enseignes:
     name: MadnesScape - Annemasse
     phone: ''
     website: ''
+  Mas_dIntras_Valvignères:
+    email: ''
+    location: 3080 route d'Intras,07400 Valvignères
+    maps_location: ''
+    name: Mas d'Intras - Valvignères
+    phone: ''
+    website: https://www.masdintras.fr
   Mastermind_Athènes:
     email: ''
     location: Karori 6A,10551 Athènes
@@ -898,6 +968,13 @@ enseignes:
     name: Mission Evasion - Lyon
     phone: +33 6 15 45 25 93
     website: https://www.missionevasion.fr
+  Mission_Exit_Montpellier:
+    email: ''
+    location: 4 rue d'Alger,34000 Montpellier
+    maps_location: ''
+    name: Mission Exit - Montpellier
+    phone: +33 4 99 63 96 09
+    website: https://missionexit.com
   My_Escape_Rhodes:
     email: ''
     location: Steliou Kotiadi 50,851 00 Rhodes
@@ -996,6 +1073,13 @@ enseignes:
     name: Panic Button - Iraklio
     phone: ''
     website: https://www.facebook.com
+  Panique_dans_lAtelier_Montpellier:
+    email: ''
+    location: 8 rue Jacques d'Aragon,34000 Montpellier
+    maps_location: ''
+    name: Panique dans l'Atelier - Montpellier
+    phone: +33 9 64 24 48 57
+    website: https://escapegame-montpellier.fr
   Paradox_Project_Athènes:
     email: ''
     location: Agion Panton 92,176 76 Athènes
@@ -1115,6 +1199,13 @@ enseignes:
     name: Sensas - Lyon
     phone: +33 6 84 79 70 66
     website: https://lyon.sensas.top
+  Sensas_Montpellier:
+    email: ''
+    location: 49 Avenue Georges Clemenceau,34000 Montpellier
+    maps_location: ''
+    name: Sensas - Montpellier
+    phone: ''
+    website: https://montpellier.sensas.top
   Serial_Grifers_Illion:
     email: ''
     location: Achileos 81,13122 Illion
@@ -1136,6 +1227,13 @@ enseignes:
     name: Smart Escape Game - Challes-les-Eaux
     phone: +33 4 79 62 23 84
     website: https://www.smartescapegame.fr
+  Space_Games_Industry_Juvignac:
+    email: ''
+    location: 20 Route de Saint Georges d'Orques,34990 Juvignac
+    maps_location: ''
+    name: Space Games Industry - Juvignac
+    phone: +33 4 99 23 55 50
+    website: https://spacegamesindustry.4escape.io
   Spookey_Escape_Moschato:
     email: ''
     location: Grigoriou Lambraki 8,18345 Moschato
@@ -1171,6 +1269,20 @@ enseignes:
     name: Team Break - Lille
     phone: +33 6 61 87 70 37
     website: https://www.team-break.fr
+  Team_Break_Montélimar:
+    email: ''
+    location: 9, Allée Hispano Suiza,26200 Montélimar
+    maps_location: ''
+    name: Team Break - Montélimar
+    phone: +33 4 26 51 00 15
+    website: https://team-break.fr
+  Team_Quest_Montélimar:
+    email: ''
+    location: Rue Louis Delage,26200 Montélimar
+    maps_location: ''
+    name: Team Quest - Montélimar
+    phone: +33 6 60 29 81 12
+    website: https://www.teamquest-escapegame.fr
   Tempus_Escape_Bayonne:
     email: ''
     location: 15 rue des Pontots,64100 Bayonne
@@ -1192,6 +1304,20 @@ enseignes:
     name: The Darkwood Village - Moschato
     phone: ''
     website: https://thedarkwoodvillage.gr
+  The_Grand_Asylum_Montpellier:
+    email: ''
+    location: 30 rue Balard,34000 Montpellier
+    maps_location: ''
+    name: The Grand Asylum - Montpellier
+    phone: +33 7 44 96 97 02
+    website: https://www.thegrandasylum.fr
+  The_Great_Escape_Game_Montpellier:
+    email: ''
+    location: 43 rue de l'Aiguillerie,34000 Montpellier
+    maps_location: ''
+    name: The Great Escape Game - Montpellier
+    phone: +33 7 68 51 31 56
+    website: https://thegreatescapegame.4escape.io
   The_Great_Escape_Les_Angles:
     email: ''
     location: 206 Avenue de Grand Angles,30133 Les Angles
@@ -1241,6 +1367,13 @@ enseignes:
     name: TimeXperience - Avignon
     phone: +33 4 90 32 35 57
     website: https://timexperience-avignon.4escape.io
+  TimeXperience_Montpellier:
+    email: ''
+    location: 530 rue Raymond Recouly — Garosud,34070 Montpellier
+    maps_location: ''
+    name: TimeXperience - Montpellier
+    phone: +33 4 99 92 88 75
+    website: https://timexperience-montpellier.4escape.io
   Time_Lapse_SoortsHossegor:
     email: ''
     location: 312 avenue des Forgerons,40150 Soorts-Hossegor
@@ -1284,6 +1417,13 @@ enseignes:
     name: Ultime Evasion - Orange
     phone: +33 7 72 16 61 32
     website: https://ultime-evasion.fr
+  Univers_34_PalavaslesFlots:
+    email: ''
+    location: 2 rue de sauve,34250 Palavas-les-Flots
+    maps_location: ''
+    name: Univers 34 - Palavas-les-Flots
+    phone: +33 6 63 82 40 39
+    website: https://bookeo.com
   VanciAventure_RillieuxlaPape:
     email: ''
     location: Fort de Vancia,69140 Rillieux-la-Pape

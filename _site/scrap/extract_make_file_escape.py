@@ -170,7 +170,7 @@ info_top : |{info_top_formatted}
     ## Append the top_name at the end of top_file
     # Check if the top_name is already in the file to avoid duplicates
     #top_file = "../_top-france/lyon.md"
-    top_file = "../_top-world/athenes.md"
+    top_file = "../_top-france/montpelier.md"
 
     top_name_entry = f"{url_suffix},\n"
     if os.path.exists(top_file):

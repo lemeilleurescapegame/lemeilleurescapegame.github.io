@@ -35,7 +35,7 @@ image_name : "grenoble.webp"
     mission-non-repertoriee,
     toque-chef,
     studios-popcorn,
-    prison-break,
+    prison-break-grenoble,
     fantomatch,
     meurtre-a-la-nouvelle-orleans,
     la-crypte,

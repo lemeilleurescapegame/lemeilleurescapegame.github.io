@@ -47,7 +47,7 @@ image_name : "lille.webp"
     koh-lanta,
     fort-boyard,
     experimental-park,
-    lost,
+    lost_lille,
     walking-dead,
     prison-break,
     jurassik-room
