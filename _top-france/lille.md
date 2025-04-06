@@ -7,6 +7,12 @@ url : "lille"
 image_name : "lille.webp"
 ---
 
+{% include top-all-articles.html 
+    title="Tous les escapes de Bayonne"
+    list="
+    "
+%}
+
 
 {% include top-articles.html 
     title = "Tous les escapes de Lille"

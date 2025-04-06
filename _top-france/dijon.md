@@ -6,8 +6,13 @@ lat : 47.32
 url : "dijon"
 image_name : "dijon.webp"
 ---
-
 {% include top-articles.html 
+    title="Tous les escapes de Bayonne"
+    list="
+    "
+%}
+
+{% include top-all-articles.html 
     title = "Tous les escapes de Dijon"
     list = "
     les-reliques-du-mage-noir,

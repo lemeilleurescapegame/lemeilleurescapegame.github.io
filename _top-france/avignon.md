@@ -38,7 +38,7 @@ image_name : "avignon.webp"
     "
 %}
 
-{% include top-articles.html 
+{% include top-all-articles.html 
     title="Tous les escapes d'Avignon"
     list="
     mysterium-letrange-manoir-warren,

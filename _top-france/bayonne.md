@@ -6,8 +6,13 @@ lat : 43.49
 url : "bayonne"
 image_name : "bayonne.webp"
 ---
-
 {% include top-articles.html 
+    title="Tous les escapes de Bayonne"
+    list="
+    "
+%}
+
+{% include top-all-articles.html 
     title="Tous les escapes de Bayonne"
     list="temple-mictlantecuhtli,
     la-cabane-dans-les-bois,

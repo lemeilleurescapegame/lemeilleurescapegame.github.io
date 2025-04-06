@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="title">${article.title}</div>
                         <div class="link">${article.enseigne}</div>
                     </div>
-                    <div class="note">${article.note || "N/A"}/20</div>
+                    ${article.note ? `<div class="note">${article.note}/20</div>` : ""}
                 </a>
             `).join("");
 

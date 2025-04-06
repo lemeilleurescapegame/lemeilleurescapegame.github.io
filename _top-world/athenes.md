@@ -30,8 +30,16 @@ flag_name : "grece-optimized.webp"
     " 
 %}
 
+{% include top-articles-description.html 
+    title="We didn't like" 
+    list="
+    paradox-project-2-the-bookstore,
+    paradox-project-3-the-music-academy
+    " 
+%}
 
-{% include top-articles.html 
+
+{% include top-all-articles.html 
     title = "All the escapes"
     list = "
     the-school-of-burning-souls,
@@ -132,14 +140,6 @@ flag_name : "grece-optimized.webp"
     monikas-diary,
     the-litchver-woodland
     "
-%}
-
-{% include top-articles-description.html 
-    title="We didn't like" 
-    list="
-    paradox-project-2-the-bookstore,
-    paradox-project-3-the-music-academy
-    " 
 %}
 
 

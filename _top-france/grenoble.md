@@ -6,8 +6,13 @@ lat : 45.18
 url : "grenoble"
 image_name : "grenoble.webp"
 ---
-
 {% include top-articles.html 
+    title="Tous les escapes de Bayonne"
+    list="
+    "
+%}
+
+{% include top-all-articles.html 
     title = "Tous les escapes de Grenoble"
     list = "
     bleue,

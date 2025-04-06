@@ -8,6 +8,12 @@ image_name : "lyon.webp"
 ---
 
 {% include top-articles.html 
+    title="Tous les escapes de Bayonne"
+    list="
+    "
+%}
+
+{% include top-all-articles.html 
     title = "Tous les escapes de Lyon"
     list = "
     alien,

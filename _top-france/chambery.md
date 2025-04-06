@@ -6,8 +6,13 @@ lat : 45.57
 url : "chambery"
 image_name : "chambery.webp"
 ---
-
 {% include top-articles.html 
+    title="Tous les escapes de Bayonne"
+    list="
+    "
+%}
+
+{% include top-all-articles.html 
     title = "Tous les escapes de Chambéry"
     list = "
     les-fabuleuses-inventions-du-docteur-apfelgluck,

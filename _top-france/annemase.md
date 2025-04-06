@@ -14,7 +14,7 @@ image_name : "annemasse.webp"
     "
 %}
 
-{% include top-articles.html 
+{% include top-all-articles.html 
     title = "Tous les escapes d'Annnemasse"
     list = "the-mystery-shop,
     le-penitencier,

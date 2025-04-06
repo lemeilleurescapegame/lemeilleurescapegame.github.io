@@ -45,7 +45,7 @@ image_name : "annecy.webp"
     "
 %}
 
-{% include top-articles.html 
+{% include top-all-articles.html 
     title="Tous les escapes d'Annecy"
     list="lechoppe-de-madame-ming,
     celestia-la-cite-oubliee,
