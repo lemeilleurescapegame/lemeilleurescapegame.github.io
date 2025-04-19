@@ -1,7 +1,7 @@
 ---
 layout: article_not_descriptive
-url: "sensas"
-top_name : "sensas"
+url: "sensas_lyon"
+top_name : "sensas_lyon"
 title: "Sensas"
 date: 07-06-2024
 enseigne: "Sensas_Lyon"

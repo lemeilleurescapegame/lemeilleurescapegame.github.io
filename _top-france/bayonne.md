@@ -7,15 +7,26 @@ url : "bayonne"
 image_name : "bayonne.webp"
 ---
 {% include top-articles.html 
-    title="Tous les escapes de Bayonne"
+    title="Meilleur Escape Game Bayonne 2021"
     list="
+    temple-mictlantecuhtli,
+    mission-kepler
+    "
+%}
+
+{% include top-articles.html 
+    title="Meilleur Escape Game Bayonne 2017"
+    list="
+    la-cabane-dans-les-bois,
+    le-cartel-de-san-pedro,
+    prisonniers-de-la-chambre-froide,
+    lartefact-du-professeur-stanley
     "
 %}
 
 {% include top-all-articles.html 
     title="Tous les escapes de Bayonne"
     list="temple-mictlantecuhtli,
-    la-cabane-dans-les-bois,
     la-cabane-dans-les-bois,
     le-manoir,
     mission-kepler,

@@ -10,6 +10,5 @@ duree : "60 minutes"
 nb-joueur : "3 - 8"
 image_name : "lost.webp"
 info_top : |
-    Agents, l'heure est grave ! Notre ennemi le cruel dictateur Pedro a capturé l'un des nôtres et l'aurait enfermé dans une base secrète située sur une île des caraïbes. A bord d'un avion détourné, nous vous envoyons là-bas afin de lui prêter main forte...
-    
+    Agents, l'heure est grave ! Notre ennemi le cruel dictateur Pedro a capturé l'un des nôtres et l'aurait enfermé dans une base secrète située sur une île des caraïbes. A bord d'un avion détourné, nous vous envoyons là-bas afin de lui prêter main forte... 
 ---

@@ -140,9 +140,6 @@
     <title>Prisonniers de la chambre froide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* body {
-            font-family: Arial, sans-serif;
-        } */
         h1, h2 {
             color: rgb(237, 115, 1);
             font-family: 'Arial', sans-serif;
@@ -291,6 +288,40 @@
             line-height: 1.5;
             color: #555;
         }
+        
+        .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .reservation-button {
+            background: linear-gradient(135deg, #28a745, #218838); /* Gradient green */
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid #1e7e34;
+            box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .reservation-button:hover {
+            background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient */
+            box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+            transform: scale(1.05);
+        }
+
+        .reservation-button:active {
+            transform: scale(0.98);
+            box-shadow: 0px 3px 10px rgba(40, 167, 69, 0.3);
+        }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
@@ -355,17 +386,21 @@
                 
             </div>
         </div>
+        
+        <div class="scenario-container">
+                
+                <h3 class="scenario-title">Scenario</h3>
+                <p class="scenario-description">
+</p>
+                
+        </div>
+    </div>
 
-        <!-- <div class="info-top-box">
-            <p>Suite à une agréable soirée avec votre groupe, vous vous réveillez tous assis sur un sol froid et dur, dans une pièce inconnue. Dans la pénombre, vous distinguez vaguement quelques éléments de la pièce et vous comprenez que vous êtes dans une chambre froide. Sans le savoir, vous êtes tombés dans les filets d’un des pires criminels existant et vous ne voulez pas savoir ce qui se passera dans une heure. Bon courage pour vous sortir de là...
-</p>
-        </div> -->
-        <div class="info-top-box">
-            <i class="fas fa-info-circle"></i>
-            <!-- <p>Suite à une agréable soirée avec votre groupe, vous vous réveillez tous assis sur un sol froid et dur, dans une pièce inconnue. Dans la pénombre, vous distinguez vaguement quelques éléments de la pièce et vous comprenez que vous êtes dans une chambre froide. Sans le savoir, vous êtes tombés dans les filets d’un des pires criminels existant et vous ne voulez pas savoir ce qui se passera dans une heure. Bon courage pour vous sortir de là...
-</p> -->
-            <p>Suite à une agréable soirée avec votre groupe, vous vous réveillez tous assis sur un sol froid et dur, dans une pièce inconnue. Dans la pénombre, vous distinguez vaguement quelques éléments de la pièce et vous comprenez que vous êtes dans une chambre froide. Sans le savoir, vous êtes tombés dans les filets d’un des pires criminels existant et vous ne voulez pas savoir ce qui se passera dans une heure. Bon courage pour vous sortir de là...<br />
-</p>
+    <div class="content-wrapper">
+        
+
+        <div>
+            
         </div>
         
         
@@ -429,7 +464,7 @@
 
         <div class="enseigne-container">
             
-                <h2 class="enseigne-name">Autres expériences chez Tempus Escape - Bayonne</h2>
+                <h2 class="enseigne-name">Nos autres tests chez Tempus Escape - Bayonne</h2>
             
         </div>        
         <div class="grid-article-container">
@@ -1560,8 +1595,9 @@
           </div>
         
     </div>
-    
+
 </body>
+
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
 </body>

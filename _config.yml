@@ -26,6 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 # url: "https://lemeilleurescapegame.fr" # the base hostname & protocol for your site, e.g. http://example.com
 url: "https://lemeilleurescapegame.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl : ''
+article_url : "{{base_url}}/articles"
 
 
 # Build settings

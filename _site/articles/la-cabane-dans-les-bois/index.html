@@ -140,9 +140,6 @@
     <title>La Cabane dans les Bois</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* body {
-            font-family: Arial, sans-serif;
-        } */
         h1, h2 {
             color: rgb(237, 115, 1);
             font-family: 'Arial', sans-serif;
@@ -291,6 +288,40 @@
             line-height: 1.5;
             color: #555;
         }
+        
+        .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .reservation-button {
+            background: linear-gradient(135deg, #28a745, #218838); /* Gradient green */
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid #1e7e34;
+            box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .reservation-button:hover {
+            background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient */
+            box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+            transform: scale(1.05);
+        }
+
+        .reservation-button:active {
+            transform: scale(0.98);
+            box-shadow: 0px 3px 10px rgba(40, 167, 69, 0.3);
+        }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
@@ -331,6 +362,11 @@
         <div class="title-container">
             <h1>La Cabane dans les Bois</h1>
             
+                <div class="grade-container">
+                    <i class="fas fa-star"></i>
+                    <span>17.5/20</span>
+                </div>
+            
         </div>
         <div class="info-box">
             <div>
@@ -355,17 +391,35 @@
                 
             </div>
         </div>
+        
+        <div class="scenario-container">
+                
+                <h3 class="scenario-title">Scenario</h3>
+                <p class="scenario-description"><p>Une légende perdure depuis longtemps dans la région de Blackville au Canada. On raconte que quelque chose rode dans la forêt.  Vous rejoignez une cabane abandonnée pour vous y réfugier. A peine le temps de jeter un coup d’œil autour de vous pour vous rendre compte qu’au final, vous seriez peut-être plus en sécurité à l’extérieur</p>
+</p>
+                
+        </div>
+    </div>
 
-        <!-- <div class="info-top-box">
-            <p>Dans la région de Blackville, dans les forêts canadiennes, une présence rôde. En randonnée, soudain des cris retentissent, vous forçant à vous réfugier dans une cabane abandonnée que vous barricadez pour vous protéger. Cependant, une fois à l'intérieur, vous réalisez que peut-être vous seriez plus en sécurité à l'extérieur. Vous avez 60 minutes pour trouver les bonnes solutions !
-</p>
-        </div> -->
-        <div class="info-top-box">
-            <i class="fas fa-info-circle"></i>
-            <!-- <p>Dans la région de Blackville, dans les forêts canadiennes, une présence rôde. En randonnée, soudain des cris retentissent, vous forçant à vous réfugier dans une cabane abandonnée que vous barricadez pour vous protéger. Cependant, une fois à l'intérieur, vous réalisez que peut-être vous seriez plus en sécurité à l'extérieur. Vous avez 60 minutes pour trouver les bonnes solutions !
-</p> -->
-            <p>Dans la région de Blackville, dans les forêts canadiennes, une présence rôde. En randonnée, soudain des cris retentissent, vous forçant à vous réfugier dans une cabane abandonnée que vous barricadez pour vous protéger. Cependant, une fois à l'intérieur, vous réalisez que peut-être vous seriez plus en sécurité à l'extérieur. Vous avez 60 minutes pour trouver les bonnes solutions !<br />
-</p>
+    <div class="content-wrapper">
+        <h1 id="immersion">Immersion</h1>
+<p>C’est en retirant le bandeau qui cache nos yeux que notre équipe découvre un refuge austère et humide. Cette cabane, n’est pas au fond du jardin, mais au beau milieu d’une forêt mystérieuse et hostile. Nous sommes très vites subjugués par la qualité des décors. Too Late a fait appel à une équipe de décorateurs professionels pour cette room. Le réalisme est ainsi poussé à son maximum et donne le sentiment d’infiltrer un polar hollywoodien.</p>
+
+<p>On oublie très vite le grand soleil qui berce le pays basque pour se laisser envahir par cette tempête violente qui s’abat sur notre abri. La bande sonore y est pour beaucoup mêlant orages et pluies ténébreuses. Alternant moments de fous rires et crises de panique, nous avons finalement réussi à rejoindre la dernière pièce. Le passage pour y accéder est tout autant remarquable qu’inespéré.</p>
+
+<h1 id="cohérence">Cohérence</h1>
+<p>Egarés dans cette fôret, votre équipe de randonneur a eu la brillante idée de se réfugier dans cette terrible cabane. Son hôte, un vieux psychopathe un peu pervers, vous a laissé quelques indices pour fuir. Une histoire qui tient la route, sans anachronisme ni incohérence. L’enchainement des pièces est crescendo, et gagne de plus en plus en intensité au fur et à mesure de votre avancée.</p>
+
+<p>Le mode de jeu un peu particulier, vous donne 45 minutes de base pour tenter de sortir de la cabane. Vous pouvez néanmoins gagner 3 fois 5 minutes supplémentaires par une méthode que vous comprendrez vite une fois à l’intérieur.</p>
+
+<h1 id="game-master">Game-Master</h1>
+<p>Le vieux monsieur chargé de vous aider à progresser dans l’aventure est lui-même le proprétaire de cette cabane. Sa voix rocailleuse et bestiale commentera vos moindres faits et gestes. Si une partie de notre équipe l’a jugé un peu trop présente, j’ai pour ma part adoré la réactivité du game-master. Ce dernier a fait preuve d’une répartie hors du commun, capable d’un humour subtil et spontané.</p>
+
+<h1 id="enigmes">Enigmes</h1>
+<p>Le gros point fort de la salle est sans doute sa diversité de mécanismes en tout genre. Fait rare dans les escape game, on ne dénombre aucun cadenas. C’est peut-être une question de goût et de couleurs, mais notre équipe a toujours été très sensible au travail effectué pour faire disparaitre les clés et les cadenas. Ici, tout est intégré aux décor, des peux de bêtes, aux planches de bois. Une grande partie est manipulable, pour notre plus grand bonheur. Le niveau de difficulté global n’est pas très élevé et pourra convenir à des joueurs peu expérimentés.</p>
+
+        <div>
+            
         </div>
         
         
@@ -429,7 +483,7 @@
 
         <div class="enseigne-container">
             
-                <h2 class="enseigne-name">Autres expériences chez Too late escape game</h2>
+                <h2 class="enseigne-name">Nos autres tests chez Too late escape game</h2>
             
         </div>        
         <div class="grid-article-container">
@@ -1565,8 +1619,9 @@
           </div>
         
     </div>
-    
+
 </body>
+
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
 </body>
