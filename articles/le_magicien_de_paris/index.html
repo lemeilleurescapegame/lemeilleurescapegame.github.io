@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf8">
+<meta content="IE-edge,chrome=1" http-equiv="X-UA-Compatable">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Escape game reviews">
+<title>Le meilleur escape game</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-wrap">
+    <div class="logo">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo">
+        </a>
+    </div>
+
+    <ul class ="sidebar">
+        <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li> <a href="/top-france">Top France</a> </li>
+        <li> <a href="/top-world">Top World</a> </li>
+        <li> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li> <a href="/horreur">Horreur</a> </li>
+        <!-- <li> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
+
+    </ul>
+    <ul>
+        <li class="hideOnMobile"> <a href="/top-france">Top France</a> </li>
+        <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li>
+        <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <!-- <li class="search-icon">
+            <input type="search" id="search-input" placeholder="Search">
+            <button id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </li> -->
+
+        <!-- <form action="/search.html" method="get">
+            <li class="search-icon">
+              <input type="search" id="search-input" name="query" placeholder="Search">
+              <button id="search-button" type="submit"value="search">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                  <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+              </button>
+              
+            </li>
+        </form> -->
+        <form action="/search.html" method="get" class="search-form">
+            <input type="text" id="search-box" name="query" placeholder="Search...">
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 
+                    75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 
+                    69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 
+                    0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </form>
+
+        <!-- <form action="/search.html" method="get">
+            <label for="search-box">Search</label>
+            <input type="text" id="search-box" name="query">
+            <input type="submit" value="search">
+        </form> -->
+
+        <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+</nav>
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'none'
+    }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.getElementById("search-button");
+
+        function performSearch() {
+            const query = searchInput.value.trim();
+            console.log("Searching for:", query);  // Log to check the search term
+            
+            if (query) {
+                // Select all article elements (ensure the class '.article' exists)
+                const articles = document.querySelectorAll('.article'); // Make sure each article has the '.article' class
+                
+                console.log("Articles found:", articles.length); // Log how many articles are found
+                
+                articles.forEach(article => {
+                    const title = article.querySelector('.title') ? article.querySelector('.title').textContent.toLowerCase() : '';
+                    const content = article.querySelector('.content') ? article.querySelector('.content').textContent.toLowerCase() : '';
+                    
+                    console.log("Title:", title); // Log title for each article
+                    console.log("Content:", content); // Log content for each article
+                    
+                    if (title.includes(query.toLowerCase()) || content.includes(query.toLowerCase())) {
+                        article.style.display = 'block';  // Show matching article
+                        console.log("Showing article:", title); // Log which article is being shown
+                    } else {
+                        article.style.display = 'none';   // Hide non-matching article
+                        console.log("Hiding article:", title); // Log which article is being hidden
+                    }
+                });
+            }
+        }
+
+        // Trigger search when clicking the button
+        searchButton.addEventListener("click", performSearch);
+
+        // Trigger search when pressing "Enter" key in the input field
+        searchInput.addEventListener("keydown", function (event) {
+            console.log("Key pressed:", event.key);  // Log the pressed key
+            if (event.key === "Enter") {
+                event.preventDefault(); // Prevent default form submission or page reload on Enter key press
+                performSearch();
+            }
+        });
+    });
+
+
+
+</script>
+    <head>
+    <title>Le Magicien de Paris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1, h2 {
+            color: rgb(237, 115, 1);
+            font-family: 'Arial', sans-serif;
+        }
+        .content-wrapper {
+            margin: 0 auto;
+            padding: 10px;
+            max-width: 90%; /* Responsive wrapper */
+        }
+
+        .content {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .header-image-container {
+            position: relative;
+            width: 100%;
+            height: 300px; /* Adjust the height */
+            overflow: hidden;
+        }
+        .header-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .banner {
+            position: relative;
+            text-align: center;
+            padding: 15px;
+        }
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .info-box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            width: 90%;
+            margin: 0 auto;
+            border: 2px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .info-box div {
+            text-align: center;
+            margin: 0;
+        }
+        .info-box i {
+            font-size: 24px;
+            margin-bottom: 2px;
+        }
+
+        .enseigne-box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            width: 90%;
+            margin: 0 auto;
+            border: 2px solid #cccccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .enseigne-box div {
+            text-align: center;
+            margin: 0;
+        }
+        .enseigne-box i {
+            font-size: 24px;
+            margin-bottom: 2px;
+        }
+
+        .enseigne-name {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--default-blue);
+            margin-bottom: 5px;
+        }
+
+        .enseigne-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            position: relative;
+            gap: 10px;
+        }
+        .title-container h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: rgb(18, 18, 18);
+            text-align: center;
+        }
+        .grade-container {
+            right: 20px;
+            display: flex;
+            align-items: center;
+            background-color: rgba(237, 115, 1, 0.1);
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            padding: 5px 10px;
+        }
+        .grade-container i {
+            font-size: 2em;
+            color: rgb(237, 115, 1);
+            margin-right: 5px;
+        }
+        .grade-container span {
+            font-size: 2em;
+            color: rgb(237, 115, 1);
+        }
+
+        .scenario-container {
+            background-color: #f7f8fc;
+            color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 1 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--default-blue);
+            font-family: 'Arial', sans-serif;
+        }
+        .scenario-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--default-blue);
+            margin-bottom: 10px;
+        }
+        .scenario-description {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+        
+        .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .reservation-button {
+            background: linear-gradient(135deg, #28a745, #218838); /* Gradient green */
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid #1e7e34;
+            box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .reservation-button:hover {
+            background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient */
+            box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+            transform: scale(1.05);
+        }
+
+        .reservation-button:active {
+            transform: scale(0.98);
+            box-shadow: 0px 3px 10px rgba(40, 167, 69, 0.3);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                max-width: 100%;
+                padding: 10px;
+            }
+
+            .title-container h1 {
+                font-size: 1.8em;
+            }
+
+            .info-box, .enseigne-box {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .header-image-container {
+                height: 150px; /* Reduce header image height */
+            }
+
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+        <div class="header-image-container">
+            <img src="/assets/img/escape/paris-magicien-de-paris-optimized.webp" alt="Le Magicien de Paris" class="header-image">
+        </div>
+    
+    
+    <div class="content-wrapper">
+        <div class="title-container">
+            <h1>Le Magicien de Paris</h1>
+            
+                <div class="grade-container">
+                    <i class="fas fa-star"></i>
+                    <span>20/20</span>
+                </div>
+            
+        </div>
+        <div class="info-box">
+            <div>
+                
+                    <i class="fas fa-film"></i>
+                    <h4>Thème</h4>
+                    <p>Magie</p>
+                
+            </div>
+            <div>
+                
+                    <i class="fas fa-clock"></i>
+                    <h4>Durée</h4>
+                    <p>70 min</p>
+                
+            </div>
+            <div>
+                
+                    <i class="fas fa-users"></i>
+                    <h4>Nombre de joueurs</h4>
+                    <p>2 à 6</p>
+                
+            </div>
+        </div>
+        
+        <div class="scenario-container">
+                
+                <h3 class="scenario-title">Scenario</h3>
+                <p class="scenario-description"><p>Les magiciens ont pour mission de nous surprendre par leurs grandes illusions spectaculaires, c’est le cas du très reconnu Magicien de Paris. Le jour il pratique des tours exceptionnels mais lorsqu’il retourne dans son atelier de création, il pratique une magie bien plus expérimentale… Sa dernière création est plutôt inquiétante tellement elle s’avère puissante. Si personne ne tente de la lui voler, il risquerait de causer de nombreux dégâts. Il va falloir être aussi créatif que lui pour réussir à lever le voile sur ce secret trop bien gardé.</p>
+</p>
+                
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <h1 id="immersion">Immersion</h1>
+<p>Quelques jours avant votre session, une mise en bouche textuelle alléchante vous parviendra. Une sorte d’avant-goût de l’expérience peu commune qui vous attend. Une fois sur place, une chose frappe d’emblée : la devanture atypique de l’enseigne, très différente de la plupart des escape game que vous avez pu jouer auparavant. Pas d‘écriteau escape game collé à la vitre ici. Pas de salle d’accueil avec fauteuil et bonbons. L’immersion commence in media res.</p>
+
+<p>Et dans le domaine, qualité est souvent synonyme de moyens matériels. Cette salle ne déroge pas à la règle. Les décors aux finitions parfaites fourmillent de détails et donnent clairement envie de passer du temps dans chaque pièce pour les contempler.  Gros boulot au niveau des jeux de lumière également. Ils créent à eux seuls des ambiances hypnotisantes et spectaculaires. Ajoutez à cela l’usage de machines à fumée et d’effets spéciaux renversants. Préparez-vous à plonger littéralement dans l’envers du décor du monde de la magie.</p>
+
+<p>Vous en prendrez plein les yeux… et les oreilles ! Car oui, le son prend toute sa part dans le sentiment d’immersion insufflé par les créateurs du jeu. L’une des raisons à cela tient aux équipements sonores utilisés. Du haut de gamme réglé à la perfection pour faire vibrer les murs et vous faire frissonner. Alors qu’on avait expérimenté ce type de système-son en Hollande ou en Espagne, rares sont les salles françaises dans lesquelles on en a croisés. Pour finir, la bande-son est unique et travaillée. Elle est composée d’une multitude de bruitages et de thèmes musicaux originaux.</p>
+
+<h1 id="cohérence">Cohérence</h1>
+<p>Deep Inside a imaginé un concept unique qui relie ses deux scénarios. C’est au cœur d’une mystérieuse cité souterraine que l’aventure prend place. L’idée est aussi originale que brillamment concrétisée. Là encore, les décors sont de grande classe et qui plus est ultra crédibles. L’endroit paraît daté, abandonné et mystérieux. De quoi susciter immédiatement l’envie de l’explorer.</p>
+
+<p>Sachez qu’il est possible d’enchaîner les deux salles de l’enseigne sans interruption, ce que nous avons fait. Aucun regret, bien au contraire. Le concept ne casse pas l’élan de votre équipe. Il décuple tellement l’adrénaline qu’on conseillerait à n’importe qui d’opter pour ce choix. La transition d’un scénario à l’autre est tellement parfaite, tellement fluide. Quel bonheur de vivre une expérience pensée comme un tout ultra-coherent et réfléchi.</p>
+
+<p>Dans le milieu des escape, la magie est un thème récurrent. Sauf que l’histoire racontée est ici complètement originale. Elle change des scénarios inspirés d’Harry Potter et d’Harry Houdini. Le magicien de Paris est un voyage qui retrace l’évolution de la magie à travers les âges. Au-delà d’être un bel hommage à la discipline, c’est un sans-faute côté cohérence. À aucun moment, vous ne rencontrerez des écriteaux « ne pas toucher», tout ce qui hors-jeu est hors de portée, et ce, dans les deux salles de Deep Inside.</p>
+
+<h1 id="game-master">Game-Master</h1>
+<p>L’expérience se veut la plus immersive possible. Elle débute à peine la porte d’entrée refermée. Oubliez les traditionnelles questions sur le nombre de salles jouées et les briefing oraux. L’idée est de vous faire oublier que vous jouez un escape game. L’accent est mis sur l’expérience et l’histoire de la cité des martyrs imaginé par l’enseigne. Les règles de l’escape game vous seront donc communiquées d’une manière discrète et très amusante.</p>
+
+<p>Le moyen de communiquer avec le game-master est classique mais efficace. Les indices sont clairs et précis. Ils vous mettront habilement sur la piste au moment opportun.</p>
+
+<p>Impossible de dévoiler l’autre facette du game-master. On dira seulement qu’il orchestre un twist grandiose et mémorable. L’ambiance visuelle et sonore joue à fond à cet instant et rend sa performance mémorable. On sent la patte de passionnés de théâtre immersif que sont les deux créateurs.</p>
+
+<h1 id="enigmes">Enigmes</h1>
+<p>Si vous suivez nos avis régulièrement, vous savez surement que nous sommes très friands des expériences qui mélangent énigmes et théâtre immersif. Notre test de The Live Thriller et du feu « Mutations » de Geekopolis ont marqué à jamais notre mémoire. Deep Inside se situe dans la lignée des expériences citées précédemment. Dans cette salle, le théâtre immersif se taille une belle part et ça n’est pas pour nous déplaire. Les interventions sont millimétrées et génialement menées. On en redemande !!!</p>
+
+<p>Votre périple vous amènera à croiser des machines à tour en tout genre et vous prendrez assurément un malin plaisir à les manipuler. Aucun code farfelu à rentrer ni calcul qui n’aurait pas sa place dans cet univers. Toutes vos actions servent à progresser dans la tanière du magicien et visent à accomplir l’objectif initial de votre mission. Si vous jouez les deux salles de Deep Inside à la suite, vous aurez droit à une fin spéciale et spectaculaire pour le Magicien de Paris.</p>
+
+        <div>
+            
+                <div class="top-title-container">
+                    <h2 class="top-title">Ressenti Global</h2>
+                </div>
+                <!-- <h1>Ressenti global</h1> -->
+                <p><p>Deep Inside frappe très fort en proposant deux salles ultra-immersives et complémentaires. La patte de passionnés de loisir immersif se sent clairement. On vous recommande chaudement de jouer Le Magicien de Paris et le Palais de l’horreur.</p>
+</p>
+            
+        </div>
+        
+        
+
+        
+            <div class="reservation-button-container">
+                <a href="https://deepinsideparis.fr/" class="reservation-button" target="_blank">
+                    🏷️ Réserver ici
+                </a>
+            </div>
+        
+
+        
+            <div class="enseigne-container">
+                
+                        <h2 class="enseigne-name">Deep Inside</h2> <!-- Display the enseigne's name at the top -->
+                
+                <div class="enseigne-box">
+                    <div>
+                        
+                            <i class="fas fa-location-arrow"></i>
+                            <h4>Location</h4>
+                            <p>7 Quai de la Seine, 75019 Paris, France</p>
+                            
+                            
+                            <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.616808277504!2d2.36751911193107!3d48.884581071216054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66df98be8b56f%3A0x229b24e13001e4b2!2sDeep%20Inside%20Escape%20Game!5e0!3m2!1sfr!2snl!4v1742578195554!5m2!1sfr!2snl"
+                                width="100%" 
+                                height="50%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe> 
+                            
+                        
+                    </div>
+                    <div>
+                        
+                            <i class="fas fa-envelope"></i>
+                            <h4>Contact</h4>
+                            <p>07.80.91.43.70</p>
+                            <p>contact@deepinsideparis.fr</p>
+                        
+                    </div>
+                    <div>
+                        
+                            <i class="fas fa-link"></i>
+                            <h4>Site Web</h4>
+                            <a href="https://deepinsideparis.fr/" target="_blank">https://deepinsideparis.fr/</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+        
+
+        
+        
+        
+         <!--Find a matching enseigne-->
+        
+
+        <div class="enseigne-container">
+            
+                <h2 class="enseigne-name">Nos autres tests chez Deep Inside</h2>
+            
+        </div>        
+        <div class="grid-article-container">
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                    <a href="/articles/le_palais_de_lhoreur/" class="grid-article-item">
+                    <img src="/assets/img/escape/paris-palais-horreur-optimized.webp" alt="le_palais_de_lhoreur.md">
+                    <div class="name">Le Palais de l'Horreur</div>
+                    </a>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </div>
+        
+    </div>
+
+</body>
+
+    <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
+<script type="text/javascript" src="/assets/js/functions.js"></script>
+</body>
+</html>

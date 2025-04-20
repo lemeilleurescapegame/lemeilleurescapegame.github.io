@@ -1,0 +1,2852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf8">
+<meta content="IE-edge,chrome=1" http-equiv="X-UA-Compatable">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Escape game reviews">
+<title>Le meilleur escape game</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-wrap">
+    <div class="logo">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo">
+        </a>
+    </div>
+
+    <ul class ="sidebar">
+        <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li> <a href="/top-france">Top France</a> </li>
+        <li> <a href="/top-world">Top World</a> </li>
+        <li> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li> <a href="/horreur">Horreur</a> </li>
+        <!-- <li> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
+
+    </ul>
+    <ul>
+        <li class="hideOnMobile"> <a href="/top-france">Top France</a> </li>
+        <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li>
+        <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <!-- <li class="search-icon">
+            <input type="search" id="search-input" placeholder="Search">
+            <button id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </li> -->
+
+        <!-- <form action="/search.html" method="get">
+            <li class="search-icon">
+              <input type="search" id="search-input" name="query" placeholder="Search">
+              <button id="search-button" type="submit"value="search">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                  <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+              </button>
+              
+            </li>
+        </form> -->
+        <form action="/search.html" method="get" class="search-form">
+            <input type="text" id="search-box" name="query" placeholder="Search...">
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 
+                    75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 
+                    69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 
+                    0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </form>
+
+        <!-- <form action="/search.html" method="get">
+            <label for="search-box">Search</label>
+            <input type="text" id="search-box" name="query">
+            <input type="submit" value="search">
+        </form> -->
+
+        <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+</nav>
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'none'
+    }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.getElementById("search-button");
+
+        function performSearch() {
+            const query = searchInput.value.trim();
+            console.log("Searching for:", query);  // Log to check the search term
+            
+            if (query) {
+                // Select all article elements (ensure the class '.article' exists)
+                const articles = document.querySelectorAll('.article'); // Make sure each article has the '.article' class
+                
+                console.log("Articles found:", articles.length); // Log how many articles are found
+                
+                articles.forEach(article => {
+                    const title = article.querySelector('.title') ? article.querySelector('.title').textContent.toLowerCase() : '';
+                    const content = article.querySelector('.content') ? article.querySelector('.content').textContent.toLowerCase() : '';
+                    
+                    console.log("Title:", title); // Log title for each article
+                    console.log("Content:", content); // Log content for each article
+                    
+                    if (title.includes(query.toLowerCase()) || content.includes(query.toLowerCase())) {
+                        article.style.display = 'block';  // Show matching article
+                        console.log("Showing article:", title); // Log which article is being shown
+                    } else {
+                        article.style.display = 'none';   // Hide non-matching article
+                        console.log("Hiding article:", title); // Log which article is being hidden
+                    }
+                });
+            }
+        }
+
+        // Trigger search when clicking the button
+        searchButton.addEventListener("click", performSearch);
+
+        // Trigger search when pressing "Enter" key in the input field
+        searchInput.addEventListener("keydown", function (event) {
+            console.log("Key pressed:", event.key);  // Log the pressed key
+            if (event.key === "Enter") {
+                event.preventDefault(); // Prevent default form submission or page reload on Enter key press
+                performSearch();
+            }
+        });
+    });
+
+
+
+</script>
+    <header class="head-main">
+    <section class="hero">
+        <div class="hero-container">
+            <div class="head">
+                Quel est le meilleur escape game <a href="/top-france" class= "styled-link">en France</a>? La meilleure escape room à <a href="/top-world" class="styled-link">l'étranger</a> ?
+            </div>
+            <!-- <div class="description-head">
+                Découvrez nos Tops, tests, avis, et classement des escape game à Amsterdam (Pays-Bas), 
+                    à Annecy,  à Athènes (Grèce), à Avignon, à Barcelone et en Espagne, à Bayonne, à Bordeaux, 
+                    à Bruxelles et en Belgique, à Chambéry, à Berlin et en Allemagne, à Dijon, à Genève (Suisse), 
+                    à Grenoble, à Lille, à Lyon, à Montélimar, à Montpellier, à Nantes, à Nice, à Nîmes,  à Paris, à Pau, 
+                    à Prague (République Tchèque), à Perpignan, à Tokyo (Japon), à Toulouse, à Tours, à Valence…
+            </div>             -->
+        </div>
+    </section>
+    <section class="hero">
+        <div>
+            <h2 class="front-page-head">
+                <i class="fas fa-light fa-pen"></i> Nos derniers tests
+            </h2>
+        </div>
+        <div class="container" id="container"></div>
+
+        <div class="grid-article-container-3">
+            
+            
+                    <a href="/articles/argent-sale/" class="grid-article-item">
+                    <img src="/assets/img/escape/argent-sale-enigma-city-escape-game-toulouse.webp" alt="argent-sale.md">
+                    <div class="name">Argent sale</div>
+                    </a>
+            
+                    <a href="/articles/temple_mictlantecuhtli/" class="grid-article-item">
+                    <img src="/assets/img/escape/bayonne-too-late-temple-mictlantecuhtli.jpg" alt="temple_mictlantecuhtli.md">
+                    <div class="name">Le Temple de Mictlantecuhtli</div>
+                    </a>
+            
+                    <a href="/articles/prison_west_city/" class="grid-article-item">
+                    <img src="/assets/img/escape/prison-west-city-optimized.webp" alt="prison_west_city.md">
+                    <div class="name">La prison de West City</div>
+                    </a>
+            
+                    <a href="/articles/antenna_palace/" class="grid-article-item">
+                    <img src="/assets/img/escape/antenna-palace-trap-game.webp" alt="antenna_palace.md">
+                    <div class="name">Antena Palace</div>
+                    </a>
+            
+                    <a href="/articles/la-crypte/" class="grid-article-item">
+                    <img src="/assets/img/escape/la-crypte.webp" alt="la-crypte.md">
+                    <div class="name">La Crypte</div>
+                    </a>
+            
+                    <a href="/articles/mission-galactique/" class="grid-article-item">
+                    <img src="/assets/img/escape/paris-majestic-mission-galactique.jpg" alt="mission-galactique.md">
+                    <div class="name">Mission Galactique</div>
+                    </a>
+            
+        </div>
+
+        <div>
+            <h2 class="front-page-head">
+                <img src="/assets/img/icons/fra.svg" alt="icon" class="icon-image">
+                Les tops en <a href="/top-france" class = "styled-link">France</a>
+            </h2>
+
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France Map with Clickable Cities</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #france-map-unique {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .city {
+            fill: orange;
+            cursor: pointer;
+            transition: fill 0.3s ease-in-out;
+        }
+
+        .city-label-box {
+            fill: black;
+            opacity: 0.7;
+            rx: 8;
+            ry: 8;
+            transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+        }
+
+        .city-label {
+            font-size: 22px;
+            font-weight: bold;
+            fill: white;
+            text-anchor: middle;
+            alignment-baseline: middle;
+            transition: fill 0.3s ease-in-out;
+        }
+
+        .label-line {
+            stroke: orange;
+            stroke-width: 5;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        a:hover .city-label-box {
+            filter: drop-shadow(0px 0px 8px orange);
+            opacity: 1;
+        }
+
+        a:hover .city-label {
+            fill: white;
+        }
+
+        a:hover .city {
+            fill: rgba(33, 153, 234, 0.859);
+        }
+
+        a:hover .label-line {
+            opacity: 1;
+        }
+
+        @media screen and (max-width: 600px) {
+            #france-map-unique {
+                width: 90%;
+            }
+
+            .city-label {
+                font-size: 22px;
+            }
+        }
+    </style>
+    <script>
+        function convertToSVGCoords(lon, lat, svgWidth, svgHeight) {
+            const minLon = -5.1, maxLon = 9.6;
+            const minLat = 41.3, maxLat = 51.1;
+            let x = ((lon - minLon) / (maxLon - minLon)) * svgWidth;
+            let y = (1 - (lat - minLat) / (maxLat - minLat)) * svgHeight;
+            return { x, y };
+        }
+    </script>
+</head>
+<body>
+
+<svg id="france-map-unique" viewBox="-150 5 800 550">
+    <image href="/assets/img/icons/france.svg" width="500" height="500" loading="lazy" />
+</svg>
+
+<div class="top-articles-placeholder"
+     data-title=""
+     cities='[ 
+                {
+                    "title": "Annecy", 
+                    "lon": 6.1294,
+                    "lat": 45.8992,
+                    "url": "/top-france/annecy/"
+                },  
+                {
+                    "title": "Annemasse", 
+                    "lon": 6.23,
+                    "lat": 46.19,
+                    "url": "/top-france/annemase/"
+                },  
+                {
+                    "title": "Avignon", 
+                    "lon": 4.8,
+                    "lat": 43.95,
+                    "url": "/top-france/avignon/"
+                },  
+                {
+                    "title": "Bayonne", 
+                    "lon": -1.47,
+                    "lat": 43.49,
+                    "url": "/top-france/bayonne/"
+                },  
+                {
+                    "title": "Bordeaux", 
+                    "lon": -0.58,
+                    "lat": 44.84,
+                    "url": "/top-france/bordeaux/"
+                },  
+                {
+                    "title": "Chambéry", 
+                    "lon": 5.92,
+                    "lat": 45.57,
+                    "url": "/top-france/chambery/"
+                },  
+                {
+                    "title": "Dijon", 
+                    "lon": 5.04,
+                    "lat": 47.32,
+                    "url": "/top-france/dijon/"
+                },  
+                {
+                    "title": "Grenoble", 
+                    "lon": 5.74,
+                    "lat": 45.18,
+                    "url": "/top-france/grenoble/"
+                },  
+                {
+                    "title": "Lille", 
+                    "lon": 3.06,
+                    "lat": 50.64,
+                    "url": "/top-france/lille/"
+                },  
+                {
+                    "title": "Lyon", 
+                    "lon": 4.83,
+                    "lat": 45.76,
+                    "url": "/top-france/lyon/"
+                },  
+                {
+                    "title": "Montélimar", 
+                    "lon": 4.75,
+                    "lat": 44.56,
+                    "url": "/top-france/montelimar/"
+                },  
+                {
+                    "title": "Montpelier", 
+                    "lon": 3.87,
+                    "lat": 43.61,
+                    "url": "/top-france/montpelier/"
+                },  
+                {
+                    "title": "Nantes", 
+                    "lon": -1.55,
+                    "lat": 47.21,
+                    "url": "/top-france/nantes/"
+                },  
+                {
+                    "title": "Nice", 
+                    "lon": 7.27,
+                    "lat": 43.7,
+                    "url": "/top-france/nice/"
+                },  
+                {
+                    "title": "Nimes", 
+                    "lon": 4.36,
+                    "lat": 43.84,
+                    "url": "/top-france/nimes/"
+                },  
+                {
+                    "title": "Paris", 
+                    "lon": 2.35,
+                    "lat": 48.85,
+                    "url": "/top-france/paris/"
+                },  
+                {
+                    "title": "Pau", 
+                    "lon": -0.37,
+                    "lat": 43.3,
+                    "url": "/top-france/pau/"
+                },  
+                {
+                    "title": "Perpignan", 
+                    "lon": 2.9,
+                    "lat": 42.7,
+                    "url": "/top-france/perpignan/"
+                },  
+                {
+                    "title": "Toulouse", 
+                    "lon": 1.44,
+                    "lat": 43.6,
+                    "url": "/top-france/toulouse/"
+                },  
+                {
+                    "title": "Tours", 
+                    "lon": 0.69,
+                    "lat": 47.39,
+                    "url": "/top-france/tours/"
+                },  
+                {
+                    "title": "Valence", 
+                    "lon": 4.89,
+                    "lat": 44.93,
+                    "url": "/top-france/valence/"
+                }]'>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const svg = document.getElementById("france-map-unique");
+        const citiesData = document.querySelector(".top-articles-placeholder").getAttribute('cities');
+        
+        if (!citiesData) {
+            console.error("Cities data not found!");
+            return;
+        }
+        
+        const cities = JSON.parse(citiesData);
+        const totalCities = cities.length;
+        const halfCities = Math.ceil(totalCities / 2);
+
+        let leftXPosition = -70; 
+        let rightXPosition = 550;
+        let initialYPosition = 50;
+        let ySpacing = 45;
+
+        const fragment = document.createDocumentFragment();
+
+        cities.forEach((city, index) => {
+            let { x, y } = convertToSVGCoords(city.lon, city.lat, 500, 500);
+
+            let isLeftColumn = index < halfCities;
+            let labelX = isLeftColumn ? leftXPosition : rightXPosition;
+            let labelY = initialYPosition + (index % halfCities) * ySpacing;
+
+            let link = document.createElementNS("http://www.w3.org/2000/svg", "a");
+            link.setAttribute("href", city.url);
+
+            let circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            circle.setAttribute("class", "city");
+            circle.setAttribute("cx", x);
+            circle.setAttribute("cy", y);
+            circle.setAttribute("r", 8);
+
+            let tempText = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            tempText.setAttribute("font-size", "18");
+            tempText.textContent = city.title;
+            svg.appendChild(tempText);
+            let textWidth = tempText.getBBox().width;
+            svg.removeChild(tempText);
+
+            let textBox = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+            textBox.setAttribute("class", "city-label-box");
+            textBox.setAttribute("x", labelX - (textWidth / 2) - 16);
+            textBox.setAttribute("y", labelY - 18);
+            textBox.setAttribute("width", textWidth + 34);
+            textBox.setAttribute("height", 30);
+
+            let text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            text.setAttribute("class", "city-label");
+            text.setAttribute("x", labelX);
+            text.setAttribute("y", labelY);
+            text.textContent = city.title;
+
+            let line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            line.setAttribute("class", "label-line");
+            line.setAttribute("pointer-events", "none"); //Make the line not clickable
+
+            if (isLeftColumn) {
+                line.setAttribute("x1", labelX + textWidth / 2 + 10);
+            } else {
+                line.setAttribute("x1", labelX - textWidth / 2 - 10);
+            }
+
+            line.setAttribute("y1", labelY);
+            line.setAttribute("x2", x);
+            line.setAttribute("y2", y);
+
+            link.appendChild(line);
+            link.appendChild(circle);
+            link.appendChild(textBox);
+            link.appendChild(text);
+
+            fragment.appendChild(link);
+        });
+
+        svg.appendChild(fragment);
+    });
+</script>
+
+</body>
+</html>
+
+        </div>
+
+
+        <div>
+            <h2 class="front-page-head">
+                <!-- <img src="icons/fra.svg" alt="icon" class="icon-image"> -->
+                <i class="fa fa-globe" style="font-size:28px"></i>
+                Les tops à <a href="/top-world" class="styled-link">l'étranger</a>
+            </h2>
+            <div class="grid-wrapper_main">
+                <div class="grid-container_main">
+                    
+                        <div class="grid-item_main">
+                            <a href="/top-world/athenes/">
+                                <img src="/assets/img/top-world/top-athenes-optimized.webp" alt="Athènes" loading="lazy">
+                                <div class="overlay_main">
+                                    <img src="/assets/img/flags/grece-optimized.webp" alt="Flag" class="flag-icon">
+                                    Athènes
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="grid-item_main">
+                            <a href="/top-world/barcelone/">
+                                <img src="/assets/img/top-world/top-barcelone-optimized.webp" alt="Barcelone" loading="lazy">
+                                <div class="overlay_main">
+                                    <img src="/assets/img/flags/espagne-optimized.webp" alt="Flag" class="flag-icon">
+                                    Barcelone
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="grid-item_main">
+                            <a href="/top-world/belgique/">
+                                <img src="/assets/img/top-world/top-belgique-optimized.webp" alt="Belgique" loading="lazy">
+                                <div class="overlay_main">
+                                    <img src="/assets/img/flags/belgique.webp" alt="Flag" class="flag-icon">
+                                    Belgique
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="grid-item_main">
+                            <a href="/top-world/espagne/">
+                                <img src="/assets/img/top-world/top-espagne-optimized.webp" alt="Espagne" loading="lazy">
+                                <div class="overlay_main">
+                                    <img src="/assets/img/flags/espagne-optimized.webp" alt="Flag" class="flag-icon">
+                                    Espagne
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="grid-item_main">
+                            <a href="/top-world/geneve/">
+                                <img src="/assets/img/top-world/top-geneve-optimized.webp" alt="Genève" loading="lazy">
+                                <div class="overlay_main">
+                                    <img src="/assets/img/flags/suisse-optimized.webp" alt="Flag" class="flag-icon">
+                                    Genève
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="grid-item_main">
+                            <a href="/top-world/monde/">
+                                <img src="/assets/img/top-world/top-world-optimized.webp" alt="Top Monde" loading="lazy">
+                                <div class="overlay_main">
+                                    <img src="/assets/img/flags/world.webp" alt="Flag" class="flag-icon">
+                                    Top Monde
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="grid-item_main">
+                            <a href="/top-world/pays-bas/">
+                                <img src="/assets/img/top-world/top-pays-bas-optimized.webp" alt="Pays-bas" loading="lazy">
+                                <div class="overlay_main">
+                                    <img src="/assets/img/flags/pays-bas-optimized.webp" alt="Flag" class="flag-icon">
+                                    Pays-bas
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="grid-item_main">
+                            <a href="/top-world/prague/">
+                                <img src="/assets/img/top-world/top-prague-optimized.webp" alt="Prague" loading="lazy">
+                                <div class="overlay_main">
+                                    <img src="/assets/img/flags/republique-tcheque-optimized.webp" alt="Flag" class="flag-icon">
+                                    Prague
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="grid-item_main">
+                            <a href="/top-world/tokyo/">
+                                <img src="/assets/img/top-world/top-tokyo-optimized.jpg" alt="Tokyo" loading="lazy">
+                                <div class="overlay_main">
+                                    <img src="/assets/img/flags/japon-optimized.webp" alt="Flag" class="flag-icon">
+                                    Tokyo
+                                </div>
+                            </a>
+                        </div>
+                    
+                </div> 
+            </div>
+        </div>
+        <div>
+            <!-- <ul>
+                
+                  <li>
+                    <a href="/articles/cannibale-island/">/articles/cannibale-island/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-fleau-du-druide/">/articles/le-fleau-du-druide/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-derniers-templier/">/articles/les-derniers-templier/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/proto-taj/">/articles/proto-taj/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/l_immortel/">/articles/l_immortel/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la_pierre_de_lumiere/">/articles/la_pierre_de_lumiere/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/tokyo-lab/">/articles/tokyo-lab/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/disparitions/">/articles/disparitions/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/crime_orient_express/">/articles/crime_orient_express/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/wild-wild-quest/">/articles/wild-wild-quest/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le_magicien_de_paris/">/articles/le_magicien_de_paris/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le_palais_de_lhoreur/">/articles/le_palais_de_lhoreur/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mission_yakuza/">/articles/mission_yakuza/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-riddler-final-test/">/articles/the-riddler-final-test/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/entrepot-fantastique/">/articles/entrepot-fantastique/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/expedition-maudite/">/articles/expedition-maudite/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/fete-foraine-tivoli/">/articles/fete-foraine-tivoli/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-disparition-du-train-zanetti/">/articles/la-disparition-du-train-zanetti/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/raptor_project/">/articles/raptor_project/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-batcave-secret-missions/">/articles/the-batcave-secret-missions/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-joker-jokes-on-you/">/articles/the-joker-jokes-on-you/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/tresor-perdu-de-faberge/">/articles/tresor-perdu-de-faberge/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/03-15/">/articles/03-15/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/1_template/">/articles/1_template/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/20-000-ans-sous-la-terre-chapitre-ii/">/articles/20-000-ans-sous-la-terre-chapitre-ii/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/20-000-lieues-sous-les-mers/">/articles/20-000-lieues-sous-les-mers/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/20000-leagues-under-the-sea/">/articles/20000-leagues-under-the-sea/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/50-nuances/">/articles/50-nuances/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/agents-delite/">/articles/agents-delite/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/agnes/">/articles/agnes/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/aladdin-et-la-lampe-magique/">/articles/aladdin-et-la-lampe-magique/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/alcatraz-montpellier/">/articles/alcatraz-montpellier/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/alice/">/articles/alice/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/alien-investigation/">/articles/alien-investigation/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/alien/">/articles/alien/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/amen/">/articles/amen/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/amnesia/">/articles/amnesia/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/amy-2-la-malediction/">/articles/amy-2-la-malediction/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/amy/">/articles/amy/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/anabelle/">/articles/anabelle/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/anatole-latuile/">/articles/anatole-latuile/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/anneliese/">/articles/anneliese/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/archons-bar/">/articles/archons-bar/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/arsene/">/articles/arsene/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/asile-chapitre-i-le-sauvetage/">/articles/asile-chapitre-i-le-sauvetage/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/asile-chapitre-ii-consequence/">/articles/asile-chapitre-ii-consequence/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/atlantide/">/articles/atlantide/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/atlantropa/">/articles/atlantropa/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/aventure-perilleuse/">/articles/aventure-perilleuse/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/aventure-sous-la-montagne/">/articles/aventure-sous-la-montagne/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/avissos/">/articles/avissos/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/b-i-z-u/">/articles/b-i-z-u/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/base-c-18/">/articles/base-c-18/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/bienvenue-en-enfer/">/articles/bienvenue-en-enfer/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/black-out/">/articles/black-out/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/black-virus/">/articles/black-virus/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/bleue/">/articles/bleue/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/bloody-mary/">/articles/bloody-mary/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/bon-vent-mamie-arlette/">/articles/bon-vent-mamie-arlette/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/bonnet-dane/">/articles/bonnet-dane/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/boogeyman/">/articles/boogeyman/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/braquage-a-e2g-bank/">/articles/braquage-a-e2g-bank/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/braquage-a-louest/">/articles/braquage-a-louest/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/bunker-666/">/articles/bunker-666/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/cambriolage-au-musee/">/articles/cambriolage-au-musee/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/cambriolage-chez-le-professeur-jones/">/articles/cambriolage-chez-le-professeur-jones/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/carniflex-les-otages/">/articles/carniflex-les-otages/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/casa-de-papel/">/articles/casa-de-papel/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/casino-clandestin/">/articles/casino-clandestin/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/celestia-la-cite-oubliee/">/articles/celestia-la-cite-oubliee/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/cellule-23/">/articles/cellule-23/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/champollion-et-le-secret-des-hieroglyphes/">/articles/champollion-et-le-secret-des-hieroglyphes/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/chapels_and_catacombs/">/articles/chapels_and_catacombs/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/charl-e-et-sa-drole-de-mission/">/articles/charl-e-et-sa-drole-de-mission/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/cibercity_2049/">/articles/cibercity_2049/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/cinema_hante/">/articles/cinema_hante/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/comin-escape/">/articles/comin-escape/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/conjuring-ii/">/articles/conjuring-ii/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/contagion/">/articles/contagion/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/cosmos-05/">/articles/cosmos-05/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/crazy-saloon/">/articles/crazy-saloon/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/creepy-store/">/articles/creepy-store/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/cro-magnon/">/articles/cro-magnon/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/cube-challenges/">/articles/cube-challenges/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/cult/">/articles/cult/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/cybercity/">/articles/cybercity/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/da-vinci-code/">/articles/da-vinci-code/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/dark-mirror/">/articles/dark-mirror/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/dark/">/articles/dark/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/darkness/">/articles/darkness/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/deadlock-redemption/">/articles/deadlock-redemption/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/death-row/">/articles/death-row/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/defiez-le-cube/">/articles/defiez-le-cube/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/defis-pirate/">/articles/defis-pirate/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/demo-gorgon/">/articles/demo-gorgon/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/der-solist/">/articles/der-solist/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/disco-night-fever/">/articles/disco-night-fever/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/django/">/articles/django/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/docklands/">/articles/docklands/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/dollmaker/">/articles/dollmaker/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/donjon-potions/">/articles/donjon-potions/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/dont_take_a_breath/">/articles/dont_take_a_breath/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/dracula/">/articles/dracula/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/dreamland/">/articles/dreamland/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/el_exorcista/">/articles/el_exorcista/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/elixir-of-life/">/articles/elixir-of-life/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/elizabeth-bathory/">/articles/elizabeth-bathory/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/emperors-masterchef-is-dead/">/articles/emperors-masterchef-is-dead/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/enferme-dans-le-port-de-la-lune/">/articles/enferme-dans-le-port-de-la-lune/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/enquete-a-bord-de-lorient-express/">/articles/enquete-a-bord-de-lorient-express/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/enregistrement-mortel/">/articles/enregistrement-mortel/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/erics-will/">/articles/erics-will/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/escape-al-capone/">/articles/escape-al-capone/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/escape-circus/">/articles/escape-circus/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/etrange-disparition-en-1956/">/articles/etrange-disparition-en-1956/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/evade-toi-si-tu-peux/">/articles/evade-toi-si-tu-peux/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/evasion-fiscale-serveur-bleu/">/articles/evasion-fiscale-serveur-bleu/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/evasion-fiscale-serveur-vert/">/articles/evasion-fiscale-serveur-vert/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/evasion-psychiatrique/">/articles/evasion-psychiatrique/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/evil-inside/">/articles/evil-inside/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/excalibur/">/articles/excalibur/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/excursion-carcerale/">/articles/excursion-carcerale/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/experimental-park/">/articles/experimental-park/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/experimentum-x/">/articles/experimentum-x/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/fantomatch/">/articles/fantomatch/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/firefighters/">/articles/firefighters/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/folie-meurtriere/">/articles/folie-meurtriere/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/fort-boyard-aventures/">/articles/fort-boyard-aventures/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/fort-boyard/">/articles/fort-boyard/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/freakshow/">/articles/freakshow/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/funfair-games-les-defis-darchibald/">/articles/funfair-games-les-defis-darchibald/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/gaetan/">/articles/gaetan/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/gang-of-birmingham/">/articles/gang-of-birmingham/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/gg-escape-game-musee/">/articles/gg-escape-game-musee/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/godslayer/">/articles/godslayer/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/gustave-eiffel/">/articles/gustave-eiffel/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/h-ice-t-tiki/">/articles/h-ice-t-tiki/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/hallucinations_chimiques/">/articles/hallucinations_chimiques/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/haunted-house/">/articles/haunted-house/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/haunted-room/">/articles/haunted-room/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/hellevator/">/articles/hellevator/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/hide-n-seek/">/articles/hide-n-seek/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/hors-controle/">/articles/hors-controle/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/hotel-sedaine/">/articles/hotel-sedaine/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/houdini/">/articles/houdini/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/il-etait-une-fois/">/articles/il-etait-une-fois/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/immortal/">/articles/immortal/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/inception-le-paradoxe-temporel/">/articles/inception-le-paradoxe-temporel/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/jack-leventreur/">/articles/jack-leventreur/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/jeu-daction-univers-jules-vernes/">/articles/jeu-daction-univers-jules-vernes/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/joo-manji/">/articles/joo-manji/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/jumanji/">/articles/jumanji/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/jurassic-lab/">/articles/jurassic-lab/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/jurassik-room/">/articles/jurassik-room/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/k74-le-sous-marin/">/articles/k74-le-sous-marin/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/kabukicho/">/articles/kabukicho/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/karma-project/">/articles/karma-project/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/koh-lanta/">/articles/koh-lanta/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/l-a-confidential/">/articles/l-a-confidential/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-banque-des-gobelins/">/articles/la-banque-des-gobelins/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-bataille-des-rois/">/articles/la-bataille-des-rois/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-boite-de-pandore/">/articles/la-boite-de-pandore/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-cabane-dans-les-bois/">/articles/la-cabane-dans-les-bois/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-cabane-sous-la-dent-de-crolles/">/articles/la-cabane-sous-la-dent-de-crolles/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-chambre-de-swan/">/articles/la-chambre-de-swan/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-chambre-des-esprits-chambre-1408/">/articles/la-chambre-des-esprits-chambre-1408/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-chambre-des-jumeaux-malefiques-chambre-2408/">/articles/la-chambre-des-jumeaux-malefiques-chambre-2408/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-chambre-du-clown-chambre-237/">/articles/la-chambre-du-clown-chambre-237/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-chambre-du-marionnettiste-chambre-13/">/articles/la-chambre-du-marionnettiste-chambre-13/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-chambre-du-parasite-chambre-2001/">/articles/la-chambre-du-parasite-chambre-2001/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-chambre-du-presentateur-tv-chambre-2998/">/articles/la-chambre-du-presentateur-tv-chambre-2998/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-chambre-du-psychopathe-2-chambre-2222/">/articles/la-chambre-du-psychopathe-2-chambre-2222/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-chambre-du-psychopathe-chambre-2112/">/articles/la-chambre-du-psychopathe-chambre-2112/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-chasse-aux-sorcieres/">/articles/la-chasse-aux-sorcieres/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-chaumiere-dagrios/">/articles/la-chaumiere-dagrios/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-cite-perdue-datlantide/">/articles/la-cite-perdue-datlantide/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-confrontation/">/articles/la-confrontation/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-congregation/">/articles/la-congregation/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-creature/">/articles/la-creature/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-crypte-echirolle/">/articles/la-crypte-echirolle/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-dame-blanche/">/articles/la-dame-blanche/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-disparition/">/articles/la-disparition/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-disparue/">/articles/la-disparue/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-fiesta-de-los-muertos/">/articles/la-fiesta-de-los-muertos/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-fille-du-docteur-clement/">/articles/la-fille-du-docteur-clement/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-foret-interdite/">/articles/la-foret-interdite/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-grande-evasion/">/articles/la-grande-evasion/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-grotte-de-mandrin/">/articles/la-grotte-de-mandrin/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-guerre-du-trone/">/articles/la-guerre-du-trone/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-legende-de-baba-yaga/">/articles/la-legende-de-baba-yaga/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-legende-du-dragon/">/articles/la-legende-du-dragon/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-lettre-deinstein/">/articles/la-lettre-deinstein/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-maison-du-diable/">/articles/la-maison-du-diable/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-malediction-de-millie/">/articles/la-malediction-de-millie/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-malediction-dhorus/">/articles/la-malediction-dhorus/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-malediction-du-cirque/">/articles/la-malediction-du-cirque/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-malediction-du-pharaon/">/articles/la-malediction-du-pharaon/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-mine-de-black-rock/">/articles/la-mine-de-black-rock/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-mine-secrete-de-cihuatlan/">/articles/la-mine-secrete-de-cihuatlan/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-mine/">/articles/la-mine/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-mision-del-profesor/">/articles/la-mision-del-profesor/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-mission-secrete/">/articles/la-mission-secrete/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-nonne/">/articles/la-nonne/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-pierre-philosophale-montpellier/">/articles/la-pierre-philosophale-montpellier/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-prison-dalkabaz/">/articles/la-prison-dalkabaz/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-prison-de-blue-castle/">/articles/la-prison-de-blue-castle/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-prison-devertown/">/articles/la-prison-devertown/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-prison-romaine/">/articles/la-prison-romaine/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-quete-du-trone/">/articles/la-quete-du-trone/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-revelation-da-vinci/">/articles/la-revelation-da-vinci/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-revolte-des-loutres/">/articles/la-revolte-des-loutres/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-room-hollywood-version-2-0/">/articles/la-room-hollywood-version-2-0/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-ruee-vers-lor/">/articles/la-ruee-vers-lor/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la_posesion/">/articles/la_posesion/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/labattoir_chamb%C3%A9ry/">/articles/labattoir_chamb%C3%A9ry/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/labattoir_paris/">/articles/labattoir_paris/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/laffaire-blackwood/">/articles/laffaire-blackwood/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/laffaire-cunningham/">/articles/laffaire-cunningham/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/laffaire-de-lauberge-rouge/">/articles/laffaire-de-lauberge-rouge/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lagent-double-de-guantanamo/">/articles/lagent-double-de-guantanamo/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lalchimiste-de-lorient-express/">/articles/lalchimiste-de-lorient-express/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lalchimiste/">/articles/lalchimiste/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lami-mortel-les-captifs/">/articles/lami-mortel-les-captifs/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lantre-de-la-sorciere/">/articles/lantre-de-la-sorciere/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lantre-dhannibal/">/articles/lantre-dhannibal/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lantre-du-chaos/">/articles/lantre-du-chaos/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lantre-du-tueur/">/articles/lantre-du-tueur/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lartefact-du-professeur-stanley/">/articles/lartefact-du-professeur-stanley/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/las-vegas-magnifico/">/articles/las-vegas-magnifico/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lasile-du-dr-kwan/">/articles/lasile-du-dr-kwan/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/last-adventures/">/articles/last-adventures/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/latelier-de-leonard/">/articles/latelier-de-leonard/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/latelier-du-pere-noel/">/articles/latelier-du-pere-noel/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lauberge/">/articles/lauberge/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lautre-demeure/">/articles/lautre-demeure/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-braquage-de-moriarty/">/articles/le-braquage-de-moriarty/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-braquage/">/articles/le-braquage/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-bunker-du-president/">/articles/le-bunker-du-president/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-bureau-du-savant-fou/">/articles/le-bureau-du-savant-fou/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-butin-del-paso/">/articles/le-butin-del-paso/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-butin/">/articles/le-butin/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-cabinet-de-curiosites/">/articles/le-cabinet-de-curiosites/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-cachot-montpellier/">/articles/le-cachot-montpellier/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-cannibale/">/articles/le-cannibale/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-cartel-de-san-pedro/">/articles/le-cartel-de-san-pedro/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-casse-de-saint-emilion/">/articles/le-casse-de-saint-emilion/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-casse-du-siecle/">/articles/le-casse-du-siecle/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-chateau-noir/">/articles/le-chateau-noir/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-chateau-runique/">/articles/le-chateau-runique/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-chemin-de-traverse/">/articles/le-chemin-de-traverse/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-coffre-des-nigm/">/articles/le-coffre-des-nigm/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-cube/">/articles/le-cube/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-cyber-casse-du-siecle/">/articles/le-cyber-casse-du-siecle/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-discoclub/">/articles/le-discoclub/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-donjon/">/articles/le-donjon/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-fantome-du-titanic/">/articles/le-fantome-du-titanic/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-gang-de-stockholm/">/articles/le-gang-de-stockholm/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-grimoire-de-barbara/">/articles/le-grimoire-de-barbara/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-labo-de-merlin/">/articles/le-labo-de-merlin/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-lapin-blanc-au-pays-des-merveilles/">/articles/le-lapin-blanc-au-pays-des-merveilles/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-magicobus/">/articles/le-magicobus/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-manoir-de-gabrielle/">/articles/le-manoir-de-gabrielle/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-manoir-de-la-douzieme-heure-format-jour/">/articles/le-manoir-de-la-douzieme-heure-format-jour/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-manoir-de-la-douzieme-heure-format-nuit/">/articles/le-manoir-de-la-douzieme-heure-format-nuit/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-manoir-des-addams/">/articles/le-manoir-des-addams/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-manoir-des-soeurs-aubepine/">/articles/le-manoir-des-soeurs-aubepine/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-manoir-dh-h-holmes/">/articles/le-manoir-dh-h-holmes/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-manoir-du-dr-frankenstein/">/articles/le-manoir-du-dr-frankenstein/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-manoir-hante/">/articles/le-manoir-hante/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-manoir/">/articles/le-manoir/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-ministre-de-la-magie/">/articles/le-ministre-de-la-magie/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-mystere-da-vinci/">/articles/le-mystere-da-vinci/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-mystere-de-barbe-noire/">/articles/le-mystere-de-barbe-noire/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-mystere-de-la-chambre-202/">/articles/le-mystere-de-la-chambre-202/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-mystere-de-saint-jean-de-luz/">/articles/le-mystere-de-saint-jean-de-luz/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-mystere-des-sabry/">/articles/le-mystere-des-sabry/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-mystere-du-castrum/">/articles/le-mystere-du-castrum/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-mystere-du-sphinx/">/articles/le-mystere-du-sphinx/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-naufrage-du-nautilus/">/articles/le-naufrage-du-nautilus/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-parrain/">/articles/le-parrain/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-penitencier/">/articles/le-penitencier/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-protocole/">/articles/le-protocole/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-puits-numero-7/">/articles/le-puits-numero-7/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-refuge-du-trappeur/">/articles/le-refuge-du-trappeur/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-repaire-du-tueur/">/articles/le-repaire-du-tueur/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-retour-des-goonies/">/articles/le-retour-des-goonies/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-roi-noir/">/articles/le-roi-noir/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-saloon-du-nouveau-mexique/">/articles/le-saloon-du-nouveau-mexique/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-secret-de-la-liqueur-verte/">/articles/le-secret-de-la-liqueur-verte/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-secret-de-la-perle-noire/">/articles/le-secret-de-la-perle-noire/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-secret-de-moriarty/">/articles/le-secret-de-moriarty/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-secret-des-adhemar/">/articles/le-secret-des-adhemar/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-secret-des-templiers/">/articles/le-secret-des-templiers/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-secret-dinti-kancha/">/articles/le-secret-dinti-kancha/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-secret-du-capitaine/">/articles/le-secret-du-capitaine/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-secret-du-pirate/">/articles/le-secret-du-pirate/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-silence-des-moai/">/articles/le-silence-des-moai/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-silver-express/">/articles/le-silver-express/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-sou-fetiche/">/articles/le-sou-fetiche/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-syndicat-du-crime-chapitre-1-otages/">/articles/le-syndicat-du-crime-chapitre-1-otages/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-temple-de-linfini/">/articles/le-temple-de-linfini/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-temple-maudit/">/articles/le-temple-maudit/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-testament-du-professeur-wednesday/">/articles/le-testament-du-professeur-wednesday/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-theatre-des-illusions/">/articles/le-theatre-des-illusions/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-ticket-vole/">/articles/le-ticket-vole/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-tombeau-dexcalibur/">/articles/le-tombeau-dexcalibur/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-tournoi-des-sorciers/">/articles/le-tournoi-des-sorciers/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-train-des-sorciers/">/articles/le-train-des-sorciers/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-tresor-de-dracula/">/articles/le-tresor-de-dracula/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-tresor-de-la-ferme/">/articles/le-tresor-de-la-ferme/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-tresor-dedgar/">/articles/le-tresor-dedgar/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-tresor-des-indes/">/articles/le-tresor-des-indes/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-tresor-du-pecheur/">/articles/le-tresor-du-pecheur/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le-vaisseau-fantome/">/articles/le-vaisseau-fantome/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/le_far_west/">/articles/le_far_west/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lechoppe-de-madame-ming/">/articles/lechoppe-de-madame-ming/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lecole-des-sorciers-le-grimoire-magique/">/articles/lecole-des-sorciers-le-grimoire-magique/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lecole-des-sorciers-lheritage-du-dragon/">/articles/lecole-des-sorciers-lheritage-du-dragon/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lecole-des-sorciers/">/articles/lecole-des-sorciers/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lelixir/">/articles/lelixir/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lemeraude-de-greendeep/">/articles/lemeraude-de-greendeep/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lenquete-du-lys-noir/">/articles/lenquete-du-lys-noir/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lenquete-meurtre-a-la-cidrerie/">/articles/lenquete-meurtre-a-la-cidrerie/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lepidemie-zombie/">/articles/lepidemie-zombie/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-7-peches-capitaux/">/articles/les-7-peches-capitaux/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-appartements-paralleles/">/articles/les-appartements-paralleles/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-apprentis-sorciers/">/articles/les-apprentis-sorciers/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-aretes-de-poisson-de-lyon/">/articles/les-aretes-de-poisson-de-lyon/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-crimes-de-jack-leventreur/">/articles/les-crimes-de-jack-leventreur/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-derniers-aventuriers-du-temple-perdu/">/articles/les-derniers-aventuriers-du-temple-perdu/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-derniers-passagers/">/articles/les-derniers-passagers/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-detectives/">/articles/les-detectives/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-disparus-de-louisiane/">/articles/les-disparus-de-louisiane/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-disparus-montpellier/">/articles/les-disparus-montpellier/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-experiences-du-joker/">/articles/les-experiences-du-joker/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-fabuleuses-inventions-du-docteur-apfelgluck/">/articles/les-fabuleuses-inventions-du-docteur-apfelgluck/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-mysteres-de-pellot/">/articles/les-mysteres-de-pellot/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-mysteres-du-nautilus/">/articles/les-mysteres-du-nautilus/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-passages-secrets-du-palais-du-sultan/">/articles/les-passages-secrets-du-palais-du-sultan/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-prisonniers-du-capitaine-black-sam/">/articles/les-prisonniers-du-capitaine-black-sam/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/les-reliques-du-mage-noir/">/articles/les-reliques-du-mage-noir/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lespion/">/articles/lespion/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lethal-decision-2-hell-awaits/">/articles/lethal-decision-2-hell-awaits/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lethal-decision/">/articles/lethal-decision/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/letrange-bureau/">/articles/letrange-bureau/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/letrange-univers-de-globule/">/articles/letrange-univers-de-globule/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lexamen/">/articles/lexamen/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lexorcisme-de-sally/">/articles/lexorcisme-de-sally/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lexorcisme-du-patient-148/">/articles/lexorcisme-du-patient-148/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lheritage-de-lisennes/">/articles/lheritage-de-lisennes/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lheritage-du-sorcier/">/articles/lheritage-du-sorcier/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lhotel-des-ombres/">/articles/lhotel-des-ombres/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lile-au-tresor/">/articles/lile-au-tresor/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lilipout/">/articles/lilipout/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/limaginarium-darchibald/">/articles/limaginarium-darchibald/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lofrenda-el-dia-de-los-muertos/">/articles/lofrenda-el-dia-de-los-muertos/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lorphelinat_lyon/">/articles/lorphelinat_lyon/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lost_lille/">/articles/lost_lille/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lost_montelimar/">/articles/lost_montelimar/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lultime-secret/">/articles/lultime-secret/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/lultime-sentence/">/articles/lultime-sentence/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mafia-du-dimanche/">/articles/mafia-du-dimanche/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/magic-school/">/articles/magic-school/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/magie-noire-senart-locked-up/">/articles/magie-noire-senart-locked-up/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/magie-noire/">/articles/magie-noire/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/malum/">/articles/malum/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mama/">/articles/mama/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mamma-mafia/">/articles/mamma-mafia/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/manifesto/">/articles/manifesto/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/manoir-van-beck/">/articles/manoir-van-beck/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/marys-dolls/">/articles/marys-dolls/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/massacres/">/articles/massacres/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/maudit-pirate/">/articles/maudit-pirate/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mayday/">/articles/mayday/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mea-culpa/">/articles/mea-culpa/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mecanisation/">/articles/mecanisation/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/medusa/">/articles/medusa/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/merlin/">/articles/merlin/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/metanoia/">/articles/metanoia/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/meurtre-a-la-nouvelle-orleans/">/articles/meurtre-a-la-nouvelle-orleans/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mib-mission-is-back/">/articles/mib-mission-is-back/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/middlearth-tales/">/articles/middlearth-tales/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mineshaft/">/articles/mineshaft/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mission-b-618-voronej/">/articles/mission-b-618-voronej/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mission-hantee/">/articles/mission-hantee/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mission-istanbul/">/articles/mission-istanbul/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mission-kepler/">/articles/mission-kepler/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mission-noel/">/articles/mission-noel/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mission-non-repertoriee/">/articles/mission-non-repertoriee/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mission-presque-impossible/">/articles/mission-presque-impossible/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mission-spatiale/">/articles/mission-spatiale/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/monikas-diary/">/articles/monikas-diary/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/monuments-men/">/articles/monuments-men/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/morts-en-paix/">/articles/morts-en-paix/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mystere-au-musee-du-caire/">/articles/mystere-au-musee-du-caire/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mysteres-sortileges/">/articles/mysteres-sortileges/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mysterium-letrange-manoir-warren/">/articles/mysterium-letrange-manoir-warren/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mystic-investigation/">/articles/mystic-investigation/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mystic-project/">/articles/mystic-project/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mythologie-grecque-le-mythe-oublie/">/articles/mythologie-grecque-le-mythe-oublie/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/nakatomi_plaza/">/articles/nakatomi_plaza/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/nathael/">/articles/nathael/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/naufrage/">/articles/naufrage/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/nautilus/">/articles/nautilus/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/nuit-divresse/">/articles/nuit-divresse/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/nypd-new-york-police-district/">/articles/nypd-new-york-police-district/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/obsessed/">/articles/obsessed/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/obsession/">/articles/obsession/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/oeuf_noir/">/articles/oeuf_noir/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/oh-no-zombies/">/articles/oh-no-zombies/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/omerta/">/articles/omerta/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/once-upon-a-time/">/articles/once-upon-a-time/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/operation-black-i/">/articles/operation-black-i/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/operation-des-accordes/">/articles/operation-des-accordes/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/operation-minos/">/articles/operation-minos/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/operation-siberia/">/articles/operation-siberia/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/operation-st-emilion/">/articles/operation-st-emilion/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/orage-odesespoir/">/articles/orage-odesespoir/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/orfanato-angry-souls/">/articles/orfanato-angry-souls/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/orion/">/articles/orion/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/otherside/">/articles/otherside/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/outcast/">/articles/outcast/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/oyabun/">/articles/oyabun/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/pandemie/">/articles/pandemie/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/pandemonium/">/articles/pandemonium/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/panic-factory/">/articles/panic-factory/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/panoramix-the-secret-of-the-magic-potion/">/articles/panoramix-the-secret-of-the-magic-potion/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/paradox-project-1-the-mansion/">/articles/paradox-project-1-the-mansion/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/paradox-project-2-the-bookstore/">/articles/paradox-project-2-the-bookstore/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/paradox-project-3-the-music-academy/">/articles/paradox-project-3-the-music-academy/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/paranormal/">/articles/paranormal/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/paris-escape-agency-menace-sovietique/">/articles/paris-escape-agency-menace-sovietique/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/paris-hinthunt-dracula/">/articles/paris-hinthunt-dracula/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/paris-hinthunt-experience-interdite/">/articles/paris-hinthunt-experience-interdite/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/paris-koezio-hors-controle/">/articles/paris-koezio-hors-controle/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/paris-pandore-associes-reglement-de-contes/">/articles/paris-pandore-associes-reglement-de-contes/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/paris-phobia-escape-game-alice/">/articles/paris-phobia-escape-game-alice/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/paris-unleash-nautilus-expedition-aronnax/">/articles/paris-unleash-nautilus-expedition-aronnax/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/phantom-of-the-opera/">/articles/phantom-of-the-opera/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/pharaon/">/articles/pharaon/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/pris-au-piege/">/articles/pris-au-piege/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/prison-break-grenoble/">/articles/prison-break-grenoble/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/prison-break-montpellier/">/articles/prison-break-montpellier/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/prison-de-haute-securite/">/articles/prison-de-haute-securite/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/prison-galroa/">/articles/prison-galroa/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/prison-island/">/articles/prison-island/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/prisonniers-de-la-chambre-froide/">/articles/prisonniers-de-la-chambre-froide/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/prometheus/">/articles/prometheus/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/protocole-vegas/">/articles/protocole-vegas/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/psychose/">/articles/psychose/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/psychotik/">/articles/psychotik/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/qui-a-tue-lagent-tara-monroe/">/articles/qui-a-tue-lagent-tara-monroe/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/qui-a-tue-le-dr-maurice/">/articles/qui-a-tue-le-dr-maurice/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/rebellion/">/articles/rebellion/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/red-riding-hood-2-the-wolff/">/articles/red-riding-hood-2-the-wolff/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/redrock-saloon/">/articles/redrock-saloon/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/reservation-1313/">/articles/reservation-1313/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/resident-evil/">/articles/resident-evil/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/reverie-cauchemardesque/">/articles/reverie-cauchemardesque/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/revolte-a-la-lock/">/articles/revolte-a-la-lock/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/rush-action-game/">/articles/rush-action-game/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/rwd/">/articles/rwd/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/saison-1-episode-1-jungle/">/articles/saison-1-episode-1-jungle/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/salle-doperation-clandestine/">/articles/salle-doperation-clandestine/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/saloon/">/articles/saloon/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/sauvez-le-docteur-clement/">/articles/sauvez-le-docteur-clement/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/saw-2-vs-squid-game/">/articles/saw-2-vs-squid-game/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/scep-unite-speciale/">/articles/scep-unite-speciale/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/scooby-who/">/articles/scooby-who/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/sea-surf-sun/">/articles/sea-surf-sun/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/secret-en-transylvanie/">/articles/secret-en-transylvanie/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/secret-novel/">/articles/secret-novel/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/secret-of-the-asylum/">/articles/secret-of-the-asylum/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/sensas-montpellier/">/articles/sensas-montpellier/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/sensas_lyon/">/articles/sensas_lyon/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/seven/">/articles/seven/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/sherlock-maze-2/">/articles/sherlock-maze-2/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/sinister/">/articles/sinister/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/sociopath/">/articles/sociopath/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/sos/">/articles/sos/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/sous-les-tuiles-de-la-revolution/">/articles/sous-les-tuiles-de-la-revolution/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/soviet/">/articles/soviet/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/star-wars-the-force-to-escape/">/articles/star-wars-the-force-to-escape/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/station-perseus/">/articles/station-perseus/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/stigmata/">/articles/stigmata/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/stockholm/">/articles/stockholm/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/stranger-game/">/articles/stranger-game/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/studios-popcorn/">/articles/studios-popcorn/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/super-alpha-world/">/articles/super-alpha-world/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/supernatural/">/articles/supernatural/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/sur-les-traces-du-pr-jones/">/articles/sur-les-traces-du-pr-jones/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/survie/">/articles/survie/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/tchernobyl-montpellier/">/articles/tchernobyl-montpellier/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-axe-murders-of-villisca/">/articles/the-axe-murders-of-villisca/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-bank/">/articles/the-bank/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-bride-in-black/">/articles/the-bride-in-black/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-curse-of-la-llorona/">/articles/the-curse-of-la-llorona/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-dark-side-of-the-elements/">/articles/the-dark-side-of-the-elements/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-ghost-writer/">/articles/the-ghost-writer/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-granny/">/articles/the-granny/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-green-house/">/articles/the-green-house/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-illusionist/">/articles/the-illusionist/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-litchver-woodland/">/articles/the-litchver-woodland/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-lockwood-manor/">/articles/the-lockwood-manor/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-mine-box/">/articles/the-mine-box/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-mystery-shop/">/articles/the-mystery-shop/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-nun/">/articles/the-nun/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-order-of-light/">/articles/the-order-of-light/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-possession/">/articles/the-possession/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-prison/">/articles/the-prison/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-sacrifice/">/articles/the-sacrifice/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-sanatorium-day-night-mode/">/articles/the-sanatorium-day-night-mode/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-sanatorium/">/articles/the-sanatorium/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-school-of-burning-souls/">/articles/the-school-of-burning-souls/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-sculptor/">/articles/the-sculptor/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-shelter/">/articles/the-shelter/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-witch/">/articles/the-witch/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the-witchouse/">/articles/the-witchouse/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/the_grudge/">/articles/the_grudge/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/thomas-crown/">/articles/thomas-crown/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/thor-le-dieu-du-tonnerre/">/articles/thor-le-dieu-du-tonnerre/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/ticket-gagnant/">/articles/ticket-gagnant/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/tomb_hunter_akasha/">/articles/tomb_hunter_akasha/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/top-secret/">/articles/top-secret/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/toque-chef/">/articles/toque-chef/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/tour-du-monde-en-80/">/articles/tour-du-monde-en-80/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/travel-time/">/articles/travel-time/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/truth-or-dare/">/articles/truth-or-dare/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/tu_tambien_sonaras/">/articles/tu_tambien_sonaras/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/tueurs-en-serie/">/articles/tueurs-en-serie/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/ultimate-sacrifice/">/articles/ultimate-sacrifice/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/un-avenir-incertain/">/articles/un-avenir-incertain/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/un-monde-sans-couleurs/">/articles/un-monde-sans-couleurs/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/unity/">/articles/unity/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/vaudou/">/articles/vaudou/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/vestiges-archeologiques/">/articles/vestiges-archeologiques/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/vikings-le-trone-de-glace/">/articles/vikings-le-trone-de-glace/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/visite-mortelle/">/articles/visite-mortelle/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/wake_up_gr/">/articles/wake_up_gr/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/walking-dead/">/articles/walking-dead/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/walking-death/">/articles/walking-death/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/wanted_dead_or_alive/">/articles/wanted_dead_or_alive/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/western-les-braqueurs-de-louest/">/articles/western-les-braqueurs-de-louest/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/whispershhh/">/articles/whispershhh/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/wine-gaming/">/articles/wine-gaming/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/woman-in-black/">/articles/woman-in-black/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/x-file-specimen-51/">/articles/x-file-specimen-51/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/zoe/">/articles/zoe/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/mission-galactique/">/articles/mission-galactique/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/la-crypte/">/articles/la-crypte/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/antenna_palace/">/articles/antenna_palace/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/prison_west_city/">/articles/prison_west_city/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/temple_mictlantecuhtli/">/articles/temple_mictlantecuhtli/</a>
+                  </li>
+                
+                  <li>
+                    <a href="/articles/argent-sale/">/articles/argent-sale/</a>
+                  </li>
+                
+              </ul> -->
+        </div>
+        
+
+        
+    </section>
+</header>
+    <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
+<script type="text/javascript" src="/assets/js/functions.js"></script>
+</body>
+</html>

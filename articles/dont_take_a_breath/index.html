@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf8">
+<meta content="IE-edge,chrome=1" http-equiv="X-UA-Compatable">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Escape game reviews">
+<title>Le meilleur escape game</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-wrap">
+    <div class="logo">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo">
+        </a>
+    </div>
+
+    <ul class ="sidebar">
+        <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li> <a href="/top-france">Top France</a> </li>
+        <li> <a href="/top-world">Top World</a> </li>
+        <li> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li> <a href="/horreur">Horreur</a> </li>
+        <!-- <li> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
+
+    </ul>
+    <ul>
+        <li class="hideOnMobile"> <a href="/top-france">Top France</a> </li>
+        <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li>
+        <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <!-- <li class="search-icon">
+            <input type="search" id="search-input" placeholder="Search">
+            <button id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </li> -->
+
+        <!-- <form action="/search.html" method="get">
+            <li class="search-icon">
+              <input type="search" id="search-input" name="query" placeholder="Search">
+              <button id="search-button" type="submit"value="search">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                  <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+              </button>
+              
+            </li>
+        </form> -->
+        <form action="/search.html" method="get" class="search-form">
+            <input type="text" id="search-box" name="query" placeholder="Search...">
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 
+                    75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 
+                    69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 
+                    0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </form>
+
+        <!-- <form action="/search.html" method="get">
+            <label for="search-box">Search</label>
+            <input type="text" id="search-box" name="query">
+            <input type="submit" value="search">
+        </form> -->
+
+        <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+</nav>
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'none'
+    }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.getElementById("search-button");
+
+        function performSearch() {
+            const query = searchInput.value.trim();
+            console.log("Searching for:", query);  // Log to check the search term
+            
+            if (query) {
+                // Select all article elements (ensure the class '.article' exists)
+                const articles = document.querySelectorAll('.article'); // Make sure each article has the '.article' class
+                
+                console.log("Articles found:", articles.length); // Log how many articles are found
+                
+                articles.forEach(article => {
+                    const title = article.querySelector('.title') ? article.querySelector('.title').textContent.toLowerCase() : '';
+                    const content = article.querySelector('.content') ? article.querySelector('.content').textContent.toLowerCase() : '';
+                    
+                    console.log("Title:", title); // Log title for each article
+                    console.log("Content:", content); // Log content for each article
+                    
+                    if (title.includes(query.toLowerCase()) || content.includes(query.toLowerCase())) {
+                        article.style.display = 'block';  // Show matching article
+                        console.log("Showing article:", title); // Log which article is being shown
+                    } else {
+                        article.style.display = 'none';   // Hide non-matching article
+                        console.log("Hiding article:", title); // Log which article is being hidden
+                    }
+                });
+            }
+        }
+
+        // Trigger search when clicking the button
+        searchButton.addEventListener("click", performSearch);
+
+        // Trigger search when pressing "Enter" key in the input field
+        searchInput.addEventListener("keydown", function (event) {
+            console.log("Key pressed:", event.key);  // Log the pressed key
+            if (event.key === "Enter") {
+                event.preventDefault(); // Prevent default form submission or page reload on Enter key press
+                performSearch();
+            }
+        });
+    });
+
+
+
+</script>
+    <head>
+    <title>Don't take a breath</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1, h2 {
+            color: rgb(237, 115, 1);
+            font-family: 'Arial', sans-serif;
+        }
+        .content-wrapper {
+            margin: 0 auto;
+            padding: 10px;
+            max-width: 90%; /* Responsive wrapper */
+        }
+
+        .content {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .header-image-container {
+            position: relative;
+            width: 100%;
+            height: 300px; /* Adjust the height */
+            overflow: hidden;
+        }
+        .header-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .banner {
+            position: relative;
+            text-align: center;
+            padding: 15px;
+        }
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .info-box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            width: 90%;
+            margin: 0 auto;
+            border: 2px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .info-box div {
+            text-align: center;
+            margin: 0;
+        }
+        .info-box i {
+            font-size: 24px;
+            margin-bottom: 2px;
+        }
+
+        .enseigne-box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            width: 90%;
+            margin: 0 auto;
+            border: 2px solid #cccccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .enseigne-box div {
+            text-align: center;
+            margin: 0;
+        }
+        .enseigne-box i {
+            font-size: 24px;
+            margin-bottom: 2px;
+        }
+
+        .enseigne-name {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--default-blue);
+            margin-bottom: 5px;
+        }
+
+        .enseigne-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            position: relative;
+            gap: 10px;
+        }
+        .title-container h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: rgb(18, 18, 18);
+            text-align: center;
+        }
+        .grade-container {
+            right: 20px;
+            display: flex;
+            align-items: center;
+            background-color: rgba(237, 115, 1, 0.1);
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            padding: 5px 10px;
+        }
+        .grade-container i {
+            font-size: 2em;
+            color: rgb(237, 115, 1);
+            margin-right: 5px;
+        }
+        .grade-container span {
+            font-size: 2em;
+            color: rgb(237, 115, 1);
+        }
+
+        .scenario-container {
+            background-color: #f7f8fc;
+            color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 1 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--default-blue);
+            font-family: 'Arial', sans-serif;
+        }
+        .scenario-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--default-blue);
+            margin-bottom: 10px;
+        }
+        .scenario-description {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+        
+        .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .reservation-button {
+            background: linear-gradient(135deg, #28a745, #218838); /* Gradient green */
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid #1e7e34;
+            box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .reservation-button:hover {
+            background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient */
+            box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+            transform: scale(1.05);
+        }
+
+        .reservation-button:active {
+            transform: scale(0.98);
+            box-shadow: 0px 3px 10px rgba(40, 167, 69, 0.3);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                max-width: 100%;
+                padding: 10px;
+            }
+
+            .title-container h1 {
+                font-size: 1.8em;
+            }
+
+            .info-box, .enseigne-box {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .header-image-container {
+                height: 150px; /* Reduce header image height */
+            }
+
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+        <div class="header-image-container">
+            <img src="/assets/img/escape/athenes-dont-take-breath.webp" alt="Don't take a breath" class="header-image">
+        </div>
+    
+    
+    <div class="content-wrapper">
+        <div class="title-container">
+            <h1>Don't take a breath</h1>
+            
+                <div class="grade-container">
+                    <i class="fas fa-star"></i>
+                    <span>20/20</span>
+                </div>
+            
+        </div>
+        <div class="info-box">
+            <div>
+                
+                    <i class="fas fa-film"></i>
+                    <h4>Thème</h4>
+                    <p>Cambriolage</p>
+                
+            </div>
+            <div>
+                
+                    <i class="fas fa-clock"></i>
+                    <h4>Durée</h4>
+                    <p>2 heures</p>
+                
+            </div>
+            <div>
+                
+                    <i class="fas fa-users"></i>
+                    <h4>Nombre de joueurs</h4>
+                    <p>4 à 6</p>
+                
+            </div>
+        </div>
+        
+        <div class="scenario-container">
+                
+                <h3 class="scenario-title">Scenario</h3>
+                <p class="scenario-description"><p>Tout cela ressemblait à une bonne idée pour de l’argent facile, ils avaient toutes les informations dont ils avaient besoin et même les clés de la maison de la société de sécurité que dirigeait le père de l’un des membres du groupe ! Un aveugle sans défense ne serait pas vraiment une barrière entre eux et l’argent. Mais la réalité est devenue un pur cauchemar. Pourquoi ne savaient-ils pas que l’aveugle “sans défense” était un vétéran des forces spéciales de l’armée américaine qui portait toujours avec lui les cicatrices et la perversion de la guerre en Irak en 1991. Et l’immense maison isolée de 230 mètres carrés était son propre théâtre des opérations. Cette maison dans ce quartier tristement célèbre renfermait plus de secrets qu’ils ne s’y attendaient et a fini par devenir un champ de bataille. Les envahisseurs survivront-ils à un jeu d’évasion mortel ?</p>
+</p>
+                
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <p>Régulièrement sur ce blog, on vous parle de salles qui nous ont donné la sensation d’être transportés dans un film. À Paris, le Live Thriller est un modèle du genre. Lors de notre tournée des escape game d’Athènes en Grèce, nous avons vécu une expérience similaire dans Don’t take a breath.</p>
+
+<p>La salle de Verone Live Action Escape Rooms reprend l’intrigue et le décor du thriller horrifique Don’t Breathe, sorti en 2016. Nous vous conseillons chaudement de le visionner en amont. Ce huis-clos très efficace, rythmé et glacial, suit un groupe d’adolescents de Détroit, habitué des cambriolages. Leur intrusion dans la demeure d’un ancien militaire américain aveugle va très mal tourner et se transformer en jeu du chat et de la souris. On a rarement vu autant de ressemblances entre un film et sa version escape game.</p>
+
+<p>Le décor est quasi identique. Une reproduction presque à taille réelle de la maison du vétéran de guerre. Même style américain, même nombre de pièces, même aménagement… On croirait évoluer sur un plateau de tournage au vu de la qualité des finitions, du niveau de détails et de la surface de jeu incroyablement étendue.</p>
+
+<p>Rien ne manque, les accessoires et meubles sont nombreux, si bien que l’endroit parait réellement habité. Ajoutez à cela l’effet nuit orageuse parfaitement bien rendu par les bruitages et les éclairs lumineux aux fenêtres. On peut difficilement faire plus plus crédible et plus inquiétant comme ambiance.</p>
+
+<h1 id="des-scènes-de-film-reproduites-à-la-perfection">Des scènes de film reproduites à la perfection</h1>
+<p>La particularité des salles athéniennes, c’est qu’un grand nombre d’entre elles comportent au moins un acteur (on vous renvoie à <a href="/top-world/athenes" class="styled-link"> notre article complet sur les escape game d’Athènes </a> si le sujet vous intéresse 😉 ). Dans Don’t take a breath, la performance en la matière est magistrale. Les scènes marquantes du film original sont reproduites à la perfection, même celles qu’on penserait irréalisables dans un escape game.</p>
+
+<p>Chacune d’elles suit une chorégraphie millimétrée, suggérant la tension à tout moment sans jamais dépasser la limite de la violence physique réelle. Pour accentuer leur réalisme, des effets sonores et lumineux appuient certaines actions, notamment dans la dernière partie du jeu.</p>
+
+<p>La salle est classée « très effrayante » dans le classement 2022 des meilleures salles du monde.  Elle est stressante, certes, mais pas véritablement effrayante. L’immersion n’est pas basée sur les classiques apparitions dans le noir présentes dans de nombreuses salles horrifiques.</p>
+
+<p>Au lieu d’essayer de vous faire sursauter toutes les cinq minutes, Don’t Take a Breathe préfère ménager une tension constante. Les passages de théâtre immersif sont nombreux, variés et surtout très excitants. Votre groupe devra improviser des stratégies de diversion, attirer le vétéran vers un endroit pour se sortir d’une situation difficile… Cette liberté de mouvement et de choix est assez unique.</p>
+
+<p>La différence majeure avec la plupart des escape game, c’est que la salle est pratiquement dépourvue d’énigmes. Deux, trois, grand maximum. Mais nous n’avons nullement ressenti un quelconque manque. On voit mal ce que feraient des codes à déchiffrer ou des défis logiques dans une histoire de cambriolage. Pire, ils casseraient la cohérence et le rythme du jeu. Pour apprécier Don’t take a breath, il faut se laisser porter par ses séquences de course-poursuite, par sa narration sans faille et ses cinématiques de toute beauté.</p>
+
+<p>Dernier conseil : Verone Live Action Escape Rooms se situe dans la banlieue nord d’Athènes. Faites vous y déposer en taxi ou VTC car le quartier de l’enseigne n’a pas bonne réputation et nous avons vu plusieurs avis de blogueurs le considérant même comme dangereux à certaines heures de la journée.</p>
+
+        <div>
+            
+                <div class="top-title-container">
+                    <h2 class="top-title">Ressenti Global</h2>
+                </div>
+                <!-- <h1>Ressenti global</h1> -->
+                <p><p>«Ce film dont vous êtes le héros» : Don’t take a breath pourrait en faire son slogan. Les amoureux de théâtre immersif doivent jouer cette pépite de toute urgence. Son rythme haletant vous tiendra en haleine jusqu’au bout !</p>
+</p>
+            
+        </div>
+        
+        
+
+        
+            <div class="reservation-button-container">
+                <a href="https://verone.gr/" class="reservation-button" target="_blank">
+                    🏷️ Réserver ici
+                </a>
+            </div>
+        
+
+        
+            <div class="enseigne-container">
+                
+                        <h2 class="enseigne-name">Verone Live Action Escape Rooms</h2> <!-- Display the enseigne's name at the top -->
+                
+                <div class="enseigne-box">
+                    <div>
+                        
+                            <i class="fas fa-location-arrow"></i>
+                            <h4>Location</h4>
+                            <p>Agiou Konstantinou 28, Acharnes 136 73, Grèce</p>
+                            
+                            
+                            <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3140.5803653454327!2d23.733917384294323!3d38.080152799481986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a18d365545d1%3A0x769d15570b3d6478!2sVerone%20-%20Live%20Action%20Escape%20Rooms!5e0!3m2!1sfr!2snl!4v1742847133446!5m2!1sfr!2snl"
+                                width="100%" 
+                                height="50%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe> 
+                            
+                        
+                    </div>
+                    <div>
+                        
+                            <i class="fas fa-envelope"></i>
+                            <h4>Contact</h4>
+                            <p>+30 693 907 5829</p>
+                            <p>info@verone.gr</p>
+                        
+                    </div>
+                    <div>
+                        
+                            <i class="fas fa-link"></i>
+                            <h4>Site Web</h4>
+                            <a href="https://verone.gr/" target="_blank">https://verone.gr/</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+        
+
+        
+        
+        
+         <!--Find a matching enseigne-->
+        
+
+        <div class="enseigne-container">
+            
+        </div>        
+        <div class="grid-article-container">
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </div>
+        
+    </div>
+
+</body>
+
+    <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
+<script type="text/javascript" src="/assets/js/functions.js"></script>
+</body>
+</html>

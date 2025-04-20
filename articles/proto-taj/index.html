@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf8">
+<meta content="IE-edge,chrome=1" http-equiv="X-UA-Compatable">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Escape game reviews">
+<title>Le meilleur escape game</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-wrap">
+    <div class="logo">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo">
+        </a>
+    </div>
+
+    <ul class ="sidebar">
+        <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li> <a href="/top-france">Top France</a> </li>
+        <li> <a href="/top-world">Top World</a> </li>
+        <li> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li> <a href="/horreur">Horreur</a> </li>
+        <!-- <li> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
+
+    </ul>
+    <ul>
+        <li class="hideOnMobile"> <a href="/top-france">Top France</a> </li>
+        <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li>
+        <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <!-- <li class="search-icon">
+            <input type="search" id="search-input" placeholder="Search">
+            <button id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </li> -->
+
+        <!-- <form action="/search.html" method="get">
+            <li class="search-icon">
+              <input type="search" id="search-input" name="query" placeholder="Search">
+              <button id="search-button" type="submit"value="search">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                  <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+              </button>
+              
+            </li>
+        </form> -->
+        <form action="/search.html" method="get" class="search-form">
+            <input type="text" id="search-box" name="query" placeholder="Search...">
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 
+                    75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 
+                    69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 
+                    0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </form>
+
+        <!-- <form action="/search.html" method="get">
+            <label for="search-box">Search</label>
+            <input type="text" id="search-box" name="query">
+            <input type="submit" value="search">
+        </form> -->
+
+        <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+</nav>
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'none'
+    }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.getElementById("search-button");
+
+        function performSearch() {
+            const query = searchInput.value.trim();
+            console.log("Searching for:", query);  // Log to check the search term
+            
+            if (query) {
+                // Select all article elements (ensure the class '.article' exists)
+                const articles = document.querySelectorAll('.article'); // Make sure each article has the '.article' class
+                
+                console.log("Articles found:", articles.length); // Log how many articles are found
+                
+                articles.forEach(article => {
+                    const title = article.querySelector('.title') ? article.querySelector('.title').textContent.toLowerCase() : '';
+                    const content = article.querySelector('.content') ? article.querySelector('.content').textContent.toLowerCase() : '';
+                    
+                    console.log("Title:", title); // Log title for each article
+                    console.log("Content:", content); // Log content for each article
+                    
+                    if (title.includes(query.toLowerCase()) || content.includes(query.toLowerCase())) {
+                        article.style.display = 'block';  // Show matching article
+                        console.log("Showing article:", title); // Log which article is being shown
+                    } else {
+                        article.style.display = 'none';   // Hide non-matching article
+                        console.log("Hiding article:", title); // Log which article is being hidden
+                    }
+                });
+            }
+        }
+
+        // Trigger search when clicking the button
+        searchButton.addEventListener("click", performSearch);
+
+        // Trigger search when pressing "Enter" key in the input field
+        searchInput.addEventListener("keydown", function (event) {
+            console.log("Key pressed:", event.key);  // Log the pressed key
+            if (event.key === "Enter") {
+                event.preventDefault(); // Prevent default form submission or page reload on Enter key press
+                performSearch();
+            }
+        });
+    });
+
+
+
+</script>
+    <head>
+    <title>Le Proto-TAJ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1, h2 {
+            color: rgb(237, 115, 1);
+            font-family: 'Arial', sans-serif;
+        }
+        .content-wrapper {
+            margin: 0 auto;
+            padding: 10px;
+            max-width: 90%; /* Responsive wrapper */
+        }
+
+        .content {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .header-image-container {
+            position: relative;
+            width: 100%;
+            height: 300px; /* Adjust the height */
+            overflow: hidden;
+        }
+        .header-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .banner {
+            position: relative;
+            text-align: center;
+            padding: 15px;
+        }
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .info-box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            width: 90%;
+            margin: 0 auto;
+            border: 2px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .info-box div {
+            text-align: center;
+            margin: 0;
+        }
+        .info-box i {
+            font-size: 24px;
+            margin-bottom: 2px;
+        }
+
+        .enseigne-box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            width: 90%;
+            margin: 0 auto;
+            border: 2px solid #cccccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .enseigne-box div {
+            text-align: center;
+            margin: 0;
+        }
+        .enseigne-box i {
+            font-size: 24px;
+            margin-bottom: 2px;
+        }
+
+        .enseigne-name {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--default-blue);
+            margin-bottom: 5px;
+        }
+
+        .enseigne-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            position: relative;
+            gap: 10px;
+        }
+        .title-container h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: rgb(18, 18, 18);
+            text-align: center;
+        }
+        .grade-container {
+            right: 20px;
+            display: flex;
+            align-items: center;
+            background-color: rgba(237, 115, 1, 0.1);
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            padding: 5px 10px;
+        }
+        .grade-container i {
+            font-size: 2em;
+            color: rgb(237, 115, 1);
+            margin-right: 5px;
+        }
+        .grade-container span {
+            font-size: 2em;
+            color: rgb(237, 115, 1);
+        }
+
+        .scenario-container {
+            background-color: #f7f8fc;
+            color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 1 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--default-blue);
+            font-family: 'Arial', sans-serif;
+        }
+        .scenario-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--default-blue);
+            margin-bottom: 10px;
+        }
+        .scenario-description {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+        
+        .reservation-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .reservation-button {
+            background: linear-gradient(135deg, #28a745, #218838); /* Gradient green */
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid #1e7e34;
+            box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .reservation-button:hover {
+            background: linear-gradient(135deg, #218838, #1e7e34); /* Darker gradient */
+            box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+            transform: scale(1.05);
+        }
+
+        .reservation-button:active {
+            transform: scale(0.98);
+            box-shadow: 0px 3px 10px rgba(40, 167, 69, 0.3);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                max-width: 100%;
+                padding: 10px;
+            }
+
+            .title-container h1 {
+                font-size: 1.8em;
+            }
+
+            .info-box, .enseigne-box {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .header-image-container {
+                height: 150px; /* Reduce header image height */
+            }
+
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+        <div class="header-image-container">
+            <img src="/assets/img/escape/paris-gentlemen-du-jeu-proto-taj.jpg" alt="Le Proto-TAJ" class="header-image">
+        </div>
+    
+    
+    <div class="content-wrapper">
+        <div class="title-container">
+            <h1>Le Proto-TAJ</h1>
+            
+                <div class="grade-container">
+                    <i class="fas fa-star"></i>
+                    <span>15/20</span>
+                </div>
+            
+        </div>
+        <div class="info-box">
+            <div>
+                
+                    <i class="fas fa-film"></i>
+                    <h4>Thème</h4>
+                    <p>Jeux de société</p>
+                
+            </div>
+            <div>
+                
+                    <i class="fas fa-clock"></i>
+                    <h4>Durée</h4>
+                    <p>75 min</p>
+                
+            </div>
+            <div>
+                
+                    <i class="fas fa-users"></i>
+                    <h4>Nombre de joueurs</h4>
+                    <p>2 à 5</p>
+                
+            </div>
+        </div>
+        
+        <div class="scenario-container">
+                
+                <h3 class="scenario-title">Scenario</h3>
+                <p class="scenario-description"><p>Vous êtes de courageux passionnés de jeux et vous venez nous aider à faire éditer notre dernière création ! Vous savez que vous tenez entre vos mains le meilleur jeu de tous les temps ! Pour espérer le voir entre les mains de milliers de joueurs, vous n’avez pas d’autre choix que d’affronter les tests du Proto-TAJ !</p>
+</p>
+                
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <p>Les Gentlemen du jeu est un temple ludisme qui a ouvert ses portes en décembre 2021, dans le 20e arrondissement de Paris, à deux pas de la place Gambetta,. Ludothèque, soirées jeux, l’établissement propose depuis septembre 2022 son propre escape game.</p>
+
+<p>En terme de scénario, difficile de faire plus raccord avec les autres activités de l’enseigne. Un auteur de jeu désespère de voir sa progéniture rejetée par toutes les maisons d’édition. Votre mission : passer un protocole de test automatisé des jeux à la place du créateur et réussir là où ce dernier a échoué. Cet objectif insolite nous a été présenté de manière on ne peut plus naturelle. À tel point que nous avons mis quelque minutes avant de réaliser que le briefing avait déjà démarré.</p>
+
+<p>Sans plus tarder, direction le sous-sol de la boutique, espace dédié au fameux test mené par une intelligence artificielle. Petite précision : le processus d’évaluation concerne davantage votre équipe que le prototype qui vous a été confié. Vos qualités de joueur vont être jugées au travers d’une série de défis variés propres à l’observation, la réflexion, l’adresse, la mémorisation, la communication…</p>
+
+<h1 id="des-mécaniques-de-jeu-intégrées-aux-énigmes">Des mécaniques de jeu intégrées aux énigmes</h1>
+<p>Bien ficelées, nombreuses, les épreuves auxquelles vous soumet l’IA trouvent aisément leur place au sein d’un examen de compétences. Sans renouveler le genre, elles puisent dans les grands classiques de l’escape game, font preuve de cohérence et s’enchaînent avec une certaine fluidité. Quelques cadenas sont présents mais la majorité du jeu est composée de manipulations.</p>
+
+<p>La majeure partie du temps, la résolution d’énigmes peut s’effectuer en parallèle, caractéristique non négligeable pour les grands groupes. Soyez prévenus, vous aurez du pain sur la planche, on vous conseille donc de former une équipe de quatre au minimum.</p>
+
+<p>Cela peut paraître évident, on le précise quand même : l’aventure s’apprécie encore plus si vous baignez dans les jeux de société ou tout du moins, éprouvez un intérêt pour cet univers. Visuellement, la salle est truffée de références à des succès plébiscités par le grand public. Vous interagirez avec des pieces extraites de diverses boîtes et suivrez parfois la mécanique du jeu en question. Cette très bonne idée ravira sûrement les ludistes confirmés. Les non initiés auront l’occasion d’élargir leurs connaissances en la matière.</p>
+
+<p>L’immersion pourrait sans doute être renforcée en recouvrant d’avantage certains pans de murs blancs et en matérialisant la présence de l’intelligence artificielle aux manettes du test. Le rythme décolle véritablement quand survient un rebondissement bienvenu aux trois quart de l’aventure. L’ensemble gagnerait en dynamisme avec quelques effets spéciaux supplémentaires, une manipulation inhabituelle et une bande sonore plus présente.</p>
+
+        <div>
+            
+                <div class="top-title-container">
+                    <h2 class="top-title">Ressenti Global</h2>
+                </div>
+                <!-- <h1>Ressenti global</h1> -->
+                <p><p>Le Proto-TAJ offre une quantité d’énigmes bien ficelées et se destine avant tout aux amateurs de défis en temps limité. Narration et immersion mériteraient d’être encore davantage développées.</p>
+</p>
+            
+        </div>
+        
+        
+
+        
+            <div class="reservation-button-container">
+                <a href="https://lesgentlemendujeu.com/" class="reservation-button" target="_blank">
+                    🏷️ Réserver ici
+                </a>
+            </div>
+        
+
+        
+            <div class="enseigne-container">
+                
+                        <h2 class="enseigne-name">Les Gentlemen du jeu</h2> <!-- Display the enseigne's name at the top -->
+                
+                <div class="enseigne-box">
+                    <div>
+                        
+                            <i class="fas fa-location-arrow"></i>
+                            <h4>Location</h4>
+                            <p>13 avenue du Père Lachaise, 75020 Paris</p>
+                            
+                            
+                            <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d944.381457771897!2d2.396804249177823!3d48.86420070283901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d131d8adccb%3A0xe41ce3385642d335!2sLes%20Gentlemen%20du%20Jeu%20-%20Gambetta!5e0!3m2!1sfr!2snl!4v1741983634500!5m2!1sfr!2snl"
+                                width="100%" 
+                                height="50%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe> 
+                            
+                        
+                    </div>
+                    <div>
+                        
+                            <i class="fas fa-envelope"></i>
+                            <h4>Contact</h4>
+                            <p>06 59 06 81 60</p>
+                            <p>contact@lesgentlemendujeu.com</p>
+                        
+                    </div>
+                    <div>
+                        
+                            <i class="fas fa-link"></i>
+                            <h4>Site Web</h4>
+                            <a href="https://lesgentlemendujeu.com/" target="_blank">https://lesgentlemendujeu.com/</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+        
+
+        
+        
+        
+         <!--Find a matching enseigne-->
+        
+
+        <div class="enseigne-container">
+            
+        </div>        
+        <div class="grid-article-container">
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </div>
+        
+    </div>
+
+</body>
+
+    <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
+<script type="text/javascript" src="/assets/js/functions.js"></script>
+</body>
+</html>

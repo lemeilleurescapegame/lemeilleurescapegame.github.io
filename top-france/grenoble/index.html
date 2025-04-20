@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf8">
+<meta content="IE-edge,chrome=1" http-equiv="X-UA-Compatable">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Escape game reviews">
+<title>Le meilleur escape game</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-wrap">
+    <div class="logo">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo">
+        </a>
+    </div>
+
+    <ul class ="sidebar">
+        <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li> <a href="/top-france">Top France</a> </li>
+        <li> <a href="/top-world">Top World</a> </li>
+        <li> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li> <a href="/horreur">Horreur</a> </li>
+        <!-- <li> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
+
+    </ul>
+    <ul>
+        <li class="hideOnMobile"> <a href="/top-france">Top France</a> </li>
+        <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li>
+        <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <!-- <li class="search-icon">
+            <input type="search" id="search-input" placeholder="Search">
+            <button id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </li> -->
+
+        <!-- <form action="/search.html" method="get">
+            <li class="search-icon">
+              <input type="search" id="search-input" name="query" placeholder="Search">
+              <button id="search-button" type="submit"value="search">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                  <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+              </button>
+              
+            </li>
+        </form> -->
+        <form action="/search.html" method="get" class="search-form">
+            <input type="text" id="search-box" name="query" placeholder="Search...">
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 
+                    75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 
+                    69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 
+                    0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </form>
+
+        <!-- <form action="/search.html" method="get">
+            <label for="search-box">Search</label>
+            <input type="text" id="search-box" name="query">
+            <input type="submit" value="search">
+        </form> -->
+
+        <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+</nav>
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'none'
+    }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.getElementById("search-button");
+
+        function performSearch() {
+            const query = searchInput.value.trim();
+            console.log("Searching for:", query);  // Log to check the search term
+            
+            if (query) {
+                // Select all article elements (ensure the class '.article' exists)
+                const articles = document.querySelectorAll('.article'); // Make sure each article has the '.article' class
+                
+                console.log("Articles found:", articles.length); // Log how many articles are found
+                
+                articles.forEach(article => {
+                    const title = article.querySelector('.title') ? article.querySelector('.title').textContent.toLowerCase() : '';
+                    const content = article.querySelector('.content') ? article.querySelector('.content').textContent.toLowerCase() : '';
+                    
+                    console.log("Title:", title); // Log title for each article
+                    console.log("Content:", content); // Log content for each article
+                    
+                    if (title.includes(query.toLowerCase()) || content.includes(query.toLowerCase())) {
+                        article.style.display = 'block';  // Show matching article
+                        console.log("Showing article:", title); // Log which article is being shown
+                    } else {
+                        article.style.display = 'none';   // Hide non-matching article
+                        console.log("Hiding article:", title); // Log which article is being hidden
+                    }
+                });
+            }
+        }
+
+        // Trigger search when clicking the button
+        searchButton.addEventListener("click", performSearch);
+
+        // Trigger search when pressing "Enter" key in the input field
+        searchInput.addEventListener("keydown", function (event) {
+            console.log("Key pressed:", event.key);  // Log the pressed key
+            if (event.key === "Enter") {
+                event.preventDefault(); // Prevent default form submission or page reload on Enter key press
+                performSearch();
+            }
+        });
+    });
+
+
+
+</script>
+    
+<div class="top-articles-container">
+    <div class="top-title-container">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
+        </svg>
+        <h2 class="top-title">Tous les escapes de Bayonne</h2>
+    </div>
+    <div class="top-articles-placeholder" data-articles="[{
+                     &quot;rank&quot;: &quot;1&quot;, 
+                     &quot;title&quot;: &quot;&quot;, 
+                     &quot;link&quot;: &quot;/articles/1_template/&quot;, 
+                     &quot;image&quot;: &quot;/assets/img/escape/&quot;,
+                     &quot;note&quot;: &quot;20&quot;,
+                     &quot;enseigne&quot; : &quot;&quot;
+                    }
+    ]">
+    </div>
+</div>
+
+<script src="/assets/js/top-articles.js"></script>
+
+<div class="featured-articles-wrapper">
+    <div class="featured-title-box">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
+        </svg>
+        <h2 class="featured-title">Tous les escapes de Grenoble</h2>
+    </div>
+    <div class="featured-articles-placeholder" data-featured="[{
+                        &quot;title&quot;: &quot;Bleue&quot;, 
+                        &quot;link&quot;: &quot;/articles/bleue/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/bleue.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Game Bastille - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Donjon &amp; Potions&quot;, 
+                        &quot;link&quot;: &quot;/articles/donjon-potions/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/donjon-potions.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Au Fil du Dédale - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Le Train des Sorciers&quot;, 
+                        &quot;link&quot;: &quot;/articles/le-train-des-sorciers/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/le-train-des-sorciers.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique, Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Only The Brain - Eybens&quot;
+                    },{
+                        &quot;title&quot;: &quot;Stockholm&quot;, 
+                        &quot;link&quot;: &quot;/articles/stockholm/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/stockholm.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Game Bastille - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;L&#39;Élixir&quot;, 
+                        &quot;link&quot;: &quot;/articles/lelixir/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/lelixir.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Prizoners - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;L&#39;Autre Demeure&quot;, 
+                        &quot;link&quot;: &quot;/articles/lautre-demeure/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/lautre-demeure.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Live Escape - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Mine&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-mine/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-mine.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Prizoners - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Le Chemin de Traverse&quot;, 
+                        &quot;link&quot;: &quot;/articles/le-chemin-de-traverse/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/le-chemin-de-traverse.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique, Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Only The Brain - Eybens&quot;
+                    },{
+                        &quot;title&quot;: &quot;Le Manoir des Addams&quot;, 
+                        &quot;link&quot;: &quot;/articles/le-manoir-des-addams/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/le-manoir-des-addams.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Only The Brain - Eybens&quot;
+                    },{
+                        &quot;title&quot;: &quot;Karma Project&quot;, 
+                        &quot;link&quot;: &quot;/articles/karma-project/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/karma-project.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Prizoners - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Prison Romaine&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-prison-romaine/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-prison-romaine.webp&quot;,
+                        &quot;theme&quot;: &quot;Historique / Culturel&quot;,
+                        &quot;enseigne&quot;: &quot;Prizoners - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Alice&quot;, 
+                        &quot;link&quot;: &quot;/articles/alice/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/alice.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Game Bastille - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Maudit Pirate&quot;, 
+                        &quot;link&quot;: &quot;/articles/maudit-pirate/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/maudit-pirate.webp&quot;,
+                        &quot;theme&quot;: &quot;Pirates&quot;,
+                        &quot;enseigne&quot;: &quot;Only The Brain - Eybens&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Révolte&quot;, 
+                        &quot;link&quot;: &quot;/articles/sous-les-tuiles-de-la-revolution/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/sous-les-tuiles-de-la-revolution.webp&quot;,
+                        &quot;theme&quot;: &quot;Historique / Culturel&quot;,
+                        &quot;enseigne&quot;: &quot;Challenge The Room - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;BIZU&quot;, 
+                        &quot;link&quot;: &quot;/articles/b-i-z-u/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/b-i-z-u.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;Challenge The Room - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Seven&quot;, 
+                        &quot;link&quot;: &quot;/articles/seven/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/seven.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère, Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Game Crolles - Crolles&quot;
+                    },{
+                        &quot;title&quot;: &quot;Mission Istanbul&quot;, 
+                        &quot;link&quot;: &quot;/articles/mission-istanbul/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/mission-istanbul.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Live Escape - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Mission non répertoriée&quot;, 
+                        &quot;link&quot;: &quot;/articles/mission-non-repertoriee/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/mission-non-repertoriee.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Prizoners - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Toque Chef&quot;, 
+                        &quot;link&quot;: &quot;/articles/toque-chef/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/toque-chef.webp&quot;,
+                        &quot;theme&quot;: &quot;Logique&quot;,
+                        &quot;enseigne&quot;: &quot;Challenge The Room - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Studios PopCorn&quot;, 
+                        &quot;link&quot;: &quot;/articles/studios-popcorn/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/studios-popcorn.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Studios PopCorn - Voreppe&quot;
+                    },{
+                        &quot;title&quot;: &quot;Prison Break&quot;, 
+                        &quot;link&quot;: &quot;/articles/prison-break-grenoble/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/prison-break.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion, Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Team Break - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Fantomatch&quot;, 
+                        &quot;link&quot;: &quot;/articles/fantomatch/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/fantomatch.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Au Fil du Dédale - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Meurtre à la Nouvelle Orléans&quot;, 
+                        &quot;link&quot;: &quot;/articles/meurtre-a-la-nouvelle-orleans/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/meurtre-a-la-nouvelle-orleans.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Au Fil du Dédale - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Crypte&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-crypte/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-crypte.webp&quot;,
+                        &quot;theme&quot;: &quot;Spiritisme / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Le Donjon - Paris&quot;
+                    },{
+                        &quot;title&quot;: &quot;Mayday&quot;, 
+                        &quot;link&quot;: &quot;/articles/mayday/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/mayday.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Games United - Huez&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Casa de Papel&quot;, 
+                        &quot;link&quot;: &quot;/articles/casa-de-papel/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/casa-de-papel.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Only The Brain - Eybens&quot;
+                    },{
+                        &quot;title&quot;: &quot;Cambriolage au musée&quot;, 
+                        &quot;link&quot;: &quot;/articles/cambriolage-au-musee/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/cambriolage-au-musee.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Au Fil du Dédale - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Le Savant fou&quot;, 
+                        &quot;link&quot;: &quot;/articles/le-bureau-du-savant-fou/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/le-bureau-du-savant-fou.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Challenge The Room - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Prison Island&quot;, 
+                        &quot;link&quot;: &quot;/articles/prison-island/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/prison-island.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Exalto - Décines-Charpieu&quot;
+                    },{
+                        &quot;title&quot;: &quot;Le Magicobus&quot;, 
+                        &quot;link&quot;: &quot;/articles/le-magicobus/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/le-magicobus.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Only The Brain - Eybens&quot;
+                    },{
+                        &quot;title&quot;: &quot;Champollion et le Secret des Hiéroglyphes&quot;, 
+                        &quot;link&quot;: &quot;/articles/champollion-et-le-secret-des-hieroglyphes/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/champollion-et-le-secret-des-hieroglyphes.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Puzzle Animations - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Le Fantôme du Titanic&quot;, 
+                        &quot;link&quot;: &quot;/articles/le-fantome-du-titanic/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/le-fantome-du-titanic.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;Live Escape - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Mafia&quot;, 
+                        &quot;link&quot;: &quot;/articles/le-syndicat-du-crime-chapitre-1-otages/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/le-syndicat-du-crime-chapitre-1-otages.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Challenge The Room - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;MIB - Mission Is Back&quot;, 
+                        &quot;link&quot;: &quot;/articles/mib-mission-is-back/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/mib-mission-is-back.webp&quot;,
+                        &quot;theme&quot;: &quot;Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Game Crolles - Crolles&quot;
+                    },{
+                        &quot;title&quot;: &quot;Le secret de la liqueur verte&quot;, 
+                        &quot;link&quot;: &quot;/articles/le-secret-de-la-liqueur-verte/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/le-secret-de-la-liqueur-verte.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Puzzle Animations - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;20 000 ans sous la terre - chapitre II&quot;, 
+                        &quot;link&quot;: &quot;/articles/20-000-ans-sous-la-terre-chapitre-ii/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/20-000-ans-sous-la-terre-chapitre-ii.webp&quot;,
+                        &quot;theme&quot;: &quot;Historique / Culturel&quot;,
+                        &quot;enseigne&quot;: &quot;Prizoners - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Fort Boyard Aventures&quot;, 
+                        &quot;link&quot;: &quot;/articles/fort-boyard-aventures/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/fort-boyard-aventures.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Fort Boyard Aventures - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Tour du Monde en 80&#39;&quot;, 
+                        &quot;link&quot;: &quot;/articles/tour-du-monde-en-80/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/tour-du-monde-en-80.webp&quot;,
+                        &quot;theme&quot;: &quot;Logique&quot;,
+                        &quot;enseigne&quot;: &quot;Puzzle Animations - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;SCEP Unité Spéciale&quot;, 
+                        &quot;link&quot;: &quot;/articles/scep-unite-speciale/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/scep-unite-speciale.webp&quot;,
+                        &quot;theme&quot;: &quot;Logique&quot;,
+                        &quot;enseigne&quot;: &quot;Puzzle Animations - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Once Upon A Time&quot;, 
+                        &quot;link&quot;: &quot;/articles/once-upon-a-time/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/once-upon-a-time.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Game Crolles - Crolles&quot;
+                    },{
+                        &quot;title&quot;: &quot;Les Disparus de Louisiane&quot;, 
+                        &quot;link&quot;: &quot;/articles/les-disparus-de-louisiane/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/les-disparus-de-louisiane.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion, Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Game Crolles - Crolles&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Cabane sous la dent de Crolles&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-cabane-sous-la-dent-de-crolles/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-cabane-sous-la-dent-de-crolles.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Game Crolles - Crolles&quot;
+                    },{
+                        &quot;title&quot;: &quot;Koh Lanta&quot;, 
+                        &quot;link&quot;: &quot;/articles/koh-lanta/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/koh-lanta.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Team Break - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Mineshaft&quot;, 
+                        &quot;link&quot;: &quot;/articles/mineshaft/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/mineshaft.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Games United - Huez&quot;
+                    },{
+                        &quot;title&quot;: &quot;Défis Pirate&quot;, 
+                        &quot;link&quot;: &quot;/articles/defis-pirate/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/defis-pirate.webp&quot;,
+                        &quot;theme&quot;: &quot;Pirates&quot;,
+                        &quot;enseigne&quot;: &quot;Défis Pirate - Lyon&quot;
+                    },{
+                        &quot;title&quot;: &quot;La grotte de Mandrin&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-grotte-de-mandrin/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-grotte-de-mandrin.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Puzzle Animations - Grenoble&quot;
+                    },{
+                        &quot;title&quot;: &quot;Obsession&quot;, 
+                        &quot;link&quot;: &quot;/articles/obsession/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/obsession.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Game Crolles - Crolles&quot;
+                    },{
+                        &quot;title&quot;: &quot;Walking Dead&quot;, 
+                        &quot;link&quot;: &quot;/articles/walking-dead/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/walking-dead.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Team Break - Grenoble&quot;
+                    }
+    ]">
+    </div>
+</div>
+
+<script src="/assets/js/featured-articles.js"></script>
+
+
+    <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
+<script type="text/javascript" src="/assets/js/functions.js"></script>
+</body>
+</html>

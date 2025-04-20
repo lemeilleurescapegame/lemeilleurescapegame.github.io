@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf8">
+<meta content="IE-edge,chrome=1" http-equiv="X-UA-Compatable">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Escape game reviews">
+<title>Le meilleur escape game</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-wrap">
+    <div class="logo">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo">
+        </a>
+    </div>
+
+    <ul class ="sidebar">
+        <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li> <a href="/top-france">Top France</a> </li>
+        <li> <a href="/top-world">Top World</a> </li>
+        <li> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li> <a href="/horreur">Horreur</a> </li>
+        <!-- <li> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
+
+    </ul>
+    <ul>
+        <li class="hideOnMobile"> <a href="/top-france">Top France</a> </li>
+        <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li>
+        <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <!-- <li class="search-icon">
+            <input type="search" id="search-input" placeholder="Search">
+            <button id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </li> -->
+
+        <!-- <form action="/search.html" method="get">
+            <li class="search-icon">
+              <input type="search" id="search-input" name="query" placeholder="Search">
+              <button id="search-button" type="submit"value="search">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                  <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+              </button>
+              
+            </li>
+        </form> -->
+        <form action="/search.html" method="get" class="search-form">
+            <input type="text" id="search-box" name="query" placeholder="Search...">
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 
+                    75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 
+                    69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 
+                    0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </form>
+
+        <!-- <form action="/search.html" method="get">
+            <label for="search-box">Search</label>
+            <input type="text" id="search-box" name="query">
+            <input type="submit" value="search">
+        </form> -->
+
+        <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+</nav>
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'none'
+    }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.getElementById("search-button");
+
+        function performSearch() {
+            const query = searchInput.value.trim();
+            console.log("Searching for:", query);  // Log to check the search term
+            
+            if (query) {
+                // Select all article elements (ensure the class '.article' exists)
+                const articles = document.querySelectorAll('.article'); // Make sure each article has the '.article' class
+                
+                console.log("Articles found:", articles.length); // Log how many articles are found
+                
+                articles.forEach(article => {
+                    const title = article.querySelector('.title') ? article.querySelector('.title').textContent.toLowerCase() : '';
+                    const content = article.querySelector('.content') ? article.querySelector('.content').textContent.toLowerCase() : '';
+                    
+                    console.log("Title:", title); // Log title for each article
+                    console.log("Content:", content); // Log content for each article
+                    
+                    if (title.includes(query.toLowerCase()) || content.includes(query.toLowerCase())) {
+                        article.style.display = 'block';  // Show matching article
+                        console.log("Showing article:", title); // Log which article is being shown
+                    } else {
+                        article.style.display = 'none';   // Hide non-matching article
+                        console.log("Hiding article:", title); // Log which article is being hidden
+                    }
+                });
+            }
+        }
+
+        // Trigger search when clicking the button
+        searchButton.addEventListener("click", performSearch);
+
+        // Trigger search when pressing "Enter" key in the input field
+        searchInput.addEventListener("keydown", function (event) {
+            console.log("Key pressed:", event.key);  // Log the pressed key
+            if (event.key === "Enter") {
+                event.preventDefault(); // Prevent default form submission or page reload on Enter key press
+                performSearch();
+            }
+        });
+    });
+
+
+
+</script>
+    
+<!-- <div class="language-switch-container">
+    <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button>
+</div> -->
+<div class="language-switch-container">
+    <button id="languageSwitchButton" onclick="toggleLanguage()">
+        <img id="languageFlag" src="/assets/img/flags/en-optimized.webp" alt="Flag" />
+        <span>Switch to English</span>
+    </button>
+</div>
+
+<div class="top-articles-container-description">
+    <div class="top-title-container">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
+        </svg>
+        <h2 class="top-title">Les Incontournables</h2>
+        <!-- <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button> -->
+    </div>
+    <div class="top-articles-placeholder-description" data-articles="[{
+                        &quot;rank&quot;: &quot;1&quot;,
+                        &quot;title&quot;: &quot;Cybercity 2049&quot;,
+                        &quot;link&quot;: &quot;/articles/cibercity_2049/&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/barcelone-cybercity-2049.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Barcelona Santa Coloma&quot;,
+                        &quot;info_top&quot;: &quot;Grandiose et cinématographique, Cibercity 2049 incarne la perfection et le renouveau de l’escape game. Escape Barcelona n’est décidément pas une enseigne comme les autres… Chaque nouvelle salle est une étape de plus franchie dans l’innovation. Les décors étaient tellement bluffants que nous n’avions pas envie de quitter la salle. Un conseil : prenez le taemps de tout explorer et d’être curieux, car un nombre important d’actions cachées se dissimule un peu partout.&quot;,
+                        &quot;info_top_en&quot;: &quot;Grand and cinematic, Cibercity 2049 embodies the pinnacle of perfection and the evolution of escape games. Escape Barcelona is truly in a league of its own… With each new room, they push the boundaries of innovation even further. The set design was so stunning that we didn’t want to leave! A little tip: take your time to explore every detail and stay curious—there are plenty of hidden actions waiting to be discovered.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;2&quot;,
+                        &quot;title&quot;: &quot;LA POSESIÓN&quot;,
+                        &quot;link&quot;: &quot;/articles/la_posesion/&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/la-posesion.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Arcanum&quot;,
+                        &quot;info_top&quot;: &quot;La Possession tire son inspiration du film d’horreur “Insidious”. Le début de partie est phénoménal avec des effets spéciaux spectaculaires. Les acteurs ont une maîtrise parfaite des interventions qui sont acrobatiques et subtilement dosées. C’est l’apothéose des salles d’horreur cinématographiques qui vous feront croire que ce que vous voyez relève du surnaturel… Une merveille dans son genre.&quot;,
+                        &quot;info_top_en&quot;: &quot;La Possession draws its inspiration from the horror film Insidious. The game kicks off in spectacular fashion, with breathtaking special effects. The actors deliver flawless performances, seamlessly blending acrobatics with perfectly timed interventions. This is the pinnacle of cinematic horror escape rooms—so immersive, you’ll start to believe the supernatural is real. A true masterpiece of its kind.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;3&quot;,
+                        &quot;title&quot;: &quot;TOMB HUNTER : AKASHA’S LEGEND&quot;,
+                        &quot;link&quot;: &quot;/articles/tomb_hunter_akasha/&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/akasha.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Barcelona Santa Coloma&quot;,
+                        &quot;info_top&quot;: &quot;Les créateurs d’Escape Barcelona ont sans doute de l’or dans les mains pour créer de telles épopées. Akasha est le jeu d’action/aventure le plus abouti que nous ayons testé. Les effets spéciaux et le décor seraient même capables de faire rougir les studios hollywoodiens.&quot;,
+                        &quot;info_top_en&quot;: &quot;The creators of Escape Barcelona surely have a golden touch when it comes to crafting such epic experiences. Akasha is the most immersive action-adventure escape game we’ve ever played. With stunning special effects and set design that could rival even Hollywood studios, it’s nothing short of spectacular.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;4&quot;,
+                        &quot;title&quot;: &quot;Malum&quot;,
+                        &quot;link&quot;: &quot;/articles/malum/&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/malum-escape-room.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Krematorium&quot;,
+                        &quot;info_top&quot;: &quot;Quand salle Horreur et décor de grande qualité vont de pair, on est forcément sur un immanquable. Dans Malum, vous devrez conjurer le Mal qui a pris possession des lieux. Les acteurs sont absolument incroyables, et notamment dans les bruits qu’ils sont capables de produire sans trucage. On assiste également à plusieurs cinématiques de grande qualité où l’objectif est simplement de contempler la “chose” qui rode autour de vous.&quot;,
+                        &quot;info_top_en&quot;: &quot;When a high-quality horror room meets incredible set design, it’s a must-see experience. In Malum, you’ll need to banish the evil that has taken over the place. The actors are absolutely amazing, especially with the realistic sounds they create without any special effects. You’ll also witness several high-quality cinematic scenes, where the goal is simply to watch the “thing” lurking around you.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;5&quot;,
+                        &quot;title&quot;: &quot;Nakatomi Plaza&quot;,
+                        &quot;link&quot;: &quot;/articles/nakatomi_plaza/&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/nakatomi-plaza.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Republik&quot;,
+                        &quot;info_top&quot;: &quot;Un escape room complètement déjanté. Nous pensions jouer un escape game uniquement centré sur l’action mais c’est bien plus que cela. Vous passerez par toutes les émotions dans cette salle qui regorge de surprises. La performance du game-master est mémorable.&quot;,
+                        &quot;info_top_en&quot;: &quot;A totally wild escape room. We thought it would be an action-focused game, but it’s so much more than that. You’ll experience a full range of emotions in this room, which is packed with surprises. The game master’s performance is truly unforgettable.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;6&quot;,
+                        &quot;title&quot;: &quot;Nathael&quot;,
+                        &quot;link&quot;: &quot;/articles/nathael/&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/cubick-nathael.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Cubick Room Escape (MATARÓ)&quot;,
+                        &quot;info_top&quot;: &quot;On n’aurait jamais pensé mettre une salle horreur aussi haute dans ce classement. Nathael c’est une sorte de jumanji maléfique. Un jeu dans lequel vous êtes forcé d’accomplir des défis terrifiants. Décors surnaturels et scènes cinématographiques vous attendent dans cette demeure lugubre&quot;,
+                        &quot;info_top_en&quot;: &quot;We never expected to place a horror room so high on this list. Nathael is like an evil version of Jumanji. It’s a game where you’re forced to face terrifying challenges. Supernatural sets and cinematic scenes await you in this eerie, foreboding mansion.&quot;
+                    }
+    ]">
+    </div>
+</div>
+
+<script>
+    let isEnglish = false; 
+
+    function toggleLanguage() {
+        isEnglish = !isEnglish;
+        const articles = document.querySelectorAll('.top-article-description');
+        const languageButton = document.getElementById('languageSwitchButton');
+        const languageFlag = document.getElementById('languageFlag');
+
+        articles.forEach((article) => {
+            const articleData = JSON.parse(article.getAttribute("data-article")); 
+            const infoTop = article.querySelector('.top-article-description-info');
+
+            if (articleData) {
+                if (isEnglish) {
+                    infoTop.innerHTML = articleData.info_top_en;
+                    languageButton.querySelector("span").textContent = 'En Français'; // Update only text
+                    languageFlag.src = "/assets/img/flags/france-optimized.webp"; // Switch to English flag
+                } else {
+                    infoTop.innerHTML = articleData.info_top;
+                    languageButton.querySelector("span").textContent = 'Switch to English'; // Update only text
+                    languageFlag.src = "/assets/img/flags/en-optimized.webp"; // Switch to French flag
+                }
+            }
+        });
+    }
+</script>
+
+<script src="/assets/js/top-articles-description.js"></script>
+
+
+    <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
+<script type="text/javascript" src="/assets/js/functions.js"></script>
+</body>
+</html>
