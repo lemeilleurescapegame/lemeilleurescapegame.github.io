@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf8">
+<meta content="IE-edge,chrome=1" http-equiv="X-UA-Compatable">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Escape game reviews">
+<title>Le meilleur escape game</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-wrap">
+    <div class="logo">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo">
+        </a>
+    </div>
+
+    <ul class ="sidebar">
+        <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li> <a href="/top-france">Top France</a> </li>
+        <li> <a href="/top-world">Top World</a> </li>
+        <li> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li> <a href="/horreur">Horreur</a> </li>
+        <!-- <li> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
+
+    </ul>
+    <ul>
+        <li class="hideOnMobile"> <a href="/top-france">Top France</a> </li>
+        <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li>
+        <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
+        <!-- <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <!-- <li class="search-icon">
+            <input type="search" id="search-input" placeholder="Search">
+            <button id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </li> -->
+
+        <!-- <form action="/search.html" method="get">
+            <li class="search-icon">
+              <input type="search" id="search-input" name="query" placeholder="Search">
+              <button id="search-button" type="submit"value="search">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                  <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+              </button>
+              
+            </li>
+        </form> -->
+        <form action="/search.html" method="get" class="search-form">
+            <input type="text" id="search-box" name="query" placeholder="Search...">
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 
+                    75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 
+                    69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 
+                    0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </form>
+
+        <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+</nav>
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'none'
+    }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.getElementById("search-button");
+
+        function performSearch() {
+            const query = searchInput.value.trim();
+            console.log("Searching for:", query);  // Log to check the search term
+            
+            if (query) {
+                // Select all article elements (ensure the class '.article' exists)
+                const articles = document.querySelectorAll('.article'); // Make sure each article has the '.article' class
+                
+                console.log("Articles found:", articles.length); // Log how many articles are found
+                
+                articles.forEach(article => {
+                    const title = article.querySelector('.title') ? article.querySelector('.title').textContent.toLowerCase() : '';
+                    const content = article.querySelector('.content') ? article.querySelector('.content').textContent.toLowerCase() : '';
+                    
+                    console.log("Title:", title); // Log title for each article
+                    console.log("Content:", content); // Log content for each article
+                    
+                    if (title.includes(query.toLowerCase()) || content.includes(query.toLowerCase())) {
+                        article.style.display = 'block';  // Show matching article
+                        console.log("Showing article:", title); // Log which article is being shown
+                    } else {
+                        article.style.display = 'none';   // Hide non-matching article
+                        console.log("Hiding article:", title); // Log which article is being hidden
+                    }
+                });
+            }
+        }
+
+        // Trigger search when clicking the button
+        searchButton.addEventListener("click", performSearch);
+
+        // Trigger search when pressing "Enter" key in the input field
+        searchInput.addEventListener("keydown", function (event) {
+            console.log("Key pressed:", event.key);  // Log the pressed key
+            if (event.key === "Enter") {
+                event.preventDefault(); // Prevent default form submission or page reload on Enter key press
+                performSearch();
+            }
+        });
+    });
+
+
+
+</script>
+
+    <!-- Google Translate Widget -->
+    <!--
+    <div id="google_translate_element" style="float: right; margin: 1rem;"></div>
+    -->
+    <div id="google_translate_wrapper">
+        <div id="google_translate_element"></div>
+    </div>
+    
+<div class="featured-articles-wrapper">
+    <div class="featured-title-box">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
+        </svg>
+        <h2 class="featured-title">Outside Barcelone</h2>
+    </div>
+    <div class="featured-articles-placeholder" data-featured="[{
+                        &quot;title&quot;: &quot;Ciudad de Vacaciones&quot;, 
+                        &quot;link&quot;: &quot;/articles/vacaciones/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/vacaciones.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;The City - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Nightmare&quot;, 
+                        &quot;link&quot;: &quot;/articles/nightmare/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/nightmare.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Island Phobia - Playa de las Americas&quot;
+                    },{
+                        &quot;title&quot;: &quot;Dragon&#39;s Ring&quot;, 
+                        &quot;link&quot;: &quot;/articles/dragons-ring/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/dragons-ring.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman, Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Island Phobia - Playa de las Americas&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Conservador&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-conservador/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-conservador.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Room Roses - Roses&quot;
+                    },{
+                        &quot;title&quot;: &quot;K-19&quot;, 
+                        &quot;link&quot;: &quot;/articles/k-19/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/k-19.webp&quot;,
+                        &quot;theme&quot;: &quot;Historique / Culturel&quot;,
+                        &quot;enseigne&quot;: &quot;AlcatraZ - San Cristóbal de La Laguna&quot;
+                    },{
+                        &quot;title&quot;: &quot;Submarine Adventure&quot;, 
+                        &quot;link&quot;: &quot;/articles/submarine-adventure/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/submarine-adventure.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;The Escape Room Lanzarote - Puerto del Carmen&quot;
+                    },{
+                        &quot;title&quot;: &quot;Tercera Dinastía&quot;, 
+                        &quot;link&quot;: &quot;/articles/tercera-dinastia/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/tercera-dinastia.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Esfinge - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Robbery&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-robbery/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-robbery.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;La Casa de las Habitaciones - Málaga&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Cage&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-cage/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-cage.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;QuestQuest - Palma de Mallorca&quot;
+                    },{
+                        &quot;title&quot;: &quot;Posada Dumont: El Hotel de los Suicidas&quot;, 
+                        &quot;link&quot;: &quot;/articles/posada-dumont-el-hotel-de-los-suicidas/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/posada-dumont-el-hotel-de-los-suicidas.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Terror Stories - Valence&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Kidnapping&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-kidnapping/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-kidnapping.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Salou - Salou&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Sueño&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-sueno/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-sueno.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Arcadia - Séville&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Mystery of Scum Island&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-mystery-of-scum-island/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-mystery-of-scum-island.webp&quot;,
+                        &quot;theme&quot;: &quot;Pirates&quot;,
+                        &quot;enseigne&quot;: &quot;Madness - Tolède&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Entrevista&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-entrevista/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-entrevista.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;Cubick - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;El País de la Fantasía&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-pais-de-la-fantasia/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-pais-de-la-fantasia.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;El Reto - Séville&quot;
+                    },{
+                        &quot;title&quot;: &quot;Jurassic Land&quot;, 
+                        &quot;link&quot;: &quot;/articles/jurassic-land/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/jurassic-land.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Barcelona Santa Coloma&quot;
+                    },{
+                        &quot;title&quot;: &quot;Roomangie&quot;, 
+                        &quot;link&quot;: &quot;/articles/roomangie/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/roomangie.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Ilusium - Mataró&quot;
+                    },{
+                        &quot;title&quot;: &quot;Misterio Flamenco&quot;, 
+                        &quot;link&quot;: &quot;/articles/misterio-flamenco/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/misterio-flamenco.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Incognito - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Museum El Eslabon Perdido&quot;, 
+                        &quot;link&quot;: &quot;/articles/museum-el-eslabon-perdido/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/museum-el-eslabon-perdido.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Xkapa - Santander&quot;
+                    },{
+                        &quot;title&quot;: &quot;Indiana&#39;s Adventure&quot;, 
+                        &quot;link&quot;: &quot;/articles/indianas-adventure/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/indianas-adventure.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Hollywood Escape Zaragoza - Saragosse&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Orfanato&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-orfanato/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-orfanato.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Fear Factory Experience - L&#39;Hospitalet de Llobregat&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Hora de las Bestias&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-hora-de-las-bestias/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-hora-de-las-bestias.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Katharsis - Mataró&quot;
+                    },{
+                        &quot;title&quot;: &quot;Emily&#39;s Room&quot;, 
+                        &quot;link&quot;: &quot;/articles/emilys-room/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/emilys-room.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Juegos Maniacos - Bilbao&quot;
+                    },{
+                        &quot;title&quot;: &quot;Operación Castillejos&quot;, 
+                        &quot;link&quot;: &quot;/articles/operacion-castillejos/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/operacion-castillejos.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Escape4Room - Reus&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Caída del Regimen&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-caida-del-regimen/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-caida-del-regimen.webp&quot;,
+                        &quot;theme&quot;: &quot;Historique / Culturel&quot;,
+                        &quot;enseigne&quot;: &quot;Abduction - Valence&quot;
+                    },{
+                        &quot;title&quot;: &quot;Bank Robbery&quot;, 
+                        &quot;link&quot;: &quot;/articles/bank-robbery/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/bank-robbery.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Island Phobia - Playa de las Americas&quot;
+                    },{
+                        &quot;title&quot;: &quot;Regresión Santo Grial&quot;, 
+                        &quot;link&quot;: &quot;/articles/regresion-santo-grial/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/regresion-santo-grial.webp&quot;,
+                        &quot;theme&quot;: &quot;Historique / Culturel&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Room Tarragona - Tarragone&quot;
+                    },{
+                        &quot;title&quot;: &quot;The theft of Tanit&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-theft-of-tanit/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-theft-of-tanit.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Scapart Ibiza - Eivissa&quot;
+                    },{
+                        &quot;title&quot;: &quot;AlcatraZ&quot;, 
+                        &quot;link&quot;: &quot;/articles/alcatraz/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/alcatraz.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;Breakout - Rotterdam&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Dark Years&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-dark-years/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-dark-years.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;The X-Door - Valence&quot;
+                    },{
+                        &quot;title&quot;: &quot;Caín&quot;, 
+                        &quot;link&quot;: &quot;/articles/cain/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/cain.webp&quot;,
+                        &quot;theme&quot;: &quot;Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;The X-Door - Alicante&quot;
+                    },{
+                        &quot;title&quot;: &quot;Proyecto Abigail&quot;, 
+                        &quot;link&quot;: &quot;/articles/proyecto-abigail/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/proyecto-abigail.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;La Caja - San Cristóbal de La Laguna&quot;
+                    },{
+                        &quot;title&quot;: &quot;Lost in the Past&quot;, 
+                        &quot;link&quot;: &quot;/articles/lost-in-the-past/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/lost-in-the-past.webp&quot;,
+                        &quot;theme&quot;: &quot;Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;QuestQuest - Palma de Mallorca&quot;
+                    },{
+                        &quot;title&quot;: &quot;Proyecto Dcrisis&quot;, 
+                        &quot;link&quot;: &quot;/articles/proyecto-dcrisis/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/proyecto-dcrisis.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur, Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Paradiso - Leganés&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Iniciativa&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-iniciativa/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-iniciativa.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;La Iniciativa - Granollers&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Haunted House&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-haunted-house/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-haunted-house.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Xcapate - Alicante&quot;
+                    },{
+                        &quot;title&quot;: &quot;Le trésor des Aztèques&quot;, 
+                        &quot;link&quot;: &quot;/articles/le-tresor-des-azteques/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/le-tresor-des-azteques.webp&quot;,
+                        &quot;theme&quot;: &quot;Pirates&quot;,
+                        &quot;enseigne&quot;: &quot;Lock-Clock - Barcelone&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Asesino del Vitruvio&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-asesino-del-vitruvio/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-asesino-del-vitruvio.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Hora Limite - Santurtzi&quot;
+                    },{
+                        &quot;title&quot;: &quot;Puzzle&quot;, 
+                        &quot;link&quot;: &quot;/articles/puzzle/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/puzzle.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Puzzle Escape Room - Saint-Sébastien&quot;
+                    },{
+                        &quot;title&quot;: &quot;Harrison Jones en busca del Sexto Elemento&quot;, 
+                        &quot;link&quot;: &quot;/articles/harrison-jones-en-busca-del-sexto-elemento/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/harrison-jones-en-busca-del-sexto-elemento.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure, Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Mania - Bilbao&quot;
+                    },{
+                        &quot;title&quot;: &quot;007&quot;, 
+                        &quot;link&quot;: &quot;/articles/007/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/007.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Hollywood Escape Zaragoza - Saragosse&quot;
+                    },{
+                        &quot;title&quot;: &quot;Green Experience&quot;, 
+                        &quot;link&quot;: &quot;/articles/green-experience/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/green-experience.webp&quot;,
+                        &quot;theme&quot;: &quot;Logique&quot;,
+                        &quot;enseigne&quot;: &quot;Colors - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Herederos&quot;, 
+                        &quot;link&quot;: &quot;/articles/herederos/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/herederos.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Exitus - Palafolls&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Captain&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-captain/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-captain.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;59:59 Escape room - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Amnesia&quot;, 
+                        &quot;link&quot;: &quot;/articles/amnesia/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/amnesia.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Mission: Escape - Palma de Mallorca&quot;
+                    },{
+                        &quot;title&quot;: &quot;Paranormal Experience&quot;, 
+                        &quot;link&quot;: &quot;/articles/paranormal-experience/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/paranormal-experience.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Madrid Terror - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Haunted Prison&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-haunted-prison/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-haunted-prison.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;The X-Door - Alicante&quot;
+                    },{
+                        &quot;title&quot;: &quot;Capitulo 0: La Zona&quot;, 
+                        &quot;link&quot;: &quot;/articles/capitulo-0-la-zona/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/capitulo-0-la-zona.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Terror Stories - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Philosopher&#39;s Stone&quot;, 
+                        &quot;link&quot;: &quot;/articles/philosophers-stone/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/philosophers-stone.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Claustrophobia - Valence&quot;
+                    },{
+                        &quot;title&quot;: &quot;007 : New Mission&quot;, 
+                        &quot;link&quot;: &quot;/articles/007-new-mission/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/007-new-mission.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;QuestQuest - Palma de Mallorca&quot;
+                    },{
+                        &quot;title&quot;: &quot;Cloacas&quot;, 
+                        &quot;link&quot;: &quot;/articles/cloacas/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/cloacas.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Room San Sebastián - Saint-Sébastien&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Miko&#39;s Diary&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-mikos-diary/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-mikos-diary.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Xcape - Barcelone&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Rescate de MarÍa&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-rescate-de-maria/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-rescate-de-maria.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur, Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Cubick - Mataró&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Posesiòn&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-posesion/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-posesion.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Arcanum - Sant Sadurní d&#39;Anoia&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Taberna&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-taberna/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-taberna.webp&quot;,
+                        &quot;theme&quot;: &quot;Pirates&quot;,
+                        &quot;enseigne&quot;: &quot;The City - Terrassa&quot;
+                    },{
+                        &quot;title&quot;: &quot;Tao Japanese Massage Center&quot;, 
+                        &quot;link&quot;: &quot;/articles/tao-japanese-massage-center/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/tao-japanese-massage-center.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Virus Room Escape - Callela&quot;
+                    },{
+                        &quot;title&quot;: &quot;Outline&quot;, 
+                        &quot;link&quot;: &quot;/articles/outline/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/outline.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Outline Escape Room - Cornellà de Llobregat&quot;
+                    },{
+                        &quot;title&quot;: &quot;Poison&quot;, 
+                        &quot;link&quot;: &quot;/articles/poison/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/poison.webp&quot;,
+                        &quot;theme&quot;: &quot;Virus / Asile / Hôpital&quot;,
+                        &quot;enseigne&quot;: &quot;Kadabra - Mataró&quot;
+                    },{
+                        &quot;title&quot;: &quot;Bites Motel&quot;, 
+                        &quot;link&quot;: &quot;/articles/bites-motel/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/bites-motel.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Bite The Fly - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Tú también soñarás&quot;, 
+                        &quot;link&quot;: &quot;/articles/tu-tambien-sonaras/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/tu-tambien-sonaras.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Mayto Kingdom - Vitoria-Gasteiz&quot;
+                    },{
+                        &quot;title&quot;: &quot;Malum&quot;, 
+                        &quot;link&quot;: &quot;/articles/malum/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/malum.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Krematorium&quot;
+                    },{
+                        &quot;title&quot;: &quot;Petra, el reino perdido&quot;, 
+                        &quot;link&quot;: &quot;/articles/petra-el-reino-perdido/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/petra-el-reino-perdido.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Petra Escape - Bilbao&quot;
+                    },{
+                        &quot;title&quot;: &quot;Night Shift&quot;, 
+                        &quot;link&quot;: &quot;/articles/night-shift/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/night-shift.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur, Virus / Asile / Hôpital&quot;,
+                        &quot;enseigne&quot;: &quot;CruPont Legacy - Sabadell&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Rebelión - Línea Vampiros&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-rebelion-linea-vampiros/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-rebelion-linea-vampiros.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Blindhouse - Bilbao&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Casa&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-casa/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-casa.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Insomnia Corp - Berga&quot;
+                    },{
+                        &quot;title&quot;: &quot;Vault 27&quot;, 
+                        &quot;link&quot;: &quot;/articles/vault-27/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/vault-27.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;Maximum Escape - Barcelone&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Rebelión - Línea Licántropos&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-rebelion-linea-licantropos/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-rebelion-linea-licantropos.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Blindhouse - Bilbao&quot;
+                    },{
+                        &quot;title&quot;: &quot;Una Aventura de Leyenda&quot;, 
+                        &quot;link&quot;: &quot;/articles/una-aventura-de-leyenda/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/una-aventura-de-leyenda.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Mayto Kingdom - Vitoria-Gasteiz&quot;
+                    },{
+                        &quot;title&quot;: &quot;Caronte&quot;, 
+                        &quot;link&quot;: &quot;/articles/caronte/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/caronte.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Terror Stories - Valence&quot;
+                    },{
+                        &quot;title&quot;: &quot;Criogenic&quot;, 
+                        &quot;link&quot;: &quot;/articles/criogenic/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/criogenic.webp&quot;,
+                        &quot;theme&quot;: &quot;Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Criogenic - Saragosse&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Laberinto&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-laberinto/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-laberinto.webp&quot;,
+                        &quot;theme&quot;: &quot;Logique&quot;,
+                        &quot;enseigne&quot;: &quot;Descifra - San Sebastián de los Reyes&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Hairdressing&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-hairdressing/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-hairdressing.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;The X-Door - Valence&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Mina&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-mina/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-mina.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Hidden - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Golpe perfecto en el jardín de Buda&quot;, 
+                        &quot;link&quot;: &quot;/articles/golpe-perfecto-en-el-jardin-de-buda/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/golpe-perfecto-en-el-jardin-de-buda.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Factoria - Valence&quot;
+                    },{
+                        &quot;title&quot;: &quot;La tumba olvidada&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-tumba-olvidada/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-tumba-olvidada.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Misterios de Kemet - Esplugues de Llobregat&quot;
+                    },{
+                        &quot;title&quot;: &quot;Josep Fontcalda Casa Museu&quot;, 
+                        &quot;link&quot;: &quot;/articles/josep-fontcalda-casa-museu/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/josep-fontcalda-casa-museu.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;1801 Escape Room - Tona&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Narcos&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-narcos/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-narcos.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Unreal L&#39;Hospitalet - Barcelone&quot;
+                    },{
+                        &quot;title&quot;: &quot;Roomions&quot;, 
+                        &quot;link&quot;: &quot;/articles/roomions/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/roomions.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman, Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Virus Room Escape - Callela&quot;
+                    },{
+                        &quot;title&quot;: &quot;Yellow Experience&quot;, 
+                        &quot;link&quot;: &quot;/articles/yellow-experience/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/yellow-experience.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman, Pirates&quot;,
+                        &quot;enseigne&quot;: &quot;Colors - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Bermudas&quot;, 
+                        &quot;link&quot;: &quot;/articles/bermudas/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/bermudas.webp&quot;,
+                        &quot;theme&quot;: &quot;Historique / Culturel&quot;,
+                        &quot;enseigne&quot;: &quot;Final Code - L&#39;Hospitalet de Llobregat&quot;
+                    },{
+                        &quot;title&quot;: &quot;Willy el Tuerto&quot;, 
+                        &quot;link&quot;: &quot;/articles/willy-el-tuerto/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/willy-el-tuerto.webp&quot;,
+                        &quot;theme&quot;: &quot;Pirates&quot;,
+                        &quot;enseigne&quot;: &quot;Willy el Tuerto - Sabadell&quot;
+                    },{
+                        &quot;title&quot;: &quot;Overlook Hotel&quot;, 
+                        &quot;link&quot;: &quot;/articles/overlook-hotel/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/overlook-hotel.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Maximum Escape - Barcelone&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Desaparición del Profesor&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-desaparicion-del-profesor/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-desaparicion-del-profesor.webp&quot;,
+                        &quot;theme&quot;: &quot;Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;La Cronosfera - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Santa&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-santa/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-santa.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Shock - Rivas-Vaciamadrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Novia&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-novia/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-novia.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Black Lake - San Sebastián de los Reyes&quot;
+                    },{
+                        &quot;title&quot;: &quot;Blue Experience&quot;, 
+                        &quot;link&quot;: &quot;/articles/blue-experience/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/blue-experience.webp&quot;,
+                        &quot;theme&quot;: &quot;Historique / Culturel&quot;,
+                        &quot;enseigne&quot;: &quot;Colors - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Cámara del Espíritu y el Tiempo&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-camara-del-espiritu-y-el-tiempo/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-camara-del-espiritu-y-el-tiempo.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Mayto Kingdom - Vitoria-Gasteiz&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Exam&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-exam/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-exam.webp&quot;,
+                        &quot;theme&quot;: &quot;Logique&quot;,
+                        &quot;enseigne&quot;: &quot;Abduction - Barcelone&quot;
+                    },{
+                        &quot;title&quot;: &quot;Inmortum II&quot;, 
+                        &quot;link&quot;: &quot;/articles/inmortum-ii/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/inmortum-ii.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Hostal 83 - Gironella&quot;
+                    },{
+                        &quot;title&quot;: &quot;Vikings&quot;, 
+                        &quot;link&quot;: &quot;/articles/vikings/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/vikings.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique, Historique / Culturel&quot;,
+                        &quot;enseigne&quot;: &quot;Unreal - Barcelone&quot;
+                    },{
+                        &quot;title&quot;: &quot;Nakatomi Plaza&quot;, 
+                        &quot;link&quot;: &quot;/articles/nakatomi-plaza/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/nakatomi-plaza.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Republik - Barcelone&quot;
+                    },{
+                        &quot;title&quot;: &quot;Freak Show&quot;, 
+                        &quot;link&quot;: &quot;/articles/freak-show/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/freak-show.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Dark Park - Delft&quot;
+                    },{
+                        &quot;title&quot;: &quot;Call or Die&quot;, 
+                        &quot;link&quot;: &quot;/articles/call-or-die/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/call-or-die.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;Over Time - Pampelune&quot;
+                    },{
+                        &quot;title&quot;: &quot;Cellular Odyssey&quot;, 
+                        &quot;link&quot;: &quot;/articles/cellular-odyssey/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/cellular-odyssey.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Can Bruna - Vilafranca del Penedès&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Hijo del Posadero&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-hiso-del-posadero/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-hiso-del-posadero.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Dragonborn - Vitoria-Gasteiz&quot;
+                    },{
+                        &quot;title&quot;: &quot;Sr. Krugger&quot;, 
+                        &quot;link&quot;: &quot;/articles/sr-krugger/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/sr-krugger.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Insomnia Corp - Berga&quot;
+                    },{
+                        &quot;title&quot;: &quot;Orange Experience&quot;, 
+                        &quot;link&quot;: &quot;/articles/orange-experience/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/orange-experience.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Colors - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;11S&quot;, 
+                        &quot;link&quot;: &quot;/articles/11s/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/11s.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;Open Mind Room Escape - Cornellà de Llobregat&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Caso Rídel&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-caso-ridel/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-caso-ridel.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Rubik Escape Room - Telde&quot;
+                    },{
+                        &quot;title&quot;: &quot;Hotel Hello&quot;, 
+                        &quot;link&quot;: &quot;/articles/hotel-hello/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/hotel-hello.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Brutal Escape Room - Cornellà de Llobregat&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Isla de las muñecas&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-isla-de-las-munecas/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-isla-de-las-munecas.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Cindy Escape Box - Sant Fruitós de Bages&quot;
+                    },{
+                        &quot;title&quot;: &quot;Soulbound&quot;, 
+                        &quot;link&quot;: &quot;/articles/soulbound/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/soulbound.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Habitacio 13 - Mataró&quot;
+                    },{
+                        &quot;title&quot;: &quot;Un caso perdido&quot;, 
+                        &quot;link&quot;: &quot;/articles/un-caso-perdido/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/un-caso-perdido.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;ActionHouse - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Transporter&quot;, 
+                        &quot;link&quot;: &quot;/articles/transporter/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/transporter.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Eureka! - Logroño&quot;
+                    },{
+                        &quot;title&quot;: &quot;Ellebanna&quot;, 
+                        &quot;link&quot;: &quot;/articles/ellebanna/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/ellebanna.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Estrategy - Terrassa&quot;
+                    },{
+                        &quot;title&quot;: &quot;Crupier&quot;, 
+                        &quot;link&quot;: &quot;/articles/crupier/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/crupier.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Quimera - Bellavista&quot;
+                    },{
+                        &quot;title&quot;: &quot;Steampunk Operation&quot;, 
+                        &quot;link&quot;: &quot;/articles/steampunk-operation/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/steampunk-operation.webp&quot;,
+                        &quot;theme&quot;: &quot;Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Incognito - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Reina Roja Experience&quot;, 
+                        &quot;link&quot;: &quot;/articles/reina-roja-experience/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/reina-roja-experience.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;La Orden - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Aradia&quot;, 
+                        &quot;link&quot;: &quot;/articles/aradia/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/aradia.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Insomnia Corp - Berga&quot;
+                    },{
+                        &quot;title&quot;: &quot;Apophis&quot;, 
+                        &quot;link&quot;: &quot;/articles/apophis/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/apophis.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe, Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Vortex - Terrassa&quot;
+                    },{
+                        &quot;title&quot;: &quot;Secret Project&quot;, 
+                        &quot;link&quot;: &quot;/articles/secret-project/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/secret-project.webp&quot;,
+                        &quot;theme&quot;: &quot;Logique, Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Torrenigma - Torre del Mar&quot;
+                    },{
+                        &quot;title&quot;: &quot;Boom Room&quot;, 
+                        &quot;link&quot;: &quot;/articles/boom-room/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/boom-room.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;The Key Escape Room - Salamanca&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Santuario&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-santuario/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-santuario.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;La Casa de los Enigmas - Las Palmas de Gran Canaria&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Bunker&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-bunker/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-bunker.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;In &amp; Out - Salou&quot;
+                    },{
+                        &quot;title&quot;: &quot;Expedición Maldita&quot;, 
+                        &quot;link&quot;: &quot;/articles/expedicion-maldita/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/expedicion-maldita.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Mythos - Murcie&quot;
+                    },{
+                        &quot;title&quot;: &quot;Rats Corp&quot;, 
+                        &quot;link&quot;: &quot;/articles/rats-corp/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/rats-corp.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Room Escape Corporation - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Hybrid Bloodline&quot;, 
+                        &quot;link&quot;: &quot;/articles/hybrid-bloodline/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/hybrid-bloodline.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Blindhouse - Bilbao&quot;
+                    },{
+                        &quot;title&quot;: &quot;Noche de Perros&quot;, 
+                        &quot;link&quot;: &quot;/articles/noche-de-perros/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/noche-de-perros.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;Distrito 7 - Pampelune&quot;
+                    },{
+                        &quot;title&quot;: &quot;Hipolita Experience&quot;, 
+                        &quot;link&quot;: &quot;/articles/hipolita-experience/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/hipolita-experience.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;La Orden - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Psychokiller&quot;, 
+                        &quot;link&quot;: &quot;/articles/psychokiller/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/psychokiller.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Soul Games - Ripollet&quot;
+                    },{
+                        &quot;title&quot;: &quot;Black Experience: El Loco del Callejón&quot;, 
+                        &quot;link&quot;: &quot;/articles/black-experience-el-loco-del-callejon/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/black-experience-el-loco-del-callejon.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Colors - Valence&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Tormenta&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-tormenta/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-tormenta.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;Descifra - San Sebastián de los Reyes&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Last Dragon&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-last-dragon/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-last-dragon.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;The X-Door - Valence&quot;
+                    },{
+                        &quot;title&quot;: &quot;Armageroom&quot;, 
+                        &quot;link&quot;: &quot;/articles/armageroom/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/armageroom.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman, Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Coco Room - Bilbao&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Hermandad De Las Sombras&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-hermandad-de-las-sombras/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-hermandad-de-las-sombras.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;El Bastion Prohibido - Saragosse&quot;
+                    },{
+                        &quot;title&quot;: &quot;Haunted House&quot;, 
+                        &quot;link&quot;: &quot;/articles/haunted-house/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/haunted-house.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;The Chamber - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Tentación&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-tentacion/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-tentacion.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Escape4Room - Reus&quot;
+                    },{
+                        &quot;title&quot;: &quot;Kenos&quot;, 
+                        &quot;link&quot;: &quot;/articles/kenos/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/kenos.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Kenos - Les Fonts&quot;
+                    },{
+                        &quot;title&quot;: &quot;Sustos, S.A.&quot;, 
+                        &quot;link&quot;: &quot;/articles/sustos-s-a/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/sustos-s-a.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Quimera - Bellavista&quot;
+                    },{
+                        &quot;title&quot;: &quot;Red Experience&quot;, 
+                        &quot;link&quot;: &quot;/articles/red-experience/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/red-experience.webp&quot;,
+                        &quot;theme&quot;: &quot;Historique / Culturel, Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Colors - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Yeti Experience&quot;, 
+                        &quot;link&quot;: &quot;/articles/yeti-experience/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/yeti-experience.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;La Orden - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Elkano&quot;, 
+                        &quot;link&quot;: &quot;/articles/elkano/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/elkano.webp&quot;,
+                        &quot;theme&quot;: &quot;Historique / Culturel&quot;,
+                        &quot;enseigne&quot;: &quot;Experientziak - Getaria&quot;
+                    },{
+                        &quot;title&quot;: &quot;Madre&quot;, 
+                        &quot;link&quot;: &quot;/articles/madre/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/madre.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Insomnia Corp - Berga&quot;
+                    },{
+                        &quot;title&quot;: &quot;Luz Verde&quot;, 
+                        &quot;link&quot;: &quot;/articles/luz-verde/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/luz-verde.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Nekros - Mataró&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Secreto de Malaespera&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-secreto-de-malaespera/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-secreto-de-malaespera.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Bilbaout - Bilbao&quot;
+                    },{
+                        &quot;title&quot;: &quot;101 Años de Perdon&quot;, 
+                        &quot;link&quot;: &quot;/articles/101-anos-de-perdon/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/101-anos-de-perdon.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Over Time - Pampelune&quot;
+                    },{
+                        &quot;title&quot;: &quot;Silent Town&quot;, 
+                        &quot;link&quot;: &quot;/articles/silent-town/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/silent-town.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Get Out - Bilbao&quot;
+                    },{
+                        &quot;title&quot;: &quot;Estacion Del Ferrocarril&quot;, 
+                        &quot;link&quot;: &quot;/articles/estacion-del-ferrocarril/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/estacion-del-ferrocarril.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Xkapa - Santander&quot;
+                    },{
+                        &quot;title&quot;: &quot;Ratas de Biblioteca&quot;, 
+                        &quot;link&quot;: &quot;/articles/ratas-de-biblioteca/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/ratas-de-biblioteca.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;ActionHouse - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Kennedy Experience: SWAT Mission&quot;, 
+                        &quot;link&quot;: &quot;/articles/kennedy-experience-swat-mission/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/kennedy-experience-swat-mission.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure, Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;La Orden - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Tumba Perdida&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-tumba-perdida/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-tumba-perdida.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Cronos - Valence&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Niña&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-nina/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-nina.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;In &amp; Out - Salou&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Magic Market&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-magic-market/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-magic-market.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Island Quest - Playa Blanca&quot;
+                    },{
+                        &quot;title&quot;: &quot;Purple Experience&quot;, 
+                        &quot;link&quot;: &quot;/articles/purple-experience/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/purple-experience.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure, Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Colors - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Project: Atlantis&quot;, 
+                        &quot;link&quot;: &quot;/articles/project-atlantis/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/project-atlantis.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Island Quest - Playa Blanca&quot;
+                    },{
+                        &quot;title&quot;: &quot;Ambar La Visita&quot;, 
+                        &quot;link&quot;: &quot;/articles/ambar-la-visita/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/ambar-la-visita.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Coco Room - Bilbao&quot;
+                    },{
+                        &quot;title&quot;: &quot;Magallanes Experience&quot;, 
+                        &quot;link&quot;: &quot;/articles/magallanes-experience/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/magallanes-experience.webp&quot;,
+                        &quot;theme&quot;: &quot;Pirates&quot;,
+                        &quot;enseigne&quot;: &quot;La Orden - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Ritual&quot;, 
+                        &quot;link&quot;: &quot;/articles/ritual/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/ritual.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Locked ZGZ - Saragosse&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Tesoro de la Momia&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-tesoro-de-la-momia/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-tesoro-de-la-momia.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Tangram - San Sebastián de los Reyes&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Hospital&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-hospital/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-hospital.webp&quot;,
+                        &quot;theme&quot;: &quot;Virus / Asile / Hôpital&quot;,
+                        &quot;enseigne&quot;: &quot;Linked Minds - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Portal de Tesla&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-portal-de-tesla/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-portal-de-tesla.webp&quot;,
+                        &quot;theme&quot;: &quot;Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Way Out - Las Palmas de Gran Canaria&quot;
+                    },{
+                        &quot;title&quot;: &quot;Las Armaduras de los Dioses&quot;, 
+                        &quot;link&quot;: &quot;/articles/las-armaduras-de-los-dioses/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/las-armaduras-de-los-dioses.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Paradox - Benidorm&quot;
+                    },{
+                        &quot;title&quot;: &quot;Detective Agency Sherlock&quot;, 
+                        &quot;link&quot;: &quot;/articles/detective-agency-sherlock/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/detective-agency-sherlock.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Island Phobia - Playa de las Americas&quot;
+                    },{
+                        &quot;title&quot;: &quot;Plata o Plomo&quot;, 
+                        &quot;link&quot;: &quot;/articles/plata-o-plomo/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/plata-o-plomo.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Trancados - Santa Cruz de Tenerife&quot;
+                    },{
+                        &quot;title&quot;: &quot;Paranormal House&quot;, 
+                        &quot;link&quot;: &quot;/articles/paranormal-house/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/paranormal-house.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Tactic Game - Valence&quot;
+                    },{
+                        &quot;title&quot;: &quot;Galleon The Raid&quot;, 
+                        &quot;link&quot;: &quot;/articles/galleon-the-raid/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/galleon-the-raid.webp&quot;,
+                        &quot;theme&quot;: &quot;Pirates&quot;,
+                        &quot;enseigne&quot;: &quot;Try To Escape - Costa Teguise&quot;
+                    },{
+                        &quot;title&quot;: &quot;MegaChef&quot;, 
+                        &quot;link&quot;: &quot;/articles/megachef/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/megachef.webp&quot;,
+                        &quot;theme&quot;: &quot;Logique&quot;,
+                        &quot;enseigne&quot;: &quot;Cluehunter - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Jumanji&quot;, 
+                        &quot;link&quot;: &quot;/articles/jumanji/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/jumanji.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure, Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;ExitRoom - Louvain&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Cabaña de Valdemar&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-cabana-de-valdemar/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-cabana-de-valdemar.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;The Dome - Bilbao&quot;
+                    },{
+                        &quot;title&quot;: &quot;Leyendas de Sleepy Hollow&quot;, 
+                        &quot;link&quot;: &quot;/articles/leyendas-de-sleepy-hollow/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/leyendas-de-sleepy-hollow.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Get Out - Bilbao&quot;
+                    },{
+                        &quot;title&quot;: &quot;Seven&quot;, 
+                        &quot;link&quot;: &quot;/articles/seven/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/seven.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Quimera - Bellavista&quot;
+                    },{
+                        &quot;title&quot;: &quot;Medieval Dungeon&quot;, 
+                        &quot;link&quot;: &quot;/articles/medieval-dungeon/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/medieval-dungeon.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;Run Rabbit - Valence&quot;
+                    },{
+                        &quot;title&quot;: &quot;The room of the Great Houdini&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-room-of-the-great-houdini/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-room-of-the-great-houdini.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Room Triana - Séville&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Cóctel del Doctor&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-coctel-del-doctor/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-coctel-del-doctor.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Insomnia Corp - Berga&quot;
+                    },{
+                        &quot;title&quot;: &quot;Sin Retorno&quot;, 
+                        &quot;link&quot;: &quot;/articles/sin-retorno/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/sin-retorno.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;Laberintum - Portugalete&quot;
+                    },{
+                        &quot;title&quot;: &quot;Until Dawn&quot;, 
+                        &quot;link&quot;: &quot;/articles/until-dawn/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/until-dawn.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;La Clau - Manresa&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Apartment&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-apartment/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-apartment.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Gastro Escape Room - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Gulliver and the Giants&quot;, 
+                        &quot;link&quot;: &quot;/articles/gulliver-and-the-giants/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/gulliver-and-the-giants.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Claustrophobia - Valence&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Haunted Box&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-haunted-box/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-haunted-box.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;The Box - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Temple Box&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-temple-box/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-temple-box.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;The Box - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Joya de Takum&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-joya-de-takum/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-joya-de-takum.webp&quot;,
+                        &quot;theme&quot;: &quot;Historique / Culturel&quot;,
+                        &quot;enseigne&quot;: &quot;Arcadia - Séville&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Casa del Cura&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-casa-del-cura/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-casa-del-cura.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Tangram - San Sebastián de los Reyes&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Secreto de la Marina&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-secreto-de-la-marina/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-secreto-de-la-marina.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère, Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Tangram - San Sebastián de los Reyes&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Black Forest&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-black-forest/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-black-forest.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Imagina - Gérone&quot;
+                    },{
+                        &quot;title&quot;: &quot;Camino a la logia Negra&quot;, 
+                        &quot;link&quot;: &quot;/articles/camino-a-la-logia-negra/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/camino-a-la-logia-negra.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;La Logia Negra - Elche&quot;
+                    },{
+                        &quot;title&quot;: &quot;Siltobark: La Magia de Oriente&quot;, 
+                        &quot;link&quot;: &quot;/articles/siltobark-la-magia-de-oriente/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/siltobark-la-magia-de-oriente.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique, Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Influx - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Clandestina&quot;, 
+                        &quot;link&quot;: &quot;/articles/clandestina/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/clandestina.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Evasion Room Si o Si - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Rebelión en la Granja&quot;, 
+                        &quot;link&quot;: &quot;/articles/rebelion-en-la-granja/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/rebelion-en-la-granja.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Rubikon - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Galeón&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-galeon/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-galeon.webp&quot;,
+                        &quot;theme&quot;: &quot;Pirates&quot;,
+                        &quot;enseigne&quot;: &quot;Cronos - Valence&quot;
+                    },{
+                        &quot;title&quot;: &quot;La subasta&quot;, 
+                        &quot;link&quot;: &quot;/articles/la-subasta/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-subasta.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Lock-in - Grenade&quot;
+                    },{
+                        &quot;title&quot;: &quot;Queen&#39;s Gambit&quot;, 
+                        &quot;link&quot;: &quot;/articles/queens-gambit/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/queens-gambit.webp&quot;,
+                        &quot;theme&quot;: &quot;Logique&quot;,
+                        &quot;enseigne&quot;: &quot;El Cura - Mogán&quot;
+                    },{
+                        &quot;title&quot;: &quot;Sherlock Holmes vs Moriarty&quot;, 
+                        &quot;link&quot;: &quot;/articles/sherlock-holmes-vs-moriarty/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/sherlock-holmes-vs-moriarty.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère, Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Clue Hunter - Valence&quot;
+                    },{
+                        &quot;title&quot;: &quot;Magic School&quot;, 
+                        &quot;link&quot;: &quot;/articles/magic-school/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/magic-school.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Island Phobia - Playa de las Americas&quot;
+                    },{
+                        &quot;title&quot;: &quot;Informe 23&quot;, 
+                        &quot;link&quot;: &quot;/articles/informe-23/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/informe-23.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;La Caja - San Cristóbal de La Laguna&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Último Caso de Max Malone&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-ultimo-caso-de-max-malone/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-ultimo-caso-de-max-malone.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;The SafeKey - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;The White Room&quot;, 
+                        &quot;link&quot;: &quot;/articles/the-white-room/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-white-room.webp&quot;,
+                        &quot;theme&quot;: &quot;Logique&quot;,
+                        &quot;enseigne&quot;: &quot;Escape College - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Laboratorio&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-laboratorio/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-laboratorio.webp&quot;,
+                        &quot;theme&quot;: &quot;Virus / Asile / Hôpital&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Room Gandia - Gandia&quot;
+                    },{
+                        &quot;title&quot;: &quot;Plan de Fuga&quot;, 
+                        &quot;link&quot;: &quot;/articles/plan-de-fuga/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/plan-de-fuga.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;Escapastic - El Vendrell&quot;
+                    },{
+                        &quot;title&quot;: &quot;El Secreto de Magallanes&quot;, 
+                        &quot;link&quot;: &quot;/articles/el-secreto-de-magallanes/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/el-secreto-de-magallanes.webp&quot;,
+                        &quot;theme&quot;: &quot;Pirates&quot;,
+                        &quot;enseigne&quot;: &quot;Rubikon - Madrid&quot;
+                    },{
+                        &quot;title&quot;: &quot;Kraken&quot;, 
+                        &quot;link&quot;: &quot;/articles/kraken/&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/kraken.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;Tofuro - Madrid&quot;
+                    }
+    ]">
+    </div>
+</div>
+
+<script src="/assets/js/featured-articles.js"></script>
+
+<!-- 
+
+
+<div class="featured-articles-wrapper">
+    <div class="featured-title-box">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/>
+        </svg>
+        <h2 class="featured-title">All Barcelona escapes</h2>
+    </div>
+    <div class="featured-articles-placeholder" data-featured='[{
+                        "title": "Distrito 111", 
+                        "link": "/articles/distrito-111/", 
+                        "image": "/assets/img/escape/distrito-111.webp",
+                        "theme": "Catastrophe",
+                        "enseigne": "Unreal Sant Marti - Barcelone"
+                    },{
+                        "title": "The Brewery", 
+                        "link": "/articles/the-brewery/", 
+                        "image": "/assets/img/escape/the-brewery.webp",
+                        "theme": "Historique / Culturel",
+                        "enseigne": "Enigmik - Barcelone"
+                    },{
+                        "title": "Outline", 
+                        "link": "/articles/outline/", 
+                        "image": "/assets/img/escape/outline.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Outline Escape Room - Cornellà de Llobregat"
+                    },{
+                        "title": "Abduction Enterprises", 
+                        "link": "/articles/abduction-enterprises/", 
+                        "image": "/assets/img/escape/abduction-enterprises.webp",
+                        "theme": "Série / Film / Roman",
+                        "enseigne": "Abduction - Barcelone"
+                    },{
+                        "title": "Kong Protocol", 
+                        "link": "/articles/k-o-n-g-protocol/", 
+                        "image": "/assets/img/escape/k-o-n-g-protocol.webp",
+                        "theme": "Frisson / Horreur, Science-Fiction",
+                        "enseigne": "Escape Barcelona Santa Coloma"
+                    },{
+                        "title": "Night Shift", 
+                        "link": "/articles/night-shift/", 
+                        "image": "/assets/img/escape/night-shift.webp",
+                        "theme": "Frisson / Horreur, Virus / Asile / Hôpital",
+                        "enseigne": "CruPont Legacy - Sabadell"
+                    },{
+                        "title": "The Kidnapping", 
+                        "link": "/articles/the-kidnapping/", 
+                        "image": "/assets/img/escape/the-kidnapping.webp",
+                        "theme": "Évasion",
+                        "enseigne": "Escape Salou - Salou"
+                    },{
+                        "title": "Vault 27", 
+                        "link": "/articles/vault-27/", 
+                        "image": "/assets/img/escape/vault-27.webp",
+                        "theme": "Catastrophe",
+                        "enseigne": "Maximum Escape - Barcelone"
+                    },{
+                        "title": "La Mina", 
+                        "link": "/articles/la-mina/", 
+                        "image": "/assets/img/escape/la-mina.webp",
+                        "theme": "Aventure",
+                        "enseigne": "Hidden - Madrid"
+                    },{
+                        "title": "Jurasico", 
+                        "link": "/articles/jurasico/", 
+                        "image": "/assets/img/escape/jurasico.webp",
+                        "theme": "Aventure, Série / Film / Roman",
+                        "enseigne": "Golden Pop - Barcelone"
+                    },{
+                        "title": "La tumba olvidada", 
+                        "link": "/articles/la-tumba-olvidada/", 
+                        "image": "/assets/img/escape/la-tumba-olvidada.webp",
+                        "theme": "Aventure",
+                        "enseigne": "Misterios de Kemet - Esplugues de Llobregat"
+                    },{
+                        "title": "Worm", 
+                        "link": "/articles/worm/", 
+                        "image": "/assets/img/escape/worm.webp",
+                        "theme": "Science-Fiction",
+                        "enseigne": "Metamorfosis - Esplugues de Llobregat"
+                    },{
+                        "title": "Exodus", 
+                        "link": "/articles/exodus/", 
+                        "image": "/assets/img/escape/exodus.webp",
+                        "theme": "Science-Fiction",
+                        "enseigne": "Elements Fuego - Barcelone"
+                    },{
+                        "title": "The Narcos", 
+                        "link": "/articles/the-narcos/", 
+                        "image": "/assets/img/escape/the-narcos.webp",
+                        "theme": "Aventure",
+                        "enseigne": "Unreal L&#39;Hospitalet - Barcelone"
+                    },{
+                        "title": "Conquista de Troya", 
+                        "link": "/articles/conquista-de-troya/", 
+                        "image": "/assets/img/escape/conquista-de-troya.webp",
+                        "theme": "Historique / Culturel",
+                        "enseigne": "Neverland Escape - Barcelone"
+                    },{
+                        "title": "Bermudas", 
+                        "link": "/articles/bermudas/", 
+                        "image": "/assets/img/escape/bermudas.webp",
+                        "theme": "Historique / Culturel",
+                        "enseigne": "Final Code - L&#39;Hospitalet de Llobregat"
+                    },{
+                        "title": "Willy el Tuerto", 
+                        "link": "/articles/willy-el-tuerto/", 
+                        "image": "/assets/img/escape/willy-el-tuerto.webp",
+                        "theme": "Pirates",
+                        "enseigne": "Willy el Tuerto - Sabadell"
+                    },{
+                        "title": "Overlook Hotel", 
+                        "link": "/articles/overlook-hotel/", 
+                        "image": "/assets/img/escape/overlook-hotel.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Maximum Escape - Barcelone"
+                    },{
+                        "title": "Catacumbas", 
+                        "link": "/articles/catacumbas/", 
+                        "image": "/assets/img/escape/catacumbas.webp",
+                        "theme": "Aventure",
+                        "enseigne": "Golden Pop - Barcelone"
+                    },{
+                        "title": "The Exam", 
+                        "link": "/articles/the-exam/", 
+                        "image": "/assets/img/escape/the-exam.webp",
+                        "theme": "Logique",
+                        "enseigne": "Abduction - Barcelone"
+                    },{
+                        "title": "Versus", 
+                        "link": "/articles/versus/", 
+                        "image": "/assets/img/escape/versus.webp",
+                        "theme": "Logique",
+                        "enseigne": "Abduction - Barcelone"
+                    },{
+                        "title": "Ulysses Spaceship", 
+                        "link": "/articles/ulysses-spaceship/", 
+                        "image": "/assets/img/escape/ulysses-spaceship.webp",
+                        "theme": "Science-Fiction",
+                        "enseigne": "Maximum Escape - Barcelone"
+                    },{
+                        "title": "La Historia de Charlotte", 
+                        "link": "/articles/la-historia-de-charlotte/", 
+                        "image": "/assets/img/escape/la-historia-de-charlotte.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Whitechapel - Barcelone"
+                    },{
+                        "title": "Vikings", 
+                        "link": "/articles/vikings/", 
+                        "image": "/assets/img/escape/vikings.webp",
+                        "theme": "Fantastique, Historique / Culturel",
+                        "enseigne": "Unreal - Barcelone"
+                    },{
+                        "title": "Alien Origin", 
+                        "link": "/articles/alien-origin/", 
+                        "image": "/assets/img/escape/alien-origin.webp",
+                        "theme": "Série / Film / Roman, Science-Fiction",
+                        "enseigne": "Escape Barcelona Santa Coloma"
+                    },{
+                        "title": "After Party", 
+                        "link": "/articles/after-party/", 
+                        "image": "/assets/img/escape/after-party.webp",
+                        "theme": "Enquête / Mystère",
+                        "enseigne": "Lock-Clock - Barcelone"
+                    },{
+                        "title": "11S", 
+                        "link": "/articles/11s/", 
+                        "image": "/assets/img/escape/11s.webp",
+                        "theme": "Catastrophe",
+                        "enseigne": "Open Mind Room Escape - Cornellà de Llobregat"
+                    },{
+                        "title": "Hotel Hello", 
+                        "link": "/articles/hotel-hello/", 
+                        "image": "/assets/img/escape/hotel-hello.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Brutal Escape Room - Cornellà de Llobregat"
+                    },{
+                        "title": "Prisoners of Alkaban", 
+                        "link": "/articles/prisoners-of-alkaban/", 
+                        "image": "/assets/img/escape/prisoners-of-alkaban.webp",
+                        "theme": "Série / Film / Roman",
+                        "enseigne": "Maximum Escape - Barcelone"
+                    },{
+                        "title": "Bajo Segunda", 
+                        "link": "/articles/bajo-segunda/", 
+                        "image": "/assets/img/escape/bajo-segunda.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Bajo Segunda - Barcelone"
+                    },{
+                        "title": "Psychokiller", 
+                        "link": "/articles/psychokiller/", 
+                        "image": "/assets/img/escape/psychokiller.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Soul Games - Ripollet"
+                    },{
+                        "title": "Slasher Party", 
+                        "link": "/articles/slasher-party/", 
+                        "image": "/assets/img/escape/slasher-party.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Open Mind Room Escape - Barcelone"
+                    },{
+                        "title": "El Exorcismo", 
+                        "link": "/articles/el-exorcismo/", 
+                        "image": "/assets/img/escape/el-exorcismo.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Delirium Xperience - Montcada i Reixac"
+                    },{
+                        "title": "Kenos", 
+                        "link": "/articles/kenos/", 
+                        "image": "/assets/img/escape/kenos.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Kenos - Les Fonts"
+                    },{
+                        "title": "El Bar", 
+                        "link": "/articles/el-bar/", 
+                        "image": "/assets/img/escape/el-bar.webp",
+                        "theme": "Aventure",
+                        "enseigne": "Unreal Sants - Barcelone"
+                    },{
+                        "title": "Olimpo", 
+                        "link": "/articles/olimpo/", 
+                        "image": "/assets/img/escape/olimpo.webp",
+                        "theme": "Fantastique",
+                        "enseigne": "Portento - Badalona"
+                    },{
+                        "title": "Le bout du tunnel", 
+                        "link": "/articles/le-bout-du-tunnel/", 
+                        "image": "/assets/img/escape/le-bout-du-tunnel.webp",
+                        "theme": "Évasion",
+                        "enseigne": "Prison Experience - Barcelone"
+                    },{
+                        "title": "Terror en el Orient Express", 
+                        "link": "/articles/terror-en-el-orient-express/", 
+                        "image": "/assets/img/escape/terror-en-el-orient-express.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "The Witching Hour - Barcelone"
+                    },{
+                        "title": "Awaken Experience", 
+                        "link": "/articles/awaken-experience/", 
+                        "image": "/assets/img/escape/awaken-experience.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Red Dopamine - Barcelone"
+                    },{
+                        "title": "The NW6 Bunker", 
+                        "link": "/articles/the-nw6-bunker/", 
+                        "image": "/assets/img/escape/the-nw6-bunker.webp",
+                        "theme": "Catastrophe",
+                        "enseigne": "Enigmik - Barcelone"
+                    },{
+                        "title": "Gordon&#39;s Factory", 
+                        "link": "/articles/gordons-factory/", 
+                        "image": "/assets/img/escape/gordons-factory.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Escape World Games - Barcelone"
+                    },{
+                        "title": "El Diamante de Almas", 
+                        "link": "/articles/el-diamante-de-almas/", 
+                        "image": "/assets/img/escape/el-diamante-de-almas.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "InMortal Room - Montcada i Reixac"
+                    },{
+                        "title": "EscapeStory", 
+                        "link": "/articles/escapestory/", 
+                        "image": "/assets/img/escape/escapestory.webp",
+                        "theme": "Série / Film / Roman",
+                        "enseigne": "Fugitivos - Barcelone"
+                    },{
+                        "title": "Secret Service", 
+                        "link": "/articles/secret-service/", 
+                        "image": "/assets/img/escape/secret-service.webp",
+                        "theme": "Cambriolage",
+                        "enseigne": "Lock-Clock - Barcelone"
+                    },{
+                        "title": "El Orfanato", 
+                        "link": "/articles/el-orfanato/", 
+                        "image": "/assets/img/escape/el-orfanato.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Fear Factory Experience - L&#39;Hospitalet de Llobregat"
+                    },{
+                        "title": "Barum Dum", 
+                        "link": "/articles/barum-dum/", 
+                        "image": "/assets/img/escape/barum-dum.webp",
+                        "theme": "Aventure",
+                        "enseigne": "Cinema Escape - Barcelone"
+                    },{
+                        "title": "El Viaje Continua", 
+                        "link": "/articles/el-viaje-continua/", 
+                        "image": "/assets/img/escape/el-viaje-continua.webp",
+                        "theme": "Aventure",
+                        "enseigne": "Cronologic - Barcelone"
+                    },{
+                        "title": "Zombie Outbreak", 
+                        "link": "/articles/zombie-outbreak/", 
+                        "image": "/assets/img/escape/zombie-outbreak.webp",
+                        "theme": "Virus / Asile / Hôpital",
+                        "enseigne": "Fear Escape Room - Barcelone"
+                    },{
+                        "title": "La Douche Froide", 
+                        "link": "/articles/la-douche-froide/", 
+                        "image": "/assets/img/escape/la-douche-froide.webp",
+                        "theme": "Aventure",
+                        "enseigne": "Prison Experience - Barcelone"
+                    },{
+                        "title": "Saw Experience", 
+                        "link": "/articles/saw-experience/", 
+                        "image": "/assets/img/escape/saw-experience.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Questory - Barcelone"
+                    },{
+                        "title": "Misión SWAT", 
+                        "link": "/articles/mision-swat/", 
+                        "image": "/assets/img/escape/mision-swat.webp",
+                        "theme": "Aventure, Enquête / Mystère",
+                        "enseigne": "Open Mind Room Escape - Cornellà de Llobregat"
+                    },{
+                        "title": "Mindhunters", 
+                        "link": "/articles/mindhunters/", 
+                        "image": "/assets/img/escape/mindhunters.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Encrypt - Barcelone"
+                    },{
+                        "title": "Catalepsia", 
+                        "link": "/articles/catalepsia/", 
+                        "image": "/assets/img/escape/catalepsia.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Horror Box - Barcelone"
+                    },{
+                        "title": "Sherlock Holmes vs London Devil", 
+                        "link": "/articles/sherlock-holmes-vs-london-devil/", 
+                        "image": "/assets/img/escape/sherlock-holmes-vs-london-devil.webp",
+                        "theme": "Enquête / Mystère",
+                        "enseigne": "Maximum Escape - Barcelone"
+                    },{
+                        "title": "Randall&#39;s Party", 
+                        "link": "/articles/randalls-party/", 
+                        "image": "/assets/img/escape/randalls-party.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Resident Riddle - Barcelone"
+                    },{
+                        "title": "The Soviet Submarine", 
+                        "link": "/articles/the-soviet-submarine/", 
+                        "image": "/assets/img/escape/the-soviet-submarine.webp",
+                        "theme": "Catastrophe",
+                        "enseigne": "Escape Masnou - El Masnou"
+                    },{
+                        "title": "Gladiators", 
+                        "link": "/articles/gladiators/", 
+                        "image": "/assets/img/escape/gladiators.webp",
+                        "theme": "Historique / Culturel",
+                        "enseigne": "Escape Masnou - El Masnou"
+                    },{
+                        "title": "Damn Fame!", 
+                        "link": "/articles/damn-fame/", 
+                        "image": "/assets/img/escape/damn-fame.webp",
+                        "theme": "Aventure",
+                        "enseigne": "Maximum Escape - Barcelone"
+                    },{
+                        "title": "Las Maravillas de Agrabah", 
+                        "link": "/articles/las-maravillas-de-agrabah/", 
+                        "image": "/assets/img/escape/las-maravillas-de-agrabah.webp",
+                        "theme": "Fantastique, Série / Film / Roman",
+                        "enseigne": "Unreal Vilapicina - Barcelone"
+                    },{
+                        "title": "El Cetro de Fuego", 
+                        "link": "/articles/el-cetro-de-fuego/", 
+                        "image": "/assets/img/escape/el-cetro-de-fuego.webp",
+                        "theme": "Aventure",
+                        "enseigne": "Elements Fuego - Barcelone"
+                    },{
+                        "title": "Mission Gaudi", 
+                        "link": "/articles/mission-gaudi/", 
+                        "image": "/assets/img/escape/mission-gaudi.webp",
+                        "theme": "Catastrophe, Historique / Culturel",
+                        "enseigne": "Lock-Clock - Barcelone"
+                    },{
+                        "title": "Mutant-X", 
+                        "link": "/articles/mutant-x/", 
+                        "image": "/assets/img/escape/mutant-x.webp",
+                        "theme": "Série / Film / Roman",
+                        "enseigne": "Elements Fuego - Barcelone"
+                    },{
+                        "title": "Circus", 
+                        "link": "/articles/circus/", 
+                        "image": "/assets/img/escape/circus.webp",
+                        "theme": "Enquête / Mystère",
+                        "enseigne": "Eyescape - Valence"
+                    },{
+                        "title": "Alice", 
+                        "link": "/articles/alice/", 
+                        "image": "/assets/img/escape/alice.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Resident Riddle - Barcelone"
+                    },{
+                        "title": "Habitacion Numero 13", 
+                        "link": "/articles/habitacion-numero-13/", 
+                        "image": "/assets/img/escape/habitacion-numero-13.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Picadero Motel - Barcelone"
+                    },{
+                        "title": "Toys", 
+                        "link": "/articles/toys/", 
+                        "image": "/assets/img/escape/toys.webp",
+                        "theme": "Enquête / Mystère",
+                        "enseigne": "Bizarre Escape Room - Barcelone"
+                    },{
+                        "title": "In", 
+                        "link": "/articles/in/", 
+                        "image": "/assets/img/escape/in.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Fear Factory Experience - L&#39;Hospitalet de Llobregat"
+                    },{
+                        "title": "La fortuna de los Addams", 
+                        "link": "/articles/la-fortuna-de-los-addams/", 
+                        "image": "/assets/img/escape/la-fortuna-de-los-addams.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Golden Pop - Barcelone"
+                    },{
+                        "title": "The Hood&#39;s Dungeon", 
+                        "link": "/articles/the-hoods-dungeon/", 
+                        "image": "/assets/img/escape/the-hoods-dungeon.webp",
+                        "theme": "Aventure",
+                        "enseigne": "Scap & Go - El Prat de Llobregat"
+                    },{
+                        "title": "Artificiero", 
+                        "link": "/articles/artificiero/", 
+                        "image": "/assets/img/escape/artificiero.webp",
+                        "theme": "Catastrophe",
+                        "enseigne": "Open Mind Room Escape - Cornellà de Llobregat"
+                    },{
+                        "title": "Misión Europa", 
+                        "link": "/articles/mision-europa/", 
+                        "image": "/assets/img/escape/mision-europa.webp",
+                        "theme": "Science-Fiction",
+                        "enseigne": "Room Infinite - Barcelone"
+                    },{
+                        "title": "The mystery of Gaudí", 
+                        "link": "/articles/the-mystery-of-gaudi/", 
+                        "image": "/assets/img/escape/the-mystery-of-gaudi.webp",
+                        "theme": "Historique / Culturel, Enquête / Mystère",
+                        "enseigne": "Escape Hunt - Barcelone"
+                    },{
+                        "title": "JigSaw", 
+                        "link": "/articles/jigsaw/", 
+                        "image": "/assets/img/escape/jigsaw.webp",
+                        "theme": "Frisson / Horreur, Série / Film / Roman",
+                        "enseigne": "Escape Diem - Hambourg"
+                    },{
+                        "title": "Endurance II", 
+                        "link": "/articles/endurance-ii/", 
+                        "image": "/assets/img/escape/endurance-ii.webp",
+                        "theme": "Science-Fiction",
+                        "enseigne": "Unreal Horta - Barcelone"
+                    },{
+                        "title": "The Dungeon: the last round", 
+                        "link": "/articles/the-dungeon-the-last-round/", 
+                        "image": "/assets/img/escape/the-dungeon-the-last-round.webp",
+                        "theme": "Évasion",
+                        "enseigne": "Maximum Escape - Barcelone"
+                    },{
+                        "title": "Ouija", 
+                        "link": "/articles/ouija/", 
+                        "image": "/assets/img/escape/ouija.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Horror Box - Barcelone"
+                    },{
+                        "title": "La Fortaleza", 
+                        "link": "/articles/la-fortaleza/", 
+                        "image": "/assets/img/escape/la-fortaleza.webp",
+                        "theme": "Enquête / Mystère",
+                        "enseigne": "Fugitivos - Barcelone"
+                    },{
+                        "title": "Jurassic Land", 
+                        "link": "/articles/jurassic-land/", 
+                        "image": "/assets/img/escape/jurassic-land.webp",
+                        "theme": "Série / Film / Roman",
+                        "enseigne": "Escape Barcelona Santa Coloma"
+                    },{
+                        "title": "Gangsters", 
+                        "link": "/articles/gangsters/", 
+                        "image": "/assets/img/escape/gangsters.webp",
+                        "theme": "Historique / Culturel",
+                        "enseigne": "Maximum Escape - Barcelone"
+                    },{
+                        "title": "Le trésor des Aztèques", 
+                        "link": "/articles/le-tresor-des-azteques/", 
+                        "image": "/assets/img/escape/le-tresor-des-azteques.webp",
+                        "theme": "Pirates",
+                        "enseigne": "Lock-Clock - Barcelone"
+                    },{
+                        "title": "La Prise de Contrôle", 
+                        "link": "/articles/le-prise-de-controle/", 
+                        "image": "/assets/img/escape/le-prise-de-controle.webp",
+                        "theme": "Évasion",
+                        "enseigne": "Prison Experience - Barcelone"
+                    },{
+                        "title": "Corpse Gallery", 
+                        "link": "/articles/corpse-gallery/", 
+                        "image": "/assets/img/escape/corpse-gallery.webp",
+                        "theme": "Enquête / Mystère",
+                        "enseigne": "Xcape - Barcelone"
+                    },{
+                        "title": "The Haunted Prison", 
+                        "link": "/articles/the-haunted-prison/", 
+                        "image": "/assets/img/escape/the-haunted-prison.webp",
+                        "theme": "Évasion",
+                        "enseigne": "The X-Door - Alicante"
+                    },{
+                        "title": "The Miko&#39;s Diary", 
+                        "link": "/articles/the-mikos-diary/", 
+                        "image": "/assets/img/escape/the-mikos-diary.webp",
+                        "theme": "Enquête / Mystère",
+                        "enseigne": "Xcape - Barcelone"
+                    },{
+                        "title": "Pesadillas", 
+                        "link": "/articles/pesadillas/", 
+                        "image": "/assets/img/escape/pesadillas.webp",
+                        "theme": "Frisson / Horreur",
+                        "enseigne": "Golden Pop - Barcelone"
+                    },{
+                        "title": "Bajo Zero", 
+                        "link": "/articles/bajo-zero/", 
+                        "image": "/assets/img/escape/bajo-zero.webp",
+                        "theme": "Catastrophe",
+                        "enseigne": "Elements Aire - Barcelone"
+                    },{
+                        "title": "Alkatraz Classic", 
+                        "link": "/articles/alkatraz-classic/", 
+                        "image": "/assets/img/escape/alkatraz-classic.webp",
+                        "theme": "Évasion",
+                        "enseigne": "Play Escape Room - Barcelone"
+                    },{
+                        "title": "Atlantis", 
+                        "link": "/articles/atlantis/", 
+                        "image": "/assets/img/escape/atlantis.webp",
+                        "theme": "Aventure",
+                        "enseigne": "Elements Fuego - Barcelone"
+                    },{
+                        "title": "The Mystery of the Manor", 
+                        "link": "/articles/the-mystery-of-the-manor/", 
+                        "image": "/assets/img/escape/the-mystery-of-the-manor.webp",
+                        "theme": "Enquête / Mystère",
+                        "enseigne": "Mystery Escape - Barcelone"
+                    },{
+                        "title": "La Caída del Regimen", 
+                        "link": "/articles/la-caida-del-regimen/", 
+                        "image": "/assets/img/escape/la-caida-del-regimen.webp",
+                        "theme": "Historique / Culturel",
+                        "enseigne": "Abduction - Valence"
+                    },{
+                        "title": "La Reina Roja", 
+                        "link": "/articles/la-reina-roja/", 
+                        "image": "/assets/img/escape/la-reina-roja.webp",
+                        "theme": "Aventure",
+                        "enseigne": "Elements Aire - Barcelone"
+                    },{
+                        "title": "Cazadores de Brujas", 
+                        "link": "/articles/cazadores-de-brujas/", 
+                        "image": "/assets/img/escape/cazadores-de-brujas.webp",
+                        "theme": "Fantastique",
+                        "enseigne": "Synergo - Sant Boi de Llobregat"
+                    },{
+                        "title": "The Mafia&#39;s Lair", 
+                        "link": "/articles/the-mafias-lair/", 
+                        "image": "/assets/img/escape/the-mafias-lair.webp",
+                        "theme": "Enquête / Mystère",
+                        "enseigne": "Roomin - Barcelone"
+                    },{
+                        "title": "La creación", 
+                        "link": "/articles/la-creacion/", 
+                        "image": "/assets/img/escape/la-creacion.webp",
+                        "theme": "Science-Fiction",
+                        "enseigne": "Cronologic - Barcelone"
+                    },{
+                        "title": "Atrincherados", 
+                        "link": "/articles/atrincherados/", 
+                        "image": "/assets/img/escape/atrincherados.webp",
+                        "theme": "Historique / Culturel",
+                        "enseigne": "Elements Tierra - Barcelone"
+                    },{
+                        "title": "Dia D", 
+                        "link": "/articles/dia-d/", 
+                        "image": "/assets/img/escape/dia-d.webp",
+                        "theme": "Historique / Culturel",
+                        "enseigne": "Oniric Escape - L&#39;Hospitalet de Llobregat"
+                    },{
+                        "title": "School of Thieves", 
+                        "link": "/articles/school-of-thieves/", 
+                        "image": "/assets/img/escape/school-of-thieves.webp",
+                        "theme": "Cambriolage",
+                        "enseigne": "Escape Hunt - Barcelone"
+                    },{
+                        "title": "La Sospecha", 
+                        "link": "/articles/la-sospecha/", 
+                        "image": "/assets/img/escape/la-sospecha.webp",
+                        "theme": "Enquête / Mystère",
+                        "enseigne": "Elements Aire - Barcelone"
+                    },{
+                        "title": "El Ùltimo Vikingo", 
+                        "link": "/articles/el-ultimo-vikingo/", 
+                        "image": "/assets/img/escape/el-ultimo-vikingo.webp",
+                        "theme": "Aventure",
+                        "enseigne": "Elements Aire - Barcelone"
+                    },{
+                        "title": "Petit Piaf Hotel", 
+                        "link": "/articles/petit-piaf-hotel/", 
+                        "image": "/assets/img/escape/petit-piaf-hotel.webp",
+                        "theme": "Enquête / Mystère",
+                        "enseigne": "Intríngulis - Barcelone"
+                    },{
+                        "title": "La Llamada Arcana", 
+                        "link": "/articles/la-llamada-arcana/", 
+                        "image": "/assets/img/escape/la-llamada-arcana.webp",
+                        "theme": "Fantastique",
+                        "enseigne": "La Llamada Arcana - Barcelone"
+                    }
+    ]'>
+    </div>
+</div>
+
+<script src="/assets/js/featured-articles.js"></script>
+
+ -->
+
+
+
+    <footer>
+        <div class="row">
+    <div class="footer-col logo-social-group">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo" class="logo-img">
+        </a>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/lemeilleurescapegame" target="_blank">
+                <img src="/assets/img/icons/facebook-brands.svg" alt="Facebook" class="icon">
+            </a>
+            <a href="https://www.instagram.com/lemeilleurescapegame.fr/" target="_blank">
+                <img src="/assets/img/icons/instagram-brands.svg" alt="Instagram" class="icon">
+            </a>
+            <a href="https://open.spotify.com/show/0j285HyDZGNuTRNYqsp5J9?si=a3026617f27a49f4" target="_blank">
+                <img src="/assets/img/icons/spotify-brands.svg" alt="Spotify" class="icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-col">
+        <h4><a href="/about">About Us</a></h4>
+    </div>
+
+    <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:contact@lemeilleurescapegame.fr">contact@lemeilleurescapegame.fr</a></p>
+    </div>
+</div>
+
+    </footer>
+    <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
+<script type="text/javascript" src="/assets/js/functions.js"></script>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
+
