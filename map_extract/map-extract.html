@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extract iframe src URLs</title>
+</head>
+<body>
+  <h3>Paste iframe embed codes below (multiple allowed):</h3>
+  <textarea id="iframeInput" rows="10" cols="80" placeholder="Paste iframe codes here..."></textarea><br><br>
+  <button onclick="extractSrcs()">Extract & Copy src URLs</button>
+  <p id="result"></p>
+
+  <script>
+    function extractSrcs() {
+      const input = document.getElementById('iframeInput').value;
+      // Regex to match all src="..."
+      const regex = /src="([^"]+)"/g;
+      let matches;
+      const srcs = [];
+      while ((matches = regex.exec(input)) !== null) {
+        srcs.push(matches[1]);
+      }
+
+      if (srcs.length === 0) {
+        alert('No iframe src URLs found!');
+        return;
+      }
+
+      const allSrcs = srcs.join('\n');
+
+      navigator.clipboard.writeText(allSrcs).then(() => {
+        document.getElementById('result').textContent = `Copied ${srcs.length} src URLs to clipboard!`;
+      }).catch(() => {
+        alert('Failed to copy to clipboard.');
+      });
+    }
+  </script>
+</body>
+</html>
