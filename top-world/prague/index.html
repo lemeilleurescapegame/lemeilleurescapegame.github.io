@@ -9,9 +9,48 @@
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="/assets/img/logo_lemeg_.png">
 </head>
 <body>
-    <nav class="nav-wrap">
+    <head>
+    <style>
+        /* Example CSS for your navbar */
+        .nav-wrap {
+            font-family: 'Merriweather', serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-wrap a {
+            text-decoration: none;
+            color: inherit;
+            padding: 8px 12px;
+        }
+
+        .nav-wrap a:hover {
+            color: #ccc;
+        }
+
+        .sidebar li a {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* .search-form input[type="text"] {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            color: #000;
+            padding: 4px 8px;
+        } */
+    </style>
+</head>
+
+<nav class="nav-wrap">
     <div class="logo">
         <a href="/" class="nav-logo">
             <img src="/assets/img/logo_lemeg_.png" alt="Logo">
@@ -23,18 +62,22 @@
         <li> <a href="/top-france">Top France</a> </li>
         <li> <a href="/top-world">Top World</a> </li>
         <li> <a href="/podcast">Podcast</a>  </li>
-        <!-- <li> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li> <a href="/experience-immersive">Expérience immersive</a> </li>
         <li> <a href="/horreur">Horreur</a> </li>
-        <!-- <li> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
+        <li> <a href="/realite-virtuelle">Réalité virtuelle</a> </li>
+        <li> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <li> <a href="/pour-enfant">🙋‍♂️ Pour enfant</a> </li>
 
     </ul>
     <ul>
         <li class="hideOnMobile"> <a href="/top-france">Top France</a> </li>
         <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li>
         <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
-        <!-- <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li>
         <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/realite-virtuelle">Réalité virtuelle</a> </li>
         <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <li class="hideOnMobile"> <a href="/pour-enfant">🙋‍♂️ Pour Enfants</a></li>
         <!-- <li class="search-icon">
             <input type="search" id="search-input" placeholder="Search">
             <button id="search-button">
@@ -66,12 +109,6 @@
                 </svg>
             </button>
         </form>
-
-        <!-- <form action="/search.html" method="get">
-            <label for="search-box">Search</label>
-            <input type="text" id="search-box" name="query">
-            <input type="submit" value="search">
-        </form> -->
 
         <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
     </ul>
@@ -136,8 +173,713 @@
 
 
 </script>
-    
+
+    <div id="google_translate_wrapper">
+        <div id="google_translate_element"></div>
+    </div>
+
+
+    <section class="immersive-block">
+    <h6><em>Mis à jour en juin 2023</em></h6>
+    <h3>Quel est le meilleur escape game de PRAGUE ? </h3>
+    <h5>
+        <p>
+        En plus d’être une ville magnifique, Prague est désormais réputée pour ses escape game de qualité. En outre, ses prix attractifs vous permettront de profiter d’un maximum de salles.
+        </p>
+        <p>
+        Nous avons découvert les escape game de Prague lors d’un unique voyage fin 2021. La totalité des salles qui nous avaient été recommandées est située dans la capitale et facilement accessibles à pied ou en transport en commun depuis le centre de la ville.
+        </p>
+        <p>
+        Deux enseignes dominent la scène : The Chamber et MindMaze. Mais depuis notre passage, Padlock a fait parler de lui avec une 36ème place au TERPECA 2022 pour son jeu “Safe : The Secret of Jack Daniel”.
+        </p>
+    </h5>
+</section>
+
+<!-- <div class="language-switch-container">
+    <button id="languageSwitchButton" onclick="toggleLanguage()">
+        <img id="languageFlag" src="/assets/img/flags/en-optimized.webp" alt="Flag">
+        <span>Switch to English</span>
+    </button>
+</div> -->
+
+<div class="top-articles-container-description">
+    <div class="top-title-container">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
+        </svg>
+        <h2 class="top-title">Les Incontournables de Prague</h2>
+        <!-- <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button> -->
+    </div>
+    <div class="top-articles-placeholder-description" data-articles="[{
+                        &quot;rank&quot;: &quot;1&quot;,
+                        &quot;title&quot;: &quot;An incredible story of Nautilus&quot;,
+                        &quot;link&quot;: &quot;/MindMaze_Prague/an-incredible-story-of-nautilus&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/an-incredible-story-of-nautilus.webp&quot;,
+                        &quot;enseigne&quot;: &quot;MindMaze - Prague&quot;,
+                        &quot;info_top&quot;: &quot;Nautilus est clairement un incontournable en Europe. C’est le genre d’aventure épique qui vous fera voyager dans un univers remarquable. L’histoire est brillamment construite et ne manque pas de clins d’œil humoristiques. Le game-mastering est formidable et s’incarne comme un véritable compagnon de voyage. À ne manquer sous aucun prétexte lors d’un passage à Prague&quot;,
+                        &quot;info_top_en&quot;: &quot;Nautilus is clearly a must-visit in Europe. It’s the kind of epic adventure that will take you on a journey through a remarkable universe. The story is brilliantly crafted and sprinkled with humorous nods. The game mastering is fantastic, acting as a true travel companion. Not to be missed under any circumstances when visiting Prague.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;2&quot;,
+                        &quot;title&quot;: &quot;Haunted House II Poltergeist&quot;,
+                        &quot;link&quot;: &quot;/The_Chamber_Prague/haunted-house-ii-poltergeist&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/haunted-house-ii-poltergeist.webp&quot;,
+                        &quot;enseigne&quot;: &quot;The Chamber - Prague&quot;,
+                        &quot;info_top&quot;: &quot;Nous sommes sur une aventure immersive et horrifique de grande qualité. L’immersion est totale dans un lieu au réalisme effrayant. Les apparitions sont chorégraphiées avec précision et se font dans le respect des joueurs, sans aucun contact physique. Les fans de l’horreur spectaculaire seront plus que comblés par Poltergeist.&quot;,
+                        &quot;info_top_en&quot;: &quot;&quot;
+                    },{
+                        &quot;rank&quot;: &quot;3&quot;,
+                        &quot;title&quot;: &quot;Haunted House&quot;,
+                        &quot;link&quot;: &quot;/The_Chamber_Prague/haunted-house&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/haunted-house.webp&quot;,
+                        &quot;enseigne&quot;: &quot;The Chamber - Prague&quot;,
+                        &quot;info_top&quot;: &quot;C’est le premier épisode du diptyque Haunted House. Bien que nous n’ayons pas bien compris le lien avec Poltergeist, Haunted House 1 est une expérience géniale. L’originalité de l’aventure repose sur un objet unique qui vous permet de retracer l’histoire des lieux que vous appréhendez. L’intensité de la peur est nettement moins élevée que dans Poltergeist, ce qui peut constituer une bonne mise en jambe avant de s’exposer à l’épisode 2.&quot;,
+                        &quot;info_top_en&quot;: &quot;&quot;
+                    },{
+                        &quot;rank&quot;: &quot;4&quot;,
+                        &quot;title&quot;: &quot;Galactic Pioneers&quot;,
+                        &quot;link&quot;: &quot;/MindMaze_Prague/galactic-pioneers&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/galactic-pioneers.webp&quot;,
+                        &quot;enseigne&quot;: &quot;MindMaze - Prague&quot;,
+                        &quot;info_top&quot;: &quot;Une salle remarquable et qui était à sa sortie considérée comme l’une des meilleures d’Europe. Elle a même été récompensée d’un TERPECA en 2019 en se positionnant comme la 46ème meilleure salle du monde. Lors de notre test en 2022, elle restait très agréable à jouer avec des énigmes ludiques qui s’intégraient bien dans une thématique scientifique et futuriste. Même si depuis, les escape game ont encore évolué, Galactic Pioneers reste toujours une salle à mettre dans sa to-do list lors d’un voyage à Prague.&quot;,
+                        &quot;info_top_en&quot;: &quot;&quot;
+                    }
+    ]">
+    </div>
+</div>
+
+<script>
+    let isEnglish = false; 
+
+    function toggleLanguage() {
+        isEnglish = !isEnglish;
+        const articles = document.querySelectorAll('.top-article-description');
+        const languageButton = document.getElementById('languageSwitchButton');
+        const languageFlag = document.getElementById('languageFlag');
+
+        articles.forEach((article) => {
+            const articleData = JSON.parse(article.getAttribute("data-article")); 
+            const infoTop = article.querySelector('.top-article-description-info');
+
+            if (articleData) {
+                if (isEnglish) {
+                    infoTop.innerHTML = articleData.info_top_en;
+                    languageButton.querySelector("span").textContent = 'En Français'; // Update only text
+                    languageFlag.src = "/assets/img/flags/france-optimized.webp"; // Switch to English flag
+                } else {
+                    infoTop.innerHTML = articleData.info_top;
+                    languageButton.querySelector("span").textContent = 'Switch to English'; // Update only text
+                    languageFlag.src = "/assets/img/flags/en-optimized.webp"; // Switch to French flag
+                }
+            }
+        });
+    }
+</script>
+
+<script src="/assets/js/top-articles-description.js"></script>
+
+<!-- <div class="language-switch-container">
+    <button id="languageSwitchButton" onclick="toggleLanguage()">
+        <img id="languageFlag" src="/assets/img/flags/en-optimized.webp" alt="Flag">
+        <span>Switch to English</span>
+    </button>
+</div> -->
+
+<div class="top-articles-container-description">
+    <div class="top-title-container">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
+        </svg>
+        <h2 class="top-title">À faire s'il vous reste du temps</h2>
+        <!-- <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button> -->
+    </div>
+    <div class="top-articles-placeholder-description" data-articles="[{
+                        &quot;rank&quot;: &quot;1&quot;,
+                        &quot;title&quot;: &quot;Opus Magnum&quot;,
+                        &quot;link&quot;: &quot;/The_Chamber_Prague/opus-magnum&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/opus-magnum.webp&quot;,
+                        &quot;enseigne&quot;: &quot;The Chamber - Prague&quot;,
+                        &quot;info_top&quot;: &quot;Même si on ne trouve rien d’extraordinaire dans Opus Magnum, il reste un escape très agréable à jouer. Les énigmes sont fluides et s’intègrent bien dans des décors aux allures de bibliothèque mystérieuse.&quot;,
+                        &quot;info_top_en&quot;: &quot;&quot;
+                    },{
+                        &quot;rank&quot;: &quot;2&quot;,
+                        &quot;title&quot;: &quot;Zodiac Patres&quot;,
+                        &quot;link&quot;: &quot;/The_Chamber_Prague/zodiac-patres&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/zodiac-patres.webp&quot;,
+                        &quot;enseigne&quot;: &quot;The Chamber - Prague&quot;,
+                        &quot;info_top&quot;: &quot;La salle avait quelques années lors de notre passage. Au moment de sa sortie, on était sans doute sur l’un des plus grands escape game de la ville. Il y a de très bonnes idées dans cette aventure. Mais malheureusement, l’espace n’est pas suffisamment bien optimisé pour que l’expérience soit optimale&quot;,
+                        &quot;info_top_en&quot;: &quot;&quot;
+                    },{
+                        &quot;rank&quot;: &quot;3&quot;,
+                        &quot;title&quot;: &quot;Wonderland&quot;,
+                        &quot;link&quot;: &quot;/The_Chamber_Prague/wonderland&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/wonderland.webp&quot;,
+                        &quot;enseigne&quot;: &quot;The Chamber - Prague&quot;,
+                        &quot;info_top&quot;: &quot;Comment surprendre dans une thématique aussi utilisée ? Les décors sont de très bonne facture mais pourraient vite s’abîmer en cas de défaut d’entretien. On retrouve un style qui fait tout de suite penser aux salles de la franchise “Claustrophobia”. L’aventure manque toutefois de palpitant et de surprises. On reste quelque peu sur notre faim dans un escape game assez petit par sa superficie.&quot;,
+                        &quot;info_top_en&quot;: &quot;&quot;
+                    }
+    ]">
+    </div>
+</div>
+
+<script>
+    let isEnglish = false; 
+
+    function toggleLanguage() {
+        isEnglish = !isEnglish;
+        const articles = document.querySelectorAll('.top-article-description');
+        const languageButton = document.getElementById('languageSwitchButton');
+        const languageFlag = document.getElementById('languageFlag');
+
+        articles.forEach((article) => {
+            const articleData = JSON.parse(article.getAttribute("data-article")); 
+            const infoTop = article.querySelector('.top-article-description-info');
+
+            if (articleData) {
+                if (isEnglish) {
+                    infoTop.innerHTML = articleData.info_top_en;
+                    languageButton.querySelector("span").textContent = 'En Français'; // Update only text
+                    languageFlag.src = "/assets/img/flags/france-optimized.webp"; // Switch to English flag
+                } else {
+                    infoTop.innerHTML = articleData.info_top;
+                    languageButton.querySelector("span").textContent = 'Switch to English'; // Update only text
+                    languageFlag.src = "/assets/img/flags/en-optimized.webp"; // Switch to French flag
+                }
+            }
+        });
+    }
+</script>
+
+<script src="/assets/js/top-articles-description.js"></script>
+
+<!-- <div class="language-switch-container">
+    <button id="languageSwitchButton" onclick="toggleLanguage()">
+        <img id="languageFlag" src="/assets/img/flags/en-optimized.webp" alt="Flag">
+        <span>Switch to English</span>
+    </button>
+</div> -->
+
+<div class="top-articles-container-description">
+    <div class="top-title-container">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
+        </svg>
+        <h2 class="top-title">Nous n'avons pas aimé</h2>
+        <!-- <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button> -->
+    </div>
+    <div class="top-articles-placeholder-description" data-articles="[{
+                        &quot;rank&quot;: &quot;1&quot;,
+                        &quot;title&quot;: &quot;Magic Mirrors&quot;,
+                        &quot;link&quot;: &quot;/MindMaze_Prague/magic-mirrors&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/magic-mirrors.webp&quot;,
+                        &quot;enseigne&quot;: &quot;MindMaze - Prague&quot;,
+                        &quot;info_top&quot;: &quot;Quelle déception… Nous sommes complètement sortis de l’aventure qui nous aura tout de même occasionné un fou rire mémorable. Rien ne va dans le game-design. Les anachronismes cassent l’immersion. On se perd dans une quantité astronomique de parchemins à déplier. Il est très difficile de se projeter dans l’aventure et en particulier dans la dernière pièce dont il faut carrément imaginer des décors absents.&quot;,
+                        &quot;info_top_en&quot;: &quot;&quot;
+                    }
+    ]">
+    </div>
+</div>
+
+<script>
+    let isEnglish = false; 
+
+    function toggleLanguage() {
+        isEnglish = !isEnglish;
+        const articles = document.querySelectorAll('.top-article-description');
+        const languageButton = document.getElementById('languageSwitchButton');
+        const languageFlag = document.getElementById('languageFlag');
+
+        articles.forEach((article) => {
+            const articleData = JSON.parse(article.getAttribute("data-article")); 
+            const infoTop = article.querySelector('.top-article-description-info');
+
+            if (articleData) {
+                if (isEnglish) {
+                    infoTop.innerHTML = articleData.info_top_en;
+                    languageButton.querySelector("span").textContent = 'En Français'; // Update only text
+                    languageFlag.src = "/assets/img/flags/france-optimized.webp"; // Switch to English flag
+                } else {
+                    infoTop.innerHTML = articleData.info_top;
+                    languageButton.querySelector("span").textContent = 'Switch to English'; // Update only text
+                    languageFlag.src = "/assets/img/flags/en-optimized.webp"; // Switch to French flag
+                }
+            }
+        });
+    }
+</script>
+
+<script src="/assets/js/top-articles-description.js"></script>
+
+<div class="featured-articles-wrapper">
+    <div class="featured-title-box">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
+        </svg>
+        <h2 class="featured-title">Tous les escape games de Prague</h2>
+    </div>
+    <div class="featured-articles-placeholder" data-featured="[{
+                        &quot;title&quot;: &quot;Safe - The Secret of Jack Daniel&quot;, 
+                        &quot;link&quot;: &quot;/The_Padlock_Prague/safe-the-secret-of-jack-daniel&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/safe-the-secret-of-jack-daniel.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;The Padlock - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Úsvit Cinema&quot;, 
+                        &quot;link&quot;: &quot;/Lost_Exit_Prague/usvit-cinema&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/usvit-cinema.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Lost Exit - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Strange School&quot;, 
+                        &quot;link&quot;: &quot;/Lost_Exit_Prague/strange-school&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/strange-school.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Lost Exit - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Blood Countess&quot;, 
+                        &quot;link&quot;: &quot;/ExitRoom_Prague/the-blood-countess&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-blood-countess.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;ExitRoom - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Serenity: Distress signal from space&quot;, 
+                        &quot;link&quot;: &quot;/Coderoom_Prague/serenity-distress-signal-from-space&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/serenity-distress-signal-from-space.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe, Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Coderoom - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Reactor Escape&quot;, 
+                        &quot;link&quot;: &quot;/Strachpodprahou_Prague/reactor-escape&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/reactor-escape.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;Strachpodprahou - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Butcher of Prague&quot;, 
+                        &quot;link&quot;: &quot;/Strachpodprahou_Prague/the-butcher-of-prague&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-butcher-of-prague.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Strachpodprahou - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Cemetery&quot;, 
+                        &quot;link&quot;: &quot;/The_Padlock_Prague/cemetery&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/cemetery.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;The Padlock - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Escape Bar&quot;, 
+                        &quot;link&quot;: &quot;/Escape_The_Room_Prague/escape-bar&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/escape-bar.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Escape The Room - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Star Element&quot;, 
+                        &quot;link&quot;: &quot;/Questerland_Prague/the-star-element&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-star-element.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Questerland - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Apocalypse Zombie 2213&quot;, 
+                        &quot;link&quot;: &quot;/Questerland_Prague/apocalypse-zombie-2213&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/apocalypse-zombie-2213.webp&quot;,
+                        &quot;theme&quot;: &quot;Virus / Asile / Hôpital&quot;,
+                        &quot;enseigne&quot;: &quot;Questerland - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Magic Escape Room&quot;, 
+                        &quot;link&quot;: &quot;/Questerland_Prague/magic-escape-room&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/magic-escape-room.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Questerland - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Magic Escape Room - Episode II&quot;, 
+                        &quot;link&quot;: &quot;/Questerland_Prague/magic-escape-room-episode-ii&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/magic-escape-room-episode-ii.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique, Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Questerland - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Moriarty&#39;s Phantom Trap&quot;, 
+                        &quot;link&quot;: &quot;/Questerland_Prague/moriartys-phantom-trap&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/moriartys-phantom-trap.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;Questerland - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Dr. Shipman&#39;s Surgery: the hunt for a mass murderer&quot;, 
+                        &quot;link&quot;: &quot;/Coderoom_Prague/dr-shipmans-surgery-the-hunt-for-a-mass-murderer&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/dr-shipmans-surgery-the-hunt-for-a-mass-murderer.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Coderoom - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Mission 53&quot;, 
+                        &quot;link&quot;: &quot;/The_Padlock_Prague/mission-53&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/mission-53.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;The Padlock - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Escape from Alcatraz&quot;, 
+                        &quot;link&quot;: &quot;/ExitRoom_Prague/escape-from-alcatraz&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/escape-from-alcatraz.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;ExitRoom - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Experiment&quot;, 
+                        &quot;link&quot;: &quot;/Thrill_Park_Prague/the-experiment&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-experiment.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Thrill Park - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Alchemist&#39;s Chamber&quot;, 
+                        &quot;link&quot;: &quot;/MindMaze_Prague/alchemists-chamber&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/alchemists-chamber.webp&quot;,
+                        &quot;theme&quot;: &quot;Historique / Culturel&quot;,
+                        &quot;enseigne&quot;: &quot;MindMaze - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Apartment no. 13&quot;, 
+                        &quot;link&quot;: &quot;/The_Black_Lock_Prague/apartment-no-13&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/apartment-no-13.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur, Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;The Black Lock - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Lost Crown Jewels: Secrets of the Freemasons&quot;, 
+                        &quot;link&quot;: &quot;/Coderoom_Prague/lost-crown-jewels-secrets-of-the-freemasons&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/lost-crown-jewels-secrets-of-the-freemasons.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Coderoom - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Star&quot;, 
+                        &quot;link&quot;: &quot;/Escape_Point_Prague/star&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/star.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Point - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Tajemstvi Jestrabi Chaty&quot;, 
+                        &quot;link&quot;: &quot;/Tajemstvi_Hlavolamu_Prague/tajemstvi-jestrabi-chaty&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/tajemstvi-jestrabi-chaty.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique, Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Tajemstvi Hlavolamu - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Nuclear Bunker&quot;, 
+                        &quot;link&quot;: &quot;/Breakout_Prague/nuclear-bunker&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/nuclear-bunker.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Breakout - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Legacy&quot;, 
+                        &quot;link&quot;: &quot;/Mazement_Prague/the-legacy&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-legacy.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Mazement - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Experiment&quot;, 
+                        &quot;link&quot;: &quot;/Questroom_Prague/experiment&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/experiment.webp&quot;,
+                        &quot;theme&quot;: &quot;Virus / Asile / Hôpital&quot;,
+                        &quot;enseigne&quot;: &quot;Questroom - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Bombing of Prague&quot;, 
+                        &quot;link&quot;: &quot;/ExitRoom_Prague/the-bombing-of-prague&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-bombing-of-prague.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;ExitRoom - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Psychopath Complex&quot;, 
+                        &quot;link&quot;: &quot;/Mazement_Prague/psychopath-complex&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/psychopath-complex.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;Mazement - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Fallout - Mysterious Laboratory&quot;, 
+                        &quot;link&quot;: &quot;/Coderoom_Prague/fallout-mysterious-laboratory&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/fallout-mysterious-laboratory.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;Coderoom - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Maphia&quot;, 
+                        &quot;link&quot;: &quot;/Chess_Key_Room_Prague/maphia&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/maphia.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Chess Key Room - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Freddy Krueger&quot;, 
+                        &quot;link&quot;: &quot;/Endorfin_Prague/freddy-krueger&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/freddy-krueger.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Endorfin - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;007 : Secret Project&quot;, 
+                        &quot;link&quot;: &quot;/Chess_Key_Room_Prague/007-secret-project&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/007-secret-project.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;Chess Key Room - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Vampire&#39;s Nest&quot;, 
+                        &quot;link&quot;: &quot;/Chess_Key_Room_Prague/vampires-nest&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/vampires-nest.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Chess Key Room - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Secret Experiment&quot;, 
+                        &quot;link&quot;: &quot;/Trap_Catch_Prague/the-secret-experiment&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-secret-experiment.webp&quot;,
+                        &quot;theme&quot;: &quot;Virus / Asile / Hôpital&quot;,
+                        &quot;enseigne&quot;: &quot;Trap Catch - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Professor&#39;s Office&quot;, 
+                        &quot;link&quot;: &quot;/Escape_The_Room_Prague/professors-office&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/professors-office.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Escape The Room - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Saw&quot;, 
+                        &quot;link&quot;: &quot;/Dream_Studio_SainteCroix/saw&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/saw.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Dream Studio - Sainte-Croix&quot;
+                    },{
+                        &quot;title&quot;: &quot;Titanic&quot;, 
+                        &quot;link&quot;: &quot;/Majestic_Escape_Game_Paris/titanic&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/titanic.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;Majestic Escape Game - Paris&quot;
+                    },{
+                        &quot;title&quot;: &quot;Christopher Columbus&quot;, 
+                        &quot;link&quot;: &quot;/Chess_Key_Room_Prague/christopher-columbus&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/christopher-columbus.webp&quot;,
+                        &quot;theme&quot;: &quot;Historique / Culturel&quot;,
+                        &quot;enseigne&quot;: &quot;Chess Key Room - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Enigma&quot;, 
+                        &quot;link&quot;: &quot;/MindMaze_Prague/enigma&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/enigma.webp&quot;,
+                        &quot;theme&quot;: &quot;Historique / Culturel&quot;,
+                        &quot;enseigne&quot;: &quot;MindMaze - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Star Wars&quot;, 
+                        &quot;link&quot;: &quot;/Endorfin_Prague/star-wars&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/star-wars.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman, Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Endorfin - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Al Capone&quot;, 
+                        &quot;link&quot;: &quot;/Chess_Key_Room_Prague/al-capone&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/al-capone.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Chess Key Room - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Asylum: The strory of the strange Butcher&quot;, 
+                        &quot;link&quot;: &quot;/Escape_Master_Prague/asylum-the-strory-of-the-strange-butcher&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/asylum-the-strory-of-the-strange-butcher.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur, Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Master - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Alice in Wonderland&quot;, 
+                        &quot;link&quot;: &quot;/Cine_Room_Bamberg/alice-in-wonderland&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/alice-in-wonderland.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Cine Room - Bamberg&quot;
+                    },{
+                        &quot;title&quot;: &quot;Journalist - Version 100 minutes&quot;, 
+                        &quot;link&quot;: &quot;/Escape_Point_Prague/journalist-version-100-minutes&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/journalist-version-100-minutes.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Point - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Gulliver&#39;s Travel&quot;, 
+                        &quot;link&quot;: &quot;/Chess_Key_Room_Prague/gullivers-travel&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/gullivers-travel.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Chess Key Room - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Chamber of Sins&quot;, 
+                        &quot;link&quot;: &quot;/Chess_Key_Room_Prague/chamber-of-sins&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/chamber-of-sins.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Chess Key Room - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Uncle in Danger&quot;, 
+                        &quot;link&quot;: &quot;/Trap_Catch_Prague/the-uncle-in-danger&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-uncle-in-danger.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;Trap Catch - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Jezek V Kleci&quot;, 
+                        &quot;link&quot;: &quot;/Tajemstvi_Hlavolamu_Prague/jezek-v-kleci&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/jezek-v-kleci.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Tajemstvi Hlavolamu - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Matrix&quot;, 
+                        &quot;link&quot;: &quot;/Czech_Escape_Prague/the-matrix&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-matrix.webp&quot;,
+                        &quot;theme&quot;: &quot;Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Czech Escape - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Time Machine&quot;, 
+                        &quot;link&quot;: &quot;/The_Escape_Berne/time-machine&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/time-machine.webp&quot;,
+                        &quot;theme&quot;: &quot;Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;The Escape - Berne&quot;
+                    },{
+                        &quot;title&quot;: &quot;Inferno&quot;, 
+                        &quot;link&quot;: &quot;/Mazement_Prague/inferno&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/inferno.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;Mazement - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Prison - Version 100 minutes&quot;, 
+                        &quot;link&quot;: &quot;/Escape_Point_Prague/prison-version-100-minutes&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/prison-version-100-minutes.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Point - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Hero&quot;, 
+                        &quot;link&quot;: &quot;/Escape_Point_Prague/hero&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/hero.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique, Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Point - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Clinic&quot;, 
+                        &quot;link&quot;: &quot;/Fun_Arena_Prague/the-clinic&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-clinic.webp&quot;,
+                        &quot;theme&quot;: &quot;Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Fun Arena - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Buddha&#39;s Footstep&quot;, 
+                        &quot;link&quot;: &quot;/Chess_Key_Room_Prague/buddhas-footstep&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/buddhas-footstep.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Chess Key Room - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Nest of Revolution&quot;, 
+                        &quot;link&quot;: &quot;/Trap_Catch_Prague/the-nest-of-revolution&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-nest-of-revolution.webp&quot;,
+                        &quot;theme&quot;: &quot;Historique / Culturel, Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Trap Catch - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Case&quot;, 
+                        &quot;link&quot;: &quot;/Escape_Point_Prague/the-case&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-case.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Point - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Dream Extractors&quot;, 
+                        &quot;link&quot;: &quot;/EscapeX_Prague/dream-extractors&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/dream-extractors.webp&quot;,
+                        &quot;theme&quot;: &quot;Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;EscapeX - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Planet Escape&quot;, 
+                        &quot;link&quot;: &quot;/Fugitives_Games_Prague/planet-escape&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/planet-escape.webp&quot;,
+                        &quot;theme&quot;: &quot;Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Fugitives Games - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Submarine K5&quot;, 
+                        &quot;link&quot;: &quot;/Czech_Escape_Prague/submarine-k5&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/submarine-k5.webp&quot;,
+                        &quot;theme&quot;: &quot;Catastrophe, Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Czech Escape - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Prison - Version 60 minutes&quot;, 
+                        &quot;link&quot;: &quot;/Escape_Point_Prague/prison-version-60-minutes&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/prison-version-60-minutes.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Point - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Pavillon no. 13&quot;, 
+                        &quot;link&quot;: &quot;/Mission_escape_Prague/pavillon-no-13&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/pavillon-no-13.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur, Virus / Asile / Hôpital&quot;,
+                        &quot;enseigne&quot;: &quot;Mission escape - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;The Mystery of the Astronomical Clock&quot;, 
+                        &quot;link&quot;: &quot;/Trap_Catch_Prague/the-mystery-of-the-astronomical-clock&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/the-mystery-of-the-astronomical-clock.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Trap Catch - Prague&quot;
+                    },{
+                        &quot;title&quot;: &quot;Journalist - Version 60 minutes&quot;, 
+                        &quot;link&quot;: &quot;/Escape_Point_Prague/journalist-version-60-minutes&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/journalist-version-60-minutes.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Point - Prague&quot;
+                    }
+    ]">
+    </div>
+</div>
+
+<script src="/assets/js/featured-articles_v2.js"></script>
+
+
+
+    <footer>
+        <div class="row">
+    <div class="footer-col logo-social-group">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo" class="logo-img">
+        </a>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/lemeilleurescapegame" target="_blank">
+                <img src="/assets/img/icons/facebook-brands.svg" alt="Facebook" class="icon">
+            </a>
+            <a href="https://www.instagram.com/lemeilleurescapegame.fr/" target="_blank">
+                <img src="/assets/img/icons/instagram-brands.svg" alt="Instagram" class="icon">
+            </a>
+            <a href="https://open.spotify.com/show/0j285HyDZGNuTRNYqsp5J9?si=a3026617f27a49f4" target="_blank">
+                <img src="/assets/img/icons/spotify-brands.svg" alt="Spotify" class="icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-col">
+        <h4><a href="/about">About Us</a></h4>
+        <h4><a href="/mention-legale">Mentions légales</a></h4>
+    </div>
+
+    <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:contact@lemeilleurescapegame.fr">contact@lemeilleurescapegame.fr</a></p>
+    </div>
+</div>
+
+    </footer>
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
+
+    
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+        { pageLanguage: 'fr', includedLanguages: 'en,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+        'google_translate_element'
+        );
+    }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.getElementById("translate-toggle");
+        let currentLang = "fr";
+
+        // Wait for the .goog-te-combo to be loaded
+        function waitForTranslateCombo(callback) {
+            const interval = setInterval(() => {
+                const selectEl = document.querySelector(".goog-te-combo");
+                if (selectEl) {
+                    clearInterval(interval);
+                    callback(selectEl);
+                }
+            }, 100); // check every 100ms
+        }
+
+        waitForTranslateCombo((selectEl) => {
+            toggleBtn.addEventListener("click", function () {
+                const targetLang = currentLang === "fr" ? "en" : "fr";
+                selectEl.value = targetLang;
+                selectEl.dispatchEvent(new Event("change"));
+                currentLang = targetLang;
+                toggleBtn.textContent = currentLang === "fr" ? "🇬🇧 English" : "🇫🇷 Français";
+            });
+        });
+    });
+    </script>
 </body>
 </html>

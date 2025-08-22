@@ -9,9 +9,48 @@
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="/assets/img/logo_lemeg_.png">
 </head>
 <body>
-    <nav class="nav-wrap">
+    <head>
+    <style>
+        /* Example CSS for your navbar */
+        .nav-wrap {
+            font-family: 'Merriweather', serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-wrap a {
+            text-decoration: none;
+            color: inherit;
+            padding: 8px 12px;
+        }
+
+        .nav-wrap a:hover {
+            color: #ccc;
+        }
+
+        .sidebar li a {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* .search-form input[type="text"] {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            color: #000;
+            padding: 4px 8px;
+        } */
+    </style>
+</head>
+
+<nav class="nav-wrap">
     <div class="logo">
         <a href="/" class="nav-logo">
             <img src="/assets/img/logo_lemeg_.png" alt="Logo">
@@ -23,18 +62,22 @@
         <li> <a href="/top-france">Top France</a> </li>
         <li> <a href="/top-world">Top World</a> </li>
         <li> <a href="/podcast">Podcast</a>  </li>
-        <!-- <li> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li> <a href="/experience-immersive">Expérience immersive</a> </li>
         <li> <a href="/horreur">Horreur</a> </li>
-        <!-- <li> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
+        <li> <a href="/realite-virtuelle">Réalité virtuelle</a> </li>
+        <li> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <li> <a href="/pour-enfant">🙋‍♂️ Pour enfant</a> </li>
 
     </ul>
     <ul>
         <li class="hideOnMobile"> <a href="/top-france">Top France</a> </li>
         <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li>
         <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
-        <!-- <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li>
         <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/realite-virtuelle">Réalité virtuelle</a> </li>
         <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <li class="hideOnMobile"> <a href="/pour-enfant">🙋‍♂️ Pour Enfants</a></li>
         <!-- <li class="search-icon">
             <input type="search" id="search-input" placeholder="Search">
             <button id="search-button">
@@ -66,12 +109,6 @@
                 </svg>
             </button>
         </form>
-
-        <!-- <form action="/search.html" method="get">
-            <label for="search-box">Search</label>
-            <input type="text" id="search-box" name="query">
-            <input type="submit" value="search">
-        </form> -->
 
         <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
     </ul>
@@ -136,23 +173,26 @@
 
 
 </script>
+
+    <div id="google_translate_wrapper">
+        <div id="google_translate_element"></div>
+    </div>
+
+
     <body>
-    <section class="header">
-        <div class="head">
+    <secion class="immersive-block">
+        <h2>
             IMMERSION : Le Podcast des Loisirs Immersifs 
-        </div>
-        <div class="description-head">
+        </h2>
+        <h5>
             Escape game, théâtre immersif, expériences immersives sans oublier les parcs d'attractions : 
             Disney, Universal et les autres géants du secteur. Autour d'invités, Alexis et Valentin, 
             co-fondateurs du site lemeilleurescapegame.fr analysent, débattent et livrent leur retour à 
             chaud sur les tendances de l'immersif.
-        </div>
-    </section>
-
-    <section class="social-network">
-        <div class="smaller-head">
+        </h5>
+        <h3>
             Abonnez-vous sur votre plateforme de podcast préférée : 
-        </div>
+        </h3>
         <div class="social-media">
             <a href="https://open.spotify.com/show/0j285HyDZGNuTRNYqsp5J9" target="_blank" class="social-icon spotify">
                 <i class="fab fa-spotify"></i> 
@@ -167,22 +207,26 @@
                 <img src="/assets/img/icons/podcast-addict.png" alt="Podcast Addict">
             </a>
         </div>
-    </section>
+    </secion>
     
     <div class="iframe-container" id="iframeContainer"></div>
 
     <script>
-        // Array of Spotify episode/show links
+        // Array of Spotify episode/show links in order newest to oldest
         const episodes = [
-            "https://open.spotify.com/embed/show/0j285HyDZGNuTRNYqsp5J9?utm_source=generator",
-            "https://open.spotify.com/embed/episode/4REldYdwoGxDgFwqjlDjrt?utm_source=generator",
-            "https://open.spotify.com/embed/episode/0usAkwYQ2b4PbBk5saGHgU?si=105d8bc73e1e496e",
-            "https://open.spotify.com/embed/episode/3A92JdZjtjFaFj1zAx7mWW?si=be4c880e4fda4bea",
-            "https://open.spotify.com/embed/episode/4UTGuwiBvn1ub9BSA1mgin?si=ffff1250bca9484a",
-            "https://open.spotify.com/embed/episode/5UTBeq7rNAUHyfG2JOxqfo?si=7098889a81e4407d",
-            "https://open.spotify.com/embed/episode/0nNJPaPOw0AO155oGP7hHG?si=81fbf783e19f411d",
-            "https://open.spotify.com/embed/episode/7DXyWX3k9dcMHbupjBEZDL?si=d6e06e097fd74956",
-            "https://open.spotify.com/embed/episode/12S0IHTWvi2mLJPspoN8mx?si=c102885a9082401e"
+            "https://open.spotify.com/embed/episode/5SIWN3621aP1EvOBg6MsMs?utm_source=generator", //13
+            "https://open.spotify.com/embed/episode/3oP6bpnoEvw8dXQ3Dtmg3O?utm_source=generator", //12
+            "https://open.spotify.com/embed/episode/0gyPMx6Ljq6QuQkpDuvph7?utm_source=generator", //11
+            "https://open.spotify.com/embed/episode/3chUwKDWxk2YGDMJvAzc5A?utm_source=generator", //10
+            "https://open.spotify.com/embed/episode/3RWUGH2Nvl7n2K55rYrSlh?utm_source=generator", //9
+            "https://open.spotify.com/embed/episode/4REldYdwoGxDgFwqjlDjrt?utm_source=generator", //8
+            "https://open.spotify.com/embed/episode/0usAkwYQ2b4PbBk5saGHgU?si=105d8bc73e1e496e", //7
+            "https://open.spotify.com/embed/episode/3A92JdZjtjFaFj1zAx7mWW?si=be4c880e4fda4bea", //6
+            "https://open.spotify.com/embed/episode/4UTGuwiBvn1ub9BSA1mgin?si=ffff1250bca9484a", //5
+            "https://open.spotify.com/embed/episode/5UTBeq7rNAUHyfG2JOxqfo?si=7098889a81e4407d", //4
+            "https://open.spotify.com/embed/episode/0nNJPaPOw0AO155oGP7hHG?si=81fbf783e19f411d", //3
+            "https://open.spotify.com/embed/episode/7DXyWX3k9dcMHbupjBEZDL?si=d6e06e097fd74956",  //2
+            "https://open.spotify.com/embed/episode/12S0IHTWvi2mLJPspoN8mx?si=c102885a9082401e"  //1
         ];
 
         // Get the container
@@ -228,7 +272,78 @@
     </style>
 </body>
 
+
+    <footer>
+        <div class="row">
+    <div class="footer-col logo-social-group">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo" class="logo-img">
+        </a>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/lemeilleurescapegame" target="_blank">
+                <img src="/assets/img/icons/facebook-brands.svg" alt="Facebook" class="icon">
+            </a>
+            <a href="https://www.instagram.com/lemeilleurescapegame.fr/" target="_blank">
+                <img src="/assets/img/icons/instagram-brands.svg" alt="Instagram" class="icon">
+            </a>
+            <a href="https://open.spotify.com/show/0j285HyDZGNuTRNYqsp5J9?si=a3026617f27a49f4" target="_blank">
+                <img src="/assets/img/icons/spotify-brands.svg" alt="Spotify" class="icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-col">
+        <h4><a href="/about">About Us</a></h4>
+        <h4><a href="/mention-legale">Mentions légales</a></h4>
+    </div>
+
+    <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:contact@lemeilleurescapegame.fr">contact@lemeilleurescapegame.fr</a></p>
+    </div>
+</div>
+
+    </footer>
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
+
+    
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+        { pageLanguage: 'fr', includedLanguages: 'en,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+        'google_translate_element'
+        );
+    }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.getElementById("translate-toggle");
+        let currentLang = "fr";
+
+        // Wait for the .goog-te-combo to be loaded
+        function waitForTranslateCombo(callback) {
+            const interval = setInterval(() => {
+                const selectEl = document.querySelector(".goog-te-combo");
+                if (selectEl) {
+                    clearInterval(interval);
+                    callback(selectEl);
+                }
+            }, 100); // check every 100ms
+        }
+
+        waitForTranslateCombo((selectEl) => {
+            toggleBtn.addEventListener("click", function () {
+                const targetLang = currentLang === "fr" ? "en" : "fr";
+                selectEl.value = targetLang;
+                selectEl.dispatchEvent(new Event("change"));
+                currentLang = targetLang;
+                toggleBtn.textContent = currentLang === "fr" ? "🇬🇧 English" : "🇫🇷 Français";
+            });
+        });
+    });
+    </script>
 </body>
 </html>

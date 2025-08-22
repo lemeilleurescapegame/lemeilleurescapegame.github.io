@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf8">
+<meta content="IE-edge,chrome=1" http-equiv="X-UA-Compatable">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Escape game reviews">
+<title>Le meilleur escape game</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="/assets/img/logo_lemeg_.png">
+</head>
+<body>
+    <head>
+    <style>
+        /* Example CSS for your navbar */
+        .nav-wrap {
+            font-family: 'Merriweather', serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-wrap a {
+            text-decoration: none;
+            color: inherit;
+            padding: 8px 12px;
+        }
+
+        .nav-wrap a:hover {
+            color: #ccc;
+        }
+
+        .sidebar li a {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* .search-form input[type="text"] {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            color: #000;
+            padding: 4px 8px;
+        } */
+    </style>
+</head>
+
+<nav class="nav-wrap">
+    <div class="logo">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo">
+        </a>
+    </div>
+
+    <ul class ="sidebar">
+        <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li> <a href="/top-france">Top France</a> </li>
+        <li> <a href="/top-world">Top World</a> </li>
+        <li> <a href="/podcast">Podcast</a>  </li>
+        <li> <a href="/experience-immersive">Expérience immersive</a> </li>
+        <li> <a href="/horreur">Horreur</a> </li>
+        <li> <a href="/realite-virtuelle">Réalité virtuelle</a> </li>
+        <li> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <li> <a href="/pour-enfant">🙋‍♂️ Pour enfant</a> </li>
+
+    </ul>
+    <ul>
+        <li class="hideOnMobile"> <a href="/top-france">Top France</a> </li>
+        <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li>
+        <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
+        <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li>
+        <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/realite-virtuelle">Réalité virtuelle</a> </li>
+        <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <li class="hideOnMobile"> <a href="/pour-enfant">🙋‍♂️ Pour Enfants</a></li>
+        <!-- <li class="search-icon">
+            <input type="search" id="search-input" placeholder="Search">
+            <button id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </li> -->
+
+        <!-- <form action="/search.html" method="get">
+            <li class="search-icon">
+              <input type="search" id="search-input" name="query" placeholder="Search">
+              <button id="search-button" type="submit"value="search">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                  <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+              </button>
+              
+            </li>
+        </form> -->
+        <form action="/search.html" method="get" class="search-form">
+            <input type="text" id="search-box" name="query" placeholder="Search...">
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 
+                    75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 
+                    69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 
+                    0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </button>
+        </form>
+
+        <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+</nav>
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display= 'none'
+    }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.getElementById("search-button");
+
+        function performSearch() {
+            const query = searchInput.value.trim();
+            console.log("Searching for:", query);  // Log to check the search term
+            
+            if (query) {
+                // Select all article elements (ensure the class '.article' exists)
+                const articles = document.querySelectorAll('.article'); // Make sure each article has the '.article' class
+                
+                console.log("Articles found:", articles.length); // Log how many articles are found
+                
+                articles.forEach(article => {
+                    const title = article.querySelector('.title') ? article.querySelector('.title').textContent.toLowerCase() : '';
+                    const content = article.querySelector('.content') ? article.querySelector('.content').textContent.toLowerCase() : '';
+                    
+                    console.log("Title:", title); // Log title for each article
+                    console.log("Content:", content); // Log content for each article
+                    
+                    if (title.includes(query.toLowerCase()) || content.includes(query.toLowerCase())) {
+                        article.style.display = 'block';  // Show matching article
+                        console.log("Showing article:", title); // Log which article is being shown
+                    } else {
+                        article.style.display = 'none';   // Hide non-matching article
+                        console.log("Hiding article:", title); // Log which article is being hidden
+                    }
+                });
+            }
+        }
+
+        // Trigger search when clicking the button
+        searchButton.addEventListener("click", performSearch);
+
+        // Trigger search when pressing "Enter" key in the input field
+        searchInput.addEventListener("keydown", function (event) {
+            console.log("Key pressed:", event.key);  // Log the pressed key
+            if (event.key === "Enter") {
+                event.preventDefault(); // Prevent default form submission or page reload on Enter key press
+                performSearch();
+            }
+        });
+    });
+
+
+
+</script>
+
+    <div id="google_translate_wrapper">
+        <div id="google_translate_element"></div>
+    </div>
+
+
+    <section class="immersive-block">
+    <h6><em>Mis à jour en décembre 2023</em></h6>
+    <h3>TOP MONDIAL DES ESCAPE GAMES</h3>
+    <h5>
+        <p>
+        Quel est le meilleur escape game du monde ? Qu’il est difficile de répondre à cette question… Pourtant, nous avions vraiment envie de partager avec vous cette short-list de 30 escape game d’exception. Créer cette page a été une façon pour nous de se remémorer ces 30 moments de folie qui nous marqueront à jamais. Nous espérons que vous y trouverez de l’inspiration pour vos futurs voyages escape game.
+        </p>
+        <p>
+        Bien entendu, ce top est complètement subjectif et ne regarde que nous. Aussi, nous n’avons évidemment pas attendu de tester toutes les salles du monde pour vous proposer cette sélection.
+        </p>
+    </h5>
+</section>
+
+<!-- <div class="language-switch-container">
+    <button id="languageSwitchButton" onclick="toggleLanguage()">
+        <img id="languageFlag" src="/assets/img/flags/en-optimized.webp" alt="Flag">
+        <span>Switch to English</span>
+    </button>
+</div> -->
+
+<div class="top-articles-container-description">
+    <div class="top-title-container">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
+        </svg>
+        <h2 class="top-title">Top des Meilleurs Escape Games du Monde</h2>
+        <!-- <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button> -->
+    </div>
+    <div class="top-articles-placeholder-description" data-articles="[{
+                        &quot;rank&quot;: &quot;1&quot;,
+                        &quot;title&quot;: &quot;Chapel &amp; Catacombs&quot;,
+                        &quot;link&quot;: &quot;/Lockhill_Ath_nes/chapels_and_catacombs&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/athenes-chapel-catacombs.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Lockhill - Athènes&quot;,
+                        &quot;info_top&quot;: &quot;Nous sommes sans mots pour résumer le chef-d’oeuvre de Lockhill… Chapel and catacombs appartient à la 3ème génération d’escape game, celle des salles avec des séquences de théâtre immersif. Ici, tous les curseurs sont poussés au maximum. L’espace de jeu est démesuré et pourrait facilement contenir l’équivalent de 3 ou 4 escape game traditionnels. Les décors et l’ambiance sont renversants… depuis l’accueil jusqu’au grandiose final. Comptez sur des apparitions et des cascades parfaitement orchestrées, à l’image de ce que propose la capitale. Mais l’effroi provoqué par les acteurs laisse aussi la place au jeu, au roleplay et à l’excitation. L’histoire de Chapels and Catacombs vient parfaitement compléter la trilogie qui la précède. Il pourrait s’avérer judicieux de jouer les premières salles de l’enseigne avant de s’aventurer ici.&quot;,
+                        &quot;info_top_en&quot;: &quot;We have no words to describe the masterpiece of Lockhill… Is this the 3rd generation of escape room? The space is huge and could easily contain 3 or 4 traditional escape rooms. The set and atmosphere are stunning… Count on perfectly orchestrated appearances and stunts, just like the rest of the rooms of Athens. Actors also give some amazing roleplay and thrilling moments. The story of Chapels and Catacombs perfectly completes the trilogy that precedes it. It might be wise to play the first episodes of Lockhill before playing this room.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;2&quot;,
+                        &quot;title&quot;: &quot;Brandon Darkmoor&quot;,
+                        &quot;link&quot;: &quot;/The_Room_Berlin/brandon-darkmoor&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/brandon-darkmoor.webp&quot;,
+                        &quot;enseigne&quot;: &quot;The Room - Berlin&quot;,
+                        &quot;info_top&quot;: &quot;Brandon Darkmoor est la pièce maitresse de The Room… Elle vaut à elle un déplacement à Berlin. Que dire, sinon que l’émerveillement est total et constant tout au long du jeu. Le travail sur l’ambiance sonore et lumineuse est réalisé d’une main de maître. Si bien qu’un effet de mise en scène nous a totalement fait perdre nos repères. Comme l’explique son créateur, Chris Lattner, chaque action d’un escape game doit être cohérente et en lien avec le scénario. Amen, vous avez tout compris et tout dit, et c’est à ça qu’on doit votre réussite. Brandon Darkmoor est assurément l’un des meilleurs escape game du monde.&quot;,
+                        &quot;info_top_en&quot;: &quot;Brandon Darkmoor is the centerpiece of The Room… It&#39;s worth a trip to Berlin just for it. What can be said, except that the sense of wonder is total and constant throughout the game. The work on the sound and lighting atmosphere is executed masterfully. So much so that a staging effect completely disoriented us. As its creator, Chris Lattner, explains, every action in an escape game must be coherent and connected to the storyline. Amen — you&#39;ve understood everything and said it all, and that&#39;s the key to your success. Brandon Darkmoor is undoubtedly one of the best escape games in the world.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;3&quot;,
+                        &quot;title&quot;: &quot;The End&quot;,
+                        &quot;link&quot;: &quot;/Dark_Park_Zoetermeer/the-end&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/the-end.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Dark Park - Zoetermeer&quot;,
+                        &quot;info_top&quot;: &quot;Une ambiance sonore tonitruante et un scénario digne des grands films de SF font de The End une salle de renommée mondiale. Un spectacle immersif qui restera à jamais gravé dans nos mémoires. Sachez que DarkPark a collaboré avec les créateurs de Westworld pour créer ce chef d’oeuvre.&quot;,
+                        &quot;info_top_en&quot;: &quot;&quot;
+                    },{
+                        &quot;rank&quot;: &quot;4&quot;,
+                        &quot;title&quot;: &quot;The Live Thriller&quot;,
+                        &quot;link&quot;: &quot;/Borderlive_concepts_Paris/the-live-thriller&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/the-live-thriller.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Borderlive concepts - Paris&quot;,
+                        &quot;info_top&quot;: &quot;Comme Don’t Take a Breath, The Live Thriller relève plus de l’expérience immersive que de l’escape game traditionnel. D’où ce sentiment de réalisme poussé à l’extrême, à tel point qu’au cours de la session, on se demande parfois si tout ce à quoi l’on assiste relève de la pure fiction ou bien se passe réellement sous nos yeux. D’ailleurs, l’enseigne avertit les âmes sensibles sur son site par ce message : &#39;Tout ce que vous risquez, c’est d’y croire&#39;.&quot;,
+                        &quot;info_top_en&quot;: &quot;Like Don’t Take a Breath, The Live Thriller is more of an immersive experience than a traditional escape game. Hence the feeling of extreme realism — to the point that, during the session, you sometimes wonder whether what you&#39;re witnessing is pure fiction or actually happening before your eyes. In fact, the company warns sensitive participants on its website with this message: &#39;The only risk is believing it’s real.&#39;&quot;
+                    },{
+                        &quot;rank&quot;: &quot;5&quot;,
+                        &quot;title&quot;: &quot;Don&#39;t take a breath&quot;,
+                        &quot;link&quot;: &quot;/verone_live_action_escape_rooms/dont_take_a_breath&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/athenes-dont-take-breath.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Verone Live Action Escape Rooms&quot;,
+                        &quot;info_top&quot;: &quot;Ici, on est proche d’une aventure immersive comme le Secret Cinema ou le Live Thriller. Et vous savez peut-être qu’on adore ça. Il est plus que conseillé de regarder le film “Don’t breath” avant de jouer cette salle. En effet la fidélité au long-métrage est proche de la perfection. Oubliez les énigmes et laissez-vous porter par l’action.&quot;,
+                        &quot;info_top_en&quot;: &quot;Here, we are close to an immersive adventure like the Secret Cinema or the Live Thriller. And you may know that we love it. It is more than advisable to watch the movie “Don’t breath” before playing this room. Indeed, fidelity to the feature film is close to perfection. Forget the puzzles and let yourself be carried by the action.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;6&quot;,
+                        &quot;title&quot;: &quot;Cybercity 2049&quot;,
+                        &quot;link&quot;: &quot;/Escape_Barcelona_Santa_Coloma_de_Gramenet/cybercity_2049&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/barcelone-cybercity-2049.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Barcelona Santa Coloma&quot;,
+                        &quot;info_top&quot;: &quot;Grandiose et cinématographique, Cybercity 2049 incarne la perfection et le renouveau de l’escape game. Escape Barcelona n’est décidément pas une enseigne comme les autres… Chaque nouvelle salle est une étape de plus franchie dans l’innovation. Les décors étaient tellement bluffants que nous n’avions pas envie de quitter la salle. Un conseil : prenez le taemps de tout explorer et d’être curieux, car un nombre important d’actions cachées se dissimule un peu partout.&quot;,
+                        &quot;info_top_en&quot;: &quot;Grand and cinematic, Cybercity 2049 embodies the pinnacle of perfection and the evolution of escape games. Escape Barcelona is truly in a league of its own… With each new room, they push the boundaries of innovation even further. The set design was so stunning that we didn’t want to leave! A little tip: take your time to explore every detail and stay curious—there are plenty of hidden actions waiting to be discovered.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;7&quot;,
+                        &quot;title&quot;: &quot;Full Experience&quot;,
+                        &quot;link&quot;: &quot;/Deep_Inside_Paris/full-experience&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/full-experience.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Deep Inside - Paris&quot;,
+                        &quot;info_top&quot;: &quot;Deep Inside a imaginé un concept unique qui relie ses deux scénarios. C’est au cœur d’une mystérieuse cité souterraine que l’aventure prend place. L’idée est aussi originale que brillamment concrétisée. La transition d’un scénario à l’autre est tellement parfaite, tellement fluide. Quel bonheur de vivre une expérience pensée comme un tout ultra-coherent et réfléchi.&quot;,
+                        &quot;info_top_en&quot;: &quot;Deep Inside has come up with a unique concept that links its two scenarios. The adventure takes place in the heart of a mysterious underground city. The idea is as original as it is brilliantly executed. The transition from one scenario to the other is so seamless, so smooth. What a joy to experience something designed as a fully coherent and well-thought-out whole.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;8&quot;,
+                        &quot;title&quot;: &quot;Birth Machine&quot;,
+                        &quot;link&quot;: &quot;/Mad_Machines_Milan/birth-machine_Mad_Machines_Milan&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/birth-machine.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Mad Machines - Milan&quot;,
+                        &quot;info_top&quot;: &quot;You have already been here. We&#39;ve all been here, but none of us remember it. Today, thanks to his extraordinary invention, Dr. Mad gives you the opportunity to relive your birth. But will you be able to do it again? You only have 9 months to come into the world!&quot;,
+                        &quot;info_top_en&quot;: &quot;&quot;
+                    },{
+                        &quot;rank&quot;: &quot;9&quot;,
+                        &quot;title&quot;: &quot;The Dome&quot;,
+                        &quot;link&quot;: &quot;/Mama_Bazooka_Bunschoten/the-dome&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/the-dome.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Mama Bazooka - Bunschoten&quot;,
+                        &quot;info_top&quot;: &quot;Au delà de ce que l’on peut attendre d’un escape game. The Dome surpasse les limites du possible et de l’imaginable. Jamais nous n’avions été aussi désorientés par une aventure immersive. The Dome est-il l’apogée de l’escape game ? Qui pourra un jour le détroner ?&quot;,
+                        &quot;info_top_en&quot;: &quot;&quot;
+                    },{
+                        &quot;rank&quot;: &quot;10&quot;,
+                        &quot;title&quot;: &quot;LA POSESIÓN&quot;,
+                        &quot;link&quot;: &quot;/arcanum/la_posesion&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/la-posesion.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Arcanum&quot;,
+                        &quot;info_top&quot;: &quot;La Possession tire son inspiration du film d’horreur “Insidious”. Le début de partie est phénoménal avec des effets spéciaux spectaculaires. Les acteurs ont une maîtrise parfaite des interventions qui sont acrobatiques et subtilement dosées. C’est l’apothéose des salles d’horreur cinématographiques qui vous feront croire que ce que vous voyez relève du surnaturel… Une merveille dans son genre.&quot;,
+                        &quot;info_top_en&quot;: &quot;La Possession draws its inspiration from the horror film Insidious. The game kicks off in spectacular fashion, with breathtaking special effects. The actors deliver flawless performances, seamlessly blending acrobatics with perfectly timed interventions. This is the pinnacle of cinematic horror escape rooms—so immersive, you’ll start to believe the supernatural is real. A true masterpiece of its kind.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;11&quot;,
+                        &quot;title&quot;: &quot;Tú También Soñarás&quot;,
+                        &quot;link&quot;: &quot;/Mayto_Kingdom_VitoriaGasteiz/tu-tambien-sonaras&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/tu-tambien-sonaras.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Mayto Kingdom - Vitoria-Gasteiz&quot;,
+                        &quot;info_top&quot;: &quot;Tú También Soñarás est à la hauteur des attentes démesurées qui précédaient notre test. Toute sa réussite repose sur les moments d’interaction avec le clown. Une performance d’acteur incroyable qui nous marquera pour longtemps. Vous évoluerez sur 320m2 de surface et plusieurs étages. Vous ne cesserez de progresser à l’intérieur du manoir et de découvrir des pièces toujours plus terrifiantes.&quot;,
+                        &quot;info_top_en&quot;: &quot;Tú También Soñarás lives up to the sky-high expectations surrounding it. Its success hinges on the unforgettable interactions with the clown—an absolutely phenomenal performance that will stay with us for a long time. Spanning 320 square meters across multiple floors, this experience keeps you moving deeper into the manor, uncovering increasingly terrifying rooms at every turn.   &quot;
+                    },{
+                        &quot;rank&quot;: &quot;12&quot;,
+                        &quot;title&quot;: &quot;Han&#39;s Revenge&quot;,
+                        &quot;link&quot;: &quot;/De_Gouden_Kooi_Malines/hans-revenge&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/hans-revenge.webp&quot;,
+                        &quot;enseigne&quot;: &quot;De Gouden Kooi - Malines&quot;,
+                        &quot;info_top&quot;: &quot;Un scénario déroutant, unique, rafraîchissant et tellement en phase avec l’actualité. On adore ce genre de propositions décalées, improbables et jamais vues ailleurs. Le final procure une grosse montée d’adrénaline, à grand renfort de lumières, de sons et d’effets spéciaux physiques dignes de tournages de films d’action. Émotions garanties !&quot;,
+                        &quot;info_top_en&quot;: &quot;A baffling, unique, refreshing scenario that feels incredibly in tune with current events. We love this kind of offbeat, improbable concept that you won’t find anywhere else. The finale delivers a major adrenaline rush, with intense lights, sounds, and physical special effects worthy of an action movie set. Guaranteed thrills!&quot;
+                    },{
+                        &quot;rank&quot;: &quot;13&quot;,
+                        &quot;title&quot;: &quot;Demise Of The Gricers - Normal Version&quot;,
+                        &quot;link&quot;: &quot;/Entered_Maaseik/demise-of-the-gricers-normal-version&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/demise-of-the-gricers-normal-version.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Entered - Maaseik&quot;,
+                        &quot;info_top&quot;: &quot;Demise of the Gricers est sans doute l’une des expériences immersives les plus marquantes de notre vie. On a pris un créneau très tard, il était plus de minuit, et ça nous a mis directement dans une ambiance de film d’horreur. Le jeu se déroule dans un site ferroviaire immense avec des passages en intérieur et en extérieur. Le game-design est superbe, restreignant les joueurs dans leurs déplacements, ce qui crée une tension absolument inépuisable. La narration, fruit d’un travail de deux ans de réflexion, s’articule autour de plusieurs personnalités fortes que l’on découvre à travers des audios ultra réalistes. Demise of the Gricers n’est donc pas un escape game au sens traditionnel du terme, mais une expérience probablement unique en son genre.&quot;,
+                        &quot;info_top_en&quot;: &quot;Demise of the Gricers is without a doubt one of the most unforgettable immersive experiences of our lives. We booked a very late slot—past midnight—which instantly set the mood like a true horror film. The game takes place in a vast railway site, with both indoor and outdoor sequences. The game design is outstanding, limiting players&#39; movements in a way that creates an unrelenting sense of tension. The narrative—crafted over two years of thoughtful development—centers around several strong characters revealed through ultra-realistic audio recordings. Demise of the Gricers is not an escape game in the traditional sense, but rather an experience that is likely one of a kind.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;14&quot;,
+                        &quot;title&quot;: &quot;El Exorcista&quot;,
+                        &quot;link&quot;: &quot;/No_Exit_Ilioupoli/el_exorcista&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/athenes-el-exorcista.webp&quot;,
+                        &quot;enseigne&quot;: &quot;No Exit&quot;,
+                        &quot;info_top&quot;: &quot;Là encore, avoir vu le film est un plus pour savourer pleinement l’aventure. Ici, c’est la performance des acteurs qui est fabuleuse. Des moments où l’on ne peut que rester immobile et contempler la beauté des chorégraphies réalisées. Un film d’horreur, mais en vrai…&quot;,
+                        &quot;info_top_en&quot;: &quot;We strongly advise you to watch “the Exorcist” movie before playing this room, in order to enjoy it the best as you can. Here, the performance of the actors is fabulous. Moments when you can only stand still and contemplate the beauty of the choreographies. A horror film, but in real life…&quot;
+                    },{
+                        &quot;rank&quot;: &quot;15&quot;,
+                        &quot;title&quot;: &quot;Molly&#39;s Game&quot;,
+                        &quot;link&quot;: &quot;/Down_the_Hatch_Voorburg/mollys-game&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/mollys-game.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Down the Hatch - Voorburg&quot;,
+                        &quot;info_top&quot;: &quot;Gigantisme, surprises en cascades.. Molly’s Game a de nombreux points communs avec The Dome. Une différence de taille les sépare néanmoins : la place de l’histoire. Le scénario occupe clairement le devant de la scène. Sur le fond, Molly’s Game épate. Que dire de la forme ? On est sur de l’Escape Game à très très gros moyens… Et clairement sur l’un des meilleurs escape game du monde.&quot;,
+                        &quot;info_top_en&quot;: &quot;Gigantic scale, nonstop surprises… Molly’s Game shares many similarities with The Dome. However, one major difference sets them apart: the role of the story. Here, the narrative clearly takes center stage. In terms of substance, Molly’s Game is impressive. And what about the execution? We’re talking about an escape game with an exceptionally high production value… and without a doubt, one of the best escape games in the world.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;16&quot;,
+                        &quot;title&quot;: &quot;Tokyo Lab&quot;,
+                        &quot;link&quot;: &quot;/escape_rush/tokyo-lab&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/tokyo-lab-optimized.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Rush&quot;,
+                        &quot;info_top&quot;: &quot;C’est pour ce genre de salle incroyable que nous franchissons les frontières de l’hexagone. Tokyo Lab est une œuvre sublime sur tous les plans. Le décor de la première partie est la reproduction plus que parfaite d’une ruelle de Tokyo. Quant à la suite de l’aventure, elle vous réserve un scénario d’anticipation à couper le souffle. Tokyo Lab fait partie des joyaux de l’escape game européen et fait passer la Belgique dans une autre dimension.&quot;,
+                        &quot;info_top_en&quot;: &quot;It’s for incredible rooms like this that we cross the borders of France. Tokyo Lab is a stunning creation on every level. The set in the first part is a more-than-perfect reproduction of a Tokyo alleyway. As for the rest of the adventure, it delivers a breathtaking sci-fi scenario. Tokyo Lab is one of the jewels of European escape games and elevates Belgium to a whole new level.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;17&quot;,
+                        &quot;title&quot;: &quot;TOMB HUNTER : AKASHA’S LEGEND&quot;,
+                        &quot;link&quot;: &quot;/Escape_Barcelona_Santa_Coloma_de_Gramenet/tomb_hunter_akasha&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/akasha.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Barcelona Santa Coloma&quot;,
+                        &quot;info_top&quot;: &quot;Les créateurs d’Escape Barcelona ont sans doute de l’or dans les mains pour créer de telles épopées. Akasha est le jeu d’action/aventure le plus abouti que nous ayons testé. Les effets spéciaux et le décor seraient même capables de faire rougir les studios hollywoodiens.&quot;,
+                        &quot;info_top_en&quot;: &quot;The creators of Escape Barcelona surely have a golden touch when it comes to crafting such epic experiences. Akasha is the most immersive action-adventure escape game we’ve ever played. With stunning special effects and set design that could rival even Hollywood studios, it’s nothing short of spectacular.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;18&quot;,
+                        &quot;title&quot;: &quot;La Chambre de Tante Hilda&quot;,
+                        &quot;link&quot;: &quot;/Trip_Trap_Escape_Carouge/la-chambre-de-tante-hilda&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/la-chambre-de-tante-hilda.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Trip Trap Escape - Carouge&quot;,
+                        &quot;info_top&quot;: &quot;C’est grand, c’est beau et on en redemande encore. La sensation de revenir en enfance est plus qu’appréciable dans cette aventure. Les actions à réaliser donnent la sensation de vivre dans un conte de fées. Sans doute la meilleure salle de Suisse pour un long moment et l’un des meilleurs escape game du monde.&quot;,
+                        &quot;info_top_en&quot;: &quot;It’s big, it’s beautiful, and we keep wanting more. The feeling of returning to childhood is truly enjoyable in this adventure. The tasks to complete give the sensation of living inside a fairy tale. Undoubtedly the best room in Switzerland for quite some time and one of the best escape games in the world.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;19&quot;,
+                        &quot;title&quot;: &quot;Malum&quot;,
+                        &quot;link&quot;: &quot;/krematorium/malum&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/malum.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Krematorium&quot;,
+                        &quot;info_top&quot;: &quot;Quand salle Horreur et décor de grande qualité vont de pair, on est forcément sur un immanquable. Dans Malum, vous devrez conjurer le Mal qui a pris possession des lieux. Les acteurs sont absolument incroyables, et notamment dans les bruits qu&#39;ils sont capables de produire sans trucage. On assiste également à plusieurs cinématiques de grande qualité où l&#39;objectif est simplement de contempler la &#39;chose&#39; qui rode autour de vous.&quot;,
+                        &quot;info_top_en&quot;: &quot;When a horror room and high-quality decor go hand in hand, you&#39;re definitely in for a must-see experience. In Malum, you&#39;l have to banish the Evil that has taken over the place. The actors are absolutely incredible, especially in the sounds they&#39;re able to produce without any special effects. There are also several high-quality cinematic sequences where the goal is simply to observe the thing lurking around you.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;20&quot;,
+                        &quot;title&quot;: &quot;Woman in Black&quot;,
+                        &quot;link&quot;: &quot;/Coven_Escape_Rooms_Kallithea/woman-in-black&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/woman-in-black.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Coven Escape Rooms - Kallithea&quot;,
+                        &quot;info_top&quot;: &quot;On se répète mais Woman in Black est elle aussi inspirée du film éponyme avec Daniel Radcliffe. Ici les énigmes donnent à réfléchir ce qui est rarement le cas des expériences “horreur”. La qualité des apparitions chorégraphiées est une nouvelle fois tout autant remarquable qu’effrayante.&quot;,
+                        &quot;info_top_en&quot;: &quot;We repeat ourselves but Woman in Black is also inspired by the eponymous film with Daniel Radcliffe. Here puzzles are harder, it is rarely the case of horror experiences. The quality of the choreographed appearances is once again both remarkable and frightening.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;21&quot;,
+                        &quot;title&quot;: &quot;The Sacrifice&quot;,
+                        &quot;link&quot;: &quot;/Disappear_Moschato/the-sacrifice&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/the-sacrifice.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Disappear - Moschato&quot;,
+                        &quot;info_top&quot;: &quot;Une reproduction gigantesque et magnifique d’un petit village écossais. La mise en scène est superbe, comme souvent à Athènes. Le brouillard domine et crée facilement l’illusion d’être en extérieur. On pourra critiquer une ou deux énigmes sur lesquelles nous avons eu du mal à comprendre la logique. Mais cela n’enlève en rien le fait qu’il ne faut surtout pas louper “The Sacrifice”.&quot;,
+                        &quot;info_top_en&quot;: &quot;A gigantic and magnificent reproduction of a small Scottish village. The set is superb, as often in Athens. Fog dominates and easily creates the illusion of being outside. We can criticize one or two puzzles on which we have had trouble understanding the logic. But this in no way removes the fact that you can’t miss “The Sacrifice”.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;22&quot;,
+                        &quot;title&quot;: &quot;The Hidden Chamber&quot;,
+                        &quot;link&quot;: &quot;/Salzufler_Unterwelt_Bad_Salzuflen/the-hidden-chamber&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/the-hidden-chamber.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Salzufler Unterwelt - Bad Salzuflen&quot;,
+                        &quot;info_top&quot;: &quot;Hidden Chamber est un escape game éloigné voir très éloigné des destinations touristiques allemandes. Sans les recommandations avisées de joueurs locaux, nous ne serions jamais venu jouer à Salzufler Unterwelt. Alors merci à eux car cet escape game est lui aussi un immanquable. Utiliser un lieu authentique et chargé d’histoire pour y calquer une aventure à la Indiane Jones est une prouesse. Chaque énigme résolue déclenche une myriade d’effets sonores et lumineux qui ancre encore plus le joueur dans l’immersion. Pas étonnant d’apprendre que The Room a participé à la création de cette salle !&quot;,
+                        &quot;info_top_en&quot;: &quot;Hidden Chamber is an escape game far—sometimes very far—from typical German tourist destinations. Without the informed recommendations of local players, we would never have come to play at Salzufler Unterwelt. So thanks to them, because this escape game is also a must-try. Using an authentic, history-rich location to build an Indiana Jones-style adventure is quite an achievement. Every solved puzzle triggers a myriad of sound and light effects that deepen the player’s immersion. It’s no surprise to learn that The Room contributed to the creation of this room!&quot;
+                    },{
+                        &quot;rank&quot;: &quot;23&quot;,
+                        &quot;title&quot;: &quot;Nakatomi Plaza&quot;,
+                        &quot;link&quot;: &quot;/escape_republik/nakatomi_plaza&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/nakatomi-plaza.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Republik&quot;,
+                        &quot;info_top&quot;: &quot;Un escape room complètement déjanté. Nous pensions jouer un escape game uniquement centré sur l’action mais c’est bien plus que cela. Vous passerez par toutes les émotions dans cette salle qui regorge de surprises. La performance du game-master est mémorable.&quot;,
+                        &quot;info_top_en&quot;: &quot;A completely crazy escape room. We thought we were going to play an escape game focused solely on action, but it’s so much more than that. You’ll go through every emotion in this room full of surprises. The game master’s performance is unforgettable.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;24&quot;,
+                        &quot;title&quot;: &quot;Wake Up&quot;,
+                        &quot;link&quot;: &quot;/Station_33_Ath_nes/wake-up_Station_33_Athènes&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/wake-up.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Station 33 - Athènes&quot;,
+                        &quot;info_top&quot;: &quot;Wake Up oscille entre le génial et le moins bien. On conseille quand même chaudement la salle de Station 33 pour trois raisons : son introduction hallucinante, le rôle peu commun de ses acteurs et la superficie abyssale de l’ensemble.&quot;,
+                        &quot;info_top_en&quot;: &quot;&quot;
+                    },{
+                        &quot;rank&quot;: &quot;25&quot;,
+                        &quot;title&quot;: &quot;Time Machine&quot;,
+                        &quot;link&quot;: &quot;/Mad_Machines_Milan/time-machine_Mad_Machines_Milan&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/time-machine.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Mad Machines - Milan&quot;,
+                        &quot;info_top&quot;: &quot;A knight? An empress? A pharaoh? Or maybe just humble slaves? Who would you have been in another era? Finally you will discover this thanks to the extraordinary invention of Dr. Mad. Choose to travel in the period you have always dreamed of and contribute to rewriting a piece of history ** The chosen era is not guaranteed.&quot;,
+                        &quot;info_top_en&quot;: &quot;&quot;
+                    },{
+                        &quot;rank&quot;: &quot;26&quot;,
+                        &quot;title&quot;: &quot;Le Crime de l&#39;Orient Express&quot;,
+                        &quot;link&quot;: &quot;/The_One_Escape_Paris/crime_orient_express&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/paris-the-one-crime-orient-express-optimized.webp&quot;,
+                        &quot;enseigne&quot;: &quot;The One Escape&quot;,
+                        &quot;info_top&quot;: &quot;Ce qui rend cette salle si originale, c’est son concept novateur : une enquête criminelle dont vous êtes les principaux suspects. Ici, vous ne remontez pas la piste d’un criminel, ce criminel est parmi vous. Il rôde et se cache dans votre groupe. Nous n’avons rarement autant ressenti de méfiance vis à vis de proches ou d’amis que durant cette expérience. &quot;,
+                        &quot;info_top_en&quot;: &quot;What makes this room so original is its innovative concept: a criminal investigation in which you are the main suspects. Here, you’re not tracking down a criminal — the criminal is among you. They lurk and hide within your group. We have rarely felt such mistrust toward close friends or acquaintances as during this experience.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;27&quot;,
+                        &quot;title&quot;: &quot;An incredible story of Nautilus&quot;,
+                        &quot;link&quot;: &quot;/MindMaze_Prague/an-incredible-story-of-nautilus&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/an-incredible-story-of-nautilus.webp&quot;,
+                        &quot;enseigne&quot;: &quot;MindMaze - Prague&quot;,
+                        &quot;info_top&quot;: &quot;Nautilus est clairement un incontournable en Europe. C’est le genre d’aventure épique qui vous fera voyager dans un univers remarquable. L’histoire est brillamment construite et ne manque pas de clins d’œil humoristiques. Le game-mastering est formidable et s’incarne comme un véritable compagnon de voyage. À ne manquer sous aucun prétexte lors d’un passage à Prague&quot;,
+                        &quot;info_top_en&quot;: &quot;Nautilus is clearly a must-visit in Europe. It’s the kind of epic adventure that will take you on a journey through a remarkable universe. The story is brilliantly crafted and sprinkled with humorous nods. The game mastering is fantastic, acting as a true travel companion. Not to be missed under any circumstances when visiting Prague.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;28&quot;,
+                        &quot;title&quot;: &quot;Nathael&quot;,
+                        &quot;link&quot;: &quot;/cubick_room_escape/nathael&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/cubick-nathael.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Cubick Room Escape (MATARÓ)&quot;,
+                        &quot;info_top&quot;: &quot;On n’aurait jamais pensé mettre une salle horreur aussi haute dans ce classement. Nathael c’est une sorte de jumanji maléfique. Un jeu dans lequel vous êtes forcé d’accomplir des défis terrifiants. Décors surnaturels et scènes cinématographiques vous attendent dans cette demeure lugubre&quot;,
+                        &quot;info_top_en&quot;: &quot;We never expected to place a horror room so high on this list. Nathael is like an evil version of Jumanji. It’s a game where you’re forced to face terrifying challenges. Supernatural sets and cinematic scenes await you in this eerie, foreboding mansion.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;29&quot;,
+                        &quot;title&quot;: &quot;Tao Japanese Massage Center&quot;,
+                        &quot;link&quot;: &quot;/Virus_Room_Escape_Callela/tao-japanese-massage-center&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/tao-japanese-massage-center.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Virus Room Escape - Callela&quot;,
+                        &quot;info_top&quot;: &quot;Quel régal ! Tao Japanese Massage Center vous donnera un état d’euphorie permanent. Dans un set-design de qualité, vous prendrez le plus grand des plaisirs à réaliser des actions déjantées. Un incontournable en Europe qui mérite amplement sa place au TERPECA.&quot;,
+                        &quot;info_top_en&quot;: &quot;What a treat! Tao Japanese Massage Center will put you in a constant state of euphoria. In a high-quality set design, you’ll take great pleasure in performing wild and crazy actions. A must-visit in Europe that fully deserves its place at TERPECA.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;30&quot;,
+                        &quot;title&quot;: &quot;Chernobyl&quot;,
+                        &quot;link&quot;: &quot;/The_Start_Ranst/chernobyl&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/chernobyl.webp&quot;,
+                        &quot;enseigne&quot;: &quot;The Start - Ranst&quot;,
+                        &quot;info_top&quot;: &quot;On ne savait presque rien de cet escape game en le réservant. Au final, cette aventure immersive est un réel coup de cœur. Le but n’est pas de semer la terreur parmi les joueurs mais de jouer à cache-cache avec une âme en errance. Les interactions sont mémorables. Richard Teunen et son père Anthony Teunen (nos acteurs le jour du test) délivrent une prestation remarquable. Le décor post-apocalyptique fait tout de suite forte impression. Cerise sur le gâteau, le scénario vous réserve un twist détonant sur la fin. N’hésitez pas à débriefer avec les game-master pour en comprendre toutes les subtilités.&quot;,
+                        &quot;info_top_en&quot;: &quot;We knew almost nothing about this escape game when we booked it. In the end, this immersive adventure was a real favorite. The goal isn’t to terrorize the players but to play hide-and-seek with a wandering spirit. The interactions are unforgettable. Richard Teunen and his father Anthony Teunen (our actors on the day of the test) deliver a remarkable performance. The post-apocalyptic setting immediately makes a strong impression. The icing on the cake is a powerful twist at the end of the story. Don’t hesitate to debrief with the game masters to fully understand all the nuances.&quot;
+                    }
+    ]">
+    </div>
+</div>
+
+<script>
+    let isEnglish = false; 
+
+    function toggleLanguage() {
+        isEnglish = !isEnglish;
+        const articles = document.querySelectorAll('.top-article-description');
+        const languageButton = document.getElementById('languageSwitchButton');
+        const languageFlag = document.getElementById('languageFlag');
+
+        articles.forEach((article) => {
+            const articleData = JSON.parse(article.getAttribute("data-article")); 
+            const infoTop = article.querySelector('.top-article-description-info');
+
+            if (articleData) {
+                if (isEnglish) {
+                    infoTop.innerHTML = articleData.info_top_en;
+                    languageButton.querySelector("span").textContent = 'En Français'; // Update only text
+                    languageFlag.src = "/assets/img/flags/france-optimized.webp"; // Switch to English flag
+                } else {
+                    infoTop.innerHTML = articleData.info_top;
+                    languageButton.querySelector("span").textContent = 'Switch to English'; // Update only text
+                    languageFlag.src = "/assets/img/flags/en-optimized.webp"; // Switch to French flag
+                }
+            }
+        });
+    }
+</script>
+
+<script src="/assets/js/top-articles-description.js"></script>
+
+
+
+    <footer>
+        <div class="row">
+    <div class="footer-col logo-social-group">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo" class="logo-img">
+        </a>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/lemeilleurescapegame" target="_blank">
+                <img src="/assets/img/icons/facebook-brands.svg" alt="Facebook" class="icon">
+            </a>
+            <a href="https://www.instagram.com/lemeilleurescapegame.fr/" target="_blank">
+                <img src="/assets/img/icons/instagram-brands.svg" alt="Instagram" class="icon">
+            </a>
+            <a href="https://open.spotify.com/show/0j285HyDZGNuTRNYqsp5J9?si=a3026617f27a49f4" target="_blank">
+                <img src="/assets/img/icons/spotify-brands.svg" alt="Spotify" class="icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-col">
+        <h4><a href="/about">About Us</a></h4>
+        <h4><a href="/mention-legale">Mentions légales</a></h4>
+    </div>
+
+    <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:contact@lemeilleurescapegame.fr">contact@lemeilleurescapegame.fr</a></p>
+    </div>
+</div>
+
+    </footer>
+    <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
+<script type="text/javascript" src="/assets/js/functions.js"></script>
+
+    
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+        { pageLanguage: 'fr', includedLanguages: 'en,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+        'google_translate_element'
+        );
+    }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.getElementById("translate-toggle");
+        let currentLang = "fr";
+
+        // Wait for the .goog-te-combo to be loaded
+        function waitForTranslateCombo(callback) {
+            const interval = setInterval(() => {
+                const selectEl = document.querySelector(".goog-te-combo");
+                if (selectEl) {
+                    clearInterval(interval);
+                    callback(selectEl);
+                }
+            }, 100); // check every 100ms
+        }
+
+        waitForTranslateCombo((selectEl) => {
+            toggleBtn.addEventListener("click", function () {
+                const targetLang = currentLang === "fr" ? "en" : "fr";
+                selectEl.value = targetLang;
+                selectEl.dispatchEvent(new Event("change"));
+                currentLang = targetLang;
+                toggleBtn.textContent = currentLang === "fr" ? "🇬🇧 English" : "🇫🇷 Français";
+            });
+        });
+    });
+    </script>
+</body>
+</html>

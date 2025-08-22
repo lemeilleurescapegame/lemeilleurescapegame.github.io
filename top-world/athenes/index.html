@@ -9,9 +9,48 @@
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="/assets/img/logo_lemeg_.png">
 </head>
 <body>
-    <nav class="nav-wrap">
+    <head>
+    <style>
+        /* Example CSS for your navbar */
+        .nav-wrap {
+            font-family: 'Merriweather', serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-wrap a {
+            text-decoration: none;
+            color: inherit;
+            padding: 8px 12px;
+        }
+
+        .nav-wrap a:hover {
+            color: #ccc;
+        }
+
+        .sidebar li a {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* .search-form input[type="text"] {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            color: #000;
+            padding: 4px 8px;
+        } */
+    </style>
+</head>
+
+<nav class="nav-wrap">
     <div class="logo">
         <a href="/" class="nav-logo">
             <img src="/assets/img/logo_lemeg_.png" alt="Logo">
@@ -23,18 +62,22 @@
         <li> <a href="/top-france">Top France</a> </li>
         <li> <a href="/top-world">Top World</a> </li>
         <li> <a href="/podcast">Podcast</a>  </li>
-        <!-- <li> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li> <a href="/experience-immersive">Expérience immersive</a> </li>
         <li> <a href="/horreur">Horreur</a> </li>
-        <!-- <li> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
+        <li> <a href="/realite-virtuelle">Réalité virtuelle</a> </li>
+        <li> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <li> <a href="/pour-enfant">🙋‍♂️ Pour enfant</a> </li>
 
     </ul>
     <ul>
         <li class="hideOnMobile"> <a href="/top-france">Top France</a> </li>
         <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li>
         <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
-        <!-- <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li>
         <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/realite-virtuelle">Réalité virtuelle</a> </li>
         <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <li class="hideOnMobile"> <a href="/pour-enfant">🙋‍♂️ Pour Enfants</a></li>
         <!-- <li class="search-icon">
             <input type="search" id="search-input" placeholder="Search">
             <button id="search-button">
@@ -66,12 +109,6 @@
                 </svg>
             </button>
         </form>
-
-        <!-- <form action="/search.html" method="get">
-            <label for="search-box">Search</label>
-            <input type="text" id="search-box" name="query">
-            <input type="submit" value="search">
-        </form> -->
 
         <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
     </ul>
@@ -136,16 +173,51 @@
 
 
 </script>
-    
+
+    <div id="google_translate_wrapper">
+        <div id="google_translate_element"></div>
+    </div>
+
+
+    <!-- <section class="immersive-block">
+    <h3>Athènes</h3>
+</section> -->
+
+<section class="immersive-block">
+    <h6><em>Mis à jour en janvier 2025</em></h6>
+    <h3>Quel est le meilleur escape game d’Athènes ? </h3>
+    <h5>
+    Nous avons réalisé un deuxs tours des escape game de la capitale grècque : en 2022 puis en 2024. Comme l’essentiel de la scène se concentre à Athènes, il ne nous a pas été nécessaire de voyager à travers le pays pour découvrir toutes ces merveilles. Ce voyage restera sans doute comme l’un des plus marquants. Pour les fans d’immersion que nous sommes, la Grèce fait partie du gratin européen, la crème de la crème de l’escape, au même titre de que l’Espagne ou les Pays-Bas. 
+    </h5>
+    <h3>Spécificités de l’escape game athénien : </h3>
+    <h5>
+        <ul class="specifics-list">
+            <li>🏛 À Athènes, pas d’espace d’accueil, on rentre directement dans le jeu et c’est mieux !</li>
+            <li>⏱ La durée des salles est bien plus longue qu’en France, elle avoisine souvent les deux heures.</li>
+            <li>🌒 Ne comptez pas jouer de 10h du matin à 22h. Les premiers créneaux sont très tardifs. Lors de notre passage dans la cité hélénique, nous étions sur une moyenne de 3 salles par jour. Notre journée débutait à 16h et pouvait se terminer parfois à 2h du matin.</li>
+            <li>🧛‍♂️ Des acteurs sont présents dans quasi toutes les salles et c’est ce qui fait la magie d’Athènes.</li>
+            <li>🎬 L’essence de la scène grecque est de créer un spectacle immersif alliant cinématiques proches de celles du jeu vidéo et cascades d’acteur. Elles sont la plupart du temps synchronisées avec le son et la lumière, à la manière d’un grand spectacle.</li>
+            <li>👻 Le thème horreur est omniprésent avec un niveau de peur plutôt élevé par rapport à la France.</li>
+            <li>🙏 Il y a parfois plusieurs “modes de jeu” proposés lors de la réservation. N’y allez pas pour jouer les salles sans acteur, elles perdraient de leur saveur.</li>
+            <li>💨 Les ambiances (forêt ou encore petit village écossais) sont parfaitement retranscrites grâce à une maîtrise absolue de la fumée et des éclairages.</li>
+            <li>🙋‍♂️ La sympathie des gérants est hors normes. Elle donne lieu à des rencontres formidables lors du débriefing.</li>
+            <li>🙅‍♂️ Nous sommes contre la violence physique et l’humiliation extrême des joueurs. Les salles de ce TOP n’en comportaient pas au moment de notre passage à Athènes. N’hésitez pas à demander à des locaux si vous avez un doute. Sachez que le contact physique violent existe aussi dans des salles en France, en Espagne ou en Bulgarie. Ce n’est pas une spécificité d’Athènes.</li>
+        </ul>
+        <p>
+        Lors de notre dernier voyage au printemps 2024, nous avons constaté que le volume sonore était monté d’un cran par rapport à notre premier séjour. Après avoir joué deux salles avec des acouphènes bien violents, nous avons fini par acheter des boules Quies pour jouer les salles suivantes. Pour en avoir discuté avec des gérants, ils considèrent que cela augmente l’immersion. Pour citer l’un d’eux : “Il faut que votre ventre vibre aux sons des basses lors d’une apparition d’acteur…”.
+        </p>
+        <p>
+        Nous ne nous sommes jamais senti en insécurité avec les acteurs. Les contacts sont doux, maîtrisés et intégrés à l’histoire (vous amener dans une autre pièce etc…). Nous n’avons pas eu cette confiance en Espagne malheureusement où nous avons pris des coups à de rares occasions…
+        </p>
+    </h5>
+</section>
+
 <!-- <div class="language-switch-container">
-    <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button>
-</div> -->
-<div class="language-switch-container">
     <button id="languageSwitchButton" onclick="toggleLanguage()">
-        <img id="languageFlag" src="/assets/img/flags/en-optimized.webp" alt="Flag" />
+        <img id="languageFlag" src="/assets/img/flags/en-optimized.webp" alt="Flag">
         <span>Switch to English</span>
     </button>
-</div>
+</div> -->
 
 <div class="top-articles-container-description">
     <div class="top-title-container">
@@ -158,7 +230,7 @@
     <div class="top-articles-placeholder-description" data-articles="[{
                         &quot;rank&quot;: &quot;1&quot;,
                         &quot;title&quot;: &quot;Chapel &amp; Catacombs&quot;,
-                        &quot;link&quot;: &quot;/articles/chapels_and_catacombs/&quot;,
+                        &quot;link&quot;: &quot;/Lockhill_Ath_nes/chapels_and_catacombs&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/athenes-chapel-catacombs.webp&quot;,
                         &quot;enseigne&quot;: &quot;Lockhill - Athènes&quot;,
                         &quot;info_top&quot;: &quot;Nous sommes sans mots pour résumer le chef-d’oeuvre de Lockhill… Chapel and catacombs appartient à la 3ème génération d’escape game, celle des salles avec des séquences de théâtre immersif. Ici, tous les curseurs sont poussés au maximum. L’espace de jeu est démesuré et pourrait facilement contenir l’équivalent de 3 ou 4 escape game traditionnels. Les décors et l’ambiance sont renversants… depuis l’accueil jusqu’au grandiose final. Comptez sur des apparitions et des cascades parfaitement orchestrées, à l’image de ce que propose la capitale. Mais l’effroi provoqué par les acteurs laisse aussi la place au jeu, au roleplay et à l’excitation. L’histoire de Chapels and Catacombs vient parfaitement compléter la trilogie qui la précède. Il pourrait s’avérer judicieux de jouer les premières salles de l’enseigne avant de s’aventurer ici.&quot;,
@@ -166,7 +238,7 @@
                     },{
                         &quot;rank&quot;: &quot;2&quot;,
                         &quot;title&quot;: &quot;Don&#39;t take a breath&quot;,
-                        &quot;link&quot;: &quot;/articles/dont_take_a_breath/&quot;,
+                        &quot;link&quot;: &quot;/verone_live_action_escape_rooms/dont_take_a_breath&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/athenes-dont-take-breath.webp&quot;,
                         &quot;enseigne&quot;: &quot;Verone Live Action Escape Rooms&quot;,
                         &quot;info_top&quot;: &quot;Ici, on est proche d’une aventure immersive comme le Secret Cinema ou le Live Thriller. Et vous savez peut-être qu’on adore ça. Il est plus que conseillé de regarder le film “Don’t breath” avant de jouer cette salle. En effet la fidélité au long-métrage est proche de la perfection. Oubliez les énigmes et laissez-vous porter par l’action.&quot;,
@@ -174,7 +246,7 @@
                     },{
                         &quot;rank&quot;: &quot;3&quot;,
                         &quot;title&quot;: &quot;Houdini&quot;,
-                        &quot;link&quot;: &quot;/articles/houdini/&quot;,
+                        &quot;link&quot;: &quot;/escape_world_greece/houdini&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/houdini_greece.webp&quot;,
                         &quot;enseigne&quot;: &quot;Escape World&quot;,
                         &quot;info_top&quot;: &quot;Un renouveau dans les escape game horrifiques. Associer la magie à l’horreur : quelle bonne idée. Le but cet escape game n’est pas tant de vous faire peur mais bien de vous émerveiller. L’histoire racontée est maîtrisée de bout en bout.  Escape World s’est inspiré de la vie d’Houdini pour créer un récit original qui rend parfaitement hommage au célèbre magicien. Les transitions entre les pièces sont remarquables. On apprécie particulièrement les scènes contemplatives, parfois dotées d’effets spéciaux uniques. La magie est concrète, palpable… Houdini est-il un magicien ou un être doté de réels pouvoirs ?&quot;,
@@ -182,7 +254,7 @@
                     },{
                         &quot;rank&quot;: &quot;4&quot;,
                         &quot;title&quot;: &quot;El Exorcista&quot;,
-                        &quot;link&quot;: &quot;/articles/el_exorcista/&quot;,
+                        &quot;link&quot;: &quot;/No_Exit_Ilioupoli/el_exorcista&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/athenes-el-exorcista.webp&quot;,
                         &quot;enseigne&quot;: &quot;No Exit&quot;,
                         &quot;info_top&quot;: &quot;Là encore, avoir vu le film est un plus pour savourer pleinement l’aventure. Ici, c’est la performance des acteurs qui est fabuleuse. Des moments où l’on ne peut que rester immobile et contempler la beauté des chorégraphies réalisées. Un film d’horreur, mais en vrai…&quot;,
@@ -190,7 +262,7 @@
                     },{
                         &quot;rank&quot;: &quot;5&quot;,
                         &quot;title&quot;: &quot;Amen&quot;,
-                        &quot;link&quot;: &quot;/articles/amen/&quot;,
+                        &quot;link&quot;: &quot;/Neverland_Agii_Anargiri/amen&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/the-grudge.webp&quot;,
                         &quot;enseigne&quot;: &quot;Neverland - Agii Anargiri&quot;,
                         &quot;info_top&quot;: &quot;L’entrée en matière est très efficace. Le game-master nous met tout de suite dans l’état d’esprit de la salle. Pas agressif mais rigoriste, c’est l’image que l’on peut se faire d’un prêtre un peu trop convaincu. Pour nous, impossible d’être athée à cet instant. Il faut croire… Les décors d’Amen sont superbes, notamment par ses fresques monastiques craquelées. Les lieux imposent rapidement une austérité peu rassurante . On sent tout au temps la froideur que l’aspect sacré et surnaturel. L’énorme claque de la salle, c’est pour nous l’un des effets les plus waouh que l’on ait jamais vu, en interaction avec l’acteur… &quot;,
@@ -198,7 +270,7 @@
                     },{
                         &quot;rank&quot;: &quot;6&quot;,
                         &quot;title&quot;: &quot;Wanted Dead or Alive&quot;,
-                        &quot;link&quot;: &quot;/articles/wanted_dead_or_alive/&quot;,
+                        &quot;link&quot;: &quot;/No_Exit_Ilioupoli/wanted_dead_or_alive&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/wanted-dead-or-alive.webp&quot;,
                         &quot;enseigne&quot;: &quot;No Exit&quot;,
                         &quot;info_top&quot;: &quot;Cet escape game est incroyable car le game-master/acteur est incroyable. Cela n’est plus un secret. La direction de No exit choisit avec soin ses acteurs et les forme généreusement. Notre comédien ce jour-là est complètement déjanté .Il peut jouer tous les rôles, prendre des accents de toute région et des mimiques hilarantes. Sa répartie est inégalée. On oublie peu à peu que l’on résout des énigmes car il fait tout pour nous divertir. Les actions sont intégrées à l’histoire et notamment la fouille qui s’effectue en lien avec l’acteur. Une véritable parodie des westerns.&quot;,
@@ -206,7 +278,7 @@
                     },{
                         &quot;rank&quot;: &quot;7&quot;,
                         &quot;title&quot;: &quot;The Grudge&quot;,
-                        &quot;link&quot;: &quot;/articles/the_grudge/&quot;,
+                        &quot;link&quot;: &quot;/1way_escape_room/the_grudge&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/the-grudge.webp&quot;,
                         &quot;enseigne&quot;: &quot;1 Way Escape Room&quot;,
                         &quot;info_top&quot;: &quot;Encore un thème novateur dans le monde des escape games horrifiques. Inspiré du film éponyme (plutôt mauvais selon nous, contrairement à cet escape game), l’histoire prend place dans une maison hantée de Tokyo. Les cinématiques sont incroyables et très nombreuses. Le but n’est pas toujours de vous faire peur mais parfois de contempler des séquences artistiques captivantes. Le plus : vous serez parfois vous même intégré à la scène par les acteurs… Le rythme de jeu est parfaitement géré avec des montées intenses qui alternent avec des pauses méritées. La bande son harmonise l’ensemble et respecte au maximum l’univers du Japon. Merci aux créateurs de ne pas s’être contenté d’une basique playlist d’horreur !&quot;,
@@ -214,15 +286,15 @@
                     },{
                         &quot;rank&quot;: &quot;8&quot;,
                         &quot;title&quot;: &quot;Wake Up&quot;,
-                        &quot;link&quot;: &quot;/articles/wake_up_gr/&quot;,
-                        &quot;image&quot;: &quot;/assets/img/escape/athenes-wake-up.webp&quot;,
-                        &quot;enseigne&quot;: &quot;Station 33 Escape Room&quot;,
-                        &quot;info_top&quot;: &quot;Ce n’est pas l’histoire que vous attendez en réservant la salle. C’est pourquoi nous ne dévoilerons aucun élément de récit. La spécificité de Wake Up c’est qu’elle s’autorise des accès de folie que peu de créateurs ont osée auparavant. Le niveau de peur est assez élevé mais créé un lien particulier avec les acteurs. Une fois habitués au jump-scare, la peur se transforme même en fou rire. Vous n’avez jamais rien connu de tel dans un escape game, alors prenez votre courage à deux mains et foncez !&quot;,
-                        &quot;info_top_en&quot;: &quot;That’s not the story you’re waiting for when you book the room. That’s why we’re not going to reveal any element of it. The special feature of Wake Up is that it gives moments of madness that few designers have dared before. The level of fear is quite high but creates a special link with the actors. Once accustomed to the jump-scares, the fear turns into a laugh. You have never experienced anything like this in an escape room, so breath slowly and go for it!&quot;
+                        &quot;link&quot;: &quot;/Station_33_Ath_nes/wake-up_Station_33_Athènes&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/wake-up.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Station 33 - Athènes&quot;,
+                        &quot;info_top&quot;: &quot;Wake Up oscille entre le génial et le moins bien. On conseille quand même chaudement la salle de Station 33 pour trois raisons : son introduction hallucinante, le rôle peu commun de ses acteurs et la superficie abyssale de l’ensemble.&quot;,
+                        &quot;info_top_en&quot;: &quot;&quot;
                     },{
                         &quot;rank&quot;: &quot;9&quot;,
                         &quot;title&quot;: &quot;M&#39;ama&quot;,
-                        &quot;link&quot;: &quot;/articles/mama/&quot;,
+                        &quot;link&quot;: &quot;/supense_gr/mama&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/mama_greece.webp&quot;,
                         &quot;enseigne&quot;: &quot;Suspense&quot;,
                         &quot;info_top&quot;: &quot;L’aménagement de l’espace est le gros point fort de M’ama. Il permet des apparitions surprenantes et ultra rapides. On repasse plusieurs fois au même endroit mais on est toujours pris de court par les acteurs du jeu et l’intensité de leurs apparitions. La thématique originale rend hommage au Mexique par de subtiles références.. Sur la fin, le rythme est de plus en plus dense et ça ne s’arrête jamais… jamais…. jamais…&quot;,
@@ -230,7 +302,7 @@
                     },{
                         &quot;rank&quot;: &quot;10&quot;,
                         &quot;title&quot;: &quot;The Sacrifice&quot;,
-                        &quot;link&quot;: &quot;/articles/the-sacrifice/&quot;,
+                        &quot;link&quot;: &quot;/Disappear_Moschato/the-sacrifice&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/the-sacrifice.webp&quot;,
                         &quot;enseigne&quot;: &quot;Disappear - Moschato&quot;,
                         &quot;info_top&quot;: &quot;Une reproduction gigantesque et magnifique d’un petit village écossais. La mise en scène est superbe, comme souvent à Athènes. Le brouillard domine et crée facilement l’illusion d’être en extérieur. On pourra critiquer une ou deux énigmes sur lesquelles nous avons eu du mal à comprendre la logique. Mais cela n’enlève en rien le fait qu’il ne faut surtout pas louper “The Sacrifice”.&quot;,
@@ -238,23 +310,23 @@
                     },{
                         &quot;rank&quot;: &quot;11&quot;,
                         &quot;title&quot;: &quot;Woman in Black&quot;,
-                        &quot;link&quot;: &quot;/articles/woman-in-black/&quot;,
+                        &quot;link&quot;: &quot;/Coven_Escape_Rooms_Kallithea/woman-in-black&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/woman-in-black.webp&quot;,
                         &quot;enseigne&quot;: &quot;Coven Escape Rooms - Kallithea&quot;,
                         &quot;info_top&quot;: &quot;On se répète mais Woman in Black est elle aussi inspirée du film éponyme avec Daniel Radcliffe. Ici les énigmes donnent à réfléchir ce qui est rarement le cas des expériences “horreur”. La qualité des apparitions chorégraphiées est une nouvelle fois tout autant remarquable qu’effrayante.&quot;,
                         &quot;info_top_en&quot;: &quot;We repeat ourselves but Woman in Black is also inspired by the eponymous film with Daniel Radcliffe. Here puzzles are harder, it is rarely the case of horror experiences. The quality of the choreographed appearances is once again both remarkable and frightening.&quot;
                     },{
                         &quot;rank&quot;: &quot;12&quot;,
-                        &quot;title&quot;: &quot;H-Ice-T Tiki&quot;,
-                        &quot;link&quot;: &quot;/articles/h-ice-t-tiki/&quot;,
-                        &quot;image&quot;: &quot;/assets/img/escape/h-ice-t-tiki.webp&quot;,
+                        &quot;title&quot;: &quot;Ice Tiki&quot;,
+                        &quot;link&quot;: &quot;/Way_Out_Vrilissia/ice-tiki_Way_Out_Vrilissia&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/ice-tiki.webp&quot;,
                         &quot;enseigne&quot;: &quot;Way Out - Vrilissia&quot;,
-                        &quot;info_top&quot;: &quot;Du fun à l’état pur. Ice Tiki dénote vraiment dans un panel d’escape game athéniens centrés sur l’horreur. Ne vous attendez pas à des chorégraphies d’acteurs ou de grands effets whaou. Ici, le but est de vous faire rire et chanter pendant plus d’une heure ! Une bouffée d’oxygène qui vous sera bien utile pour décompresser.&quot;,
-                        &quot;info_top_en&quot;: &quot;Pure fun. Ice Tiki really denotes in an Athenian escape room market focused on horror. Don’t expect choreography by actors or whaou effects. Here, the goal is to make you laugh and sing for more than an hour ! A breath of oxygen that will be very useful to relax.&quot;
+                        &quot;info_top&quot;: &quot;The story starts after a huge explosion in one of the islands of Hawai, and places the player on a sinking ship near the Arctic. Ice Tiki is an exploration ship that has searched for valuable treasures, such as the Hawaiian Tiki. Tiki are wooden statuettes of great value that are rumored to have various elemental powers. Also they are the protectors and saviors of Hawaii. So, your mission is to find them and return them to the right hands.&quot;,
+                        &quot;info_top_en&quot;: &quot;&quot;
                     },{
                         &quot;rank&quot;: &quot;13&quot;,
                         &quot;title&quot;: &quot;Manifesto&quot;,
-                        &quot;link&quot;: &quot;/articles/manifesto/&quot;,
+                        &quot;link&quot;: &quot;/Dark_Vision_Project_Moschato/manifesto&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/manifesto.webp&quot;,
                         &quot;enseigne&quot;: &quot;Dark Vision Project - Moschato&quot;,
                         &quot;info_top&quot;: &quot;Quel pari fou de fusionner le Tango et l’horreur. C’est une véritable plongée dans le milieu des artistes qui se démarque de toutes les autres salles d’Athènes. Les jumpscares sont différents des autres salles, sans cris et avec une recherche de posture originale. Mais il y a aussi des passages contemplatifs purement artistiques et non horrifiques. On adore ça ! La fin de l’histoire nous a complètement scotché. Il manque juste à cet escape game un effet waouh détonnant pour faire partie des plus grands. &quot;,
@@ -262,7 +334,7 @@
                     },{
                         &quot;rank&quot;: &quot;14&quot;,
                         &quot;title&quot;: &quot;Stigmata&quot;,
-                        &quot;link&quot;: &quot;/articles/stigmata/&quot;,
+                        &quot;link&quot;: &quot;/Dark_Maze_Egaleo/stigmata&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/stigmata.webp&quot;,
                         &quot;enseigne&quot;: &quot;Dark Maze - Egaleo&quot;,
                         &quot;info_top&quot;: &quot;Stigmata délivre une très bonne histoire qui change des styles horrifiques largement écumés (serial-killer, exorcisme…). Le scénario fait la synthèse de plusieurs thématiques avec beaucoup de justesse :  psychiatrie, religion, mysticisme… On notera également l’accueil, très immersif. Les premières apparitions sont peut-être les meilleures, provoquant l’immobilisation totale d’une partie de nos joueurs. On peut juste regretter quelques moments de flottement et d’attente dans le noir, parfois seul. Les séparations des joueurs auraient pu être mieux gérées. Une salle qui reste originale dans son approche et que vous pouvez rajouter à votre liste !&quot;,
@@ -270,7 +342,7 @@
                     },{
                         &quot;rank&quot;: &quot;15&quot;,
                         &quot;title&quot;: &quot;The Litchver Woodland&quot;,
-                        &quot;link&quot;: &quot;/articles/the-litchver-woodland/&quot;,
+                        &quot;link&quot;: &quot;/Ban_Bang_Theory__gios_Dim_trios/the-litchver-woodland&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/the-litchver-woodland.webp&quot;,
                         &quot;enseigne&quot;: &quot;Ban Bang Theory - Ágios Dimítrios&quot;,
                         &quot;info_top&quot;: &quot;C’est sans doute l’un des plus beaux décors de forêt qu’il nous ait été donné de voir. Le gérant nous a même confié avoir réellement planté des arbres à l’intérieur de sa salle pour réaliser son propre bois. Même si les interactions avec les comédiens peuvent s’avérer répétitives, l’équipe nous a montré toutes les améliorations futures qui seront apportées au jeu d’acteur. Sachez que la salle n’est pas proposée en anglais automatiquement. En effet, vous devrez engager un traducteur pour jouer la salle avec vous, moyennant une petite somme supplémentaire.&quot;,
@@ -278,7 +350,7 @@
                     },{
                         &quot;rank&quot;: &quot;16&quot;,
                         &quot;title&quot;: &quot;Metanoia&quot;,
-                        &quot;link&quot;: &quot;/articles/metanoia/&quot;,
+                        &quot;link&quot;: &quot;/Neverland_Agii_Anargiri/metanoia&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/metanoia.webp&quot;,
                         &quot;enseigne&quot;: &quot;Neverland - Agii Anargiri&quot;,
                         &quot;info_top&quot;: &quot;Metanoia est un prequel d’Amen qui vous permettra de comprendre les enjeux des différents protagonistes. Toute la salle est construite sur un immense flashback. On trouve une très belle entrée en matière avec des décors de haute volée et un game-master convaincant. La salle a un parcours labyrinthique qui permet de très belles apparitions d’acteur. L’une d’entre elle nous a particulièrement bluffé alors qu’elle fait intervenir deux comédiens. Sachez que tous les tenants et les aboutissants de cette histoire en deux parties (voir Amen) ne sont pas faciles à saisir. Les explications du game-master sont indispensables lors du debrief. &quot;,
@@ -286,7 +358,7 @@
                     },{
                         &quot;rank&quot;: &quot;17&quot;,
                         &quot;title&quot;: &quot;The Sanatorium - Midnight Mode&quot;,
-                        &quot;link&quot;: &quot;/articles/the-sanatorium/&quot;,
+                        &quot;link&quot;: &quot;/Lockhill_Ath_nes/the-sanatorium&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/the-sanatorium.webp&quot;,
                         &quot;enseigne&quot;: &quot;Lockhill - Athènes&quot;,
                         &quot;info_top&quot;: &quot;3ème volet de la série de “Lockhill”, Sanatorium est une étape indispensable pour comprendre la trame scénaristique de l’enseigne. Vous serez plongés dans un niveau de fumée jamais vu ailleurs. En conséquent, difficile de savoir où sont les acteurs, et à quel moment ils vont vous sauter dessus ! Prévoir des chaussures de rechange peut s’avérer utile.&quot;,
@@ -327,27 +399,106 @@
 <script src="/assets/js/top-articles-description.js"></script>
 
 <!-- <div class="language-switch-container">
-    <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button>
-</div> -->
-<div class="language-switch-container">
     <button id="languageSwitchButton" onclick="toggleLanguage()">
-        <img id="languageFlag" src="/assets/img/flags/en-optimized.webp" alt="Flag" />
+        <img id="languageFlag" src="/assets/img/flags/en-optimized.webp" alt="Flag">
         <span>Switch to English</span>
     </button>
-</div>
+</div> -->
 
 <div class="top-articles-container-description">
     <div class="top-title-container">
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
             <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
         </svg>
-        <h2 class="top-title">We didn't like</h2>
+        <h2 class="top-title">À faire s'il vous reste du temps</h2>
+        <!-- <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button> -->
+    </div>
+    <div class="top-articles-placeholder-description" data-articles="[{
+                        &quot;rank&quot;: &quot;1&quot;,
+                        &quot;title&quot;: &quot;Orfanato - Angry Souls&quot;,
+                        &quot;link&quot;: &quot;/Spookey_Escape_Moschato/orfanato-angry-souls&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/orfanato-angry-souls.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Spookey Escape - Moschato&quot;,
+                        &quot;info_top&quot;: &quot;L’orphelinat est thème récurrent du genre horrifique. Le décor est conforme à l’idée de base que l’on peut avoir de ce type d’établissement. L’arrivée et le brief d’accueil sont très bien réalisés et mettent tout de suite en condition. Mais la suite est décevante. Nous sommes sur une histoire basique, avec une fin attendue et qui aurait pu marquer davantage. On joue sur les clichés habituels de l’horreur… Les éngimes sont le point noir de cet escape game, souvent tirées par les cheveux. Le matériel pour les résoudre était parfois presque hors d’état d’usage. On retiendra tout de même une séquence surnaturelle très bien réalisée avec une synchronisation fascinante du son et de l’acteur. &quot;,
+                        &quot;info_top_en&quot;: &quot;The orphanage is a recurring theme in the horror genre. The setting complies with the basic idea that one can have of this type of establishment. The arrival and welcome brief are very well done and immediately put you into the game. But what follows is disappointing. The story is nothing original, the ending is predictable, no moment is memorable. The creators play on the usual horror clichés… The riddles are the downside of this escape game, often not very logical. The equipment to solve them was sometimes almost out of use. Nonetheless, we keep in mind a very well produced supernatural sequence with fascinating synchronization of sound and actor.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;2&quot;,
+                        &quot;title&quot;: &quot;The School of Burning Souls&quot;,
+                        &quot;link&quot;: &quot;/LockDown_Nea_Ionia/the-school-of-burning-souls&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/the-school-of-burning-souls.webp&quot;,
+                        &quot;enseigne&quot;: &quot;LockDown - Nea Ionia&quot;,
+                        &quot;info_top&quot;: &quot;Il y a de très bonnes idées dans School of the Burning Souls. Le thème est assez unique. Le décor original donne vraiment la sensation de visiter une école brûlée, au sens littéral du terme. Cependant, le scénario et ses rebondissements sont attendus et prévisibles. Les énigmes manquent de fluidité, ce qui casse l’immersion. L’effet final est censé marquer l’apothéose de la salle. Cependant, nous l’avons trouvé risqué pour la sécurité des joueurs (probablement interdit en France) et n’apportant pas de réelle plus-value au jeu.&quot;,
+                        &quot;info_top_en&quot;: &quot;There are some very good ideas in School of the Burning Souls. The theme is quite unique. The original set really gives the feeling of visiting a burnt school, literally. However, the scenario and its twists are expected and predictable. Puzzles lack fluidity, which breaks immersion. The final effect is supposed to mark the apotheosis of the room. However, we found it risky for the security of the players (probably forbidden in France) and not bringing any real added value to the game.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;3&quot;,
+                        &quot;title&quot;: &quot;Lethal Decision 2 : Hell Awaits&quot;,
+                        &quot;link&quot;: &quot;/Escape_Clue_Peristeri/lethal-decision-2-hell-awaits&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/lethal-decision-2-hell-awaits.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Clue - Peristeri&quot;,
+                        &quot;info_top&quot;: &quot;Cette salle a fini 22e au TERPECA en 2022. Comment est-ce possible ? Certes on traverse un nombre impressionnant d’espaces de jeu. Il y a moins de cadenas que le standard des salles athéniennes. Enfin, le briefing d’intro met tout de suite dans l’ambiance, tout comme l’espace d’accueil, lugubre à souhait. Mais le reste ne nous a pas convaincu. Les apparitions d’acteurs sont trop répétitives, incessantes et finissent par lasser le joueur. Les décors, costumes et masques manquent de crédibilité. La durée prolongée de la salle (2h25) n’était pour nous pas nécessaire car elle n’apporte rien de plus. Surtout, n’écoutez pas le conseil du game-master qui serait de courir dès que vous voyez le monstre. C’est exactement comme cela que vous risquez de vous faire mal, en tapant un mur, un objet, un partenaire. Et regardez où vous mettez les pieds pour ne pas tomber. Même dans l’obscurité ou la fumée dense ! Sinon la chute pourrait avoir de lourdes conséquences. Mentionnons pour finir un niveau d’intensité sonore inégalé : boules quies indispensables.&quot;,
+                        &quot;info_top_en&quot;: &quot;This room was ranked 22nd in the 2022 TERPECA. What the hell ? Of course, the space is huge and the number of room is impressive. There are fewer padlocks compared to most of the Athenian rooms. Finally, the intro briefing immediately sets the mood, thanks to the gloomy reception area and the acting of the game-master we had. But the rest of the game didn’t convince us. There is too many similar actors interventions. It felt like we had seen the same jump scare over and over like in a bad horror movie. The sets, costumes and masks lack credibility. The extended duration of the room (2h25) was not necessary for us because it does not provide anything additional. Above all, don’t listen to the game master’s advice which would be to run as soon as you see the monster. This is exactly how you risk hurting yourself, by hitting a wall, an object, a partner. And watch where you step so you don’t fall. Even in darkness or dense smoke! Otherwise the fall could have serious consequences. Finally, let’s mention an unrivaled level of sound intensity: earplugs essential.&quot;
+                    },{
+                        &quot;rank&quot;: &quot;4&quot;,
+                        &quot;title&quot;: &quot;The Sanatorium - Day / Night Mode&quot;,
+                        &quot;link&quot;: &quot;/Lockhill_Ath_nes/the-sanatorium-day-night-mode&quot;,
+                        &quot;image&quot;: &quot;/assets/img/escape/the-sanatorium-day-night-mode.webp&quot;,
+                        &quot;enseigne&quot;: &quot;Lockhill - Athènes&quot;,
+                        &quot;info_top&quot;: &quot;Nous avions joué le Sanatorium dans sa version “Day”, deux ans auparavant. Dans ce mode, vous aurez presque deux fois plus d’éngimes à résoudre, mais pas de comédiens pour vous crier dessus ! Preuve que les acteurs sont indispensables, la salle perd beaucoup de sa saveur dans ce mode de jeu. Sachez qu’il existe un également un mode “Midnight”, dans lequel vous aurez à la fois la totalité des énigmes à résoudre mais aussi la présence d’acteurs pour vous distraire…&quot;,
+                        &quot;info_top_en&quot;: &quot;We played the Sanatorium in its “Day” version, two years before. In this mode, you will have almost twice as many riddles to solve, but no actors to yell at you! Proof that actors are essential, the room loses a lot of its beauty in this game mode. Know that there is also a “Midnight” mode, in which you will have both the totality of puzzles to solve but also the presence of actors to distract you…&quot;
+                    }
+    ]">
+    </div>
+</div>
+
+<script>
+    let isEnglish = false; 
+
+    function toggleLanguage() {
+        isEnglish = !isEnglish;
+        const articles = document.querySelectorAll('.top-article-description');
+        const languageButton = document.getElementById('languageSwitchButton');
+        const languageFlag = document.getElementById('languageFlag');
+
+        articles.forEach((article) => {
+            const articleData = JSON.parse(article.getAttribute("data-article")); 
+            const infoTop = article.querySelector('.top-article-description-info');
+
+            if (articleData) {
+                if (isEnglish) {
+                    infoTop.innerHTML = articleData.info_top_en;
+                    languageButton.querySelector("span").textContent = 'En Français'; // Update only text
+                    languageFlag.src = "/assets/img/flags/france-optimized.webp"; // Switch to English flag
+                } else {
+                    infoTop.innerHTML = articleData.info_top;
+                    languageButton.querySelector("span").textContent = 'Switch to English'; // Update only text
+                    languageFlag.src = "/assets/img/flags/en-optimized.webp"; // Switch to French flag
+                }
+            }
+        });
+    }
+</script>
+
+<script src="/assets/js/top-articles-description.js"></script>
+
+<!-- <div class="language-switch-container">
+    <button id="languageSwitchButton" onclick="toggleLanguage()">
+        <img id="languageFlag" src="/assets/img/flags/en-optimized.webp" alt="Flag">
+        <span>Switch to English</span>
+    </button>
+</div> -->
+
+<div class="top-articles-container-description">
+    <div class="top-title-container">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
+        </svg>
+        <h2 class="top-title">Nous n'avons pas aimé</h2>
         <!-- <button id="languageSwitchButton" onclick="toggleLanguage()">Switch to English</button> -->
     </div>
     <div class="top-articles-placeholder-description" data-articles="[{
                         &quot;rank&quot;: &quot;1&quot;,
                         &quot;title&quot;: &quot;Paradox Project 2: The Bookstore&quot;,
-                        &quot;link&quot;: &quot;/articles/paradox-project-2-the-bookstore/&quot;,
+                        &quot;link&quot;: &quot;/Paradox_Project_Kallithea/paradox-project-2-the-bookstore&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/paradox-project-2-the-bookstore.webp&quot;,
                         &quot;enseigne&quot;: &quot;Paradox Project - Kallithea&quot;,
                         &quot;info_top&quot;: &quot;Il est toujours délicat de donner un avis négatif sur une salle quand les gérants sont aussi adorables qu’à Paradox Project… Ce deuxième volet intitulé “The Bookstore” est celui que la majorité des joueurs nous ont décrit comme le meilleur. Cet escape game était même classé 2ème mondial au TERPECA 2020. Alors certes, nos attentes étaient colossales. Mais nous ne pouvions pas imaginer être aussi peu enthousiastes à la sortie. Le jeu est très long (3h20, voire plus si on vous laisse continuer). Le décor n’a rien d’extraordinaire tout comme l’immersion. Quant aux énigmes à la réputation grandiose, nous n’avons là encore pas compris ce qui avait autant émerveillé la communauté internationale…&quot;,
@@ -355,7 +506,7 @@
                     },{
                         &quot;rank&quot;: &quot;2&quot;,
                         &quot;title&quot;: &quot;Paradox Project 3: The Music Academy&quot;,
-                        &quot;link&quot;: &quot;/articles/paradox-project-3-the-music-academy/&quot;,
+                        &quot;link&quot;: &quot;/Paradox_Project_Ath_nes/paradox-project-3-the-music-academy&quot;,
                         &quot;image&quot;: &quot;/assets/img/escape/paradox-project-3-the-music-academy.webp&quot;,
                         &quot;enseigne&quot;: &quot;Paradox Project - Athènes&quot;,
                         &quot;info_top&quot;: &quot;Nous sommes désolés pour tous les fans de Paradox Project. Ne nous jetez pas la pierre, ceci n’est que notre humble avis. Dans The Music Academy, nous avons tout de même passé un meilleur moment que dans The Bookstore, deuxième opus de l’enseigne. Sans doute car nous étions 4 joueurs et avons fini dans le temps imparti déjà long. L’immersion est à nouveau le point faible de cet opus. L’ambiance sonore en partie composée d’une compilation de musiques de films n’aide pas. On peine à nouveau à rentrer dans cette histoire tant les vidéos manquent de dynamisme. Les énigmes ne sont pas absurdes comme cela peut être le cas dans certaines salles horreur d’Athènes. Mais à nouveau, nous ne comprenons toujours pas en quoi elles émerveillent toujours autant de joueurs. Merci tout de même aux gérants dont la sympathie et la disponibilité sont toujours de mise.&quot;,
@@ -400,587 +551,515 @@
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
             <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
         </svg>
-        <h2 class="featured-title">All the escapes</h2>
+        <h2 class="featured-title">Tous les escape games d'Athènes</h2>
     </div>
     <div class="featured-articles-placeholder" data-featured="[{
-                        &quot;title&quot;: &quot;The School of Burning Souls&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-school-of-burning-souls/&quot;, 
-                        &quot;image&quot;: &quot;/assets/img/escape/the-school-of-burning-souls.webp&quot;,
-                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
-                        &quot;enseigne&quot;: &quot;LockDown - Nea Ionia&quot;
-                    },{
                         &quot;title&quot;: &quot;Death Row&quot;, 
-                        &quot;link&quot;: &quot;/articles/death-row/&quot;, 
+                        &quot;link&quot;: &quot;/No_Exit_Ilioupoli/death-row&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/death-row.webp&quot;,
                         &quot;theme&quot;: &quot;Évasion&quot;,
                         &quot;enseigne&quot;: &quot;No Exit&quot;
                     },{
                         &quot;title&quot;: &quot;Amnesia&quot;, 
-                        &quot;link&quot;: &quot;/articles/amnesia/&quot;, 
+                        &quot;link&quot;: &quot;/Mission__Escape_Palma_de_Mallorca/amnesia&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/amnesia.webp&quot;,
-                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
-                        &quot;enseigne&quot;: &quot;Neverland - Athènes&quot;
-                    },{
-                        &quot;title&quot;: &quot;Amen&quot;, 
-                        &quot;link&quot;: &quot;/articles/amen/&quot;, 
-                        &quot;image&quot;: &quot;/assets/img/escape/the-grudge.webp&quot;,
-                        &quot;theme&quot;: &quot;Horreur&quot;,
-                        &quot;enseigne&quot;: &quot;Neverland - Agii Anargiri&quot;
-                    },{
-                        &quot;title&quot;: &quot;Metanoia&quot;, 
-                        &quot;link&quot;: &quot;/articles/metanoia/&quot;, 
-                        &quot;image&quot;: &quot;/assets/img/escape/metanoia.webp&quot;,
-                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
-                        &quot;enseigne&quot;: &quot;Neverland - Agii Anargiri&quot;
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Mission: Escape - Palma de Mallorca&quot;
                     },{
                         &quot;title&quot;: &quot;Hide N Seek&quot;, 
-                        &quot;link&quot;: &quot;/articles/hide-n-seek/&quot;, 
+                        &quot;link&quot;: &quot;/Brainiac_Escape_Rooms_Petro_poli/hide-n-seek&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/hide-n-seek.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Brainiac Escape Rooms - Petroúpoli&quot;
                     },{
-                        &quot;title&quot;: &quot;The Sacrifice&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-sacrifice/&quot;, 
-                        &quot;image&quot;: &quot;/assets/img/escape/the-sacrifice.webp&quot;,
-                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
-                        &quot;enseigne&quot;: &quot;Disappear - Moschato&quot;
-                    },{
                         &quot;title&quot;: &quot;The Nun&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-nun/&quot;, 
+                        &quot;link&quot;: &quot;/Fortress_of_Secrets_Corfou/the-nun&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-nun.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Fortress of Secrets - Corfou&quot;
                     },{
                         &quot;title&quot;: &quot;Zoe&quot;, 
-                        &quot;link&quot;: &quot;/articles/zoe/&quot;, 
+                        &quot;link&quot;: &quot;/XII_Divisions_Egaleo/zoe&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/zoe.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;XII Divisions - Egaleo&quot;
                     },{
                         &quot;title&quot;: &quot;The Curse of La Llorona&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-curse-of-la-llorona/&quot;, 
+                        &quot;link&quot;: &quot;/Vansa__gios_Dim_trios/the-curse-of-la-llorona&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-curse-of-la-llorona.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Vansa - Ágios Dimítrios&quot;
                     },{
-                        &quot;title&quot;: &quot;Manifesto&quot;, 
-                        &quot;link&quot;: &quot;/articles/manifesto/&quot;, 
-                        &quot;image&quot;: &quot;/assets/img/escape/manifesto.webp&quot;,
-                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
-                        &quot;enseigne&quot;: &quot;Dark Vision Project - Moschato&quot;
-                    },{
                         &quot;title&quot;: &quot;The Ghost Writer&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-ghost-writer/&quot;, 
+                        &quot;link&quot;: &quot;/Horror_Productions_Galatsi/the-ghost-writer&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-ghost-writer.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Horror Productions - Galatsi&quot;
                     },{
                         &quot;title&quot;: &quot;Evil Inside&quot;, 
-                        &quot;link&quot;: &quot;/articles/evil-inside/&quot;, 
+                        &quot;link&quot;: &quot;/Bloodlines_Escape_Room__gios_Dim_trios/evil-inside&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/evil-inside.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Bloodlines Escape Room - Ágios Dimítrios&quot;
                     },{
-                        &quot;title&quot;: &quot;Stigmata&quot;, 
-                        &quot;link&quot;: &quot;/articles/stigmata/&quot;, 
-                        &quot;image&quot;: &quot;/assets/img/escape/stigmata.webp&quot;,
-                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
-                        &quot;enseigne&quot;: &quot;Dark Maze - Egaleo&quot;
-                    },{
-                        &quot;title&quot;: &quot;03:15&quot;, 
-                        &quot;link&quot;: &quot;/articles/03-15/&quot;, 
+                        &quot;title&quot;: &quot;195.0&quot;, 
+                        &quot;link&quot;: &quot;/Insanity_Peristeri/03-15&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/03-15.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Insanity - Peristeri&quot;
                     },{
                         &quot;title&quot;: &quot;Mystic Project&quot;, 
-                        &quot;link&quot;: &quot;/articles/mystic-project/&quot;, 
+                        &quot;link&quot;: &quot;/Mystic_Corporation_Moschato/mystic-project&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/mystic-project.webp&quot;,
                         &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
                         &quot;enseigne&quot;: &quot;Mystic Corporation - Moschato&quot;
                     },{
-                        &quot;title&quot;: &quot;Woman in Black&quot;, 
-                        &quot;link&quot;: &quot;/articles/woman-in-black/&quot;, 
-                        &quot;image&quot;: &quot;/assets/img/escape/woman-in-black.webp&quot;,
-                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
-                        &quot;enseigne&quot;: &quot;Coven Escape Rooms - Kallithea&quot;
-                    },{
                         &quot;title&quot;: &quot;Der Solist&quot;, 
-                        &quot;link&quot;: &quot;/articles/der-solist/&quot;, 
+                        &quot;link&quot;: &quot;/Paranoid_Guys_Petro_poli/der-solist&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/der-solist.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Paranoid Guys - Petroúpoli&quot;
                     },{
                         &quot;title&quot;: &quot;The Possession&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-possession/&quot;, 
+                        &quot;link&quot;: &quot;/Stay_Alive_Nea_Ionia/the-possession&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-possession.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Stay Alive - Nea Ionia&quot;
                     },{
                         &quot;title&quot;: &quot;Mystic Investigation&quot;, 
-                        &quot;link&quot;: &quot;/articles/mystic-investigation/&quot;, 
+                        &quot;link&quot;: &quot;/Mystic_Corporation_Moschato/mystic-investigation&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/mystic-investigation.webp&quot;,
                         &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
                         &quot;enseigne&quot;: &quot;Mystic Corporation - Moschato&quot;
                     },{
                         &quot;title&quot;: &quot;Anneliese&quot;, 
-                        &quot;link&quot;: &quot;/articles/anneliese/&quot;, 
+                        &quot;link&quot;: &quot;/Panic_Button_Iraklio/anneliese&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/anneliese.webp&quot;,
                         &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
                         &quot;enseigne&quot;: &quot;Panic Button - Iraklio&quot;
                     },{
                         &quot;title&quot;: &quot;Paradox Project 1: The Mansion&quot;, 
-                        &quot;link&quot;: &quot;/articles/paradox-project-1-the-mansion/&quot;, 
+                        &quot;link&quot;: &quot;/Paradox_Project_Kallithea/paradox-project-1-the-mansion&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/paradox-project-1-the-mansion.webp&quot;,
                         &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
                         &quot;enseigne&quot;: &quot;Paradox Project - Kallithea&quot;
                     },{
-                        &quot;title&quot;: &quot;Paradox Project 2: The Bookstore&quot;, 
-                        &quot;link&quot;: &quot;/articles/paradox-project-2-the-bookstore/&quot;, 
-                        &quot;image&quot;: &quot;/assets/img/escape/paradox-project-2-the-bookstore.webp&quot;,
-                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
-                        &quot;enseigne&quot;: &quot;Paradox Project - Kallithea&quot;
-                    },{
                         &quot;title&quot;: &quot;Obsessed&quot;, 
-                        &quot;link&quot;: &quot;/articles/obsessed/&quot;, 
+                        &quot;link&quot;: &quot;/Dark_Riddles_Dafni/obsessed&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/obsessed.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Dark Riddles - Dafni&quot;
                     },{
                         &quot;title&quot;: &quot;Omerta&quot;, 
-                        &quot;link&quot;: &quot;/articles/omerta/&quot;, 
+                        &quot;link&quot;: &quot;/Last_Wish_Ath_nes/omerta&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/omerta.webp&quot;,
                         &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
                         &quot;enseigne&quot;: &quot;Last Wish - Athènes&quot;
                     },{
-                        &quot;title&quot;: &quot;Orfanato - Angry Souls&quot;, 
-                        &quot;link&quot;: &quot;/articles/orfanato-angry-souls/&quot;, 
-                        &quot;image&quot;: &quot;/assets/img/escape/orfanato-angry-souls.webp&quot;,
-                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
-                        &quot;enseigne&quot;: &quot;Spookey Escape - Moschato&quot;
-                    },{
                         &quot;title&quot;: &quot;Whispershhh&quot;, 
-                        &quot;link&quot;: &quot;/articles/whispershhh/&quot;, 
+                        &quot;link&quot;: &quot;/Elude_Adventure_Rooms_Peristeri/whispershhh&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/whispershhh.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Elude Adventure Rooms - Peristeri&quot;
                     },{
                         &quot;title&quot;: &quot;Operation Black I&quot;, 
-                        &quot;link&quot;: &quot;/articles/operation-black-i/&quot;, 
+                        &quot;link&quot;: &quot;/C9_H13_NO3_Donors_Peristeri/operation-black-i&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/operation-black-i.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;C9 H13 NO3 Donors - Peristeri&quot;
                     },{
-                        &quot;title&quot;: &quot;Paradox Project 3: The Music Academy&quot;, 
-                        &quot;link&quot;: &quot;/articles/paradox-project-3-the-music-academy/&quot;, 
-                        &quot;image&quot;: &quot;/assets/img/escape/paradox-project-3-the-music-academy.webp&quot;,
-                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
-                        &quot;enseigne&quot;: &quot;Paradox Project - Athènes&quot;
-                    },{
                         &quot;title&quot;: &quot;Otherside&quot;, 
-                        &quot;link&quot;: &quot;/articles/otherside/&quot;, 
+                        &quot;link&quot;: &quot;/Escape_Theory_Egaleo/otherside&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/otherside.webp&quot;,
                         &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
                         &quot;enseigne&quot;: &quot;Escape Theory - Egaleo&quot;
                     },{
                         &quot;title&quot;: &quot;Mea Culpa&quot;, 
-                        &quot;link&quot;: &quot;/articles/mea-culpa/&quot;, 
+                        &quot;link&quot;: &quot;/Fear_Factor_Le_Pir_e/mea-culpa&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/mea-culpa.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Fear Factor - Le Pirée&quot;
                     },{
-                        &quot;title&quot;: &quot;The Sanatorium - Day / Night Mode&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-sanatorium-day-night-mode/&quot;, 
-                        &quot;image&quot;: &quot;/assets/img/escape/the-sanatorium-day-night-mode.webp&quot;,
-                        &quot;theme&quot;: &quot;Frisson / Horreur, Virus / Asile / Hôpital&quot;,
-                        &quot;enseigne&quot;: &quot;Lockhill - Athènes&quot;
-                    },{
-                        &quot;title&quot;: &quot;Lethal Decision 2 : Hell Awaits&quot;, 
-                        &quot;link&quot;: &quot;/articles/lethal-decision-2-hell-awaits/&quot;, 
-                        &quot;image&quot;: &quot;/assets/img/escape/lethal-decision-2-hell-awaits.webp&quot;,
-                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
-                        &quot;enseigne&quot;: &quot;Escape Clue - Peristeri&quot;
-                    },{
                         &quot;title&quot;: &quot;The Sculptor&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-sculptor/&quot;, 
+                        &quot;link&quot;: &quot;/Freaky_Minds_Ath_nes/the-sculptor&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-sculptor.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Freaky Minds - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;Outcast&quot;, 
-                        &quot;link&quot;: &quot;/articles/outcast/&quot;, 
+                        &quot;link&quot;: &quot;/Brain_On_Kallithea/outcast&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/outcast.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur, Virus / Asile / Hôpital&quot;,
                         &quot;enseigne&quot;: &quot;Brain On - Kallithea&quot;
                     },{
                         &quot;title&quot;: &quot;Sherlock Maze 2&quot;, 
-                        &quot;link&quot;: &quot;/articles/sherlock-maze-2/&quot;, 
+                        &quot;link&quot;: &quot;/Sherlocked_Holmes_Peristeri/sherlock-maze-2&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/sherlock-maze-2.webp&quot;,
                         &quot;theme&quot;: &quot;Logique&quot;,
                         &quot;enseigne&quot;: &quot;Sherlocked Holmes - Peristeri&quot;
                     },{
                         &quot;title&quot;: &quot;Red Riding Hood 2 : The Wolff&quot;, 
-                        &quot;link&quot;: &quot;/articles/red-riding-hood-2-the-wolff/&quot;, 
+                        &quot;link&quot;: &quot;/The_Mind_Hunters_Petro_poli/red-riding-hood-2-the-wolff&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/red-riding-hood-2-the-wolff.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;The Mind Hunters - Petroúpoli&quot;
                     },{
                         &quot;title&quot;: &quot;The Mine Box&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-mine-box/&quot;, 
+                        &quot;link&quot;: &quot;/The_Box_Ath_nes/the-mine-box&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-mine-box.webp&quot;,
                         &quot;theme&quot;: &quot;Catastrophe&quot;,
                         &quot;enseigne&quot;: &quot;The Box - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;Panoramix: The Secret of the Magic Potion&quot;, 
-                        &quot;link&quot;: &quot;/articles/panoramix-the-secret-of-the-magic-potion/&quot;, 
+                        &quot;link&quot;: &quot;/The_Rubicon_Galatsi/panoramix-the-secret-of-the-magic-potion&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/panoramix-the-secret-of-the-magic-potion.webp&quot;,
                         &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
                         &quot;enseigne&quot;: &quot;The Rubicon - Galatsi&quot;
                     },{
                         &quot;title&quot;: &quot;Paranormal&quot;, 
-                        &quot;link&quot;: &quot;/articles/paranormal/&quot;, 
+                        &quot;link&quot;: &quot;/TimeBreak_Bonn/paranormal&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/paranormal.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
-                        &quot;enseigne&quot;: &quot;My Escape - Rhodes&quot;
+                        &quot;enseigne&quot;: &quot;TimeBreak - Bonn&quot;
                     },{
                         &quot;title&quot;: &quot;Pandemonium&quot;, 
-                        &quot;link&quot;: &quot;/articles/pandemonium/&quot;, 
+                        &quot;link&quot;: &quot;/Horrorville_Egaleo/pandemonium&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/pandemonium.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Horrorville - Egaleo&quot;
                     },{
                         &quot;title&quot;: &quot;The Order of Light&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-order-of-light/&quot;, 
+                        &quot;link&quot;: &quot;/Braincells_Le_Pir_e/the-order-of-light&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-order-of-light.webp&quot;,
                         &quot;theme&quot;: &quot;Aventure&quot;,
                         &quot;enseigne&quot;: &quot;Braincells - Le Pirée&quot;
                     },{
                         &quot;title&quot;: &quot;The Witch&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-witch/&quot;, 
+                        &quot;link&quot;: &quot;/High_Intensity_Ath_nes/the-witch&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-witch.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;High Intensity - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;Sociopath&quot;, 
-                        &quot;link&quot;: &quot;/articles/sociopath/&quot;, 
+                        &quot;link&quot;: &quot;/Blind_Alley_Ath_nes/sociopath&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/sociopath.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Blind Alley - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;Jumanji&quot;, 
-                        &quot;link&quot;: &quot;/articles/jumanji/&quot;, 
+                        &quot;link&quot;: &quot;/ExitRoom_Louvain/jumanji&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/jumanji.webp&quot;,
-                        &quot;theme&quot;: &quot;Aventure&quot;,
-                        &quot;enseigne&quot;: &quot;Brain On - Kallithea&quot;
+                        &quot;theme&quot;: &quot;Aventure, Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;ExitRoom - Louvain&quot;
                     },{
                         &quot;title&quot;: &quot;Immortal&quot;, 
-                        &quot;link&quot;: &quot;/articles/immortal/&quot;, 
+                        &quot;link&quot;: &quot;/Escape_Theory_Egaleo/immortal&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/immortal.webp&quot;,
                         &quot;theme&quot;: &quot;Fantastique&quot;,
                         &quot;enseigne&quot;: &quot;Escape Theory - Egaleo&quot;
                     },{
                         &quot;title&quot;: &quot;Experimentum X&quot;, 
-                        &quot;link&quot;: &quot;/articles/experimentum-x/&quot;, 
+                        &quot;link&quot;: &quot;/Trapped_Chalandri/experimentum-x&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/experimentum-x.webp&quot;,
                         &quot;theme&quot;: &quot;Logique&quot;,
                         &quot;enseigne&quot;: &quot;Trapped - Chalandri&quot;
                     },{
                         &quot;title&quot;: &quot;Prometheus&quot;, 
-                        &quot;link&quot;: &quot;/articles/prometheus/&quot;, 
+                        &quot;link&quot;: &quot;/Clock_Escape_Rooms_Agia_Paraskevi/prometheus&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/prometheus.webp&quot;,
                         &quot;theme&quot;: &quot;Science-Fiction&quot;,
                         &quot;enseigne&quot;: &quot;Clock Escape Rooms - Agia Paraskevi&quot;
                     },{
                         &quot;title&quot;: &quot;Cosmos 05&quot;, 
-                        &quot;link&quot;: &quot;/articles/cosmos-05/&quot;, 
+                        &quot;link&quot;: &quot;/Escapepolis_Ath_nes/cosmos-05&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/cosmos-05.webp&quot;,
                         &quot;theme&quot;: &quot;Science-Fiction&quot;,
                         &quot;enseigne&quot;: &quot;Escapepolis - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;Firefighters&quot;, 
-                        &quot;link&quot;: &quot;/articles/firefighters/&quot;, 
+                        &quot;link&quot;: &quot;/S_A_F_E__Nikea/firefighters&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/firefighters.webp&quot;,
                         &quot;theme&quot;: &quot;Catastrophe&quot;,
                         &quot;enseigne&quot;: &quot;S.A.F.E. - Nikea&quot;
                     },{
                         &quot;title&quot;: &quot;Agnes&quot;, 
-                        &quot;link&quot;: &quot;/articles/agnes/&quot;, 
+                        &quot;link&quot;: &quot;/Nocturne_Kallithea/agnes&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/agnes.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Nocturne - Kallithea&quot;
                     },{
                         &quot;title&quot;: &quot;Truth or Dare&quot;, 
-                        &quot;link&quot;: &quot;/articles/truth-or-dare/&quot;, 
+                        &quot;link&quot;: &quot;/Clock_Escape_Rooms_Agia_Paraskevi/truth-or-dare&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/truth-or-dare.webp&quot;,
                         &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
                         &quot;enseigne&quot;: &quot;Clock Escape Rooms - Agia Paraskevi&quot;
                     },{
                         &quot;title&quot;: &quot;Dark Mirror&quot;, 
-                        &quot;link&quot;: &quot;/articles/dark-mirror/&quot;, 
+                        &quot;link&quot;: &quot;/Escapepolis_Galatsi/dark-mirror&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/dark-mirror.webp&quot;,
                         &quot;theme&quot;: &quot;Science-Fiction&quot;,
                         &quot;enseigne&quot;: &quot;Escapepolis - Galatsi&quot;
                     },{
                         &quot;title&quot;: &quot;Rebellion&quot;, 
-                        &quot;link&quot;: &quot;/articles/rebellion/&quot;, 
+                        &quot;link&quot;: &quot;/Clock_Escape_Rooms_Agia_Paraskevi/rebellion&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/rebellion.webp&quot;,
                         &quot;theme&quot;: &quot;Fantastique&quot;,
                         &quot;enseigne&quot;: &quot;Clock Escape Rooms - Agia Paraskevi&quot;
                     },{
                         &quot;title&quot;: &quot;DeadLock Redemption&quot;, 
-                        &quot;link&quot;: &quot;/articles/deadlock-redemption/&quot;, 
+                        &quot;link&quot;: &quot;/Reality_Ripples_Ath_nes/deadlock-redemption&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/deadlock-redemption.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Reality Ripples - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;RWD&quot;, 
-                        &quot;link&quot;: &quot;/articles/rwd/&quot;, 
+                        &quot;link&quot;: &quot;/LockDown_Nea_Ionia/rwd&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/rwd.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;LockDown - Nea Ionia&quot;
                     },{
                         &quot;title&quot;: &quot;Bloody Mary&quot;, 
-                        &quot;link&quot;: &quot;/articles/bloody-mary/&quot;, 
+                        &quot;link&quot;: &quot;/Rock_City_Escape_Amersfoort/bloody-mary&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/bloody-mary.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
-                        &quot;enseigne&quot;: &quot;Illusion Escape Rooms - Athènes&quot;
+                        &quot;enseigne&quot;: &quot;Rock City Escape - Amersfoort&quot;
                     },{
                         &quot;title&quot;: &quot;The Dark Side of the Elements&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-dark-side-of-the-elements/&quot;, 
+                        &quot;link&quot;: &quot;/Exit_Plan__gios_Dim_trios/the-dark-side-of-the-elements&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-dark-side-of-the-elements.webp&quot;,
                         &quot;theme&quot;: &quot;Fantastique&quot;,
                         &quot;enseigne&quot;: &quot;Exit Plan - Ágios Dimítrios&quot;
                     },{
                         &quot;title&quot;: &quot;Lilipout&quot;, 
-                        &quot;link&quot;: &quot;/articles/lilipout/&quot;, 
+                        &quot;link&quot;: &quot;/Art_of_Escape_Ath_nes/lilipout&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/lilipout.webp&quot;,
                         &quot;theme&quot;: &quot;Fantastique&quot;,
                         &quot;enseigne&quot;: &quot;Art of Escape - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;The Witchouse&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-witchouse/&quot;, 
+                        &quot;link&quot;: &quot;/Arkham_Escape_Ath_nes/the-witchouse&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-witchouse.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Arkham Escape - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;The Axe Murders of Villisca&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-axe-murders-of-villisca/&quot;, 
+                        &quot;link&quot;: &quot;/Horrorwood_Nea_Ionia/the-axe-murders-of-villisca&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-axe-murders-of-villisca.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Horrorwood - Nea Ionia&quot;
                     },{
                         &quot;title&quot;: &quot;Secret Novel&quot;, 
-                        &quot;link&quot;: &quot;/articles/secret-novel/&quot;, 
+                        &quot;link&quot;: &quot;/No_Hope_Petro_poli/secret-novel&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/secret-novel.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;No Hope - Petroúpoli&quot;
                     },{
                         &quot;title&quot;: &quot;Supernatural&quot;, 
-                        &quot;link&quot;: &quot;/articles/supernatural/&quot;, 
+                        &quot;link&quot;: &quot;/Illusion_Escape_Rooms_Ath_nes/supernatural&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/supernatural.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Illusion Escape Rooms - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;Mary&#39;s Dolls&quot;, 
-                        &quot;link&quot;: &quot;/articles/marys-dolls/&quot;, 
+                        &quot;link&quot;: &quot;/C9_H13_NO3_Donors_Peristeri/marys-dolls&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/marys-dolls.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;C9 H13 NO3 Donors - Peristeri&quot;
                     },{
                         &quot;title&quot;: &quot;Thomas Crown&quot;, 
-                        &quot;link&quot;: &quot;/articles/thomas-crown/&quot;, 
+                        &quot;link&quot;: &quot;/Mastermind_Ath_nes/thomas-crown&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/thomas-crown.webp&quot;,
                         &quot;theme&quot;: &quot;Cambriolage&quot;,
                         &quot;enseigne&quot;: &quot;Mastermind - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;Sinister&quot;, 
-                        &quot;link&quot;: &quot;/articles/sinister/&quot;, 
+                        &quot;link&quot;: &quot;/Lockbusters_Ath_nes/sinister&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/sinister.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Lockbusters - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;Elizabeth Bathory&quot;, 
-                        &quot;link&quot;: &quot;/articles/elizabeth-bathory/&quot;, 
+                        &quot;link&quot;: &quot;/Serial_Grifers_Illion/elizabeth-bathory&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/elizabeth-bathory.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Serial Grifers - Illion&quot;
                     },{
                         &quot;title&quot;: &quot;Scooby….Who ?&quot;, 
-                        &quot;link&quot;: &quot;/articles/scooby-who/&quot;, 
+                        &quot;link&quot;: &quot;/Art_of_Escape_Ath_nes/scooby-who&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/scooby-who.webp&quot;,
                         &quot;theme&quot;: &quot;Aventure, Série / Film / Roman&quot;,
                         &quot;enseigne&quot;: &quot;Art of Escape - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;Creepy Store&quot;, 
-                        &quot;link&quot;: &quot;/articles/creepy-store/&quot;, 
+                        &quot;link&quot;: &quot;/Escapepolis_Galatsi/creepy-store&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/creepy-store.webp&quot;,
                         &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
                         &quot;enseigne&quot;: &quot;Escapepolis - Galatsi&quot;
                     },{
                         &quot;title&quot;: &quot;Avissos&quot;, 
-                        &quot;link&quot;: &quot;/articles/avissos/&quot;, 
+                        &quot;link&quot;: &quot;/Escapepolis_Ath_nes/avissos&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/avissos.webp&quot;,
                         &quot;theme&quot;: &quot;Logique&quot;,
                         &quot;enseigne&quot;: &quot;Escapepolis - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;Middlearth Tales&quot;, 
-                        &quot;link&quot;: &quot;/articles/middlearth-tales/&quot;, 
+                        &quot;link&quot;: &quot;/Reality_Ripples_Ath_nes/middlearth-tales&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/middlearth-tales.webp&quot;,
                         &quot;theme&quot;: &quot;Fantastique, Aventure&quot;,
                         &quot;enseigne&quot;: &quot;Reality Ripples - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;The Sanatorium - Midnight Mode&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-sanatorium/&quot;, 
+                        &quot;link&quot;: &quot;/Lockhill_Ath_nes/the-sanatorium&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-sanatorium.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur, Virus / Asile / Hôpital&quot;,
                         &quot;enseigne&quot;: &quot;Lockhill - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;Phantom of the Opera&quot;, 
-                        &quot;link&quot;: &quot;/articles/phantom-of-the-opera/&quot;, 
+                        &quot;link&quot;: &quot;/Escape_Theory_Egaleo/phantom-of-the-opera&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/phantom-of-the-opera.webp&quot;,
                         &quot;theme&quot;: &quot;Fantastique&quot;,
                         &quot;enseigne&quot;: &quot;Escape Theory - Egaleo&quot;
                     },{
                         &quot;title&quot;: &quot;Elixir of Life&quot;, 
-                        &quot;link&quot;: &quot;/articles/elixir-of-life/&quot;, 
+                        &quot;link&quot;: &quot;/Brain_On_Kallithea/elixir-of-life&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/elixir-of-life.webp&quot;,
                         &quot;theme&quot;: &quot;Fantastique&quot;,
                         &quot;enseigne&quot;: &quot;Brain On - Kallithea&quot;
                     },{
                         &quot;title&quot;: &quot;The Illusionist&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-illusionist/&quot;, 
+                        &quot;link&quot;: &quot;/Clueso_Chalandri/the-illusionist&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-illusionist.webp&quot;,
                         &quot;theme&quot;: &quot;Fantastique, Enquête / Mystère&quot;,
                         &quot;enseigne&quot;: &quot;Clueso - Chalandri&quot;
                     },{
                         &quot;title&quot;: &quot;Boogeyman&quot;, 
-                        &quot;link&quot;: &quot;/articles/boogeyman/&quot;, 
+                        &quot;link&quot;: &quot;/Reality_Ripples_Ath_nes/boogeyman&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/boogeyman.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Reality Ripples - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;The Prison&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-prison/&quot;, 
+                        &quot;link&quot;: &quot;/Adventure_Arena_Ath_nes/the-prison&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-prison.webp&quot;,
                         &quot;theme&quot;: &quot;Évasion&quot;,
                         &quot;enseigne&quot;: &quot;Adventure Arena - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;The Shelter&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-shelter/&quot;, 
+                        &quot;link&quot;: &quot;/Mastermind_Ath_nes/the-shelter&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-shelter.webp&quot;,
                         &quot;theme&quot;: &quot;Catastrophe&quot;,
                         &quot;enseigne&quot;: &quot;Mastermind - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;Emperor&#39;s Masterchef is Dead&quot;, 
-                        &quot;link&quot;: &quot;/articles/emperors-masterchef-is-dead/&quot;, 
+                        &quot;link&quot;: &quot;/Mastermind_Peristeri/emperors-masterchef-is-dead&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/emperors-masterchef-is-dead.webp&quot;,
                         &quot;theme&quot;: &quot;Aventure&quot;,
                         &quot;enseigne&quot;: &quot;Mastermind - Peristeri&quot;
                     },{
                         &quot;title&quot;: &quot;Gustave Eiffel&quot;, 
-                        &quot;link&quot;: &quot;/articles/gustave-eiffel/&quot;, 
+                        &quot;link&quot;: &quot;/Escapepolis_Galatsi/gustave-eiffel&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/gustave-eiffel.webp&quot;,
                         &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
                         &quot;enseigne&quot;: &quot;Escapepolis - Galatsi&quot;
                     },{
                         &quot;title&quot;: &quot;Docklands&quot;, 
-                        &quot;link&quot;: &quot;/articles/docklands/&quot;, 
+                        &quot;link&quot;: &quot;/Arkham_Escape_Ath_nes/docklands&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/docklands.webp&quot;,
                         &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
                         &quot;enseigne&quot;: &quot;Arkham Escape - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;Archon&#39;s Bar&quot;, 
-                        &quot;link&quot;: &quot;/articles/archons-bar/&quot;, 
+                        &quot;link&quot;: &quot;/The_Rubicon_Galatsi/archons-bar&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/archons-bar.webp&quot;,
                         &quot;theme&quot;: &quot;Logique&quot;,
                         &quot;enseigne&quot;: &quot;The Rubicon - Galatsi&quot;
                     },{
                         &quot;title&quot;: &quot;H-Ice-T Tiki&quot;, 
-                        &quot;link&quot;: &quot;/articles/h-ice-t-tiki/&quot;, 
+                        &quot;link&quot;: &quot;/Way_Out_Vrilissia/h-ice-t-tiki&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/h-ice-t-tiki.webp&quot;,
                         &quot;theme&quot;: &quot;Aventure&quot;,
                         &quot;enseigne&quot;: &quot;Way Out - Vrilissia&quot;
                     },{
                         &quot;title&quot;: &quot;20000 Leagues under the Sea&quot;, 
-                        &quot;link&quot;: &quot;/articles/20000-leagues-under-the-sea/&quot;, 
+                        &quot;link&quot;: &quot;/Escape_Theory_Egaleo/20000-leagues-under-the-sea&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/20000-leagues-under-the-sea.webp&quot;,
                         &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
                         &quot;enseigne&quot;: &quot;Escape Theory - Egaleo&quot;
                     },{
                         &quot;title&quot;: &quot;Lethal Decision&quot;, 
-                        &quot;link&quot;: &quot;/articles/lethal-decision/&quot;, 
+                        &quot;link&quot;: &quot;/Escape_Clue_Peristeri/lethal-decision&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/lethal-decision.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Escape Clue - Peristeri&quot;
                     },{
                         &quot;title&quot;: &quot;The Granny&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-granny/&quot;, 
+                        &quot;link&quot;: &quot;/LockDown_Nea_Ionia/the-granny&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-granny.webp&quot;,
                         &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
                         &quot;enseigne&quot;: &quot;LockDown - Nea Ionia&quot;
                     },{
                         &quot;title&quot;: &quot;The Lockwood Manor&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-lockwood-manor/&quot;, 
+                        &quot;link&quot;: &quot;/Lockhill_Ath_nes/the-lockwood-manor&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-lockwood-manor.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Lockhill - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;Secret of the Asylum&quot;, 
-                        &quot;link&quot;: &quot;/articles/secret-of-the-asylum/&quot;, 
+                        &quot;link&quot;: &quot;/Clueso_Chalandri/secret-of-the-asylum&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/secret-of-the-asylum.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Clueso - Chalandri&quot;
                     },{
                         &quot;title&quot;: &quot;The Bride in Black&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-bride-in-black/&quot;, 
+                        &quot;link&quot;: &quot;/Vansa__gios_Dim_trios/the-bride-in-black&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-bride-in-black.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Vansa - Ágios Dimítrios&quot;
                     },{
                         &quot;title&quot;: &quot;Hellevator&quot;, 
-                        &quot;link&quot;: &quot;/articles/hellevator/&quot;, 
+                        &quot;link&quot;: &quot;/Escapepolis_Galatsi/hellevator&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/hellevator.webp&quot;,
                         &quot;theme&quot;: &quot;Fantastique&quot;,
                         &quot;enseigne&quot;: &quot;Escapepolis - Galatsi&quot;
                     },{
                         &quot;title&quot;: &quot;Eric&#39;s Will&quot;, 
-                        &quot;link&quot;: &quot;/articles/erics-will/&quot;, 
+                        &quot;link&quot;: &quot;/Vansa__gios_Dim_trios/erics-will&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/erics-will.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Vansa - Ágios Dimítrios&quot;
                     },{
                         &quot;title&quot;: &quot;Dark&quot;, 
-                        &quot;link&quot;: &quot;/articles/dark/&quot;, 
+                        &quot;link&quot;: &quot;/The_Darkwood_Village_Moschato/dark&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/dark.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;The Darkwood Village - Moschato&quot;
                     },{
                         &quot;title&quot;: &quot;Conjuring II&quot;, 
-                        &quot;link&quot;: &quot;/articles/conjuring-ii/&quot;, 
+                        &quot;link&quot;: &quot;/Adrenaline_Ath_nes/conjuring-ii&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/conjuring-ii.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Adrenaline - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;GodSlayer&quot;, 
-                        &quot;link&quot;: &quot;/articles/godslayer/&quot;, 
+                        &quot;link&quot;: &quot;/Room_54_Ath_nes/godslayer&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/godslayer.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Room 54 - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;Death Row&quot;, 
-                        &quot;link&quot;: &quot;/articles/death-row/&quot;, 
+                        &quot;link&quot;: &quot;/No_Exit_Ilioupoli/death-row&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/death-row.webp&quot;,
                         &quot;theme&quot;: &quot;Évasion&quot;,
                         &quot;enseigne&quot;: &quot;No Exit&quot;
                     },{
                         &quot;title&quot;: &quot;Monika&#39;s Diary&quot;, 
-                        &quot;link&quot;: &quot;/articles/monikas-diary/&quot;, 
+                        &quot;link&quot;: &quot;/Ban_Bang_Theory_Ath_nes/monikas-diary&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/monikas-diary.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Ban Bang Theory - Athènes&quot;
                     },{
                         &quot;title&quot;: &quot;The Litchver Woodland&quot;, 
-                        &quot;link&quot;: &quot;/articles/the-litchver-woodland/&quot;, 
+                        &quot;link&quot;: &quot;/Ban_Bang_Theory__gios_Dim_trios/the-litchver-woodland&quot;, 
                         &quot;image&quot;: &quot;/assets/img/escape/the-litchver-woodland.webp&quot;,
                         &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
                         &quot;enseigne&quot;: &quot;Ban Bang Theory - Ágios Dimítrios&quot;
@@ -989,7 +1068,7 @@
     </div>
 </div>
 
-<script src="/assets/js/featured-articles.js"></script>
+<script src="/assets/js/featured-articles_v2.js"></script>
 
 <div class="intro-text">
     <h2>Quel est le meilleur escape game d’Athènes ?</h2>
@@ -1022,7 +1101,78 @@
 <!-- Make the same div as above with the english version-->
 
 
+
+    <footer>
+        <div class="row">
+    <div class="footer-col logo-social-group">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo" class="logo-img">
+        </a>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/lemeilleurescapegame" target="_blank">
+                <img src="/assets/img/icons/facebook-brands.svg" alt="Facebook" class="icon">
+            </a>
+            <a href="https://www.instagram.com/lemeilleurescapegame.fr/" target="_blank">
+                <img src="/assets/img/icons/instagram-brands.svg" alt="Instagram" class="icon">
+            </a>
+            <a href="https://open.spotify.com/show/0j285HyDZGNuTRNYqsp5J9?si=a3026617f27a49f4" target="_blank">
+                <img src="/assets/img/icons/spotify-brands.svg" alt="Spotify" class="icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-col">
+        <h4><a href="/about">About Us</a></h4>
+        <h4><a href="/mention-legale">Mentions légales</a></h4>
+    </div>
+
+    <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:contact@lemeilleurescapegame.fr">contact@lemeilleurescapegame.fr</a></p>
+    </div>
+</div>
+
+    </footer>
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
+
+    
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+        { pageLanguage: 'fr', includedLanguages: 'en,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+        'google_translate_element'
+        );
+    }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.getElementById("translate-toggle");
+        let currentLang = "fr";
+
+        // Wait for the .goog-te-combo to be loaded
+        function waitForTranslateCombo(callback) {
+            const interval = setInterval(() => {
+                const selectEl = document.querySelector(".goog-te-combo");
+                if (selectEl) {
+                    clearInterval(interval);
+                    callback(selectEl);
+                }
+            }, 100); // check every 100ms
+        }
+
+        waitForTranslateCombo((selectEl) => {
+            toggleBtn.addEventListener("click", function () {
+                const targetLang = currentLang === "fr" ? "en" : "fr";
+                selectEl.value = targetLang;
+                selectEl.dispatchEvent(new Event("change"));
+                currentLang = targetLang;
+                toggleBtn.textContent = currentLang === "fr" ? "🇬🇧 English" : "🇫🇷 Français";
+            });
+        });
+    });
+    </script>
 </body>
 </html>

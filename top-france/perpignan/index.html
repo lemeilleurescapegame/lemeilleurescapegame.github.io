@@ -9,9 +9,48 @@
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="/assets/img/logo_lemeg_.png">
 </head>
 <body>
-    <nav class="nav-wrap">
+    <head>
+    <style>
+        /* Example CSS for your navbar */
+        .nav-wrap {
+            font-family: 'Merriweather', serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-wrap a {
+            text-decoration: none;
+            color: inherit;
+            padding: 8px 12px;
+        }
+
+        .nav-wrap a:hover {
+            color: #ccc;
+        }
+
+        .sidebar li a {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* .search-form input[type="text"] {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            color: #000;
+            padding: 4px 8px;
+        } */
+    </style>
+</head>
+
+<nav class="nav-wrap">
     <div class="logo">
         <a href="/" class="nav-logo">
             <img src="/assets/img/logo_lemeg_.png" alt="Logo">
@@ -23,18 +62,22 @@
         <li> <a href="/top-france">Top France</a> </li>
         <li> <a href="/top-world">Top World</a> </li>
         <li> <a href="/podcast">Podcast</a>  </li>
-        <!-- <li> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li> <a href="/experience-immersive">Expérience immersive</a> </li>
         <li> <a href="/horreur">Horreur</a> </li>
-        <!-- <li> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
+        <li> <a href="/realite-virtuelle">Réalité virtuelle</a> </li>
+        <li> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <li> <a href="/pour-enfant">🙋‍♂️ Pour enfant</a> </li>
 
     </ul>
     <ul>
         <li class="hideOnMobile"> <a href="/top-france">Top France</a> </li>
         <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li>
         <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
-        <!-- <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li>
         <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/realite-virtuelle">Réalité virtuelle</a> </li>
         <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <li class="hideOnMobile"> <a href="/pour-enfant">🙋‍♂️ Pour Enfants</a></li>
         <!-- <li class="search-icon">
             <input type="search" id="search-input" placeholder="Search">
             <button id="search-button">
@@ -66,12 +109,6 @@
                 </svg>
             </button>
         </form>
-
-        <!-- <form action="/search.html" method="get">
-            <label for="search-box">Search</label>
-            <input type="text" id="search-box" name="query">
-            <input type="submit" value="search">
-        </form> -->
 
         <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
     </ul>
@@ -136,20 +173,85 @@
 
 
 </script>
-    
+
+    <div id="google_translate_wrapper">
+        <div id="google_translate_element"></div>
+    </div>
+
+
+    <section class="immersive-block">
+    <h3>Perpignan</h3>
+</section>
+
 <div class="top-articles-container">
     <div class="top-title-container">
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
             <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
         </svg>
-        <h2 class="top-title">Top Perpignan</h2>
+        <h2 class="top-title">Meilleur escape game Perpignan 2019</h2>
     </div>
     <div class="top-articles-placeholder" data-articles="[{
                      &quot;rank&quot;: &quot;1&quot;, 
-                     &quot;title&quot;: &quot;&quot;, 
-                     &quot;link&quot;: &quot;/articles/1_template/&quot;, 
-                     &quot;image&quot;: &quot;/assets/img/escape/&quot;,
-                     &quot;note&quot;: &quot;20&quot;,
+                     &quot;title&quot;: &quot;La Malédiction de Morgane&quot;, 
+                     &quot;link&quot;: &quot;/Escape_Dimension_Saleilles/la-malediction-de-morgane&quot;, 
+                     &quot;image&quot;: &quot;/assets/img/escape/la-malediction-de-morgane.webp&quot;,
+                     &quot;note&quot;: &quot;19&quot;,
+                     &quot;enseigne&quot; : &quot;Escape Dimension - Saleilles&quot;
+                    },{
+                     &quot;rank&quot;: &quot;2&quot;, 
+                     &quot;title&quot;: &quot;Harry et les Trois Reliques&quot;, 
+                     &quot;link&quot;: &quot;/Time_Zone_Perpignan/harry-et-les-trois-reliques&quot;, 
+                     &quot;image&quot;: &quot;/assets/img/escape/harry-et-les-trois-reliques.webp&quot;,
+                     &quot;note&quot;: &quot;19&quot;,
+                     &quot;enseigne&quot; : &quot;Time Zone - Perpignan&quot;
+                    },{
+                     &quot;rank&quot;: &quot;3&quot;, 
+                     &quot;title&quot;: &quot;Goodbye Cobayes ! Hémisphère gauche&quot;, 
+                     &quot;link&quot;: &quot;/Escapix_Perpignan/goodbye-cobayes-hemisphere-gauche_Escapix_Perpignan&quot;, 
+                     &quot;image&quot;: &quot;/assets/img/escape/goodbye-cobayes-hemisphere-gauche.webp&quot;,
+                     &quot;note&quot;: &quot;18.5&quot;,
+                     &quot;enseigne&quot; : &quot;Escapix - Perpignan&quot;
+                    }
+    ]">
+    </div>
+</div>
+
+<script src="/assets/js/top-articles.js"></script>
+
+<div class="top-articles-container">
+    <div class="top-title-container">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
+        </svg>
+        <h2 class="top-title">Meilleur escape game Perpignan 2016</h2>
+    </div>
+    <div class="top-articles-placeholder" data-articles="[{
+                     &quot;rank&quot;: &quot;1&quot;, 
+                     &quot;title&quot;: &quot;Vito Quest&quot;, 
+                     &quot;link&quot;: &quot;/La_Cave_Rouge_Thuir/vito-quest&quot;, 
+                     &quot;image&quot;: &quot;/assets/img/escape/vito-quest.webp&quot;,
+                     &quot;note&quot;: &quot;19&quot;,
+                     &quot;enseigne&quot; : &quot;La Cave Rouge - Thuir&quot;
+                    }
+    ]">
+    </div>
+</div>
+
+<script src="/assets/js/top-articles.js"></script>
+
+<div class="top-articles-container">
+    <div class="top-title-container">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+            <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
+        </svg>
+        <h2 class="top-title">Action game</h2>
+    </div>
+    <div class="top-articles-placeholder" data-articles="[{
+                     &quot;rank&quot;: &quot;1&quot;, 
+                     &quot;title&quot;: &quot;Défis Pirate&quot;, 
+                     &quot;link&quot;: &quot;/D_fis_Pirate_Perpignan/defis-pirate-perpignan&quot;, 
+                     &quot;image&quot;: &quot;/assets/img/escape/defis-pirate.webp&quot;,
+                     &quot;note&quot;: &quot;&quot;,
                      &quot;enseigne&quot; : &quot;&quot;
                     }
     ]">
@@ -163,23 +265,262 @@
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
             <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z" />
         </svg>
-        <h2 class="featured-title">Tous les escapes de Perpignan</h2>
+        <h2 class="featured-title">Tous les escape games de Perpignan</h2>
     </div>
     <div class="featured-articles-placeholder" data-featured="[{
-                        &quot;title&quot;: &quot;&quot;, 
-                        &quot;link&quot;: &quot;/articles/1_template/&quot;, 
-                        &quot;image&quot;: &quot;/assets/img/escape/&quot;,
-                        &quot;theme&quot;: &quot;&quot;,
-                        &quot;enseigne&quot;: &quot;&quot;
+                        &quot;title&quot;: &quot;Jungle Quest&quot;, 
+                        &quot;link&quot;: &quot;/Escape_Dimension_Saleilles/jungle-quest&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/jungle-quest.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Dimension - Saleilles&quot;
+                    },{
+                        &quot;title&quot;: &quot;Mystère à Lived Street&quot;, 
+                        &quot;link&quot;: &quot;/Escape_Dimension_Saleilles/mystere-a-lived-street&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/mystere-a-lived-street.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur, Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Escape Dimension - Saleilles&quot;
+                    },{
+                        &quot;title&quot;: &quot;Jurassic Island&quot;, 
+                        &quot;link&quot;: &quot;/Time_Zone_Perpignan/jurassic-island&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/jurassic-island.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Time Zone - Perpignan&quot;
+                    },{
+                        &quot;title&quot;: &quot;L&#39;anneau unique&quot;, 
+                        &quot;link&quot;: &quot;/Le_Sablier_Le_Soler/lanneau-unique&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/lanneau-unique.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique, Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Le Sablier - Le Soler&quot;
+                    },{
+                        &quot;title&quot;: &quot;L&#39;Exorcisme de Lili Rose&quot;, 
+                        &quot;link&quot;: &quot;/Time_Zone_Perpignan/lexorcisme-de-lili-rose&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/lexorcisme-de-lili-rose.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Time Zone - Perpignan&quot;
+                    },{
+                        &quot;title&quot;: &quot;Il était une Fois&quot;, 
+                        &quot;link&quot;: &quot;/Time_Zone_Perpignan/il-etait-une-fois&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/il-etait-une-fois.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Time Zone - Perpignan&quot;
+                    },{
+                        &quot;title&quot;: &quot;Un Train d&#39;Enfer&quot;, 
+                        &quot;link&quot;: &quot;/Escapix_Perpignan/un-train-denfer&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/un-train-denfer.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère, Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Escapix - Perpignan&quot;
+                    },{
+                        &quot;title&quot;: &quot;La dernière heure&quot;, 
+                        &quot;link&quot;: &quot;/Le_Sablier_Le_Soler/la-derniere-heure&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-derniere-heure.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Le Sablier - Le Soler&quot;
+                    },{
+                        &quot;title&quot;: &quot;Le Cash du Siècle&quot;, 
+                        &quot;link&quot;: &quot;/La_Boussole_CanetenRoussillon/le-cash-du-siecle&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/le-cash-du-siecle.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage, Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;La Boussole - Canet-en-Roussillon&quot;
+                    },{
+                        &quot;title&quot;: &quot;Le Voyage Spatio-temporel&quot;, 
+                        &quot;link&quot;: &quot;/Time_Zone_Perpignan/le-voyage-spatio-temporel&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/le-voyage-spatio-temporel.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Time Zone - Perpignan&quot;
+                    },{
+                        &quot;title&quot;: &quot;Le Terminus&quot;, 
+                        &quot;link&quot;: &quot;/Le_Bunker_SaintEst_ve/le-terminus&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/le-terminus.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur&quot;,
+                        &quot;enseigne&quot;: &quot;Le Bunker - Saint-Estève&quot;
+                    },{
+                        &quot;title&quot;: &quot;Goodbye Cobayes ! Hémisphère droit&quot;, 
+                        &quot;link&quot;: &quot;/Escapix_Perpignan/goodbye-cobayes-hemisphere-droit_Escapix_Perpignan&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/goodbye-cobayes-hemisphere-droit.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion, Logique&quot;,
+                        &quot;enseigne&quot;: &quot;Escapix - Perpignan&quot;
+                    },{
+                        &quot;title&quot;: &quot;Le Cirque de la Lune Noire&quot;, 
+                        &quot;link&quot;: &quot;/Le_Bunker_SaintEst_ve/le-cirque-de-la-lune-noire&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/le-cirque-de-la-lune-noire.webp&quot;,
+                        &quot;theme&quot;: &quot;Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;Le Bunker - Saint-Estève&quot;
+                    },{
+                        &quot;title&quot;: &quot;Le Carnet d&#39;Emma&quot;, 
+                        &quot;link&quot;: &quot;/La_Malle_Perpignan/le-carnet-demma&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/le-carnet-demma.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique, Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;La Malle - Perpignan&quot;
+                    },{
+                        &quot;title&quot;: &quot;Le joyau oublié&quot;, 
+                        &quot;link&quot;: &quot;/Le_Sablier_Le_Soler/vol-au-musee&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/vol-au-musee.webp&quot;,
+                        &quot;theme&quot;: &quot;Cambriolage&quot;,
+                        &quot;enseigne&quot;: &quot;Le Sablier - Le Soler&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Mélopée&quot;, 
+                        &quot;link&quot;: &quot;/La_Malle_Perpignan/la-melopee&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-melopee.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;La Malle - Perpignan&quot;
+                    },{
+                        &quot;title&quot;: &quot;Panique à la Fabrique&quot;, 
+                        &quot;link&quot;: &quot;/Escapix_Perpignan/panique-a-la-fabrique&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/panique-a-la-fabrique.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique, Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Escapix - Perpignan&quot;
+                    },{
+                        &quot;title&quot;: &quot;Action Side&quot;, 
+                        &quot;link&quot;: &quot;/Gameside_Saleilles/action-side&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/action-side.webp&quot;,
+                        &quot;theme&quot;: &quot;Aventure&quot;,
+                        &quot;enseigne&quot;: &quot;Gameside - Saleilles&quot;
+                    },{
+                        &quot;title&quot;: &quot;Vaudou&quot;, 
+                        &quot;link&quot;: &quot;/La_Boussole_CanetenRoussillon/vaudou&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/vaudou.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;La Boussole - Canet-en-Roussillon&quot;
+                    },{
+                        &quot;title&quot;: &quot;Break en Prison&quot;, 
+                        &quot;link&quot;: &quot;/Escapix_Perpignan/break-en-prison&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/break-en-prison.webp&quot;,
+                        &quot;theme&quot;: &quot;Évasion&quot;,
+                        &quot;enseigne&quot;: &quot;Escapix - Perpignan&quot;
+                    },{
+                        &quot;title&quot;: &quot;L&#39;Académie des Magiciens&quot;, 
+                        &quot;link&quot;: &quot;/Le_Bunker_SaintEst_ve/lacademie-des-magiciens&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/lacademie-des-magiciens.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique&quot;,
+                        &quot;enseigne&quot;: &quot;Le Bunker - Saint-Estève&quot;
+                    },{
+                        &quot;title&quot;: &quot;Utopia&quot;, 
+                        &quot;link&quot;: &quot;/La_Cave_Rouge_Thuir/utopia&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/utopia.webp&quot;,
+                        &quot;theme&quot;: &quot;Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;La Cave Rouge - Thuir&quot;
+                    },{
+                        &quot;title&quot;: &quot;Dystopia&quot;, 
+                        &quot;link&quot;: &quot;/La_Cave_Rouge_Thuir/dystopia_La_Cave_Rouge_Thuir&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/dystopia.webp&quot;,
+                        &quot;theme&quot;: &quot;Logique&quot;,
+                        &quot;enseigne&quot;: &quot;La Cave Rouge - Thuir&quot;
+                    },{
+                        &quot;title&quot;: &quot;Les Infiltrés 2.0&quot;, 
+                        &quot;link&quot;: &quot;/La_Boussole_CanetenRoussillon/les-infiltres-2-0&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/les-infiltres-2-0.webp&quot;,
+                        &quot;theme&quot;: &quot;Science-Fiction&quot;,
+                        &quot;enseigne&quot;: &quot;La Boussole - Canet-en-Roussillon&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Salle des Sortilèges&quot;, 
+                        &quot;link&quot;: &quot;/Doors___Key_Perpignan/la-salle-des-sortileges&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-salle-des-sortileges.webp&quot;,
+                        &quot;theme&quot;: &quot;Fantastique, Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Doors &amp; Key - Perpignan&quot;
+                    },{
+                        &quot;title&quot;: &quot;La Cale Infernale&quot;, 
+                        &quot;link&quot;: &quot;/La_Boussole_CanetenRoussillon/la-cale-infernale&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/la-cale-infernale.webp&quot;,
+                        &quot;theme&quot;: &quot;Pirates&quot;,
+                        &quot;enseigne&quot;: &quot;La Boussole - Canet-en-Roussillon&quot;
+                    },{
+                        &quot;title&quot;: &quot;Le bureau du professeur Pasteur&quot;, 
+                        &quot;link&quot;: &quot;/Secret_Lock_66_MontesquieudesAlb_res/le-bureau-du-professeur-pasteur&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/le-bureau-du-professeur-pasteur.webp&quot;,
+                        &quot;theme&quot;: &quot;Enquête / Mystère&quot;,
+                        &quot;enseigne&quot;: &quot;Secret Lock 66 - Montesquieu-des-Albères&quot;
+                    },{
+                        &quot;title&quot;: &quot;Battle Royal&quot;, 
+                        &quot;link&quot;: &quot;/Secret_Lock_66_MontesquieudesAlb_res/battle-royal&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/battle-royal.webp&quot;,
+                        &quot;theme&quot;: &quot;Série / Film / Roman&quot;,
+                        &quot;enseigne&quot;: &quot;Secret Lock 66 - Montesquieu-des-Albères&quot;
+                    },{
+                        &quot;title&quot;: &quot;Ekoland&quot;, 
+                        &quot;link&quot;: &quot;/Ekoland_Cabestany/ekoland&quot;, 
+                        &quot;image&quot;: &quot;/assets/img/escape/ekoland.webp&quot;,
+                        &quot;theme&quot;: &quot;Frisson / Horreur, Catastrophe&quot;,
+                        &quot;enseigne&quot;: &quot;Ekoland - Cabestany&quot;
                     }
     ]">
     </div>
 </div>
 
-<script src="/assets/js/featured-articles.js"></script>
+<script src="/assets/js/featured-articles_v2.js"></script>
 
 
+
+    <footer>
+        <div class="row">
+    <div class="footer-col logo-social-group">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo" class="logo-img">
+        </a>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/lemeilleurescapegame" target="_blank">
+                <img src="/assets/img/icons/facebook-brands.svg" alt="Facebook" class="icon">
+            </a>
+            <a href="https://www.instagram.com/lemeilleurescapegame.fr/" target="_blank">
+                <img src="/assets/img/icons/instagram-brands.svg" alt="Instagram" class="icon">
+            </a>
+            <a href="https://open.spotify.com/show/0j285HyDZGNuTRNYqsp5J9?si=a3026617f27a49f4" target="_blank">
+                <img src="/assets/img/icons/spotify-brands.svg" alt="Spotify" class="icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-col">
+        <h4><a href="/about">About Us</a></h4>
+        <h4><a href="/mention-legale">Mentions légales</a></h4>
+    </div>
+
+    <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:contact@lemeilleurescapegame.fr">contact@lemeilleurescapegame.fr</a></p>
+    </div>
+</div>
+
+    </footer>
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
+
+    
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+        { pageLanguage: 'fr', includedLanguages: 'en,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+        'google_translate_element'
+        );
+    }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.getElementById("translate-toggle");
+        let currentLang = "fr";
+
+        // Wait for the .goog-te-combo to be loaded
+        function waitForTranslateCombo(callback) {
+            const interval = setInterval(() => {
+                const selectEl = document.querySelector(".goog-te-combo");
+                if (selectEl) {
+                    clearInterval(interval);
+                    callback(selectEl);
+                }
+            }, 100); // check every 100ms
+        }
+
+        waitForTranslateCombo((selectEl) => {
+            toggleBtn.addEventListener("click", function () {
+                const targetLang = currentLang === "fr" ? "en" : "fr";
+                selectEl.value = targetLang;
+                selectEl.dispatchEvent(new Event("change"));
+                currentLang = targetLang;
+                toggleBtn.textContent = currentLang === "fr" ? "🇬🇧 English" : "🇫🇷 Français";
+            });
+        });
+    });
+    </script>
 </body>
 </html>

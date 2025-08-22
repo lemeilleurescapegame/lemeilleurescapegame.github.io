@@ -9,9 +9,48 @@
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="/assets/img/logo_lemeg_.png">
 </head>
 <body>
-    <nav class="nav-wrap">
+    <head>
+    <style>
+        /* Example CSS for your navbar */
+        .nav-wrap {
+            font-family: 'Merriweather', serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-wrap a {
+            text-decoration: none;
+            color: inherit;
+            padding: 8px 12px;
+        }
+
+        .nav-wrap a:hover {
+            color: #ccc;
+        }
+
+        .sidebar li a {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* .search-form input[type="text"] {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            color: #000;
+            padding: 4px 8px;
+        } */
+    </style>
+</head>
+
+<nav class="nav-wrap">
     <div class="logo">
         <a href="/" class="nav-logo">
             <img src="/assets/img/logo_lemeg_.png" alt="Logo">
@@ -23,18 +62,22 @@
         <li> <a href="/top-france">Top France</a> </li>
         <li> <a href="/top-world">Top World</a> </li>
         <li> <a href="/podcast">Podcast</a>  </li>
-        <!-- <li> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li> <a href="/experience-immersive">Expérience immersive</a> </li>
         <li> <a href="/horreur">Horreur</a> </li>
-        <!-- <li> <a href="/theatre-immersif">Théâtre immersif</a> </li> -->
+        <li> <a href="/realite-virtuelle">Réalité virtuelle</a> </li>
+        <li> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <li> <a href="/pour-enfant">🙋‍♂️ Pour enfant</a> </li>
 
     </ul>
     <ul>
         <li class="hideOnMobile"> <a href="/top-france">Top France</a> </li>
         <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li>
         <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
-        <!-- <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li> -->
+        <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li>
         <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/realite-virtuelle">Réalité virtuelle</a> </li>
         <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li>
+        <li class="hideOnMobile"> <a href="/pour-enfant">🙋‍♂️ Pour Enfants</a></li>
         <!-- <li class="search-icon">
             <input type="search" id="search-input" placeholder="Search">
             <button id="search-button">
@@ -66,12 +109,6 @@
                 </svg>
             </button>
         </form>
-
-        <!-- <form action="/search.html" method="get">
-            <label for="search-box">Search</label>
-            <input type="text" id="search-box" name="query">
-            <input type="submit" value="search">
-        </form> -->
 
         <li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
     </ul>
@@ -136,8 +173,24 @@
 
 
 </script>
+
+    <div id="google_translate_wrapper">
+        <div id="google_translate_element"></div>
+    </div>
+
+
     <div class="grid-wrapper_main">
     <div class="grid-container_main">
+        
+            <div class="grid-item_main">
+                <a href="/top-world/allemagne/">
+                    <img src="/assets/img/top-world/top-allemagne.webp" alt="Allemagne" loading="lazy">
+                    <div class="overlay_main">
+                        <img src="/assets/img/flags/allemagne-optimized.webp" alt="Flag" class="flag-icon">
+                        Allemagne
+                    </div>
+                </a>
+            </div>
         
             <div class="grid-item_main">
                 <a href="/top-world/athenes/">
@@ -190,11 +243,11 @@
             </div>
         
             <div class="grid-item_main">
-                <a href="/top-world/monde/">
-                    <img src="/assets/img/top-world/top-world-optimized.webp" alt="Top Monde" loading="lazy">
+                <a href="/top-world/meilleur-escape-game-monde/">
+                    <img src="/assets/img/top-world/top-world-optimized.webp" alt="Meilleur Escape Monde" loading="lazy">
                     <div class="overlay_main">
                         <img src="/assets/img/flags/world.webp" alt="Flag" class="flag-icon">
-                        Top Monde
+                        Meilleur Escape Monde
                     </div>
                 </a>
             </div>
@@ -220,6 +273,16 @@
             </div>
         
             <div class="grid-item_main">
+                <a href="/top-world/suisse/">
+                    <img src="/assets/img/top-world/top-suisse-optimized.webp" alt="Suisse" loading="lazy">
+                    <div class="overlay_main">
+                        <img src="/assets/img/flags/suisse-optimized.webp" alt="Flag" class="flag-icon">
+                        Suisse
+                    </div>
+                </a>
+            </div>
+        
+            <div class="grid-item_main">
                 <a href="/top-world/tokyo/">
                     <img src="/assets/img/top-world/top-tokyo-optimized.jpg" alt="Tokyo" loading="lazy">
                     <div class="overlay_main">
@@ -231,7 +294,78 @@
         
     </div> 
 </div>
+
+    <footer>
+        <div class="row">
+    <div class="footer-col logo-social-group">
+        <a href="/" class="nav-logo">
+            <img src="/assets/img/logo_lemeg_.png" alt="Logo" class="logo-img">
+        </a>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/lemeilleurescapegame" target="_blank">
+                <img src="/assets/img/icons/facebook-brands.svg" alt="Facebook" class="icon">
+            </a>
+            <a href="https://www.instagram.com/lemeilleurescapegame.fr/" target="_blank">
+                <img src="/assets/img/icons/instagram-brands.svg" alt="Instagram" class="icon">
+            </a>
+            <a href="https://open.spotify.com/show/0j285HyDZGNuTRNYqsp5J9?si=a3026617f27a49f4" target="_blank">
+                <img src="/assets/img/icons/spotify-brands.svg" alt="Spotify" class="icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-col">
+        <h4><a href="/about">About Us</a></h4>
+        <h4><a href="/mention-legale">Mentions légales</a></h4>
+    </div>
+
+    <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:contact@lemeilleurescapegame.fr">contact@lemeilleurescapegame.fr</a></p>
+    </div>
+</div>
+
+    </footer>
     <script type="text/javascript" src="/assets/js/jquery-3.7.1.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
+
+    
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+        { pageLanguage: 'fr', includedLanguages: 'en,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+        'google_translate_element'
+        );
+    }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.getElementById("translate-toggle");
+        let currentLang = "fr";
+
+        // Wait for the .goog-te-combo to be loaded
+        function waitForTranslateCombo(callback) {
+            const interval = setInterval(() => {
+                const selectEl = document.querySelector(".goog-te-combo");
+                if (selectEl) {
+                    clearInterval(interval);
+                    callback(selectEl);
+                }
+            }, 100); // check every 100ms
+        }
+
+        waitForTranslateCombo((selectEl) => {
+            toggleBtn.addEventListener("click", function () {
+                const targetLang = currentLang === "fr" ? "en" : "fr";
+                selectEl.value = targetLang;
+                selectEl.dispatchEvent(new Event("change"));
+                currentLang = targetLang;
+                toggleBtn.textContent = currentLang === "fr" ? "🇬🇧 English" : "🇫🇷 Français";
+            });
+        });
+    });
+    </script>
 </body>
 </html>
