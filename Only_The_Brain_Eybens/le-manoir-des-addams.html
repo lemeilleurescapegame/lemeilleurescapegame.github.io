@@ -68,23 +68,23 @@
         <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
         <li> <a href="/top-escape-game-france">Top France</a> </li>
         <li> <a href="/top-escape-game-world">Top World</a> </li>
-        <li> <a href="/podcast">Podcast</a>  </li>
-        <li> <a href="/experience-immersive">Expérience immersive</a> </li>
-        <li> <a href="/horreur">Horreur</a> </li>
-        <li> <a href="/realite-virtuelle">Réalité virtuelle</a> </li>
-        <li> <a href="/theatre-immersif">Théâtre immersif</a> </li>
-        <li> <a href="/pour-enfant">🙋‍♂️ Pour enfant</a> </li>
+        <li> <a href="/immersion-podcast-loisirs-immersifs">Podcast</a>  </li>
+        <li> <a href="/top-experience-immersive">Expérience immersive</a> </li>
+        <li> <a href="/top-escape-game-horreur">Horreur</a> </li>
+        <li> <a href="/top-escape-game-realite-virtuelle">Réalité virtuelle</a> </li>
+        <li> <a href="/top-theatre-immersif">Théâtre immersif</a> </li>
+        <li> <a href="/top-escape-game-enfants-adolescents">🙋‍♂️ Pour enfant</a> </li>
 
     </ul>
     <ul>
         <li class="hideOnMobile"> <a href="/top-escape-game-france">Top France</a> </li>
         <li class="hideOnMobile"> <a href="/top-escape-game-world">Top World</a> </li>
-        <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
-        <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li>
-        <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
-        <li class="hideOnMobile"> <a href="/realite-virtuelle">Réalité virtuelle</a> </li>
-        <li class="hideOnMobile"> <a href="/theatre-immersif">Théâtre immersif</a> </li>
-        <li class="hideOnMobile"> <a href="/pour-enfant">🙋‍♂️ Pour Enfants</a></li>
+        <li class="hideOnMobile"> <a href="/immersion-podcast-loisirs-immersifs">Podcast</a>  </li>
+        <li class="hideOnMobile"> <a href="/top-experience-immersive">Expérience immersive</a> </li>
+        <li class="hideOnMobile"> <a href="/top-escape-game-horreur">Horreur</a> </li>
+        <li class="hideOnMobile"> <a href="/top-escape-game-realite-virtuelle">Réalité virtuelle</a> </li>
+        <li class="hideOnMobile"> <a href="/top-theatre-immersif">Théâtre immersif</a> </li>
+        <li class="hideOnMobile"> <a href="/top-escape-game-enfants-adolescents">🙋‍♂️ Pour Enfants</a></li>
         <!-- <li class="search-icon">
             <input type="search" id="search-input" placeholder="Search">
             <button id="search-button">
@@ -5246,37 +5246,38 @@
   <script>
   document.addEventListener("DOMContentLoaded", function () {
       const cities = {
-          "annecy": "/top-escape-game-france/annecy",
-          "annemasse": "/top-escape-game-france/annemasse",
-          "avignon": "/top-escape-game-france/avignon",
-          "bayonne": "/top-escape-game-france/bayonne",
-          "bordeaux": "/top-escape-game-france/bordeaux",
-          "chambéry": "/top-escape-game-france/chambery",
-          "dijon": "/top-escape-game-france/dijon",
-          "grenoble": "/top-escape-game-france/grenoble",
-          "lille": "/top-escape-game-france/lille",
-          "lyon": "/top-escape-game-france/lyon",
-          "montelimar": "/top-escape-game-france/montelimar",
-          "montpellier": "/top-escape-game-france/montpellier",
-          "nantes": "/top-escape-game-france/nantes",
-          "nice": "/top-escape-game-france/nice",
-          "nimes": "/top-escape-game-france/nimes",
-          "paris": "/top-escape-game-france/paris",
-          "pau": "/top-escape-game-france/pau",
-          "perpignan": "/top-escape-game-france/perpignan",
-          "toulouse": "/top-escape-game-france/toulouse",
-          "tours": "/top-escape-game-france/tours",
-          "valence": "/top-escape-game-france/valence",
-          "allemagne": "/top-escape-game-world/allemagne",
-          "athenes": "/top-escape-game-world/athenes",
-          "barcelone": "/top-escape-game-world/barcelone",
-          "belgique": "/top-escape-game-world/belgique",
-          "espagne": "/top-escape-game-world/espagne",
-          "genève": "/top-escape-game-world/geneve",
-          "pays-bas": "/top-escape-game-world/pays-bas",
-          "prague": "/top-escape-game-world/prague",
-          "suisse": "/top-escape-game-world/suisse",
-          "tokyo": "/top-escape-game-world/tokyo" 
+          "annecy": "",
+          "annemasse": "",
+          "avignon": "",
+          "bayonne": "",
+          "bordeaux": "",
+          "chambéry": "",
+          "dijon": "",
+          "grenoble": "",
+          "lille": "",
+          "lyon": "",
+          "montelimar": "",
+          "montpellier": "",
+          "nantes": "",
+          "nice": "",
+          "nimes": "",
+          "paris": "",
+          "pau": "",
+          "perpignan": "",
+          "toulouse": "",
+          "tours": "",
+          "valence": "",
+          "allemagne": "",
+          "athenes": "",
+          "barcelone": "",
+          "belgique": "",
+          "espagne": "",
+          "genève": "",
+          "pays-bas": "",
+          "prague": "",
+          "suisse": ""
+          // ,
+          // "tokyo": "" 
       };
 
       const linkifyCities = (element) => {
