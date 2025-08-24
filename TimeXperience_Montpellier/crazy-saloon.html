@@ -4,12 +4,19 @@
     <meta charset="utf8">
 <meta content="IE-edge,chrome=1" http-equiv="X-UA-Compatable">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Escape game reviews">
+
 <title>Le meilleur escape game</title>
+<!-- <meta name="description" content="Escape game reviews"> -->
+<meta name="description" content="Escape game reviews">
+<meta property="og:title" content="Crazy Saloon">
+<meta property="og:description" content="Escape game reviews">
+<meta property="og:image" content="http://localhost:4000/assets/img/crazy-saloon.webp">
+<meta property="og:url" content="http://localhost:4000//TimeXperience_Montpellier/crazy-saloon">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
 <link rel="icon" type="image/png" href="/assets/img/logo_lemeg_.png">
 </head>
 <body>
@@ -59,8 +66,8 @@
 
     <ul class ="sidebar">
         <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-        <li> <a href="/les-tops">Top France</a> </li>
-        <li> <a href="/top-world">Top World</a> </li>
+        <li> <a href="/top-escape-game-france">Top France</a> </li>
+        <li> <a href="/top-escape-game-world">Top World</a> </li>
         <li> <a href="/podcast">Podcast</a>  </li>
         <li> <a href="/experience-immersive">Expérience immersive</a> </li>
         <li> <a href="/horreur">Horreur</a> </li>
@@ -70,8 +77,8 @@
 
     </ul>
     <ul>
-        <li class="hideOnMobile"> <a href="/les-tops">Top France</a> </li>
-        <li class="hideOnMobile"> <a href="/top-world">Top World</a> </li>
+        <li class="hideOnMobile"> <a href="/top-escape-game-france">Top France</a> </li>
+        <li class="hideOnMobile"> <a href="/top-escape-game-world">Top World</a> </li>
         <li class="hideOnMobile"> <a href="/podcast">Podcast</a>  </li>
         <li class="hideOnMobile"> <a href="/experience-immersive">Expérience immersive</a> </li>
         <li class="hideOnMobile"> <a href="/horreur">Horreur</a> </li>
@@ -5234,37 +5241,37 @@
   <script>
   document.addEventListener("DOMContentLoaded", function () {
       const cities = {
-          "annecy": "/les-tops/annecy",
-          "annemasse": "/les-tops/annemasse",
-          "avignon": "/les-tops/avignon",
-          "bayonne": "/les-tops/bayonne",
-          "bordeaux": "/les-tops/bordeaux",
-          "chambery": "/les-tops/chambery",
-          "dijon": "/les-tops/dijon",
-          "grenoble": "/les-tops/grenoble",
-          "lille": "/les-tops/lille",
-          "lyon": "/les-tops/lyon",
-          "montelimar": "/les-tops/montelimar",
-          "montpellier": "/les-tops/montpellier",
-          "nantes": "/les-tops/nantes",
-          "nice": "/les-tops/nice",
-          "nimes": "/les-tops/nimes",
-          "paris": "/les-tops/paris",
-          "pau": "/les-tops/pau",
-          "perpignan": "/les-tops/perpignan",
-          "toulouse": "/les-tops/toulouse",
-          "tours": "/les-tops/tours",
-          "valence": "/les-tops/valence",
-          "allemagne": "/les-tops/allemagne",
-          "athenes": "/les-tops/athenes",
-          "barcelone": "/les-tops/barcelone",
-          "belgique": "/les-tops/belgique",
-          "espagne": "/les-tops/espagne",
-          "genève": "/les-tops/geneve",
-          "pays-bas": "/les-tops/pays-bas",
-          "prague": "/les-tops/prague",
-          "suisse": "/les-tops/suisse",
-          "tokyo": "/les-tops/tokyo" 
+          "annecy": "/top-escape-game-france/annecy",
+          "annemasse": "/top-escape-game-france/annemasse",
+          "avignon": "/top-escape-game-france/avignon",
+          "bayonne": "/top-escape-game-france/bayonne",
+          "bordeaux": "/top-escape-game-france/bordeaux",
+          "chambéry": "/top-escape-game-france/chambery",
+          "dijon": "/top-escape-game-france/dijon",
+          "grenoble": "/top-escape-game-france/grenoble",
+          "lille": "/top-escape-game-france/lille",
+          "lyon": "/top-escape-game-france/lyon",
+          "montelimar": "/top-escape-game-france/montelimar",
+          "montpellier": "/top-escape-game-france/montpellier",
+          "nantes": "/top-escape-game-france/nantes",
+          "nice": "/top-escape-game-france/nice",
+          "nimes": "/top-escape-game-france/nimes",
+          "paris": "/top-escape-game-france/paris",
+          "pau": "/top-escape-game-france/pau",
+          "perpignan": "/top-escape-game-france/perpignan",
+          "toulouse": "/top-escape-game-france/toulouse",
+          "tours": "/top-escape-game-france/tours",
+          "valence": "/top-escape-game-france/valence",
+          "allemagne": "/top-escape-game-world/allemagne",
+          "athenes": "/top-escape-game-world/athenes",
+          "barcelone": "/top-escape-game-world/barcelone",
+          "belgique": "/top-escape-game-world/belgique",
+          "espagne": "/top-escape-game-world/espagne",
+          "genève": "/top-escape-game-world/geneve",
+          "pays-bas": "/top-escape-game-world/pays-bas",
+          "prague": "/top-escape-game-world/prague",
+          "suisse": "/top-escape-game-world/suisse",
+          "tokyo": "/top-escape-game-world/tokyo" 
       };
 
       const linkifyCities = (element) => {
